@@ -14,6 +14,7 @@ from pqid_bench import (
     REPORT_FORMATS,
     SCHEMA_VERSION,
     BenchmarkSummary,
+    DashboardData,
     LiveRunConfig,
     LiveRunResult,
     PROVIDER_PRESETS,
@@ -21,7 +22,9 @@ from pqid_bench import (
     ProviderPreset,
     ReplayPlan,
     canonicalize_harness_report,
+    build_dashboard,
     execute_replay,
+    load_dashboard_data,
     plan_live_model_run,
     provider_preset,
     render_comparison,
@@ -32,6 +35,7 @@ from pqid_bench import (
     summary_rows,
     summarize_evaluation_records,
     write_replay_derivatives,
+    write_site_assets,
 )
 ```
 
@@ -41,9 +45,9 @@ replay.
 
 ## Version Constants
 
-| Constant | Version 1.0.0 value |
+| Constant | Current value |
 | --- | --- |
-| `PACKAGE_VERSION` | `1.0.0` |
+| `PACKAGE_VERSION` | `1.1.0` |
 | `BENCHMARK_RELEASE` | `1.0.0` |
 | `EVALUATOR_VERSION` | `pqid-bench-evaluator-1.1.0-safe-builtins` |
 | `PREDICATE_VERSION` | `pqid-bench-reference-signature-1.0.0-count-map` |
@@ -248,6 +252,30 @@ The function trusts the supplied aggregate mapping. The CLI's frozen
 comparison path calculates the identifiable subset from the frozen exclusion
 policy instead of requiring the user to supply these values manually.
 
+## Visualization API
+
+`load_dashboard_data(release_dir)` validates and returns a `DashboardData`
+object containing the canonical pooled summary and 21 model-level records.
+`build_dashboard(...)` writes a standalone Plotly HTML report.
+
+```python
+from pathlib import Path
+
+from pqid_bench import build_dashboard
+
+data = build_dashboard(
+    Path("RELEASE_DIR"),
+    Path("pqid-bench-dashboard.html"),
+    plotlyjs="embed",
+)
+assert len(data.models) == 21
+```
+
+Plotly is imported only when a dashboard is rendered. Install the
+`visualization` extra for this interface. `write_site_assets(...)` additionally
+writes the Pages-only workflow and measurement SVG fallbacks plus the
+validated dashboard data as JSON.
+
 ## Live Collection API
 
 `LiveRunConfig` is the immutable run contract. `plan_live_model_run(config)`
@@ -361,7 +389,8 @@ usage, response/error metadata, and raw payload digests.
 Raw provider payloads remain separate files. They are not embedded directly
 into the shared record.
 
-The type and the live-run interfaces are top-level version 1.0.0 exports.
+The type and the live-run interfaces are top-level package-version 1.1.0
+exports.
 
 ## Supporting Manifest Interface
 

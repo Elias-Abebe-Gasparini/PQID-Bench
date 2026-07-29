@@ -1,14 +1,14 @@
-"""Upload the frozen PQID-Bench package to Hugging Face.
+"""Upload the PQID-Bench public tree to Hugging Face.
 
 The command is inert unless --publish is supplied. Authentication uses the
 standard Hugging Face token resolution; no local credential path is embedded.
+Generated GitHub Pages assets are excluded from the dataset repository.
 """
 
 from __future__ import annotations
 
 import argparse
 from pathlib import Path, PurePosixPath
-
 
 ROOT = Path(__file__).resolve().parents[2]
 CARD = ROOT / "HUGGINGFACE_DATASET_CARD.md"
@@ -23,11 +23,13 @@ IGNORED_PARTS = {
     "site",
 }
 IGNORED_SUFFIXES = {".pyc", ".pyo", ".tmp"}
+GENERATED_PREFIXES = {("docs", "interactive")}
 
 
 def is_ignored_path(path: Path | PurePosixPath) -> bool:
     return (
         any(part in IGNORED_PARTS or part.endswith(".egg-info") for part in path.parts)
+        or tuple(path.parts[:2]) in GENERATED_PREFIXES
         or path.suffix.lower() in IGNORED_SUFFIXES
     )
 
@@ -103,6 +105,7 @@ def main() -> None:
             "*.egg-info/**",
             "build/**",
             "dist/**",
+            "docs/interactive/**",
             "site/**",
             "*.pyc",
             "*.pyo",
@@ -117,7 +120,10 @@ def main() -> None:
             "**/*.pyo",
             "**/*.tmp",
         ],
-        commit_message="Publish frozen PQID-Bench v1.0.0 artifacts",
+        commit_message=(
+            "Synchronize pqid-bench v1.1.0 tooling with frozen "
+            "PQID-Bench v1.0.0 evidence"
+        ),
     )
     api.upload_file(
         repo_id=args.repo_id,

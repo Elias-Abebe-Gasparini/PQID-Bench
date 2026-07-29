@@ -23,9 +23,14 @@ except ModuleNotFoundError:
     from scripts.materialize_pqid_bench_splits import materialize_splits
 
 
-ROOT = Path(__file__).resolve().parents[1]
+SCRIPT_ROOT = Path(__file__).resolve().parents[1]
+PACKAGE = (
+    SCRIPT_ROOT
+    if (SCRIPT_ROOT / ".zenodo.json").is_file()
+    else SCRIPT_ROOT / "PQID-Bench"
+)
+ROOT = PACKAGE.parent
 PQID_ROOT = ROOT.parents[1]
-PACKAGE = ROOT / "PQID-Bench"
 RELEASES = ROOT / "releases"
 VERSION = "1.0.0"
 
@@ -111,6 +116,7 @@ IGNORED_SUFFIXES = {
     ".pyo",
     ".tmp",
 }
+GENERATED_PREFIXES = {("docs", "interactive")}
 
 
 def sha256(path: Path) -> str:
@@ -373,6 +379,8 @@ def public_files() -> list[Path]:
             continue
         if path.suffix.lower() in IGNORED_SUFFIXES:
             continue
+        if tuple(relative.parts[:2]) in GENERATED_PREFIXES:
+            continue
         if relative.as_posix() == "ARTIFACT_MANIFEST.tsv":
             continue
         files.append(path)
@@ -458,7 +466,20 @@ def main() -> None:
         action="store_true",
         help="Also create the frozen ZIP and its SHA-256 sidecar.",
     )
+    parser.add_argument(
+        "--manifest-only",
+        action="store_true",
+        help="Refresh only ARTIFACT_MANIFEST.tsv without rebuilding release mirrors.",
+    )
     args = parser.parse_args()
+
+    if args.manifest_only:
+        validate_release_scope()
+        scan_private_paths()
+        write_manifest()
+        print(f"Manifest refreshed: {PACKAGE / 'ARTIFACT_MANIFEST.tsv'}")
+        print(f"Manifest entries: {len(public_files()):,}")
+        return
 
     reset_generated_mirrors()
     sync_reproducibility_map()

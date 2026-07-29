@@ -32,6 +32,12 @@ from .version import (
     PREDICATE_VERSION,
     SCHEMA_VERSION,
 )
+from .visualization import (
+    DashboardData,
+    build_dashboard,
+    load_dashboard_data,
+    write_site_assets,
+)
 
 __all__ = [
     "ARTIFACT_MANIFEST_VERSION",
@@ -43,13 +49,16 @@ __all__ = [
     "REPORT_FORMATS",
     "SCHEMA_VERSION",
     "BenchmarkSummary",
+    "DashboardData",
     "LiveRunConfig",
     "LiveRunResult",
     "ProviderAttempt",
     "ProviderPreset",
     "ReplayPlan",
+    "build_dashboard",
     "canonicalize_harness_report",
     "execute_replay",
+    "load_dashboard_data",
     "plan_live_model_run",
     "provider_preset",
     "render_comparison",
@@ -60,6 +69,7 @@ __all__ = [
     "summarize_evaluation_records",
     "summary_rows",
     "write_replay_derivatives",
+    "write_site_assets",
 ]
 
 __version__ = PACKAGE_VERSION

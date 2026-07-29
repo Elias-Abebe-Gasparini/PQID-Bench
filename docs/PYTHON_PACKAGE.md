@@ -2,7 +2,7 @@
 
 ## Scientific Boundary
 
-`pqid-bench 1.0.0` is a reproducibility and replication toolkit for the
+`pqid-bench 1.1.0` is a reproducibility and replication toolkit for the
 immutable PQID-Bench v1.0.0 study. Its safe default path recomputes reported
 quantities from archived evaluator records. Live calls are a separate,
 explicitly acknowledged path that creates new evidence.
@@ -18,7 +18,10 @@ The package distinguishes:
    provider route;
 5. **executable replay**: execution of generated Python in the isolated
    evaluator container; and
-6. **comparison**: denominator-aligned interpretation against frozen cells.
+6. **comparison**: denominator-aligned interpretation against frozen cells;
+   and
+7. **visualization**: generation of a standalone interactive report from the
+   frozen evidence without provider access or generated-code execution.
 
 ## Version Dimensions
 
@@ -26,7 +29,7 @@ Every core machine-readable scientific report carries:
 
 | dimension | frozen identifier |
 | --- | --- |
-| package | `1.0.0` |
+| package | `1.1.0` |
 | benchmark release | `1.0.0` |
 | evaluator | `pqid-bench-evaluator-1.1.0-safe-builtins` |
 | structural predicate | `pqid-bench-reference-signature-1.0.0-count-map` |
@@ -52,6 +55,7 @@ pqid-bench verify RELEASE_DIR --full
 pqid-bench reproduce --release-dir RELEASE_DIR --output summary.json
 pqid-bench reproduce --release-dir RELEASE_DIR --format text
 pqid-bench evaluate --evaluations evaluation_records.jsonl
+pqid-bench dashboard --release-dir RELEASE_DIR --output dashboard.html
 pqid-bench compare --evaluations evaluation_records.jsonl \
   --candidate-run-manifest candidate-run-manifest.json \
   --release-dir RELEASE_DIR

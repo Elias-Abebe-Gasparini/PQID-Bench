@@ -36,6 +36,7 @@ from .version import (
     SCHEMA_VERSION,
     version_record,
 )
+from .visualization import build_dashboard
 
 
 def _json(payload: Any) -> None:
@@ -218,7 +219,7 @@ def command_run_model(args: argparse.Namespace) -> int:
 
 def command_doctor(_: argparse.Namespace) -> int:
     packages = {}
-    for name in ("qiskit", "qiskit-aer", "jsonschema"):
+    for name in ("qiskit", "qiskit-aer", "jsonschema", "plotly"):
         try:
             packages[name] = importlib.metadata.version(name)
         except importlib.metadata.PackageNotFoundError:
@@ -337,6 +338,25 @@ def command_compare(args: argparse.Namespace) -> int:
     return 0
 
 
+def command_dashboard(args: argparse.Namespace) -> int:
+    data = build_dashboard(
+        args.release_dir,
+        args.output,
+        plotlyjs=args.plotlyjs,
+    )
+    _json(
+        {
+            **version_record(run_type="canonical_reproduction"),
+            "output": str(args.output.resolve()),
+            "plotlyjs": args.plotlyjs,
+            "models": len(data.models),
+            "prompts": int(data.summary["prompts"]),
+            "cells": int(data.summary["cells"]),
+        }
+    )
+    return 0
+
+
 def command_replay(args: argparse.Namespace) -> int:
     if not args.acknowledge_code_execution:
         print(
@@ -446,6 +466,23 @@ def parser() -> argparse.ArgumentParser:
         help="Report format (default: json)",
     )
     compare.set_defaults(func=command_compare)
+
+    dashboard = sub.add_parser(
+        "dashboard",
+        help="Build a standalone interactive Plotly report from frozen results",
+    )
+    dashboard.add_argument("--release-dir", required=True, type=_release_dir)
+    dashboard.add_argument("--output", required=True, type=Path)
+    dashboard.add_argument(
+        "--plotlyjs",
+        choices=("embed", "cdn"),
+        default="embed",
+        help=(
+            "Embed Plotly.js for an offline report or load it from the CDN "
+            "(default: embed)"
+        ),
+    )
+    dashboard.set_defaults(func=command_dashboard)
 
     run_model = sub.add_parser(
         "run-model",
@@ -578,7 +615,7 @@ def main(argv: list[str] | None = None) -> int:
     args = parser().parse_args(argv)
     try:
         return int(args.func(args))
-    except (FileNotFoundError, ValueError, RuntimeError) as exc:
+    except (FileNotFoundError, TypeError, ValueError, RuntimeError) as exc:
         print(f"pqid-bench: {exc}", file=sys.stderr)
         return 1
 

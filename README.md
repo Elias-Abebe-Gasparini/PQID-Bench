@@ -3,17 +3,30 @@
 **A validation-aware benchmark suite for quantum-program generation**
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21649753.svg)](https://doi.org/10.5281/zenodo.21649753)
+[![PyPI](https://img.shields.io/pypi/v/pqid-bench.svg)](https://pypi.org/project/pqid-bench/)
+[![Python](https://img.shields.io/pypi/pyversions/pqid-bench.svg)](https://pypi.org/project/pqid-bench/)
+[![Documentation](https://img.shields.io/badge/docs-interactive-13756d.svg)](https://elias-abebe-gasparini.github.io/PQID-Bench/)
 
-Release: `v1.0.0`  
-Scientific freeze: `2026-07-23`  
-Distribution status: first frozen public release
-Evaluator: `pqid-bench-evaluator-1.1.0-safe-builtins`  
-Structural predicate: `pqid-bench-reference-signature-1.0.0-count-map`
+- Benchmark release: `v1.0.0`
+- Python package: `v1.1.0`
+- Scientific freeze: `2026-07-23`
+- Distribution status: frozen evidence release with a compatible software update
+- Evaluator: `pqid-bench-evaluator-1.1.0-safe-builtins`
+- Structural predicate: `pqid-bench-reference-signature-1.0.0-count-map`
 
 PQID-Bench is the frozen ACM TQC companion artifact derived from the archived
 PQID v1.0.2 dataset. It tests whether generated Qiskit programs merely execute
 or recover an explicitly limited reference structure. The benchmark does not
 treat execution as structural or semantic correctness.
+
+## Ecosystem Workflow
+
+[![PQID-Bench reproducibility workflow](https://elias-abebe-gasparini.github.io/PQID-Bench/interactive/assets/ecosystem-flow.svg)](https://elias-abebe-gasparini.github.io/PQID-Bench/)
+
+The evidence path keeps governed source data, deterministic splits, provider
+collection, isolated replay, numerical reporting, and interactive
+presentation as separate stages. The hosted explorer reads the final frozen
+artifacts; it is not part of scoring.
 
 ## Frozen Design
 
@@ -34,6 +47,16 @@ so scalar operation count remains a separately reported diagnostic rather than
 a fourth conjunct. Ordered operation-and-operand tape equality and
 parameter-aware equality are stricter replay layers. None of these exact
 reference-reconstruction predicates proves semantic equivalence.
+
+## Visual Evidence Map
+
+[![PQID-Bench operational and structural measurement ladder](https://elias-abebe-gasparini.github.io/PQID-Bench/interactive/assets/measurement-ladder.svg)](https://elias-abebe-gasparini.github.io/PQID-Bench/interactive/overview.html)
+
+The [interactive evidence explorer](https://elias-abebe-gasparini.github.io/PQID-Bench/interactive/overview.html)
+provides hoverable model profiles, a component-recovery heatmap, the complete
+operational-to-structural ladder, three-run repeatability estimates, and
+provider-route summaries. It is generated from the frozen artifacts on GitHub
+Pages and does not contact model providers or execute generated code.
 
 ## Headline Results
 
@@ -83,8 +106,8 @@ generation scripts remain available; see
 
 ## Python Package
 
-The repository is also the source distribution for `pqid-bench 1.0.0`. The
-package separates seven operations that must not be conflated:
+The repository is also the source distribution for `pqid-bench 1.1.0`. The
+package separates eight operations that must not be conflated:
 
 - `doctor` reports the local runtime and optional dependencies;
 - `verify` checks release bytes against `ARTIFACT_MANIFEST.tsv`;
@@ -93,6 +116,8 @@ package separates seven operations that must not be conflated:
 - `evaluate` summarizes a supplied canonical evaluation JSONL file;
 - `compare` aligns a compatible candidate with the same frozen prompt
   denominator;
+- `dashboard` builds a standalone interactive Plotly report from frozen
+  evidence;
 - `run-model` collects a new, traceable response panel from an
   OpenAI-compatible endpoint without executing generated code; and
 - `replay` executes archived or newly collected generated programs only inside
@@ -112,8 +137,15 @@ pqid-bench verify . --full
 pqid-bench reproduce --release-dir . --format text
 ```
 
+Install the optional visualization layer and create an offline HTML report:
+
+```bash
+python -m pip install "pqid-bench[visualization]"
+pqid-bench dashboard --release-dir . --output pqid-bench-dashboard.html
+```
+
 The importable interface uses `pqid_bench`. Version dimensions are independent:
-package `1.0.0` implements benchmark release `1.0.0`, evaluator
+package `1.1.0` implements benchmark release `1.0.0`, evaluator
 `pqid-bench-evaluator-1.1.0-safe-builtins`, and structural predicate
 `pqid-bench-reference-signature-1.0.0-count-map`. The optional replay
 container is a separate distribution artifact at version `1.0.0`; its image
@@ -143,6 +175,7 @@ See [Live Model Testing](docs/user-manual/live-model-testing.md).
 Start with:
 
 - [documentation home](docs/index.md);
+- [interactive explorer](https://elias-abebe-gasparini.github.io/PQID-Bench/interactive/overview.html);
 - [complete user manual](docs/user-manual/index.md);
 - [reviewer quickstart](docs/REVIEWER_QUICKSTART.md);
 - [data dictionary](docs/user-manual/data-dictionary.md);
@@ -181,6 +214,9 @@ python scripts/build_pqid_bench_public_release.py --archive
 ## Public Endpoints
 
 - GitHub: <https://github.com/Elias-Abebe-Gasparini/PQID-Bench>
+- Documentation: <https://elias-abebe-gasparini.github.io/PQID-Bench/>
+- Interactive explorer: <https://elias-abebe-gasparini.github.io/PQID-Bench/interactive/overview.html>
+- Python package: <https://pypi.org/project/pqid-bench/>
 - PQID-Bench v1.0.0 archive: <https://doi.org/10.5281/zenodo.21649753>
 - Hugging Face Dataset: <https://huggingface.co/datasets/Elias-Abebe-Gasparini/PQID-Bench>
 - Source PQID dataset v1.0.2: <https://doi.org/10.5281/zenodo.20674853>

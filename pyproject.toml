@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pqid-bench"
-version = "1.0.0"
+version = "1.1.0"
 description = "Reproducibility and live-evaluation toolkit for the frozen PQID-Bench quantum-program generation benchmark"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -39,6 +39,13 @@ dependencies = []
 schema = [
   "jsonschema>=4.23,<5",
 ]
+visualization = [
+  "plotly>=6,<7",
+]
+docs = [
+  "mkdocs-material>=9.6,<10",
+  "plotly>=6,<7",
+]
 evaluator = [
   "qiskit>=2.1,<2.2",
   "qiskit-aer>=0.17,<0.18",
@@ -57,7 +64,8 @@ Homepage = "https://github.com/Elias-Abebe-Gasparini/PQID-Bench"
 Repository = "https://github.com/Elias-Abebe-Gasparini/PQID-Bench"
 Archive = "https://doi.org/10.5281/zenodo.21649753"
 Dataset = "https://huggingface.co/datasets/Elias-Abebe-Gasparini/PQID-Bench"
-Gateway = "https://huggingface.co/spaces/Elias-Abebe-Gasparini/PQID-Bench-Gateway"
+Documentation = "https://elias-abebe-gasparini.github.io/PQID-Bench/"
+Explorer = "https://elias-abebe-gasparini.github.io/PQID-Bench/interactive/overview.html"
 
 [tool.setuptools]
 package-dir = { "" = "src" }

@@ -2,9 +2,11 @@ from __future__ import annotations
 
 import csv
 import importlib.util
+import json
 import unittest
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 
+from pqid_bench.version import PACKAGE_VERSION
 
 ROOT = Path(__file__).resolve().parents[2]
 UPLOADER = ROOT / "platforms" / "huggingface_dataset" / "upload_dataset.py"
@@ -20,6 +22,38 @@ def load_uploader():
 
 
 class PublicationAdapterTests(unittest.TestCase):
+    def test_python_sbom_tracks_the_package_release(self) -> None:
+        sbom_path = (
+            ROOT / "sbom" / f"pqid-bench-python-{PACKAGE_VERSION}.cdx.json"
+        )
+        payload = json.loads(sbom_path.read_text(encoding="utf-8"))
+        component = payload["metadata"]["component"]
+        self.assertEqual(PACKAGE_VERSION, component["version"])
+        references = {
+            item["url"] for item in component.get("externalReferences", [])
+        }
+        self.assertIn(
+            "https://elias-abebe-gasparini.github.io/PQID-Bench/"
+            "interactive/overview.html",
+            references,
+        )
+        self.assertFalse(
+            any("PQID-Bench-Gateway" in url for url in references)
+        )
+
+    def test_pages_build_products_are_not_dataset_artifacts(self) -> None:
+        uploader = load_uploader()
+        self.assertTrue(
+            uploader.is_ignored_path(
+                PurePosixPath("docs/interactive/overview.html")
+            )
+        )
+        self.assertTrue(
+            uploader.is_ignored_path(
+                PurePosixPath("docs/interactive/assets/measurement-ladder.svg")
+            )
+        )
+
     def test_hugging_face_upload_set_matches_manifest(self) -> None:
         uploader = load_uploader()
         actual = {

@@ -1,0 +1,64 @@
+:root {
+  --pqid-ink: #171717;
+  --pqid-teal: #13756d;
+  --pqid-red: #b83245;
+  --pqid-blue: #2f6690;
+  --pqid-line: #c9ced3;
+}
+
+.md-header {
+  background-color: var(--pqid-ink);
+}
+
+.md-tabs {
+  background-color: #2a2a2a;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  letter-spacing: 0;
+}
+
+.md-typeset h1 {
+  font-weight: 700;
+}
+
+.md-typeset a {
+  color: var(--pqid-blue);
+}
+
+.md-typeset table:not([class]) {
+  border: 1px solid var(--pqid-line);
+}
+
+.md-typeset table:not([class]) th {
+  background: #f1f4f5;
+  color: var(--pqid-ink);
+}
+
+.md-typeset code {
+  border-radius: 3px;
+}
+
+.pqid-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 1rem 0 1.4rem;
+}
+
+.pqid-actions .md-button {
+  border-radius: 4px;
+}
+
+.pqid-actions .md-button--primary {
+  background: var(--pqid-teal);
+  border-color: var(--pqid-teal);
+}
+
+.pqid-actions .md-button--primary:hover,
+.pqid-actions .md-button--primary:focus {
+  background: #0f5e58;
+  border-color: #0f5e58;
+}

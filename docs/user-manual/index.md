@@ -2,8 +2,9 @@
 
 This manual guides a user from installation through scientific reproduction,
 live model collection, candidate comparison, isolated replay, numerical
-reporting, troubleshooting, and citation. It documents `pqid-bench 1.0.0` as
-implemented.
+reporting, interactive exploration, troubleshooting, and citation. It
+documents `pqid-bench 1.1.0` as implemented against the frozen PQID-Bench
+v1.0.0 evidence release.
 
 ## Manual Chapters
 
@@ -13,14 +14,15 @@ implemented.
 4. [Live Model Testing](live-model-testing.md)
 5. [CLI Reference](cli-reference.md)
 6. [Reporting And Numerical Exports](reporting-and-exports.md)
-7. [Python API](python-api.md)
-8. [Data Dictionary](data-dictionary.md)
-9. [Metrics And Invariants](metrics-and-invariants.md)
-10. [End-To-End Workflows](workflows.md)
-11. [Reproducibility Contract](reproducibility-contract.md)
-12. [Security And Governance](security-governance.md)
-13. [Troubleshooting](troubleshooting.md)
-14. [Glossary](glossary.md)
+7. [Interactive Explorer](../INTERACTIVE_EXPLORER.md)
+8. [Python API](python-api.md)
+9. [Data Dictionary](data-dictionary.md)
+10. [Metrics And Invariants](metrics-and-invariants.md)
+11. [End-To-End Workflows](workflows.md)
+12. [Reproducibility Contract](reproducibility-contract.md)
+13. [Security And Governance](security-governance.md)
+14. [Troubleshooting](troubleshooting.md)
+15. [Glossary](glossary.md)
 
 ## Reading Paths
 
@@ -69,4 +71,4 @@ The manual covers offline verification, reproduction, live OpenAI-compatible
 collection, summarization, comparison, and archived or newly collected code
 replay. Live calls always create a new replication rather than reproducing
 archived model text. Native non-compatible provider protocols and automatic
-cost estimation remain outside version 1.0.0.
+cost estimation remain outside package version 1.1.0.
