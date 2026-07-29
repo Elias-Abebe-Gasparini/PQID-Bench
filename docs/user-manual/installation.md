@@ -19,17 +19,20 @@ than the package-core compatibility range.
 
 The core Python package has no mandatory third-party runtime dependency.
 Optional JSON Schema and host-side evaluator dependencies are declared
-separately in `pyproject.toml`.
+separately in `pyproject.toml`. Plotly is optional and is required only to
+generate the interactive explorer.
 
 ## 2. Obtain The Distribution Objects
 
-The release has three separate objects:
+The frozen benchmark and the current software package are distributed as
+separate objects:
 
 | Object | Purpose |
 | --- | --- |
 | `PQID-Bench-v1.0.0-frozen.zip` | complete frozen evidence bundle |
-| `pqid_bench-1.0.0-py3-none-any.whl` | installable Python interface |
-| `pqid_bench-1.0.0.tar.gz` | package source distribution |
+| `pqid-bench 1.1.0` | current installable interface, including interactive reporting |
+| `pqid_bench-1.0.0-py3-none-any.whl` | original package wheel preserved with the evidence freeze |
+| `pqid_bench-1.0.0.tar.gz` | original package source distribution preserved with the evidence freeze |
 
 The optional evaluator image is distributed separately as
 `pqid-bench-evaluator-1.0.0-linux-amd64.tar.gz`.
@@ -49,7 +52,7 @@ On Linux or macOS:
 sha256sum -c SHA256SUMS.txt
 ```
 
-On PowerShell:
+On PowerShell, for the original files preserved with the frozen release:
 
 ```powershell
 Get-FileHash .\pqid_bench-1.0.0-py3-none-any.whl -Algorithm SHA256
@@ -82,16 +85,16 @@ separate from scientific host environments.
 
 ## 5. Install The Package
 
-From the wheel:
+Install the current package from PyPI:
 
 ```bash
-python -m pip install pqid_bench-1.0.0-py3-none-any.whl
+python -m pip install pqid-bench==1.1.0
 ```
 
-From the source distribution:
+From a locally built current wheel:
 
 ```bash
-python -m pip install pqid_bench-1.0.0.tar.gz
+python -m pip install pqid_bench-1.1.0-py3-none-any.whl
 ```
 
 From a source checkout:
@@ -100,31 +103,45 @@ From a source checkout:
 python -m pip install .
 ```
 
-After a public PyPI release, the equivalent registry installation is:
+For exact software-level reconstruction of the original frozen environment,
+the archived `1.0.0` wheel remains installable:
 
 ```bash
-python -m pip install pqid-bench==1.0.0
+python -m pip install pqid_bench-1.0.0-py3-none-any.whl
 ```
 
-Do not treat that command as available until the package is actually
-published.
+Both package versions implement the same benchmark `1.0.0`, evaluator,
+predicate, and schema contracts. Package `1.1.0` adds presentation and
+documentation capabilities without changing a frozen score.
 
 ## 6. Optional Dependencies
 
 Install JSON Schema validation support:
 
 ```bash
-python -m pip install "pqid-bench[schema]==1.0.0"
+python -m pip install "pqid-bench[schema]==1.1.0"
 ```
 
 Install the host-side evaluator-compatible scientific stack:
 
 ```bash
-python -m pip install "pqid-bench[evaluator]==1.0.0"
+python -m pip install "pqid-bench[evaluator]==1.1.0"
 ```
 
 The evaluator extra is not required for Docker replay. The Docker image pins
 its own Qiskit environment.
+
+Install standalone interactive reporting:
+
+```bash
+python -m pip install "pqid-bench[visualization]==1.1.0"
+```
+
+Install the documentation and visualization toolchain from a source checkout:
+
+```bash
+python -m pip install -e ".[docs]"
+```
 
 For local package development:
 
@@ -169,7 +186,7 @@ pqid-bench verify "$RELEASE_DIR"
 Expected package version:
 
 ```text
-pqid-bench 1.0.0
+pqid-bench 1.1.0
 ```
 
 Expected integrity result:

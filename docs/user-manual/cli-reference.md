@@ -4,7 +4,7 @@
 
 ```text
 pqid-bench [-h] [--version]
-           {doctor,verify,reproduce,evaluate,compare,run-model,replay} ...
+           {doctor,verify,reproduce,evaluate,compare,dashboard,run-model,replay} ...
 ```
 
 The global `--version` option shows the installed package version:
@@ -60,7 +60,7 @@ pqid-bench doctor
 | `platform` | operating-system and architecture description |
 | `docker_cli` | resolved Docker executable path or `null` |
 | `docker_daemon_available` | whether the Docker daemon responded |
-| `optional_packages` | installed Qiskit, Qiskit Aer, and JSON Schema versions or `null` |
+| `optional_packages` | installed Qiskit, Qiskit Aer, JSON Schema, and Plotly versions or `null` |
 
 Docker or optional-package absence does not make `doctor` fail.
 
@@ -310,6 +310,47 @@ executable-signature disagreement rate, and structural-hallucination rate.
 
 - `0`: aligned comparison produced.
 - `1`: manifest, record, version, prompt, denominator, or invariant failure.
+- `2`: command-line parsing error.
+
+## `dashboard`
+
+### Purpose
+
+Builds a standalone interactive Plotly report from the frozen evaluator,
+ordered-structure, and stochastic-repeatability artifacts. The command
+validates the 21 model rows against the canonical pooled counts before writing
+the report. It does not contact providers or execute generated code.
+
+### Usage
+
+```bash
+pqid-bench dashboard \
+  --release-dir RELEASE_DIR \
+  --output pqid-bench-dashboard.html
+```
+
+### Arguments
+
+| Argument | Required | Meaning |
+| --- | ---: | --- |
+| `--release-dir` | yes | extracted frozen evidence bundle |
+| `--output` | yes | destination HTML path |
+| `--plotlyjs` | no | `embed` for offline use or `cdn` for a smaller file; default `embed` |
+
+Install the optional dependency before running the command:
+
+```bash
+python -m pip install "pqid-bench[visualization]"
+```
+
+The report includes the measurement ladder, model profiles, component
+heatmap, three-run repeatability view, provider-route aggregates, and an
+accessible model-level table.
+
+### Exit status
+
+- `0`: dashboard generated and cross-checks passed.
+- `1`: dependency, artifact, model-identity, or aggregate-parity failure.
 - `2`: command-line parsing error.
 
 ## `run-model`

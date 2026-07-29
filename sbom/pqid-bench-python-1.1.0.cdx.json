@@ -10,19 +10,24 @@
       "description": "Reproducibility and live-evaluation toolkit for the frozen PQID-Bench quantum-program generation benchmark",
       "externalReferences": [
         {
+          "comment": "from pyproject urls: Documentation",
+          "type": "documentation",
+          "url": "https://elias-abebe-gasparini.github.io/PQID-Bench/"
+        },
+        {
           "comment": "from pyproject urls: Archive",
           "type": "other",
           "url": "https://doi.org/10.5281/zenodo.21649753"
         },
         {
+          "comment": "from pyproject urls: Explorer",
+          "type": "other",
+          "url": "https://elias-abebe-gasparini.github.io/PQID-Bench/interactive/overview.html"
+        },
+        {
           "comment": "from pyproject urls: Dataset",
           "type": "other",
           "url": "https://huggingface.co/datasets/Elias-Abebe-Gasparini/PQID-Bench"
-        },
-        {
-          "comment": "from pyproject urls: Gateway",
-          "type": "other",
-          "url": "https://huggingface.co/spaces/Elias-Abebe-Gasparini/PQID-Bench-Gateway"
         },
         {
           "comment": "from pyproject urls: Repository",
@@ -45,7 +50,7 @@
       ],
       "name": "pqid-bench",
       "type": "library",
-      "version": "1.0.0"
+      "version": "1.1.0"
     },
     "properties": [
       {

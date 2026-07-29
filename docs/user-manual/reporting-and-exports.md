@@ -73,6 +73,28 @@ behavior explicit and prevents a renamed file from changing its contents.
 describe environment, integrity, or execution plans rather than statistical
 summaries.
 
+## Interactive HTML
+
+`dashboard` complements rather than replaces the four numerical formats. It
+loads the frozen per-model evaluator reports, ordered-structure audit, and
+three-run repeatability table; checks their pooled execution, assembly, and
+signature counts against `reproduce`; and writes an interactive Plotly HTML
+report.
+
+```bash
+pqid-bench dashboard \
+  --release-dir RELEASE_DIR \
+  --output pqid-bench-dashboard.html
+```
+
+The default output embeds Plotly.js and can be opened offline. The smaller
+`--plotlyjs cdn` form requires a browser network connection. Both forms keep
+the numerical table in the page and allow chart export to SVG.
+
+The public GitHub Pages explorer is built through the same interface. Its
+generated HTML and SVG fallbacks are deployment products, not files in the
+frozen evidence archive.
+
 ## Summary Layout
 
 Human-readable summaries separate four blocks:

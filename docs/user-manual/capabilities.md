@@ -11,6 +11,7 @@
 | summarize supplied evaluations | `evaluate` | canonical evaluation JSONL | no | no |
 | compare complete candidate | `compare` | evaluation JSONL, run manifest, evidence bundle | no | no |
 | compare matched subset | `compare --allow-partial` | partial evaluation JSONL, run manifest, evidence bundle | no | no |
+| build interactive report | `dashboard` | evidence bundle, Plotly extra | no | no |
 | inspect live collection plan | `run-model --dry-run` | evidence bundle, route and model | no | no |
 | collect fresh responses | `run-model` | evidence bundle, provider credential, acknowledgement | no | yes |
 | inspect replay plan | `replay --dry-run` | response JSONL, evidence bundle, acknowledgement | no | no |
@@ -34,6 +35,9 @@ summary is needed.
 Use `compare` when a candidate summary must be interpreted relative to the
 frozen benchmark on the same prompt denominator.
 
+Use `dashboard` when the frozen model, component, and repeatability results
+should be inspected in one standalone interactive HTML report.
+
 Use `run-model --dry-run` to validate a live collection contract without
 reading credentials or contacting a provider.
 
@@ -48,7 +52,7 @@ available.
 
 ## Capability Boundaries
 
-Version 1.0.0 does not:
+Package version 1.1.0 does not:
 
 - estimate provider cost;
 - translate native Anthropic Messages or Google Gemini request protocols;
@@ -57,6 +61,8 @@ Version 1.0.0 does not:
 - claim semantic equivalence from signature or tape equality;
 - compare an incomplete candidate with the full frozen denominator silently;
 - ship or execute an interactive Gradio evidence gateway; or
+- expose provider credentials or live model execution through the Plotly
+  explorer;
 - mutate the frozen primary matrix.
 
 The stable live interface targets OpenAI-compatible chat completions. Historical
@@ -73,6 +79,7 @@ package API.
 | `reproduce` | JSON, text, Markdown, or CSV summary with canonical parity |
 | `evaluate` | JSON, text, Markdown, or CSV summary for supplied cells |
 | `compare` | JSON, text, Markdown, or CSV aligned comparison and deltas |
+| `dashboard` | standalone interactive HTML report |
 | `run-model --dry-run` | credential-free JSON collection plan |
 | `run-model` | canonical responses, attempts, raw payloads, hashes, and manifest |
 | `replay --dry-run` | JSON Docker build and run command plan |
@@ -87,7 +94,7 @@ report to a path supplied with `--output`. See
 
 | Level | Operations | Trust requirement |
 | --- | --- | --- |
-| data-only | `doctor`, `verify`, `reproduce`, `evaluate`, `compare` | read local metadata and records |
+| data-only | `doctor`, `verify`, `reproduce`, `evaluate`, `compare`, `dashboard` | read local metadata and records |
 | network plan | `run-model --dry-run` | inspect prompt and route contract |
 | network collection | `run-model` | accept third-party prompt export and billing |
 | planned execution | `replay --dry-run` | inspect command without execution |

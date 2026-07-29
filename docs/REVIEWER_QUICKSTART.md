@@ -20,6 +20,10 @@ From the published wheel:
 python -m pip install pqid_bench-1.0.0-py3-none-any.whl
 ```
 
+This archived wheel gives exact software-level reconstruction of the original
+freeze. The current `pqid-bench 1.1.0` package is benchmark-compatible and may
+be installed from PyPI when the interactive dashboard is also desired.
+
 From a source checkout:
 
 ```bash
@@ -34,8 +38,8 @@ pqid-bench verify RELEASE_DIR
 ```
 
 `doctor` reports package, benchmark, evaluator, predicate, schema, manifest,
-Python, optional dependency, and Docker status. `verify` checks all 1,125
-manifest entries for existence, exact byte size, and SHA-256 equality.
+Python, optional dependency, and Docker status. `verify` checks every listed
+manifest entry for existence, exact byte size, and SHA-256 equality.
 
 Expected result:
 

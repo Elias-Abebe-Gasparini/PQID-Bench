@@ -8,7 +8,6 @@ import json
 from collections import Counter
 from pathlib import Path
 
-
 SCRIPT_ROOT = Path(__file__).resolve().parents[1]
 PACKAGE = (
     SCRIPT_ROOT
@@ -38,6 +37,7 @@ IGNORED_PARTS = {
     "site",
 }
 IGNORED_SUFFIXES = {".pyc", ".pyo", ".tmp"}
+GENERATED_PREFIXES = {("docs", "interactive")}
 FORBIDDEN_RELEASE_PATHS = {
     "MANUSCRIPT_ACM_TABLES_COPY_READY.md",
     "MANUSCRIPT_ACM_TEXT_ONLY_PASTE_READY.md",
@@ -114,6 +114,8 @@ def public_files() -> list[Path]:
         ):
             continue
         if path.suffix.lower() in IGNORED_SUFFIXES:
+            continue
+        if tuple(relative.parts[:2]) in GENERATED_PREFIXES:
             continue
         if relative.as_posix() == "ARTIFACT_MANIFEST.tsv":
             continue

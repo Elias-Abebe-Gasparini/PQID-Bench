@@ -86,6 +86,16 @@ assembly admissibility. The AS-Gap therefore retains `99.52%` of the ES-Gap,
 locating almost the entire measured separation between operational
 admissibility and structural reconstruction.
 
+## Interactive Evidence Explorer
+
+[![PQID-Bench operational and structural measurement ladder](https://elias-abebe-gasparini.github.io/PQID-Bench/interactive/assets/measurement-ladder.svg)](https://elias-abebe-gasparini.github.io/PQID-Bench/interactive/overview.html)
+
+The [interactive Plotly explorer](https://elias-abebe-gasparini.github.io/PQID-Bench/interactive/overview.html)
+provides model profiles, a component-recovery heatmap, nested structural
+endpoints, three-run repeatability estimates, provider-route summaries, and an
+accessible model table. It reads the frozen public artifacts and does not
+contact providers or execute generated code.
+
 The reference-signature predicate compares qubit count, classical-bit count,
 and the complete evaluator-visible operation-type count map. Scalar
 counted-operation agreement follows from count-map equality under the frozen
@@ -130,6 +140,9 @@ print(dataset["full"])
 ## Links
 
 - GitHub: <https://github.com/Elias-Abebe-Gasparini/PQID-Bench>
+- Documentation: <https://elias-abebe-gasparini.github.io/PQID-Bench/>
+- Interactive explorer: <https://elias-abebe-gasparini.github.io/PQID-Bench/interactive/overview.html>
+- Python package: <https://pypi.org/project/pqid-bench/>
 - PQID-Bench v1.0.0 archive: <https://doi.org/10.5281/zenodo.21649753>
 - Underlying PQID v1.0.2 DOI: <https://doi.org/10.5281/zenodo.20674853>
 - Stable PQID dataset concept DOI: <https://doi.org/10.5281/zenodo.20019482>
