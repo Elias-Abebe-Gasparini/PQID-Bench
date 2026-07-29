@@ -1,0 +1,22 @@
+{
+  "binding_constraint": "Only five eligible pilot-cohort signatures remain in the 5+ gate-type bin.",
+  "cross_stratum_counts": {
+    "1-2|extension": 17,
+    "1-2|pilot": 11,
+    "3-4|extension": 37,
+    "3-4|pilot": 25,
+    "5+|extension": 9,
+    "5+|pilot": 5,
+    "selected:1-2|extension": 5,
+    "selected:1-2|pilot": 7,
+    "selected:3-4|extension": 6,
+    "selected:3-4|pilot": 6,
+    "selected:5+|extension": 7,
+    "selected:5+|pilot": 5
+  },
+  "eligible_remaining_unique_signatures": 104,
+  "exact_six_by_six_feasible": false,
+  "optimization_rule": "Minimize maximum absolute cell deviation from six, then the sum of squared deviations, with deterministic seeded tie-breaking.",
+  "selection_seed": "13523d72ec07fde91188178f214ae9c9558ae6d8f07baa097dd89a53c14e048b",
+  "selection_seed_derivation": "sha256('pqid-bench-stochastic-repeatability-augmentation-v1' + NUL + base_panel_sha256)"
+}

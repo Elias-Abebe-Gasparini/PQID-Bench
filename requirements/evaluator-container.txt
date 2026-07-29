@@ -1,0 +1,4 @@
+# Canonical executable-replay environment used by docker/evaluator/Dockerfile.
+qiskit==2.1.1
+qiskit-aer==0.17.0
+python-dateutil==2.9.0.post0

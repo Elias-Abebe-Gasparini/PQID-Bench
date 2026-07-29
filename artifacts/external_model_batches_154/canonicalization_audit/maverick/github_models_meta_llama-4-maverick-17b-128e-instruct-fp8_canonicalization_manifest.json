@@ -1,0 +1,17 @@
+{
+  "canonical_response_rows": 154,
+  "canonical_response_sha256": "32524702d78a4e0c472b5d99f68566f5eea2f34e40b66761238baaa642e23fcb",
+  "created_at_utc": "2026-07-14T03:58:54+00:00",
+  "original_audit_sha256": "437e84abe0299476f1395fb4594dba888bf8f5a6478cb35cf2170753573deb2b",
+  "original_response_file": "PQID\\submissions\\acm_tqc_benchmark\\artifacts\\external_model_batches_154\\canonicalization_audit\\maverick\\github_models_meta_llama-4-maverick-17b-128e-instruct-fp8_responses_precanonical.jsonl",
+  "original_response_rows": 157,
+  "original_response_sha256": "437e84abe0299476f1395fb4594dba888bf8f5a6478cb35cf2170753573deb2b",
+  "request_file": "PQID\\submissions\\acm_tqc_benchmark\\artifacts\\external_model_batches_154\\requests\\github_models_meta_llama-4-maverick-17b-128e-instruct-fp8_requests.jsonl",
+  "request_rows": 154,
+  "response_file": "PQID\\submissions\\acm_tqc_benchmark\\artifacts\\external_model_batches_154\\responses\\github_models_meta_llama-4-maverick-17b-128e-instruct-fp8_responses.jsonl",
+  "schema_version": "pqid-bench-response-canonicalization-v1",
+  "selection_policy": "earliest non-error response by created_at_utc, then append order",
+  "superseded_audit_sha256": "01cb045d4a496cdd7c73164ae2a942a3e5da55166550ad2275e907439505a90a",
+  "superseded_response_file": "PQID\\submissions\\acm_tqc_benchmark\\artifacts\\external_model_batches_154\\canonicalization_audit\\maverick\\github_models_meta_llama-4-maverick-17b-128e-instruct-fp8_superseded_rows.jsonl",
+  "superseded_rows": 3
+}

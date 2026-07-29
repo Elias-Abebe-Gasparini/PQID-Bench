@@ -1,0 +1,147 @@
+{
+  "comparison": "Qiskit specialist minus exact Mistral parent",
+  "specialist_model": "Qiskit/mistral-small-3.2-24b-qiskit",
+  "specialist_route": "Hugging Face Inference Providers / Featherless AI",
+  "parent_model": "mistralai/mistral-small-3.2-24b-instruct",
+  "parent_route": "OpenRouter pinned to Mistral; fallback disabled",
+  "paired_prompts": 154,
+  "target_signature_clusters": 144,
+  "seed": 20260714,
+  "cluster_bootstrap_samples": 20000,
+  "cluster_sign_flip_samples": 50000,
+  "request_input_audit": {
+    "paired_request_rows": 154,
+    "model_input_sha256_mismatches": 0,
+    "prompt_record_sha256_mismatches": 0,
+    "generation_config_match": true,
+    "generation_config": {
+      "max_output_tokens": 2048,
+      "n": 1,
+      "single_pass": true,
+      "temperature": 0.0,
+      "top_p": 1.0
+    }
+  },
+  "comparisons": {
+    "execution": {
+      "specialist_count": 138,
+      "specialist_rate": 0.8961038961038961,
+      "parent_count": 139,
+      "parent_rate": 0.9025974025974026,
+      "difference": -0.006493506493506494,
+      "cluster_bootstrap_95_ci": [
+        -0.062111801242236024,
+        0.047619047619047616
+      ],
+      "specialist_wins": 9,
+      "parent_wins": 10,
+      "ties": 135,
+      "cluster_sign_flip_p": 1.0,
+      "exact_mcnemar_p_diagnostic": 1.0,
+      "holm_p_across_seven_endpoints": 1.0
+    },
+    "reference_signature": {
+      "specialist_count": 69,
+      "specialist_rate": 0.44805194805194803,
+      "parent_count": 75,
+      "parent_rate": 0.487012987012987,
+      "difference": -0.03896103896103896,
+      "cluster_bootstrap_95_ci": [
+        -0.10256410256410256,
+        0.0246951920864961
+      ],
+      "specialist_wins": 9,
+      "parent_wins": 15,
+      "ties": 130,
+      "cluster_sign_flip_p": 0.3077138457230855,
+      "exact_mcnemar_p_diagnostic": 0.30745625495910645,
+      "holm_p_across_seven_endpoints": 1.0
+    },
+    "gate_types": {
+      "specialist_count": 79,
+      "specialist_rate": 0.512987012987013,
+      "parent_count": 89,
+      "parent_rate": 0.577922077922078,
+      "difference": -0.06493506493506493,
+      "cluster_bootstrap_95_ci": [
+        -0.13071895424836602,
+        0.0
+      ],
+      "specialist_wins": 8,
+      "parent_wins": 18,
+      "ties": 128,
+      "cluster_sign_flip_p": 0.07397852042959141,
+      "exact_mcnemar_p_diagnostic": 0.07551869750022888,
+      "holm_p_across_seven_endpoints": 0.44387112257754846
+    },
+    "gate_count": {
+      "specialist_count": 99,
+      "specialist_rate": 0.6428571428571429,
+      "parent_count": 115,
+      "parent_rate": 0.7467532467532467,
+      "difference": -0.1038961038961039,
+      "cluster_bootstrap_95_ci": [
+        -0.17218543046357615,
+        -0.03821656050955414
+      ],
+      "specialist_wins": 7,
+      "parent_wins": 23,
+      "ties": 124,
+      "cluster_sign_flip_p": 0.00493990120197596,
+      "exact_mcnemar_p_diagnostic": 0.005222879350185394,
+      "holm_p_across_seven_endpoints": 0.03457930841383172
+    },
+    "qubits": {
+      "specialist_count": 132,
+      "specialist_rate": 0.8571428571428571,
+      "parent_count": 135,
+      "parent_rate": 0.8766233766233766,
+      "difference": -0.01948051948051948,
+      "cluster_bootstrap_95_ci": [
+        -0.0784313725490196,
+        0.039473684210526314
+      ],
+      "specialist_wins": 9,
+      "parent_wins": 12,
+      "ties": 133,
+      "cluster_sign_flip_p": 0.6607867842643147,
+      "exact_mcnemar_p_diagnostic": 0.6636238098144531,
+      "holm_p_across_seven_endpoints": 1.0
+    },
+    "classical_bits": {
+      "specialist_count": 111,
+      "specialist_rate": 0.7207792207792207,
+      "parent_count": 112,
+      "parent_rate": 0.7272727272727273,
+      "difference": -0.006493506493506494,
+      "cluster_bootstrap_95_ci": [
+        -0.07482993197278912,
+        0.061224489795918366
+      ],
+      "specialist_wins": 14,
+      "parent_wins": 15,
+      "ties": 125,
+      "cluster_sign_flip_p": 1.0,
+      "exact_mcnemar_p_diagnostic": 1.0,
+      "holm_p_across_seven_endpoints": 1.0
+    },
+    "qasm3": {
+      "specialist_count": 137,
+      "specialist_rate": 0.8896103896103896,
+      "parent_count": 139,
+      "parent_rate": 0.9025974025974026,
+      "difference": -0.012987012987012988,
+      "cluster_bootstrap_95_ci": [
+        -0.06918693423492202,
+        0.045454545454545456
+      ],
+      "specialist_wins": 9,
+      "parent_wins": 11,
+      "ties": 134,
+      "cluster_sign_flip_p": 0.8262634747305054,
+      "exact_mcnemar_p_diagnostic": 0.8238029479980469,
+      "holm_p_across_seven_endpoints": 1.0
+    }
+  },
+  "interpretation": "The specialist does not outperform its exact parent on the frozen reference-signature endpoint. Provider route differs, so the comparison is matched by checkpoint family and evaluation design but not by serving stack."
+}

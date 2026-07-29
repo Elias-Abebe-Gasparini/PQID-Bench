@@ -1,0 +1,918 @@
+{
+  "canonical": {
+    "cells": 3234,
+    "execution_count": 2950,
+    "execution_rate": 0.9121830550401979,
+    "execution_structure_gap_count": 1247,
+    "execution_structure_gap_rate": 0.38559059987631417,
+    "signature_count": 1703,
+    "signature_rate": 0.5265924551638838,
+    "signature_wrong_given_execution": 0.42271186440677966
+  },
+  "canonical_report_replay_disagreements": 0,
+  "canonical_reports_versioned": 21,
+  "cell_audit_path": "PQID/submissions/acm_tqc_benchmark/artifacts/analysis_154/evaluator_builtin_correction/evaluator_builtin_correction_cell_audit.jsonl",
+  "execution_transition": {
+    "changed": 224,
+    "gained": 224,
+    "lost": 0
+  },
+  "frozen_input_hashes": {
+    "prompt_file": {
+      "path": "PQID/submissions/acm_tqc_benchmark/artifacts/test_split_154/pqid_bench_external_generation_prompts_154.jsonl",
+      "sha256": "cc6ba5c8a1fbf8677bd016d3cad47c7934981a685cc51052bdc3beb03f99b6eb"
+    },
+    "prompt_text_objects_sha256": "075382feacb497334f00930afbae8f56e38f0148d5dc14f6e01d0d7eb8b940ed",
+    "response_log_manifest_sha256": "fb40b2406d17be6455cc99fb3d808c40db5c20d8eb9e916bacd38424b14f6640",
+    "response_logs": [
+      {
+        "bytes": 547110,
+        "model": "gpt-5.6-sol",
+        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/openai_gpt-5_6-sol_responses.jsonl",
+        "sha256": "0838e4883e1f3d8a20d387afef6cc7591677b8be8ccf93e0f5d1803b2c8e62c4"
+      },
+      {
+        "bytes": 533788,
+        "model": "gpt-5.5",
+        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/openai_gpt-5_5_responses.jsonl",
+        "sha256": "1b68b805cecd786c0f9b090faa036ae7c91cd43b442a2ec4c38143e87f9a82a8"
+      },
+      {
+        "bytes": 549058,
+        "model": "gpt-5.4-mini",
+        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/openai_gpt-5_4-mini_responses.jsonl",
+        "sha256": "145dd98f4d238a85f9aa198f1b07f35b66692a5da81168a5cde5b14c24a0cfc4"
+      },
+      {
+        "bytes": 429412,
+        "model": "claude-fable-5",
+        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/anthropic_claude-fable-5_responses.jsonl",
+        "sha256": "1c25dec68e653d981c0a87c3ff15323b2cfdc41246682e819ee23220f82adb2e"
+      },
+      {
+        "bytes": 458974,
+        "model": "claude-sonnet-4-6",
+        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/anthropic_claude-sonnet-4-6_responses.jsonl",
+        "sha256": "b7c34b0905e7b6c6dcee2c3c5c0e25cd7645ad8abf9507e0a544c2d3ffafc9fd"
+      },
+      {
+        "bytes": 378211,
+        "model": "claude-opus-4-8",
+        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/anthropic_claude-opus-4-8_responses.jsonl",
+        "sha256": "23caad403fc17f50daeb664584d0496f3dba8c130ef5f8611d90b5982e269cea"
+      },
+      {
+        "bytes": 403506,
+        "model": "gemini-2.5-pro",
+        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/google_gemini-2_5-pro_responses.jsonl",
+        "sha256": "d5e17f85bfe95b3056df0c103caedeb1cdfb4a184e93d41966c7a4fb26426489"
+      },
+      {
+        "bytes": 737906,
+        "model": "gemini-3.1-pro-preview",
+        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/google_gemini-3_1-pro-preview_responses.jsonl",
+        "sha256": "4bf62e142896a3db0680afb02bf51c5a9e5ebf0de73e811113aad201e27f16db"
+      },
+      {
+        "bytes": 838392,
+        "model": "deepseek-v4-pro",
+        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/deepseek_deepseek-v4-pro_responses.jsonl",
+        "sha256": "a9af25b0e5b4018d0ee9eeca6fb465d3e8e30fe613e277dbf05a0588da21a362"
+      },
+      {
+        "bytes": 743489,
+        "model": "deepseek-v4-flash",
+        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/deepseek_deepseek-v4-flash_responses.jsonl",
+        "sha256": "1b227656f00df18c95803564500fad25a1ad2dc0e9d33eb609adf4bcfbad0825"
+      },
+      {
+        "bytes": 358818,
+        "model": "mistral-ai/codestral-2501",
+        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/github_models_mistral-ai_codestral-2501_responses.jsonl",
+        "sha256": "456ba5bf31d16993b63ced9f131b25817dc6fd7f13170626d6a8a35a37031d6a"
+      },
+      {
+        "bytes": 473731,
+        "model": "qwen/qwen3-coder-next",
+        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/huggingface_router_qwen_qwen3-coder-next_novita_responses.jsonl",
+        "sha256": "86e3b48a7e625da0b862a15d8f4d8292bf78276e9084538090bb9a4ccf930b53"
+      },
+      {
+        "bytes": 419398,
+        "model": "meta/llama-4-maverick-17b-128e-instruct-fp8",
+        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/github_models_meta_llama-4-maverick-17b-128e-instruct-fp8_responses.jsonl",
+        "sha256": "32524702d78a4e0c472b5d99f68566f5eea2f34e40b66761238baaa642e23fcb"
+      },
+      {
+        "bytes": 417596,
+        "model": "llama-3.3-70b-versatile",
+        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/groq_llama-3_3-70b-versatile_responses.jsonl",
+        "sha256": "273d9fec439e9e877f39ed4be1686df4a60ab0ca75939c170fe06f50bd615dba"
+      },
+      {
+        "bytes": 641100,
+        "model": "openai/gpt-oss-120b",
+        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/groq_openai_gpt-oss-120b_responses.jsonl",
+        "sha256": "c87c7537133920d569516a306da825eb869c9d976357219943f55f0b88e0b647"
+      },
+      {
+        "bytes": 725191,
+        "model": "openai/gpt-oss-20b",
+        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/groq_openai_gpt-oss-20b_responses.jsonl",
+        "sha256": "f921a58926230896621376c3f55f92ea88aae3ab81134e0e0a5aceba28f9150d"
+      },
+      {
+        "bytes": 651201,
+        "model": "mistralai/mistral-small-3.2-24b-instruct",
+        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/mistral_parent_control/responses/openrouter_mistralai_mistral-small-3_2-24b-instruct_responses.jsonl",
+        "sha256": "b29f35972fa362830361ab3b1d79b9430baadfe5d6ef073c2f66d7c82c39373e"
+      },
+      {
+        "bytes": 640567,
+        "model": "qiskit/mistral-small-3.2-24b-qiskit",
+        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/qiskit_mistral/responses/huggingface_router_qiskit_mistral-small-3_2-24b-qiskit_featherless-ai_responses.jsonl",
+        "sha256": "3b0e242b5faa3335c3f9ef57ec53373881600fe0cdfdb1cb884034ef80e7d836"
+      },
+      {
+        "bytes": 1761752,
+        "model": "qwen/qwen3-32b",
+        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/groq_qwen_qwen3-32b_responses.jsonl",
+        "sha256": "e4f465de28bd35950f92b380f93a973ddb3361a7113d2de0f56c2eb08d2fd1e8"
+      },
+      {
+        "bytes": 472137,
+        "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/groq_meta-llama_llama-4-scout-17b-16e-instruct_responses.jsonl",
+        "sha256": "00a93afe70b2565f065dbf79b21981a142ec9c03c3b07e3e48347a230bee8072"
+      },
+      {
+        "bytes": 617235,
+        "model": "llama-3.1-8b-instant",
+        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/groq_llama-3_1-8b-instant_responses.jsonl",
+        "sha256": "42029a2e47c36a759bfd82f6539ceb6a7f48cedfb236b8434754a37c42c7973a"
+      }
+    ],
+    "split_manifest": {
+      "path": "PQID/submissions/acm_tqc_benchmark/artifacts/test_split_154/pqid_bench_split_154_manifest.json",
+      "sha256": "2f5a8171374e71940368464ace7ed31edd9ecedcf50467a01dd7192c55b654fd"
+    },
+    "structural_predicate_source_sha256": "cc0b92423941b2fc7da925386f3f2cb495687ab9113d6f3db88fa38cad094fcd",
+    "target_metadata_objects_sha256": "f2188c348ea894879af80e70efdfd1da773e50f74deca1677c1cc873ec803a26"
+  },
+  "generated_at_utc": "2026-07-14T17:27:31+00:00",
+  "invariants": [
+    "Both policies evaluate the same 154 prompt objects and target metadata.",
+    "Both policies evaluate the same 3,234 frozen model responses without regeneration.",
+    "Prompt IDs, row IDs, split assignments, request/response artifacts, and their stored hashes are unchanged.",
+    "The reference-signature predicate and target count maps are identical under both policies.",
+    "Only admissibility of the ordinary Python built-ins print and reversed differs."
+  ],
+  "legacy": {
+    "cells": 3234,
+    "execution_count": 2726,
+    "execution_rate": 0.8429189857761287,
+    "execution_structure_gap_count": 1123,
+    "execution_structure_gap_rate": 0.34724799010513296,
+    "signature_count": 1603,
+    "signature_rate": 0.49567099567099565,
+    "signature_wrong_given_execution": 0.4119589141599413
+  },
+  "per_model": [
+    {
+      "canonical": {
+        "cells": 154,
+        "execution_count": 153,
+        "execution_rate": 0.9935064935064936,
+        "execution_structure_gap_count": 56,
+        "execution_structure_gap_rate": 0.36363636363636365,
+        "signature_count": 97,
+        "signature_rate": 0.6298701298701299,
+        "signature_wrong_given_execution": 0.3660130718954248
+      },
+      "execution_transition": {
+        "changed": 0,
+        "gained": 0,
+        "lost": 0
+      },
+      "legacy": {
+        "cells": 154,
+        "execution_count": 153,
+        "execution_rate": 0.9935064935064936,
+        "execution_structure_gap_count": 56,
+        "execution_structure_gap_rate": 0.36363636363636365,
+        "signature_count": 97,
+        "signature_rate": 0.6298701298701299,
+        "signature_wrong_given_execution": 0.3660130718954248
+      },
+      "model": "gpt-5.6-sol",
+      "model_label": "GPT-5.6 Sol",
+      "signature_transition": {
+        "changed": 0,
+        "gained": 0,
+        "lost": 0
+      }
+    },
+    {
+      "canonical": {
+        "cells": 154,
+        "execution_count": 150,
+        "execution_rate": 0.974025974025974,
+        "execution_structure_gap_count": 57,
+        "execution_structure_gap_rate": 0.37012987012987014,
+        "signature_count": 93,
+        "signature_rate": 0.6038961038961039,
+        "signature_wrong_given_execution": 0.38
+      },
+      "execution_transition": {
+        "changed": 1,
+        "gained": 1,
+        "lost": 0
+      },
+      "legacy": {
+        "cells": 154,
+        "execution_count": 149,
+        "execution_rate": 0.9675324675324676,
+        "execution_structure_gap_count": 56,
+        "execution_structure_gap_rate": 0.36363636363636365,
+        "signature_count": 93,
+        "signature_rate": 0.6038961038961039,
+        "signature_wrong_given_execution": 0.37583892617449666
+      },
+      "model": "gpt-5.5",
+      "model_label": "GPT-5.5",
+      "signature_transition": {
+        "changed": 0,
+        "gained": 0,
+        "lost": 0
+      }
+    },
+    {
+      "canonical": {
+        "cells": 154,
+        "execution_count": 151,
+        "execution_rate": 0.9805194805194806,
+        "execution_structure_gap_count": 58,
+        "execution_structure_gap_rate": 0.37662337662337664,
+        "signature_count": 93,
+        "signature_rate": 0.6038961038961039,
+        "signature_wrong_given_execution": 0.3841059602649007
+      },
+      "execution_transition": {
+        "changed": 0,
+        "gained": 0,
+        "lost": 0
+      },
+      "legacy": {
+        "cells": 154,
+        "execution_count": 151,
+        "execution_rate": 0.9805194805194806,
+        "execution_structure_gap_count": 58,
+        "execution_structure_gap_rate": 0.37662337662337664,
+        "signature_count": 93,
+        "signature_rate": 0.6038961038961039,
+        "signature_wrong_given_execution": 0.3841059602649007
+      },
+      "model": "gpt-5.4-mini",
+      "model_label": "GPT-5.4 mini",
+      "signature_transition": {
+        "changed": 0,
+        "gained": 0,
+        "lost": 0
+      }
+    },
+    {
+      "canonical": {
+        "cells": 154,
+        "execution_count": 151,
+        "execution_rate": 0.9805194805194806,
+        "execution_structure_gap_count": 54,
+        "execution_structure_gap_rate": 0.35064935064935066,
+        "signature_count": 97,
+        "signature_rate": 0.6298701298701299,
+        "signature_wrong_given_execution": 0.3576158940397351
+      },
+      "execution_transition": {
+        "changed": 3,
+        "gained": 3,
+        "lost": 0
+      },
+      "legacy": {
+        "cells": 154,
+        "execution_count": 148,
+        "execution_rate": 0.961038961038961,
+        "execution_structure_gap_count": 51,
+        "execution_structure_gap_rate": 0.33116883116883117,
+        "signature_count": 97,
+        "signature_rate": 0.6298701298701299,
+        "signature_wrong_given_execution": 0.34459459459459457
+      },
+      "model": "claude-fable-5",
+      "model_label": "Claude Fable 5",
+      "signature_transition": {
+        "changed": 0,
+        "gained": 0,
+        "lost": 0
+      }
+    },
+    {
+      "canonical": {
+        "cells": 154,
+        "execution_count": 153,
+        "execution_rate": 0.9935064935064936,
+        "execution_structure_gap_count": 62,
+        "execution_structure_gap_rate": 0.4025974025974026,
+        "signature_count": 91,
+        "signature_rate": 0.5909090909090909,
+        "signature_wrong_given_execution": 0.40522875816993464
+      },
+      "execution_transition": {
+        "changed": 17,
+        "gained": 17,
+        "lost": 0
+      },
+      "legacy": {
+        "cells": 154,
+        "execution_count": 136,
+        "execution_rate": 0.8831168831168831,
+        "execution_structure_gap_count": 49,
+        "execution_structure_gap_rate": 0.3181818181818182,
+        "signature_count": 87,
+        "signature_rate": 0.564935064935065,
+        "signature_wrong_given_execution": 0.3602941176470588
+      },
+      "model": "claude-sonnet-4-6",
+      "model_label": "Claude Sonnet 4.6",
+      "signature_transition": {
+        "changed": 4,
+        "gained": 4,
+        "lost": 0
+      }
+    },
+    {
+      "canonical": {
+        "cells": 154,
+        "execution_count": 154,
+        "execution_rate": 1.0,
+        "execution_structure_gap_count": 62,
+        "execution_structure_gap_rate": 0.4025974025974026,
+        "signature_count": 92,
+        "signature_rate": 0.5974025974025974,
+        "signature_wrong_given_execution": 0.4025974025974026
+      },
+      "execution_transition": {
+        "changed": 0,
+        "gained": 0,
+        "lost": 0
+      },
+      "legacy": {
+        "cells": 154,
+        "execution_count": 154,
+        "execution_rate": 1.0,
+        "execution_structure_gap_count": 62,
+        "execution_structure_gap_rate": 0.4025974025974026,
+        "signature_count": 92,
+        "signature_rate": 0.5974025974025974,
+        "signature_wrong_given_execution": 0.4025974025974026
+      },
+      "model": "claude-opus-4-8",
+      "model_label": "Claude Opus 4.8",
+      "signature_transition": {
+        "changed": 0,
+        "gained": 0,
+        "lost": 0
+      }
+    },
+    {
+      "canonical": {
+        "cells": 154,
+        "execution_count": 136,
+        "execution_rate": 0.8831168831168831,
+        "execution_structure_gap_count": 53,
+        "execution_structure_gap_rate": 0.34415584415584416,
+        "signature_count": 83,
+        "signature_rate": 0.538961038961039,
+        "signature_wrong_given_execution": 0.3897058823529412
+      },
+      "execution_transition": {
+        "changed": 1,
+        "gained": 1,
+        "lost": 0
+      },
+      "legacy": {
+        "cells": 154,
+        "execution_count": 135,
+        "execution_rate": 0.8766233766233766,
+        "execution_structure_gap_count": 52,
+        "execution_structure_gap_rate": 0.33766233766233766,
+        "signature_count": 83,
+        "signature_rate": 0.538961038961039,
+        "signature_wrong_given_execution": 0.3851851851851852
+      },
+      "model": "gemini-2.5-pro",
+      "model_label": "Gemini 2.5 Pro",
+      "signature_transition": {
+        "changed": 0,
+        "gained": 0,
+        "lost": 0
+      }
+    },
+    {
+      "canonical": {
+        "cells": 154,
+        "execution_count": 149,
+        "execution_rate": 0.9675324675324676,
+        "execution_structure_gap_count": 55,
+        "execution_structure_gap_rate": 0.35714285714285715,
+        "signature_count": 94,
+        "signature_rate": 0.6103896103896104,
+        "signature_wrong_given_execution": 0.3691275167785235
+      },
+      "execution_transition": {
+        "changed": 0,
+        "gained": 0,
+        "lost": 0
+      },
+      "legacy": {
+        "cells": 154,
+        "execution_count": 149,
+        "execution_rate": 0.9675324675324676,
+        "execution_structure_gap_count": 55,
+        "execution_structure_gap_rate": 0.35714285714285715,
+        "signature_count": 94,
+        "signature_rate": 0.6103896103896104,
+        "signature_wrong_given_execution": 0.3691275167785235
+      },
+      "model": "gemini-3.1-pro-preview",
+      "model_label": "Gemini 3.1 Pro Preview",
+      "signature_transition": {
+        "changed": 0,
+        "gained": 0,
+        "lost": 0
+      }
+    },
+    {
+      "canonical": {
+        "cells": 154,
+        "execution_count": 141,
+        "execution_rate": 0.9155844155844156,
+        "execution_structure_gap_count": 50,
+        "execution_structure_gap_rate": 0.3246753246753247,
+        "signature_count": 91,
+        "signature_rate": 0.5909090909090909,
+        "signature_wrong_given_execution": 0.3546099290780142
+      },
+      "execution_transition": {
+        "changed": 0,
+        "gained": 0,
+        "lost": 0
+      },
+      "legacy": {
+        "cells": 154,
+        "execution_count": 141,
+        "execution_rate": 0.9155844155844156,
+        "execution_structure_gap_count": 50,
+        "execution_structure_gap_rate": 0.3246753246753247,
+        "signature_count": 91,
+        "signature_rate": 0.5909090909090909,
+        "signature_wrong_given_execution": 0.3546099290780142
+      },
+      "model": "deepseek-v4-pro",
+      "model_label": "DeepSeek V4 Pro",
+      "signature_transition": {
+        "changed": 0,
+        "gained": 0,
+        "lost": 0
+      }
+    },
+    {
+      "canonical": {
+        "cells": 154,
+        "execution_count": 137,
+        "execution_rate": 0.8896103896103896,
+        "execution_structure_gap_count": 56,
+        "execution_structure_gap_rate": 0.36363636363636365,
+        "signature_count": 81,
+        "signature_rate": 0.525974025974026,
+        "signature_wrong_given_execution": 0.40875912408759124
+      },
+      "execution_transition": {
+        "changed": 0,
+        "gained": 0,
+        "lost": 0
+      },
+      "legacy": {
+        "cells": 154,
+        "execution_count": 137,
+        "execution_rate": 0.8896103896103896,
+        "execution_structure_gap_count": 56,
+        "execution_structure_gap_rate": 0.36363636363636365,
+        "signature_count": 81,
+        "signature_rate": 0.525974025974026,
+        "signature_wrong_given_execution": 0.40875912408759124
+      },
+      "model": "deepseek-v4-flash",
+      "model_label": "DeepSeek V4 Flash",
+      "signature_transition": {
+        "changed": 0,
+        "gained": 0,
+        "lost": 0
+      }
+    },
+    {
+      "canonical": {
+        "cells": 154,
+        "execution_count": 144,
+        "execution_rate": 0.935064935064935,
+        "execution_structure_gap_count": 58,
+        "execution_structure_gap_rate": 0.37662337662337664,
+        "signature_count": 86,
+        "signature_rate": 0.5584415584415584,
+        "signature_wrong_given_execution": 0.4027777777777778
+      },
+      "execution_transition": {
+        "changed": 0,
+        "gained": 0,
+        "lost": 0
+      },
+      "legacy": {
+        "cells": 154,
+        "execution_count": 144,
+        "execution_rate": 0.935064935064935,
+        "execution_structure_gap_count": 58,
+        "execution_structure_gap_rate": 0.37662337662337664,
+        "signature_count": 86,
+        "signature_rate": 0.5584415584415584,
+        "signature_wrong_given_execution": 0.4027777777777778
+      },
+      "model": "mistral-ai/codestral-2501",
+      "model_label": "Codestral 25.01",
+      "signature_transition": {
+        "changed": 0,
+        "gained": 0,
+        "lost": 0
+      }
+    },
+    {
+      "canonical": {
+        "cells": 154,
+        "execution_count": 132,
+        "execution_rate": 0.8571428571428571,
+        "execution_structure_gap_count": 54,
+        "execution_structure_gap_rate": 0.35064935064935066,
+        "signature_count": 78,
+        "signature_rate": 0.5064935064935064,
+        "signature_wrong_given_execution": 0.4090909090909091
+      },
+      "execution_transition": {
+        "changed": 0,
+        "gained": 0,
+        "lost": 0
+      },
+      "legacy": {
+        "cells": 154,
+        "execution_count": 132,
+        "execution_rate": 0.8571428571428571,
+        "execution_structure_gap_count": 54,
+        "execution_structure_gap_rate": 0.35064935064935066,
+        "signature_count": 78,
+        "signature_rate": 0.5064935064935064,
+        "signature_wrong_given_execution": 0.4090909090909091
+      },
+      "model": "qwen/qwen3-coder-next",
+      "model_label": "Qwen3-Coder-Next",
+      "signature_transition": {
+        "changed": 0,
+        "gained": 0,
+        "lost": 0
+      }
+    },
+    {
+      "canonical": {
+        "cells": 154,
+        "execution_count": 145,
+        "execution_rate": 0.9415584415584416,
+        "execution_structure_gap_count": 70,
+        "execution_structure_gap_rate": 0.45454545454545453,
+        "signature_count": 75,
+        "signature_rate": 0.487012987012987,
+        "signature_wrong_given_execution": 0.4827586206896552
+      },
+      "execution_transition": {
+        "changed": 0,
+        "gained": 0,
+        "lost": 0
+      },
+      "legacy": {
+        "cells": 154,
+        "execution_count": 145,
+        "execution_rate": 0.9415584415584416,
+        "execution_structure_gap_count": 70,
+        "execution_structure_gap_rate": 0.45454545454545453,
+        "signature_count": 75,
+        "signature_rate": 0.487012987012987,
+        "signature_wrong_given_execution": 0.4827586206896552
+      },
+      "model": "meta/llama-4-maverick-17b-128e-instruct-fp8",
+      "model_label": "Llama 4 Maverick",
+      "signature_transition": {
+        "changed": 0,
+        "gained": 0,
+        "lost": 0
+      }
+    },
+    {
+      "canonical": {
+        "cells": 154,
+        "execution_count": 144,
+        "execution_rate": 0.935064935064935,
+        "execution_structure_gap_count": 73,
+        "execution_structure_gap_rate": 0.474025974025974,
+        "signature_count": 71,
+        "signature_rate": 0.461038961038961,
+        "signature_wrong_given_execution": 0.5069444444444444
+      },
+      "execution_transition": {
+        "changed": 0,
+        "gained": 0,
+        "lost": 0
+      },
+      "legacy": {
+        "cells": 154,
+        "execution_count": 144,
+        "execution_rate": 0.935064935064935,
+        "execution_structure_gap_count": 73,
+        "execution_structure_gap_rate": 0.474025974025974,
+        "signature_count": 71,
+        "signature_rate": 0.461038961038961,
+        "signature_wrong_given_execution": 0.5069444444444444
+      },
+      "model": "llama-3.3-70b-versatile",
+      "model_label": "Llama 3.3 70B",
+      "signature_transition": {
+        "changed": 0,
+        "gained": 0,
+        "lost": 0
+      }
+    },
+    {
+      "canonical": {
+        "cells": 154,
+        "execution_count": 149,
+        "execution_rate": 0.9675324675324676,
+        "execution_structure_gap_count": 67,
+        "execution_structure_gap_rate": 0.43506493506493504,
+        "signature_count": 82,
+        "signature_rate": 0.5324675324675324,
+        "signature_wrong_given_execution": 0.44966442953020136
+      },
+      "execution_transition": {
+        "changed": 12,
+        "gained": 12,
+        "lost": 0
+      },
+      "legacy": {
+        "cells": 154,
+        "execution_count": 137,
+        "execution_rate": 0.8896103896103896,
+        "execution_structure_gap_count": 57,
+        "execution_structure_gap_rate": 0.37012987012987014,
+        "signature_count": 80,
+        "signature_rate": 0.5194805194805194,
+        "signature_wrong_given_execution": 0.41605839416058393
+      },
+      "model": "openai/gpt-oss-120b",
+      "model_label": "GPT-OSS 120B",
+      "signature_transition": {
+        "changed": 2,
+        "gained": 2,
+        "lost": 0
+      }
+    },
+    {
+      "canonical": {
+        "cells": 154,
+        "execution_count": 143,
+        "execution_rate": 0.9285714285714286,
+        "execution_structure_gap_count": 65,
+        "execution_structure_gap_rate": 0.42207792207792205,
+        "signature_count": 78,
+        "signature_rate": 0.5064935064935064,
+        "signature_wrong_given_execution": 0.45454545454545453
+      },
+      "execution_transition": {
+        "changed": 13,
+        "gained": 13,
+        "lost": 0
+      },
+      "legacy": {
+        "cells": 154,
+        "execution_count": 130,
+        "execution_rate": 0.8441558441558441,
+        "execution_structure_gap_count": 57,
+        "execution_structure_gap_rate": 0.37012987012987014,
+        "signature_count": 73,
+        "signature_rate": 0.474025974025974,
+        "signature_wrong_given_execution": 0.43846153846153846
+      },
+      "model": "openai/gpt-oss-20b",
+      "model_label": "GPT-OSS 20B",
+      "signature_transition": {
+        "changed": 5,
+        "gained": 5,
+        "lost": 0
+      }
+    },
+    {
+      "canonical": {
+        "cells": 154,
+        "execution_count": 139,
+        "execution_rate": 0.9025974025974026,
+        "execution_structure_gap_count": 64,
+        "execution_structure_gap_rate": 0.4155844155844156,
+        "signature_count": 75,
+        "signature_rate": 0.487012987012987,
+        "signature_wrong_given_execution": 0.460431654676259
+      },
+      "execution_transition": {
+        "changed": 44,
+        "gained": 44,
+        "lost": 0
+      },
+      "legacy": {
+        "cells": 154,
+        "execution_count": 95,
+        "execution_rate": 0.6168831168831169,
+        "execution_structure_gap_count": 43,
+        "execution_structure_gap_rate": 0.2792207792207792,
+        "signature_count": 52,
+        "signature_rate": 0.33766233766233766,
+        "signature_wrong_given_execution": 0.45263157894736844
+      },
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "model_label": "Mistral Small 3.2 24B",
+      "signature_transition": {
+        "changed": 23,
+        "gained": 23,
+        "lost": 0
+      }
+    },
+    {
+      "canonical": {
+        "cells": 154,
+        "execution_count": 138,
+        "execution_rate": 0.8961038961038961,
+        "execution_structure_gap_count": 69,
+        "execution_structure_gap_rate": 0.44805194805194803,
+        "signature_count": 69,
+        "signature_rate": 0.44805194805194803,
+        "signature_wrong_given_execution": 0.5
+      },
+      "execution_transition": {
+        "changed": 33,
+        "gained": 33,
+        "lost": 0
+      },
+      "legacy": {
+        "cells": 154,
+        "execution_count": 105,
+        "execution_rate": 0.6818181818181818,
+        "execution_structure_gap_count": 50,
+        "execution_structure_gap_rate": 0.3246753246753247,
+        "signature_count": 55,
+        "signature_rate": 0.35714285714285715,
+        "signature_wrong_given_execution": 0.47619047619047616
+      },
+      "model": "qiskit/mistral-small-3.2-24b-qiskit",
+      "model_label": "Qiskit Mistral 3.2 24B",
+      "signature_transition": {
+        "changed": 14,
+        "gained": 14,
+        "lost": 0
+      }
+    },
+    {
+      "canonical": {
+        "cells": 154,
+        "execution_count": 89,
+        "execution_rate": 0.577922077922078,
+        "execution_structure_gap_count": 35,
+        "execution_structure_gap_rate": 0.22727272727272727,
+        "signature_count": 54,
+        "signature_rate": 0.35064935064935066,
+        "signature_wrong_given_execution": 0.39325842696629215
+      },
+      "execution_transition": {
+        "changed": 1,
+        "gained": 1,
+        "lost": 0
+      },
+      "legacy": {
+        "cells": 154,
+        "execution_count": 88,
+        "execution_rate": 0.5714285714285714,
+        "execution_structure_gap_count": 35,
+        "execution_structure_gap_rate": 0.22727272727272727,
+        "signature_count": 53,
+        "signature_rate": 0.34415584415584416,
+        "signature_wrong_given_execution": 0.3977272727272727
+      },
+      "model": "qwen/qwen3-32b",
+      "model_label": "Qwen3 32B",
+      "signature_transition": {
+        "changed": 1,
+        "gained": 1,
+        "lost": 0
+      }
+    },
+    {
+      "canonical": {
+        "cells": 154,
+        "execution_count": 127,
+        "execution_rate": 0.8246753246753247,
+        "execution_structure_gap_count": 58,
+        "execution_structure_gap_rate": 0.37662337662337664,
+        "signature_count": 69,
+        "signature_rate": 0.44805194805194803,
+        "signature_wrong_given_execution": 0.4566929133858268
+      },
+      "execution_transition": {
+        "changed": 38,
+        "gained": 38,
+        "lost": 0
+      },
+      "legacy": {
+        "cells": 154,
+        "execution_count": 89,
+        "execution_rate": 0.577922077922078,
+        "execution_structure_gap_count": 43,
+        "execution_structure_gap_rate": 0.2792207792207792,
+        "signature_count": 46,
+        "signature_rate": 0.2987012987012987,
+        "signature_wrong_given_execution": 0.48314606741573035
+      },
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "model_label": "Llama 4 Scout",
+      "signature_transition": {
+        "changed": 23,
+        "gained": 23,
+        "lost": 0
+      }
+    },
+    {
+      "canonical": {
+        "cells": 154,
+        "execution_count": 125,
+        "execution_rate": 0.8116883116883117,
+        "execution_structure_gap_count": 71,
+        "execution_structure_gap_rate": 0.461038961038961,
+        "signature_count": 54,
+        "signature_rate": 0.35064935064935066,
+        "signature_wrong_given_execution": 0.568
+      },
+      "execution_transition": {
+        "changed": 61,
+        "gained": 61,
+        "lost": 0
+      },
+      "legacy": {
+        "cells": 154,
+        "execution_count": 64,
+        "execution_rate": 0.4155844155844156,
+        "execution_structure_gap_count": 38,
+        "execution_structure_gap_rate": 0.24675324675324675,
+        "signature_count": 26,
+        "signature_rate": 0.16883116883116883,
+        "signature_wrong_given_execution": 0.59375
+      },
+      "model": "llama-3.1-8b-instant",
+      "model_label": "Llama 3.1 8B",
+      "signature_transition": {
+        "changed": 28,
+        "gained": 28,
+        "lost": 0
+      }
+    }
+  ],
+  "policy_difference": {
+    "canonical_additions": [
+      "print",
+      "reversed"
+    ],
+    "legacy_missing_builtins": [
+      "print",
+      "reversed"
+    ],
+    "print_behavior": "silent no-op preserving the normal None return value"
+  },
+  "schema_version": "pqid-bench-evaluator-correction-audit-v2",
+  "signature_transition": {
+    "changed": 100,
+    "gained": 100,
+    "lost": 0
+  },
+  "versions": {
+    "canonical_evaluator": "pqid-bench-evaluator-1.1.0-safe-builtins",
+    "legacy_evaluator": "pqid-bench-evaluator-1.0.0-restricted-builtins",
+    "structural_predicate": "pqid-bench-reference-signature-1.0.0-count-map"
+  }
+}

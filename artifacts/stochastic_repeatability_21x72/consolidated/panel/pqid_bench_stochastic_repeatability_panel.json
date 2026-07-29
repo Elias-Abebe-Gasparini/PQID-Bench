@@ -1,0 +1,1820 @@
+{
+  "balance": {
+    "barrier": 29,
+    "cohorts": {
+      "extension": 36,
+      "pilot": 36
+    },
+    "gate_type_bins": {
+      "1-2": 24,
+      "3-4": 24,
+      "5+": 24
+    },
+    "no_barrier": 43
+  },
+  "created_at_utc": "2026-07-16T05:23:04+00:00",
+  "panel_file": "artifacts/stochastic_repeatability_21x72/consolidated/panel/pqid_bench_stochastic_repeatability_prompts_72.jsonl",
+  "panel_sha256": "3e242bf2d8db9e4deda76a1a62c06484949ff245e8aa6284c64948e51c4049ed",
+  "prompt_count": 72,
+  "schema_version": "pqid-bench-stochastic-repeatability-panel-v2",
+  "selected_prompts": [
+    {
+      "cohort": "pilot",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0002"
+      ],
+      "gate_type_bin": "5+",
+      "gate_type_count": 6,
+      "has_barrier": true,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0002",
+      "reference_signature": {
+        "gate_count": 10,
+        "gate_types": {
+          "barrier": 4,
+          "cx": 3,
+          "cz": 1,
+          "h": 2,
+          "measure": 3,
+          "x": 1
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      },
+      "reference_signature_sha256": "8203e9f0d1177c3b1498aab7097a4f372fbad61b9113fe656a1f5caf5fd0ceef",
+      "row_id": "342b5a2173a87a8c1c14cd59ee2143a6",
+      "selection_rank_sha256": "43ce67dfb3a63ff889a365ee0516f10aa3ff8b34a634da8c5d9d0879af764f63"
+    },
+    {
+      "cohort": "pilot",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0006"
+      ],
+      "gate_type_bin": "1-2",
+      "gate_type_count": 2,
+      "has_barrier": false,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0006",
+      "reference_signature": {
+        "gate_count": 9,
+        "gate_types": {
+          "h": 8,
+          "x": 1
+        },
+        "num_clbits": 7,
+        "num_qubits": 14
+      },
+      "reference_signature_sha256": "bde1f8a42be0d3de9102ef2959cff9b11da52aed0e39f3ed75f2c3ca92523dab",
+      "row_id": "95015976244ad0993f631cfbd15069b3",
+      "selection_rank_sha256": "172568ed954079f1a941380eac59d6b1b7704bc688d4ec12b02c754210d95f8c"
+    },
+    {
+      "cohort": "pilot",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0007"
+      ],
+      "gate_type_bin": "5+",
+      "gate_type_count": 5,
+      "has_barrier": true,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0007",
+      "reference_signature": {
+        "gate_count": 6,
+        "gate_types": {
+          "barrier": 1,
+          "h": 1,
+          "measure": 3,
+          "x": 1,
+          "y": 1
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      },
+      "reference_signature_sha256": "d078a01b9bc6bae5728fad1eb035af39519a5998586ce76a9b1444e35aa73438",
+      "row_id": "8c2c2245760ba7f1878d2c8942580d51",
+      "selection_rank_sha256": "2dddc95724babef476dd5ebebdad889246c2286670ddc6f3cd47ba69fcb7c008"
+    },
+    {
+      "cohort": "pilot",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0008"
+      ],
+      "gate_type_bin": "3-4",
+      "gate_type_count": 4,
+      "has_barrier": true,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0008",
+      "reference_signature": {
+        "gate_count": 6,
+        "gate_types": {
+          "barrier": 1,
+          "cx": 2,
+          "h": 1,
+          "measure": 3
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      },
+      "reference_signature_sha256": "fe7e1808dde7d3be3e8f0f905f2a022320c486e663a0e7e55db02e7df1ecd5cb",
+      "row_id": "b9370fef2e4345d5a02f041727c0e9ed",
+      "selection_rank_sha256": "0d636d06549509cbad311a2e2114080e800d166a36e177fef5c9b21e60650ac3"
+    },
+    {
+      "cohort": "pilot",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0010"
+      ],
+      "gate_type_bin": "5+",
+      "gate_type_count": 5,
+      "has_barrier": true,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0010",
+      "reference_signature": {
+        "gate_count": 6,
+        "gate_types": {
+          "barrier": 1,
+          "cx": 1,
+          "h": 1,
+          "measure": 3,
+          "rz": 1
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      },
+      "reference_signature_sha256": "9af2bb7c2628c6c9fb4d69e8b880d544bb7779c7b853886c2ed12fefee60926d",
+      "row_id": "111cf9066f2e772b3d2acbc5779aa3b7",
+      "selection_rank_sha256": "1be7e44f806c32e257afa2e761363589549cf97ef6b3fc620981fc6b6eee860d"
+    },
+    {
+      "cohort": "pilot",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0012"
+      ],
+      "gate_type_bin": "3-4",
+      "gate_type_count": 4,
+      "has_barrier": false,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0012",
+      "reference_signature": {
+        "gate_count": 6,
+        "gate_types": {
+          "measure": 3,
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      },
+      "reference_signature_sha256": "60aa698a4e3538f6f60431e932469a8a682aa072bc49776bedee9a28b6372e42",
+      "row_id": "b87696b70906d74ed1adac4fc9775e47",
+      "selection_rank_sha256": "0680a1c53f84a35c592d847a0d4e1ce8341a293de24408fb361e5a42ce5826f9"
+    },
+    {
+      "cohort": "pilot",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0013"
+      ],
+      "gate_type_bin": "1-2",
+      "gate_type_count": 2,
+      "has_barrier": false,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0013",
+      "reference_signature": {
+        "gate_count": 5,
+        "gate_types": {
+          "h": 3,
+          "measure": 2
+        },
+        "num_clbits": 2,
+        "num_qubits": 2
+      },
+      "reference_signature_sha256": "cee59e0188dc348b5ce778e91f0bbc722892a67eedf264d7672b9c4f68d16ea2",
+      "row_id": "7d91de4a069bdbdd4dc6ee644812a051",
+      "selection_rank_sha256": "1a8add26a528adbe87111e589240e12009753a2169139ce9a5e12a6a97a7756a"
+    },
+    {
+      "cohort": "pilot",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0017",
+        "pqid_bench_external_gen_0018"
+      ],
+      "gate_type_bin": "1-2",
+      "gate_type_count": 2,
+      "has_barrier": false,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0017",
+      "reference_signature": {
+        "gate_count": 2,
+        "gate_types": {
+          "h": 1,
+          "x": 1
+        },
+        "num_clbits": 2,
+        "num_qubits": 2
+      },
+      "reference_signature_sha256": "7dd1c8eaf6e455cc3e4a5e6ab6268dc03ceee7c2f82d170c30eaf72bdf70a2e5",
+      "row_id": "63a798e9385fa9d1429563ee8adc6351",
+      "selection_rank_sha256": "66d2e54ea561eb2c764b94340aac72a31849ee47f037f0fae65c6b4762c03485"
+    },
+    {
+      "cohort": "pilot",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0019",
+        "pqid_bench_external_gen_0054",
+        "pqid_bench_external_gen_0055",
+        "pqid_bench_external_gen_0058"
+      ],
+      "gate_type_bin": "3-4",
+      "gate_type_count": 3,
+      "has_barrier": false,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0019",
+      "reference_signature": {
+        "gate_count": 4,
+        "gate_types": {
+          "cx": 1,
+          "h": 1,
+          "measure": 2
+        },
+        "num_clbits": 2,
+        "num_qubits": 2
+      },
+      "reference_signature_sha256": "8d99cab7c7e0176a0ff89f38f96991e2699918d7328c5e77128ec715bf6d174e",
+      "row_id": "4836d6c99d7467ad5a95c40d6a26e194",
+      "selection_rank_sha256": "3706f9a951cbff3746e0a67faf4392e6ddc224dbd761323e5363be7a8ebe5d33"
+    },
+    {
+      "cohort": "pilot",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0021"
+      ],
+      "gate_type_bin": "3-4",
+      "gate_type_count": 4,
+      "has_barrier": false,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0021",
+      "reference_signature": {
+        "gate_count": 4,
+        "gate_types": {
+          "id": 1,
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "num_clbits": 0,
+        "num_qubits": 4
+      },
+      "reference_signature_sha256": "418e9b08077ae4e7f5144b5f7fbe46ab1b3ccf08daa4d2b990f8d6dbff252899",
+      "row_id": "559a32688ee6cb90c2f896e8ca9b8d3f",
+      "selection_rank_sha256": "14efa2cc5dfb59cb8b02c671b7b812293e09870452e6ba88d1b7a659e3b679cc"
+    },
+    {
+      "cohort": "pilot",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0022"
+      ],
+      "gate_type_bin": "5+",
+      "gate_type_count": 5,
+      "has_barrier": false,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0022",
+      "reference_signature": {
+        "gate_count": 13,
+        "gate_types": {
+          "ccx": 1,
+          "cx": 4,
+          "h": 6,
+          "measure": 1,
+          "z": 1
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      },
+      "reference_signature_sha256": "10a9a0a4838f2b775a09894a2adc487a1f4b9bc8df910841922bb25fbd8d611c",
+      "row_id": "3303b70cc7ccc2251b3a9bfcaf639bac",
+      "selection_rank_sha256": "99122be609b5340b5cc3500c9652bc21f25355986bcafe2ca3432e2e5a92e365"
+    },
+    {
+      "cohort": "pilot",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0023"
+      ],
+      "gate_type_bin": "3-4",
+      "gate_type_count": 3,
+      "has_barrier": true,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0023",
+      "reference_signature": {
+        "gate_count": 3,
+        "gate_types": {
+          "barrier": 1,
+          "cx": 1,
+          "measure": 2
+        },
+        "num_clbits": 2,
+        "num_qubits": 2
+      },
+      "reference_signature_sha256": "885057498f6a155035a30cd60e2fa19d90dd86ad01bb61da2392753f88095595",
+      "row_id": "c97bb9e32a1b085e343d3426e4ca19d1",
+      "selection_rank_sha256": "4ac93ea4cd2e5f73654e84f2726fee0f0f7be72707739ba6295edbbab2454149"
+    },
+    {
+      "cohort": "pilot",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0024"
+      ],
+      "gate_type_bin": "3-4",
+      "gate_type_count": 3,
+      "has_barrier": true,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0024",
+      "reference_signature": {
+        "gate_count": 2,
+        "gate_types": {
+          "barrier": 1,
+          "measure": 1,
+          "y": 1
+        },
+        "num_clbits": 1,
+        "num_qubits": 1
+      },
+      "reference_signature_sha256": "e87ab55ad5e69a511933bc889232d5d6141e46fd5bf61322a9dd3532707336c1",
+      "row_id": "ea062ec55927ebdb33526ef9df5fcd17",
+      "selection_rank_sha256": "06842a94f9fdd7d237ac25294e2d7b438bc00607dbf75f1a0a70cae1160d4f8e"
+    },
+    {
+      "cohort": "pilot",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0025"
+      ],
+      "gate_type_bin": "1-2",
+      "gate_type_count": 2,
+      "has_barrier": false,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0025",
+      "reference_signature": {
+        "gate_count": 4,
+        "gate_types": {
+          "h": 3,
+          "x": 1
+        },
+        "num_clbits": 0,
+        "num_qubits": 8
+      },
+      "reference_signature_sha256": "3fdac170c0c8acfab214635a69882800c20cd439de620ee3f1c6d0638ee4902d",
+      "row_id": "a88dd99b639d58c841106812a4fdf39e",
+      "selection_rank_sha256": "098db0661de943dee6235f27bfc0de803c43122fb4e7f6586a743a923d8f371f"
+    },
+    {
+      "cohort": "pilot",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0027"
+      ],
+      "gate_type_bin": "1-2",
+      "gate_type_count": 2,
+      "has_barrier": false,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0027",
+      "reference_signature": {
+        "gate_count": 2,
+        "gate_types": {
+          "cx": 1,
+          "h": 1
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      },
+      "reference_signature_sha256": "1718b3912eecdc32c906f3df8cec55dda32c892c8481873a14551756ffdf7d19",
+      "row_id": "739d1db6c189b4e37d0405fda3c7124f",
+      "selection_rank_sha256": "a175bf4ddc8928d47648f4f64914c5b83cd36dd2aaf66fce59ad97230898a509"
+    },
+    {
+      "cohort": "pilot",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0031"
+      ],
+      "gate_type_bin": "3-4",
+      "gate_type_count": 4,
+      "has_barrier": true,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0031",
+      "reference_signature": {
+        "gate_count": 12,
+        "gate_types": {
+          "barrier": 1,
+          "cx": 6,
+          "h": 1,
+          "measure": 5
+        },
+        "num_clbits": 5,
+        "num_qubits": 5
+      },
+      "reference_signature_sha256": "6d6a8628f07facbf0ac189b963f2cd3bfd4a6815d6f52813b3b7862bb0f6c2ce",
+      "row_id": "2b44177d6d19a848f17062d73269449f",
+      "selection_rank_sha256": "217c7fcce26313a3087b46416e67010a5f2acce52febef748f90df2365ea2b9b"
+    },
+    {
+      "cohort": "pilot",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0032"
+      ],
+      "gate_type_bin": "1-2",
+      "gate_type_count": 2,
+      "has_barrier": false,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0032",
+      "reference_signature": {
+        "gate_count": 3,
+        "gate_types": {
+          "cx": 1,
+          "x": 2
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      },
+      "reference_signature_sha256": "85945725761a529d2b86fa069b3f526b06b09438d0c7b3f13a5d499fc219988b",
+      "row_id": "fd40d8ebdf4ad37af95aa2bfbea216e6",
+      "selection_rank_sha256": "20d33e62b2c26a445377077d03b2ee140e17c2db01509b3d1a55ccf68e4e3e73"
+    },
+    {
+      "cohort": "pilot",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0034"
+      ],
+      "gate_type_bin": "3-4",
+      "gate_type_count": 4,
+      "has_barrier": true,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0034",
+      "reference_signature": {
+        "gate_count": 18,
+        "gate_types": {
+          "barrier": 1,
+          "cx": 2,
+          "ry": 8,
+          "rz": 8
+        },
+        "num_clbits": 0,
+        "num_qubits": 4
+      },
+      "reference_signature_sha256": "4017c4b67cb31def536856652b8c3b87cb4935ead8e5f5dae7739ec8bb6eca5a",
+      "row_id": "07e669924b6076cf58a2fa2c7c8bec9b",
+      "selection_rank_sha256": "0a7453b3e2b4d45415ca66989cf6a7ef3c1f58375bd2df6e116b155fabfd3206"
+    },
+    {
+      "cohort": "pilot",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0003",
+        "pqid_bench_external_gen_0035"
+      ],
+      "gate_type_bin": "1-2",
+      "gate_type_count": 2,
+      "has_barrier": false,
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0035",
+      "reference_signature": {
+        "gate_count": 5,
+        "gate_types": {
+          "h": 2,
+          "measure": 3
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      },
+      "reference_signature_sha256": "0f9254ded8e136f9719dde0875f7ce6e20d78af174d572c87673e8560c6c5435",
+      "row_id": "87fbe49459dbea78b7e38252e98cb49d",
+      "selection_rank_sha256": "2b8b7f848760a29645b52a351a19232df2db7874390d24c85c4eea8c68e42630"
+    },
+    {
+      "cohort": "pilot",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0036"
+      ],
+      "gate_type_bin": "5+",
+      "gate_type_count": 5,
+      "has_barrier": true,
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0036",
+      "reference_signature": {
+        "gate_count": 10,
+        "gate_types": {
+          "barrier": 4,
+          "cx": 1,
+          "h": 6,
+          "measure": 2,
+          "x": 1
+        },
+        "num_clbits": 3,
+        "num_qubits": 4
+      },
+      "reference_signature_sha256": "be783a0481e52426db8ba6c9430a913d5480dde187ca44872f05337264c76cde",
+      "row_id": "2fa3a631f5b382cc2e8968fb2198e927",
+      "selection_rank_sha256": "6540ba1d26688d75fa9ab53fccf176f707e8f5d30bd5f3fb8d1cb72245104914"
+    },
+    {
+      "cohort": "pilot",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0037"
+      ],
+      "gate_type_bin": "1-2",
+      "gate_type_count": 2,
+      "has_barrier": false,
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0037",
+      "reference_signature": {
+        "gate_count": 3,
+        "gate_types": {
+          "cx": 1,
+          "measure": 2
+        },
+        "num_clbits": 2,
+        "num_qubits": 2
+      },
+      "reference_signature_sha256": "586e9a26093d0f808ee86c156eea793ac98607586b32d1a91e752b66c4c36fe4",
+      "row_id": "8ceb78bf2fd48c2f3ca665ebf317195d",
+      "selection_rank_sha256": "6819c3560227d2dc1cf381087f3f133029c990ba4164f855858dc426af22e294"
+    },
+    {
+      "cohort": "pilot",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0038"
+      ],
+      "gate_type_bin": "5+",
+      "gate_type_count": 5,
+      "has_barrier": true,
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0038",
+      "reference_signature": {
+        "gate_count": 6,
+        "gate_types": {
+          "barrier": 4,
+          "cx": 1,
+          "h": 3,
+          "measure": 1,
+          "x": 1
+        },
+        "num_clbits": 1,
+        "num_qubits": 2
+      },
+      "reference_signature_sha256": "c01f19ab461cd8b2c662306182d25e707ae1a323b096c963906bc3f635d198e4",
+      "row_id": "3b01da04d4b63643f47538da5764d634",
+      "selection_rank_sha256": "7995ef41ef847de618081eea495fbcaf1cb0880756f51f4835240635020a93f8"
+    },
+    {
+      "cohort": "pilot",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0041"
+      ],
+      "gate_type_bin": "1-2",
+      "gate_type_count": 2,
+      "has_barrier": false,
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0041",
+      "reference_signature": {
+        "gate_count": 3,
+        "gate_types": {
+          "cx": 2,
+          "h": 1
+        },
+        "num_clbits": 0,
+        "num_qubits": 3
+      },
+      "reference_signature_sha256": "1891b1deaeaefb2c831b9adeb6033f458c3513016a2d207830f1470fdb52325b",
+      "row_id": "6cd13ef82cb98d628cf07ed80628a20e",
+      "selection_rank_sha256": "2bfa0cbaec6a14e75b36468ec21ea07775f64dfb29dbc4a6625a7a4ed932ee17"
+    },
+    {
+      "cohort": "pilot",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0044",
+        "pqid_bench_external_gen_0045"
+      ],
+      "gate_type_bin": "3-4",
+      "gate_type_count": 3,
+      "has_barrier": false,
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0045",
+      "reference_signature": {
+        "gate_count": 6,
+        "gate_types": {
+          "cx": 1,
+          "measure": 2,
+          "x": 3
+        },
+        "num_clbits": 2,
+        "num_qubits": 2
+      },
+      "reference_signature_sha256": "52985a8e8ed00981f0d2195dc644aa690eff0b4fee184f6dd6f3f957e1c30ad9",
+      "row_id": "71dca50b30d4cf20924114357957d328",
+      "selection_rank_sha256": "0355ef354df095b16ef1bfb5ccbdbc633773ab24491336e1b109f99bf965b8f6"
+    },
+    {
+      "cohort": "pilot",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0046"
+      ],
+      "gate_type_bin": "5+",
+      "gate_type_count": 5,
+      "has_barrier": true,
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0046",
+      "reference_signature": {
+        "gate_count": 15,
+        "gate_types": {
+          "barrier": 3,
+          "cx": 1,
+          "h": 9,
+          "measure": 4,
+          "x": 1
+        },
+        "num_clbits": 4,
+        "num_qubits": 5
+      },
+      "reference_signature_sha256": "4fb6f0b5417697903c2ca1f0a74d7fa398791092b38ddd8c218fd29651aaa8a8",
+      "row_id": "22c9d4fe2038d89f8fba56950a7cada6",
+      "selection_rank_sha256": "ab877f75b8af4bcd85aeaee1ffcc8aa835adba9f4c188d28fd82bdcac24c979e"
+    },
+    {
+      "cohort": "pilot",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0049"
+      ],
+      "gate_type_bin": "3-4",
+      "gate_type_count": 3,
+      "has_barrier": true,
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0049",
+      "reference_signature": {
+        "gate_count": 5,
+        "gate_types": {
+          "barrier": 1,
+          "h": 4,
+          "x": 1
+        },
+        "num_clbits": 3,
+        "num_qubits": 4
+      },
+      "reference_signature_sha256": "4b836c460654f731050e20bc1730acc98ac9571fd1ae97c30420107966f1a43c",
+      "row_id": "79826338793aa7682ede884495094a5d",
+      "selection_rank_sha256": "20835382bce42dd4b339896b60b230d2268c70a76b52b077c4bd5b2750b17632"
+    },
+    {
+      "cohort": "pilot",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0050"
+      ],
+      "gate_type_bin": "5+",
+      "gate_type_count": 5,
+      "has_barrier": true,
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0050",
+      "reference_signature": {
+        "gate_count": 12,
+        "gate_types": {
+          "barrier": 3,
+          "ccx": 3,
+          "cx": 4,
+          "measure": 4,
+          "x": 1
+        },
+        "num_clbits": 4,
+        "num_qubits": 4
+      },
+      "reference_signature_sha256": "871de4845d89b067dd5154e50be7ec293724d0fffff19f3209c8936d673fe6ba",
+      "row_id": "919aeda5cceddc4fc127ff60dd01a29b",
+      "selection_rank_sha256": "70da1aea653e8a80910ce64a56fe0e0492a9a9f3c6ac344341b784983139b053"
+    },
+    {
+      "cohort": "pilot",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0051"
+      ],
+      "gate_type_bin": "1-2",
+      "gate_type_count": 2,
+      "has_barrier": true,
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0051",
+      "reference_signature": {
+        "gate_count": 3,
+        "gate_types": {
+          "barrier": 1,
+          "h": 3
+        },
+        "num_clbits": 3,
+        "num_qubits": 6
+      },
+      "reference_signature_sha256": "8cf652507b538b3bee45e772822f190ab847398c09fe3c1a6bec58e8864fdb13",
+      "row_id": "027618fd659b824197595729cf31f47c",
+      "selection_rank_sha256": "c90204464e21924de650b9a07f6f5dfdca6b20663def3beca75b681a5fed4870"
+    },
+    {
+      "cohort": "pilot",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0052"
+      ],
+      "gate_type_bin": "5+",
+      "gate_type_count": 5,
+      "has_barrier": true,
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0052",
+      "reference_signature": {
+        "gate_count": 7,
+        "gate_types": {
+          "barrier": 2,
+          "ccx": 1,
+          "cx": 2,
+          "measure": 2,
+          "x": 2
+        },
+        "num_clbits": 2,
+        "num_qubits": 4
+      },
+      "reference_signature_sha256": "3d1d70dfae6e93d359eab46a1a9979a1c1fd0828871fbf81151c98cd628dabbc",
+      "row_id": "fe6ceb0008d6ba02a9a43283e6f232ab",
+      "selection_rank_sha256": "f24f9160b2953fc03681cc5aacd477b8f414f1b30dce69d2122e18e9a86eb3e7"
+    },
+    {
+      "cohort": "pilot",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0057"
+      ],
+      "gate_type_bin": "1-2",
+      "gate_type_count": 2,
+      "has_barrier": false,
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0057",
+      "reference_signature": {
+        "gate_count": 4,
+        "gate_types": {
+          "ccx": 1,
+          "measure": 3
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      },
+      "reference_signature_sha256": "e952554ad209e96e1d7f3596e2822584ee773fe4881399fc90311141331afc3d",
+      "row_id": "9cf600c76820dcf3388bb75539da72b2",
+      "selection_rank_sha256": "330c0d1506c0194741fa67f3659a8f68a7277a2b8ca4408dcad04fdb7aa48ac7"
+    },
+    {
+      "cohort": "pilot",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0059"
+      ],
+      "gate_type_bin": "1-2",
+      "gate_type_count": 2,
+      "has_barrier": false,
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0059",
+      "reference_signature": {
+        "gate_count": 2,
+        "gate_types": {
+          "measure": 1,
+          "z": 1
+        },
+        "num_clbits": 1,
+        "num_qubits": 1
+      },
+      "reference_signature_sha256": "a53a2a1f0b37d6008a35d1b22b74b9d35af0e9ac7d4ff4a0df97c4ffc9d5e558",
+      "row_id": "ba4dd4ef36655f03f9d59a4e47cfbb97",
+      "selection_rank_sha256": "1266a6a373f33d94361e9662c63bf13c35cfd63962e34d75d52affb1494aa47d"
+    },
+    {
+      "cohort": "pilot",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0060"
+      ],
+      "gate_type_bin": "5+",
+      "gate_type_count": 12,
+      "has_barrier": false,
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0060",
+      "reference_signature": {
+        "gate_count": 25,
+        "gate_types": {
+          "h": 2,
+          "id": 1,
+          "p": 2,
+          "rxx": 3,
+          "ry": 1,
+          "rz": 2,
+          "rzz": 1,
+          "s": 3,
+          "swap": 1,
+          "x": 3,
+          "y": 2,
+          "z": 4
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      },
+      "reference_signature_sha256": "22a7b622aea76c632bcf267c40e78e509a198edd09c7f8e10632ab5985513760",
+      "row_id": "809e8f242e1f856a489404708db1052d",
+      "selection_rank_sha256": "36ad2df30e2b935db7c85b12c378090c1547d286fe251a958e0444ea3eb6f59f"
+    },
+    {
+      "cohort": "pilot",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0061"
+      ],
+      "gate_type_bin": "3-4",
+      "gate_type_count": 4,
+      "has_barrier": false,
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0061",
+      "reference_signature": {
+        "gate_count": 11,
+        "gate_types": {
+          "cx": 2,
+          "h": 6,
+          "measure": 2,
+          "x": 1
+        },
+        "num_clbits": 2,
+        "num_qubits": 3
+      },
+      "reference_signature_sha256": "a03eabf2e315749cb08097b51316b0178013b485ea28bb1b0b2fc9b5916b84c6",
+      "row_id": "121b7d4ac0698d99b0ef0cd5cf0b05b4",
+      "selection_rank_sha256": "2c4e85bc8f78814c96ecb44ab67e8202a3699f5cb81b2926b6c5c702ada23ed8"
+    },
+    {
+      "cohort": "pilot",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0067"
+      ],
+      "gate_type_bin": "1-2",
+      "gate_type_count": 2,
+      "has_barrier": false,
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0067",
+      "reference_signature": {
+        "gate_count": 6,
+        "gate_types": {
+          "cx": 5,
+          "h": 1
+        },
+        "num_clbits": 0,
+        "num_qubits": 7
+      },
+      "reference_signature_sha256": "302f1857fd5a02f5af44e581e8f261cf18108d556dc0235dabb8a267a3b33887",
+      "row_id": "8cd536eedc26f0d18f9f37bc3bd735c7",
+      "selection_rank_sha256": "0b43c00b8246888bfc3d710fa7aa951555f9e01eef6bb6bffc3c32dd73e9de6b"
+    },
+    {
+      "cohort": "pilot",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0068"
+      ],
+      "gate_type_bin": "3-4",
+      "gate_type_count": 4,
+      "has_barrier": false,
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0068",
+      "reference_signature": {
+        "gate_count": 7,
+        "gate_types": {
+          "cx": 1,
+          "h": 3,
+          "measure": 2,
+          "x": 1
+        },
+        "num_clbits": 2,
+        "num_qubits": 2
+      },
+      "reference_signature_sha256": "860896c54131b8747cb1eb122318c8e5e46479bd73a7ace3041192792a2a8c11",
+      "row_id": "0749045a01e09c25e238db8c95b42a1d",
+      "selection_rank_sha256": "3d621f9f648ffdc19cad50e77ebe90e26a5aa253650e82749498ce1f3ae9fcc7"
+    },
+    {
+      "cohort": "pilot",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0069"
+      ],
+      "gate_type_bin": "5+",
+      "gate_type_count": 5,
+      "has_barrier": true,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0069",
+      "reference_signature": {
+        "gate_count": 9,
+        "gate_types": {
+          "barrier": 1,
+          "cs": 2,
+          "ct": 1,
+          "h": 3,
+          "measure": 3
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      },
+      "reference_signature_sha256": "64957f4d18f9453c071329b914a33236b4eec873bafea8eff59c6be3e63e5366",
+      "row_id": "5d423bfd53ab7a878993a9b1d8e7002c",
+      "selection_rank_sha256": "0214d99de0ac2c71358e25d46f5089d361fe72a7c46f46cc17a78492bb166f00"
+    },
+    {
+      "cohort": "extension",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0073"
+      ],
+      "gate_type_bin": "1-2",
+      "gate_type_count": 1,
+      "has_barrier": false,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0073",
+      "reference_signature": {
+        "gate_count": 2,
+        "gate_types": {
+          "cx": 2
+        },
+        "num_clbits": 0,
+        "num_qubits": 3
+      },
+      "reference_signature_sha256": "7e3966f8e44a2ea987ec35e1de16051e8fc2e4a8a847c26fdc0094826de2a24b",
+      "row_id": "620fbefaffbb9ff062e60965d221cd8d",
+      "selection_rank_sha256": "2527b959c50cb356b4075eeadac7918fd719cb132313ca5c9d396daf5c328b0e"
+    },
+    {
+      "cohort": "extension",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0074"
+      ],
+      "gate_type_bin": "5+",
+      "gate_type_count": 5,
+      "has_barrier": false,
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0074",
+      "reference_signature": {
+        "gate_count": 5,
+        "gate_types": {
+          "cx": 1,
+          "cz": 1,
+          "rx": 1,
+          "rzz": 1,
+          "t": 1
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      },
+      "reference_signature_sha256": "d6285ef991dad83e23463fc6437a2dc319d5722a775f05d9c1502d3550ccf1e8",
+      "row_id": "029ccb81b1ba9a1af63fa18e853a683a",
+      "selection_rank_sha256": "8f1e2bdb705c60b3c87118480b36bcbe6701e27e8f831fb796c69bc272720ebb"
+    },
+    {
+      "cohort": "extension",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0077"
+      ],
+      "gate_type_bin": "1-2",
+      "gate_type_count": 2,
+      "has_barrier": false,
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0077",
+      "reference_signature": {
+        "gate_count": 4,
+        "gate_types": {
+          "h": 3,
+          "x": 1
+        },
+        "num_clbits": 3,
+        "num_qubits": 4
+      },
+      "reference_signature_sha256": "a07a237dfa7847c1d238dbb691334bd6b6d6ebe056f16b1497e46120853eb960",
+      "row_id": "e4f4812c03049fff83cb28a6d080f8f5",
+      "selection_rank_sha256": "5ebaf0f8eadc48f8bd605d4d57f4489efba593c3a98f9e32aaab2ccea49ed1fa"
+    },
+    {
+      "cohort": "extension",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0079"
+      ],
+      "gate_type_bin": "5+",
+      "gate_type_count": 5,
+      "has_barrier": true,
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0079",
+      "reference_signature": {
+        "gate_count": 8,
+        "gate_types": {
+          "barrier": 4,
+          "cx": 1,
+          "h": 3,
+          "measure": 1,
+          "x": 3
+        },
+        "num_clbits": 1,
+        "num_qubits": 2
+      },
+      "reference_signature_sha256": "3265b1c72d7daeca8301dd7441ea4b3ffc023e326697ddde9a4ef8a07b13b128",
+      "row_id": "906305c9fb1fb8e1c6415f04d0d3f20e",
+      "selection_rank_sha256": "add793ff9da5849ac377cabf769efdb04b4caafd49d866868fe17e3764cb4568"
+    },
+    {
+      "cohort": "extension",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0080"
+      ],
+      "gate_type_bin": "3-4",
+      "gate_type_count": 3,
+      "has_barrier": true,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0080",
+      "reference_signature": {
+        "gate_count": 2,
+        "gate_types": {
+          "barrier": 1,
+          "cx": 1,
+          "h": 1
+        },
+        "num_clbits": 0,
+        "num_qubits": 2
+      },
+      "reference_signature_sha256": "dbb0461edd019fa6345f857eaeab6bf1662861d645e69f76031a8cdb958efe5a",
+      "row_id": "02ba4a4377c66d487a2e6931ed66d33a",
+      "selection_rank_sha256": "30a9a63932bb360c2c6f11f14dc9eff4d526ba196670f926b6d42e8a5bb71ec2"
+    },
+    {
+      "cohort": "extension",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0083"
+      ],
+      "gate_type_bin": "3-4",
+      "gate_type_count": 4,
+      "has_barrier": false,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0083",
+      "reference_signature": {
+        "gate_count": 6,
+        "gate_types": {
+          "cx": 1,
+          "h": 3,
+          "measure": 1,
+          "x": 1
+        },
+        "num_clbits": 1,
+        "num_qubits": 2
+      },
+      "reference_signature_sha256": "9377188d2eeb92461be8864be35e3d013958bd3070c2e1fe76f2056febb62dd9",
+      "row_id": "5d72f740afa604104eb85ce3a86f5b02",
+      "selection_rank_sha256": "0ab9e84581a1398e8294ffd6e6aa1a1d7eed48c496f0b49f3da753de2523d2de"
+    },
+    {
+      "cohort": "extension",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0085"
+      ],
+      "gate_type_bin": "3-4",
+      "gate_type_count": 3,
+      "has_barrier": false,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0085",
+      "reference_signature": {
+        "gate_count": 6,
+        "gate_types": {
+          "cx": 2,
+          "h": 1,
+          "measure": 3
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      },
+      "reference_signature_sha256": "70fada9c8c2769dfeb8f113cbea32709914ec3c4ab106e1cb52b98cbf8ca19de",
+      "row_id": "592e52fb23fba3822735a260d650b69b",
+      "selection_rank_sha256": "0168ae5ca7966dd0b1424326d3af5dc2c3cbfad84437ddae3abacbf123049b1f"
+    },
+    {
+      "cohort": "extension",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0090"
+      ],
+      "gate_type_bin": "5+",
+      "gate_type_count": 5,
+      "has_barrier": true,
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0090",
+      "reference_signature": {
+        "gate_count": 6,
+        "gate_types": {
+          "barrier": 1,
+          "cx": 1,
+          "h": 2,
+          "measure": 2,
+          "x": 1
+        },
+        "num_clbits": 2,
+        "num_qubits": 2
+      },
+      "reference_signature_sha256": "a8fd8e3f5057c880edf422a5bca79484afde39ef10e832aac7b7891bbdac37e5",
+      "row_id": "dada34568fbb7260eae748e23439e949",
+      "selection_rank_sha256": "1449e5958697693596d2f49d797605669f62d8d5397c2eb8164f89678a86b6db"
+    },
+    {
+      "cohort": "extension",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0091"
+      ],
+      "gate_type_bin": "5+",
+      "gate_type_count": 5,
+      "has_barrier": false,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0091",
+      "reference_signature": {
+        "gate_count": 134,
+        "gate_types": {
+          "cx": 58,
+          "measure": 20,
+          "rx": 18,
+          "ry": 20,
+          "rz": 18
+        },
+        "num_clbits": 20,
+        "num_qubits": 20
+      },
+      "reference_signature_sha256": "5298f99a9afe537653be5abc2226d02dddc53030fae4b3606f73aa6377986e8d",
+      "row_id": "54a57e9df7ae3557e10c5815ed26abf0",
+      "selection_rank_sha256": "28f34265552314be39907521926f9ddd7e2de77248db78cf46e6ba0fa9921d02"
+    },
+    {
+      "cohort": "extension",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0092"
+      ],
+      "gate_type_bin": "5+",
+      "gate_type_count": 5,
+      "has_barrier": false,
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0092",
+      "reference_signature": {
+        "gate_count": 7,
+        "gate_types": {
+          "cx": 1,
+          "h": 1,
+          "measure": 3,
+          "x": 1,
+          "y": 1
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      },
+      "reference_signature_sha256": "2522478e9f9fb68227a18e4d30fde120c7899086bcd80d90aac9bf857c1091d6",
+      "row_id": "5c575fae788df635fc7b650af2695fea",
+      "selection_rank_sha256": "10b123f9ec4b25b246220a0ca01472df15322ad6060deb9a6bcfd551bd4e043c"
+    },
+    {
+      "cohort": "extension",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0095"
+      ],
+      "gate_type_bin": "3-4",
+      "gate_type_count": 4,
+      "has_barrier": false,
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0095",
+      "reference_signature": {
+        "gate_count": 9,
+        "gate_types": {
+          "ccx": 2,
+          "cx": 2,
+          "x": 4,
+          "z": 1
+        },
+        "num_clbits": 0,
+        "num_qubits": 4
+      },
+      "reference_signature_sha256": "8a776379257b0000835869284f451395f8341286bd3d5b4da27a1ec0070e5708",
+      "row_id": "bec1e62640e9fc7598ae467d1aebfb76",
+      "selection_rank_sha256": "029c4c9a3590100e4421524b1abf2ecd78fa90f68fc4c841df500105babe73e3"
+    },
+    {
+      "cohort": "extension",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0096"
+      ],
+      "gate_type_bin": "1-2",
+      "gate_type_count": 2,
+      "has_barrier": false,
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0096",
+      "reference_signature": {
+        "gate_count": 4,
+        "gate_types": {
+          "h": 1,
+          "measure": 3
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      },
+      "reference_signature_sha256": "0863c339db40ed0bbab819ed20c68897a9545679e7fb899b50a6da783491234d",
+      "row_id": "64a54a167b454b514e1e62d1172cb878",
+      "selection_rank_sha256": "231d5d51d97a22b37d8a1b66a93e22df9fda11d58723ff4f21f14ac444cd35da"
+    },
+    {
+      "cohort": "extension",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0098"
+      ],
+      "gate_type_bin": "5+",
+      "gate_type_count": 5,
+      "has_barrier": false,
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0098",
+      "reference_signature": {
+        "gate_count": 5,
+        "gate_types": {
+          "ccx": 1,
+          "id": 1,
+          "p": 1,
+          "x": 1,
+          "z": 1
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      },
+      "reference_signature_sha256": "80f4e0f8809ea1e6c121fc1f30e3a245988d5d578a2e6b44b7173a8c8448404a",
+      "row_id": "a66ec0160ec39cfc94eca2e4797f9d81",
+      "selection_rank_sha256": "1afb0444e5900393f8dadd6b0fe06834b16bf869205a52589f165b3f43135771"
+    },
+    {
+      "cohort": "extension",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0100"
+      ],
+      "gate_type_bin": "1-2",
+      "gate_type_count": 2,
+      "has_barrier": false,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0100",
+      "reference_signature": {
+        "gate_count": 2,
+        "gate_types": {
+          "cx": 1,
+          "h": 1
+        },
+        "num_clbits": 0,
+        "num_qubits": 2
+      },
+      "reference_signature_sha256": "44fc95890e0b4d535e34b587574f205f03e077567e470837b183bed1ffc99a8a",
+      "row_id": "840782535b745ab2752b88eaded6e28b",
+      "selection_rank_sha256": "3f9c3f57cf08d6c8f65b6c6fe1c9e3d193c40d66edda47b846ef1a0f26fb2d6c"
+    },
+    {
+      "cohort": "extension",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0102"
+      ],
+      "gate_type_bin": "3-4",
+      "gate_type_count": 3,
+      "has_barrier": true,
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0102",
+      "reference_signature": {
+        "gate_count": 9,
+        "gate_types": {
+          "barrier": 1,
+          "h": 7,
+          "x": 2
+        },
+        "num_clbits": 7,
+        "num_qubits": 7
+      },
+      "reference_signature_sha256": "9e799e8c5df4ccddef2b02fa66915b052a9ecc261ce51766d6745cef443a77f5",
+      "row_id": "7ed86b5148b0ebe97514bc08bbc73cf6",
+      "selection_rank_sha256": "2046851e485100b788a8ed40939cbf27afb5b567702950337d4703d6b744ae29"
+    },
+    {
+      "cohort": "extension",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0105"
+      ],
+      "gate_type_bin": "1-2",
+      "gate_type_count": 2,
+      "has_barrier": false,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0105",
+      "reference_signature": {
+        "gate_count": 2,
+        "gate_types": {
+          "measure": 1,
+          "x": 1
+        },
+        "num_clbits": 1,
+        "num_qubits": 1
+      },
+      "reference_signature_sha256": "37a00b522665f15af759e4c20657a2a2344834140dbffb61b01c03297fc3606e",
+      "row_id": "81b4114f409740d4dfb42ccf65d3bc32",
+      "selection_rank_sha256": "10825fdc18070576a3c9d874ce15cd2cc98b8da5d60b420effdb32feea7422e0"
+    },
+    {
+      "cohort": "extension",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0106"
+      ],
+      "gate_type_bin": "5+",
+      "gate_type_count": 15,
+      "has_barrier": false,
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0106",
+      "reference_signature": {
+        "gate_count": 25,
+        "gate_types": {
+          "ccx": 4,
+          "cswap": 4,
+          "cz": 1,
+          "h": 1,
+          "id": 1,
+          "p": 1,
+          "rx": 1,
+          "rxx": 2,
+          "ry": 1,
+          "rzz": 2,
+          "s": 2,
+          "swap": 1,
+          "sx": 2,
+          "x": 1,
+          "z": 1
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      },
+      "reference_signature_sha256": "643863331df2e8a2b5e8c6071562fbcea228ab2a4897c95b153cefc336441166",
+      "row_id": "11cae7dcacd9d142fb416ef9ee8b69d5",
+      "selection_rank_sha256": "bd2be2609910b6c43023538770087a9724dfb259d372bc422a42c0452a423cc5"
+    },
+    {
+      "cohort": "extension",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0107"
+      ],
+      "gate_type_bin": "3-4",
+      "gate_type_count": 4,
+      "has_barrier": false,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0107",
+      "reference_signature": {
+        "gate_count": 6,
+        "gate_types": {
+          "h": 1,
+          "measure": 3,
+          "x": 1,
+          "y": 1
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      },
+      "reference_signature_sha256": "0cecfa0d4fac10209fcfd4d36adab043e8899f94e24f1000d44eba3edbf0643a",
+      "row_id": "52b614e48e2afb6af439c0cbf3efa9c6",
+      "selection_rank_sha256": "0a1e8fade53506dc0814996dd878926a5b9d32cefb6da84eaec0f23194e2378f"
+    },
+    {
+      "cohort": "extension",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0111"
+      ],
+      "gate_type_bin": "1-2",
+      "gate_type_count": 2,
+      "has_barrier": false,
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0111",
+      "reference_signature": {
+        "gate_count": 2,
+        "gate_types": {
+          "h": 1,
+          "measure": 1
+        },
+        "num_clbits": 1,
+        "num_qubits": 1
+      },
+      "reference_signature_sha256": "b536c0e716112b0b5dd281676af14150c28f58db7aea2400e42061ef400c15fe",
+      "row_id": "b643136a5361ea8ee62abf9f0df8a049",
+      "selection_rank_sha256": "0b51636fe94e4ede2944c9f09f99f0e2d86b14d4f445e225ef419481f78204b1"
+    },
+    {
+      "cohort": "extension",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0114"
+      ],
+      "gate_type_bin": "1-2",
+      "gate_type_count": 2,
+      "has_barrier": false,
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0114",
+      "reference_signature": {
+        "gate_count": 6,
+        "gate_types": {
+          "cx": 2,
+          "h": 4
+        },
+        "num_clbits": 0,
+        "num_qubits": 3
+      },
+      "reference_signature_sha256": "f91cba6b9df6c7e3b316ef07936165324e4c3f41962159be13f63ff49abcda51",
+      "row_id": "2f7098cf4670dc0e3a42922164ae45d1",
+      "selection_rank_sha256": "436420be5742f8baa9800ff04ed3057a38d9eaab3eaab109c37311f278c14f1b"
+    },
+    {
+      "cohort": "extension",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0115"
+      ],
+      "gate_type_bin": "5+",
+      "gate_type_count": 5,
+      "has_barrier": true,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0115",
+      "reference_signature": {
+        "gate_count": 10,
+        "gate_types": {
+          "barrier": 5,
+          "cx": 3,
+          "cz": 1,
+          "h": 3,
+          "measure": 3
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      },
+      "reference_signature_sha256": "7df928b0816885a59595b2600d75ac42b66a2a82c019d649c18d63860e79ac2c",
+      "row_id": "dd27139a736a5020cd877b4332c423b9",
+      "selection_rank_sha256": "22f4ff5dd6776325f12cd23977422f54575e6686a9445995540e9bde5cc83d9f"
+    },
+    {
+      "cohort": "extension",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0116"
+      ],
+      "gate_type_bin": "1-2",
+      "gate_type_count": 2,
+      "has_barrier": false,
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0116",
+      "reference_signature": {
+        "gate_count": 2,
+        "gate_types": {
+          "h": 1,
+          "x": 1
+        },
+        "num_clbits": 3,
+        "num_qubits": 4
+      },
+      "reference_signature_sha256": "ed2d1f25376f2386114b923cc89c670301c6f9cc331f3868518033182dbdbd9b",
+      "row_id": "e3a4e9a84977780432cef0974657ae9d",
+      "selection_rank_sha256": "0c0b2db292ad5cd2b8c4947de23bc5c5f80aba3cd63cf866f5974310bda09eb8"
+    },
+    {
+      "cohort": "extension",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0118"
+      ],
+      "gate_type_bin": "3-4",
+      "gate_type_count": 3,
+      "has_barrier": true,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0118",
+      "reference_signature": {
+        "gate_count": 3,
+        "gate_types": {
+          "barrier": 1,
+          "h": 2,
+          "x": 1
+        },
+        "num_clbits": 1,
+        "num_qubits": 2
+      },
+      "reference_signature_sha256": "f1bf21757cc524181cc15459975f17e67e604898502ba32337ae3bd7e9c1d1a5",
+      "row_id": "9b10535c59d0875e57d3ebeedec95c59",
+      "selection_rank_sha256": "209ada1c4155c34084c10b8a1bf5b8a30ed0f1ddcf8681261c992ae637d75df2"
+    },
+    {
+      "cohort": "extension",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0120"
+      ],
+      "gate_type_bin": "1-2",
+      "gate_type_count": 2,
+      "has_barrier": false,
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0120",
+      "reference_signature": {
+        "gate_count": 6,
+        "gate_types": {
+          "h": 3,
+          "measure": 3
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      },
+      "reference_signature_sha256": "4cd837696bd7b83c2a0e996ad47a25e466beb524356c7e6a03493d7ed0ced5da",
+      "row_id": "68a59f21feef1649b46acbc80142f853",
+      "selection_rank_sha256": "0cbffa4d3b15a0c863ab61a5b42019b1cfbaec9ce161a772c73560b4d3d992b9"
+    },
+    {
+      "cohort": "extension",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0124"
+      ],
+      "gate_type_bin": "3-4",
+      "gate_type_count": 4,
+      "has_barrier": true,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0124",
+      "reference_signature": {
+        "gate_count": 4,
+        "gate_types": {
+          "barrier": 1,
+          "cx": 1,
+          "h": 1,
+          "measure": 2
+        },
+        "num_clbits": 4,
+        "num_qubits": 2
+      },
+      "reference_signature_sha256": "9803aeed4291e3c7580298160199242db7899c14a8faf229747e0f555a969805",
+      "row_id": "686753a893a0977fab3819207806c4a4",
+      "selection_rank_sha256": "2532044e820c63fb312bf3b2dfd8f9d912403dd51ee2dc2db19055bd501dd22f"
+    },
+    {
+      "cohort": "extension",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0128"
+      ],
+      "gate_type_bin": "3-4",
+      "gate_type_count": 4,
+      "has_barrier": true,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0128",
+      "reference_signature": {
+        "gate_count": 5,
+        "gate_types": {
+          "barrier": 1,
+          "cx": 1,
+          "h": 1,
+          "measure": 3
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      },
+      "reference_signature_sha256": "44bfa8b0f66851a668b9679f48f634b68c5e50e23459d67df8b78d1140b2579d",
+      "row_id": "797ae1226b6e9c9d22c41257f2652c03",
+      "selection_rank_sha256": "11d565e1275b93d7351f1470b4a45744afe43530443cef2fa8497fecd878af3f"
+    },
+    {
+      "cohort": "extension",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0131"
+      ],
+      "gate_type_bin": "5+",
+      "gate_type_count": 5,
+      "has_barrier": true,
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0131",
+      "reference_signature": {
+        "gate_count": 7,
+        "gate_types": {
+          "barrier": 4,
+          "h": 3,
+          "id": 2,
+          "measure": 1,
+          "x": 1
+        },
+        "num_clbits": 1,
+        "num_qubits": 2
+      },
+      "reference_signature_sha256": "34fbe058d919802a9cde76493b605c1cf9bd12c78d285cc6cd1755ba77d7b86a",
+      "row_id": "27c58324bb14cf3e02138ded183308af",
+      "selection_rank_sha256": "cdfd19d6f9a4b6357b6136a312add3229eac850c5efc31f094af06c2d7a1857d"
+    },
+    {
+      "cohort": "extension",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0133"
+      ],
+      "gate_type_bin": "5+",
+      "gate_type_count": 5,
+      "has_barrier": true,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0133",
+      "reference_signature": {
+        "gate_count": 6,
+        "gate_types": {
+          "barrier": 2,
+          "ccx": 1,
+          "cx": 1,
+          "measure": 2,
+          "x": 2
+        },
+        "num_clbits": 2,
+        "num_qubits": 3
+      },
+      "reference_signature_sha256": "7dc273326d620208be15815c6ee1facb9f967a069a97f3c2f52a21d5ba014e25",
+      "row_id": "eb48dadd673bb23e8b97fb9c5718948a",
+      "selection_rank_sha256": "283fa04868eed45ebfb8e657bb8f5a666e0c82e5568b7acfc930f7816daa04bd"
+    },
+    {
+      "cohort": "extension",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0135"
+      ],
+      "gate_type_bin": "1-2",
+      "gate_type_count": 1,
+      "has_barrier": false,
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0135",
+      "reference_signature": {
+        "gate_count": 3,
+        "gate_types": {
+          "measure": 3
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      },
+      "reference_signature_sha256": "6eaa18ae5d6510d342565184f92ee973519265897cbafddf4633f85f9c8abfcc",
+      "row_id": "6be3774ad255b86aa8ed299be8541dca",
+      "selection_rank_sha256": "7c3e8ebf8ace7e5fc5945fde582adea650cd7f97959c120b73f5dc01d4be8270"
+    },
+    {
+      "cohort": "extension",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0136"
+      ],
+      "gate_type_bin": "5+",
+      "gate_type_count": 6,
+      "has_barrier": true,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0136",
+      "reference_signature": {
+        "gate_count": 19,
+        "gate_types": {
+          "barrier": 2,
+          "cp": 6,
+          "h": 6,
+          "measure": 3,
+          "swap": 2,
+          "x": 2
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      },
+      "reference_signature_sha256": "3cfcaeb64b382cf3ba1dfddd76c4e47ce65576ee023ea9a4fed8b0bbca4d586c",
+      "row_id": "e1b723bb291451dccc0874dc4183b131",
+      "selection_rank_sha256": "d9f9be6b6d8e61765e2d8f0eaaa11e2b4e8279cd75f81e831a2a9c7e832524ce"
+    },
+    {
+      "cohort": "extension",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0137"
+      ],
+      "gate_type_bin": "3-4",
+      "gate_type_count": 4,
+      "has_barrier": true,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0137",
+      "reference_signature": {
+        "gate_count": 9,
+        "gate_types": {
+          "barrier": 1,
+          "cx": 1,
+          "ry": 4,
+          "rz": 4
+        },
+        "num_clbits": 0,
+        "num_qubits": 2
+      },
+      "reference_signature_sha256": "a3c54e605367a4f4fff47a0d059c4555058c927a18475f1340c0e8644990e544",
+      "row_id": "a1f33dce9aa48b878c6bdae10e2087f3",
+      "selection_rank_sha256": "3d0c92770070e0d832e294acd29b98992181a14fa06eb6829f97f9e3dc37a899"
+    },
+    {
+      "cohort": "extension",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0138"
+      ],
+      "gate_type_bin": "1-2",
+      "gate_type_count": 2,
+      "has_barrier": false,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0138",
+      "reference_signature": {
+        "gate_count": 2,
+        "gate_types": {
+          "h": 1,
+          "z": 1
+        },
+        "num_clbits": 3,
+        "num_qubits": 4
+      },
+      "reference_signature_sha256": "0c42817d835d296849d16d423e79bdacb27863e62eac89d16afdb0e37eb32544",
+      "row_id": "c67144fc9d924405fc88829d0184abc0",
+      "selection_rank_sha256": "5845acce90f9cd89f215f8c05910f1157d1c46e543812796d32b06bf8cc9fad8"
+    },
+    {
+      "cohort": "extension",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0140"
+      ],
+      "gate_type_bin": "5+",
+      "gate_type_count": 5,
+      "has_barrier": true,
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0140",
+      "reference_signature": {
+        "gate_count": 16,
+        "gate_types": {
+          "barrier": 4,
+          "cx": 1,
+          "h": 9,
+          "measure": 5,
+          "x": 1
+        },
+        "num_clbits": 5,
+        "num_qubits": 5
+      },
+      "reference_signature_sha256": "a4de17668eb352e61ec39b14655fe9ffb0e5daadc1e566660b9467a8d3c7e255",
+      "row_id": "18291c23e3b393a28d2c69091d72f1a6",
+      "selection_rank_sha256": "78b196d7720f53482f892010f2d1773f6ac773886d22a835a6a0336b05364b72"
+    },
+    {
+      "cohort": "extension",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0143"
+      ],
+      "gate_type_bin": "5+",
+      "gate_type_count": 5,
+      "has_barrier": false,
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0143",
+      "reference_signature": {
+        "gate_count": 9,
+        "gate_types": {
+          "cx": 2,
+          "h": 2,
+          "measure": 3,
+          "rx": 1,
+          "ry": 1
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      },
+      "reference_signature_sha256": "ed60220f9e3eca7e7c3912a939a3dcc7512121ed75a5a69b89923a4de3401275",
+      "row_id": "fe00d27e402b2437c2a29ed3d0cc05f5",
+      "selection_rank_sha256": "50fb6f98b5dd37df5267ca3de8846fc657ec4e9fd57b88432c0920bfbe8c5698"
+    },
+    {
+      "cohort": "extension",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0144"
+      ],
+      "gate_type_bin": "3-4",
+      "gate_type_count": 3,
+      "has_barrier": false,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0144",
+      "reference_signature": {
+        "gate_count": 3,
+        "gate_types": {
+          "h": 1,
+          "s": 1,
+          "z": 1
+        },
+        "num_clbits": 0,
+        "num_qubits": 1
+      },
+      "reference_signature_sha256": "9dec764a7fa478bfadf9fd770031831675826cbeb27ef17f1da24ac6852b6260",
+      "row_id": "35c8feff9552012174bfe4ca42784d5b",
+      "selection_rank_sha256": "0527b37b4506f08f67ceec66f874e51e91dd809f5ab20e161dafcb86146f5bc9"
+    },
+    {
+      "cohort": "extension",
+      "collapsed_signature_members": [
+        "pqid_bench_external_gen_0147"
+      ],
+      "gate_type_bin": "3-4",
+      "gate_type_count": 4,
+      "has_barrier": false,
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0147",
+      "reference_signature": {
+        "gate_count": 10,
+        "gate_types": {
+          "cx": 3,
+          "cz": 1,
+          "h": 3,
+          "measure": 3
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      },
+      "reference_signature_sha256": "6dc7f440b558962fa5942d4a0fcf48be0e8cf3820f3dc4892c6e89772517e28f",
+      "row_id": "4ee2e395a99d557d9c8c8bc86b6c653d",
+      "selection_rank_sha256": "45c876e5df06c65462b644980134d1503834b3bcbdffc8deed562e121c7958f7"
+    }
+  ],
+  "selection_is_outcome_blind": true,
+  "selection_is_sequential_augmentation": true,
+  "selection_seed": "13523d72ec07fde91188178f214ae9c9558ae6d8f07baa097dd89a53c14e048b",
+  "selection_seed_derivation": "sha256('pqid-bench-stochastic-repeatability-augmentation-v1' + NUL + base_panel_sha256)",
+  "source_augmentation_manifest": "artifacts/stochastic_repeatability_21x72/panel/pqid_bench_stochastic_repeatability_augmentation_manifest.json",
+  "source_augmentation_manifest_sha256": "e31ebde8120f4c6f33d1267759a2407e8b83d33614aaf4db6af159f7ac5b4799",
+  "source_original_manifest": "artifacts/stochastic_repeatability_21x36/panel/pqid_bench_stochastic_repeatability_panel.json",
+  "source_original_manifest_sha256": "0d98edb92565a817ce8973a300841c9e57fb0ccfe40b049ea0809737a191e2e6",
+  "unique_signature_count": 72
+}

@@ -1,0 +1,39 @@
+site_name: PQID-Bench User Manual
+site_description: Reproducibility and evaluation documentation for PQID-Bench
+repo_url: https://github.com/Elias-Abebe-Gasparini/PQID-Bench
+docs_dir: docs
+theme:
+  name: mkdocs
+nav:
+  - Home: index.md
+  - User Manual:
+      - Manual Map: user-manual/index.md
+      - Installation: user-manual/installation.md
+      - Core Concepts: user-manual/core-concepts.md
+      - Capability Guide: user-manual/capabilities.md
+      - Live Model Testing: user-manual/live-model-testing.md
+      - CLI Reference: user-manual/cli-reference.md
+      - Reporting And Exports: user-manual/reporting-and-exports.md
+      - Python API: user-manual/python-api.md
+      - Data Dictionary: user-manual/data-dictionary.md
+      - Metrics And Invariants: user-manual/metrics-and-invariants.md
+      - End-To-End Workflows: user-manual/workflows.md
+      - Reproducibility Contract: user-manual/reproducibility-contract.md
+      - Security And Governance: user-manual/security-governance.md
+      - Troubleshooting: user-manual/troubleshooting.md
+      - Glossary: user-manual/glossary.md
+  - Reviewer Quickstart: REVIEWER_QUICKSTART.md
+  - Package Contract: PYTHON_PACKAGE.md
+  - Docker Replay Validation: DOCKER_REPLAY_VALIDATION.md
+  - Security And Privacy: SECURITY_AND_PRIVACY.md
+  - Regenerating Publication Outputs: REGENERATING_PUBLICATION_OUTPUTS.md
+  - Release Notes: RELEASE_NOTES_v1.0.0.md
+  - Package Paper Blueprint: PACKAGE_PAPER_BLUEPRINT.md
+  - Publishing Checklist: PUBLISHING_CHECKLIST.md
+  - Historical Model-Evaluation Plan: MODEL_EVAL_PLAN.md
+markdown_extensions:
+  - tables
+  - fenced_code
+  - toc:
+      permalink: true
+strict: true

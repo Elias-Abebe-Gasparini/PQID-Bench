@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: >-
+  If you use PQID-Bench, please cite the benchmark release and the underlying
+  PQID v1.0.2 dataset.
+type: software
+title: "PQID-Bench: A Validation-Aware Benchmark Suite for Quantum-Program Generation"
+version: "1.0.0"
+doi: "10.5281/zenodo.21649753"
+date-released: "2026-07-23"
+authors:
+  - family-names: "Gasparini"
+    given-names: "Elias Abebe"
+keywords:
+  - quantum computing
+  - quantum programming
+  - Qiskit
+  - code generation
+  - large language models
+  - benchmark
+  - reproducibility
+repository-code: "https://github.com/Elias-Abebe-Gasparini/PQID-Bench"
+url: "https://doi.org/10.5281/zenodo.21649753"
+license: "CC-BY-4.0"
+abstract: >-
+  PQID-Bench is a frozen validation-aware benchmark suite for quantum-program
+  generation. Over its 21-model by 154-prompt primary matrix, 2,950 of 3,234
+  outputs execute, 2,944 are OpenQASM 3 assembly admissible, and 1,703 recover
+  the frozen reference signature. Its 38.37-point Assembly-Structure Gap
+  retains 99.52% of the 38.56-point Execution-Structure Gap. The release also
+  evaluates ordered operation-and-operand recovery, parameter-aware recovery,
+  robustness, and stochastic repeatability.
+references:
+  - type: dataset
+    title: "PQID: Parallel Quantum Instruction Dataset (v1.0.2)"
+    authors:
+      - family-names: "Gasparini"
+        given-names: "Elias Abebe"
+    year: 2026
+    doi: "10.5281/zenodo.20674853"

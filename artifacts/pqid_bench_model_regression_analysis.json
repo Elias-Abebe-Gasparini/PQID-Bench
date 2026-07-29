@@ -1,0 +1,465 @@
+{
+  "continuous_standardization_prompt_level": {
+    "gate_count": {
+      "mean": 6.285714285714286,
+      "sd": 4.501667507931574
+    },
+    "gate_entropy": {
+      "mean": 1.044664865164485,
+      "sd": 0.3688538827959649
+    },
+    "gate_type_count": {
+      "mean": 3.4,
+      "sd": 1.497824509370028
+    },
+    "num_clbits": {
+      "mean": 2.3857142857142857,
+      "sd": 1.5815316108206134
+    },
+    "num_qubits": {
+      "mean": 3.257142857142857,
+      "sd": 1.9831589080702496
+    }
+  },
+  "continuous_standardization_prompt_model_level": {
+    "gate_count": {
+      "mean": 6.285714285714286,
+      "sd": 4.47152687961984
+    },
+    "gate_entropy": {
+      "mean": 1.044664865164485,
+      "sd": 0.3663842450976885
+    },
+    "gate_type_count": {
+      "mean": 3.4,
+      "sd": 1.487795920689592
+    },
+    "num_clbits": {
+      "mean": 2.3857142857142857,
+      "sd": 1.570942566569563
+    },
+    "num_qubits": {
+      "mean": 3.257142857142857,
+      "sd": 1.9698807938101595
+    }
+  },
+  "distribution_summary": {
+    "execution_max": 1.0,
+    "execution_mean": 0.8714285714285714,
+    "execution_median": 0.9285714285714286,
+    "execution_min": 0.45714285714285713,
+    "model_count": 15,
+    "structural_max": 0.6428571428571429,
+    "structural_mean": 0.5371428571428571,
+    "structural_median": 0.5857142857142857,
+    "structural_min": 0.22857142857142856,
+    "structural_q1": 0.5071428571428571,
+    "structural_q3": 0.6214285714285714,
+    "structural_range": 0.41428571428571437,
+    "structural_sd": 0.11900951771233446
+  },
+  "evaluation_count": 1050,
+  "excluded_prompt_ids": [],
+  "model_count": 15,
+  "model_distribution": [
+    {
+      "execution_success": 0.9714285714285714,
+      "gate_count_match": 0.9285714285714286,
+      "gate_types_match": 0.7,
+      "model": "gpt-5.4-mini",
+      "model_label": "GPT-5.4 mini",
+      "model_tier": "frontier_api",
+      "n": 70,
+      "num_clbits_match": 0.8714285714285714,
+      "num_qubits_match": 0.9428571428571428,
+      "qasm3_success": 0.9714285714285714,
+      "rank": 1,
+      "structural_all_match": 0.6428571428571429,
+      "structural_given_execution": 0.6617647058823529,
+      "structural_z": 0.8882842964695861
+    },
+    {
+      "execution_success": 0.9857142857142858,
+      "gate_count_match": 0.9428571428571428,
+      "gate_types_match": 0.7,
+      "model": "gpt-5.5",
+      "model_label": "GPT-5.5",
+      "model_tier": "frontier_api",
+      "n": 70,
+      "num_clbits_match": 0.8571428571428571,
+      "num_qubits_match": 0.9285714285714286,
+      "qasm3_success": 0.9857142857142858,
+      "rank": 2,
+      "structural_all_match": 0.6285714285714286,
+      "structural_given_execution": 0.6376811594202898,
+      "structural_z": 0.7682458780277497
+    },
+    {
+      "execution_success": 0.9,
+      "gate_count_match": 0.8285714285714286,
+      "gate_types_match": 0.6428571428571429,
+      "model": "gemini-2.5-pro",
+      "model_label": "Gemini 2.5 Pro",
+      "model_tier": "frontier_api",
+      "n": 70,
+      "num_clbits_match": 0.8571428571428571,
+      "num_qubits_match": 0.8571428571428571,
+      "qasm3_success": 0.9,
+      "rank": 3,
+      "structural_all_match": 0.6285714285714286,
+      "structural_given_execution": 0.6984126984126984,
+      "structural_z": 0.7682458780277497
+    },
+    {
+      "execution_success": 0.9714285714285714,
+      "gate_count_match": 0.9285714285714286,
+      "gate_types_match": 0.6857142857142857,
+      "model": "gemini-3.1-pro-preview",
+      "model_label": "Gemini 3.1 Pro Preview",
+      "model_tier": "frontier_api",
+      "n": 70,
+      "num_clbits_match": 0.8714285714285714,
+      "num_qubits_match": 0.9142857142857143,
+      "qasm3_success": 0.9714285714285714,
+      "rank": 4,
+      "structural_all_match": 0.6285714285714286,
+      "structural_given_execution": 0.6470588235294118,
+      "structural_z": 0.7682458780277497
+    },
+    {
+      "execution_success": 0.9285714285714286,
+      "gate_count_match": 0.8857142857142857,
+      "gate_types_match": 0.6571428571428571,
+      "model": "claude-sonnet-4-6",
+      "model_label": "Claude Sonnet 4.6",
+      "model_tier": "frontier_api",
+      "n": 70,
+      "num_clbits_match": 0.8428571428571429,
+      "num_qubits_match": 0.8857142857142857,
+      "qasm3_success": 0.9285714285714286,
+      "rank": 5,
+      "structural_all_match": 0.6142857142857143,
+      "structural_given_execution": 0.6615384615384615,
+      "structural_z": 0.6482074595859142
+    },
+    {
+      "execution_success": 1.0,
+      "gate_count_match": 0.9428571428571428,
+      "gate_types_match": 0.6857142857142857,
+      "model": "claude-opus-4-8",
+      "model_label": "Claude Opus 4.8",
+      "model_tier": "frontier_api",
+      "n": 70,
+      "num_clbits_match": 0.8714285714285714,
+      "num_qubits_match": 0.9428571428571428,
+      "qasm3_success": 1.0,
+      "rank": 6,
+      "structural_all_match": 0.6142857142857143,
+      "structural_given_execution": 0.6142857142857143,
+      "structural_z": 0.6482074595859142
+    },
+    {
+      "execution_success": 0.9142857142857143,
+      "gate_count_match": 0.8571428571428571,
+      "gate_types_match": 0.6428571428571429,
+      "model": "deepseek-v4-pro",
+      "model_label": "DeepSeek V4 Pro",
+      "model_tier": "frontier_api",
+      "n": 70,
+      "num_clbits_match": 0.8,
+      "num_qubits_match": 0.8857142857142857,
+      "qasm3_success": 0.9142857142857143,
+      "rank": 7,
+      "structural_all_match": 0.5857142857142857,
+      "structural_given_execution": 0.640625,
+      "structural_z": 0.4081306227022423
+    },
+    {
+      "execution_success": 0.9142857142857143,
+      "gate_count_match": 0.8285714285714286,
+      "gate_types_match": 0.6285714285714286,
+      "model": "deepseek-v4-flash",
+      "model_label": "DeepSeek V4 Flash",
+      "model_tier": "frontier_api",
+      "n": 70,
+      "num_clbits_match": 0.8285714285714286,
+      "num_qubits_match": 0.8714285714285714,
+      "qasm3_success": 0.9142857142857143,
+      "rank": 8,
+      "structural_all_match": 0.5857142857142857,
+      "structural_given_execution": 0.640625,
+      "structural_z": 0.4081306227022423
+    },
+    {
+      "execution_success": 0.9571428571428572,
+      "gate_count_match": 0.8714285714285714,
+      "gate_types_match": 0.6428571428571429,
+      "model": "mistral-ai/codestral-2501",
+      "model_label": "Codestral 25.01",
+      "model_tier": "strong_open_or_code",
+      "n": 70,
+      "num_clbits_match": 0.8571428571428571,
+      "num_qubits_match": 0.9285714285714286,
+      "qasm3_success": 0.9571428571428572,
+      "rank": 9,
+      "structural_all_match": 0.5857142857142857,
+      "structural_given_execution": 0.6119402985074627,
+      "structural_z": 0.4081306227022423
+    },
+    {
+      "execution_success": 0.9285714285714286,
+      "gate_count_match": 0.7857142857142857,
+      "gate_types_match": 0.5714285714285714,
+      "model": "openai/gpt-oss-120b",
+      "model_label": "GPT-OSS 120B",
+      "model_tier": "strong_open_or_code",
+      "n": 70,
+      "num_clbits_match": 0.8142857142857143,
+      "num_qubits_match": 0.9,
+      "qasm3_success": 0.9285714285714286,
+      "rank": 10,
+      "structural_all_match": 0.5285714285714286,
+      "structural_given_execution": 0.5692307692307692,
+      "structural_z": -0.07202305106510147
+    },
+    {
+      "execution_success": 0.8428571428571429,
+      "gate_count_match": 0.7857142857142857,
+      "gate_types_match": 0.5714285714285714,
+      "model": "openai/gpt-oss-20b",
+      "model_label": "GPT-OSS 20B",
+      "model_tier": "strong_open_or_code",
+      "n": 70,
+      "num_clbits_match": 0.7571428571428571,
+      "num_qubits_match": 0.8142857142857143,
+      "qasm3_success": 0.8428571428571429,
+      "rank": 11,
+      "structural_all_match": 0.5142857142857142,
+      "structural_given_execution": 0.6101694915254238,
+      "structural_z": -0.1920614695069379
+    },
+    {
+      "execution_success": 0.9428571428571428,
+      "gate_count_match": 0.7857142857142857,
+      "gate_types_match": 0.6428571428571429,
+      "model": "llama-3.3-70b-versatile",
+      "model_label": "Llama 3.3 70B",
+      "model_tier": "strong_open_or_code",
+      "n": 70,
+      "num_clbits_match": 0.7714285714285715,
+      "num_qubits_match": 0.9,
+      "qasm3_success": 0.9428571428571428,
+      "rank": 12,
+      "structural_all_match": 0.5,
+      "structural_given_execution": 0.5303030303030303,
+      "structural_z": -0.31209988794877336
+    },
+    {
+      "execution_success": 0.6571428571428571,
+      "gate_count_match": 0.6142857142857143,
+      "gate_types_match": 0.44285714285714284,
+      "model": "qwen/qwen3-32b",
+      "model_label": "Qwen3 32B",
+      "model_tier": "low_or_experimental",
+      "n": 70,
+      "num_clbits_match": 0.5285714285714286,
+      "num_qubits_match": 0.6571428571428571,
+      "qasm3_success": 0.6571428571428571,
+      "rank": 13,
+      "structural_all_match": 0.38571428571428573,
+      "structural_given_execution": 0.5869565217391305,
+      "structural_z": -1.2724072354834604
+    },
+    {
+      "execution_success": 0.7,
+      "gate_count_match": 0.5571428571428572,
+      "gate_types_match": 0.4,
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "model_label": "Llama 4 Scout",
+      "model_tier": "low_or_experimental",
+      "n": 70,
+      "num_clbits_match": 0.6428571428571429,
+      "num_qubits_match": 0.6714285714285714,
+      "qasm3_success": 0.7,
+      "rank": 14,
+      "structural_all_match": 0.38571428571428573,
+      "structural_given_execution": 0.5510204081632653,
+      "structural_z": -1.2724072354834604
+    },
+    {
+      "execution_success": 0.45714285714285713,
+      "gate_count_match": 0.37142857142857144,
+      "gate_types_match": 0.22857142857142856,
+      "model": "llama-3.1-8b-instant",
+      "model_label": "Llama 3.1 8B",
+      "model_tier": "low_or_experimental",
+      "n": 70,
+      "num_clbits_match": 0.45714285714285713,
+      "num_qubits_match": 0.44285714285714284,
+      "qasm3_success": 0.45714285714285713,
+      "rank": 15,
+      "structural_all_match": 0.22857142857142856,
+      "structural_given_execution": 0.5,
+      "structural_z": -2.592829838343656
+    }
+  ],
+  "prompt_count": 70,
+  "prompt_level_regression": {
+    "mean_outcome": 0.5371428571428571,
+    "n": 70,
+    "outcome": "structural_rate",
+    "r_squared": 0.4768575056972504,
+    "terms": [
+      {
+        "coefficient": 0.5208649635497736,
+        "coefficient_pp": 52.08649635497736,
+        "name": "intercept"
+      },
+      {
+        "coefficient": 0.043997594769199386,
+        "coefficient_pp": 4.399759476919939,
+        "name": "z_num_qubits"
+      },
+      {
+        "coefficient": -0.0489510129188582,
+        "coefficient_pp": -4.89510129188582,
+        "name": "z_num_clbits"
+      },
+      {
+        "coefficient": 0.014048669183375852,
+        "coefficient_pp": 1.4048669183375853,
+        "name": "z_gate_count"
+      },
+      {
+        "coefficient": -0.03167998633931266,
+        "coefficient_pp": -3.167998633931266,
+        "name": "z_gate_type_count"
+      },
+      {
+        "coefficient": -0.17850080419728112,
+        "coefficient_pp": -17.850080419728112,
+        "name": "z_gate_entropy"
+      },
+      {
+        "coefficient": -0.28983430930722415,
+        "coefficient_pp": -28.983430930722413,
+        "name": "has_barrier"
+      },
+      {
+        "coefficient": -0.06233040464756303,
+        "coefficient_pp": -6.233040464756303,
+        "name": "has_controlled_or_entangling"
+      },
+      {
+        "coefficient": 0.12587771290242117,
+        "coefficient_pp": 12.587771290242117,
+        "name": "has_rotation"
+      },
+      {
+        "coefficient": 0.2448674446331952,
+        "coefficient_pp": 24.48674446331952,
+        "name": "has_measure"
+      }
+    ]
+  },
+  "prompt_model_linear_probability_model": {
+    "mean_outcome": 0.5371428571428571,
+    "n": 1050,
+    "outcome": "structural_success",
+    "r_squared": 0.35439081311216425,
+    "terms": [
+      {
+        "coefficient": 0.5997935346966667,
+        "coefficient_pp": 59.97935346966668,
+        "name": "intercept"
+      },
+      {
+        "coefficient": -0.08392857141902631,
+        "coefficient_pp": -8.392857141902631,
+        "name": "tier_strong_open_or_code"
+      },
+      {
+        "coefficient": -0.28273809521808385,
+        "coefficient_pp": -28.273809521808385,
+        "name": "tier_low_or_experimental"
+      },
+      {
+        "coefficient": 0.04370301178540224,
+        "coefficient_pp": 4.370301178540224,
+        "name": "z_num_qubits"
+      },
+      {
+        "coefficient": -0.04862326456406094,
+        "coefficient_pp": -4.862326456406095,
+        "name": "z_num_clbits"
+      },
+      {
+        "coefficient": 0.013954607073225335,
+        "coefficient_pp": 1.3954607073225334,
+        "name": "z_gate_count"
+      },
+      {
+        "coefficient": -0.03146787474488001,
+        "coefficient_pp": -3.146787474488001,
+        "name": "z_gate_type_count"
+      },
+      {
+        "coefficient": -0.17730566368161638,
+        "coefficient_pp": -17.73056636816164,
+        "name": "z_gate_entropy"
+      },
+      {
+        "coefficient": -0.28983430945415456,
+        "coefficient_pp": -28.983430945415456,
+        "name": "has_barrier"
+      },
+      {
+        "coefficient": -0.06233040472178047,
+        "coefficient_pp": -6.233040472178047,
+        "name": "has_controlled_or_entangling"
+      },
+      {
+        "coefficient": 0.12587771350614999,
+        "coefficient_pp": 12.587771350614998,
+        "name": "has_rotation"
+      },
+      {
+        "coefficient": 0.24486744513842193,
+        "coefficient_pp": 24.486744513842194,
+        "name": "has_measure"
+      }
+    ]
+  },
+  "tier_distribution": [
+    {
+      "execution_mean": 0.9482142857142857,
+      "models": 8,
+      "structural_max": 0.6428571428571429,
+      "structural_mean": 0.6160714285714286,
+      "structural_median": 0.6214285714285714,
+      "structural_min": 0.5857142857142857,
+      "structural_sd": 0.020824828195876065,
+      "tier": "frontier_api"
+    },
+    {
+      "execution_mean": 0.9178571428571429,
+      "models": 4,
+      "structural_max": 0.5857142857142857,
+      "structural_mean": 0.5321428571428571,
+      "structural_median": 0.5214285714285714,
+      "structural_min": 0.5,
+      "structural_sd": 0.03757079485252264,
+      "tier": "strong_open_or_code"
+    },
+    {
+      "execution_mean": 0.6047619047619047,
+      "models": 3,
+      "structural_max": 0.38571428571428573,
+      "structural_mean": 0.33333333333333337,
+      "structural_median": 0.38571428571428573,
+      "structural_min": 0.22857142857142856,
+      "structural_sd": 0.09072647087265549,
+      "tier": "low_or_experimental"
+    }
+  ]
+}

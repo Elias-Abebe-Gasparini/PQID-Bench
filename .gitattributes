@@ -1,0 +1,2 @@
+# Preserve release-manifest bytes identically on Windows and Linux checkouts.
+* -text

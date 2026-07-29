@@ -1,0 +1,189 @@
+{
+  "input_file": "PQID/data/processed/pqid_2026_enriched_github_circuits_plus_metadata_design_v3.jsonl",
+  "source_rows": 91719,
+  "clean_n8_repository_clearance_view": true,
+  "slice_by_release_bucket": {
+    "strict_n8": {
+      "public_open": 415,
+      "public_open_with_obligations": 0,
+      "public_review_required": 0,
+      "restricted_internal_only": 0
+    },
+    "extended_n8": {
+      "public_open": 319,
+      "public_open_with_obligations": 0,
+      "public_review_required": 0,
+      "restricted_internal_only": 0
+    },
+    "validated_broad_n8": {
+      "public_open": 847,
+      "public_open_with_obligations": 5,
+      "public_review_required": 2,
+      "restricted_internal_only": 677
+    },
+    "validated_master_only": {
+      "public_open": 374,
+      "public_open_with_obligations": 5,
+      "public_review_required": 1,
+      "restricted_internal_only": 357
+    },
+    "mutation_stress_n8": {
+      "public_open": 11265,
+      "public_open_with_obligations": 0,
+      "public_review_required": 0,
+      "restricted_internal_only": 0
+    },
+    "tier2_unvalidated": {
+      "public_open": 27092,
+      "public_open_with_obligations": 1207,
+      "public_review_required": 114,
+      "restricted_internal_only": 49039
+    }
+  },
+  "raw_slice_by_release_bucket": {
+    "strict_n8": {
+      "public_open": 188,
+      "public_open_with_obligations": 9,
+      "public_review_required": 0,
+      "restricted_internal_only": 218
+    },
+    "extended_n8": {
+      "public_open": 40,
+      "public_open_with_obligations": 0,
+      "public_review_required": 0,
+      "restricted_internal_only": 279
+    },
+    "validated_broad_n8": {
+      "public_open": 847,
+      "public_open_with_obligations": 5,
+      "public_review_required": 2,
+      "restricted_internal_only": 677
+    },
+    "validated_master_only": {
+      "public_open": 374,
+      "public_open_with_obligations": 5,
+      "public_review_required": 1,
+      "restricted_internal_only": 357
+    },
+    "mutation_stress_n8": {
+      "public_open": 11265,
+      "public_open_with_obligations": 0,
+      "public_review_required": 0,
+      "restricted_internal_only": 0
+    },
+    "tier2_unvalidated": {
+      "public_open": 27092,
+      "public_open_with_obligations": 1207,
+      "public_review_required": 114,
+      "restricted_internal_only": 49039
+    }
+  },
+  "target_distribution": {
+    "strict_n8": 415,
+    "extended_n8": 319,
+    "validated_broad_n8": 1531,
+    "validated_master_only": 737,
+    "mutation_stress_n8": 11265,
+    "tier2_unvalidated": 77452
+  },
+  "baselines": [
+    {
+      "name": "majority class (`tier2_unvalidated`)",
+      "description": "Predict the most frequent readiness label for every row.",
+      "metrics": {
+        "accuracy": 0.8444488055909899,
+        "balanced_accuracy": 0.16666666666666666,
+        "macro_f1": 0.15261086908118612,
+        "mismatches": 14267,
+        "false_clean_rate": 0.0,
+        "per_label": {
+          "strict_n8": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 415
+          },
+          "extended_n8": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 319
+          },
+          "validated_broad_n8": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1531
+          },
+          "validated_master_only": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 737
+          },
+          "mutation_stress_n8": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 11265
+          },
+          "tier2_unvalidated": {
+            "precision": 0.8444488055909899,
+            "recall": 1.0,
+            "f1": 0.9156652144871167,
+            "support": 77452
+          }
+        }
+      }
+    },
+    {
+      "name": "deterministic n/8 gate reconstruction",
+      "description": "Reconstruct readiness labels from primitive validation, extraction, size, retrieval, and mutation fields.",
+      "metrics": {
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "macro_f1": 1.0,
+        "mismatches": 0,
+        "false_clean_rate": 0.0,
+        "per_label": {
+          "strict_n8": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 415
+          },
+          "extended_n8": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 319
+          },
+          "validated_broad_n8": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 1531
+          },
+          "validated_master_only": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 737
+          },
+          "mutation_stress_n8": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 11265
+          },
+          "tier2_unvalidated": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 77452
+          }
+        }
+      }
+    }
+  ]
+}

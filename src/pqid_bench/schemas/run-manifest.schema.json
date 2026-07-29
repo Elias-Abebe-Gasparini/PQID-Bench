@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pqid-bench.org/schemas/1.0.0/run-manifest.schema.json",
+  "title": "PQID-Bench run manifest",
+  "type": "object",
+  "required": [
+    "package_version",
+    "benchmark_release",
+    "evaluator_version",
+    "predicate_version",
+    "schema_version",
+    "artifact_manifest_version",
+    "run_type"
+  ],
+  "properties": {
+    "package_version": {"type": "string"},
+    "benchmark_release": {"type": "string"},
+    "evaluator_version": {"type": "string"},
+    "predicate_version": {"type": "string"},
+    "schema_version": {"type": "string"},
+    "artifact_manifest_version": {"type": "string"},
+    "run_type": {
+      "enum": [
+        "canonical_reproduction",
+        "archived_replay",
+        "supplied_evaluation",
+        "live_replication"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

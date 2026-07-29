@@ -1,0 +1,39 @@
+{
+  "exported_at_utc": "2026-06-17T15:48:57+00:00",
+  "files": [
+    {
+      "batch_request_file": "artifacts/external_model_batches/openai_batch/requests/openai_gpt-5_4-mini_batch_requests.jsonl",
+      "batch_request_sha256": "cc6ed6d905831cd1fe5a264a75d349a7593889ed47596bdb15671ad2b4401a00",
+      "commands": {
+        "create_or_inspect_batch": "python scripts/run_pqid_bench_openai_batch_job.py --request-file artifacts/external_model_batches/openai_batch/requests/openai_gpt-5_4-mini_batch_requests.jsonl --state-file artifacts/external_model_batches/openai_batch/state/openai_gpt-5_4-mini_batch_state.json --endpoint /v1/responses --completion-window 24h",
+        "materialize_response_log": "python scripts/materialize_pqid_bench_openai_batch_responses.py --request-file artifacts/external_model_batches/requests/openai_gpt-5_4-mini_requests.jsonl --batch-output-file artifacts/external_model_batches/openai_batch/raw_outputs/openai_gpt-5_4-mini_batch_output.jsonl --batch-error-file artifacts/external_model_batches/openai_batch/raw_outputs/openai_gpt-5_4-mini_batch_errors.jsonl --output-file artifacts/external_model_batches/responses/openai_gpt-5_4-mini_responses.jsonl",
+        "score_response_log": "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches/responses/openai_gpt-5_4-mini_responses.jsonl --output-dir artifacts/external_model_batches/evaluations/openai_gpt-5_4-mini",
+        "wait_and_download": "python scripts/run_pqid_bench_openai_batch_job.py --batch-id <BATCH_ID_FROM_STATE> --state-file artifacts/external_model_batches/openai_batch/state/openai_gpt-5_4-mini_batch_state.json --wait --download-output-file artifacts/external_model_batches/openai_batch/raw_outputs/openai_gpt-5_4-mini_batch_output.jsonl --download-error-file artifacts/external_model_batches/openai_batch/raw_outputs/openai_gpt-5_4-mini_batch_errors.jsonl"
+      },
+      "generic_request_file": "artifacts/external_model_batches/requests/openai_gpt-5_4-mini_requests.jsonl",
+      "generic_request_sha256": "252fe05fb7e9d4dc1508155a97364711d201a334c306e07a3950715bf2621ad6",
+      "model": "gpt-5.4-mini",
+      "rows": 70,
+      "schema_version": "pqid-bench-openai-batch-v1",
+      "slug": "openai_gpt-5_4-mini"
+    },
+    {
+      "batch_request_file": "artifacts/external_model_batches/openai_batch/requests/openai_gpt-5_5_batch_requests.jsonl",
+      "batch_request_sha256": "2226c5204efaa9b44717e42e3a971f4cc29f214016b6378d17496345a01098af",
+      "commands": {
+        "create_or_inspect_batch": "python scripts/run_pqid_bench_openai_batch_job.py --request-file artifacts/external_model_batches/openai_batch/requests/openai_gpt-5_5_batch_requests.jsonl --state-file artifacts/external_model_batches/openai_batch/state/openai_gpt-5_5_batch_state.json --endpoint /v1/responses --completion-window 24h",
+        "materialize_response_log": "python scripts/materialize_pqid_bench_openai_batch_responses.py --request-file artifacts/external_model_batches/requests/openai_gpt-5_5_requests.jsonl --batch-output-file artifacts/external_model_batches/openai_batch/raw_outputs/openai_gpt-5_5_batch_output.jsonl --batch-error-file artifacts/external_model_batches/openai_batch/raw_outputs/openai_gpt-5_5_batch_errors.jsonl --output-file artifacts/external_model_batches/responses/openai_gpt-5_5_responses.jsonl",
+        "score_response_log": "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches/responses/openai_gpt-5_5_responses.jsonl --output-dir artifacts/external_model_batches/evaluations/openai_gpt-5_5",
+        "wait_and_download": "python scripts/run_pqid_bench_openai_batch_job.py --batch-id <BATCH_ID_FROM_STATE> --state-file artifacts/external_model_batches/openai_batch/state/openai_gpt-5_5_batch_state.json --wait --download-output-file artifacts/external_model_batches/openai_batch/raw_outputs/openai_gpt-5_5_batch_output.jsonl --download-error-file artifacts/external_model_batches/openai_batch/raw_outputs/openai_gpt-5_5_batch_errors.jsonl"
+      },
+      "generic_request_file": "artifacts/external_model_batches/requests/openai_gpt-5_5_requests.jsonl",
+      "generic_request_sha256": "c408f505023844845cfccb4529c2fe6cfb9c3325ccd84e0ee30f9be95c197b92",
+      "model": "gpt-5.5",
+      "rows": 70,
+      "schema_version": "pqid-bench-openai-batch-v1",
+      "slug": "openai_gpt-5_5"
+    }
+  ],
+  "model_count": 2,
+  "schema_version": "pqid-bench-openai-batch-v1"
+}

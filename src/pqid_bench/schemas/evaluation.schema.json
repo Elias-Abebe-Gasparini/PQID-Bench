@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pqid-bench.org/schemas/1.0.0/evaluation.schema.json",
+  "title": "PQID-Bench evaluation record",
+  "type": "object",
+  "required": [
+    "prompt_id",
+    "model",
+    "report_executable",
+    "report_signature_match"
+  ],
+  "properties": {
+    "prompt_id": {"type": "string", "minLength": 1},
+    "model": {"type": "string", "minLength": 1},
+    "report_executable": {"type": "boolean"},
+    "report_assembly_admissible": {"type": "boolean"},
+    "report_signature_match": {"type": "boolean"},
+    "ordered_wire_tape_match": {"type": "boolean"},
+    "parameter_aware_tape_match": {"type": "boolean"},
+    "row_id": {"type": "string"}
+  },
+  "additionalProperties": true
+}

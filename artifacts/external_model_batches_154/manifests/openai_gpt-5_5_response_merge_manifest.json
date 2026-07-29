@@ -1,0 +1,23 @@
+{
+  "created_at_utc": "2026-07-12T12:30:05+00:00",
+  "input_response_files": [
+    {
+      "path": "PQID\\submissions\\acm_tqc_benchmark\\artifacts\\external_model_batches\\responses\\openai_gpt-5_5_responses.jsonl",
+      "rows": 70,
+      "sha256": "278bd1799a305e1b95b2f8d40c5c44649f025aa8c07d0bbd854d68ab45eb0e4f"
+    },
+    {
+      "path": "PQID\\submissions\\acm_tqc_benchmark\\artifacts\\external_model_batches_154\\extension\\responses\\openai_gpt-5_5_responses.jsonl",
+      "rows": 84,
+      "sha256": "f11f841a75eb021959ebec34b8eee4a18db7fcab67ad2f8a9a4d6ede0baf4d4f"
+    }
+  ],
+  "merge_policy": "disjoint prompt IDs ordered by frozen request manifest",
+  "output_response_file": "PQID\\submissions\\acm_tqc_benchmark\\artifacts\\external_model_batches_154\\responses\\openai_gpt-5_5_responses.jsonl",
+  "output_rows": 154,
+  "output_sha256": "1b68b805cecd786c0f9b090faa036ae7c91cd43b442a2ec4c38143e87f9a82a8",
+  "request_file": "PQID\\submissions\\acm_tqc_benchmark\\artifacts\\external_model_batches_154\\requests\\openai_gpt-5_5_requests.jsonl",
+  "request_rows": 154,
+  "request_sha256": "c8658a19ddcf166e23db668fd819d01b2c3fed2d9654724a170580211bb923bc",
+  "schema_version": "pqid-bench-response-merge-v1"
+}

@@ -1,0 +1,190 @@
+endpoint,model,model_label,run_pair,losses,gains,discordant,rate_delta_pp,p_value,holm_p_value
+execution,gpt-5.6-sol,GPT-5.6 Sol,1-2,0,0,0,0.0,1.0,1.0
+execution,gpt-5.6-sol,GPT-5.6 Sol,1-3,0,0,0,0.0,1.0,1.0
+execution,gpt-5.6-sol,GPT-5.6 Sol,2-3,0,0,0,0.0,1.0,1.0
+execution,gpt-5.5,GPT-5.5,1-2,0,2,2,2.777777777777779,0.5,1.0
+execution,gpt-5.5,GPT-5.5,1-3,1,2,3,1.388888888888895,1.0,1.0
+execution,gpt-5.5,GPT-5.5,2-3,1,0,1,-1.388888888888884,1.0,1.0
+execution,gpt-5.4-mini,GPT-5.4 mini,1-2,0,0,0,0.0,1.0,1.0
+execution,gpt-5.4-mini,GPT-5.4 mini,1-3,0,0,0,0.0,1.0,1.0
+execution,gpt-5.4-mini,GPT-5.4 mini,2-3,0,0,0,0.0,1.0,1.0
+execution,claude-fable-5,Claude Fable 5,1-2,0,0,0,0.0,1.0,1.0
+execution,claude-fable-5,Claude Fable 5,1-3,0,0,0,0.0,1.0,1.0
+execution,claude-fable-5,Claude Fable 5,2-3,0,0,0,0.0,1.0,1.0
+execution,claude-sonnet-4-6,Claude Sonnet 4.6,1-2,0,1,1,1.388888888888884,1.0,1.0
+execution,claude-sonnet-4-6,Claude Sonnet 4.6,1-3,1,1,2,0.0,1.0,1.0
+execution,claude-sonnet-4-6,Claude Sonnet 4.6,2-3,1,0,1,-1.388888888888884,1.0,1.0
+execution,claude-opus-4-8,Claude Opus 4.8,1-2,1,0,1,-1.388888888888884,1.0,1.0
+execution,claude-opus-4-8,Claude Opus 4.8,1-3,0,0,0,0.0,1.0,1.0
+execution,claude-opus-4-8,Claude Opus 4.8,2-3,0,1,1,1.388888888888884,1.0,1.0
+execution,gemini-2.5-pro,Gemini 2.5 Pro,1-2,4,3,7,-1.388888888888895,1.0,1.0
+execution,gemini-2.5-pro,Gemini 2.5 Pro,1-3,3,5,8,2.777777777777768,0.7265625,1.0
+execution,gemini-2.5-pro,Gemini 2.5 Pro,2-3,1,4,5,4.1666666666666625,0.375,1.0
+execution,gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,1-2,1,0,1,-1.388888888888895,1.0,1.0
+execution,gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,1-3,0,1,1,1.388888888888884,1.0,1.0
+execution,gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,2-3,0,2,2,2.777777777777779,0.5,1.0
+execution,deepseek-v4-pro,DeepSeek V4 Pro,1-2,4,4,8,0.0,1.0,1.0
+execution,deepseek-v4-pro,DeepSeek V4 Pro,1-3,5,3,8,-2.777777777777779,0.7265625,1.0
+execution,deepseek-v4-pro,DeepSeek V4 Pro,2-3,3,1,4,-2.777777777777779,0.625,1.0
+execution,deepseek-v4-flash,DeepSeek V4 Flash,1-2,0,5,5,6.944444444444442,0.0625,0.125
+execution,deepseek-v4-flash,DeepSeek V4 Flash,1-3,1,8,9,9.722222222222221,0.0390625,0.1171875
+execution,deepseek-v4-flash,DeepSeek V4 Flash,2-3,1,3,4,2.777777777777779,0.625,0.625
+execution,mistral-ai/codestral-2501,Codestral 25.01,1-2,5,0,5,-6.944444444444442,0.0625,0.1875
+execution,mistral-ai/codestral-2501,Codestral 25.01,1-3,0,0,0,0.0,1.0,1.0
+execution,mistral-ai/codestral-2501,Codestral 25.01,2-3,0,5,5,6.944444444444442,0.0625,0.1875
+execution,qwen/qwen3-coder-next,Qwen3-Coder-Next,1-2,1,4,5,4.1666666666666625,0.375,1.0
+execution,qwen/qwen3-coder-next,Qwen3-Coder-Next,1-3,2,5,7,4.1666666666666625,0.453125,1.0
+execution,qwen/qwen3-coder-next,Qwen3-Coder-Next,2-3,3,3,6,0.0,1.0,1.0
+execution,meta/llama-4-maverick-17b-128e-instruct-fp8,Llama 4 Maverick,1-2,18,0,18,-25.0,7.62939453125e-06,1.52587890625e-05
+execution,meta/llama-4-maverick-17b-128e-instruct-fp8,Llama 4 Maverick,1-3,23,0,23,-31.944444444444443,2.384185791015625e-07,7.152557373046875e-07
+execution,meta/llama-4-maverick-17b-128e-instruct-fp8,Llama 4 Maverick,2-3,18,13,31,-6.944444444444442,0.47312965989112854,0.47312965989112854
+execution,llama-3.3-70b-versatile,Llama 3.3 70B,1-2,0,0,0,0.0,1.0,1.0
+execution,llama-3.3-70b-versatile,Llama 3.3 70B,1-3,1,0,1,-1.388888888888895,1.0,1.0
+execution,llama-3.3-70b-versatile,Llama 3.3 70B,2-3,1,0,1,-1.388888888888895,1.0,1.0
+execution,openai/gpt-oss-120b,GPT-OSS 120B,1-2,12,0,12,-16.666666666666675,0.00048828125,0.0009765625
+execution,openai/gpt-oss-120b,GPT-OSS 120B,1-3,20,0,20,-27.77777777777778,1.9073486328125e-06,5.7220458984375e-06
+execution,openai/gpt-oss-120b,GPT-OSS 120B,2-3,14,6,20,-11.111111111111105,0.11531829833984375,0.11531829833984375
+execution,openai/gpt-oss-20b,GPT-OSS 20B,1-2,26,1,27,-34.72222222222222,4.172325134277344e-07,8.344650268554688e-07
+execution,openai/gpt-oss-20b,GPT-OSS 20B,1-3,30,1,31,-40.27777777777778,2.9802322387695312e-08,8.940696716308594e-08
+execution,openai/gpt-oss-20b,GPT-OSS 20B,2-3,14,10,24,-5.555555555555558,0.5412561893463135,0.5412561893463135
+execution,mistralai/mistral-small-3.2-24b-instruct,Mistral Small 3.2 24B,1-2,6,3,9,-4.166666666666674,0.5078125,1.0
+execution,mistralai/mistral-small-3.2-24b-instruct,Mistral Small 3.2 24B,1-3,3,3,6,0.0,1.0,1.0
+execution,mistralai/mistral-small-3.2-24b-instruct,Mistral Small 3.2 24B,2-3,3,6,9,4.166666666666674,0.5078125,1.0
+execution,qiskit/mistral-small-3.2-24b-qiskit,Qiskit Mistral 3.2 24B,1-2,67,0,67,-93.05555555555556,1.3552527156068805e-20,4.0657581468206416e-20
+execution,qiskit/mistral-small-3.2-24b-qiskit,Qiskit Mistral 3.2 24B,1-3,67,0,67,-93.05555555555556,1.3552527156068805e-20,4.0657581468206416e-20
+execution,qiskit/mistral-small-3.2-24b-qiskit,Qiskit Mistral 3.2 24B,2-3,0,0,0,0.0,1.0,1.0
+execution,qwen/qwen3-32b,Qwen3 32B,1-2,34,3,37,-43.05555555555556,1.233129296451807e-07,3.699387889355421e-07
+execution,qwen/qwen3-32b,Qwen3 32B,1-3,32,3,35,-40.27777777777778,4.176981747150421e-07,8.353963494300842e-07
+execution,qwen/qwen3-32b,Qwen3 32B,2-3,7,9,16,2.7777777777777763,0.803619384765625,0.803619384765625
+execution,meta-llama/llama-4-scout-17b-16e-instruct,Llama 4 Scout,1-2,2,4,6,2.777777777777779,0.6875,1.0
+execution,meta-llama/llama-4-scout-17b-16e-instruct,Llama 4 Scout,1-3,3,4,7,1.388888888888895,1.0,1.0
+execution,meta-llama/llama-4-scout-17b-16e-instruct,Llama 4 Scout,2-3,4,3,7,-1.388888888888884,1.0,1.0
+execution,llama-3.1-8b-instant,Llama 3.1 8B,1-2,20,2,22,-25.0,0.00012111663818359375,0.0002422332763671875
+execution,llama-3.1-8b-instant,Llama 3.1 8B,1-3,24,2,26,-30.555555555555557,1.049041748046875e-05,3.147125244140625e-05
+execution,llama-3.1-8b-instant,Llama 3.1 8B,2-3,13,9,22,-5.555555555555558,0.5234670639038086,0.5234670639038086
+signature,gpt-5.6-sol,GPT-5.6 Sol,1-2,0,0,0,0.0,1.0,1.0
+signature,gpt-5.6-sol,GPT-5.6 Sol,1-3,0,0,0,0.0,1.0,1.0
+signature,gpt-5.6-sol,GPT-5.6 Sol,2-3,0,0,0,0.0,1.0,1.0
+signature,gpt-5.5,GPT-5.5,1-2,0,1,1,1.388888888888884,1.0,1.0
+signature,gpt-5.5,GPT-5.5,1-3,0,1,1,1.388888888888884,1.0,1.0
+signature,gpt-5.5,GPT-5.5,2-3,0,0,0,0.0,1.0,1.0
+signature,gpt-5.4-mini,GPT-5.4 mini,1-2,2,0,2,-2.777777777777779,0.5,1.0
+signature,gpt-5.4-mini,GPT-5.4 mini,1-3,1,0,1,-1.388888888888895,1.0,1.0
+signature,gpt-5.4-mini,GPT-5.4 mini,2-3,1,2,3,1.388888888888884,1.0,1.0
+signature,claude-fable-5,Claude Fable 5,1-2,1,0,1,-1.388888888888895,1.0,1.0
+signature,claude-fable-5,Claude Fable 5,1-3,1,2,3,1.388888888888884,1.0,1.0
+signature,claude-fable-5,Claude Fable 5,2-3,0,2,2,2.777777777777779,0.5,1.0
+signature,claude-sonnet-4-6,Claude Sonnet 4.6,1-2,2,0,2,-2.777777777777779,0.5,1.0
+signature,claude-sonnet-4-6,Claude Sonnet 4.6,1-3,0,1,1,1.388888888888884,1.0,1.0
+signature,claude-sonnet-4-6,Claude Sonnet 4.6,2-3,0,3,3,4.1666666666666625,0.25,0.75
+signature,claude-opus-4-8,Claude Opus 4.8,1-2,0,0,0,0.0,1.0,1.0
+signature,claude-opus-4-8,Claude Opus 4.8,1-3,0,0,0,0.0,1.0,1.0
+signature,claude-opus-4-8,Claude Opus 4.8,2-3,0,0,0,0.0,1.0,1.0
+signature,gemini-2.5-pro,Gemini 2.5 Pro,1-2,5,2,7,-4.1666666666666625,0.453125,1.0
+signature,gemini-2.5-pro,Gemini 2.5 Pro,1-3,3,2,5,-1.388888888888884,1.0,1.0
+signature,gemini-2.5-pro,Gemini 2.5 Pro,2-3,2,4,6,2.777777777777779,0.6875,1.0
+signature,gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,1-2,0,0,0,0.0,1.0,1.0
+signature,gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,1-3,0,0,0,0.0,1.0,1.0
+signature,gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,2-3,0,0,0,0.0,1.0,1.0
+signature,deepseek-v4-pro,DeepSeek V4 Pro,1-2,5,3,8,-2.777777777777779,0.7265625,1.0
+signature,deepseek-v4-pro,DeepSeek V4 Pro,1-3,4,4,8,0.0,1.0,1.0
+signature,deepseek-v4-pro,DeepSeek V4 Pro,2-3,1,3,4,2.777777777777779,0.625,1.0
+signature,deepseek-v4-flash,DeepSeek V4 Flash,1-2,2,6,8,5.555555555555553,0.2890625,0.65625
+signature,deepseek-v4-flash,DeepSeek V4 Flash,1-3,1,5,6,5.555555555555553,0.21875,0.65625
+signature,deepseek-v4-flash,DeepSeek V4 Flash,2-3,3,3,6,0.0,1.0,1.0
+signature,mistral-ai/codestral-2501,Codestral 25.01,1-2,3,0,3,-4.1666666666666625,0.25,0.75
+signature,mistral-ai/codestral-2501,Codestral 25.01,1-3,0,0,0,0.0,1.0,1.0
+signature,mistral-ai/codestral-2501,Codestral 25.01,2-3,0,3,3,4.1666666666666625,0.25,0.75
+signature,qwen/qwen3-coder-next,Qwen3-Coder-Next,1-2,0,3,3,4.1666666666666625,0.25,0.75
+signature,qwen/qwen3-coder-next,Qwen3-Coder-Next,1-3,1,4,5,4.1666666666666625,0.375,0.75
+signature,qwen/qwen3-coder-next,Qwen3-Coder-Next,2-3,1,1,2,0.0,1.0,1.0
+signature,meta/llama-4-maverick-17b-128e-instruct-fp8,Llama 4 Maverick,1-2,13,0,13,-18.055555555555557,0.000244140625,0.000732421875
+signature,meta/llama-4-maverick-17b-128e-instruct-fp8,Llama 4 Maverick,1-3,11,0,11,-15.277777777777779,0.0009765625,0.001953125
+signature,meta/llama-4-maverick-17b-128e-instruct-fp8,Llama 4 Maverick,2-3,8,10,18,2.777777777777779,0.8145294189453125,0.8145294189453125
+signature,llama-3.3-70b-versatile,Llama 3.3 70B,1-2,5,1,6,-5.555555555555553,0.21875,0.65625
+signature,llama-3.3-70b-versatile,Llama 3.3 70B,1-3,2,1,3,-1.3888888888888895,1.0,1.0
+signature,llama-3.3-70b-versatile,Llama 3.3 70B,2-3,2,5,7,4.1666666666666625,0.453125,0.90625
+signature,openai/gpt-oss-120b,GPT-OSS 120B,1-2,10,1,11,-12.499999999999995,0.01171875,0.0234375
+signature,openai/gpt-oss-120b,GPT-OSS 120B,1-3,14,0,14,-19.444444444444443,0.0001220703125,0.0003662109375
+signature,openai/gpt-oss-120b,GPT-OSS 120B,2-3,10,5,15,-6.944444444444447,0.30175781249999994,0.30175781249999994
+signature,openai/gpt-oss-20b,GPT-OSS 20B,1-2,15,5,20,-13.88888888888889,0.04138946533203125,0.0827789306640625
+signature,openai/gpt-oss-20b,GPT-OSS 20B,1-3,15,4,19,-15.277777777777773,0.0192108154296875,0.0576324462890625
+signature,openai/gpt-oss-20b,GPT-OSS 20B,2-3,7,6,13,-1.388888888888884,1.0,1.0
+signature,mistralai/mistral-small-3.2-24b-instruct,Mistral Small 3.2 24B,1-2,3,2,5,-1.3888888888888895,1.0,1.0
+signature,mistralai/mistral-small-3.2-24b-instruct,Mistral Small 3.2 24B,1-3,1,0,1,-1.3888888888888895,1.0,1.0
+signature,mistralai/mistral-small-3.2-24b-instruct,Mistral Small 3.2 24B,2-3,3,3,6,0.0,1.0,1.0
+signature,qiskit/mistral-small-3.2-24b-qiskit,Qiskit Mistral 3.2 24B,1-2,34,0,34,-47.22222222222222,1.1641532182693481e-10,3.4924596548080444e-10
+signature,qiskit/mistral-small-3.2-24b-qiskit,Qiskit Mistral 3.2 24B,1-3,34,0,34,-47.22222222222222,1.1641532182693481e-10,3.4924596548080444e-10
+signature,qiskit/mistral-small-3.2-24b-qiskit,Qiskit Mistral 3.2 24B,2-3,0,0,0,0.0,1.0,1.0
+signature,qwen/qwen3-32b,Qwen3 32B,1-2,19,2,21,-23.61111111111111,0.00022125244140625,0.00066375732421875
+signature,qwen/qwen3-32b,Qwen3 32B,1-3,19,2,21,-23.61111111111111,0.00022125244140625,0.00066375732421875
+signature,qwen/qwen3-32b,Qwen3 32B,2-3,5,5,10,0.0,1.0,1.0
+signature,meta-llama/llama-4-scout-17b-16e-instruct,Llama 4 Scout,1-2,1,4,5,4.1666666666666625,0.375,1.0
+signature,meta-llama/llama-4-scout-17b-16e-instruct,Llama 4 Scout,1-3,2,3,5,1.388888888888884,1.0,1.0
+signature,meta-llama/llama-4-scout-17b-16e-instruct,Llama 4 Scout,2-3,5,3,8,-2.777777777777779,0.7265625,1.0
+signature,llama-3.1-8b-instant,Llama 3.1 8B,1-2,6,0,6,-8.333333333333332,0.03125,0.0625
+signature,llama-3.1-8b-instant,Llama 3.1 8B,1-3,11,0,11,-15.277777777777777,0.0009765625,0.0029296875
+signature,llama-3.1-8b-instant,Llama 3.1 8B,2-3,7,2,9,-6.944444444444445,0.1796875,0.1796875
+runnable_wrong,gpt-5.6-sol,GPT-5.6 Sol,1-2,0,0,0,0.0,1.0,1.0
+runnable_wrong,gpt-5.6-sol,GPT-5.6 Sol,1-3,0,0,0,0.0,1.0,1.0
+runnable_wrong,gpt-5.6-sol,GPT-5.6 Sol,2-3,0,0,0,0.0,1.0,1.0
+runnable_wrong,gpt-5.5,GPT-5.5,1-2,0,1,1,1.3888888888888895,1.0,1.0
+runnable_wrong,gpt-5.5,GPT-5.5,1-3,1,1,2,0.0,1.0,1.0
+runnable_wrong,gpt-5.5,GPT-5.5,2-3,1,0,1,-1.3888888888888895,1.0,1.0
+runnable_wrong,gpt-5.4-mini,GPT-5.4 mini,1-2,0,2,2,2.777777777777779,0.5,1.0
+runnable_wrong,gpt-5.4-mini,GPT-5.4 mini,1-3,0,1,1,1.3888888888888895,1.0,1.0
+runnable_wrong,gpt-5.4-mini,GPT-5.4 mini,2-3,2,1,3,-1.3888888888888895,1.0,1.0
+runnable_wrong,claude-fable-5,Claude Fable 5,1-2,0,1,1,1.3888888888888895,1.0,1.0
+runnable_wrong,claude-fable-5,Claude Fable 5,1-3,2,1,3,-1.3888888888888895,1.0,1.0
+runnable_wrong,claude-fable-5,Claude Fable 5,2-3,2,0,2,-2.777777777777779,0.5,1.0
+runnable_wrong,claude-sonnet-4-6,Claude Sonnet 4.6,1-2,0,3,3,4.1666666666666625,0.25,0.5
+runnable_wrong,claude-sonnet-4-6,Claude Sonnet 4.6,1-3,2,1,3,-1.3888888888888895,1.0,1.0
+runnable_wrong,claude-sonnet-4-6,Claude Sonnet 4.6,2-3,4,0,4,-5.555555555555553,0.125,0.375
+runnable_wrong,claude-opus-4-8,Claude Opus 4.8,1-2,1,0,1,-1.3888888888888895,1.0,1.0
+runnable_wrong,claude-opus-4-8,Claude Opus 4.8,1-3,0,0,0,0.0,1.0,1.0
+runnable_wrong,claude-opus-4-8,Claude Opus 4.8,2-3,0,1,1,1.3888888888888895,1.0,1.0
+runnable_wrong,gemini-2.5-pro,Gemini 2.5 Pro,1-2,5,7,12,2.777777777777779,0.7744140625,1.0
+runnable_wrong,gemini-2.5-pro,Gemini 2.5 Pro,1-3,4,7,11,4.166666666666669,0.548828125,1.0
+runnable_wrong,gemini-2.5-pro,Gemini 2.5 Pro,2-3,5,6,11,1.3888888888888895,1.0,1.0
+runnable_wrong,gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,1-2,1,0,1,-1.3888888888888895,1.0,1.0
+runnable_wrong,gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,1-3,0,1,1,1.3888888888888895,1.0,1.0
+runnable_wrong,gemini-3.1-pro-preview,Gemini 3.1 Pro Preview,2-3,0,2,2,2.777777777777779,0.5,1.0
+runnable_wrong,deepseek-v4-pro,DeepSeek V4 Pro,1-2,6,8,14,2.777777777777779,0.79052734375,1.0
+runnable_wrong,deepseek-v4-pro,DeepSeek V4 Pro,1-3,8,6,14,-2.777777777777779,0.79052734375,1.0
+runnable_wrong,deepseek-v4-pro,DeepSeek V4 Pro,2-3,5,1,6,-5.555555555555558,0.21875,0.65625
+runnable_wrong,deepseek-v4-flash,DeepSeek V4 Flash,1-2,3,4,7,1.3888888888888895,1.0,1.0
+runnable_wrong,deepseek-v4-flash,DeepSeek V4 Flash,1-3,3,6,9,4.166666666666669,0.5078125,1.0
+runnable_wrong,deepseek-v4-flash,DeepSeek V4 Flash,2-3,3,5,8,2.777777777777779,0.7265625,1.0
+runnable_wrong,mistral-ai/codestral-2501,Codestral 25.01,1-2,2,0,2,-2.777777777777779,0.5,1.0
+runnable_wrong,mistral-ai/codestral-2501,Codestral 25.01,1-3,0,0,0,0.0,1.0,1.0
+runnable_wrong,mistral-ai/codestral-2501,Codestral 25.01,2-3,0,2,2,2.777777777777779,0.5,1.0
+runnable_wrong,qwen/qwen3-coder-next,Qwen3-Coder-Next,1-2,3,3,6,0.0,1.0,1.0
+runnable_wrong,qwen/qwen3-coder-next,Qwen3-Coder-Next,1-3,4,4,8,0.0,1.0,1.0
+runnable_wrong,qwen/qwen3-coder-next,Qwen3-Coder-Next,2-3,3,3,6,0.0,1.0,1.0
+runnable_wrong,meta/llama-4-maverick-17b-128e-instruct-fp8,Llama 4 Maverick,1-2,6,1,7,-6.944444444444442,0.125,0.23693847656249997
+runnable_wrong,meta/llama-4-maverick-17b-128e-instruct-fp8,Llama 4 Maverick,1-3,12,0,12,-16.666666666666664,0.00048828125,0.00146484375
+runnable_wrong,meta/llama-4-maverick-17b-128e-instruct-fp8,Llama 4 Maverick,2-3,11,4,15,-9.722222222222221,0.11846923828124999,0.23693847656249997
+runnable_wrong,llama-3.3-70b-versatile,Llama 3.3 70B,1-2,1,5,6,5.555555555555558,0.21875,0.65625
+runnable_wrong,llama-3.3-70b-versatile,Llama 3.3 70B,1-3,1,1,2,0.0,1.0,1.0
+runnable_wrong,llama-3.3-70b-versatile,Llama 3.3 70B,2-3,6,2,8,-5.555555555555558,0.2890625,0.65625
+runnable_wrong,openai/gpt-oss-120b,GPT-OSS 120B,1-2,4,1,5,-4.1666666666666625,0.375,0.75
+runnable_wrong,openai/gpt-oss-120b,GPT-OSS 120B,1-3,6,0,6,-8.333333333333332,0.03125,0.09375
+runnable_wrong,openai/gpt-oss-120b,GPT-OSS 120B,2-3,5,2,7,-4.166666666666669,0.453125,0.75
+runnable_wrong,openai/gpt-oss-20b,GPT-OSS 20B,1-2,17,2,19,-20.833333333333332,0.000728607177734375,0.00145721435546875
+runnable_wrong,openai/gpt-oss-20b,GPT-OSS 20B,1-3,19,1,20,-25.0,4.00543212890625e-05,0.0001201629638671875
+runnable_wrong,openai/gpt-oss-20b,GPT-OSS 20B,2-3,8,5,13,-4.166666666666669,0.5810546875,0.5810546875
+runnable_wrong,mistralai/mistral-small-3.2-24b-instruct,Mistral Small 3.2 24B,1-2,7,5,12,-2.777777777777779,0.7744140625,1.0
+runnable_wrong,mistralai/mistral-small-3.2-24b-instruct,Mistral Small 3.2 24B,1-3,3,4,7,1.388888888888884,1.0,1.0
+runnable_wrong,mistralai/mistral-small-3.2-24b-instruct,Mistral Small 3.2 24B,2-3,5,8,13,4.1666666666666625,0.5810546875,1.0
+runnable_wrong,qiskit/mistral-small-3.2-24b-qiskit,Qiskit Mistral 3.2 24B,1-2,33,0,33,-45.83333333333333,2.3283064365386963e-10,6.984919309616089e-10
+runnable_wrong,qiskit/mistral-small-3.2-24b-qiskit,Qiskit Mistral 3.2 24B,1-3,33,0,33,-45.83333333333333,2.3283064365386963e-10,6.984919309616089e-10
+runnable_wrong,qiskit/mistral-small-3.2-24b-qiskit,Qiskit Mistral 3.2 24B,2-3,0,0,0,0.0,1.0,1.0
+runnable_wrong,qwen/qwen3-32b,Qwen3 32B,1-2,16,2,18,-19.444444444444446,0.001312255859375,0.003936767578125
+runnable_wrong,qwen/qwen3-32b,Qwen3 32B,1-3,14,2,16,-16.666666666666668,0.004180908203125,0.00836181640625
+runnable_wrong,qwen/qwen3-32b,Qwen3 32B,2-3,4,6,10,2.7777777777777777,0.75390625,0.75390625
+runnable_wrong,meta-llama/llama-4-scout-17b-16e-instruct,Llama 4 Scout,1-2,4,3,7,-1.3888888888888895,1.0,1.0
+runnable_wrong,meta-llama/llama-4-scout-17b-16e-instruct,Llama 4 Scout,1-3,4,4,8,0.0,1.0,1.0
+runnable_wrong,meta-llama/llama-4-scout-17b-16e-instruct,Llama 4 Scout,2-3,2,3,5,1.3888888888888895,1.0,1.0
+runnable_wrong,llama-3.1-8b-instant,Llama 3.1 8B,1-2,14,2,16,-16.666666666666668,0.004180908203125,0.012542724609375
+runnable_wrong,llama-3.1-8b-instant,Llama 3.1 8B,1-3,13,2,15,-15.277777777777779,0.00738525390625,0.0147705078125
+runnable_wrong,llama-3.1-8b-instant,Llama 3.1 8B,2-3,6,7,13,1.3888888888888895,1.0,1.0

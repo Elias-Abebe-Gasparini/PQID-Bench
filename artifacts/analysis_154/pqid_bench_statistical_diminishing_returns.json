@@ -1,0 +1,361 @@
+{
+  "correlations": [
+    {
+      "descriptor": "num_qubits",
+      "linear_slope_per_unit": -0.009385539516610308,
+      "pearson_r": -0.05199687629054042,
+      "spearman_permutation_p": 0.27474505098980206,
+      "spearman_r": -0.08862472413471661
+    },
+    {
+      "descriptor": "num_clbits",
+      "linear_slope_per_unit": -0.0369570406696123,
+      "pearson_r": -0.19875818023576,
+      "spearman_permutation_p": 0.24375124975005,
+      "spearman_r": -0.0938397985659858
+    },
+    {
+      "descriptor": "gate_count",
+      "linear_slope_per_unit": -0.007200889258577891,
+      "pearson_r": -0.23110288137249288,
+      "spearman_permutation_p": 0.020995800839832032,
+      "spearman_r": -0.1830307583168332
+    },
+    {
+      "descriptor": "gate_type_count",
+      "linear_slope_per_unit": -0.09158344601382576,
+      "pearson_r": -0.4143604963361536,
+      "spearman_permutation_p": 0.0001999600079984003,
+      "spearman_r": -0.44489414482654943
+    },
+    {
+      "descriptor": "gate_entropy",
+      "linear_slope_per_unit": -0.4226281039846618,
+      "pearson_r": -0.4334252313512079,
+      "spearman_permutation_p": 0.0001999600079984003,
+      "spearman_r": -0.4283030946503605
+    }
+  ],
+  "evaluation_count": 3234,
+  "model_count": 21,
+  "model_tiers": [
+    {
+      "clbits": null,
+      "delta_execution": null,
+      "delta_structural": null,
+      "execution": 0.9155844155844156,
+      "execution_structure_gap": 0.7597402597402598,
+      "gate_count": 0.37662337662337664,
+      "gate_types": 0.17532467532467533,
+      "kind": "baseline",
+      "models": [
+        "word_tfidf_train_instruction_copy"
+      ],
+      "n_models": 1,
+      "qasm3": 0.9155844155844156,
+      "qubits": 0.5454545454545454,
+      "structural": 0.15584415584415584,
+      "tier": "retrieval-copy lower bound"
+    },
+    {
+      "clbits": 0.6125541125541125,
+      "delta_execution": -0.17748917748917747,
+      "delta_structural": 0.2272727272727273,
+      "execution": 0.7380952380952381,
+      "execution_structure_gap": 0.354978354978355,
+      "gate_count": 0.5952380952380952,
+      "gate_types": 0.4393939393939394,
+      "kind": "external",
+      "models": [
+        "qwen/qwen3-32b",
+        "llama-3.1-8b-instant",
+        "meta-llama/llama-4-scout-17b-16e-instruct"
+      ],
+      "n_models": 3,
+      "qasm3": 0.7380952380952381,
+      "qubits": 0.7099567099567099,
+      "structural": 0.38311688311688313,
+      "tier": "low / experimental hosted"
+    },
+    {
+      "clbits": 0.7637987012987013,
+      "delta_execution": 0.18235930735930728,
+      "delta_structural": 0.11525974025974023,
+      "execution": 0.9204545454545454,
+      "execution_structure_gap": 0.42207792207792205,
+      "gate_count": 0.7637987012987013,
+      "gate_types": 0.5925324675324675,
+      "kind": "external",
+      "models": [
+        "llama-3.3-70b-versatile",
+        "openai/gpt-oss-120b",
+        "openai/gpt-oss-20b",
+        "mistral-ai/codestral-2501",
+        "qwen/qwen3-coder-next",
+        "meta/llama-4-maverick-17b-128e-instruct-fp8",
+        "mistralai/mistral-small-3.2-24b-instruct",
+        "qiskit/mistral-small-3.2-24b-qiskit"
+      ],
+      "n_models": 8,
+      "qasm3": 0.9172077922077921,
+      "qubits": 0.8920454545454546,
+      "structural": 0.49837662337662336,
+      "tier": "strong hosted open/code"
+    },
+    {
+      "clbits": 0.8337662337662337,
+      "delta_execution": 0.03733766233766245,
+      "delta_structural": 0.09383116883116882,
+      "execution": 0.9577922077922079,
+      "execution_structure_gap": 0.3655844155844157,
+      "gate_count": 0.8454545454545455,
+      "gate_types": 0.662987012987013,
+      "kind": "external",
+      "models": [
+        "gpt-5.6-sol",
+        "gpt-5.5",
+        "gpt-5.4-mini",
+        "claude-fable-5",
+        "claude-sonnet-4-6",
+        "claude-opus-4-8",
+        "gemini-2.5-pro",
+        "gemini-3.1-pro-preview",
+        "deepseek-v4-pro",
+        "deepseek-v4-flash"
+      ],
+      "n_models": 10,
+      "qasm3": 0.9564935064935065,
+      "qubits": 0.9207792207792208,
+      "structural": 0.5922077922077922,
+      "tier": "frontier APIs"
+    }
+  ],
+  "notes": [
+    "Complexity correlations use one row per prompt, with structural rate averaged over completed models.",
+    "Bootstrap intervals resample prompts within each group.",
+    "Permutation p-values are two-sided and descriptive; they are not a substitute for a preregistered inferential design."
+  ],
+  "prompt_count": 154,
+  "prompt_level_contrasts": [
+    {
+      "difference_ci_high": -0.2687653626630006,
+      "difference_ci_low": -0.5353247510727827,
+      "difference_yes_minus_no": -0.4075740532433446,
+      "feature": "high_gate_diversity",
+      "no": {
+        "ci_high": 0.6647919010123734,
+        "ci_low": 0.532058492688414,
+        "mean": 0.5980502437195351,
+        "median": 0.7619047619047619,
+        "n_prompts": 127
+      },
+      "yes": {
+        "ci_high": 0.3122134038800699,
+        "ci_low": 0.08641975308641975,
+        "mean": 0.19047619047619047,
+        "median": 0.047619047619047616,
+        "n_prompts": 27
+      }
+    },
+    {
+      "difference_ci_high": -0.2494375927829166,
+      "difference_ci_low": -0.5577954779033916,
+      "difference_yes_minus_no": -0.4145940390544707,
+      "feature": "high_gate_count",
+      "no": {
+        "ci_high": 0.6300102774922919,
+        "ci_low": 0.49845837615621785,
+        "mean": 0.5669749914354231,
+        "median": 0.7142857142857143,
+        "n_prompts": 139
+      },
+      "yes": {
+        "ci_high": 0.30476190476190473,
+        "ci_low": 0.019047619047619046,
+        "mean": 0.15238095238095237,
+        "median": 0.0,
+        "n_prompts": 15
+      }
+    },
+    {
+      "difference_ci_high": -0.2418352414756301,
+      "difference_ci_low": -0.48595358188109916,
+      "difference_yes_minus_no": -0.3631697401546085,
+      "feature": "has_barrier",
+      "no": {
+        "ci_high": 0.7204148986327203,
+        "ci_low": 0.5808580858085809,
+        "mean": 0.6515794436586516,
+        "median": 0.8095238095238095,
+        "n_prompts": 101
+      },
+      "yes": {
+        "ci_high": 0.38724168912848156,
+        "ci_low": 0.19227313566936208,
+        "mean": 0.2884097035040431,
+        "median": 0.09523809523809523,
+        "n_prompts": 53
+      }
+    },
+    {
+      "difference_ci_high": 0.046336852351003203,
+      "difference_ci_low": -0.2288554769392034,
+      "difference_yes_minus_no": -0.09108265947888594,
+      "feature": "has_controlled_or_entangling",
+      "no": {
+        "ci_high": 0.7003968253968254,
+        "ci_low": 0.47817460317460314,
+        "mean": 0.5892857142857143,
+        "median": 0.7857142857142857,
+        "n_prompts": 48
+      },
+      "yes": {
+        "ci_high": 0.5727762803234501,
+        "ci_low": 0.4218216531895777,
+        "mean": 0.49820305480682836,
+        "median": 0.6190476190476191,
+        "n_prompts": 106
+      }
+    },
+    {
+      "difference_ci_high": -0.01847103766879898,
+      "difference_ci_low": -0.3429388770433547,
+      "difference_yes_minus_no": -0.17832267235252308,
+      "feature": "has_rotation",
+      "no": {
+        "ci_high": 0.6176261549395877,
+        "ci_low": 0.48152096659559346,
+        "mean": 0.5497512437810945,
+        "median": 0.7142857142857143,
+        "n_prompts": 134
+      },
+      "yes": {
+        "ci_high": 0.5214285714285715,
+        "ci_low": 0.21904761904761905,
+        "mean": 0.37142857142857144,
+        "median": 0.30952380952380953,
+        "n_prompts": 20
+      }
+    },
+    {
+      "difference_ci_high": 0.1570101182127829,
+      "difference_ci_low": -0.09008173044813993,
+      "difference_yes_minus_no": 0.03422827756628599,
+      "feature": "has_measure",
+      "no": {
+        "ci_high": 0.5914170506912441,
+        "ci_low": 0.42089093701996927,
+        "mean": 0.5061443932411674,
+        "median": 0.6190476190476191,
+        "n_prompts": 62
+      },
+      "yes": {
+        "ci_high": 0.6278467908902692,
+        "ci_low": 0.4477096273291925,
+        "mean": 0.5403726708074534,
+        "median": 0.8095238095238095,
+        "n_prompts": 92
+      }
+    }
+  ],
+  "upgrade_pairs": [
+    {
+      "after": "llama-3.3-70b-versatile",
+      "before": "llama-3.1-8b-instant",
+      "comparison": "Llama 8B -> 70B",
+      "delta_execution": 0.12337662337662336,
+      "delta_gate_count": 0.14935064935064934,
+      "delta_gate_types": 0.18181818181818182,
+      "delta_qasm3": 0.12337662337662336,
+      "delta_structural": 0.11038961038961037,
+      "execution_after": 0.935064935064935,
+      "execution_before": 0.8116883116883117,
+      "structural_after": 0.461038961038961,
+      "structural_before": 0.35064935064935066
+    },
+    {
+      "after": "meta/llama-4-maverick-17b-128e-instruct-fp8",
+      "before": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "comparison": "Llama 4 Scout -> Maverick",
+      "delta_execution": 0.11688311688311692,
+      "delta_gate_count": 0.1688311688311689,
+      "delta_gate_types": 0.12987012987012986,
+      "delta_qasm3": 0.11038961038961037,
+      "delta_structural": 0.038961038961038974,
+      "execution_after": 0.9415584415584416,
+      "execution_before": 0.8246753246753247,
+      "structural_after": 0.487012987012987,
+      "structural_before": 0.44805194805194803
+    },
+    {
+      "after": "openai/gpt-oss-120b",
+      "before": "openai/gpt-oss-20b",
+      "comparison": "GPT-OSS 20B -> 120B",
+      "delta_execution": 0.038961038961038974,
+      "delta_gate_count": 0.012987012987012991,
+      "delta_gate_types": 0.0,
+      "delta_qasm3": 0.038961038961038974,
+      "delta_structural": 0.025974025974025983,
+      "execution_after": 0.9675324675324676,
+      "execution_before": 0.9285714285714286,
+      "structural_after": 0.5324675324675324,
+      "structural_before": 0.5064935064935064
+    },
+    {
+      "after": "gemini-3.1-pro-preview",
+      "before": "gemini-2.5-pro",
+      "comparison": "Gemini 2.5 Pro -> 3.1 Pro Preview",
+      "delta_execution": 0.0844155844155845,
+      "delta_gate_count": 0.07792207792207795,
+      "delta_gate_types": 0.0714285714285714,
+      "delta_qasm3": 0.0844155844155845,
+      "delta_structural": 0.0714285714285714,
+      "execution_after": 0.9675324675324676,
+      "execution_before": 0.8831168831168831,
+      "structural_after": 0.6103896103896104,
+      "structural_before": 0.538961038961039
+    },
+    {
+      "after": "claude-opus-4-8",
+      "before": "claude-sonnet-4-6",
+      "comparison": "Claude Sonnet 4.6 -> Opus 4.8",
+      "delta_execution": 0.00649350649350644,
+      "delta_gate_count": 0.019480519480519543,
+      "delta_gate_types": 0.012987012987012991,
+      "delta_qasm3": 0.0,
+      "delta_structural": 0.00649350649350644,
+      "execution_after": 1,
+      "execution_before": 0.9935064935064936,
+      "structural_after": 0.5974025974025974,
+      "structural_before": 0.5909090909090909
+    },
+    {
+      "after": "deepseek-v4-pro",
+      "before": "deepseek-v4-flash",
+      "comparison": "DeepSeek V4 Flash -> Pro",
+      "delta_execution": 0.025974025974025983,
+      "delta_gate_count": 0.051948051948051965,
+      "delta_gate_types": 0.058441558441558406,
+      "delta_qasm3": 0.025974025974025983,
+      "delta_structural": 0.06493506493506496,
+      "execution_after": 0.9155844155844156,
+      "execution_before": 0.8896103896103896,
+      "structural_after": 0.5909090909090909,
+      "structural_before": 0.525974025974026
+    },
+    {
+      "after": "qiskit/mistral-small-3.2-24b-qiskit",
+      "before": "mistralai/mistral-small-3.2-24b-instruct",
+      "comparison": "Mistral parent -> Qiskit specialist",
+      "delta_execution": -0.006493506493506551,
+      "delta_gate_count": -0.10389610389610382,
+      "delta_gate_types": -0.06493506493506496,
+      "delta_qasm3": -0.012987012987012991,
+      "delta_structural": -0.038961038961038974,
+      "execution_after": 0.8961038961038961,
+      "execution_before": 0.9025974025974026,
+      "structural_after": 0.44805194805194803,
+      "structural_before": 0.487012987012987
+    }
+  ]
+}

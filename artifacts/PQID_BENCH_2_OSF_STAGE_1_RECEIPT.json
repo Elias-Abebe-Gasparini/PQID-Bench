@@ -1,0 +1,43 @@
+{
+  "artifact_type": "pqid_bench_2_osf_stage_1_registration_receipt",
+  "artifact_version": "1.0.0",
+  "study": "PQID-Bench 2",
+  "registration_stage": 1,
+  "registration_title": "PQID-Bench 2: Preregistered Evaluation of Semantic Validity, Structural Divergence, and Algorithm-Family Effects.",
+  "osf_project_id": "pw4rs",
+  "osf_project_url": "https://osf.io/pw4rs/",
+  "osf_registration_id": "wderq",
+  "registration_doi": "10.17605/OSF.IO/WDERQ",
+  "registration_doi_url": "https://doi.org/10.17605/OSF.IO/WDERQ",
+  "registration_url": "https://osf.io/wderq/",
+  "registered_at_utc": "2026-07-28T08:02:22.959020Z",
+  "visibility": "public",
+  "registration_review_state": "accepted",
+  "registered_bundle": {
+    "protocol_path": "preregistration/PQID_BENCH_2_PREREGISTRATION_PROTOCOL.md",
+    "protocol_bytes": 16504,
+    "protocol_sha256": "8e43fe4a9924d1c4c68f454ff4aa9e80276969fcf12ae9540815aca6fd1b44e5",
+    "machine_contract_path": "preregistration/pqid_bench_2_prereg.json",
+    "machine_contract_bytes": 14597,
+    "machine_contract_sha256": "2fd457f12def6c4042e6badebcb8badbd21ffb654c3d6e82ab8cfd73fcfaeb59",
+    "bundle_readme_path": "preregistration/README.md",
+    "bundle_readme_bytes": 2331,
+    "bundle_readme_sha256": "f90be4f7625e891550480df40a2847bd2dc8f895ac2bf195261e270e15a6950f",
+    "checksum_path": "preregistration/SHA256SUMS.txt",
+    "checksum_bytes": 274,
+    "checksum_sha256": "e05687b62d31d458f8de913f598fa738fcad522cd71c14925cdbb54bbc0f61e9"
+  },
+  "verification": {
+    "osf_registration_api": "https://api.osf.io/v2/registrations/wderq/",
+    "osf_identifiers_api": "https://api.osf.io/v2/registrations/wderq/identifiers/",
+    "verified_at_utc": "2026-07-28T08:23:45.9816023Z",
+    "public_registration_metadata_verified": true,
+    "archived_file_hashes_match_local_bundle": true
+  },
+  "assertions": {
+    "no_pqid_bench_2_model_call_preceded_stage_1_registration": true,
+    "no_pqid_bench_2_outcome_was_observed_before_stage_1_registration": true,
+    "stage_1_authorizes_model_calls": false,
+    "public_stage_2_registration_required_before_model_calls": true
+  }
+}

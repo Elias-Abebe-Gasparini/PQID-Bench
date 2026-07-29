@@ -1,0 +1,163 @@
+{
+  "schema_version": "pqid-bench-retrieval-channel-edge-case-v1",
+  "case_id": "retrieval_channel_edge_case_0043",
+  "prompt_id": "pqid_bench_external_gen_0043",
+  "purpose": "Document the Figure 2 retrieval-channel edge case where code/metadata sparse-copy baselines match the evaluator-facing target signature but instruction-copy retrieval does not.",
+  "derived_from": {
+    "prompt_manifest": "artifacts/test_split_154/pqid_bench_external_generation_prompts_154.jsonl",
+    "model_by_prompt_matrix": "artifacts/analysis_154/pqid_bench_model_by_prompt_structural_matrix.csv",
+    "retrieval_copy_report": "artifacts/test_split_154/retrieval_copy_baseline/pqid_bench_generation_copy_baseline_report.json",
+    "generation_copy_script": "scripts/run_pqid_bench_generation_copy_baseline.py"
+  },
+  "external_model_context": {
+    "completed_external_model_rows": 21,
+    "external_structural_matches": 20,
+    "item_difficulty": 0.047619,
+    "interpretation": "This is a low-difficulty prompt for external generators, not one of the retrieval-copy-only prompts missed by all external model rows."
+  },
+  "target": {
+    "row_id": "3ca2e35fe48b1a2c21eb9a79a7da388b",
+    "benchmark_label": "extended_n8",
+    "file_path": "source/0/cruzados_0e0e72.py",
+    "source": "empirical_promoted_repo_v2",
+    "original_url": "https://github.com/backordinary/QDP-FSL/blob/main/source/0/cruzados_0e0e72.py",
+    "github_anchor": "https://github.com/backordinary/QDP-FSL/blob/main/source/0/cruzados_0e0e72.py#L15-L29",
+    "source_group": "backordinary|QDP-FSL|source/0/cruzados_0e0e72.py",
+    "instruction": "Create a compact 2-qubit Qiskit circuit that applies X on qubit 0, then a CNOT from qubit 0 to qubit 1, then X on qubit 0 again, and finally measures both qubits into two classical bits.",
+    "signature": {
+      "num_qubits": 2,
+      "num_clbits": 2,
+      "gate_count": 5,
+      "gate_types": {
+        "cx": 1,
+        "measure": 2,
+        "x": 2
+      }
+    },
+    "ordered_gate_tape": [
+      "x(q0)",
+      "cx(q0,q1)",
+      "x(q0)",
+      "measure(q0,c0)",
+      "measure(q1,c1)"
+    ]
+  },
+  "retrieval_channels": [
+    {
+      "channel": "BM25 code/metadata copy",
+      "baseline_id": "bm25_code_metadata_copy",
+      "retrieved_row_id": "98d799abcf6f433879a866d4edd3e10e",
+      "retrieved_benchmark_label": "strict_n8",
+      "retrieved_file_path": "qiskit_src/cnot.py",
+      "retrieved_source": "search",
+      "retrieved_original_url": "https://github.com/mik3hall/qcapp/blob/main/qiskit_src/cnot.py",
+      "retrieved_github_anchor": "https://github.com/mik3hall/qcapp/blob/main/qiskit_src/cnot.py#L69-L82",
+      "retrieved_source_group": "mik3hall|qcapp|qiskit_src/cnot.py",
+      "same_source_group_as_target": false,
+      "retrieved_instruction": "Create a 2-qubit, 2-classical-bit Qiskit circuit that applies a CNOT from qubit 0 to qubit 1, then flips both qubits with X gates, and finally measures each qubit into the matching classical bit.",
+      "retrieved_signature": {
+        "num_qubits": 2,
+        "num_clbits": 2,
+        "gate_count": 5,
+        "gate_types": {
+          "cx": 1,
+          "measure": 2,
+          "x": 2
+        }
+      },
+      "structural_checks": {
+        "num_qubits_match": true,
+        "num_clbits_match": true,
+        "gate_count_match": true,
+        "gate_types_match": true,
+        "all_structure_match": true
+      },
+      "ordered_gate_tape": [
+        "cx(q0,q1)",
+        "x(q0)",
+        "x(q1)",
+        "measure(q0,c0)",
+        "measure(q1,c1)"
+      ],
+      "interpretation": "Matches the current evaluator-facing signature but does not establish ordered gate-tape or operand-sequence equivalence."
+    },
+    {
+      "channel": "TF-IDF code/metadata copy",
+      "baseline_id": "word_tfidf_code_metadata_copy",
+      "retrieved_row_id": "98d799abcf6f433879a866d4edd3e10e",
+      "retrieved_benchmark_label": "strict_n8",
+      "retrieved_file_path": "qiskit_src/cnot.py",
+      "retrieved_source": "search",
+      "retrieved_original_url": "https://github.com/mik3hall/qcapp/blob/main/qiskit_src/cnot.py",
+      "retrieved_github_anchor": "https://github.com/mik3hall/qcapp/blob/main/qiskit_src/cnot.py#L69-L82",
+      "retrieved_source_group": "mik3hall|qcapp|qiskit_src/cnot.py",
+      "same_source_group_as_target": false,
+      "retrieved_instruction": "Create a 2-qubit, 2-classical-bit Qiskit circuit that applies a CNOT from qubit 0 to qubit 1, then flips both qubits with X gates, and finally measures each qubit into the matching classical bit.",
+      "retrieved_signature": {
+        "num_qubits": 2,
+        "num_clbits": 2,
+        "gate_count": 5,
+        "gate_types": {
+          "cx": 1,
+          "measure": 2,
+          "x": 2
+        }
+      },
+      "structural_checks": {
+        "num_qubits_match": true,
+        "num_clbits_match": true,
+        "gate_count_match": true,
+        "gate_types_match": true,
+        "all_structure_match": true
+      },
+      "ordered_gate_tape": [
+        "cx(q0,q1)",
+        "x(q0)",
+        "x(q1)",
+        "measure(q0,c0)",
+        "measure(q1,c1)"
+      ],
+      "interpretation": "Same retrieved neighbor and same evaluator-facing signature match as BM25 code/metadata copy."
+    },
+    {
+      "channel": "TF-IDF instruction copy",
+      "baseline_id": "word_tfidf_train_instruction_copy",
+      "retrieved_row_id": "7d516050c806be7fce65a6edea09f10d",
+      "retrieved_benchmark_label": "extended_n8",
+      "retrieved_file_path": "source/0/main_c5ddaa.py",
+      "retrieved_source": "empirical_promoted_repo_v2",
+      "retrieved_original_url": "https://github.com/backordinary/QDP-FSL/blob/main/source/0/main_c5ddaa.py",
+      "retrieved_github_anchor": "https://github.com/backordinary/QDP-FSL/blob/main/source/0/main_c5ddaa.py#L9-L17",
+      "retrieved_source_group": "backordinary|QDP-FSL|source/0/main_c5ddaa.py",
+      "same_source_group_as_target": false,
+      "retrieved_instruction": "Create a compact 2-qubit Qiskit circuit that applies Hadamards to both qubits, then a CNOT from qubit 0 to qubit 1, followed by another Hadamard on qubit 0, and finally measures both qubits into two classical bits.",
+      "retrieved_signature": {
+        "num_qubits": 2,
+        "num_clbits": 2,
+        "gate_count": 6,
+        "gate_types": {
+          "cx": 1,
+          "h": 3,
+          "measure": 2
+        }
+      },
+      "structural_checks": {
+        "num_qubits_match": true,
+        "num_clbits_match": true,
+        "gate_count_match": false,
+        "gate_types_match": false,
+        "all_structure_match": false
+      },
+      "ordered_gate_tape": [
+        "h(q0)",
+        "h(q1)",
+        "cx(q0,q1)",
+        "h(q0)",
+        "measure(q0,c0)",
+        "measure(q1,c1)"
+      ],
+      "interpretation": "Instruction retrieval finds a same-width Hadamard/CX/measurement neighbor but fails the gate-count and gate-vocabulary components of the structural predicate."
+    }
+  ],
+  "case_interpretation": "The edge case supports metadata-neighbor complementarity among sparse-copy baselines. It should not be interpreted as full ordered-circuit equivalence because the current all-structure predicate compares qubit count, classical-bit count, counted gate total, and gate-type multiset, not ordered gate tape or operand sequence."
+}

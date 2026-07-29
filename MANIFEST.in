@@ -1,0 +1,19 @@
+include README.md
+include pyproject.toml
+include mkdocs.yml
+include LICENSES/MIT.txt
+recursive-include docs *.md
+include requirements/evaluator-container.txt
+include requirements/package-runtime.txt
+recursive-include sbom *.json *.md
+recursive-include src/pqid_bench/schemas *.schema.json
+recursive-include tests *.py *.md
+recursive-include docker/evaluator *
+prune artifacts
+prune data
+prune figures
+prune notebooks
+prune paper
+prune platforms
+prune spaces
+prune tables_copy_ready

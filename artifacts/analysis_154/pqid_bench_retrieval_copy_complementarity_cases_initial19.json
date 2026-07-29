@@ -1,0 +1,612 @@
+{
+  "baseline_prompt_hits": [
+    {
+      "baseline": "bm25_code_metadata_copy",
+      "baseline_label": "BM25 Copy",
+      "copied_file": "awards/teach_me_qiskit_2018/e91_qkd/e91_quantum_key_distribution_protocol.ipynb",
+      "copied_label": "strict_n8",
+      "copied_row_id": "7e2f7d9fd46da91c91501a7622808dd6",
+      "predicted_metadata": {
+        "gate_count": 5,
+        "gate_types": {
+          "h": 2,
+          "measure": 1,
+          "s": 1,
+          "t": 1
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      },
+      "prompt_id": "pqid_bench_external_gen_0033",
+      "row_id": "866c610886baa2326074c3dfd9868d42",
+      "same_group": false,
+      "same_label": true,
+      "score": 90.9331648736467
+    },
+    {
+      "baseline": "word_tfidf_code_metadata_copy",
+      "baseline_label": "TF-IDF Code Copy",
+      "copied_file": "awards/teach_me_qiskit_2018/e91_qkd/e91_quantum_key_distribution_protocol.ipynb",
+      "copied_label": "strict_n8",
+      "copied_row_id": "7e2f7d9fd46da91c91501a7622808dd6",
+      "predicted_metadata": {
+        "gate_count": 5,
+        "gate_types": {
+          "h": 2,
+          "measure": 1,
+          "s": 1,
+          "t": 1
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      },
+      "prompt_id": "pqid_bench_external_gen_0033",
+      "row_id": "866c610886baa2326074c3dfd9868d42",
+      "same_group": false,
+      "same_label": true,
+      "score": 0.33206795364305075
+    },
+    {
+      "baseline": "word_tfidf_train_instruction_copy",
+      "baseline_label": "TF-IDF Instr. Copy",
+      "copied_file": "deneme.py",
+      "copied_label": "strict_n8",
+      "copied_row_id": "1b9b0d1805333d5d3ba398004822db94",
+      "predicted_metadata": {
+        "gate_count": 4,
+        "gate_types": {
+          "barrier": 1,
+          "cx": 1,
+          "h": 1,
+          "measure": 2
+        },
+        "num_clbits": 2,
+        "num_qubits": 2
+      },
+      "prompt_id": "pqid_bench_external_gen_0004",
+      "row_id": "e541466b8f1ccfe60bdfd5e0e078f3dd",
+      "same_group": false,
+      "same_label": true,
+      "score": 1.0
+    },
+    {
+      "baseline": "word_tfidf_train_instruction_copy",
+      "baseline_label": "TF-IDF Instr. Copy",
+      "copied_file": "source/0/task_202_20q4_b4970b.py",
+      "copied_label": "extended_n8",
+      "copied_row_id": "9dff37e213ad52fad44249accde8a518",
+      "predicted_metadata": {
+        "gate_count": 13,
+        "gate_types": {
+          "ccx": 1,
+          "cx": 4,
+          "h": 6,
+          "measure": 1,
+          "z": 1
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      },
+      "prompt_id": "pqid_bench_external_gen_0022",
+      "row_id": "3303b70cc7ccc2251b3a9bfcaf639bac",
+      "same_group": false,
+      "same_label": false,
+      "score": 0.2968922017130571
+    },
+    {
+      "baseline": "word_tfidf_train_instruction_copy",
+      "baseline_label": "TF-IDF Instr. Copy",
+      "copied_file": "benchmarks/profile_adapter.py",
+      "copied_label": "strict_n8",
+      "copied_row_id": "2ed9449e42ecda3eeaa3d9381932330a",
+      "predicted_metadata": {
+        "gate_count": 4,
+        "gate_types": {
+          "barrier": 1,
+          "cx": 1,
+          "h": 1,
+          "measure": 2
+        },
+        "num_clbits": 2,
+        "num_qubits": 2
+      },
+      "prompt_id": "pqid_bench_external_gen_0028",
+      "row_id": "bc6878af581cacc4ab081fc3c3c6c964",
+      "same_group": false,
+      "same_label": true,
+      "score": 1.0
+    },
+    {
+      "baseline": "word_tfidf_train_instruction_copy",
+      "baseline_label": "TF-IDF Instr. Copy",
+      "copied_file": "awards/teach_me_qiskit_2018/e91_qkd/e91_quantum_key_distribution_protocol.ipynb",
+      "copied_label": "strict_n8",
+      "copied_row_id": "7e2f7d9fd46da91c91501a7622808dd6",
+      "predicted_metadata": {
+        "gate_count": 5,
+        "gate_types": {
+          "h": 2,
+          "measure": 1,
+          "s": 1,
+          "t": 1
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      },
+      "prompt_id": "pqid_bench_external_gen_0033",
+      "row_id": "866c610886baa2326074c3dfd9868d42",
+      "same_group": false,
+      "same_label": true,
+      "score": 0.30455344196357165
+    },
+    {
+      "baseline": "word_tfidf_train_instruction_copy",
+      "baseline_label": "TF-IDF Instr. Copy",
+      "copied_file": "source/0/test3_f96dd8.py",
+      "copied_label": "extended_n8",
+      "copied_row_id": "e5fa9dd08e5bf93aa7741b2666d37c51",
+      "predicted_metadata": {
+        "gate_count": 4,
+        "gate_types": {
+          "barrier": 1,
+          "cx": 1,
+          "h": 1,
+          "measure": 2
+        },
+        "num_clbits": 2,
+        "num_qubits": 2
+      },
+      "prompt_id": "pqid_bench_external_gen_0064",
+      "row_id": "b787da0527576cba8fc093af52d396bc",
+      "same_group": false,
+      "same_label": true,
+      "score": 0.4881481140628973
+    },
+    {
+      "baseline": "word_tfidf_train_instruction_copy",
+      "baseline_label": "TF-IDF Instr. Copy",
+      "copied_file": "source/0/quantum_phase_bloch_19c255.py",
+      "copied_label": "extended_n8",
+      "copied_row_id": "187bb040cd5412d16f9ae06c008b9701",
+      "predicted_metadata": {
+        "gate_count": 9,
+        "gate_types": {
+          "barrier": 1,
+          "h": 3,
+          "measure": 3,
+          "sdg": 3
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      },
+      "prompt_id": "pqid_bench_external_gen_0108",
+      "row_id": "e9769dc002f379a7d569368b457b41eb",
+      "same_group": false,
+      "same_label": true,
+      "score": 0.64256434341465
+    }
+  ],
+  "cases": [
+    {
+      "difficulty": 1.0,
+      "external_failure_summary": {
+        "all_match": 0,
+        "execution_success": 18,
+        "gate_count_match": 18,
+        "gate_types_match": 0,
+        "model_rows": 19,
+        "num_clbits_match": 18,
+        "num_qubits_match": 18,
+        "primary_failure_counts": {
+          "execution_failure:SyntaxError": 1,
+          "gate_types_mismatch": 18
+        },
+        "qasm3_success": 18
+      },
+      "families": "bell_or_superdense;pauli_measurement",
+      "instruction": "Create a 2-qubit Qiskit circuit that prepares a Bell state by applying a Hadamard to qubit 0, then a CNOT from qubit 0 to qubit 1, and finally measures both qubits.",
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0004",
+      "row_id": "e541466b8f1ccfe60bdfd5e0e078f3dd",
+      "successful_copy_baselines": [
+        {
+          "baseline": "word_tfidf_train_instruction_copy",
+          "baseline_label": "TF-IDF Instr. Copy",
+          "copied_file": "deneme.py",
+          "copied_label": "strict_n8",
+          "copied_row_id": "1b9b0d1805333d5d3ba398004822db94",
+          "predicted_metadata": {
+            "gate_count": 4,
+            "gate_types": {
+              "barrier": 1,
+              "cx": 1,
+              "h": 1,
+              "measure": 2
+            },
+            "num_clbits": 2,
+            "num_qubits": 2
+          },
+          "same_group": false,
+          "same_label": true,
+          "score": 1.0
+        }
+      ],
+      "target_file": "examples/quickstart-sampler.py",
+      "target_metadata": {
+        "gate_count": 4,
+        "gate_types": {
+          "barrier": 1,
+          "cx": 1,
+          "h": 1,
+          "measure": 2
+        },
+        "num_clbits": 2,
+        "num_qubits": 2
+      },
+      "target_summary": "2q/2c; 4 gates; barrier:1, cx:1, h:1, measure:2"
+    },
+    {
+      "difficulty": 1.0,
+      "external_failure_summary": {
+        "all_match": 0,
+        "execution_success": 16,
+        "gate_count_match": 15,
+        "gate_types_match": 15,
+        "model_rows": 19,
+        "num_clbits_match": 0,
+        "num_qubits_match": 16,
+        "primary_failure_counts": {
+          "empty_generation": 2,
+          "execution_failure:SyntaxError": 1,
+          "gate_types_mismatch": 1,
+          "num_clbits_mismatch": 15
+        },
+        "qasm3_success": 16
+      },
+      "families": "error_correction;arithmetic_toffoli;pauli_measurement",
+      "instruction": "Create a Qiskit circuit for a 3-qubit phase-flip error-correction example: encode qubit 0 onto qubits 1 and 2 with two CNOTs, apply Hadamards to all three qubits, insert a Z error on qubit 0, apply Hadamards again, decode with the same two CNOTs, correct with a Toffoli using qubits 2 and 1 as controls on qubit 0, and measure qubit 0 into classical bit 0.",
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0022",
+      "row_id": "3303b70cc7ccc2251b3a9bfcaf639bac",
+      "successful_copy_baselines": [
+        {
+          "baseline": "word_tfidf_train_instruction_copy",
+          "baseline_label": "TF-IDF Instr. Copy",
+          "copied_file": "source/0/task_202_20q4_b4970b.py",
+          "copied_label": "extended_n8",
+          "copied_row_id": "9dff37e213ad52fad44249accde8a518",
+          "predicted_metadata": {
+            "gate_count": 13,
+            "gate_types": {
+              "ccx": 1,
+              "cx": 4,
+              "h": 6,
+              "measure": 1,
+              "z": 1
+            },
+            "num_clbits": 3,
+            "num_qubits": 3
+          },
+          "same_group": false,
+          "same_label": false,
+          "score": 0.2968922017130571
+        }
+      ],
+      "target_file": "Quantum Error Correction/Phase Flip code.py",
+      "target_metadata": {
+        "gate_count": 13,
+        "gate_types": {
+          "ccx": 1,
+          "cx": 4,
+          "h": 6,
+          "measure": 1,
+          "z": 1
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      },
+      "target_summary": "3q/3c; 13 gates; ccx:1, cx:4, h:6, measure:1, z:1"
+    },
+    {
+      "difficulty": 1.0,
+      "external_failure_summary": {
+        "all_match": 0,
+        "execution_success": 19,
+        "gate_count_match": 19,
+        "gate_types_match": 0,
+        "model_rows": 19,
+        "num_clbits_match": 19,
+        "num_qubits_match": 19,
+        "primary_failure_counts": {
+          "gate_types_mismatch": 19
+        },
+        "qasm3_success": 19
+      },
+      "families": "bell_or_superdense;pauli_measurement",
+      "instruction": "Create a 2-qubit Qiskit circuit that prepares a Bell pair by applying H to qubit 0, then CX from qubit 0 to qubit 1, and finally measures both qubits.",
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0028",
+      "row_id": "bc6878af581cacc4ab081fc3c3c6c964",
+      "successful_copy_baselines": [
+        {
+          "baseline": "word_tfidf_train_instruction_copy",
+          "baseline_label": "TF-IDF Instr. Copy",
+          "copied_file": "benchmarks/profile_adapter.py",
+          "copied_label": "strict_n8",
+          "copied_row_id": "2ed9449e42ecda3eeaa3d9381932330a",
+          "predicted_metadata": {
+            "gate_count": 4,
+            "gate_types": {
+              "barrier": 1,
+              "cx": 1,
+              "h": 1,
+              "measure": 2
+            },
+            "num_clbits": 2,
+            "num_qubits": 2
+          },
+          "same_group": false,
+          "same_label": true,
+          "score": 1.0
+        }
+      ],
+      "target_file": "Demos/sampler_demo.py",
+      "target_metadata": {
+        "gate_count": 4,
+        "gate_types": {
+          "barrier": 1,
+          "cx": 1,
+          "h": 1,
+          "measure": 2
+        },
+        "num_clbits": 2,
+        "num_qubits": 2
+      },
+      "target_summary": "2q/2c; 4 gates; barrier:1, cx:1, h:1, measure:2"
+    },
+    {
+      "difficulty": 1.0,
+      "external_failure_summary": {
+        "all_match": 0,
+        "execution_success": 17,
+        "gate_count_match": 0,
+        "gate_types_match": 0,
+        "model_rows": 19,
+        "num_clbits_match": 1,
+        "num_qubits_match": 0,
+        "primary_failure_counts": {
+          "execution_failure:SyntaxError": 1,
+          "gate_types_mismatch": 17,
+          "no_circuit_found": 1
+        },
+        "qasm3_success": 17
+      },
+      "families": "qkd_e91;pauli_measurement",
+      "instruction": "Create Qiskit measurement subcircuits for the E91 QKD setup on a shared 2-qubit register and classical register: Alice\u2019s three choices should be H then measure on qubit 0, S-H-T-H then measure on qubit 0, and direct Z-basis measurement on qubit 0; Bob\u2019s three choices should be S-H-T-H then measure on qubit 1, direct Z-basis measurement on qubit 1, and S-H then measure on qubit 1, with circuit names measureA1, measureA2, measureA3, measureB1, measureB2, and measureB3.",
+      "label": "strict_n8",
+      "prompt_id": "pqid_bench_external_gen_0033",
+      "row_id": "866c610886baa2326074c3dfd9868d42",
+      "successful_copy_baselines": [
+        {
+          "baseline": "bm25_code_metadata_copy",
+          "baseline_label": "BM25 Copy",
+          "copied_file": "awards/teach_me_qiskit_2018/e91_qkd/e91_quantum_key_distribution_protocol.ipynb",
+          "copied_label": "strict_n8",
+          "copied_row_id": "7e2f7d9fd46da91c91501a7622808dd6",
+          "predicted_metadata": {
+            "gate_count": 5,
+            "gate_types": {
+              "h": 2,
+              "measure": 1,
+              "s": 1,
+              "t": 1
+            },
+            "num_clbits": 3,
+            "num_qubits": 3
+          },
+          "same_group": false,
+          "same_label": true,
+          "score": 90.9331648736467
+        },
+        {
+          "baseline": "word_tfidf_code_metadata_copy",
+          "baseline_label": "TF-IDF Code Copy",
+          "copied_file": "awards/teach_me_qiskit_2018/e91_qkd/e91_quantum_key_distribution_protocol.ipynb",
+          "copied_label": "strict_n8",
+          "copied_row_id": "7e2f7d9fd46da91c91501a7622808dd6",
+          "predicted_metadata": {
+            "gate_count": 5,
+            "gate_types": {
+              "h": 2,
+              "measure": 1,
+              "s": 1,
+              "t": 1
+            },
+            "num_clbits": 3,
+            "num_qubits": 3
+          },
+          "same_group": false,
+          "same_label": true,
+          "score": 0.33206795364305075
+        },
+        {
+          "baseline": "word_tfidf_train_instruction_copy",
+          "baseline_label": "TF-IDF Instr. Copy",
+          "copied_file": "awards/teach_me_qiskit_2018/e91_qkd/e91_quantum_key_distribution_protocol.ipynb",
+          "copied_label": "strict_n8",
+          "copied_row_id": "7e2f7d9fd46da91c91501a7622808dd6",
+          "predicted_metadata": {
+            "gate_count": 5,
+            "gate_types": {
+              "h": 2,
+              "measure": 1,
+              "s": 1,
+              "t": 1
+            },
+            "num_clbits": 3,
+            "num_qubits": 3
+          },
+          "same_group": false,
+          "same_label": true,
+          "score": 0.30455344196357165
+        }
+      ],
+      "target_file": "community/awards/teach_me_qiskit_2018/e91_qkd/e91_quantum_key_distribution_protocol.ipynb",
+      "target_metadata": {
+        "gate_count": 5,
+        "gate_types": {
+          "h": 2,
+          "measure": 1,
+          "s": 1,
+          "t": 1
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      },
+      "target_summary": "3q/3c; 5 gates; h:2, measure:1, s:1, t:1"
+    },
+    {
+      "difficulty": 1.0,
+      "external_failure_summary": {
+        "all_match": 0,
+        "execution_success": 17,
+        "gate_count_match": 17,
+        "gate_types_match": 0,
+        "model_rows": 19,
+        "num_clbits_match": 17,
+        "num_qubits_match": 17,
+        "primary_failure_counts": {
+          "execution_failure:ImportError": 2,
+          "gate_types_mismatch": 17
+        },
+        "qasm3_success": 17
+      },
+      "families": "bell_or_superdense;pauli_measurement",
+      "instruction": "Create a small Qiskit circuit that prepares a Bell pair on 2 qubits and measures both qubits, suitable for running on a local fake backend.",
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0064",
+      "row_id": "b787da0527576cba8fc093af52d396bc",
+      "successful_copy_baselines": [
+        {
+          "baseline": "word_tfidf_train_instruction_copy",
+          "baseline_label": "TF-IDF Instr. Copy",
+          "copied_file": "source/0/test3_f96dd8.py",
+          "copied_label": "extended_n8",
+          "copied_row_id": "e5fa9dd08e5bf93aa7741b2666d37c51",
+          "predicted_metadata": {
+            "gate_count": 4,
+            "gate_types": {
+              "barrier": 1,
+              "cx": 1,
+              "h": 1,
+              "measure": 2
+            },
+            "num_clbits": 2,
+            "num_qubits": 2
+          },
+          "same_group": false,
+          "same_label": true,
+          "score": 0.4881481140628973
+        }
+      ],
+      "target_file": "docs/guides/local-testing-mode.ipynb",
+      "target_metadata": {
+        "gate_count": 4,
+        "gate_types": {
+          "barrier": 1,
+          "cx": 1,
+          "h": 1,
+          "measure": 2
+        },
+        "num_clbits": 2,
+        "num_qubits": 2
+      },
+      "target_summary": "2q/2c; 4 gates; barrier:1, cx:1, h:1, measure:2"
+    },
+    {
+      "difficulty": 1.0,
+      "external_failure_summary": {
+        "all_match": 0,
+        "execution_success": 15,
+        "gate_count_match": 3,
+        "gate_types_match": 0,
+        "model_rows": 19,
+        "num_clbits_match": 10,
+        "num_qubits_match": 15,
+        "primary_failure_counts": {
+          "empty_generation": 1,
+          "execution_failure:CircuitError": 1,
+          "execution_failure:SyntaxError": 1,
+          "execution_failure:TypeError": 1,
+          "gate_types_mismatch": 15
+        },
+        "qasm3_success": 15
+      },
+      "families": "pauli_measurement",
+      "instruction": "Create a small Qiskit example for three qubits that prepares each qubit in a superposition, then builds separate measurement circuits for the X, Y, and Z bases using the usual basis-change gates before measuring all qubits.",
+      "label": "extended_n8",
+      "prompt_id": "pqid_bench_external_gen_0108",
+      "row_id": "e9769dc002f379a7d569368b457b41eb",
+      "successful_copy_baselines": [
+        {
+          "baseline": "word_tfidf_train_instruction_copy",
+          "baseline_label": "TF-IDF Instr. Copy",
+          "copied_file": "source/0/quantum_phase_bloch_19c255.py",
+          "copied_label": "extended_n8",
+          "copied_row_id": "187bb040cd5412d16f9ae06c008b9701",
+          "predicted_metadata": {
+            "gate_count": 9,
+            "gate_types": {
+              "barrier": 1,
+              "h": 3,
+              "measure": 3,
+              "sdg": 3
+            },
+            "num_clbits": 3,
+            "num_qubits": 3
+          },
+          "same_group": false,
+          "same_label": true,
+          "score": 0.64256434341465
+        }
+      ],
+      "target_file": "source/0/testquantumphasebloch_2e04de.py",
+      "target_metadata": {
+        "gate_count": 9,
+        "gate_types": {
+          "barrier": 1,
+          "h": 3,
+          "measure": 3,
+          "sdg": 3
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      },
+      "target_summary": "3q/3c; 9 gates; barrier:1, h:3, measure:3, sdg:3"
+    }
+  ],
+  "summary": {
+    "baseline_hit_counts": {
+      "BM25 Copy": 1,
+      "TF-IDF Code Copy": 1,
+      "TF-IDF Instr. Copy": 6
+    },
+    "baseline_prompt_hit_count": 8,
+    "external_execution_success": 102,
+    "external_gate_types_match": 15,
+    "external_model_attempts": 114,
+    "external_primary_failure_counts": {
+      "empty_generation": 3,
+      "execution_failure:CircuitError": 1,
+      "execution_failure:ImportError": 2,
+      "execution_failure:SyntaxError": 4,
+      "execution_failure:TypeError": 1,
+      "gate_types_mismatch": 87,
+      "no_circuit_found": 1,
+      "num_clbits_mismatch": 15
+    },
+    "external_qasm3_success": 102,
+    "external_structural_match": 0,
+    "unique_prompt_count": 6
+  }
+}

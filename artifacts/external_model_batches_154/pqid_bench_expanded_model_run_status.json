@@ -1,0 +1,593 @@
+{
+  "complete_model_count": 19,
+  "created_at_utc": "2026-07-14T03:58:56+00:00",
+  "expected_rows": 154,
+  "model_count": 19,
+  "models": [
+    {
+      "duplicate_prompt_count": 0,
+      "duplicate_prompts": [],
+      "error_prompt_count": 0,
+      "error_prompts": [],
+      "evaluation_rows": 154,
+      "finish_counts": {
+        "end_turn": 151,
+        "max_tokens": 1,
+        "refusal": 2
+      },
+      "hash_mismatch_count": 0,
+      "hash_mismatches": [],
+      "metrics": {
+        "execution_success": 0.961038961038961,
+        "gate_types_match": 0.7012987012987013,
+        "qasm3_export_success": 0.961038961038961,
+        "structural_all_match": 0.6298701298701299
+      },
+      "missing_prompt_count": 0,
+      "missing_prompts": [],
+      "provider": "anthropic",
+      "request_rows": 154,
+      "requested_model": "claude-fable-5",
+      "resolved_models": [
+        "claude-fable-5"
+      ],
+      "response_rows": 154,
+      "slug": "anthropic_claude-fable-5",
+      "status": "complete",
+      "unique_response_prompts": 154
+    },
+    {
+      "duplicate_prompt_count": 0,
+      "duplicate_prompts": [],
+      "error_prompt_count": 0,
+      "error_prompts": [],
+      "evaluation_rows": 154,
+      "finish_counts": {
+        "end_turn": 154
+      },
+      "hash_mismatch_count": 0,
+      "hash_mismatches": [],
+      "metrics": {
+        "execution_success": 1.0,
+        "gate_types_match": 0.6753246753246753,
+        "qasm3_export_success": 0.9935064935064936,
+        "structural_all_match": 0.5974025974025974
+      },
+      "missing_prompt_count": 0,
+      "missing_prompts": [],
+      "provider": "anthropic",
+      "request_rows": 154,
+      "requested_model": "claude-opus-4-8",
+      "resolved_models": [
+        "claude-opus-4-8"
+      ],
+      "response_rows": 154,
+      "slug": "anthropic_claude-opus-4-8",
+      "status": "complete",
+      "unique_response_prompts": 154
+    },
+    {
+      "duplicate_prompt_count": 0,
+      "duplicate_prompts": [],
+      "error_prompt_count": 0,
+      "error_prompts": [],
+      "evaluation_rows": 154,
+      "finish_counts": {
+        "end_turn": 154
+      },
+      "hash_mismatch_count": 0,
+      "hash_mismatches": [],
+      "metrics": {
+        "execution_success": 0.8831168831168831,
+        "gate_types_match": 0.6298701298701299,
+        "qasm3_export_success": 0.8831168831168831,
+        "structural_all_match": 0.564935064935065
+      },
+      "missing_prompt_count": 0,
+      "missing_prompts": [],
+      "provider": "anthropic",
+      "request_rows": 154,
+      "requested_model": "claude-sonnet-4-6",
+      "resolved_models": [
+        "claude-sonnet-4-6"
+      ],
+      "response_rows": 154,
+      "slug": "anthropic_claude-sonnet-4-6",
+      "status": "complete",
+      "unique_response_prompts": 154
+    },
+    {
+      "duplicate_prompt_count": 0,
+      "duplicate_prompts": [],
+      "error_prompt_count": 0,
+      "error_prompts": [],
+      "evaluation_rows": 154,
+      "finish_counts": {
+        "length": 7,
+        "stop": 147
+      },
+      "hash_mismatch_count": 0,
+      "hash_mismatches": [],
+      "metrics": {
+        "execution_success": 0.8896103896103896,
+        "gate_types_match": 0.5909090909090909,
+        "qasm3_export_success": 0.8896103896103896,
+        "structural_all_match": 0.525974025974026
+      },
+      "missing_prompt_count": 0,
+      "missing_prompts": [],
+      "provider": "deepseek",
+      "request_rows": 154,
+      "requested_model": "deepseek-v4-flash",
+      "resolved_models": [
+        "deepseek-v4-flash"
+      ],
+      "response_rows": 154,
+      "slug": "deepseek_deepseek-v4-flash",
+      "status": "complete",
+      "unique_response_prompts": 154
+    },
+    {
+      "duplicate_prompt_count": 0,
+      "duplicate_prompts": [],
+      "error_prompt_count": 0,
+      "error_prompts": [],
+      "evaluation_rows": 154,
+      "finish_counts": {
+        "length": 6,
+        "stop": 148
+      },
+      "hash_mismatch_count": 0,
+      "hash_mismatches": [],
+      "metrics": {
+        "execution_success": 0.9155844155844156,
+        "gate_types_match": 0.6493506493506493,
+        "qasm3_export_success": 0.9155844155844156,
+        "structural_all_match": 0.5909090909090909
+      },
+      "missing_prompt_count": 0,
+      "missing_prompts": [],
+      "provider": "deepseek",
+      "request_rows": 154,
+      "requested_model": "deepseek-v4-pro",
+      "resolved_models": [
+        "deepseek-v4-pro"
+      ],
+      "response_rows": 154,
+      "slug": "deepseek_deepseek-v4-pro",
+      "status": "complete",
+      "unique_response_prompts": 154
+    },
+    {
+      "duplicate_prompt_count": 0,
+      "duplicate_prompts": [],
+      "error_prompt_count": 0,
+      "error_prompts": [],
+      "evaluation_rows": 154,
+      "finish_counts": {
+        "stop": 154
+      },
+      "hash_mismatch_count": 0,
+      "hash_mismatches": [],
+      "metrics": {
+        "execution_success": 0.9415584415584416,
+        "gate_types_match": 0.6233766233766234,
+        "qasm3_export_success": 0.935064935064935,
+        "structural_all_match": 0.487012987012987
+      },
+      "missing_prompt_count": 0,
+      "missing_prompts": [],
+      "provider": "github_models",
+      "request_rows": 154,
+      "requested_model": "meta/llama-4-maverick-17b-128e-instruct-fp8",
+      "resolved_models": [
+        "Llama-4-Maverick-17B-128E-Instruct-FP8"
+      ],
+      "response_rows": 154,
+      "slug": "github_models_meta_llama-4-maverick-17b-128e-instruct-fp8",
+      "status": "complete",
+      "unique_response_prompts": 154
+    },
+    {
+      "duplicate_prompt_count": 0,
+      "duplicate_prompts": [],
+      "error_prompt_count": 0,
+      "error_prompts": [],
+      "evaluation_rows": 154,
+      "finish_counts": {
+        "length": 2,
+        "stop": 152
+      },
+      "hash_mismatch_count": 0,
+      "hash_mismatches": [],
+      "metrics": {
+        "execution_success": 0.935064935064935,
+        "gate_types_match": 0.6363636363636364,
+        "qasm3_export_success": 0.935064935064935,
+        "structural_all_match": 0.5584415584415584
+      },
+      "missing_prompt_count": 0,
+      "missing_prompts": [],
+      "provider": "github_models",
+      "request_rows": 154,
+      "requested_model": "mistral-ai/codestral-2501",
+      "resolved_models": [
+        "codestral-2501"
+      ],
+      "response_rows": 154,
+      "slug": "github_models_mistral-ai_codestral-2501",
+      "status": "complete",
+      "unique_response_prompts": 154
+    },
+    {
+      "duplicate_prompt_count": 0,
+      "duplicate_prompts": [],
+      "error_prompt_count": 0,
+      "error_prompts": [],
+      "evaluation_rows": 154,
+      "finish_counts": {
+        "MAX_TOKENS": 10,
+        "STOP": 144
+      },
+      "hash_mismatch_count": 0,
+      "hash_mismatches": [],
+      "metrics": {
+        "execution_success": 0.8766233766233766,
+        "gate_types_match": 0.6038961038961039,
+        "qasm3_export_success": 0.8766233766233766,
+        "structural_all_match": 0.538961038961039
+      },
+      "missing_prompt_count": 0,
+      "missing_prompts": [],
+      "provider": "google",
+      "request_rows": 154,
+      "requested_model": "gemini-2.5-pro",
+      "resolved_models": [
+        "gemini-2.5-pro"
+      ],
+      "response_rows": 154,
+      "slug": "google_gemini-2_5-pro",
+      "status": "complete",
+      "unique_response_prompts": 154
+    },
+    {
+      "duplicate_prompt_count": 0,
+      "duplicate_prompts": [],
+      "error_prompt_count": 0,
+      "error_prompts": [],
+      "evaluation_rows": 154,
+      "finish_counts": {
+        "MAX_TOKENS": 5,
+        "STOP": 149
+      },
+      "hash_mismatch_count": 0,
+      "hash_mismatches": [],
+      "metrics": {
+        "execution_success": 0.9675324675324676,
+        "gate_types_match": 0.6753246753246753,
+        "qasm3_export_success": 0.9675324675324676,
+        "structural_all_match": 0.6103896103896104
+      },
+      "missing_prompt_count": 0,
+      "missing_prompts": [],
+      "provider": "google",
+      "request_rows": 154,
+      "requested_model": "gemini-3.1-pro-preview",
+      "resolved_models": [
+        "gemini-3.1-pro-preview"
+      ],
+      "response_rows": 154,
+      "slug": "google_gemini-3_1-pro-preview",
+      "status": "complete",
+      "unique_response_prompts": 154
+    },
+    {
+      "duplicate_prompt_count": 0,
+      "duplicate_prompts": [],
+      "error_prompt_count": 0,
+      "error_prompts": [],
+      "evaluation_rows": 154,
+      "finish_counts": {
+        "length": 3,
+        "stop": 151
+      },
+      "hash_mismatch_count": 0,
+      "hash_mismatches": [],
+      "metrics": {
+        "execution_success": 0.4155844155844156,
+        "gate_types_match": 0.18831168831168832,
+        "qasm3_export_success": 0.4155844155844156,
+        "structural_all_match": 0.16883116883116883
+      },
+      "missing_prompt_count": 0,
+      "missing_prompts": [],
+      "provider": "groq",
+      "request_rows": 154,
+      "requested_model": "llama-3.1-8b-instant",
+      "resolved_models": [
+        "llama-3.1-8b-instant"
+      ],
+      "response_rows": 154,
+      "slug": "groq_llama-3_1-8b-instant",
+      "status": "complete",
+      "unique_response_prompts": 154
+    },
+    {
+      "duplicate_prompt_count": 0,
+      "duplicate_prompts": [],
+      "error_prompt_count": 0,
+      "error_prompts": [],
+      "evaluation_rows": 154,
+      "finish_counts": {
+        "stop": 154
+      },
+      "hash_mismatch_count": 0,
+      "hash_mismatches": [],
+      "metrics": {
+        "execution_success": 0.935064935064935,
+        "gate_types_match": 0.6103896103896104,
+        "qasm3_export_success": 0.935064935064935,
+        "structural_all_match": 0.461038961038961
+      },
+      "missing_prompt_count": 0,
+      "missing_prompts": [],
+      "provider": "groq",
+      "request_rows": 154,
+      "requested_model": "llama-3.3-70b-versatile",
+      "resolved_models": [
+        "llama-3.3-70b-versatile"
+      ],
+      "response_rows": 154,
+      "slug": "groq_llama-3_3-70b-versatile",
+      "status": "complete",
+      "unique_response_prompts": 154
+    },
+    {
+      "duplicate_prompt_count": 0,
+      "duplicate_prompts": [],
+      "error_prompt_count": 0,
+      "error_prompts": [],
+      "evaluation_rows": 154,
+      "finish_counts": {
+        "stop": 154
+      },
+      "hash_mismatch_count": 0,
+      "hash_mismatches": [],
+      "metrics": {
+        "execution_success": 0.577922077922078,
+        "gate_types_match": 0.3246753246753247,
+        "qasm3_export_success": 0.577922077922078,
+        "structural_all_match": 0.2987012987012987
+      },
+      "missing_prompt_count": 0,
+      "missing_prompts": [],
+      "provider": "groq",
+      "request_rows": 154,
+      "requested_model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "resolved_models": [
+        "meta-llama/llama-4-scout-17b-16e-instruct"
+      ],
+      "response_rows": 154,
+      "slug": "groq_meta-llama_llama-4-scout-17b-16e-instruct",
+      "status": "complete",
+      "unique_response_prompts": 154
+    },
+    {
+      "duplicate_prompt_count": 0,
+      "duplicate_prompts": [],
+      "error_prompt_count": 0,
+      "error_prompts": [],
+      "evaluation_rows": 154,
+      "finish_counts": {
+        "stop": 154
+      },
+      "hash_mismatch_count": 0,
+      "hash_mismatches": [],
+      "metrics": {
+        "execution_success": 0.8896103896103896,
+        "gate_types_match": 0.577922077922078,
+        "qasm3_export_success": 0.8831168831168831,
+        "structural_all_match": 0.5194805194805194
+      },
+      "missing_prompt_count": 0,
+      "missing_prompts": [],
+      "provider": "groq",
+      "request_rows": 154,
+      "requested_model": "openai/gpt-oss-120b",
+      "resolved_models": [
+        "openai/gpt-oss-120b"
+      ],
+      "response_rows": 154,
+      "slug": "groq_openai_gpt-oss-120b",
+      "status": "complete",
+      "unique_response_prompts": 154
+    },
+    {
+      "duplicate_prompt_count": 0,
+      "duplicate_prompts": [],
+      "error_prompt_count": 0,
+      "error_prompts": [],
+      "evaluation_rows": 154,
+      "finish_counts": {
+        "length": 5,
+        "stop": 149
+      },
+      "hash_mismatch_count": 0,
+      "hash_mismatches": [],
+      "metrics": {
+        "execution_success": 0.8441558441558441,
+        "gate_types_match": 0.5584415584415584,
+        "qasm3_export_success": 0.8376623376623377,
+        "structural_all_match": 0.474025974025974
+      },
+      "missing_prompt_count": 0,
+      "missing_prompts": [],
+      "provider": "groq",
+      "request_rows": 154,
+      "requested_model": "openai/gpt-oss-20b",
+      "resolved_models": [
+        "openai/gpt-oss-20b"
+      ],
+      "response_rows": 154,
+      "slug": "groq_openai_gpt-oss-20b",
+      "status": "complete",
+      "unique_response_prompts": 154
+    },
+    {
+      "duplicate_prompt_count": 0,
+      "duplicate_prompts": [],
+      "error_prompt_count": 0,
+      "error_prompts": [],
+      "evaluation_rows": 154,
+      "finish_counts": {
+        "length": 39,
+        "stop": 115
+      },
+      "hash_mismatch_count": 0,
+      "hash_mismatches": [],
+      "metrics": {
+        "execution_success": 0.5714285714285714,
+        "gate_types_match": 0.38961038961038963,
+        "qasm3_export_success": 0.5714285714285714,
+        "structural_all_match": 0.34415584415584416
+      },
+      "missing_prompt_count": 0,
+      "missing_prompts": [],
+      "provider": "groq",
+      "request_rows": 154,
+      "requested_model": "qwen/qwen3-32b",
+      "resolved_models": [
+        "qwen/qwen3-32b"
+      ],
+      "response_rows": 154,
+      "slug": "groq_qwen_qwen3-32b",
+      "status": "complete",
+      "unique_response_prompts": 154
+    },
+    {
+      "duplicate_prompt_count": 0,
+      "duplicate_prompts": [],
+      "error_prompt_count": 0,
+      "error_prompts": [],
+      "evaluation_rows": 154,
+      "finish_counts": {
+        "length": 1,
+        "stop": 153
+      },
+      "hash_mismatch_count": 0,
+      "hash_mismatches": [],
+      "metrics": {
+        "execution_success": 0.8571428571428571,
+        "gate_types_match": 0.5844155844155844,
+        "qasm3_export_success": 0.8571428571428571,
+        "structural_all_match": 0.5064935064935064
+      },
+      "missing_prompt_count": 0,
+      "missing_prompts": [],
+      "provider": "huggingface_router",
+      "request_rows": 154,
+      "requested_model": "Qwen/Qwen3-Coder-Next:novita",
+      "resolved_models": [
+        "qwen/qwen3-coder-next"
+      ],
+      "response_rows": 154,
+      "slug": "huggingface_router_qwen_qwen3-coder-next_novita",
+      "status": "complete",
+      "unique_response_prompts": 154
+    },
+    {
+      "duplicate_prompt_count": 0,
+      "duplicate_prompts": [],
+      "error_prompt_count": 0,
+      "error_prompts": [],
+      "evaluation_rows": 154,
+      "finish_counts": {
+        "completed": 154
+      },
+      "hash_mismatch_count": 0,
+      "hash_mismatches": [],
+      "metrics": {
+        "execution_success": 0.9805194805194806,
+        "gate_types_match": 0.6818181818181818,
+        "qasm3_export_success": 0.974025974025974,
+        "structural_all_match": 0.6038961038961039
+      },
+      "missing_prompt_count": 0,
+      "missing_prompts": [],
+      "provider": "openai",
+      "request_rows": 154,
+      "requested_model": "gpt-5.4-mini",
+      "resolved_models": [
+        "gpt-5.4-mini-2026-03-17"
+      ],
+      "response_rows": 154,
+      "slug": "openai_gpt-5_4-mini",
+      "status": "complete",
+      "unique_response_prompts": 154
+    },
+    {
+      "duplicate_prompt_count": 0,
+      "duplicate_prompts": [],
+      "error_prompt_count": 0,
+      "error_prompts": [],
+      "evaluation_rows": 154,
+      "finish_counts": {
+        "completed": 153,
+        "incomplete:max_output_tokens": 1
+      },
+      "hash_mismatch_count": 0,
+      "hash_mismatches": [],
+      "metrics": {
+        "execution_success": 0.9675324675324676,
+        "gate_types_match": 0.6818181818181818,
+        "qasm3_export_success": 0.9675324675324676,
+        "structural_all_match": 0.6038961038961039
+      },
+      "missing_prompt_count": 0,
+      "missing_prompts": [],
+      "provider": "openai",
+      "request_rows": 154,
+      "requested_model": "gpt-5.5",
+      "resolved_models": [
+        "gpt-5.5-2026-04-23"
+      ],
+      "response_rows": 154,
+      "slug": "openai_gpt-5_5",
+      "status": "complete",
+      "unique_response_prompts": 154
+    },
+    {
+      "duplicate_prompt_count": 0,
+      "duplicate_prompts": [],
+      "error_prompt_count": 0,
+      "error_prompts": [],
+      "evaluation_rows": 154,
+      "finish_counts": {
+        "completed": 153,
+        "incomplete:max_output_tokens": 1
+      },
+      "hash_mismatch_count": 0,
+      "hash_mismatches": [],
+      "metrics": {
+        "execution_success": 0.9935064935064936,
+        "gate_types_match": 0.7077922077922078,
+        "qasm3_export_success": 0.9935064935064936,
+        "structural_all_match": 0.6298701298701299
+      },
+      "missing_prompt_count": 0,
+      "missing_prompts": [],
+      "provider": "openai",
+      "request_rows": 154,
+      "requested_model": "gpt-5.6-sol",
+      "resolved_models": [
+        "gpt-5.6-sol"
+      ],
+      "response_rows": 154,
+      "slug": "openai_gpt-5_6-sol",
+      "status": "complete",
+      "unique_response_prompts": 154
+    }
+  ],
+  "pending_model_count": 0,
+  "schema_version": "pqid-bench-expanded-model-run-audit-v1"
+}

@@ -1,0 +1,1536 @@
+{
+  "crossed_model_signature_bootstrap": {
+    "barrier_odds_ratio": 0.32465466815020805,
+    "barrier_or_crossed_bootstrap_95": [
+      0.1613687447074638,
+      0.6471656719383521
+    ],
+    "execution_crossed_bootstrap_95": [
+      0.8653863773357444,
+      0.9502499999999999
+    ],
+    "execution_rate": 0.9121830550401979,
+    "execution_structure_gap": 0.38559059987631417,
+    "gap_crossed_bootstrap_95": [
+      0.31722268461412567,
+      0.45860201193003736
+    ],
+    "gate_entropy_odds_ratio": 0.48806598924452516,
+    "gate_entropy_or_crossed_bootstrap_95": [
+      0.26796658116937544,
+      0.7178709024667442
+    ],
+    "method": "two-way nonparametric crossed bootstrap; model rows and complete evaluator-facing target-signature clusters are sampled independently with replacement",
+    "model_count": 21,
+    "prompt_count": 154,
+    "replicates": 3000,
+    "seed": 20260725,
+    "signature_cluster_count": 144,
+    "signature_crossed_bootstrap_95": [
+      0.44528024808157257,
+      0.6060339009776096
+    ],
+    "signature_rate": 0.5265924551638838
+  },
+  "design": {
+    "cell_count": 3234,
+    "extension_excludes_pilot_target_signatures": true,
+    "extension_prompt_count": 84,
+    "extension_selected_without_model_outcomes": true,
+    "model_count": 21,
+    "model_developer": {
+      "claude-fable-5": "Anthropic",
+      "claude-opus-4-8": "Anthropic",
+      "claude-sonnet-4-6": "Anthropic",
+      "deepseek-v4-flash": "DeepSeek",
+      "deepseek-v4-pro": "DeepSeek",
+      "gemini-2.5-pro": "Google",
+      "gemini-3.1-pro-preview": "Google",
+      "gpt-5.4-mini": "OpenAI",
+      "gpt-5.5": "OpenAI",
+      "gpt-5.6-sol": "OpenAI",
+      "llama-3.1-8b-instant": "Meta",
+      "llama-3.3-70b-versatile": "Meta",
+      "meta-llama/llama-4-scout-17b-16e-instruct": "Meta",
+      "meta/llama-4-maverick-17b-128e-instruct-fp8": "Meta",
+      "mistral-ai/codestral-2501": "Mistral AI",
+      "mistralai/mistral-small-3.2-24b-instruct": "Mistral AI",
+      "openai/gpt-oss-120b": "OpenAI",
+      "openai/gpt-oss-20b": "OpenAI",
+      "qiskit/mistral-small-3.2-24b-qiskit": "IBM/Qiskit",
+      "qwen/qwen3-32b": "Alibaba/Qwen",
+      "qwen/qwen3-coder-next": "Alibaba/Qwen"
+    },
+    "models": [
+      "gpt-5.6-sol",
+      "gpt-5.5",
+      "gpt-5.4-mini",
+      "claude-fable-5",
+      "claude-sonnet-4-6",
+      "claude-opus-4-8",
+      "gemini-2.5-pro",
+      "gemini-3.1-pro-preview",
+      "deepseek-v4-pro",
+      "deepseek-v4-flash",
+      "mistral-ai/codestral-2501",
+      "qwen/qwen3-coder-next",
+      "meta/llama-4-maverick-17b-128e-instruct-fp8",
+      "llama-3.3-70b-versatile",
+      "openai/gpt-oss-120b",
+      "openai/gpt-oss-20b",
+      "mistralai/mistral-small-3.2-24b-instruct",
+      "qiskit/mistral-small-3.2-24b-qiskit",
+      "qwen/qwen3-32b",
+      "meta-llama/llama-4-scout-17b-16e-instruct",
+      "llama-3.1-8b-instant"
+    ],
+    "pilot_prompt_count": 70,
+    "prompt_count": 154,
+    "signature_cluster_count": 144,
+    "source_reports": [
+      {
+        "model": "claude-fable-5",
+        "model_label": "Claude Fable 5",
+        "records_loaded": 154,
+        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/anthropic_claude-fable-5/pqid_bench_external_model_generation_harness_report.json"
+      },
+      {
+        "model": "claude-opus-4-8",
+        "model_label": "Claude Opus 4.8",
+        "records_loaded": 154,
+        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/anthropic_claude-opus-4-8/pqid_bench_external_model_generation_harness_report.json"
+      },
+      {
+        "model": "claude-sonnet-4-6",
+        "model_label": "Claude Sonnet 4.6",
+        "records_loaded": 154,
+        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/anthropic_claude-sonnet-4-6/pqid_bench_external_model_generation_harness_report.json"
+      },
+      {
+        "model": "deepseek-v4-flash",
+        "model_label": "DeepSeek V4 Flash",
+        "records_loaded": 154,
+        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/deepseek_deepseek-v4-flash/pqid_bench_external_model_generation_harness_report.json"
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "model_label": "DeepSeek V4 Pro",
+        "records_loaded": 154,
+        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/deepseek_deepseek-v4-pro/pqid_bench_external_model_generation_harness_report.json"
+      },
+      {
+        "model": "meta/llama-4-maverick-17b-128e-instruct-fp8",
+        "model_label": "Llama 4 Maverick",
+        "records_loaded": 154,
+        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/github_models_meta_llama-4-maverick-17b-128e-instruct-fp8/pqid_bench_external_model_generation_harness_report.json"
+      },
+      {
+        "model": "mistral-ai/codestral-2501",
+        "model_label": "Codestral 25.01",
+        "records_loaded": 154,
+        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/github_models_mistral-ai_codestral-2501/pqid_bench_external_model_generation_harness_report.json"
+      },
+      {
+        "model": "gemini-2.5-pro",
+        "model_label": "Gemini 2.5 Pro",
+        "records_loaded": 154,
+        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/google_gemini-2_5-pro/pqid_bench_external_model_generation_harness_report.json"
+      },
+      {
+        "model": "gemini-3.1-pro-preview",
+        "model_label": "Gemini 3.1 Pro Preview",
+        "records_loaded": 154,
+        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/google_gemini-3_1-pro-preview/pqid_bench_external_model_generation_harness_report.json"
+      },
+      {
+        "model": "llama-3.1-8b-instant",
+        "model_label": "Llama 3.1 8B",
+        "records_loaded": 154,
+        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/groq_llama-3_1-8b-instant/pqid_bench_external_model_generation_harness_report.json"
+      },
+      {
+        "model": "llama-3.3-70b-versatile",
+        "model_label": "Llama 3.3 70B",
+        "records_loaded": 154,
+        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/groq_llama-3_3-70b-versatile/pqid_bench_external_model_generation_harness_report.json"
+      },
+      {
+        "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+        "model_label": "Llama 4 Scout",
+        "records_loaded": 154,
+        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/groq_meta-llama_llama-4-scout-17b-16e-instruct/pqid_bench_external_model_generation_harness_report.json"
+      },
+      {
+        "model": "openai/gpt-oss-120b",
+        "model_label": "GPT-OSS 120B",
+        "records_loaded": 154,
+        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/groq_openai_gpt-oss-120b/pqid_bench_external_model_generation_harness_report.json"
+      },
+      {
+        "model": "openai/gpt-oss-20b",
+        "model_label": "GPT-OSS 20B",
+        "records_loaded": 154,
+        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/groq_openai_gpt-oss-20b/pqid_bench_external_model_generation_harness_report.json"
+      },
+      {
+        "model": "qwen/qwen3-32b",
+        "model_label": "Qwen3 32B",
+        "records_loaded": 154,
+        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/groq_qwen_qwen3-32b/pqid_bench_external_model_generation_harness_report.json"
+      },
+      {
+        "model": "qwen/qwen3-coder-next",
+        "model_label": "Qwen3-Coder-Next",
+        "records_loaded": 154,
+        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/huggingface_router_qwen_qwen3-coder-next_novita/pqid_bench_external_model_generation_harness_report.json"
+      },
+      {
+        "model": "gpt-5.4-mini",
+        "model_label": "GPT-5.4 mini",
+        "records_loaded": 154,
+        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/openai_gpt-5_4-mini/pqid_bench_external_model_generation_harness_report.json"
+      },
+      {
+        "model": "gpt-5.5",
+        "model_label": "GPT-5.5",
+        "records_loaded": 154,
+        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/openai_gpt-5_5/pqid_bench_external_model_generation_harness_report.json"
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "model_label": "GPT-5.6 Sol",
+        "records_loaded": 154,
+        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/openai_gpt-5_6-sol/pqid_bench_external_model_generation_harness_report.json"
+      },
+      {
+        "model": "mistralai/mistral-small-3.2-24b-instruct",
+        "model_label": "Mistral Small 3.2 24B",
+        "records_loaded": 154,
+        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/mistral_parent_control/evaluations/openrouter_mistralai_mistral-small-3_2-24b-instruct/pqid_bench_external_model_generation_harness_report.json"
+      },
+      {
+        "model": "qiskit/mistral-small-3.2-24b-qiskit",
+        "model_label": "Qiskit Mistral 3.2 24B",
+        "records_loaded": 154,
+        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/qiskit_mistral/evaluations/huggingface_router_qiskit_mistral-small-3_2-24b-qiskit_featherless-ai/pqid_bench_external_model_generation_harness_report.json"
+      }
+    ]
+  },
+  "family_and_developer_sensitivity": {
+    "execution_family_balance": {
+      "micro_rate": 0.9121830550401979,
+      "multi_label_families": [
+        {
+          "family": "arithmetic_toffoli",
+          "prompt_count": 12,
+          "rate": 0.8095238095238095
+        },
+        {
+          "family": "bell_or_superdense",
+          "prompt_count": 25,
+          "rate": 0.9447619047619048
+        },
+        {
+          "family": "bernstein_vazirani",
+          "prompt_count": 4,
+          "rate": 0.8214285714285714
+        },
+        {
+          "family": "deep_mixed_rotation",
+          "prompt_count": 7,
+          "rate": 0.7278911564625851
+        },
+        {
+          "family": "deutsch_jozsa",
+          "prompt_count": 8,
+          "rate": 0.9047619047619048
+        },
+        {
+          "family": "error_correction",
+          "prompt_count": 3,
+          "rate": 0.8412698412698413
+        },
+        {
+          "family": "fourier_qft_phase",
+          "prompt_count": 4,
+          "rate": 0.8571428571428571
+        },
+        {
+          "family": "generic_or_low_level",
+          "prompt_count": 28,
+          "rate": 0.9285714285714286
+        },
+        {
+          "family": "ghz",
+          "prompt_count": 5,
+          "rate": 1.0
+        },
+        {
+          "family": "grover_setup",
+          "prompt_count": 1,
+          "rate": 0.9523809523809523
+        },
+        {
+          "family": "oracle_logic",
+          "prompt_count": 13,
+          "rate": 0.9120879120879121
+        },
+        {
+          "family": "pauli_measurement",
+          "prompt_count": 98,
+          "rate": 0.922740524781341
+        },
+        {
+          "family": "qkd_e91",
+          "prompt_count": 1,
+          "rate": 0.8571428571428571
+        },
+        {
+          "family": "simon",
+          "prompt_count": 1,
+          "rate": 1.0
+        },
+        {
+          "family": "teleportation",
+          "prompt_count": 4,
+          "rate": 0.8333333333333334
+        },
+        {
+          "family": "vqc_ansatz",
+          "prompt_count": 2,
+          "rate": 0.6904761904761905
+        }
+      ],
+      "multi_label_family_macro_rate": 0.8752195777578431,
+      "primary_family_macro_rate": 0.8893140589569162,
+      "primary_family_partition": [
+        {
+          "family": "arithmetic_toffoli",
+          "prompt_count": 10,
+          "rate": 0.8095238095238095
+        },
+        {
+          "family": "bell_or_superdense",
+          "prompt_count": 21,
+          "rate": 0.9659863945578231
+        },
+        {
+          "family": "bernstein_vazirani",
+          "prompt_count": 4,
+          "rate": 0.8214285714285714
+        },
+        {
+          "family": "deep_mixed_rotation",
+          "prompt_count": 2,
+          "rate": 0.9523809523809523
+        },
+        {
+          "family": "deutsch_jozsa",
+          "prompt_count": 8,
+          "rate": 0.9047619047619048
+        },
+        {
+          "family": "error_correction",
+          "prompt_count": 3,
+          "rate": 0.8412698412698413
+        },
+        {
+          "family": "fourier_qft_phase",
+          "prompt_count": 4,
+          "rate": 0.8571428571428571
+        },
+        {
+          "family": "generic_or_low_level",
+          "prompt_count": 28,
+          "rate": 0.9285714285714286
+        },
+        {
+          "family": "ghz",
+          "prompt_count": 5,
+          "rate": 1.0
+        },
+        {
+          "family": "grover_setup",
+          "prompt_count": 1,
+          "rate": 0.9523809523809523
+        },
+        {
+          "family": "oracle_logic",
+          "prompt_count": 4,
+          "rate": 0.8928571428571429
+        },
+        {
+          "family": "pauli_measurement",
+          "prompt_count": 56,
+          "rate": 0.9217687074829932
+        },
+        {
+          "family": "qkd_e91",
+          "prompt_count": 1,
+          "rate": 0.8571428571428571
+        },
+        {
+          "family": "simon",
+          "prompt_count": 1,
+          "rate": 1.0
+        },
+        {
+          "family": "teleportation",
+          "prompt_count": 4,
+          "rate": 0.8333333333333334
+        },
+        {
+          "family": "vqc_ansatz",
+          "prompt_count": 2,
+          "rate": 0.6904761904761905
+        }
+      ],
+      "rare_pool_threshold": 3,
+      "rare_pooled_primary_family_macro_rate": 0.8872826908541195,
+      "rare_pooled_primary_family_partition": [
+        {
+          "family": "arithmetic_toffoli",
+          "prompt_count": 10,
+          "rate": 0.8095238095238095
+        },
+        {
+          "family": "bell_or_superdense",
+          "prompt_count": 21,
+          "rate": 0.9659863945578231
+        },
+        {
+          "family": "bernstein_vazirani",
+          "prompt_count": 4,
+          "rate": 0.8214285714285714
+        },
+        {
+          "family": "deutsch_jozsa",
+          "prompt_count": 8,
+          "rate": 0.9047619047619048
+        },
+        {
+          "family": "error_correction",
+          "prompt_count": 3,
+          "rate": 0.8412698412698413
+        },
+        {
+          "family": "fourier_qft_phase",
+          "prompt_count": 4,
+          "rate": 0.8571428571428571
+        },
+        {
+          "family": "generic_or_low_level",
+          "prompt_count": 28,
+          "rate": 0.9285714285714286
+        },
+        {
+          "family": "ghz",
+          "prompt_count": 5,
+          "rate": 1.0
+        },
+        {
+          "family": "oracle_logic",
+          "prompt_count": 4,
+          "rate": 0.8928571428571429
+        },
+        {
+          "family": "pauli_measurement",
+          "prompt_count": 56,
+          "rate": 0.9217687074829932
+        },
+        {
+          "family": "teleportation",
+          "prompt_count": 4,
+          "rate": 0.8333333333333334
+        },
+        {
+          "family": "other_rare_primary_families",
+          "pooled_families": [
+            "deep_mixed_rotation",
+            "grover_setup",
+            "qkd_e91",
+            "simon",
+            "vqc_ansatz"
+          ],
+          "prompt_count": 7,
+          "rate": 0.8707482993197279
+        }
+      ],
+      "rare_primary_families": [
+        "deep_mixed_rotation",
+        "grover_setup",
+        "qkd_e91",
+        "simon",
+        "vqc_ansatz"
+      ]
+    },
+    "family_taxonomy": "prespecified ordered keyword taxonomy from analyze_pqid_bench_complexity_difficulty.py",
+    "leave_one_developer_out": [
+      {
+        "barrier_odds_ratio": 0.32465466815020805,
+        "execution_rate": 0.9121830550401979,
+        "execution_structure_gap": 0.38559059987631417,
+        "gap_delta_from_full": 0.0,
+        "gate_entropy_odds_ratio": 0.48806598924452516,
+        "model_count": 21,
+        "omitted_developer": "none",
+        "omitted_models": [],
+        "signature_delta_from_full": 0.0,
+        "signature_primary_family_macro_rate": 0.4557220804988662,
+        "signature_rare_pooled_family_macro_rate": 0.4386952003023432,
+        "signature_rate": 0.5265924551638838
+      },
+      {
+        "barrier_odds_ratio": 0.31957165235817553,
+        "execution_rate": 0.9326725905673274,
+        "execution_structure_gap": 0.39576213260423787,
+        "gap_delta_from_full": 0.010171532727923704,
+        "gate_entropy_odds_ratio": 0.46796945128427425,
+        "model_count": 19,
+        "omitted_developer": "Alibaba/Qwen",
+        "omitted_models": [
+          "Qwen3-Coder-Next",
+          "Qwen3 32B"
+        ],
+        "signature_delta_from_full": 0.010318002799205805,
+        "signature_primary_family_macro_rate": 0.4676378446115288,
+        "signature_rare_pooled_family_macro_rate": 0.4496449456975773,
+        "signature_rate": 0.5369104579630896
+      },
+      {
+        "barrier_odds_ratio": 0.33855435406850415,
+        "execution_rate": 0.898989898989899,
+        "execution_structure_gap": 0.3856421356421357,
+        "gap_delta_from_full": 5.153576582150876e-05,
+        "gate_entropy_odds_ratio": 0.4944847706800722,
+        "model_count": 18,
+        "omitted_developer": "Anthropic",
+        "omitted_models": [
+          "Claude Fable 5",
+          "Claude Sonnet 4.6",
+          "Claude Opus 4.8"
+        ],
+        "signature_delta_from_full": -0.013244691816120424,
+        "signature_primary_family_macro_rate": 0.4458994708994709,
+        "signature_rare_pooled_family_macro_rate": 0.4272045855379189,
+        "signature_rate": 0.5133477633477633
+      },
+      {
+        "barrier_odds_ratio": 0.32272599378929234,
+        "execution_rate": 0.9131920710868079,
+        "execution_structure_gap": 0.38995215311004783,
+        "gap_delta_from_full": 0.0043615532337336615,
+        "gate_entropy_odds_ratio": 0.4912126873014114,
+        "model_count": 19,
+        "omitted_developer": "DeepSeek",
+        "omitted_models": [
+          "DeepSeek V4 Pro",
+          "DeepSeek V4 Flash"
+        ],
+        "signature_delta_from_full": -0.003352537187123694,
+        "signature_primary_family_macro_rate": 0.4535440162907268,
+        "signature_rare_pooled_family_macro_rate": 0.4361789891395154,
+        "signature_rate": 0.5232399179767601
+      },
+      {
+        "barrier_odds_ratio": 0.3173165745438846,
+        "execution_rate": 0.9107997265892003,
+        "execution_structure_gap": 0.38926862611073143,
+        "gap_delta_from_full": 0.0036780262344172643,
+        "gate_entropy_odds_ratio": 0.4872514234760456,
+        "model_count": 19,
+        "omitted_developer": "Google",
+        "omitted_models": [
+          "Gemini 2.5 Pro",
+          "Gemini 3.1 Pro Preview"
+        ],
+        "signature_delta_from_full": -0.005061354685414909,
+        "signature_primary_family_macro_rate": 0.45173088972431075,
+        "signature_rare_pooled_family_macro_rate": 0.4368943191311612,
+        "signature_rate": 0.5215311004784688
+      },
+      {
+        "barrier_odds_ratio": 0.32756919327675255,
+        "execution_rate": 0.912987012987013,
+        "execution_structure_gap": 0.3824675324675325,
+        "gap_delta_from_full": -0.0031230674087816546,
+        "gate_entropy_odds_ratio": 0.4817515381322612,
+        "model_count": 20,
+        "omitted_developer": "IBM/Qiskit",
+        "omitted_models": [
+          "Qiskit Mistral 3.2 24B"
+        ],
+        "signature_delta_from_full": 0.003927025355596747,
+        "signature_primary_family_macro_rate": 0.4576488095238095,
+        "signature_rare_pooled_family_macro_rate": 0.4399603174603175,
+        "signature_rate": 0.5305194805194805
+      },
+      {
+        "barrier_odds_ratio": 0.3079007676877293,
+        "execution_rate": 0.9201680672268907,
+        "execution_structure_gap": 0.37242169595110763,
+        "gap_delta_from_full": -0.013168903925206532,
+        "gate_entropy_odds_ratio": 0.47958909169897385,
+        "model_count": 17,
+        "omitted_developer": "Meta",
+        "omitted_models": [
+          "Llama 4 Maverick",
+          "Llama 3.3 70B",
+          "Llama 4 Scout",
+          "Llama 3.1 8B"
+        ],
+        "signature_delta_from_full": 0.021153916111899318,
+        "signature_primary_family_macro_rate": 0.47867209383753506,
+        "signature_rare_pooled_family_macro_rate": 0.46175887021475254,
+        "signature_rate": 0.5477463712757831
+      },
+      {
+        "barrier_odds_ratio": 0.32808552693729176,
+        "execution_rate": 0.9114832535885168,
+        "execution_structure_gap": 0.3844839371155161,
+        "gap_delta_from_full": -0.0011066627607980717,
+        "gate_entropy_odds_ratio": 0.49514540618814434,
+        "model_count": 19,
+        "omitted_developer": "Mistral AI",
+        "omitted_models": [
+          "Codestral 25.01",
+          "Mistral Small 3.2 24B"
+        ],
+        "signature_delta_from_full": 0.00040686130911693486,
+        "signature_primary_family_macro_rate": 0.45351268796992483,
+        "signature_rare_pooled_family_macro_rate": 0.4361372180451128,
+        "signature_rate": 0.5269993164730007
+      },
+      {
+        "barrier_odds_ratio": 0.33425812922165815,
+        "execution_rate": 0.8944805194805194,
+        "execution_structure_gap": 0.3831168831168831,
+        "gap_delta_from_full": -0.0024737167594310883,
+        "gate_entropy_odds_ratio": 0.5069821195945216,
+        "model_count": 16,
+        "omitted_developer": "OpenAI",
+        "omitted_models": [
+          "GPT-5.6 Sol",
+          "GPT-5.5",
+          "GPT-5.4 mini",
+          "GPT-OSS 120B",
+          "GPT-OSS 20B"
+        ],
+        "signature_delta_from_full": -0.015228818800247401,
+        "signature_primary_family_macro_rate": 0.4357793898809524,
+        "signature_rare_pooled_family_macro_rate": 0.4206969246031746,
+        "signature_rate": 0.5113636363636364
+      }
+    ],
+    "per_model_family_balance": [
+      {
+        "developer": "OpenAI",
+        "execution_micro": 0.9935064935064936,
+        "execution_primary_family_macro": 0.99375,
+        "execution_rare_pooled_family_macro": 0.9916666666666667,
+        "model": "gpt-5.6-sol",
+        "model_label": "GPT-5.6 Sol",
+        "signature_micro": 0.6298701298701299,
+        "signature_primary_family_macro": 0.5487351190476191,
+        "signature_rare_pooled_family_macro": 0.529265873015873
+      },
+      {
+        "developer": "OpenAI",
+        "execution_micro": 0.974025974025974,
+        "execution_primary_family_macro": 0.9874255952380953,
+        "execution_rare_pooled_family_macro": 0.983234126984127,
+        "model": "gpt-5.5",
+        "model_label": "GPT-5.5",
+        "signature_micro": 0.6038961038961039,
+        "signature_primary_family_macro": 0.5431547619047619,
+        "signature_rare_pooled_family_macro": 0.5218253968253969
+      },
+      {
+        "developer": "OpenAI",
+        "execution_micro": 0.9805194805194806,
+        "execution_primary_family_macro": 0.9915178571428571,
+        "execution_rare_pooled_family_macro": 0.9886904761904761,
+        "model": "gpt-5.4-mini",
+        "model_label": "GPT-5.4 mini",
+        "signature_micro": 0.6038961038961039,
+        "signature_primary_family_macro": 0.5546875,
+        "signature_rare_pooled_family_macro": 0.537202380952381
+      },
+      {
+        "developer": "Anthropic",
+        "execution_micro": 0.9805194805194806,
+        "execution_primary_family_macro": 0.9758928571428571,
+        "execution_rare_pooled_family_macro": 0.9678571428571429,
+        "model": "claude-fable-5",
+        "model_label": "Claude Fable 5",
+        "signature_micro": 0.6298701298701299,
+        "signature_primary_family_macro": 0.5404761904761904,
+        "signature_rare_pooled_family_macro": 0.5182539682539683
+      },
+      {
+        "developer": "Anthropic",
+        "execution_micro": 0.9935064935064936,
+        "execution_primary_family_macro": 0.984375,
+        "execution_rare_pooled_family_macro": 0.9791666666666666,
+        "model": "claude-sonnet-4-6",
+        "model_label": "Claude Sonnet 4.6",
+        "signature_micro": 0.5909090909090909,
+        "signature_primary_family_macro": 0.47581845238095233,
+        "signature_rare_pooled_family_macro": 0.5034722222222222
+      },
+      {
+        "developer": "Anthropic",
+        "execution_micro": 1.0,
+        "execution_primary_family_macro": 1.0,
+        "execution_rare_pooled_family_macro": 1.0,
+        "model": "claude-opus-4-8",
+        "model_label": "Claude Opus 4.8",
+        "signature_micro": 0.5974025974025974,
+        "signature_primary_family_macro": 0.5276785714285714,
+        "signature_rare_pooled_family_macro": 0.5011904761904761
+      },
+      {
+        "developer": "Google",
+        "execution_micro": 0.8831168831168831,
+        "execution_primary_family_macro": 0.8444940476190477,
+        "execution_rare_pooled_family_macro": 0.7926587301587302,
+        "model": "gemini-2.5-pro",
+        "model_label": "Gemini 2.5 Pro",
+        "signature_micro": 0.538961038961039,
+        "signature_primary_family_macro": 0.4563988095238095,
+        "signature_rare_pooled_family_macro": 0.4061507936507936
+      },
+      {
+        "developer": "Google",
+        "execution_micro": 0.9675324675324676,
+        "execution_primary_family_macro": 0.9550595238095237,
+        "execution_rare_pooled_family_macro": 0.940079365079365,
+        "model": "gemini-3.1-pro-preview",
+        "model_label": "Gemini 3.1 Pro Preview",
+        "signature_micro": 0.6103896103896104,
+        "signature_primary_family_macro": 0.5308779761904763,
+        "signature_rare_pooled_family_macro": 0.5054563492063492
+      },
+      {
+        "developer": "DeepSeek",
+        "execution_micro": 0.9155844155844156,
+        "execution_primary_family_macro": 0.8488095238095238,
+        "execution_rare_pooled_family_macro": 0.7984126984126984,
+        "model": "deepseek-v4-pro",
+        "model_label": "DeepSeek V4 Pro",
+        "signature_micro": 0.5909090909090909,
+        "signature_primary_family_macro": 0.502529761904762,
+        "signature_rare_pooled_family_macro": 0.4676587301587301
+      },
+      {
+        "developer": "DeepSeek",
+        "execution_micro": 0.8896103896103896,
+        "execution_primary_family_macro": 0.8319940476190476,
+        "execution_rare_pooled_family_macro": 0.8355158730158729,
+        "model": "deepseek-v4-flash",
+        "model_label": "DeepSeek V4 Flash",
+        "signature_micro": 0.525974025974026,
+        "signature_primary_family_macro": 0.45029761904761906,
+        "signature_rare_pooled_family_macro": 0.4575396825396825
+      },
+      {
+        "developer": "Mistral AI",
+        "execution_micro": 0.935064935064935,
+        "execution_primary_family_macro": 0.9234374999999999,
+        "execution_rare_pooled_family_macro": 0.9276785714285715,
+        "model": "mistral-ai/codestral-2501",
+        "model_label": "Codestral 25.01",
+        "signature_micro": 0.5584415584415584,
+        "signature_primary_family_macro": 0.46577380952380953,
+        "signature_rare_pooled_family_macro": 0.4781746031746032
+      },
+      {
+        "developer": "Alibaba/Qwen",
+        "execution_micro": 0.8571428571428571,
+        "execution_primary_family_macro": 0.7930059523809523,
+        "execution_rare_pooled_family_macro": 0.783531746031746,
+        "model": "qwen/qwen3-coder-next",
+        "model_label": "Qwen3-Coder-Next",
+        "signature_micro": 0.5064935064935064,
+        "signature_primary_family_macro": 0.3888392857142857,
+        "signature_rare_pooled_family_macro": 0.3755952380952381
+      },
+      {
+        "developer": "Meta",
+        "execution_micro": 0.9415584415584416,
+        "execution_primary_family_macro": 0.8601934523809525,
+        "execution_rare_pooled_family_macro": 0.8731150793650794,
+        "model": "meta/llama-4-maverick-17b-128e-instruct-fp8",
+        "model_label": "Llama 4 Maverick",
+        "signature_micro": 0.487012987012987,
+        "signature_primary_family_macro": 0.38660714285714287,
+        "signature_rare_pooled_family_macro": 0.37261904761904757
+      },
+      {
+        "developer": "Meta",
+        "execution_micro": 0.935064935064935,
+        "execution_primary_family_macro": 0.9495535714285714,
+        "execution_rare_pooled_family_macro": 0.9327380952380953,
+        "model": "llama-3.3-70b-versatile",
+        "model_label": "Llama 3.3 70B",
+        "signature_micro": 0.461038961038961,
+        "signature_primary_family_macro": 0.41569940476190476,
+        "signature_rare_pooled_family_macro": 0.3935515873015873
+      },
+      {
+        "developer": "OpenAI",
+        "execution_micro": 0.9675324675324676,
+        "execution_primary_family_macro": 0.9635416666666667,
+        "execution_rare_pooled_family_macro": 0.9513888888888888,
+        "model": "openai/gpt-oss-120b",
+        "model_label": "GPT-OSS 120B",
+        "signature_micro": 0.5324675324675324,
+        "signature_primary_family_macro": 0.49129464285714286,
+        "signature_rare_pooled_family_macro": 0.4526785714285713
+      },
+      {
+        "developer": "OpenAI",
+        "execution_micro": 0.9285714285714286,
+        "execution_primary_family_macro": 0.9566964285714286,
+        "execution_rare_pooled_family_macro": 0.9422619047619047,
+        "model": "openai/gpt-oss-20b",
+        "model_label": "GPT-OSS 20B",
+        "signature_micro": 0.5064935064935064,
+        "signature_primary_family_macro": 0.45982142857142855,
+        "signature_rare_pooled_family_macro": 0.44047619047619047
+      },
+      {
+        "developer": "Mistral AI",
+        "execution_micro": 0.9025974025974026,
+        "execution_primary_family_macro": 0.9184523809523809,
+        "execution_rare_pooled_family_macro": 0.921031746031746,
+        "model": "mistralai/mistral-small-3.2-24b-instruct",
+        "model_label": "Mistral Small 3.2 24B",
+        "signature_micro": 0.487012987012987,
+        "signature_primary_family_macro": 0.4876488095238095,
+        "signature_rare_pooled_family_macro": 0.4478174603174603
+      },
+      {
+        "developer": "IBM/Qiskit",
+        "execution_micro": 0.8961038961038961,
+        "execution_primary_family_macro": 0.8765624999999999,
+        "execution_rare_pooled_family_macro": 0.9366071428571429,
+        "model": "qiskit/mistral-small-3.2-24b-qiskit",
+        "model_label": "Qiskit Mistral 3.2 24B",
+        "signature_micro": 0.44805194805194803,
+        "signature_primary_family_macro": 0.41718750000000004,
+        "signature_rare_pooled_family_macro": 0.4133928571428571
+      },
+      {
+        "developer": "Alibaba/Qwen",
+        "execution_micro": 0.577922077922078,
+        "execution_primary_family_macro": 0.44360119047619045,
+        "execution_rare_pooled_family_macro": 0.460515873015873,
+        "model": "qwen/qwen3-32b",
+        "model_label": "Qwen3 32B",
+        "signature_micro": 0.35064935064935066,
+        "signature_primary_family_macro": 0.2962053571428571,
+        "signature_rare_pooled_family_macro": 0.29374999999999996
+      },
+      {
+        "developer": "Meta",
+        "execution_micro": 0.8246753246753247,
+        "execution_primary_family_macro": 0.7893601190476189,
+        "execution_rare_pooled_family_macro": 0.8084325396825397,
+        "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+        "model_label": "Llama 4 Scout",
+        "signature_micro": 0.44805194805194803,
+        "signature_primary_family_macro": 0.3572916666666667,
+        "signature_rare_pooled_family_macro": 0.333531746031746
+      },
+      {
+        "developer": "Meta",
+        "execution_micro": 0.8116883116883117,
+        "execution_primary_family_macro": 0.7878720238095238,
+        "execution_rare_pooled_family_macro": 0.8183531746031746,
+        "model": "llama-3.1-8b-instant",
+        "model_label": "Llama 3.1 8B",
+        "signature_micro": 0.35064935064935066,
+        "signature_primary_family_macro": 0.27313988095238095,
+        "signature_rare_pooled_family_macro": 0.26299603174603176
+      }
+    ],
+    "per_model_family_balance_rank": {
+      "spearman_rho": 0.9261332195768373,
+      "two_sided_p": 1.744188966283493e-09
+    },
+    "signature_family_balance": {
+      "micro_rate": 0.5265924551638838,
+      "multi_label_families": [
+        {
+          "family": "arithmetic_toffoli",
+          "prompt_count": 12,
+          "rate": 0.16666666666666666
+        },
+        {
+          "family": "bell_or_superdense",
+          "prompt_count": 25,
+          "rate": 0.5238095238095238
+        },
+        {
+          "family": "bernstein_vazirani",
+          "prompt_count": 4,
+          "rate": 0.2619047619047619
+        },
+        {
+          "family": "deep_mixed_rotation",
+          "prompt_count": 7,
+          "rate": 0.12244897959183673
+        },
+        {
+          "family": "deutsch_jozsa",
+          "prompt_count": 8,
+          "rate": 0.27380952380952384
+        },
+        {
+          "family": "error_correction",
+          "prompt_count": 3,
+          "rate": 0.031746031746031744
+        },
+        {
+          "family": "fourier_qft_phase",
+          "prompt_count": 4,
+          "rate": 0.44047619047619047
+        },
+        {
+          "family": "generic_or_low_level",
+          "prompt_count": 28,
+          "rate": 0.6581632653061225
+        },
+        {
+          "family": "ghz",
+          "prompt_count": 5,
+          "rate": 0.7142857142857143
+        },
+        {
+          "family": "grover_setup",
+          "prompt_count": 1,
+          "rate": 0.9523809523809523
+        },
+        {
+          "family": "oracle_logic",
+          "prompt_count": 13,
+          "rate": 0.4945054945054945
+        },
+        {
+          "family": "pauli_measurement",
+          "prompt_count": 98,
+          "rate": 0.5267249757045676
+        },
+        {
+          "family": "qkd_e91",
+          "prompt_count": 1,
+          "rate": 0.0
+        },
+        {
+          "family": "simon",
+          "prompt_count": 1,
+          "rate": 0.8571428571428571
+        },
+        {
+          "family": "teleportation",
+          "prompt_count": 4,
+          "rate": 0.4642857142857143
+        },
+        {
+          "family": "vqc_ansatz",
+          "prompt_count": 2,
+          "rate": 0.5714285714285714
+        }
+      ],
+      "multi_label_family_macro_rate": 0.4412362014402831,
+      "primary_family_macro_rate": 0.4557220804988662,
+      "primary_family_partition": [
+        {
+          "family": "arithmetic_toffoli",
+          "prompt_count": 10,
+          "rate": 0.2
+        },
+        {
+          "family": "bell_or_superdense",
+          "prompt_count": 21,
+          "rate": 0.5351473922902494
+        },
+        {
+          "family": "bernstein_vazirani",
+          "prompt_count": 4,
+          "rate": 0.2619047619047619
+        },
+        {
+          "family": "deep_mixed_rotation",
+          "prompt_count": 2,
+          "rate": 0.09523809523809523
+        },
+        {
+          "family": "deutsch_jozsa",
+          "prompt_count": 8,
+          "rate": 0.27380952380952384
+        },
+        {
+          "family": "error_correction",
+          "prompt_count": 3,
+          "rate": 0.031746031746031744
+        },
+        {
+          "family": "fourier_qft_phase",
+          "prompt_count": 4,
+          "rate": 0.44047619047619047
+        },
+        {
+          "family": "generic_or_low_level",
+          "prompt_count": 28,
+          "rate": 0.6581632653061225
+        },
+        {
+          "family": "ghz",
+          "prompt_count": 5,
+          "rate": 0.7142857142857143
+        },
+        {
+          "family": "grover_setup",
+          "prompt_count": 1,
+          "rate": 0.9523809523809523
+        },
+        {
+          "family": "oracle_logic",
+          "prompt_count": 4,
+          "rate": 0.6428571428571429
+        },
+        {
+          "family": "pauli_measurement",
+          "prompt_count": 56,
+          "rate": 0.592687074829932
+        },
+        {
+          "family": "qkd_e91",
+          "prompt_count": 1,
+          "rate": 0.0
+        },
+        {
+          "family": "simon",
+          "prompt_count": 1,
+          "rate": 0.8571428571428571
+        },
+        {
+          "family": "teleportation",
+          "prompt_count": 4,
+          "rate": 0.4642857142857143
+        },
+        {
+          "family": "vqc_ansatz",
+          "prompt_count": 2,
+          "rate": 0.5714285714285714
+        }
+      ],
+      "rare_pool_threshold": 3,
+      "rare_pooled_primary_family_macro_rate": 0.4386952003023432,
+      "rare_pooled_primary_family_partition": [
+        {
+          "family": "arithmetic_toffoli",
+          "prompt_count": 10,
+          "rate": 0.2
+        },
+        {
+          "family": "bell_or_superdense",
+          "prompt_count": 21,
+          "rate": 0.5351473922902494
+        },
+        {
+          "family": "bernstein_vazirani",
+          "prompt_count": 4,
+          "rate": 0.2619047619047619
+        },
+        {
+          "family": "deutsch_jozsa",
+          "prompt_count": 8,
+          "rate": 0.27380952380952384
+        },
+        {
+          "family": "error_correction",
+          "prompt_count": 3,
+          "rate": 0.031746031746031744
+        },
+        {
+          "family": "fourier_qft_phase",
+          "prompt_count": 4,
+          "rate": 0.44047619047619047
+        },
+        {
+          "family": "generic_or_low_level",
+          "prompt_count": 28,
+          "rate": 0.6581632653061225
+        },
+        {
+          "family": "ghz",
+          "prompt_count": 5,
+          "rate": 0.7142857142857143
+        },
+        {
+          "family": "oracle_logic",
+          "prompt_count": 4,
+          "rate": 0.6428571428571429
+        },
+        {
+          "family": "pauli_measurement",
+          "prompt_count": 56,
+          "rate": 0.592687074829932
+        },
+        {
+          "family": "teleportation",
+          "prompt_count": 4,
+          "rate": 0.4642857142857143
+        },
+        {
+          "family": "other_rare_primary_families",
+          "pooled_families": [
+            "deep_mixed_rotation",
+            "grover_setup",
+            "qkd_e91",
+            "simon",
+            "vqc_ansatz"
+          ],
+          "prompt_count": 7,
+          "rate": 0.4489795918367347
+        }
+      ],
+      "rare_primary_families": [
+        "deep_mixed_rotation",
+        "grover_setup",
+        "qkd_e91",
+        "simon",
+        "vqc_ansatz"
+      ]
+    }
+  },
+  "pilot_extension_replication": {
+    "bootstrap_replicates": 2000,
+    "final_21": {
+      "extension": {
+        "barrier_odds_ratio": 0.38819096638883116,
+        "barrier_or_cluster_bootstrap_95": [
+          0.14676270033020994,
+          0.868677016585603
+        ],
+        "cell_count": 1764,
+        "execution_cluster_bootstrap_95": [
+          0.876984126984127,
+          0.9246031746031746
+        ],
+        "execution_rate": 0.9019274376417233,
+        "execution_structure_gap": 0.41043083900226757,
+        "gap_cluster_bootstrap_95": [
+          0.33672052154195004,
+          0.4914965986394558
+        ],
+        "gate_entropy_odds_ratio": 0.656355672735902,
+        "gate_entropy_or_cluster_bootstrap_95": [
+          0.33114260738398926,
+          1.0398270493775668
+        ],
+        "model_count": 21,
+        "prompt_count": 84,
+        "signature_cluster_bootstrap_95": [
+          0.4087301587301587,
+          0.5708616780045351
+        ],
+        "signature_cluster_count": 84,
+        "signature_rate": 0.4914965986394558
+      },
+      "pilot": {
+        "barrier_odds_ratio": 0.2690574779657383,
+        "barrier_or_cluster_bootstrap_95": [
+          0.07595170957984816,
+          0.8024348062759907
+        ],
+        "cell_count": 1470,
+        "execution_cluster_bootstrap_95": [
+          0.8888827838827839,
+          0.9529995850014646
+        ],
+        "execution_rate": 0.9244897959183673,
+        "execution_structure_gap": 0.35578231292517004,
+        "gap_cluster_bootstrap_95": [
+          0.2466822562358277,
+          0.46772667971298104
+        ],
+        "gate_entropy_odds_ratio": 0.21659893136560718,
+        "gate_entropy_or_cluster_bootstrap_95": [
+          0.06899422253065171,
+          0.442801002881661
+        ],
+        "model_count": 21,
+        "prompt_count": 70,
+        "signature_cluster_bootstrap_95": [
+          0.4477480158730159,
+          0.6858711934831337
+        ],
+        "signature_cluster_count": 60,
+        "signature_rate": 0.5687074829931973
+      }
+    },
+    "final_21_rank_replication": {
+      "median_signature_change": -0.06428571428571428,
+      "model_count": 21,
+      "models_declining_on_extension": 19,
+      "models_improving_on_extension": 2,
+      "models_tied": 0,
+      "spearman_rho": 0.7688111963016339,
+      "two_sided_p": 4.6592690127008536e-05
+    },
+    "method": "target-signature-cluster bootstrap within each disjoint cohort",
+    "original_15": {
+      "extension": {
+        "barrier_odds_ratio": 0.4032611173432181,
+        "barrier_or_cluster_bootstrap_95": [
+          0.151920073628336,
+          0.8855123160290331
+        ],
+        "cell_count": 1260,
+        "execution_cluster_bootstrap_95": [
+          0.8682539682539683,
+          0.9182539682539682
+        ],
+        "execution_rate": 0.8928571428571429,
+        "execution_structure_gap": 0.40079365079365087,
+        "gap_cluster_bootstrap_95": [
+          0.3230158730158731,
+          0.47857142857142854
+        ],
+        "gate_entropy_odds_ratio": 0.7005274277763246,
+        "gate_entropy_or_cluster_bootstrap_95": [
+          0.35334308766164985,
+          1.1327201662336042
+        ],
+        "model_count": 15,
+        "prompt_count": 84,
+        "signature_cluster_bootstrap_95": [
+          0.4119047619047619,
+          0.5754166666666665
+        ],
+        "signature_cluster_count": 84,
+        "signature_rate": 0.49206349206349204
+      },
+      "pilot": {
+        "barrier_odds_ratio": 0.29095990574521235,
+        "barrier_or_cluster_bootstrap_95": [
+          0.07896353370622244,
+          0.9247439306652542
+        ],
+        "cell_count": 1050,
+        "execution_cluster_bootstrap_95": [
+          0.8863791982665222,
+          0.9495007451564829
+        ],
+        "execution_rate": 0.920952380952381,
+        "execution_structure_gap": 0.3571428571428572,
+        "gap_cluster_bootstrap_95": [
+          0.2527310417608925,
+          0.475
+        ],
+        "gate_entropy_odds_ratio": 0.21896959660727128,
+        "gate_entropy_or_cluster_bootstrap_95": [
+          0.06910044216984951,
+          0.45089578690295595
+        ],
+        "model_count": 15,
+        "prompt_count": 70,
+        "signature_cluster_bootstrap_95": [
+          0.4383801247771836,
+          0.6732394366197183
+        ],
+        "signature_cluster_count": 60,
+        "signature_rate": 0.5638095238095238
+      }
+    },
+    "original_15_rank_replication": {
+      "median_signature_change": -0.06428571428571428,
+      "model_count": 15,
+      "models_declining_on_extension": 14,
+      "models_improving_on_extension": 1,
+      "models_tied": 0,
+      "spearman_rho": 0.7606294799771749,
+      "two_sided_p": 0.0009931925194039597
+    },
+    "per_model": [
+      {
+        "developer": "OpenAI",
+        "execution_change": 0.014285714285714235,
+        "extension_execution_rate": 1.0,
+        "extension_gap": 0.36904761904761907,
+        "extension_signature_rate": 0.6309523809523809,
+        "model": "gpt-5.6-sol",
+        "model_label": "GPT-5.6 Sol",
+        "pilot_execution_rate": 0.9857142857142858,
+        "pilot_gap": 0.3571428571428572,
+        "pilot_signature_rate": 0.6285714285714286,
+        "signature_change": 0.0023809523809523725
+      },
+      {
+        "developer": "OpenAI",
+        "execution_change": -0.021428571428571463,
+        "extension_execution_rate": 0.9642857142857143,
+        "extension_gap": 0.38095238095238093,
+        "extension_signature_rate": 0.5833333333333334,
+        "model": "gpt-5.5",
+        "model_label": "GPT-5.5",
+        "pilot_execution_rate": 0.9857142857142858,
+        "pilot_gap": 0.3571428571428572,
+        "pilot_signature_rate": 0.6285714285714286,
+        "signature_change": -0.04523809523809519
+      },
+      {
+        "developer": "OpenAI",
+        "execution_change": 0.01666666666666672,
+        "extension_execution_rate": 0.9880952380952381,
+        "extension_gap": 0.41666666666666674,
+        "extension_signature_rate": 0.5714285714285714,
+        "model": "gpt-5.4-mini",
+        "model_label": "GPT-5.4 mini",
+        "pilot_execution_rate": 0.9714285714285714,
+        "pilot_gap": 0.3285714285714285,
+        "pilot_signature_rate": 0.6428571428571429,
+        "signature_change": -0.07142857142857151
+      },
+      {
+        "developer": "Anthropic",
+        "execution_change": -0.009523809523809601,
+        "extension_execution_rate": 0.9761904761904762,
+        "extension_gap": 0.3571428571428571,
+        "extension_signature_rate": 0.6190476190476191,
+        "model": "claude-fable-5",
+        "model_label": "Claude Fable 5",
+        "pilot_execution_rate": 0.9857142857142858,
+        "pilot_gap": 0.34285714285714286,
+        "pilot_signature_rate": 0.6428571428571429,
+        "signature_change": -0.023809523809523836
+      },
+      {
+        "developer": "Anthropic",
+        "execution_change": -0.011904761904761862,
+        "extension_execution_rate": 0.9880952380952381,
+        "extension_gap": 0.41666666666666674,
+        "extension_signature_rate": 0.5714285714285714,
+        "model": "claude-sonnet-4-6",
+        "model_label": "Claude Sonnet 4.6",
+        "pilot_execution_rate": 1.0,
+        "pilot_gap": 0.3857142857142857,
+        "pilot_signature_rate": 0.6142857142857143,
+        "signature_change": -0.04285714285714293
+      },
+      {
+        "developer": "Anthropic",
+        "execution_change": 0.0,
+        "extension_execution_rate": 1.0,
+        "extension_gap": 0.41666666666666663,
+        "extension_signature_rate": 0.5833333333333334,
+        "model": "claude-opus-4-8",
+        "model_label": "Claude Opus 4.8",
+        "pilot_execution_rate": 1.0,
+        "pilot_gap": 0.3857142857142857,
+        "pilot_signature_rate": 0.6142857142857143,
+        "signature_change": -0.030952380952380953
+      },
+      {
+        "developer": "Google",
+        "execution_change": -0.030952380952380953,
+        "extension_execution_rate": 0.8690476190476191,
+        "extension_gap": 0.40476190476190477,
+        "extension_signature_rate": 0.4642857142857143,
+        "model": "gemini-2.5-pro",
+        "model_label": "Gemini 2.5 Pro",
+        "pilot_execution_rate": 0.9,
+        "pilot_gap": 0.27142857142857146,
+        "pilot_signature_rate": 0.6285714285714286,
+        "signature_change": -0.16428571428571426
+      },
+      {
+        "developer": "Google",
+        "execution_change": -0.0071428571428571175,
+        "extension_execution_rate": 0.9642857142857143,
+        "extension_gap": 0.36904761904761907,
+        "extension_signature_rate": 0.5952380952380952,
+        "model": "gemini-3.1-pro-preview",
+        "model_label": "Gemini 3.1 Pro Preview",
+        "pilot_execution_rate": 0.9714285714285714,
+        "pilot_gap": 0.34285714285714286,
+        "pilot_signature_rate": 0.6285714285714286,
+        "signature_change": -0.033333333333333326
+      },
+      {
+        "developer": "DeepSeek",
+        "execution_change": 0.0023809523809523725,
+        "extension_execution_rate": 0.9166666666666666,
+        "extension_gap": 0.3214285714285714,
+        "extension_signature_rate": 0.5952380952380952,
+        "model": "deepseek-v4-pro",
+        "model_label": "DeepSeek V4 Pro",
+        "pilot_execution_rate": 0.9142857142857143,
+        "pilot_gap": 0.3285714285714285,
+        "pilot_signature_rate": 0.5857142857142857,
+        "signature_change": 0.00952380952380949
+      },
+      {
+        "developer": "DeepSeek",
+        "execution_change": -0.04523809523809519,
+        "extension_execution_rate": 0.8690476190476191,
+        "extension_gap": 0.3928571428571429,
+        "extension_signature_rate": 0.47619047619047616,
+        "model": "deepseek-v4-flash",
+        "model_label": "DeepSeek V4 Flash",
+        "pilot_execution_rate": 0.9142857142857143,
+        "pilot_gap": 0.3285714285714285,
+        "pilot_signature_rate": 0.5857142857142857,
+        "signature_change": -0.10952380952380958
+      },
+      {
+        "developer": "Mistral AI",
+        "execution_change": -0.040476190476190554,
+        "extension_execution_rate": 0.9166666666666666,
+        "extension_gap": 0.38095238095238093,
+        "extension_signature_rate": 0.5357142857142857,
+        "model": "mistral-ai/codestral-2501",
+        "model_label": "Codestral 25.01",
+        "pilot_execution_rate": 0.9571428571428572,
+        "pilot_gap": 0.37142857142857144,
+        "pilot_signature_rate": 0.5857142857142857,
+        "signature_change": -0.050000000000000044
+      },
+      {
+        "developer": "Alibaba/Qwen",
+        "execution_change": -0.02619047619047621,
+        "extension_execution_rate": 0.8452380952380952,
+        "extension_gap": 0.35714285714285715,
+        "extension_signature_rate": 0.4880952380952381,
+        "model": "qwen/qwen3-coder-next",
+        "model_label": "Qwen3-Coder-Next",
+        "pilot_execution_rate": 0.8714285714285714,
+        "pilot_gap": 0.34285714285714286,
+        "pilot_signature_rate": 0.5285714285714286,
+        "signature_change": -0.0404761904761905
+      },
+      {
+        "developer": "Meta",
+        "execution_change": 0.023809523809523725,
+        "extension_execution_rate": 0.9523809523809523,
+        "extension_gap": 0.5357142857142856,
+        "extension_signature_rate": 0.4166666666666667,
+        "model": "meta/llama-4-maverick-17b-128e-instruct-fp8",
+        "model_label": "Llama 4 Maverick",
+        "pilot_execution_rate": 0.9285714285714286,
+        "pilot_gap": 0.3571428571428572,
+        "pilot_signature_rate": 0.5714285714285714,
+        "signature_change": -0.1547619047619047
+      },
+      {
+        "developer": "Meta",
+        "execution_change": -0.014285714285714235,
+        "extension_execution_rate": 0.9285714285714286,
+        "extension_gap": 0.5,
+        "extension_signature_rate": 0.42857142857142855,
+        "model": "llama-3.3-70b-versatile",
+        "model_label": "Llama 3.3 70B",
+        "pilot_execution_rate": 0.9428571428571428,
+        "pilot_gap": 0.44285714285714284,
+        "pilot_signature_rate": 0.5,
+        "signature_change": -0.07142857142857145
+      },
+      {
+        "developer": "OpenAI",
+        "execution_change": 0.01904761904761898,
+        "extension_execution_rate": 0.9761904761904762,
+        "extension_gap": 0.45238095238095233,
+        "extension_signature_rate": 0.5238095238095238,
+        "model": "openai/gpt-oss-120b",
+        "model_label": "GPT-OSS 120B",
+        "pilot_execution_rate": 0.9571428571428572,
+        "pilot_gap": 0.41428571428571437,
+        "pilot_signature_rate": 0.5428571428571428,
+        "signature_change": -0.01904761904761898
+      },
+      {
+        "developer": "OpenAI",
+        "execution_change": -0.02619047619047621,
+        "extension_execution_rate": 0.9166666666666666,
+        "extension_gap": 0.46428571428571425,
+        "extension_signature_rate": 0.4523809523809524,
+        "model": "openai/gpt-oss-20b",
+        "model_label": "GPT-OSS 20B",
+        "pilot_execution_rate": 0.9428571428571428,
+        "pilot_gap": 0.37142857142857144,
+        "pilot_signature_rate": 0.5714285714285714,
+        "signature_change": -0.11904761904761901
+      },
+      {
+        "developer": "Mistral AI",
+        "execution_change": -0.04761904761904767,
+        "extension_execution_rate": 0.8809523809523809,
+        "extension_gap": 0.4880952380952381,
+        "extension_signature_rate": 0.39285714285714285,
+        "model": "mistralai/mistral-small-3.2-24b-instruct",
+        "model_label": "Mistral Small 3.2 24B",
+        "pilot_execution_rate": 0.9285714285714286,
+        "pilot_gap": 0.3285714285714286,
+        "pilot_signature_rate": 0.6,
+        "signature_change": -0.20714285714285713
+      },
+      {
+        "developer": "IBM/Qiskit",
+        "execution_change": -0.0071428571428571175,
+        "extension_execution_rate": 0.8928571428571429,
+        "extension_gap": 0.5,
+        "extension_signature_rate": 0.39285714285714285,
+        "model": "qiskit/mistral-small-3.2-24b-qiskit",
+        "model_label": "Qiskit Mistral 3.2 24B",
+        "pilot_execution_rate": 0.9,
+        "pilot_gap": 0.3857142857142858,
+        "pilot_signature_rate": 0.5142857142857142,
+        "signature_change": -0.12142857142857139
+      },
+      {
+        "developer": "Alibaba/Qwen",
+        "execution_change": -0.14523809523809528,
+        "extension_execution_rate": 0.5119047619047619,
+        "extension_gap": 0.1904761904761904,
+        "extension_signature_rate": 0.32142857142857145,
+        "model": "qwen/qwen3-32b",
+        "model_label": "Qwen3 32B",
+        "pilot_execution_rate": 0.6571428571428571,
+        "pilot_gap": 0.2714285714285714,
+        "pilot_signature_rate": 0.38571428571428573,
+        "signature_change": -0.06428571428571428
+      },
+      {
+        "developer": "Meta",
+        "execution_change": -0.05952380952380942,
+        "extension_execution_rate": 0.7976190476190477,
+        "extension_gap": 0.3928571428571429,
+        "extension_signature_rate": 0.40476190476190477,
+        "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+        "model_label": "Llama 4 Scout",
+        "pilot_execution_rate": 0.8571428571428571,
+        "pilot_gap": 0.3571428571428571,
+        "pilot_signature_rate": 0.5,
+        "signature_change": -0.09523809523809523
+      },
+      {
+        "developer": "Meta",
+        "execution_change": -0.05714285714285716,
+        "extension_execution_rate": 0.7857142857142857,
+        "extension_gap": 0.5119047619047619,
+        "extension_signature_rate": 0.27380952380952384,
+        "model": "llama-3.1-8b-instant",
+        "model_label": "Llama 3.1 8B",
+        "pilot_execution_rate": 0.8428571428571429,
+        "pilot_gap": 0.4,
+        "pilot_signature_rate": 0.44285714285714284,
+        "signature_change": -0.169047619047619
+      }
+    ]
+  },
+  "schema_version": "pqid-bench-robustness-suite-v1"
+}

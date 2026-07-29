@@ -1,0 +1,401 @@
+[
+  {
+    "generation_config": {
+      "max_output_tokens": 2048,
+      "n": 1,
+      "single_pass": true,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "model": "gpt-5.6-sol",
+    "provider": "openai",
+    "provider_request_body_count": 36,
+    "provider_request_body_map_sha256": "94054eb5a24851991eb799d421beda12e96dcdbdef5adf3a5769a1ec1a4bed98",
+    "request_family": "openai_responses",
+    "slug": "openai_gpt-5_6-sol",
+    "source_request_file": "artifacts/external_model_batches_154/requests/openai_gpt-5_6-sol_requests.jsonl",
+    "source_request_sha256": "55042f3f06404c6a113e01bfa0f7f1f2a32d24a75f313f15f3a33dc1773e60e2",
+    "source_response_file": "artifacts/external_model_batches_154/responses/openai_gpt-5_6-sol_responses.jsonl",
+    "source_response_sha256": "0838e4883e1f3d8a20d387afef6cc7591677b8be8ccf93e0f5d1803b2c8e62c4"
+  },
+  {
+    "generation_config": {
+      "max_output_tokens": 2048,
+      "n": 1,
+      "single_pass": true,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "model": "gpt-5.5",
+    "provider": "openai",
+    "provider_request_body_count": 36,
+    "provider_request_body_map_sha256": "7660450cde836062b0b77fb62ec125fb00e1168eed716800d4a9e67c4ed5827e",
+    "request_family": "openai_responses",
+    "slug": "openai_gpt-5_5",
+    "source_request_file": "artifacts/external_model_batches_154/requests/openai_gpt-5_5_requests.jsonl",
+    "source_request_sha256": "c8658a19ddcf166e23db668fd819d01b2c3fed2d9654724a170580211bb923bc",
+    "source_response_file": "artifacts/external_model_batches_154/responses/openai_gpt-5_5_responses.jsonl",
+    "source_response_sha256": "1b68b805cecd786c0f9b090faa036ae7c91cd43b442a2ec4c38143e87f9a82a8"
+  },
+  {
+    "generation_config": {
+      "max_output_tokens": 2048,
+      "n": 1,
+      "single_pass": true,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "model": "gpt-5.4-mini",
+    "provider": "openai",
+    "provider_request_body_count": 36,
+    "provider_request_body_map_sha256": "9b1fe291ee6d6eebe849f9d736b3428b8b5d62275c1f80cd6bea8207e17249f3",
+    "request_family": "openai_responses",
+    "slug": "openai_gpt-5_4-mini",
+    "source_request_file": "artifacts/external_model_batches_154/requests/openai_gpt-5_4-mini_requests.jsonl",
+    "source_request_sha256": "8043bb12c8a1926f8318b052d5bd4931009ee6d2ed9e11dc81c5e32cd00e6c1e",
+    "source_response_file": "artifacts/external_model_batches_154/responses/openai_gpt-5_4-mini_responses.jsonl",
+    "source_response_sha256": "145dd98f4d238a85f9aa198f1b07f35b66692a5da81168a5cde5b14c24a0cfc4"
+  },
+  {
+    "generation_config": {
+      "max_output_tokens": 2048,
+      "n": 1,
+      "single_pass": true,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "model": "claude-fable-5",
+    "provider": "anthropic",
+    "provider_request_body_count": 36,
+    "provider_request_body_map_sha256": "a11b8541695f9d44b319539c3d88e1a175a7e556f3fbf42eed454247d2bc7093",
+    "request_family": "anthropic_messages",
+    "slug": "anthropic_claude-fable-5",
+    "source_request_file": "artifacts/external_model_batches_154/requests/anthropic_claude-fable-5_requests.jsonl",
+    "source_request_sha256": "72b9bddd510b970f2a80320f9d89660aa8d3488046ab88489a6eef8749b5dc69",
+    "source_response_file": "artifacts/external_model_batches_154/responses/anthropic_claude-fable-5_responses.jsonl",
+    "source_response_sha256": "1c25dec68e653d981c0a87c3ff15323b2cfdc41246682e819ee23220f82adb2e"
+  },
+  {
+    "generation_config": {
+      "max_output_tokens": 2048,
+      "n": 1,
+      "single_pass": true,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "model": "claude-sonnet-4-6",
+    "provider": "anthropic",
+    "provider_request_body_count": 36,
+    "provider_request_body_map_sha256": "37738b1787f1ecaf5a94792cc17e10d69ccc9b5eefc6d201881f2562c6578ef1",
+    "request_family": "anthropic_messages",
+    "slug": "anthropic_claude-sonnet-4-6",
+    "source_request_file": "artifacts/external_model_batches_154/requests/anthropic_claude-sonnet-4-6_requests.jsonl",
+    "source_request_sha256": "70afa548d72c6b0629ffe07e3ac9467ec1031648ab52f4e9fe7968e53e78f811",
+    "source_response_file": "artifacts/external_model_batches_154/responses/anthropic_claude-sonnet-4-6_responses.jsonl",
+    "source_response_sha256": "b7c34b0905e7b6c6dcee2c3c5c0e25cd7645ad8abf9507e0a544c2d3ffafc9fd"
+  },
+  {
+    "generation_config": {
+      "max_output_tokens": 2048,
+      "n": 1,
+      "single_pass": true,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "model": "claude-opus-4-8",
+    "provider": "anthropic",
+    "provider_request_body_count": 36,
+    "provider_request_body_map_sha256": "455e58b9f9327c38a17b69521652f841f77ff290b37b3de558b10d2957475218",
+    "request_family": "anthropic_messages",
+    "slug": "anthropic_claude-opus-4-8",
+    "source_request_file": "artifacts/external_model_batches_154/requests/anthropic_claude-opus-4-8_requests.jsonl",
+    "source_request_sha256": "bffbc8a4156b1b3c72070de4a267ce70c6ee022a00a19042294d9fcea9fb0ea7",
+    "source_response_file": "artifacts/external_model_batches_154/responses/anthropic_claude-opus-4-8_responses.jsonl",
+    "source_response_sha256": "23caad403fc17f50daeb664584d0496f3dba8c130ef5f8611d90b5982e269cea"
+  },
+  {
+    "generation_config": {
+      "max_output_tokens": 2048,
+      "n": 1,
+      "single_pass": true,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "model": "gemini-2.5-pro",
+    "provider": "google",
+    "provider_request_body_count": 36,
+    "provider_request_body_map_sha256": "dcf79b329e3d6f2caad475d85932ac5901722a7b7beb60ce6bdf51daec09ba1b",
+    "request_family": "gemini_generate_content",
+    "slug": "google_gemini-2_5-pro",
+    "source_request_file": "artifacts/external_model_batches_154/requests/google_gemini-2_5-pro_requests.jsonl",
+    "source_request_sha256": "a150bbd08669a8d41e599cbbe152ed80df8a0b6868ece5698df3d707e78feac0",
+    "source_response_file": "artifacts/external_model_batches_154/responses/google_gemini-2_5-pro_responses.jsonl",
+    "source_response_sha256": "d5e17f85bfe95b3056df0c103caedeb1cdfb4a184e93d41966c7a4fb26426489"
+  },
+  {
+    "generation_config": {
+      "max_output_tokens": 2048,
+      "n": 1,
+      "single_pass": true,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "model": "gemini-3.1-pro-preview",
+    "provider": "google",
+    "provider_request_body_count": 36,
+    "provider_request_body_map_sha256": "cf417fc0471841c29105993f1ceb8274c2fd3b1f5d48e89b42fd9750689bf73c",
+    "request_family": "gemini_generate_content",
+    "slug": "google_gemini-3_1-pro-preview",
+    "source_request_file": "artifacts/external_model_batches_154/requests/google_gemini-3_1-pro-preview_requests.jsonl",
+    "source_request_sha256": "d801c16ce802c3aff44061f3c6d4552eb9cca615dc242ea5eb9e6de21f4011d2",
+    "source_response_file": "artifacts/external_model_batches_154/responses/google_gemini-3_1-pro-preview_responses.jsonl",
+    "source_response_sha256": "4bf62e142896a3db0680afb02bf51c5a9e5ebf0de73e811113aad201e27f16db"
+  },
+  {
+    "generation_config": {
+      "max_output_tokens": 2048,
+      "n": 1,
+      "single_pass": true,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "model": "deepseek-v4-pro",
+    "provider": "deepseek",
+    "provider_request_body_count": 36,
+    "provider_request_body_map_sha256": "ce50cca5c09166f05b13c75447e7929d5009a4234e77145d1796fb5e31148293",
+    "request_family": "openai_compatible_chat",
+    "slug": "deepseek_deepseek-v4-pro",
+    "source_request_file": "artifacts/external_model_batches_154/requests/deepseek_deepseek-v4-pro_requests.jsonl",
+    "source_request_sha256": "f7ea00c4b62204da684439e8960816f140515fd51fa4abd9a83897c35c62d4f2",
+    "source_response_file": "artifacts/external_model_batches_154/responses/deepseek_deepseek-v4-pro_responses.jsonl",
+    "source_response_sha256": "a9af25b0e5b4018d0ee9eeca6fb465d3e8e30fe613e277dbf05a0588da21a362"
+  },
+  {
+    "generation_config": {
+      "max_output_tokens": 2048,
+      "n": 1,
+      "single_pass": true,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "model": "deepseek-v4-flash",
+    "provider": "deepseek",
+    "provider_request_body_count": 36,
+    "provider_request_body_map_sha256": "5be55b504196224c51fea299558adb57a93b180a903c14bc8674df9a53979d73",
+    "request_family": "openai_compatible_chat",
+    "slug": "deepseek_deepseek-v4-flash",
+    "source_request_file": "artifacts/external_model_batches_154/requests/deepseek_deepseek-v4-flash_requests.jsonl",
+    "source_request_sha256": "ab9ddef2280a043d5c72dfa6b0b126786075f2f17a0144e0ac885ebaf3dd41eb",
+    "source_response_file": "artifacts/external_model_batches_154/responses/deepseek_deepseek-v4-flash_responses.jsonl",
+    "source_response_sha256": "1b227656f00df18c95803564500fad25a1ad2dc0e9d33eb609adf4bcfbad0825"
+  },
+  {
+    "generation_config": {
+      "max_output_tokens": 2048,
+      "n": 1,
+      "single_pass": true,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "model": "mistral-ai/codestral-2501",
+    "provider": "github_models",
+    "provider_request_body_count": 36,
+    "provider_request_body_map_sha256": "2e903bab06325cfd326ba7a957c119bacf47cc7e869fe5bb7e96026890754bed",
+    "request_family": "openai_compatible_chat",
+    "slug": "github_models_mistral-ai_codestral-2501",
+    "source_request_file": "artifacts/external_model_batches_154/requests/github_models_mistral-ai_codestral-2501_requests.jsonl",
+    "source_request_sha256": "b39adf09d2bd54f58d8d71abcd80d0cbc9e2f64393306c4c35498f31f3e9e3ce",
+    "source_response_file": "artifacts/external_model_batches_154/responses/github_models_mistral-ai_codestral-2501_responses.jsonl",
+    "source_response_sha256": "456ba5bf31d16993b63ced9f131b25817dc6fd7f13170626d6a8a35a37031d6a"
+  },
+  {
+    "generation_config": {
+      "max_output_tokens": 2048,
+      "n": 1,
+      "single_pass": true,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "model": "qwen/qwen3-coder-next",
+    "provider": "huggingface_router",
+    "provider_request_body_count": 36,
+    "provider_request_body_map_sha256": "415d59c31f5f5aea4f12e75ea42d43755f0dd58e1d0d64279a8d6e810ebf8f23",
+    "request_family": "openai_compatible_chat",
+    "slug": "huggingface_router_qwen_qwen3-coder-next_novita",
+    "source_request_file": "artifacts/external_model_batches_154/requests/huggingface_router_qwen_qwen3-coder-next_novita_requests.jsonl",
+    "source_request_sha256": "769d3b1f9caa1925d159ee25ac09cbe1ccac6e00a87433ce5259fe3221fc1c01",
+    "source_response_file": "artifacts/external_model_batches_154/responses/huggingface_router_qwen_qwen3-coder-next_novita_responses.jsonl",
+    "source_response_sha256": "86e3b48a7e625da0b862a15d8f4d8292bf78276e9084538090bb9a4ccf930b53"
+  },
+  {
+    "generation_config": {
+      "max_output_tokens": 2048,
+      "n": 1,
+      "single_pass": true,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "model": "meta/llama-4-maverick-17b-128e-instruct-fp8",
+    "provider": "github_models",
+    "provider_request_body_count": 36,
+    "provider_request_body_map_sha256": "b03c6f4d98abb68eee1fa122a7bcbe64324367e9bf45f55601ce0a70b9587d45",
+    "request_family": "openai_compatible_chat",
+    "slug": "github_models_meta_llama-4-maverick-17b-128e-instruct-fp8",
+    "source_request_file": "artifacts/external_model_batches_154/requests/github_models_meta_llama-4-maverick-17b-128e-instruct-fp8_requests.jsonl",
+    "source_request_sha256": "b2c043e5c04a91555c3b24a0fd6bb849d3d09c72da77e939b692c371fa6ff11d",
+    "source_response_file": "artifacts/external_model_batches_154/responses/github_models_meta_llama-4-maverick-17b-128e-instruct-fp8_responses.jsonl",
+    "source_response_sha256": "32524702d78a4e0c472b5d99f68566f5eea2f34e40b66761238baaa642e23fcb"
+  },
+  {
+    "generation_config": {
+      "max_output_tokens": 2048,
+      "n": 1,
+      "single_pass": true,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "model": "llama-3.3-70b-versatile",
+    "provider": "groq",
+    "provider_request_body_count": 36,
+    "provider_request_body_map_sha256": "8fe905f1d0667d72c0ac81379b412a24e666f1cd55037c2739ef73a47d59cfd1",
+    "request_family": "openai_compatible_chat",
+    "slug": "groq_llama-3_3-70b-versatile",
+    "source_request_file": "artifacts/external_model_batches_154/requests/groq_llama-3_3-70b-versatile_requests.jsonl",
+    "source_request_sha256": "d354be285dc29f3bdcbe5b8a8f128fdda2f91e1807d3b5b796cf20104ab79d1b",
+    "source_response_file": "artifacts/external_model_batches_154/responses/groq_llama-3_3-70b-versatile_responses.jsonl",
+    "source_response_sha256": "273d9fec439e9e877f39ed4be1686df4a60ab0ca75939c170fe06f50bd615dba"
+  },
+  {
+    "generation_config": {
+      "max_output_tokens": 2048,
+      "n": 1,
+      "single_pass": true,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "model": "openai/gpt-oss-120b",
+    "provider": "groq",
+    "provider_request_body_count": 36,
+    "provider_request_body_map_sha256": "22e2d7d1aa52013e2cea62732000138f0a70d333b429bf849672fc789a435e70",
+    "request_family": "openai_compatible_chat",
+    "slug": "groq_openai_gpt-oss-120b",
+    "source_request_file": "artifacts/external_model_batches_154/requests/groq_openai_gpt-oss-120b_requests.jsonl",
+    "source_request_sha256": "8bac69971e05d6fcccbf5833a118469d435179221a59550aa1dd1f2b1c54e06d",
+    "source_response_file": "artifacts/external_model_batches_154/responses/groq_openai_gpt-oss-120b_responses.jsonl",
+    "source_response_sha256": "c87c7537133920d569516a306da825eb869c9d976357219943f55f0b88e0b647"
+  },
+  {
+    "generation_config": {
+      "max_output_tokens": 2048,
+      "n": 1,
+      "single_pass": true,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "model": "openai/gpt-oss-20b",
+    "provider": "groq",
+    "provider_request_body_count": 36,
+    "provider_request_body_map_sha256": "4926208ba7f1bfd822b77683ed12e0fb864fa32d5ee68d66e8318e8de9c68a27",
+    "request_family": "openai_compatible_chat",
+    "slug": "groq_openai_gpt-oss-20b",
+    "source_request_file": "artifacts/external_model_batches_154/requests/groq_openai_gpt-oss-20b_requests.jsonl",
+    "source_request_sha256": "6552aeaa6a4ca0299428daa967e26ff683ef955d88d5a7e86ca6a11af8dea8cf",
+    "source_response_file": "artifacts/external_model_batches_154/responses/groq_openai_gpt-oss-20b_responses.jsonl",
+    "source_response_sha256": "f921a58926230896621376c3f55f92ea88aae3ab81134e0e0a5aceba28f9150d"
+  },
+  {
+    "generation_config": {
+      "max_output_tokens": 2048,
+      "n": 1,
+      "single_pass": true,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "model": "mistralai/mistral-small-3.2-24b-instruct",
+    "provider": "openrouter",
+    "provider_request_body_count": 36,
+    "provider_request_body_map_sha256": "41bb3be45c07dfb8c7a4f2998fef6680f64c5e1bf5ec3d67aaaa44aa03c9f4bb",
+    "request_family": "openai_compatible_chat",
+    "slug": "openrouter_mistralai_mistral-small-3_2-24b-instruct",
+    "source_request_file": "artifacts/external_model_batches_154/mistral_parent_control/requests/openrouter_mistralai_mistral-small-3_2-24b-instruct_requests.jsonl",
+    "source_request_sha256": "dc6bd606b50f478cfc400c3ffead8dced21486dfc120f09b17b69081d1d23cbb",
+    "source_response_file": "artifacts/external_model_batches_154/mistral_parent_control/responses/openrouter_mistralai_mistral-small-3_2-24b-instruct_responses.jsonl",
+    "source_response_sha256": "b29f35972fa362830361ab3b1d79b9430baadfe5d6ef073c2f66d7c82c39373e"
+  },
+  {
+    "generation_config": {
+      "max_output_tokens": 2048,
+      "n": 1,
+      "single_pass": true,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "model": "qiskit/mistral-small-3.2-24b-qiskit",
+    "provider": "huggingface_router",
+    "provider_request_body_count": 36,
+    "provider_request_body_map_sha256": "af4ef965e7c6b459b5af5b10af8e39f303747c47a0aefa602ab77b96e668c1e4",
+    "request_family": "openai_compatible_completion",
+    "slug": "huggingface_router_qiskit_mistral-small-3_2-24b-qiskit_featherless-ai",
+    "source_request_file": "artifacts/external_model_batches_154/qiskit_mistral/requests/huggingface_router_qiskit_mistral-small-3_2-24b-qiskit_featherless-ai_requests.jsonl",
+    "source_request_sha256": "25420fd211c4e692ffc7ed14721b030f3b0d39c7726c2043f4d60e963ec5a325",
+    "source_response_file": "artifacts/external_model_batches_154/qiskit_mistral/responses/huggingface_router_qiskit_mistral-small-3_2-24b-qiskit_featherless-ai_responses.jsonl",
+    "source_response_sha256": "3b0e242b5faa3335c3f9ef57ec53373881600fe0cdfdb1cb884034ef80e7d836"
+  },
+  {
+    "generation_config": {
+      "max_output_tokens": 2048,
+      "n": 1,
+      "single_pass": true,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "model": "qwen/qwen3-32b",
+    "provider": "groq",
+    "provider_request_body_count": 36,
+    "provider_request_body_map_sha256": "b604fed724882c7be348c9a38ab3d1aec6921418a93b71a415618abc8406fe9d",
+    "request_family": "openai_compatible_chat",
+    "slug": "groq_qwen_qwen3-32b",
+    "source_request_file": "artifacts/external_model_batches_154/requests/groq_qwen_qwen3-32b_requests.jsonl",
+    "source_request_sha256": "6e036bf09a8ed607da95ab2696b7a9d857652fc3a633d4a804282c8433528d05",
+    "source_response_file": "artifacts/external_model_batches_154/responses/groq_qwen_qwen3-32b_responses.jsonl",
+    "source_response_sha256": "e4f465de28bd35950f92b380f93a973ddb3361a7113d2de0f56c2eb08d2fd1e8"
+  },
+  {
+    "generation_config": {
+      "max_output_tokens": 2048,
+      "n": 1,
+      "single_pass": true,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "provider": "groq",
+    "provider_request_body_count": 36,
+    "provider_request_body_map_sha256": "2d3cf05b971936dcc472c5c1d7c349de21fe44228e145854ddcf915fe1dd15ff",
+    "request_family": "openai_compatible_chat",
+    "slug": "groq_meta-llama_llama-4-scout-17b-16e-instruct",
+    "source_request_file": "artifacts/external_model_batches_154/requests/groq_meta-llama_llama-4-scout-17b-16e-instruct_requests.jsonl",
+    "source_request_sha256": "6c28742b8bb78c3983be315680ceb000c57f1bc73f577ef19020ca74031c263c",
+    "source_response_file": "artifacts/external_model_batches_154/responses/groq_meta-llama_llama-4-scout-17b-16e-instruct_responses.jsonl",
+    "source_response_sha256": "00a93afe70b2565f065dbf79b21981a142ec9c03c3b07e3e48347a230bee8072"
+  },
+  {
+    "generation_config": {
+      "max_output_tokens": 2048,
+      "n": 1,
+      "single_pass": true,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "model": "llama-3.1-8b-instant",
+    "provider": "groq",
+    "provider_request_body_count": 36,
+    "provider_request_body_map_sha256": "98b5cbd325dbb1fdf4b12d096d74062196e8229f55ae3a069aa29eaf93af1f87",
+    "request_family": "openai_compatible_chat",
+    "slug": "groq_llama-3_1-8b-instant",
+    "source_request_file": "artifacts/external_model_batches_154/requests/groq_llama-3_1-8b-instant_requests.jsonl",
+    "source_request_sha256": "59b1c68876e47caed987a883ac8e1767a7b191f6db462a237f5e1946dd4bc71d",
+    "source_response_file": "artifacts/external_model_batches_154/responses/groq_llama-3_1-8b-instant_responses.jsonl",
+    "source_response_sha256": "42029a2e47c36a759bfd82f6539ceb6a7f48cedfb236b8434754a37c42c7973a"
+  }
+]

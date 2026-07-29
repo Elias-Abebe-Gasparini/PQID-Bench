@@ -1,0 +1,40 @@
+{
+  "credential_files_included": false,
+  "evaluator_contract": {
+    "canonical_report_count": 21,
+    "evaluator_harness_file": "PQID/submissions/acm_tqc_benchmark/scripts/run_pqid_bench_external_model_generation_harness.py",
+    "evaluator_harness_sha256": "698ae5651f0574334a2009e84e26dd796e9307340328de74c321aa5e2019139f",
+    "evaluator_versions": [
+      "pqid-bench-evaluator-1.1.0-safe-builtins"
+    ],
+    "frozen_predicate": "M = E AND Q AND K AND T",
+    "gate_type_component": "complete gate-type count-map equality",
+    "scalar_gate_count_role": "redundant diagnostic under count-map equality",
+    "structural_predicate_versions": [
+      "pqid-bench-reference-signature-1.0.0-count-map"
+    ]
+  },
+  "panel": {
+    "augmentation_panel_sha256": "9f36bdfabbfe53d0b719e95961d84cf50bb38c21a8dbbaf01d047416dfe241b0",
+    "combined_panel_sha256": "3e242bf2d8db9e4deda76a1a62c06484949ff245e8aa6284c64948e51c4049ed",
+    "confirmatory_prompt_count": 36,
+    "eligible_remaining_signature_count": 104,
+    "original_prompt_count": 36,
+    "pooled_prompt_count": 72,
+    "unique_signature_count": 72
+  },
+  "pretransmission_empty": true,
+  "protocol_sha256": "5c5761626fab260882fa41dc0a469570db17bdeedf9d785754a8c7329727df47",
+  "requests": {
+    "model_count": 21,
+    "new_logical_call_count": 1512,
+    "new_run_count": 2,
+    "pooled_run_level_output_count": 4536,
+    "prompt_count": 36,
+    "request_manifest_sha256": "911ae8e60ff994795a8220407bac90b0d35c0d8126cfed3da1d8c142fbdef9ea"
+  },
+  "schema_version": "pqid-bench-repeatability-preregistration-bundle-v1",
+  "sealed_at_utc": "2026-07-15T15:20:39+00:00",
+  "selection_is_outcome_blind": true,
+  "selection_seed": "13523d72ec07fde91188178f214ae9c9558ae6d8f07baa097dd89a53c14e048b"
+}

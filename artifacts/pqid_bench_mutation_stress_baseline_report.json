@@ -1,0 +1,455 @@
+{
+  "benchmark_counts": {
+    "extended_n8": 319,
+    "mutation_stress_n8": 11265,
+    "strict_n8": 415
+  },
+  "best_fair_baseline": "categorical Naive Bayes (code_tokens, empirical priors)",
+  "direct_alias_fields_excluded": [
+    "benchmark_view_membership",
+    "benchmark_suitability_tier",
+    "benchmark_suitability_tier_v2",
+    "expected_model_stance",
+    "evidence_regime",
+    "mutation_suite_candidate",
+    "release_view_membership",
+    "public_release_bucket",
+    "review_trace_id"
+  ],
+  "input_file": "PQID/data/processed/pqid_2026_enriched_github_circuits_plus_metadata_design_v3.jsonl",
+  "results": [
+    {
+      "fair_learned_baseline": false,
+      "feature_view": "none",
+      "metrics": {
+        "accuracy": 0.936046511627907,
+        "auroc": 0.5,
+        "balanced_accuracy": 0.5,
+        "clean_slice_false_stress": {
+          "extended_n8": {
+            "false_stress": 30,
+            "false_stress_rate": 1.0,
+            "support": 30
+          },
+          "strict_n8": {
+            "false_stress": 47,
+            "false_stress_rate": 1.0,
+            "support": 47
+          }
+        },
+        "false_clean_rate": 0.0,
+        "false_stress_rate": 1.0,
+        "macro_f1": 0.4834834834834835,
+        "mismatches": 77,
+        "per_label": {
+          "clean_control": {
+            "f1": 0.0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 77
+          },
+          "mutation_stress": {
+            "f1": 0.966966966966967,
+            "precision": 0.936046511627907,
+            "recall": 1.0,
+            "support": 1127
+          }
+        }
+      },
+      "name": "majority class (mutation_stress)",
+      "priors": "n/a"
+    },
+    {
+      "fair_learned_baseline": false,
+      "feature_view": "mutation_suite_candidate",
+      "metrics": {
+        "accuracy": 1.0,
+        "auroc": 1.0,
+        "balanced_accuracy": 1.0,
+        "clean_slice_false_stress": {
+          "extended_n8": {
+            "false_stress": 0,
+            "false_stress_rate": 0.0,
+            "support": 30
+          },
+          "strict_n8": {
+            "false_stress": 0,
+            "false_stress_rate": 0.0,
+            "support": 47
+          }
+        },
+        "false_clean_rate": 0.0,
+        "false_stress_rate": 0.0,
+        "macro_f1": 1.0,
+        "mismatches": 0,
+        "per_label": {
+          "clean_control": {
+            "f1": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 77
+          },
+          "mutation_stress": {
+            "f1": 1.0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 1127
+          }
+        }
+      },
+      "name": "direct mutation flag",
+      "priors": "n/a"
+    },
+    {
+      "fair_learned_baseline": true,
+      "feature_view": "source and retrieval metadata, excluding direct mutation and release aliases",
+      "metrics": {
+        "accuracy": 0.9460132890365448,
+        "auroc": 0.8056038903421334,
+        "balanced_accuracy": 0.8017665564249414,
+        "clean_slice_false_stress": {
+          "extended_n8": {
+            "false_stress": 28,
+            "false_stress_rate": 0.9333333333333333,
+            "support": 30
+          },
+          "strict_n8": {
+            "false_stress": 0,
+            "false_stress_rate": 0.0,
+            "support": 47
+          }
+        },
+        "false_clean_rate": 0.032830523513753325,
+        "false_stress_rate": 0.36363636363636365,
+        "macro_f1": 0.7861368822331833,
+        "mismatches": 65,
+        "per_label": {
+          "clean_control": {
+            "f1": 0.6012269938650306,
+            "precision": 0.5697674418604651,
+            "recall": 0.6363636363636364,
+            "support": 77
+          },
+          "mutation_stress": {
+            "f1": 0.9710467706013362,
+            "precision": 0.9749552772808586,
+            "recall": 0.9671694764862466,
+            "support": 1127
+          }
+        }
+      },
+      "name": "categorical Naive Bayes (source_proxy_metadata, empirical priors)",
+      "priors": "empirical"
+    },
+    {
+      "fair_learned_baseline": true,
+      "feature_view": "source and retrieval metadata, excluding direct mutation and release aliases",
+      "metrics": {
+        "accuracy": 0.9460132890365448,
+        "auroc": 0.8056038903421334,
+        "balanced_accuracy": 0.8017665564249414,
+        "clean_slice_false_stress": {
+          "extended_n8": {
+            "false_stress": 28,
+            "false_stress_rate": 0.9333333333333333,
+            "support": 30
+          },
+          "strict_n8": {
+            "false_stress": 0,
+            "false_stress_rate": 0.0,
+            "support": 47
+          }
+        },
+        "false_clean_rate": 0.032830523513753325,
+        "false_stress_rate": 0.36363636363636365,
+        "macro_f1": 0.7861368822331833,
+        "mismatches": 65,
+        "per_label": {
+          "clean_control": {
+            "f1": 0.6012269938650306,
+            "precision": 0.5697674418604651,
+            "recall": 0.6363636363636364,
+            "support": 77
+          },
+          "mutation_stress": {
+            "f1": 0.9710467706013362,
+            "precision": 0.9749552772808586,
+            "recall": 0.9671694764862466,
+            "support": 1127
+          }
+        }
+      },
+      "name": "categorical Naive Bayes (source_proxy_metadata, uniform priors)",
+      "priors": "uniform"
+    },
+    {
+      "fair_learned_baseline": true,
+      "feature_view": "validated circuit-structure metadata, excluding direct mutation aliases",
+      "metrics": {
+        "accuracy": 0.9451827242524917,
+        "auroc": 0.990688991576303,
+        "balanced_accuracy": 0.958619020730822,
+        "clean_slice_false_stress": {
+          "extended_n8": {
+            "false_stress": 2,
+            "false_stress_rate": 0.06666666666666667,
+            "support": 30
+          },
+          "strict_n8": {
+            "false_stress": 0,
+            "false_stress_rate": 0.0,
+            "support": 47
+          }
+        },
+        "false_clean_rate": 0.05678793256433008,
+        "false_stress_rate": 0.025974025974025976,
+        "macro_f1": 0.8321674776966748,
+        "mismatches": 66,
+        "per_label": {
+          "clean_control": {
+            "f1": 0.6944444444444445,
+            "precision": 0.539568345323741,
+            "recall": 0.974025974025974,
+            "support": 77
+          },
+          "mutation_stress": {
+            "f1": 0.969890510948905,
+            "precision": 0.9981220657276996,
+            "recall": 0.9432120674356699,
+            "support": 1127
+          }
+        }
+      },
+      "name": "categorical Naive Bayes (structural_metadata, empirical priors)",
+      "priors": "empirical"
+    },
+    {
+      "fair_learned_baseline": true,
+      "feature_view": "validated circuit-structure metadata, excluding direct mutation aliases",
+      "metrics": {
+        "accuracy": 0.9327242524916943,
+        "auroc": 0.990688991576303,
+        "balanced_accuracy": 0.9519641848834395,
+        "clean_slice_false_stress": {
+          "extended_n8": {
+            "false_stress": 2,
+            "false_stress_rate": 0.06666666666666667,
+            "support": 30
+          },
+          "strict_n8": {
+            "false_stress": 0,
+            "false_stress_rate": 0.0,
+            "support": 47
+          }
+        },
+        "false_clean_rate": 0.07009760425909495,
+        "false_stress_rate": 0.025974025974025976,
+        "macro_f1": 0.8060717417630601,
+        "mismatches": 81,
+        "per_label": {
+          "clean_control": {
+            "f1": 0.6493506493506493,
+            "precision": 0.487012987012987,
+            "recall": 0.974025974025974,
+            "support": 77
+          },
+          "mutation_stress": {
+            "f1": 0.9627928341754709,
+            "precision": 0.9980952380952381,
+            "recall": 0.929902395740905,
+            "support": 1127
+          }
+        }
+      },
+      "name": "categorical Naive Bayes (structural_metadata, uniform priors)",
+      "priors": "uniform"
+    },
+    {
+      "fair_learned_baseline": true,
+      "feature_view": "code lexical tokens only",
+      "metrics": {
+        "accuracy": 0.9975083056478405,
+        "auroc": 0.9904585210707659,
+        "balanced_accuracy": 0.9805194805194806,
+        "clean_slice_false_stress": {
+          "extended_n8": {
+            "false_stress": 2,
+            "false_stress_rate": 0.06666666666666667,
+            "support": 30
+          },
+          "strict_n8": {
+            "false_stress": 1,
+            "false_stress_rate": 0.02127659574468085,
+            "support": 47
+          }
+        },
+        "false_clean_rate": 0.0,
+        "false_stress_rate": 0.03896103896103896,
+        "macro_f1": 0.9894016261403081,
+        "mismatches": 3,
+        "per_label": {
+          "clean_control": {
+            "f1": 0.9801324503311257,
+            "precision": 1.0,
+            "recall": 0.961038961038961,
+            "support": 77
+          },
+          "mutation_stress": {
+            "f1": 0.9986708019494905,
+            "precision": 0.9973451327433628,
+            "recall": 1.0,
+            "support": 1127
+          }
+        }
+      },
+      "name": "categorical Naive Bayes (code_tokens, empirical priors)",
+      "priors": "empirical"
+    },
+    {
+      "fair_learned_baseline": true,
+      "feature_view": "code lexical tokens only",
+      "metrics": {
+        "accuracy": 0.9975083056478405,
+        "auroc": 0.9904585210707659,
+        "balanced_accuracy": 0.9805194805194806,
+        "clean_slice_false_stress": {
+          "extended_n8": {
+            "false_stress": 2,
+            "false_stress_rate": 0.06666666666666667,
+            "support": 30
+          },
+          "strict_n8": {
+            "false_stress": 1,
+            "false_stress_rate": 0.02127659574468085,
+            "support": 47
+          }
+        },
+        "false_clean_rate": 0.0,
+        "false_stress_rate": 0.03896103896103896,
+        "macro_f1": 0.9894016261403081,
+        "mismatches": 3,
+        "per_label": {
+          "clean_control": {
+            "f1": 0.9801324503311257,
+            "precision": 1.0,
+            "recall": 0.961038961038961,
+            "support": 77
+          },
+          "mutation_stress": {
+            "f1": 0.9986708019494905,
+            "precision": 0.9973451327433628,
+            "recall": 1.0,
+            "support": 1127
+          }
+        }
+      },
+      "name": "categorical Naive Bayes (code_tokens, uniform priors)",
+      "priors": "uniform"
+    },
+    {
+      "fair_learned_baseline": true,
+      "feature_view": "structural metadata plus code lexical tokens",
+      "metrics": {
+        "accuracy": 0.973421926910299,
+        "auroc": 0.9910231738093318,
+        "balanced_accuracy": 0.9737033153182222,
+        "clean_slice_false_stress": {
+          "extended_n8": {
+            "false_stress": 2,
+            "false_stress_rate": 0.06666666666666667,
+            "support": 30
+          },
+          "strict_n8": {
+            "false_stress": 0,
+            "false_stress_rate": 0.0,
+            "support": 47
+          }
+        },
+        "false_clean_rate": 0.026619343389529725,
+        "false_stress_rate": 0.025974025974025976,
+        "macro_f1": 0.9049001313152256,
+        "mismatches": 32,
+        "per_label": {
+          "clean_control": {
+            "f1": 0.8241758241758242,
+            "precision": 0.7142857142857143,
+            "recall": 0.974025974025974,
+            "support": 77
+          },
+          "mutation_stress": {
+            "f1": 0.9856244384546271,
+            "precision": 0.9981801637852593,
+            "recall": 0.9733806566104702,
+            "support": 1127
+          }
+        }
+      },
+      "name": "categorical Naive Bayes (structure_plus_code, empirical priors)",
+      "priors": "empirical"
+    },
+    {
+      "fair_learned_baseline": true,
+      "feature_view": "structural metadata plus code lexical tokens",
+      "metrics": {
+        "accuracy": 0.9626245847176079,
+        "auroc": 0.9910231738093318,
+        "balanced_accuracy": 0.9679357909171573,
+        "clean_slice_false_stress": {
+          "extended_n8": {
+            "false_stress": 2,
+            "false_stress_rate": 0.06666666666666667,
+            "support": 30
+          },
+          "strict_n8": {
+            "false_stress": 0,
+            "false_stress_rate": 0.0,
+            "support": 47
+          }
+        },
+        "false_clean_rate": 0.038154392191659274,
+        "false_stress_rate": 0.025974025974025976,
+        "macro_f1": 0.8744481907608885,
+        "mismatches": 45,
+        "per_label": {
+          "clean_control": {
+            "f1": 0.7692307692307693,
+            "precision": 0.635593220338983,
+            "recall": 0.974025974025974,
+            "support": 77
+          },
+          "mutation_stress": {
+            "f1": 0.9796656122910077,
+            "precision": 0.998158379373849,
+            "recall": 0.9618456078083407,
+            "support": 1127
+          }
+        }
+      },
+      "name": "categorical Naive Bayes (structure_plus_code, uniform priors)",
+      "priors": "uniform"
+    }
+  ],
+  "row_count": 11999,
+  "split_counts": {
+    "test": {
+      "clean_control": 77,
+      "mutation_stress": 1127
+    },
+    "train": {
+      "clean_control": 580,
+      "mutation_stress": 9012
+    },
+    "validation": {
+      "clean_control": 77,
+      "mutation_stress": 1126
+    }
+  },
+  "target_counts": {
+    "clean_control": 734,
+    "mutation_stress": 11265
+  },
+  "test_counts": {
+    "clean_control": 77,
+    "mutation_stress": 1127
+  }
+}

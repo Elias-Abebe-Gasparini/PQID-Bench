@@ -1,0 +1,172 @@
+[
+  {
+    "access_path": "official API",
+    "api_model_id": "gpt-5.6-sol",
+    "model_label": "GPT-5.6 Sol",
+    "provider": "openai",
+    "request_family": "openai_responses",
+    "role": "newer OpenAI frontier coding/reasoning comparison",
+    "source_note": "The live OpenAI model catalog lists gpt-5.6-sol for the current project, and a one-request invocation check succeeded on 2026-07-12.",
+    "source_url": "https://platform.openai.com/docs/models"
+  },
+  {
+    "access_path": "official API",
+    "api_model_id": "gpt-5.5",
+    "model_label": "GPT-5.5",
+    "provider": "openai",
+    "request_family": "openai_responses",
+    "role": "frontier coding/reasoning",
+    "source_note": "OpenAI docs list GPT-5.5 as the flagship model for complex reasoning and coding.",
+    "source_url": "https://platform.openai.com/docs/models"
+  },
+  {
+    "access_path": "official API",
+    "api_model_id": "gpt-5.4-mini",
+    "model_label": "GPT-5.4 mini",
+    "provider": "openai",
+    "request_family": "openai_responses",
+    "role": "cost/latency frontier comparison",
+    "source_note": "OpenAI docs list GPT-5.4 mini as a lower-cost coding-capable model.",
+    "source_url": "https://platform.openai.com/docs/models"
+  },
+  {
+    "access_path": "official API",
+    "api_model_id": "claude-fable-5",
+    "model_label": "Claude Fable 5",
+    "provider": "anthropic",
+    "request_family": "anthropic_messages",
+    "role": "newer Anthropic frontier coding/reasoning comparison",
+    "source_note": "The live Anthropic model catalog lists Claude Fable 5 for the current account, and a one-request invocation check succeeded on 2026-07-12.",
+    "source_url": "https://docs.anthropic.com/en/docs/about-claude/models/overview"
+  },
+  {
+    "access_path": "official API",
+    "api_model_id": "claude-sonnet-4-6",
+    "model_label": "Claude Sonnet 4.6",
+    "provider": "anthropic",
+    "request_family": "anthropic_messages",
+    "role": "independent frontier coding family",
+    "source_note": "Anthropic docs list Claude Sonnet 4.6 with fast comparative latency and extended thinking.",
+    "source_url": "https://docs.anthropic.com/en/docs/about-claude/models/overview"
+  },
+  {
+    "access_path": "official API",
+    "api_model_id": "claude-opus-4-8",
+    "model_label": "Claude Opus 4.8",
+    "provider": "anthropic",
+    "request_family": "anthropic_messages",
+    "role": "higher-capability Anthropic frontier comparison",
+    "source_note": "Anthropic docs list Claude Opus 4.8 as the most capable Opus-tier model for complex reasoning and long-horizon agentic coding.",
+    "source_url": "https://docs.anthropic.com/en/docs/about-claude/models/overview"
+  },
+  {
+    "access_path": "official API",
+    "api_model_id": "gemini-2.5-pro",
+    "model_label": "Gemini 2.5 Pro",
+    "provider": "google",
+    "request_family": "gemini_generate_content",
+    "role": "independent frontier coding family",
+    "source_note": "Google docs describe Gemini 2.5 Pro as an advanced model for complex reasoning and coding.",
+    "source_url": "https://ai.google.dev/gemini-api/docs/models"
+  },
+  {
+    "access_path": "official API",
+    "api_model_id": "gemini-3.1-pro-preview",
+    "model_label": "Gemini 3.1 Pro Preview",
+    "provider": "google",
+    "request_family": "gemini_generate_content",
+    "role": "newer Google frontier coding/reasoning comparison",
+    "source_note": "Google docs describe Gemini 3.1 Pro Preview as optimized for software-engineering behavior, agentic workflows, and complex problem solving.",
+    "source_url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.1-pro-preview"
+  },
+  {
+    "access_path": "DeepSeek official OpenAI-compatible API",
+    "api_model_id": "deepseek-v4-pro",
+    "model_label": "DeepSeek V4 Pro",
+    "provider": "deepseek",
+    "request_family": "openai_compatible_chat",
+    "role": "official DeepSeek frontier coding/reasoning row",
+    "source_note": "DeepSeek docs list https://api.deepseek.com as the OpenAI-compatible base URL and deepseek-v4-pro as a current model ID.",
+    "source_url": "https://api-docs.deepseek.com/"
+  },
+  {
+    "access_path": "DeepSeek official OpenAI-compatible API",
+    "api_model_id": "deepseek-v4-flash",
+    "model_label": "DeepSeek V4 Flash",
+    "provider": "deepseek",
+    "request_family": "openai_compatible_chat",
+    "role": "official DeepSeek fast/cost frontier comparison",
+    "source_note": "DeepSeek docs list https://api.deepseek.com as the OpenAI-compatible base URL and deepseek-v4-flash as a current model ID.",
+    "source_url": "https://api-docs.deepseek.com/"
+  },
+  {
+    "access_path": "GroqCloud OpenAI-compatible API",
+    "api_model_id": "llama-3.3-70b-versatile",
+    "model_label": "Llama 3.3 70B Versatile",
+    "provider": "groq",
+    "request_family": "openai_compatible_chat",
+    "role": "free/low-cost open-weight Llama API bridge",
+    "source_note": "Groq model docs list llama-3.3-70b-versatile as a production chat model.",
+    "source_url": "https://console.groq.com/docs/models"
+  },
+  {
+    "access_path": "GroqCloud OpenAI-compatible API",
+    "api_model_id": "qwen/qwen3-32b",
+    "model_label": "Qwen3 32B",
+    "provider": "groq",
+    "request_family": "openai_compatible_chat",
+    "role": "free/low-cost open-weight reasoning/code API bridge",
+    "source_note": "Groq rate-limit docs list qwen/qwen3-32b among free-plan models.",
+    "source_url": "https://console.groq.com/docs/rate-limits"
+  },
+  {
+    "access_path": "GroqCloud OpenAI-compatible API",
+    "api_model_id": "openai/gpt-oss-120b",
+    "model_label": "GPT-OSS 120B",
+    "provider": "groq",
+    "request_family": "openai_compatible_chat",
+    "role": "free/low-cost open-weight OpenAI-family API bridge",
+    "source_note": "Groq model docs list openai/gpt-oss-120b as a production model.",
+    "source_url": "https://console.groq.com/docs/models"
+  },
+  {
+    "access_path": "GroqCloud OpenAI-compatible API",
+    "api_model_id": "llama-3.1-8b-instant",
+    "model_label": "Llama 3.1 8B Instant",
+    "provider": "groq",
+    "request_family": "openai_compatible_chat",
+    "role": "fast small open-weight API bridge",
+    "source_note": "Groq model docs list llama-3.1-8b-instant as a production chat model.",
+    "source_url": "https://console.groq.com/docs/models"
+  },
+  {
+    "access_path": "GroqCloud OpenAI-compatible API",
+    "api_model_id": "openai/gpt-oss-20b",
+    "model_label": "GPT-OSS 20B",
+    "provider": "groq",
+    "request_family": "openai_compatible_chat",
+    "role": "size-control against GPT-OSS 120B",
+    "source_note": "Groq model docs list openai/gpt-oss-20b as a production model.",
+    "source_url": "https://console.groq.com/docs/models"
+  },
+  {
+    "access_path": "GroqCloud OpenAI-compatible API",
+    "api_model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "model_label": "Llama 4 Scout 17B 16E Instruct",
+    "provider": "groq",
+    "request_family": "openai_compatible_chat",
+    "role": "optional newer Llama-family contrast",
+    "source_note": "Groq model docs list Llama 4 Scout as a preview model; report as exploratory if used.",
+    "source_url": "https://console.groq.com/docs/models"
+  },
+  {
+    "access_path": "GitHub Models OpenAI-compatible API",
+    "api_model_id": "mistral-ai/codestral-2501",
+    "model_label": "Codestral 25.01",
+    "provider": "github_models",
+    "request_family": "openai_compatible_chat",
+    "role": "GitHub Models code-specialized Mistral contrast",
+    "source_note": "GitHub Models catalog lists Codestral 25.01 as a Mistral AI code-generation model.",
+    "source_url": "https://models.github.ai/catalog/models"
+  }
+]

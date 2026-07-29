@@ -1,0 +1,309 @@
+{
+  "summary": {
+    "prompt_count": 70,
+    "model_count": 15,
+    "prompt_model_cells": 1050,
+    "unique_metadata_signatures": 60,
+    "duplicate_signature_groups": 6,
+    "prompts_in_duplicate_signature_groups": 16,
+    "largest_duplicate_group_size": 4,
+    "prompt_level_structural_match": 0.5371428571428571,
+    "signature_collapsed_structural_match": 0.5283333333333333,
+    "signature_collapsed_delta_pp": -0.8809523809523823
+  },
+  "per_model": [
+    {
+      "model": "gpt-5.5",
+      "prompt_level": 0.6285714285714286,
+      "signature_collapsed": 0.6166666666666667,
+      "delta_pp": -1.1904761904761862
+    },
+    {
+      "model": "gpt-5.4-mini",
+      "prompt_level": 0.6428571428571429,
+      "signature_collapsed": 0.6333333333333333,
+      "delta_pp": -0.9523809523809601
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "prompt_level": 0.6142857142857143,
+      "signature_collapsed": 0.6,
+      "delta_pp": -1.4285714285714346
+    },
+    {
+      "model": "claude-opus-4-8",
+      "prompt_level": 0.6142857142857143,
+      "signature_collapsed": 0.6,
+      "delta_pp": -1.4285714285714346
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "prompt_level": 0.6285714285714286,
+      "signature_collapsed": 0.6333333333333333,
+      "delta_pp": 0.4761904761904745
+    },
+    {
+      "model": "gemini-3.1-pro-preview",
+      "prompt_level": 0.6285714285714286,
+      "signature_collapsed": 0.6166666666666667,
+      "delta_pp": -1.1904761904761862
+    },
+    {
+      "model": "deepseek-v4-pro",
+      "prompt_level": 0.5857142857142857,
+      "signature_collapsed": 0.575,
+      "delta_pp": -1.0714285714285787
+    },
+    {
+      "model": "deepseek-v4-flash",
+      "prompt_level": 0.5857142857142857,
+      "signature_collapsed": 0.575,
+      "delta_pp": -1.0714285714285787
+    },
+    {
+      "model": "mistral-ai/codestral-2501",
+      "prompt_level": 0.5857142857142857,
+      "signature_collapsed": 0.575,
+      "delta_pp": -1.0714285714285787
+    },
+    {
+      "model": "llama-3.3-70b-versatile",
+      "prompt_level": 0.5,
+      "signature_collapsed": 0.48333333333333334,
+      "delta_pp": -1.6666666666666663
+    },
+    {
+      "model": "openai/gpt-oss-120b",
+      "prompt_level": 0.5285714285714286,
+      "signature_collapsed": 0.5166666666666667,
+      "delta_pp": -1.1904761904761862
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "prompt_level": 0.5142857142857142,
+      "signature_collapsed": 0.5083333333333333,
+      "delta_pp": -0.5952380952380931
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "prompt_level": 0.38571428571428573,
+      "signature_collapsed": 0.4,
+      "delta_pp": 1.428571428571429
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "prompt_level": 0.38571428571428573,
+      "signature_collapsed": 0.3875,
+      "delta_pp": 0.17857142857142794
+    },
+    {
+      "model": "llama-3.1-8b-instant",
+      "prompt_level": 0.22857142857142856,
+      "signature_collapsed": 0.20416666666666666,
+      "delta_pp": -2.4404761904761902
+    }
+  ],
+  "duplicate_signature_groups": [
+    {
+      "group_size": 4,
+      "signature": {
+        "num_qubits": 2,
+        "num_clbits": 2,
+        "gate_count": 4,
+        "gate_types": {
+          "barrier": 1,
+          "cx": 1,
+          "h": 1,
+          "measure": 2
+        }
+      },
+      "prompts": [
+        {
+          "prompt_id": "pqid_bench_external_gen_0004",
+          "label": "strict_n8",
+          "row_id": "e541466b8f1ccfe60bdfd5e0e078f3dd",
+          "mean_structural_success": 0.0,
+          "instruction": "Create a 2-qubit Qiskit circuit that prepares a Bell state by applying a Hadamard to qubit 0, then a CNOT from qubit 0 to qubit 1, and finally measures both qubits."
+        },
+        {
+          "prompt_id": "pqid_bench_external_gen_0028",
+          "label": "strict_n8",
+          "row_id": "bc6878af581cacc4ab081fc3c3c6c964",
+          "mean_structural_success": 0.0,
+          "instruction": "Create a 2-qubit Qiskit circuit that prepares a Bell pair by applying H to qubit 0, then CX from qubit 0 to qubit 1, and finally measures both qubits."
+        },
+        {
+          "prompt_id": "pqid_bench_external_gen_0063",
+          "label": "extended_n8",
+          "row_id": "7aa727bcf67d1ce8a09624c09c1e9898",
+          "mean_structural_success": 0.0,
+          "instruction": "Create a small Qiskit circuit that prepares a Bell state on 2 qubits with an H on qubit 0, a CX from 0 to 1, and measurements on both qubits."
+        },
+        {
+          "prompt_id": "pqid_bench_external_gen_0064",
+          "label": "extended_n8",
+          "row_id": "b787da0527576cba8fc093af52d396bc",
+          "mean_structural_success": 0.0,
+          "instruction": "Create a small Qiskit circuit that prepares a Bell pair on 2 qubits and measures both qubits, suitable for running on a local fake backend."
+        }
+      ]
+    },
+    {
+      "group_size": 4,
+      "signature": {
+        "num_qubits": 2,
+        "num_clbits": 2,
+        "gate_count": 4,
+        "gate_types": {
+          "cx": 1,
+          "h": 1,
+          "measure": 2
+        }
+      },
+      "prompts": [
+        {
+          "prompt_id": "pqid_bench_external_gen_0019",
+          "label": "strict_n8",
+          "row_id": "4836d6c99d7467ad5a95c40d6a26e194",
+          "mean_structural_success": 0.9333333333333333,
+          "instruction": "Create a 2-qubit Bell-state circuit in Qiskit: apply a Hadamard to qubit 0, then a CNOT from qubit 0 to qubit 1, and measure both qubits into two classical bits."
+        },
+        {
+          "prompt_id": "pqid_bench_external_gen_0054",
+          "label": "extended_n8",
+          "row_id": "c0fb57c0c16b3e62d0314e52d7f12f4b",
+          "mean_structural_success": 0.8666666666666667,
+          "instruction": "Create a small Qiskit circuit that prepares a Bell pair on two qubits with an H on qubit 0, a CNOT from qubit 0 to 1, and measurements into two classical bits."
+        },
+        {
+          "prompt_id": "pqid_bench_external_gen_0055",
+          "label": "extended_n8",
+          "row_id": "75df3e61ae9b23aa75161ada9487dc19",
+          "mean_structural_success": 1.0,
+          "instruction": "Create a small Qiskit circuit that prepares a Bell pair on two qubits with a Hadamard on qubit 0, a CNOT from qubit 0 to qubit 1, and measurements of both qubits into two classical bits."
+        },
+        {
+          "prompt_id": "pqid_bench_external_gen_0058",
+          "label": "extended_n8",
+          "row_id": "f5ef27fa7d74be42700d504244fa3ab7",
+          "mean_structural_success": 0.9333333333333333,
+          "instruction": "Create a small 2-qubit circuit that prepares a Bell pair with a Hadamard on qubit 0, a CNOT from qubit 0 to qubit 1, and measurements of both qubits into two classical bits."
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "signature": {
+        "num_qubits": 2,
+        "num_clbits": 2,
+        "gate_count": 2,
+        "gate_types": {
+          "h": 1,
+          "x": 1
+        }
+      },
+      "prompts": [
+        {
+          "prompt_id": "pqid_bench_external_gen_0017",
+          "label": "strict_n8",
+          "row_id": "63a798e9385fa9d1429563ee8adc6351",
+          "mean_structural_success": 0.6,
+          "instruction": "Create a 2-qubit, 2-classical-bit quantum circuit where qubit 1 is flipped with an X gate and qubit 0 is placed into superposition with an H gate, in that order."
+        },
+        {
+          "prompt_id": "pqid_bench_external_gen_0018",
+          "label": "strict_n8",
+          "row_id": "be66d9ddc2bc2825b75dce7d40af6fd8",
+          "mean_structural_success": 0.6,
+          "instruction": "Create a 2-qubit, 2-classical-bit quantum circuit where qubit 0 is first flipped with an X gate and then put through a Hadamard gate, leaving qubit 1 untouched."
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "signature": {
+        "num_qubits": 2,
+        "num_clbits": 2,
+        "gate_count": 6,
+        "gate_types": {
+          "cx": 1,
+          "measure": 2,
+          "x": 3
+        }
+      },
+      "prompts": [
+        {
+          "prompt_id": "pqid_bench_external_gen_0044",
+          "label": "extended_n8",
+          "row_id": "2892bfc4bce47a05b7e8ee830224af8f",
+          "mean_structural_success": 0.8,
+          "instruction": "Create a 2-qubit Qiskit circuit that flips qubit 1, applies an X-CX-X pattern with qubit 0 controlling qubit 1, and then measures both qubits into two classical bits."
+        },
+        {
+          "prompt_id": "pqid_bench_external_gen_0045",
+          "label": "extended_n8",
+          "row_id": "71dca50b30d4cf20924114357957d328",
+          "mean_structural_success": 0.7333333333333333,
+          "instruction": "Create a small Qiskit circuit on 2 qubits and 2 classical bits that applies X on qubit 0, then an oracle-like sequence X(0)-CX(0,1)-X(0), and finally measures both qubits into matching classical bits."
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "signature": {
+        "num_qubits": 3,
+        "num_clbits": 3,
+        "gate_count": 5,
+        "gate_types": {
+          "h": 2,
+          "measure": 3
+        }
+      },
+      "prompts": [
+        {
+          "prompt_id": "pqid_bench_external_gen_0003",
+          "label": "strict_n8",
+          "row_id": "b3d5c08d613bdf09fb091158dd8fca82",
+          "mean_structural_success": 1.0,
+          "instruction": "Create a 3-qubit, 3-classical-bit Qiskit circuit where qubit 0 gets two consecutive Hadamard gates and then all three qubits are measured into the matching classical bits."
+        },
+        {
+          "prompt_id": "pqid_bench_external_gen_0035",
+          "label": "extended_n8",
+          "row_id": "87fbe49459dbea78b7e38252e98cb49d",
+          "mean_structural_success": 0.7333333333333333,
+          "instruction": "Create a small 3-qubit circuit where qubit 0 gets two consecutive Hadamard gates and then all three qubits are measured into matching classical bits."
+        }
+      ]
+    },
+    {
+      "group_size": 2,
+      "signature": {
+        "num_qubits": 3,
+        "num_clbits": 3,
+        "gate_count": 5,
+        "gate_types": {
+          "cx": 1,
+          "h": 1,
+          "measure": 3
+        }
+      },
+      "prompts": [
+        {
+          "prompt_id": "pqid_bench_external_gen_0015",
+          "label": "strict_n8",
+          "row_id": "bd9dd4f4c50f9bf70335b485b7388cae",
+          "mean_structural_success": 0.8,
+          "instruction": "Create a Qiskit circuit on three qubits and three classical bits that prepares a Bell pair between qubits 0 and 1 with a Hadamard followed by a CNOT, then measures all three qubits into the matching classical bits."
+        },
+        {
+          "prompt_id": "pqid_bench_external_gen_0039",
+          "label": "extended_n8",
+          "row_id": "41deeb4b474229909055f72771fc3748",
+          "mean_structural_success": 0.9333333333333333,
+          "instruction": "Create a small Qiskit circuit on 3 qubits and 3 classical bits where qubit 0 is put into superposition, then entangled with qubit 1 using a CNOT, and finally all three qubits are measured."
+        }
+      ]
+    }
+  ]
+}

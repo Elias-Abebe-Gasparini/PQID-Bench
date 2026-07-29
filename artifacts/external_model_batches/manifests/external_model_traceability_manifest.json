@@ -1,0 +1,623 @@
+{
+  "evaluation_commands": [
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches/responses/openai_gpt-5_5_responses.jsonl --output-dir artifacts/external_model_batches/evaluations/openai_gpt-5_5",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches/responses/openai_gpt-5_4-mini_responses.jsonl --output-dir artifacts/external_model_batches/evaluations/openai_gpt-5_4-mini",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches/responses/anthropic_claude-sonnet-4-6_responses.jsonl --output-dir artifacts/external_model_batches/evaluations/anthropic_claude-sonnet-4-6",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches/responses/anthropic_claude-opus-4-8_responses.jsonl --output-dir artifacts/external_model_batches/evaluations/anthropic_claude-opus-4-8",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches/responses/google_gemini-2_5-pro_responses.jsonl --output-dir artifacts/external_model_batches/evaluations/google_gemini-2_5-pro",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches/responses/google_gemini-3_1-pro-preview_responses.jsonl --output-dir artifacts/external_model_batches/evaluations/google_gemini-3_1-pro-preview",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches/responses/huggingface_or_local_qwen_qwen2_5-coder-7b-instruct_responses.jsonl --output-dir artifacts/external_model_batches/evaluations/huggingface_or_local_qwen_qwen2_5-coder-7b-instruct",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches/responses/huggingface_or_local_qwen_qwen2_5-coder-32b-instruct_responses.jsonl --output-dir artifacts/external_model_batches/evaluations/huggingface_or_local_qwen_qwen2_5-coder-32b-instruct",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches/responses/huggingface_or_local_deepseek-ai_deepseek-coder-v2-lite-instruct_responses.jsonl --output-dir artifacts/external_model_batches/evaluations/huggingface_or_local_deepseek-ai_deepseek-coder-v2-lite-instruct",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches/responses/deepseek_deepseek-v4-pro_responses.jsonl --output-dir artifacts/external_model_batches/evaluations/deepseek_deepseek-v4-pro",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches/responses/deepseek_deepseek-v4-flash_responses.jsonl --output-dir artifacts/external_model_batches/evaluations/deepseek_deepseek-v4-flash",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches/responses/groq_llama-3_3-70b-versatile_responses.jsonl --output-dir artifacts/external_model_batches/evaluations/groq_llama-3_3-70b-versatile",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches/responses/groq_qwen_qwen3-32b_responses.jsonl --output-dir artifacts/external_model_batches/evaluations/groq_qwen_qwen3-32b",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches/responses/groq_openai_gpt-oss-120b_responses.jsonl --output-dir artifacts/external_model_batches/evaluations/groq_openai_gpt-oss-120b",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches/responses/groq_llama-3_1-8b-instant_responses.jsonl --output-dir artifacts/external_model_batches/evaluations/groq_llama-3_1-8b-instant",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches/responses/groq_openai_gpt-oss-20b_responses.jsonl --output-dir artifacts/external_model_batches/evaluations/groq_openai_gpt-oss-20b",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches/responses/groq_meta-llama_llama-4-scout-17b-16e-instruct_responses.jsonl --output-dir artifacts/external_model_batches/evaluations/groq_meta-llama_llama-4-scout-17b-16e-instruct",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches/responses/huggingface_or_local_mistralai_devstral-small-2-24b-instruct-2512_responses.jsonl --output-dir artifacts/external_model_batches/evaluations/huggingface_or_local_mistralai_devstral-small-2-24b-instruct-2512",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches/responses/huggingface_or_local_bigcode_starcoder2-15b-instruct-v0_1_responses.jsonl --output-dir artifacts/external_model_batches/evaluations/huggingface_or_local_bigcode_starcoder2-15b-instruct-v0_1",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches/responses/github_models_deepseek_deepseek-v3-0324_responses.jsonl --output-dir artifacts/external_model_batches/evaluations/github_models_deepseek_deepseek-v3-0324",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches/responses/github_models_mistral-ai_codestral-2501_responses.jsonl --output-dir artifacts/external_model_batches/evaluations/github_models_mistral-ai_codestral-2501",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches/responses/nvidia_nim_qwen_qwen2_5-coder-32b-instruct_responses.jsonl --output-dir artifacts/external_model_batches/evaluations/nvidia_nim_qwen_qwen2_5-coder-32b-instruct",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches/responses/nvidia_nim_qwen_qwen3-coder-480b-a35b-instruct_responses.jsonl --output-dir artifacts/external_model_batches/evaluations/nvidia_nim_qwen_qwen3-coder-480b-a35b-instruct",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches/responses/nvidia_nim_google_codegemma-7b_responses.jsonl --output-dir artifacts/external_model_batches/evaluations/nvidia_nim_google_codegemma-7b",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches/responses/nvidia_nim_deepseek-ai_deepseek-coder-6_7b-instruct_responses.jsonl --output-dir artifacts/external_model_batches/evaluations/nvidia_nim_deepseek-ai_deepseek-coder-6_7b-instruct",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches/responses/nvidia_nim_mistralai_codestral-22b-instruct-v0_1_responses.jsonl --output-dir artifacts/external_model_batches/evaluations/nvidia_nim_mistralai_codestral-22b-instruct-v0_1",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches/responses/nvidia_nim_bigcode_starcoder2-15b_responses.jsonl --output-dir artifacts/external_model_batches/evaluations/nvidia_nim_bigcode_starcoder2-15b",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches/responses/nvidia_nim_ibm_granite-34b-code-instruct_responses.jsonl --output-dir artifacts/external_model_batches/evaluations/nvidia_nim_ibm_granite-34b-code-instruct",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches/responses/nvidia_nim_qwen_qwen3-next-80b-a3b-instruct_responses.jsonl --output-dir artifacts/external_model_batches/evaluations/nvidia_nim_qwen_qwen3-next-80b-a3b-instruct",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches/responses/nvidia_nim_openai_gpt-oss-20b_responses.jsonl --output-dir artifacts/external_model_batches/evaluations/nvidia_nim_openai_gpt-oss-20b",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches/responses/deepinfra_qwen_qwen2_5-coder-32b-instruct_responses.jsonl --output-dir artifacts/external_model_batches/evaluations/deepinfra_qwen_qwen2_5-coder-32b-instruct",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches/responses/deepinfra_mistralai_devstral-small-2505_responses.jsonl --output-dir artifacts/external_model_batches/evaluations/deepinfra_mistralai_devstral-small-2505",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches/responses/deepinfra_bigcode_starcoder2-15b-instruct-v0_1_responses.jsonl --output-dir artifacts/external_model_batches/evaluations/deepinfra_bigcode_starcoder2-15b-instruct-v0_1",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches/responses/huggingface_or_local_bigcode_starcoder2-15b_responses.jsonl --output-dir artifacts/external_model_batches/evaluations/huggingface_or_local_bigcode_starcoder2-15b"
+  ],
+  "exported_at_utc": "2026-06-20T16:46:44+00:00",
+  "files": [
+    {
+      "kind": "request_jsonl",
+      "model": "gpt-5.5",
+      "path": "artifacts/external_model_batches/requests/openai_gpt-5_5_requests.jsonl",
+      "provider": "openai",
+      "rows": 70,
+      "sha256": "b0231b1a01f2351294bd177f061178d3738c800d785ad60465a0d7ab0a30d8e3"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "gpt-5.5",
+      "path": "artifacts/external_model_batches/responses/openai_gpt-5_5_responses_template.jsonl",
+      "provider": "openai",
+      "rows": 70,
+      "sha256": "3b24122bd4a5e513eac5c7ad2709d86ad077c5f9adebed3784029426b53cf24d"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "gpt-5.4-mini",
+      "path": "artifacts/external_model_batches/requests/openai_gpt-5_4-mini_requests.jsonl",
+      "provider": "openai",
+      "rows": 70,
+      "sha256": "0eabd9ce4b9e24b3094a552a026b96cf8619a0a0465d2cdc220d3db301f861a4"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "gpt-5.4-mini",
+      "path": "artifacts/external_model_batches/responses/openai_gpt-5_4-mini_responses_template.jsonl",
+      "provider": "openai",
+      "rows": 70,
+      "sha256": "b45c06e3e804c7bc6297733a11d6e838a4ceb80d3c8591af54860462ce8e132c"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "claude-sonnet-4-6",
+      "path": "artifacts/external_model_batches/requests/anthropic_claude-sonnet-4-6_requests.jsonl",
+      "provider": "anthropic",
+      "rows": 70,
+      "sha256": "178adb6f66fdb9483a3d8651de61d9a68d9905c3018b7aa3f9088ce6881aa1ea"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "claude-sonnet-4-6",
+      "path": "artifacts/external_model_batches/responses/anthropic_claude-sonnet-4-6_responses_template.jsonl",
+      "provider": "anthropic",
+      "rows": 70,
+      "sha256": "8c6846b20a9979cf60eb0728ca6903cb8cb66b5e014ecd38cfabb2512b2fc414"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "claude-opus-4-8",
+      "path": "artifacts/external_model_batches/requests/anthropic_claude-opus-4-8_requests.jsonl",
+      "provider": "anthropic",
+      "rows": 70,
+      "sha256": "062ad0fd07a8a34669bda13fb2c8dc6e4e898c2cc8f76addf476b8ab53972a7d"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "claude-opus-4-8",
+      "path": "artifacts/external_model_batches/responses/anthropic_claude-opus-4-8_responses_template.jsonl",
+      "provider": "anthropic",
+      "rows": 70,
+      "sha256": "cc38821885556829efe1eb254e11cc852d2de80e69be0d7b7a161db237bc2a07"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "gemini-2.5-pro",
+      "path": "artifacts/external_model_batches/requests/google_gemini-2_5-pro_requests.jsonl",
+      "provider": "google",
+      "rows": 70,
+      "sha256": "de7cfa082f51501ec481a5eb8eb209522b04e727f674177e4a541a6f757e28ef"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "gemini-2.5-pro",
+      "path": "artifacts/external_model_batches/responses/google_gemini-2_5-pro_responses_template.jsonl",
+      "provider": "google",
+      "rows": 70,
+      "sha256": "2a37ae72970cc4ac6af9a24d56e9425bf19f04a659d05d32bb3aa6cac38a9f29"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "gemini-3.1-pro-preview",
+      "path": "artifacts/external_model_batches/requests/google_gemini-3_1-pro-preview_requests.jsonl",
+      "provider": "google",
+      "rows": 70,
+      "sha256": "e356e1154ef9e0dae94bd7efa5b9750aa5af27474069556e09c9957108e8c445"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "gemini-3.1-pro-preview",
+      "path": "artifacts/external_model_batches/responses/google_gemini-3_1-pro-preview_responses_template.jsonl",
+      "provider": "google",
+      "rows": 70,
+      "sha256": "75407b8b6995f4f195f1a2fc4512bf7b727a97a85e92e9bed6a1808eed17cb6e"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+      "path": "artifacts/external_model_batches/requests/huggingface_or_local_qwen_qwen2_5-coder-7b-instruct_requests.jsonl",
+      "provider": "huggingface_or_local",
+      "rows": 70,
+      "sha256": "6fbb424be5d632b294522c4d2be95641f9c51cb7411854c078532d24fc8da382"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+      "path": "artifacts/external_model_batches/responses/huggingface_or_local_qwen_qwen2_5-coder-7b-instruct_responses_template.jsonl",
+      "provider": "huggingface_or_local",
+      "rows": 70,
+      "sha256": "1697c71042179aa21d17a27336e141f4983b4cee5b133f587f373edab90b0772"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "Qwen/Qwen2.5-Coder-32B-Instruct",
+      "path": "artifacts/external_model_batches/requests/huggingface_or_local_qwen_qwen2_5-coder-32b-instruct_requests.jsonl",
+      "provider": "huggingface_or_local",
+      "rows": 70,
+      "sha256": "46819c1214dc098f476eb051deae01a6ed362afd36f4e37f221462d491390269"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "Qwen/Qwen2.5-Coder-32B-Instruct",
+      "path": "artifacts/external_model_batches/responses/huggingface_or_local_qwen_qwen2_5-coder-32b-instruct_responses_template.jsonl",
+      "provider": "huggingface_or_local",
+      "rows": 70,
+      "sha256": "2a8ec91ae68957112597cd864eb3dbee160bae56c6c5dcfb08548dc5ffb0fbe3"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
+      "path": "artifacts/external_model_batches/requests/huggingface_or_local_deepseek-ai_deepseek-coder-v2-lite-instruct_requests.jsonl",
+      "provider": "huggingface_or_local",
+      "rows": 70,
+      "sha256": "f5f0c576ee45f2d16ac6d87c4a8e5c0dbed40a67d70f41b9111db569c6d6db40"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
+      "path": "artifacts/external_model_batches/responses/huggingface_or_local_deepseek-ai_deepseek-coder-v2-lite-instruct_responses_template.jsonl",
+      "provider": "huggingface_or_local",
+      "rows": 70,
+      "sha256": "ec683eff6a5ed4eef563a93577a6125ce6f39d70bc76f0662f09a677a75b532d"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "deepseek-v4-pro",
+      "path": "artifacts/external_model_batches/requests/deepseek_deepseek-v4-pro_requests.jsonl",
+      "provider": "deepseek",
+      "rows": 70,
+      "sha256": "5ab7978f67831eb3e5113f561bba45c82d90ccdf01efd4035b19f02efaa23a69"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "deepseek-v4-pro",
+      "path": "artifacts/external_model_batches/responses/deepseek_deepseek-v4-pro_responses_template.jsonl",
+      "provider": "deepseek",
+      "rows": 70,
+      "sha256": "03233e20f8975a39084ffd8e0dcc9d80a3f28c380aa4c4eb69a9caecb524c836"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "deepseek-v4-flash",
+      "path": "artifacts/external_model_batches/requests/deepseek_deepseek-v4-flash_requests.jsonl",
+      "provider": "deepseek",
+      "rows": 70,
+      "sha256": "1b45df27ce08019beb2e2a96b2f62ac132de69b2bf01f5b92b2380cc7e5d0498"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "deepseek-v4-flash",
+      "path": "artifacts/external_model_batches/responses/deepseek_deepseek-v4-flash_responses_template.jsonl",
+      "provider": "deepseek",
+      "rows": 70,
+      "sha256": "e4bc596c4d60270aaad1f7546acfc04cb5265b7737f31752fc888cfcca221a85"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "llama-3.3-70b-versatile",
+      "path": "artifacts/external_model_batches/requests/groq_llama-3_3-70b-versatile_requests.jsonl",
+      "provider": "groq",
+      "rows": 70,
+      "sha256": "5fbc53ad44305d6b1592b49deffa366072eb01cd3bbf5977ff959aa1a64dd3d7"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "llama-3.3-70b-versatile",
+      "path": "artifacts/external_model_batches/responses/groq_llama-3_3-70b-versatile_responses_template.jsonl",
+      "provider": "groq",
+      "rows": 70,
+      "sha256": "33f0a8ecd6bc9d87beab0bfb575fd0a0357b97904e7edf8922b1c53700d49718"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "qwen/qwen3-32b",
+      "path": "artifacts/external_model_batches/requests/groq_qwen_qwen3-32b_requests.jsonl",
+      "provider": "groq",
+      "rows": 70,
+      "sha256": "75539f1d38a8fae113b884108f55bd9b67c330025d6dc1e78c45b9a25b34b513"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "qwen/qwen3-32b",
+      "path": "artifacts/external_model_batches/responses/groq_qwen_qwen3-32b_responses_template.jsonl",
+      "provider": "groq",
+      "rows": 70,
+      "sha256": "67c65a1d4ee1689842d472722be0d5652ae455a1f099229ae8ff91327a7a06fd"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "openai/gpt-oss-120b",
+      "path": "artifacts/external_model_batches/requests/groq_openai_gpt-oss-120b_requests.jsonl",
+      "provider": "groq",
+      "rows": 70,
+      "sha256": "a0ab7ae86704237efb55697ed225d76db6e331912dcd029d5a6509ff6e9333ec"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "openai/gpt-oss-120b",
+      "path": "artifacts/external_model_batches/responses/groq_openai_gpt-oss-120b_responses_template.jsonl",
+      "provider": "groq",
+      "rows": 70,
+      "sha256": "27cc13892f9c929c8373acf104a2c375adf7703438861e6de8bb965320372a66"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "llama-3.1-8b-instant",
+      "path": "artifacts/external_model_batches/requests/groq_llama-3_1-8b-instant_requests.jsonl",
+      "provider": "groq",
+      "rows": 70,
+      "sha256": "b8174870cfaf482a5938cb700341bdec6cb29fbb1fb8bdccd0202370d76f598d"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "llama-3.1-8b-instant",
+      "path": "artifacts/external_model_batches/responses/groq_llama-3_1-8b-instant_responses_template.jsonl",
+      "provider": "groq",
+      "rows": 70,
+      "sha256": "41f68207f3a307eb4c2b8765ffd16cde681869dd4bdf68b90bee3fcbd1a7ab3d"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "openai/gpt-oss-20b",
+      "path": "artifacts/external_model_batches/requests/groq_openai_gpt-oss-20b_requests.jsonl",
+      "provider": "groq",
+      "rows": 70,
+      "sha256": "91725640f3b23ff3368f72c4caa4e0d9fbead2a0272f8acc77b526f63944c4fb"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "openai/gpt-oss-20b",
+      "path": "artifacts/external_model_batches/responses/groq_openai_gpt-oss-20b_responses_template.jsonl",
+      "provider": "groq",
+      "rows": 70,
+      "sha256": "3537046b20e20cfb1935d5fed6cdc6933ab279bae0559677a5b454340bff1f41"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "path": "artifacts/external_model_batches/requests/groq_meta-llama_llama-4-scout-17b-16e-instruct_requests.jsonl",
+      "provider": "groq",
+      "rows": 70,
+      "sha256": "4d1df941554b943657a184a6885b05c11efc5aeed6b57ea9ea08666a38b498dd"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "path": "artifacts/external_model_batches/responses/groq_meta-llama_llama-4-scout-17b-16e-instruct_responses_template.jsonl",
+      "provider": "groq",
+      "rows": 70,
+      "sha256": "c9ab2d0d548554733eacd1f8b6ca782929292ac51b10cf166c1a7c08f1781941"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+      "path": "artifacts/external_model_batches/requests/huggingface_or_local_mistralai_devstral-small-2-24b-instruct-2512_requests.jsonl",
+      "provider": "huggingface_or_local",
+      "rows": 70,
+      "sha256": "a78db4d100a1402fbcf17ecc471e1ae0d20ea92cda9a88abd66f18321f0016b7"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+      "path": "artifacts/external_model_batches/responses/huggingface_or_local_mistralai_devstral-small-2-24b-instruct-2512_responses_template.jsonl",
+      "provider": "huggingface_or_local",
+      "rows": 70,
+      "sha256": "71e0b73d6b6c4e11da0b1f59591869da3746eadfab7f70a2f0fcc16463db44b1"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "bigcode/starcoder2-15b-instruct-v0.1",
+      "path": "artifacts/external_model_batches/requests/huggingface_or_local_bigcode_starcoder2-15b-instruct-v0_1_requests.jsonl",
+      "provider": "huggingface_or_local",
+      "rows": 70,
+      "sha256": "e16bbf330192ae739a3603a6636fe0a2316def2b28a1386f5e722e1abbfd5a1b"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "bigcode/starcoder2-15b-instruct-v0.1",
+      "path": "artifacts/external_model_batches/responses/huggingface_or_local_bigcode_starcoder2-15b-instruct-v0_1_responses_template.jsonl",
+      "provider": "huggingface_or_local",
+      "rows": 70,
+      "sha256": "a13289132ce9f75f7d49fa446122c02c7010817e77ea5509cfc23448f472957d"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "deepseek/deepseek-v3-0324",
+      "path": "artifacts/external_model_batches/requests/github_models_deepseek_deepseek-v3-0324_requests.jsonl",
+      "provider": "github_models",
+      "rows": 70,
+      "sha256": "ad13246f0bfed44814e236fab7e2de021aa479e225ef22d43753f5d62dbdb91a"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "deepseek/deepseek-v3-0324",
+      "path": "artifacts/external_model_batches/responses/github_models_deepseek_deepseek-v3-0324_responses_template.jsonl",
+      "provider": "github_models",
+      "rows": 70,
+      "sha256": "f434af5d225ddce45ad3f7c56ace43333342a1318f259cb8dd5c09e992b100e1"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "mistral-ai/codestral-2501",
+      "path": "artifacts/external_model_batches/requests/github_models_mistral-ai_codestral-2501_requests.jsonl",
+      "provider": "github_models",
+      "rows": 70,
+      "sha256": "06f90ee5c3d24da705d1fdad83fa5744345f8b0ed47037c59085c4f88e7e1839"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "mistral-ai/codestral-2501",
+      "path": "artifacts/external_model_batches/responses/github_models_mistral-ai_codestral-2501_responses_template.jsonl",
+      "provider": "github_models",
+      "rows": 70,
+      "sha256": "d71fd44e0a8f989ef5f7f32d61a2ee0ba4fd1e1a5835b8b4591a8737573f0981"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "qwen/qwen2.5-coder-32b-instruct",
+      "path": "artifacts/external_model_batches/requests/nvidia_nim_qwen_qwen2_5-coder-32b-instruct_requests.jsonl",
+      "provider": "nvidia_nim",
+      "rows": 70,
+      "sha256": "0e552b8abe1c3335d2693c14fa99e7e5351410891d0835880907271da127a101"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "qwen/qwen2.5-coder-32b-instruct",
+      "path": "artifacts/external_model_batches/responses/nvidia_nim_qwen_qwen2_5-coder-32b-instruct_responses_template.jsonl",
+      "provider": "nvidia_nim",
+      "rows": 70,
+      "sha256": "0b16486190efd898ad2eb02f0d1334e7f6eb7fce23dc876f649ec77e34f5c468"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "qwen/qwen3-coder-480b-a35b-instruct",
+      "path": "artifacts/external_model_batches/requests/nvidia_nim_qwen_qwen3-coder-480b-a35b-instruct_requests.jsonl",
+      "provider": "nvidia_nim",
+      "rows": 70,
+      "sha256": "c9d6c3e60caf1b21e54326e1c128b72c6dc59c477017bc26e22339b41f6c085f"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "qwen/qwen3-coder-480b-a35b-instruct",
+      "path": "artifacts/external_model_batches/responses/nvidia_nim_qwen_qwen3-coder-480b-a35b-instruct_responses_template.jsonl",
+      "provider": "nvidia_nim",
+      "rows": 70,
+      "sha256": "3e1c379dbc61caf4ca47fb432d520bbec4ffb18e371d7ce79e53dba006b01b85"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "google/codegemma-7b",
+      "path": "artifacts/external_model_batches/requests/nvidia_nim_google_codegemma-7b_requests.jsonl",
+      "provider": "nvidia_nim",
+      "rows": 70,
+      "sha256": "fbff7d5fec5edf318cbc0ff0c3a0d5908eada813214615677019f3dc8fdf9b14"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "google/codegemma-7b",
+      "path": "artifacts/external_model_batches/responses/nvidia_nim_google_codegemma-7b_responses_template.jsonl",
+      "provider": "nvidia_nim",
+      "rows": 70,
+      "sha256": "f3d114fa0fb0c5913291167fa271247bc383861eca05481bc1f1958acb92f0dc"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "deepseek-ai/deepseek-coder-6.7b-instruct",
+      "path": "artifacts/external_model_batches/requests/nvidia_nim_deepseek-ai_deepseek-coder-6_7b-instruct_requests.jsonl",
+      "provider": "nvidia_nim",
+      "rows": 70,
+      "sha256": "17583eaaf5d7a79e45e32c2858d5c103b21fba8e3e4b2eee3ee1b8e1980b08a8"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "deepseek-ai/deepseek-coder-6.7b-instruct",
+      "path": "artifacts/external_model_batches/responses/nvidia_nim_deepseek-ai_deepseek-coder-6_7b-instruct_responses_template.jsonl",
+      "provider": "nvidia_nim",
+      "rows": 70,
+      "sha256": "17416493f59aff387fecb2e02b1b0d6193196a3dd50e9bbcb3ae93a1754c85ea"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "mistralai/codestral-22b-instruct-v0.1",
+      "path": "artifacts/external_model_batches/requests/nvidia_nim_mistralai_codestral-22b-instruct-v0_1_requests.jsonl",
+      "provider": "nvidia_nim",
+      "rows": 70,
+      "sha256": "2f156321012fdb578313b78d778719a903575df3ca66ae884d668709bad3400a"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "mistralai/codestral-22b-instruct-v0.1",
+      "path": "artifacts/external_model_batches/responses/nvidia_nim_mistralai_codestral-22b-instruct-v0_1_responses_template.jsonl",
+      "provider": "nvidia_nim",
+      "rows": 70,
+      "sha256": "8b5225ff137ce9093dad154ea792c7b8d78d235a39b3c0e03ad0bf809dbc5cd2"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "bigcode/starcoder2-15b",
+      "path": "artifacts/external_model_batches/requests/nvidia_nim_bigcode_starcoder2-15b_requests.jsonl",
+      "provider": "nvidia_nim",
+      "rows": 70,
+      "sha256": "c5a1384ab37ad51cb0e703c07e3acddf8d53b4467148a0ac0d427f00adb09ea7"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "bigcode/starcoder2-15b",
+      "path": "artifacts/external_model_batches/responses/nvidia_nim_bigcode_starcoder2-15b_responses_template.jsonl",
+      "provider": "nvidia_nim",
+      "rows": 70,
+      "sha256": "cef488fbd903e7cf44c5d51221d00822d6417001b15000c081435554d8034917"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "ibm/granite-34b-code-instruct",
+      "path": "artifacts/external_model_batches/requests/nvidia_nim_ibm_granite-34b-code-instruct_requests.jsonl",
+      "provider": "nvidia_nim",
+      "rows": 70,
+      "sha256": "f6682e3189fa6e563918f67f0114030d48623626f612b6c50a16656f3c3bb626"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "ibm/granite-34b-code-instruct",
+      "path": "artifacts/external_model_batches/responses/nvidia_nim_ibm_granite-34b-code-instruct_responses_template.jsonl",
+      "provider": "nvidia_nim",
+      "rows": 70,
+      "sha256": "e1cef9528c869dad28497fe048380612adbb756a77ceed1d9bf3d5b07f7c344b"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "qwen/qwen3-next-80b-a3b-instruct",
+      "path": "artifacts/external_model_batches/requests/nvidia_nim_qwen_qwen3-next-80b-a3b-instruct_requests.jsonl",
+      "provider": "nvidia_nim",
+      "rows": 70,
+      "sha256": "576a773f66aefd22440e204e358a4d51038cfb34c4cd17b3789437a0c9e2bc90"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "qwen/qwen3-next-80b-a3b-instruct",
+      "path": "artifacts/external_model_batches/responses/nvidia_nim_qwen_qwen3-next-80b-a3b-instruct_responses_template.jsonl",
+      "provider": "nvidia_nim",
+      "rows": 70,
+      "sha256": "b881f937b2c71a4fff0d9d5d749762a68fef2d5520c77d1cbf1023cd946558cb"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "openai/gpt-oss-20b",
+      "path": "artifacts/external_model_batches/requests/nvidia_nim_openai_gpt-oss-20b_requests.jsonl",
+      "provider": "nvidia_nim",
+      "rows": 70,
+      "sha256": "827bc120a9191d3b3e56edcd94a4e7febbcac349200339942988acff660657b4"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "openai/gpt-oss-20b",
+      "path": "artifacts/external_model_batches/responses/nvidia_nim_openai_gpt-oss-20b_responses_template.jsonl",
+      "provider": "nvidia_nim",
+      "rows": 70,
+      "sha256": "6c1bb6a68c3aecbbcd49ab5fbabfe06a6f936245003bf65e5a4e8b8b2c798efd"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "Qwen/Qwen2.5-Coder-32B-Instruct",
+      "path": "artifacts/external_model_batches/requests/deepinfra_qwen_qwen2_5-coder-32b-instruct_requests.jsonl",
+      "provider": "deepinfra",
+      "rows": 70,
+      "sha256": "4b1ce58589999dd1ce47828d3e51e4ec97ae249d995579d4230ba5c0e2b94c38"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "Qwen/Qwen2.5-Coder-32B-Instruct",
+      "path": "artifacts/external_model_batches/responses/deepinfra_qwen_qwen2_5-coder-32b-instruct_responses_template.jsonl",
+      "provider": "deepinfra",
+      "rows": 70,
+      "sha256": "ba4ef60ab12426b5f2807b7293309a69fc23795e65a13b41aab1cadf6a786b32"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "mistralai/Devstral-Small-2505",
+      "path": "artifacts/external_model_batches/requests/deepinfra_mistralai_devstral-small-2505_requests.jsonl",
+      "provider": "deepinfra",
+      "rows": 70,
+      "sha256": "8bbe789f6bebc6529d824fe24fba782e421e726e1b5ce2dd7da302dd2de44200"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "mistralai/Devstral-Small-2505",
+      "path": "artifacts/external_model_batches/responses/deepinfra_mistralai_devstral-small-2505_responses_template.jsonl",
+      "provider": "deepinfra",
+      "rows": 70,
+      "sha256": "8fc0b1196dd9ab95c7bf7507a0c97285fdbecf7ef42d7cd6f43c34cbf0246346"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "bigcode/starcoder2-15b-instruct-v0.1",
+      "path": "artifacts/external_model_batches/requests/deepinfra_bigcode_starcoder2-15b-instruct-v0_1_requests.jsonl",
+      "provider": "deepinfra",
+      "rows": 70,
+      "sha256": "3a4594470fe9a342929256b7d0404fc558d920806718e7392d89af68fbb652bb"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "bigcode/starcoder2-15b-instruct-v0.1",
+      "path": "artifacts/external_model_batches/responses/deepinfra_bigcode_starcoder2-15b-instruct-v0_1_responses_template.jsonl",
+      "provider": "deepinfra",
+      "rows": 70,
+      "sha256": "bd579600408aa9d016ca4ae9bb17e3b85cb8bca8e2b421e3f6d5b0fb3085a41f"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "bigcode/starcoder2-15b",
+      "path": "artifacts/external_model_batches/requests/huggingface_or_local_bigcode_starcoder2-15b_requests.jsonl",
+      "provider": "huggingface_or_local",
+      "rows": 70,
+      "sha256": "d94a62ac96d200e5992114df85971a104e81fc80f4d3d43e3d2e8fef6f8ec5d6"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "bigcode/starcoder2-15b",
+      "path": "artifacts/external_model_batches/responses/huggingface_or_local_bigcode_starcoder2-15b_responses_template.jsonl",
+      "provider": "huggingface_or_local",
+      "rows": 70,
+      "sha256": "8350b216807d88d6c1aa9f0d6e02e554f81fa8a8e85c143b5a9a6ff4c37c2356"
+    },
+    {
+      "kind": "model_matrix_json",
+      "path": "artifacts/external_model_batches/external_model_run_matrix.json",
+      "rows": 34,
+      "sha256": "5becde45b2260f85abc560f8cd5a7e105efbdf72c5a13c7065948dafe5a26481"
+    },
+    {
+      "kind": "model_matrix_md",
+      "path": "artifacts/external_model_batches/external_model_run_matrix.md",
+      "rows": 34,
+      "sha256": "09a86d7d6c60e1052584b22e31d33d3f13f965f2dbd90391f455d95f477a4483"
+    }
+  ],
+  "generation_config": {
+    "max_output_tokens": 2048,
+    "n": 1,
+    "single_pass": true,
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "harness_script": {
+    "path": "scripts/run_pqid_bench_external_model_generation_harness.py",
+    "sha256": "9fb481c3783ef0ce9fcb6f6a16f138a251185539de71a212d9e2ebc19121d450"
+  },
+  "include_appendix": true,
+  "include_bridge": true,
+  "include_deepinfra": true,
+  "include_github_models": true,
+  "include_nvidia_nim": true,
+  "include_official_deepseek": true,
+  "include_open_breadth": true,
+  "overwrite_existing": false,
+  "prompt_count": 70,
+  "prompt_manifest": {
+    "path": "artifacts/pqid_bench_external_generation_prompts.jsonl",
+    "sha256": "a833ef8b50c5270a6e0720ea28fcf6cfe7fe39774e3955a9c30f33887c9824e4"
+  },
+  "schema_version": "pqid-bench-external-model-batch-v1",
+  "target_count": 34
+}

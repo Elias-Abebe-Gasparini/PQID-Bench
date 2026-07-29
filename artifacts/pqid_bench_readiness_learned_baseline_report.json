@@ -1,0 +1,848 @@
+{
+  "input_file": "PQID/data/processed/pqid_2026_enriched_github_circuits_plus_metadata_design_v3.jsonl",
+  "source_rows": 91719,
+  "split_policy": "deterministic stratified group split by split_group_id",
+  "group_overlap": {
+    "train_validation": 0,
+    "train_test": 0,
+    "validation_test": 0
+  },
+  "direct_fields_excluded": [
+    "benchmark_view_membership",
+    "benchmark_suitability_tier",
+    "benchmark_suitability_tier_v2",
+    "expected_model_stance",
+    "evidence_regime",
+    "release_view_membership",
+    "public_release_bucket",
+    "review_trace_id"
+  ],
+  "feature_sets": {
+    "source_proxy_metadata": {
+      "description": "Gate-stripped source and proxy signals. This ablation omits the primitive n/8 readiness gates and is a better difficulty probe than the gate-reconstruction-style feature sets.",
+      "categorical": [
+        "source",
+        "language",
+        "retrieval_mode",
+        "qiskit_version",
+        "circuit_stats_available",
+        "validation_error_type",
+        "openqasm3_export_successful",
+        "api_deprecated_usage"
+      ],
+      "numeric": [
+        "prompt_length_chars",
+        "prompt_word_count",
+        "prompt_token_count_cl100k",
+        "output_token_count_cl100k"
+      ]
+    },
+    "primitive_metadata": {
+      "description": "Validation, extraction, size, retrieval, and mutation signals. Direct readiness labels and target aliases are omitted.",
+      "categorical": [
+        "validation_status",
+        "extraction_confidence",
+        "contains_demo_scaffolding",
+        "cleanup_candidate",
+        "retrieval_strategy",
+        "retrieval_mode",
+        "mutation_suite_candidate"
+      ],
+      "numeric": [
+        "code_lines",
+        "gate_count"
+      ]
+    },
+    "broad_metadata": {
+      "description": "Primitive features plus context sufficiency, repairability, domain, shift, source, language, and validation-error signals.",
+      "categorical": [
+        "validation_status",
+        "extraction_confidence",
+        "contains_demo_scaffolding",
+        "cleanup_candidate",
+        "retrieval_strategy",
+        "retrieval_mode",
+        "mutation_suite_candidate",
+        "circuit_stats_available",
+        "context_sufficiency_class",
+        "repairability_band",
+        "domain_slice",
+        "shift_axis",
+        "source",
+        "language",
+        "validation_error_type",
+        "openqasm3_export_successful",
+        "api_deprecated_usage"
+      ],
+      "numeric": [
+        "code_lines",
+        "gate_count",
+        "repairability_score",
+        "prompt_length_chars",
+        "prompt_word_count",
+        "prompt_token_count_cl100k",
+        "output_token_count_cl100k"
+      ]
+    }
+  },
+  "split_summary": {
+    "train": {
+      "rows": 73387,
+      "groups": 37182,
+      "labels": {
+        "strict_n8": 338,
+        "extended_n8": 260,
+        "validated_broad_n8": 1253,
+        "validated_master_only": 590,
+        "mutation_stress_n8": 9012,
+        "tier2_unvalidated": 61934
+      }
+    },
+    "validation": {
+      "rows": 9183,
+      "groups": 4648,
+      "labels": {
+        "strict_n8": 39,
+        "extended_n8": 32,
+        "validated_broad_n8": 131,
+        "validated_master_only": 65,
+        "mutation_stress_n8": 1126,
+        "tier2_unvalidated": 7790
+      }
+    },
+    "test": {
+      "rows": 9149,
+      "groups": 4650,
+      "labels": {
+        "strict_n8": 38,
+        "extended_n8": 27,
+        "validated_broad_n8": 147,
+        "validated_master_only": 82,
+        "mutation_stress_n8": 1127,
+        "tier2_unvalidated": 7728
+      }
+    }
+  },
+  "results": [
+    {
+      "name": "majority class (`tier2_unvalidated`)",
+      "model": "majority",
+      "feature_set": "none",
+      "description": "Predict the most frequent train label for every test row.",
+      "metrics": {
+        "accuracy": 0.8446824789594491,
+        "balanced_accuracy": 0.16666666666666666,
+        "macro_f1": 0.15263376192451264,
+        "mismatches": 1421,
+        "false_clean_rate": 0.0,
+        "per_label": {
+          "strict_n8": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 38
+          },
+          "extended_n8": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 27
+          },
+          "validated_broad_n8": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 147
+          },
+          "validated_master_only": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 82
+          },
+          "mutation_stress_n8": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1127
+          },
+          "tier2_unvalidated": {
+            "precision": 0.8446824789594491,
+            "recall": 1.0,
+            "f1": 0.9158025715470759,
+            "support": 7728
+          }
+        },
+        "confusion": {
+          "strict_n8": {
+            "strict_n8": 0,
+            "extended_n8": 0,
+            "validated_broad_n8": 0,
+            "validated_master_only": 0,
+            "mutation_stress_n8": 0,
+            "tier2_unvalidated": 38
+          },
+          "extended_n8": {
+            "strict_n8": 0,
+            "extended_n8": 0,
+            "validated_broad_n8": 0,
+            "validated_master_only": 0,
+            "mutation_stress_n8": 0,
+            "tier2_unvalidated": 27
+          },
+          "validated_broad_n8": {
+            "strict_n8": 0,
+            "extended_n8": 0,
+            "validated_broad_n8": 0,
+            "validated_master_only": 0,
+            "mutation_stress_n8": 0,
+            "tier2_unvalidated": 147
+          },
+          "validated_master_only": {
+            "strict_n8": 0,
+            "extended_n8": 0,
+            "validated_broad_n8": 0,
+            "validated_master_only": 0,
+            "mutation_stress_n8": 0,
+            "tier2_unvalidated": 82
+          },
+          "mutation_stress_n8": {
+            "strict_n8": 0,
+            "extended_n8": 0,
+            "validated_broad_n8": 0,
+            "validated_master_only": 0,
+            "mutation_stress_n8": 0,
+            "tier2_unvalidated": 1127
+          },
+          "tier2_unvalidated": {
+            "strict_n8": 0,
+            "extended_n8": 0,
+            "validated_broad_n8": 0,
+            "validated_master_only": 0,
+            "mutation_stress_n8": 0,
+            "tier2_unvalidated": 7728
+          }
+        }
+      }
+    },
+    {
+      "name": "categorical Naive Bayes (source_proxy_metadata, empirical priors)",
+      "model": "categorical_naive_bayes",
+      "feature_set": "source_proxy_metadata",
+      "description": "Gate-stripped source and proxy signals. This ablation omits the primitive n/8 readiness gates and is a better difficulty probe than the gate-reconstruction-style feature sets.",
+      "balanced_prior": false,
+      "alpha": 1.0,
+      "metrics": {
+        "accuracy": 0.9827303530440485,
+        "balanced_accuracy": 0.6417351260796034,
+        "macro_f1": 0.6296529081082809,
+        "mismatches": 158,
+        "false_clean_rate": 0.0014680971202710334,
+        "per_label": {
+          "strict_n8": {
+            "precision": 0.5384615384615384,
+            "recall": 0.7368421052631579,
+            "f1": 0.6222222222222222,
+            "support": 38
+          },
+          "extended_n8": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 27
+          },
+          "validated_broad_n8": {
+            "precision": 0.6701030927835051,
+            "recall": 0.4421768707482993,
+            "f1": 0.5327868852459017,
+            "support": 147
+          },
+          "validated_master_only": {
+            "precision": 0.6363636363636364,
+            "recall": 0.6829268292682927,
+            "f1": 0.6588235294117647,
+            "support": 82
+          },
+          "mutation_stress_n8": {
+            "precision": 0.9408783783783784,
+            "recall": 0.9884649511978705,
+            "f1": 0.9640848117697968,
+            "support": 1127
+          },
+          "tier2_unvalidated": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 7728
+          }
+        },
+        "confusion": {
+          "strict_n8": {
+            "strict_n8": 28,
+            "extended_n8": 0,
+            "validated_broad_n8": 10,
+            "validated_master_only": 0,
+            "mutation_stress_n8": 0,
+            "tier2_unvalidated": 0
+          },
+          "extended_n8": {
+            "strict_n8": 0,
+            "extended_n8": 0,
+            "validated_broad_n8": 1,
+            "validated_master_only": 0,
+            "mutation_stress_n8": 26,
+            "tier2_unvalidated": 0
+          },
+          "validated_broad_n8": {
+            "strict_n8": 11,
+            "extended_n8": 0,
+            "validated_broad_n8": 65,
+            "validated_master_only": 32,
+            "mutation_stress_n8": 39,
+            "tier2_unvalidated": 0
+          },
+          "validated_master_only": {
+            "strict_n8": 0,
+            "extended_n8": 0,
+            "validated_broad_n8": 21,
+            "validated_master_only": 56,
+            "mutation_stress_n8": 5,
+            "tier2_unvalidated": 0
+          },
+          "mutation_stress_n8": {
+            "strict_n8": 13,
+            "extended_n8": 0,
+            "validated_broad_n8": 0,
+            "validated_master_only": 0,
+            "mutation_stress_n8": 1114,
+            "tier2_unvalidated": 0
+          },
+          "tier2_unvalidated": {
+            "strict_n8": 0,
+            "extended_n8": 0,
+            "validated_broad_n8": 0,
+            "validated_master_only": 0,
+            "mutation_stress_n8": 0,
+            "tier2_unvalidated": 7728
+          }
+        }
+      }
+    },
+    {
+      "name": "categorical Naive Bayes (source_proxy_metadata, uniform priors)",
+      "model": "categorical_naive_bayes",
+      "feature_set": "source_proxy_metadata",
+      "description": "Gate-stripped source and proxy signals. This ablation omits the primitive n/8 readiness gates and is a better difficulty probe than the gate-reconstruction-style feature sets.",
+      "balanced_prior": true,
+      "alpha": 1.0,
+      "metrics": {
+        "accuracy": 0.9307028090501694,
+        "balanced_accuracy": 0.7188465006040493,
+        "macro_f1": 0.5295875698989111,
+        "mismatches": 634,
+        "false_clean_rate": 0.054771315640880856,
+        "per_label": {
+          "strict_n8": {
+            "precision": 0.3025210084033613,
+            "recall": 0.9473684210526315,
+            "f1": 0.45859872611464964,
+            "support": 38
+          },
+          "extended_n8": {
+            "precision": 0.04678362573099415,
+            "recall": 0.8888888888888888,
+            "f1": 0.08888888888888889,
+            "support": 27
+          },
+          "validated_broad_n8": {
+            "precision": 0.6857142857142857,
+            "recall": 0.16326530612244897,
+            "f1": 0.26373626373626374,
+            "support": 147
+          },
+          "validated_master_only": {
+            "precision": 0.5648148148148148,
+            "recall": 0.7439024390243902,
+            "f1": 0.6421052631578948,
+            "support": 82
+          },
+          "mutation_stress_n8": {
+            "precision": 0.9938080495356038,
+            "recall": 0.5696539485359361,
+            "f1": 0.7241962774957699,
+            "support": 1127
+          },
+          "tier2_unvalidated": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 7728
+          }
+        },
+        "confusion": {
+          "strict_n8": {
+            "strict_n8": 36,
+            "extended_n8": 0,
+            "validated_broad_n8": 2,
+            "validated_master_only": 0,
+            "mutation_stress_n8": 0,
+            "tier2_unvalidated": 0
+          },
+          "extended_n8": {
+            "strict_n8": 0,
+            "extended_n8": 24,
+            "validated_broad_n8": 0,
+            "validated_master_only": 0,
+            "mutation_stress_n8": 3,
+            "tier2_unvalidated": 0
+          },
+          "validated_broad_n8": {
+            "strict_n8": 36,
+            "extended_n8": 39,
+            "validated_broad_n8": 24,
+            "validated_master_only": 47,
+            "mutation_stress_n8": 1,
+            "tier2_unvalidated": 0
+          },
+          "validated_master_only": {
+            "strict_n8": 8,
+            "extended_n8": 4,
+            "validated_broad_n8": 9,
+            "validated_master_only": 61,
+            "mutation_stress_n8": 0,
+            "tier2_unvalidated": 0
+          },
+          "mutation_stress_n8": {
+            "strict_n8": 39,
+            "extended_n8": 446,
+            "validated_broad_n8": 0,
+            "validated_master_only": 0,
+            "mutation_stress_n8": 642,
+            "tier2_unvalidated": 0
+          },
+          "tier2_unvalidated": {
+            "strict_n8": 0,
+            "extended_n8": 0,
+            "validated_broad_n8": 0,
+            "validated_master_only": 0,
+            "mutation_stress_n8": 0,
+            "tier2_unvalidated": 7728
+          }
+        }
+      }
+    },
+    {
+      "name": "categorical Naive Bayes (primitive_metadata, empirical priors)",
+      "model": "categorical_naive_bayes",
+      "feature_set": "primitive_metadata",
+      "description": "Validation, extraction, size, retrieval, and mutation signals. Direct readiness labels and target aliases are omitted.",
+      "balanced_prior": false,
+      "alpha": 1.0,
+      "metrics": {
+        "accuracy": 1.0,
+        "balanced_accuracy": 1.0,
+        "macro_f1": 1.0,
+        "mismatches": 0,
+        "false_clean_rate": 0.0,
+        "per_label": {
+          "strict_n8": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 38
+          },
+          "extended_n8": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 27
+          },
+          "validated_broad_n8": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 147
+          },
+          "validated_master_only": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 82
+          },
+          "mutation_stress_n8": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 1127
+          },
+          "tier2_unvalidated": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 7728
+          }
+        },
+        "confusion": {
+          "strict_n8": {
+            "strict_n8": 38,
+            "extended_n8": 0,
+            "validated_broad_n8": 0,
+            "validated_master_only": 0,
+            "mutation_stress_n8": 0,
+            "tier2_unvalidated": 0
+          },
+          "extended_n8": {
+            "strict_n8": 0,
+            "extended_n8": 27,
+            "validated_broad_n8": 0,
+            "validated_master_only": 0,
+            "mutation_stress_n8": 0,
+            "tier2_unvalidated": 0
+          },
+          "validated_broad_n8": {
+            "strict_n8": 0,
+            "extended_n8": 0,
+            "validated_broad_n8": 147,
+            "validated_master_only": 0,
+            "mutation_stress_n8": 0,
+            "tier2_unvalidated": 0
+          },
+          "validated_master_only": {
+            "strict_n8": 0,
+            "extended_n8": 0,
+            "validated_broad_n8": 0,
+            "validated_master_only": 82,
+            "mutation_stress_n8": 0,
+            "tier2_unvalidated": 0
+          },
+          "mutation_stress_n8": {
+            "strict_n8": 0,
+            "extended_n8": 0,
+            "validated_broad_n8": 0,
+            "validated_master_only": 0,
+            "mutation_stress_n8": 1127,
+            "tier2_unvalidated": 0
+          },
+          "tier2_unvalidated": {
+            "strict_n8": 0,
+            "extended_n8": 0,
+            "validated_broad_n8": 0,
+            "validated_master_only": 0,
+            "mutation_stress_n8": 0,
+            "tier2_unvalidated": 7728
+          }
+        }
+      }
+    },
+    {
+      "name": "categorical Naive Bayes (primitive_metadata, uniform priors)",
+      "model": "categorical_naive_bayes",
+      "feature_set": "primitive_metadata",
+      "description": "Validation, extraction, size, retrieval, and mutation signals. Direct readiness labels and target aliases are omitted.",
+      "balanced_prior": true,
+      "alpha": 1.0,
+      "metrics": {
+        "accuracy": 0.9993441906219259,
+        "balanced_accuracy": 0.9941831805185842,
+        "macro_f1": 0.9812747610690646,
+        "mismatches": 6,
+        "false_clean_rate": 0.00011293054771315641,
+        "per_label": {
+          "strict_n8": {
+            "precision": 0.95,
+            "recall": 1.0,
+            "f1": 0.9743589743589743,
+            "support": 38
+          },
+          "extended_n8": {
+            "precision": 0.8709677419354839,
+            "recall": 1.0,
+            "f1": 0.9310344827586207,
+            "support": 27
+          },
+          "validated_broad_n8": {
+            "precision": 1.0,
+            "recall": 0.9659863945578231,
+            "f1": 0.9826989619377162,
+            "support": 147
+          },
+          "validated_master_only": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 82
+          },
+          "mutation_stress_n8": {
+            "precision": 1.0,
+            "recall": 0.9991126885536823,
+            "f1": 0.9995561473590767,
+            "support": 1127
+          },
+          "tier2_unvalidated": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 7728
+          }
+        },
+        "confusion": {
+          "strict_n8": {
+            "strict_n8": 38,
+            "extended_n8": 0,
+            "validated_broad_n8": 0,
+            "validated_master_only": 0,
+            "mutation_stress_n8": 0,
+            "tier2_unvalidated": 0
+          },
+          "extended_n8": {
+            "strict_n8": 0,
+            "extended_n8": 27,
+            "validated_broad_n8": 0,
+            "validated_master_only": 0,
+            "mutation_stress_n8": 0,
+            "tier2_unvalidated": 0
+          },
+          "validated_broad_n8": {
+            "strict_n8": 1,
+            "extended_n8": 4,
+            "validated_broad_n8": 142,
+            "validated_master_only": 0,
+            "mutation_stress_n8": 0,
+            "tier2_unvalidated": 0
+          },
+          "validated_master_only": {
+            "strict_n8": 0,
+            "extended_n8": 0,
+            "validated_broad_n8": 0,
+            "validated_master_only": 82,
+            "mutation_stress_n8": 0,
+            "tier2_unvalidated": 0
+          },
+          "mutation_stress_n8": {
+            "strict_n8": 1,
+            "extended_n8": 0,
+            "validated_broad_n8": 0,
+            "validated_master_only": 0,
+            "mutation_stress_n8": 1126,
+            "tier2_unvalidated": 0
+          },
+          "tier2_unvalidated": {
+            "strict_n8": 0,
+            "extended_n8": 0,
+            "validated_broad_n8": 0,
+            "validated_master_only": 0,
+            "mutation_stress_n8": 0,
+            "tier2_unvalidated": 7728
+          }
+        }
+      }
+    },
+    {
+      "name": "categorical Naive Bayes (broad_metadata, empirical priors)",
+      "model": "categorical_naive_bayes",
+      "feature_set": "broad_metadata",
+      "description": "Primitive features plus context sufficiency, repairability, domain, shift, source, language, and validation-error signals.",
+      "balanced_prior": false,
+      "alpha": 1.0,
+      "metrics": {
+        "accuracy": 0.9986883812438518,
+        "balanced_accuracy": 0.9863945578231292,
+        "macro_f1": 0.9920251888853419,
+        "mismatches": 12,
+        "false_clean_rate": 0.0,
+        "per_label": {
+          "strict_n8": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 38
+          },
+          "extended_n8": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 27
+          },
+          "validated_broad_n8": {
+            "precision": 1.0,
+            "recall": 0.9183673469387755,
+            "f1": 0.9574468085106383,
+            "support": 147
+          },
+          "validated_master_only": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 82
+          },
+          "mutation_stress_n8": {
+            "precision": 0.9894644424934153,
+            "recall": 1.0,
+            "f1": 0.9947043248014122,
+            "support": 1127
+          },
+          "tier2_unvalidated": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 7728
+          }
+        },
+        "confusion": {
+          "strict_n8": {
+            "strict_n8": 38,
+            "extended_n8": 0,
+            "validated_broad_n8": 0,
+            "validated_master_only": 0,
+            "mutation_stress_n8": 0,
+            "tier2_unvalidated": 0
+          },
+          "extended_n8": {
+            "strict_n8": 0,
+            "extended_n8": 27,
+            "validated_broad_n8": 0,
+            "validated_master_only": 0,
+            "mutation_stress_n8": 0,
+            "tier2_unvalidated": 0
+          },
+          "validated_broad_n8": {
+            "strict_n8": 0,
+            "extended_n8": 0,
+            "validated_broad_n8": 135,
+            "validated_master_only": 0,
+            "mutation_stress_n8": 12,
+            "tier2_unvalidated": 0
+          },
+          "validated_master_only": {
+            "strict_n8": 0,
+            "extended_n8": 0,
+            "validated_broad_n8": 0,
+            "validated_master_only": 82,
+            "mutation_stress_n8": 0,
+            "tier2_unvalidated": 0
+          },
+          "mutation_stress_n8": {
+            "strict_n8": 0,
+            "extended_n8": 0,
+            "validated_broad_n8": 0,
+            "validated_master_only": 0,
+            "mutation_stress_n8": 1127,
+            "tier2_unvalidated": 0
+          },
+          "tier2_unvalidated": {
+            "strict_n8": 0,
+            "extended_n8": 0,
+            "validated_broad_n8": 0,
+            "validated_master_only": 0,
+            "mutation_stress_n8": 0,
+            "tier2_unvalidated": 7728
+          }
+        }
+      }
+    },
+    {
+      "name": "categorical Naive Bayes (broad_metadata, uniform priors)",
+      "model": "categorical_naive_bayes",
+      "feature_set": "broad_metadata",
+      "description": "Primitive features plus context sufficiency, repairability, domain, shift, source, language, and validation-error signals.",
+      "balanced_prior": true,
+      "alpha": 1.0,
+      "metrics": {
+        "accuracy": 0.9997813968739753,
+        "balanced_accuracy": 0.9977324263038548,
+        "macro_f1": 0.9987106933514687,
+        "mismatches": 2,
+        "false_clean_rate": 0.0,
+        "per_label": {
+          "strict_n8": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 38
+          },
+          "extended_n8": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 27
+          },
+          "validated_broad_n8": {
+            "precision": 1.0,
+            "recall": 0.9863945578231292,
+            "f1": 0.9931506849315068,
+            "support": 147
+          },
+          "validated_master_only": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 82
+          },
+          "mutation_stress_n8": {
+            "precision": 0.9982285208148804,
+            "recall": 1.0,
+            "f1": 0.999113475177305,
+            "support": 1127
+          },
+          "tier2_unvalidated": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 7728
+          }
+        },
+        "confusion": {
+          "strict_n8": {
+            "strict_n8": 38,
+            "extended_n8": 0,
+            "validated_broad_n8": 0,
+            "validated_master_only": 0,
+            "mutation_stress_n8": 0,
+            "tier2_unvalidated": 0
+          },
+          "extended_n8": {
+            "strict_n8": 0,
+            "extended_n8": 27,
+            "validated_broad_n8": 0,
+            "validated_master_only": 0,
+            "mutation_stress_n8": 0,
+            "tier2_unvalidated": 0
+          },
+          "validated_broad_n8": {
+            "strict_n8": 0,
+            "extended_n8": 0,
+            "validated_broad_n8": 145,
+            "validated_master_only": 0,
+            "mutation_stress_n8": 2,
+            "tier2_unvalidated": 0
+          },
+          "validated_master_only": {
+            "strict_n8": 0,
+            "extended_n8": 0,
+            "validated_broad_n8": 0,
+            "validated_master_only": 82,
+            "mutation_stress_n8": 0,
+            "tier2_unvalidated": 0
+          },
+          "mutation_stress_n8": {
+            "strict_n8": 0,
+            "extended_n8": 0,
+            "validated_broad_n8": 0,
+            "validated_master_only": 0,
+            "mutation_stress_n8": 1127,
+            "tier2_unvalidated": 0
+          },
+          "tier2_unvalidated": {
+            "strict_n8": 0,
+            "extended_n8": 0,
+            "validated_broad_n8": 0,
+            "validated_master_only": 0,
+            "mutation_stress_n8": 0,
+            "tier2_unvalidated": 7728
+          }
+        }
+      }
+    }
+  ],
+  "best_learned_model": "categorical Naive Bayes (primitive_metadata, empirical priors)"
+}

@@ -1,0 +1,829 @@
+{
+  "best_non_oracle_baseline": "word_tfidf_train_instruction_copy",
+  "best_non_oracle_failure_taxonomy": [
+    {
+      "category": "gate_type_mismatch",
+      "extended_n8": 32,
+      "failures": 58,
+      "share_of_failures": 0.4461538461538462,
+      "strict_n8": 26
+    },
+    {
+      "category": "width_mismatch",
+      "extended_n8": 28,
+      "failures": 57,
+      "share_of_failures": 0.43846153846153846,
+      "strict_n8": 29
+    },
+    {
+      "category": "execution_failed",
+      "extended_n8": 5,
+      "failures": 13,
+      "share_of_failures": 0.1,
+      "strict_n8": 8
+    },
+    {
+      "category": "classical_width_mismatch",
+      "extended_n8": 0,
+      "failures": 2,
+      "share_of_failures": 0.015384615384615385,
+      "strict_n8": 2
+    }
+  ],
+  "best_non_oracle_failures": [
+    {
+      "checks": {
+        "all_match": false,
+        "gate_count_match": true,
+        "gate_types_match": true,
+        "num_clbits_match": false,
+        "num_qubits_match": true
+      },
+      "failure_category": "classical_width_mismatch",
+      "label": "strict_n8",
+      "predicted_file": "deneme.py",
+      "predicted_label": "strict_n8",
+      "predicted_metadata": {
+        "gate_count": 4,
+        "gate_types": {
+          "barrier": 1,
+          "cx": 1,
+          "h": 1,
+          "measure": 2
+        },
+        "num_clbits": 2,
+        "num_qubits": 2
+      },
+      "query": "Create a 2-qubit Qiskit circuit that prepares a Bell state by applying a Hadamard to qubit 0, then a CNOT from qubit 0 to qubit 1, and finally measures both qubits.",
+      "row_id": "686753a893a0977fab3819207806c4a4",
+      "target_file": "blockchainApp_local/backend/enhance_course_content.py",
+      "target_metadata": {
+        "gate_count": 4,
+        "gate_types": {
+          "barrier": 1,
+          "cx": 1,
+          "h": 1,
+          "measure": 2
+        },
+        "num_clbits": 4,
+        "num_qubits": 2
+      }
+    },
+    {
+      "checks": {
+        "all_match": false,
+        "gate_count_match": true,
+        "gate_types_match": true,
+        "num_clbits_match": false,
+        "num_qubits_match": true
+      },
+      "failure_category": "classical_width_mismatch",
+      "label": "strict_n8",
+      "predicted_file": "ghz_state.py",
+      "predicted_label": "strict_n8",
+      "predicted_metadata": {
+        "gate_count": 6,
+        "gate_types": {
+          "barrier": 1,
+          "cx": 2,
+          "h": 1,
+          "measure": 3
+        },
+        "num_clbits": 6,
+        "num_qubits": 3
+      },
+      "query": "Create a 3-qubit, 3-classical-bit Qiskit circuit that prepares a GHZ state by applying a Hadamard to qubit 0, entangling it with qubits 1 and 2 via CNOTs, then adding a barrier ...",
+      "row_id": "b9370fef2e4345d5a02f041727c0e9ed",
+      "target_file": "AE.py",
+      "target_metadata": {
+        "gate_count": 6,
+        "gate_types": {
+          "barrier": 1,
+          "cx": 2,
+          "h": 1,
+          "measure": 3
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      }
+    },
+    {
+      "checks": {},
+      "failure_category": "execution_failed",
+      "label": "extended_n8",
+      "predicted_file": "source/0/simon_0c9154.py",
+      "predicted_label": "extended_n8",
+      "predicted_metadata": {
+        "gate_count": 3,
+        "gate_types": {
+          "barrier": 1,
+          "h": 3
+        },
+        "num_clbits": 3,
+        "num_qubits": 6
+      },
+      "query": "Create a small Qiskit Simon-algorithm setup for n=3 that initializes a 6-qubit circuit with 3 classical bits, applies Hadamards to the first register, and inserts a barrier befo...",
+      "row_id": "027618fd659b824197595729cf31f47c",
+      "target_file": "source/0/main_595497.py",
+      "target_metadata": {
+        "gate_count": 3,
+        "gate_types": {
+          "barrier": 1,
+          "h": 3
+        },
+        "num_clbits": 3,
+        "num_qubits": 6
+      }
+    },
+    {
+      "checks": {},
+      "failure_category": "execution_failed",
+      "label": "extended_n8",
+      "predicted_file": "source/0/bernstein_vazirani_forstrings_4d15d5.py",
+      "predicted_label": "extended_n8",
+      "predicted_metadata": {
+        "gate_count": 5,
+        "gate_types": {
+          "barrier": 2,
+          "h": 4,
+          "x": 1
+        },
+        "num_clbits": 3,
+        "num_qubits": 4
+      },
+      "query": "Create a Qiskit circuit for a 3-qubit Bernstein\u2013Vazirani setup where the last qubit is the oracle target: initialize that qubit in |1>, apply Hadamards to all qubits, use CNOTs ...",
+      "row_id": "121b7d4ac0698d99b0ef0cd5cf0b05b4",
+      "target_file": "docs/guides/custom-backend.ipynb",
+      "target_metadata": {
+        "gate_count": 11,
+        "gate_types": {
+          "cx": 2,
+          "h": 6,
+          "measure": 2,
+          "x": 1
+        },
+        "num_clbits": 2,
+        "num_qubits": 3
+      }
+    },
+    {
+      "checks": {},
+      "failure_category": "execution_failed",
+      "label": "extended_n8",
+      "predicted_file": "community/terra/qis_intro/entanglement_testing.ipynb",
+      "predicted_label": "strict_n8",
+      "predicted_metadata": {
+        "gate_count": 6,
+        "gate_types": {
+          "h": 3,
+          "measure": 3
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      },
+      "query": "Create a small 3-qubit Qiskit circuit that prepares all qubits in the X basis with Hadamards, includes a barrier before readout, then applies Hadamards again and measures each q...",
+      "row_id": "4d92187c5a96e3f8ebc32895e5d0d6f2",
+      "target_file": "source/0/t2_echo_bbbd4d.py",
+      "target_metadata": {
+        "gate_count": 6,
+        "gate_types": {
+          "barrier": 1,
+          "h": 3,
+          "measure": 3
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      }
+    },
+    {
+      "checks": {},
+      "failure_category": "execution_failed",
+      "label": "extended_n8",
+      "predicted_file": "community/terra/qis_intro/entanglement_testing.ipynb",
+      "predicted_label": "strict_n8",
+      "predicted_metadata": {
+        "gate_count": 6,
+        "gate_types": {
+          "h": 3,
+          "measure": 3
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      },
+      "query": "Create a Qiskit circuit with 3 qubits and 3 classical bits that applies a Hadamard gate to each qubit, measures each one into the matching classical bit via small reusable subci...",
+      "row_id": "53cd3f3ec60db293872fb7a69c63620b",
+      "target_file": "source/0/roc_fixed_59eb18.py",
+      "target_metadata": {
+        "gate_count": 6,
+        "gate_types": {
+          "H": 3,
+          "M": 3,
+          "barrier": 1
+        },
+        "num_clbits": 3,
+        "num_qubits": 3
+      }
+    },
+    {
+      "checks": {},
+      "failure_category": "execution_failed",
+      "label": "extended_n8",
+      "predicted_file": "source/0/bernstein_f06145.py",
+      "predicted_label": "extended_n8",
+      "predicted_metadata": {
+        "gate_count": 2,
+        "gate_types": {
+          "h": 1,
+          "z": 1
+        },
+        "num_clbits": 3,
+        "num_qubits": 4
+      },
+      "query": "Create a small Bernstein\u2013Vazirani circuit that initializes the last qubit as the ancilla in the |-\u27e9 state by applying X then H, with the remaining qubits reserved for the query ...",
+      "row_id": "e3a4e9a84977780432cef0974657ae9d",
+      "target_file": "source/0/bernstein_vazirani_703dff.py",
+      "target_metadata": {
+        "gate_count": 2,
+        "gate_types": {
+          "h": 1,
+          "x": 1
+        },
+        "num_clbits": 3,
+        "num_qubits": 4
+      }
+    },
+    {
+      "checks": {},
+      "failure_category": "execution_failed",
+      "label": "strict_n8",
+      "predicted_file": "4. Operators/qiskit_gradient_framework.py",
+      "predicted_label": "strict_n8",
+      "predicted_metadata": {
+        "gate_count": 5,
+        "gate_types": {
+          "h": 3,
+          "rx": 1,
+          "rz": 1
+        },
+        "num_clbits": 0,
+        "num_qubits": 3
+      },
+      "query": "Build a 4-qubit Qiskit circuit that puts every qubit into equal superposition, applies an RZ rotation of \u03c0/4 on qubit 0 and \u03c0/3 on qubit 1, then entangles 0\u21922 and 1\u21923 with CNOT ...",
+      "row_id": "18b1eb966f19a891de8a30f8dac4e6f8",
+      "target_file": "main.py",
+      "target_metadata": {
+        "gate_count": 8,
+        "gate_types": {
+          "cx": 2,
+          "h": 4,
+          "rz": 2
+        },
+        "num_clbits": 0,
+        "num_qubits": 4
+      }
+    }
+  ],
+  "group_overlap": {
+    "train_test": 0,
+    "train_validation": 0,
+    "validation_test": 0
+  },
+  "input_file": "PQID/data/processed/seed_drafts_quality_aware_source_code_v1.jsonl",
+  "label_counts": {
+    "extended_n8": 319,
+    "strict_n8": 415
+  },
+  "qiskit_available": true,
+  "qiskit_version": "2.1.1",
+  "results": [
+    {
+      "description": "copy the most frequent code string in the training split",
+      "name": "majority_train_code_copy",
+      "summary": {
+        "by_label": {
+          "extended_n8": {
+            "circuit_found": 0,
+            "exact_code_match": 0,
+            "execution_success": 0,
+            "gate_count_match": 0,
+            "gate_types_match": 0,
+            "num_clbits_match": 0,
+            "num_qubits_match": 0,
+            "qasm3_export_success": 0,
+            "rates": {
+              "circuit_found": 0.0,
+              "exact_code_match": 0.0,
+              "execution_success": 0.0,
+              "gate_count_match": 0.0,
+              "gate_types_match": 0.0,
+              "num_clbits_match": 0.0,
+              "num_qubits_match": 0.0,
+              "qasm3_export_success": 0.0,
+              "same_group": 0.0,
+              "same_label": 0.0,
+              "structural_all_match": 0.0
+            },
+            "rows": 77,
+            "same_group": 0,
+            "same_label": 0,
+            "structural_all_match": 0
+          },
+          "strict_n8": {
+            "circuit_found": 0,
+            "exact_code_match": 0,
+            "execution_success": 0,
+            "gate_count_match": 0,
+            "gate_types_match": 0,
+            "num_clbits_match": 0,
+            "num_qubits_match": 0,
+            "qasm3_export_success": 0,
+            "rates": {
+              "circuit_found": 0.0,
+              "exact_code_match": 0.0,
+              "execution_success": 0.0,
+              "gate_count_match": 0.0,
+              "gate_types_match": 0.0,
+              "num_clbits_match": 0.0,
+              "num_qubits_match": 0.0,
+              "qasm3_export_success": 0.0,
+              "same_group": 0.0,
+              "same_label": 1.0,
+              "structural_all_match": 0.0
+            },
+            "rows": 77,
+            "same_group": 0,
+            "same_label": 77,
+            "structural_all_match": 0
+          }
+        },
+        "circuit_found": 0,
+        "exact_code_match": 0,
+        "execution_errors": {
+          "NameError": 154
+        },
+        "execution_success": 0,
+        "gate_count_match": 0,
+        "gate_types_match": 0,
+        "num_clbits_match": 0,
+        "num_qubits_match": 0,
+        "qasm3_export_success": 0,
+        "rates": {
+          "circuit_found": 0.0,
+          "exact_code_match": 0.0,
+          "execution_success": 0.0,
+          "gate_count_match": 0.0,
+          "gate_types_match": 0.0,
+          "num_clbits_match": 0.0,
+          "num_qubits_match": 0.0,
+          "qasm3_export_success": 0.0,
+          "same_group": 0.0,
+          "same_label": 0.5,
+          "simulation_eligible": 0.0,
+          "simulation_success": 0.0,
+          "simulation_success_among_eligible": 0.0,
+          "structural_all_match": 0.0
+        },
+        "rows": 154,
+        "same_group": 0,
+        "same_label": 77,
+        "simulation_eligible": 0,
+        "simulation_success": 0,
+        "structural_all_match": 0,
+        "structural_mismatch_checks": {}
+      },
+      "test_rows": 154
+    },
+    {
+      "description": "copy nearest training code by BM25 over code plus non-instruction metadata",
+      "name": "bm25_code_metadata_copy",
+      "summary": {
+        "by_label": {
+          "extended_n8": {
+            "circuit_found": 61,
+            "exact_code_match": 0,
+            "execution_success": 61,
+            "gate_count_match": 11,
+            "gate_types_match": 5,
+            "num_clbits_match": 30,
+            "num_qubits_match": 29,
+            "qasm3_export_success": 61,
+            "rates": {
+              "circuit_found": 0.7922077922077922,
+              "exact_code_match": 0.0,
+              "execution_success": 0.7922077922077922,
+              "gate_count_match": 0.14285714285714285,
+              "gate_types_match": 0.06493506493506493,
+              "num_clbits_match": 0.38961038961038963,
+              "num_qubits_match": 0.37662337662337664,
+              "qasm3_export_success": 0.7922077922077922,
+              "same_group": 0.0,
+              "same_label": 0.2077922077922078,
+              "structural_all_match": 0.06493506493506493
+            },
+            "rows": 77,
+            "same_group": 0,
+            "same_label": 16,
+            "structural_all_match": 5
+          },
+          "strict_n8": {
+            "circuit_found": 55,
+            "exact_code_match": 0,
+            "execution_success": 55,
+            "gate_count_match": 11,
+            "gate_types_match": 4,
+            "num_clbits_match": 15,
+            "num_qubits_match": 20,
+            "qasm3_export_success": 55,
+            "rates": {
+              "circuit_found": 0.7142857142857143,
+              "exact_code_match": 0.0,
+              "execution_success": 0.7142857142857143,
+              "gate_count_match": 0.14285714285714285,
+              "gate_types_match": 0.05194805194805195,
+              "num_clbits_match": 0.19480519480519481,
+              "num_qubits_match": 0.2597402597402597,
+              "qasm3_export_success": 0.7142857142857143,
+              "same_group": 0.0,
+              "same_label": 0.7922077922077922,
+              "structural_all_match": 0.05194805194805195
+            },
+            "rows": 77,
+            "same_group": 0,
+            "same_label": 61,
+            "structural_all_match": 4
+          }
+        },
+        "circuit_found": 116,
+        "exact_code_match": 0,
+        "execution_errors": {
+          "NameError": 38
+        },
+        "execution_success": 116,
+        "gate_count_match": 22,
+        "gate_types_match": 9,
+        "num_clbits_match": 45,
+        "num_qubits_match": 49,
+        "qasm3_export_success": 116,
+        "rates": {
+          "circuit_found": 0.7532467532467533,
+          "exact_code_match": 0.0,
+          "execution_success": 0.7532467532467533,
+          "gate_count_match": 0.14285714285714285,
+          "gate_types_match": 0.05844155844155844,
+          "num_clbits_match": 0.2922077922077922,
+          "num_qubits_match": 0.3181818181818182,
+          "qasm3_export_success": 0.7532467532467533,
+          "same_group": 0.0,
+          "same_label": 0.5,
+          "simulation_eligible": 0.2857142857142857,
+          "simulation_success": 0.2857142857142857,
+          "simulation_success_among_eligible": 1.0,
+          "structural_all_match": 0.05844155844155844
+        },
+        "rows": 154,
+        "same_group": 0,
+        "same_label": 77,
+        "simulation_eligible": 44,
+        "simulation_success": 44,
+        "structural_all_match": 9,
+        "structural_mismatch_checks": {
+          "gate_count_match": 94,
+          "gate_types_match": 107,
+          "num_clbits_match": 71,
+          "num_qubits_match": 67
+        }
+      },
+      "test_rows": 154
+    },
+    {
+      "description": "copy nearest training code by word unigram/bigram TF-IDF over code plus non-instruction metadata",
+      "name": "word_tfidf_code_metadata_copy",
+      "summary": {
+        "by_label": {
+          "extended_n8": {
+            "circuit_found": 72,
+            "exact_code_match": 0,
+            "execution_success": 72,
+            "gate_count_match": 16,
+            "gate_types_match": 1,
+            "num_clbits_match": 33,
+            "num_qubits_match": 36,
+            "qasm3_export_success": 72,
+            "rates": {
+              "circuit_found": 0.935064935064935,
+              "exact_code_match": 0.0,
+              "execution_success": 0.935064935064935,
+              "gate_count_match": 0.2077922077922078,
+              "gate_types_match": 0.012987012987012988,
+              "num_clbits_match": 0.42857142857142855,
+              "num_qubits_match": 0.4675324675324675,
+              "qasm3_export_success": 0.935064935064935,
+              "same_group": 0.0,
+              "same_label": 0.3116883116883117,
+              "structural_all_match": 0.012987012987012988
+            },
+            "rows": 77,
+            "same_group": 0,
+            "same_label": 24,
+            "structural_all_match": 1
+          },
+          "strict_n8": {
+            "circuit_found": 74,
+            "exact_code_match": 0,
+            "execution_success": 74,
+            "gate_count_match": 13,
+            "gate_types_match": 1,
+            "num_clbits_match": 24,
+            "num_qubits_match": 27,
+            "qasm3_export_success": 74,
+            "rates": {
+              "circuit_found": 0.961038961038961,
+              "exact_code_match": 0.0,
+              "execution_success": 0.961038961038961,
+              "gate_count_match": 0.16883116883116883,
+              "gate_types_match": 0.012987012987012988,
+              "num_clbits_match": 0.3116883116883117,
+              "num_qubits_match": 0.35064935064935066,
+              "qasm3_export_success": 0.961038961038961,
+              "same_group": 0.0,
+              "same_label": 0.6493506493506493,
+              "structural_all_match": 0.012987012987012988
+            },
+            "rows": 77,
+            "same_group": 0,
+            "same_label": 50,
+            "structural_all_match": 1
+          }
+        },
+        "circuit_found": 146,
+        "exact_code_match": 0,
+        "execution_errors": {
+          "NameError": 8
+        },
+        "execution_success": 146,
+        "gate_count_match": 29,
+        "gate_types_match": 2,
+        "num_clbits_match": 57,
+        "num_qubits_match": 63,
+        "qasm3_export_success": 146,
+        "rates": {
+          "circuit_found": 0.948051948051948,
+          "exact_code_match": 0.0,
+          "execution_success": 0.948051948051948,
+          "gate_count_match": 0.18831168831168832,
+          "gate_types_match": 0.012987012987012988,
+          "num_clbits_match": 0.37012987012987014,
+          "num_qubits_match": 0.4090909090909091,
+          "qasm3_export_success": 0.948051948051948,
+          "same_group": 0.0,
+          "same_label": 0.4805194805194805,
+          "simulation_eligible": 0.23376623376623376,
+          "simulation_success": 0.23376623376623376,
+          "simulation_success_among_eligible": 1.0,
+          "structural_all_match": 0.012987012987012988
+        },
+        "rows": 154,
+        "same_group": 0,
+        "same_label": 74,
+        "simulation_eligible": 36,
+        "simulation_success": 36,
+        "structural_all_match": 2,
+        "structural_mismatch_checks": {
+          "gate_count_match": 117,
+          "gate_types_match": 144,
+          "num_clbits_match": 89,
+          "num_qubits_match": 83
+        }
+      },
+      "test_rows": 154
+    },
+    {
+      "description": "copy nearest training code by word unigram/bigram TF-IDF over training instructions",
+      "name": "word_tfidf_train_instruction_copy",
+      "summary": {
+        "by_label": {
+          "extended_n8": {
+            "circuit_found": 72,
+            "exact_code_match": 0,
+            "execution_success": 72,
+            "gate_count_match": 31,
+            "gate_types_match": 12,
+            "num_clbits_match": 45,
+            "num_qubits_match": 44,
+            "qasm3_export_success": 72,
+            "rates": {
+              "circuit_found": 0.935064935064935,
+              "exact_code_match": 0.0,
+              "execution_success": 0.935064935064935,
+              "gate_count_match": 0.4025974025974026,
+              "gate_types_match": 0.15584415584415584,
+              "num_clbits_match": 0.5844155844155844,
+              "num_qubits_match": 0.5714285714285714,
+              "qasm3_export_success": 0.935064935064935,
+              "same_group": 0.0,
+              "same_label": 0.7142857142857143,
+              "structural_all_match": 0.15584415584415584
+            },
+            "rows": 77,
+            "same_group": 0,
+            "same_label": 55,
+            "structural_all_match": 12
+          },
+          "strict_n8": {
+            "circuit_found": 69,
+            "exact_code_match": 0,
+            "execution_success": 69,
+            "gate_count_match": 27,
+            "gate_types_match": 15,
+            "num_clbits_match": 38,
+            "num_qubits_match": 40,
+            "qasm3_export_success": 69,
+            "rates": {
+              "circuit_found": 0.8961038961038961,
+              "exact_code_match": 0.0,
+              "execution_success": 0.8961038961038961,
+              "gate_count_match": 0.35064935064935066,
+              "gate_types_match": 0.19480519480519481,
+              "num_clbits_match": 0.4935064935064935,
+              "num_qubits_match": 0.5194805194805194,
+              "qasm3_export_success": 0.8961038961038961,
+              "same_group": 0.0,
+              "same_label": 0.7792207792207793,
+              "structural_all_match": 0.15584415584415584
+            },
+            "rows": 77,
+            "same_group": 0,
+            "same_label": 60,
+            "structural_all_match": 12
+          }
+        },
+        "circuit_found": 141,
+        "exact_code_match": 0,
+        "execution_errors": {
+          "NameError": 13
+        },
+        "execution_success": 141,
+        "gate_count_match": 58,
+        "gate_types_match": 27,
+        "num_clbits_match": 83,
+        "num_qubits_match": 84,
+        "qasm3_export_success": 141,
+        "rates": {
+          "circuit_found": 0.9155844155844156,
+          "exact_code_match": 0.0,
+          "execution_success": 0.9155844155844156,
+          "gate_count_match": 0.37662337662337664,
+          "gate_types_match": 0.17532467532467533,
+          "num_clbits_match": 0.538961038961039,
+          "num_qubits_match": 0.5454545454545454,
+          "qasm3_export_success": 0.9155844155844156,
+          "same_group": 0.0,
+          "same_label": 0.7467532467532467,
+          "simulation_eligible": 0.16883116883116883,
+          "simulation_success": 0.16883116883116883,
+          "simulation_success_among_eligible": 1.0,
+          "structural_all_match": 0.15584415584415584
+        },
+        "rows": 154,
+        "same_group": 0,
+        "same_label": 115,
+        "simulation_eligible": 26,
+        "simulation_success": 26,
+        "structural_all_match": 24,
+        "structural_mismatch_checks": {
+          "gate_count_match": 83,
+          "gate_types_match": 114,
+          "num_clbits_match": 58,
+          "num_qubits_match": 57
+        }
+      },
+      "test_rows": 154
+    },
+    {
+      "description": "execute the held-out target code itself; included only as an evaluator upper-bound audit",
+      "name": "target_code_oracle",
+      "summary": {
+        "by_label": {
+          "extended_n8": {
+            "circuit_found": 73,
+            "exact_code_match": 77,
+            "execution_success": 73,
+            "gate_count_match": 73,
+            "gate_types_match": 73,
+            "num_clbits_match": 73,
+            "num_qubits_match": 73,
+            "qasm3_export_success": 72,
+            "rates": {
+              "circuit_found": 0.948051948051948,
+              "exact_code_match": 1.0,
+              "execution_success": 0.948051948051948,
+              "gate_count_match": 0.948051948051948,
+              "gate_types_match": 0.948051948051948,
+              "num_clbits_match": 0.948051948051948,
+              "num_qubits_match": 0.948051948051948,
+              "qasm3_export_success": 0.935064935064935,
+              "same_group": 1.0,
+              "same_label": 1.0,
+              "structural_all_match": 0.948051948051948
+            },
+            "rows": 77,
+            "same_group": 77,
+            "same_label": 77,
+            "structural_all_match": 73
+          },
+          "strict_n8": {
+            "circuit_found": 68,
+            "exact_code_match": 77,
+            "execution_success": 68,
+            "gate_count_match": 68,
+            "gate_types_match": 68,
+            "num_clbits_match": 68,
+            "num_qubits_match": 68,
+            "qasm3_export_success": 68,
+            "rates": {
+              "circuit_found": 0.8831168831168831,
+              "exact_code_match": 1.0,
+              "execution_success": 0.8831168831168831,
+              "gate_count_match": 0.8831168831168831,
+              "gate_types_match": 0.8831168831168831,
+              "num_clbits_match": 0.8831168831168831,
+              "num_qubits_match": 0.8831168831168831,
+              "qasm3_export_success": 0.8831168831168831,
+              "same_group": 1.0,
+              "same_label": 1.0,
+              "structural_all_match": 0.8831168831168831
+            },
+            "rows": 77,
+            "same_group": 77,
+            "same_label": 77,
+            "structural_all_match": 68
+          }
+        },
+        "circuit_found": 141,
+        "exact_code_match": 154,
+        "execution_errors": {
+          "NameError": 13
+        },
+        "execution_success": 141,
+        "gate_count_match": 141,
+        "gate_types_match": 141,
+        "num_clbits_match": 141,
+        "num_qubits_match": 141,
+        "qasm3_export_success": 140,
+        "rates": {
+          "circuit_found": 0.9155844155844156,
+          "exact_code_match": 1.0,
+          "execution_success": 0.9155844155844156,
+          "gate_count_match": 0.9155844155844156,
+          "gate_types_match": 0.9155844155844156,
+          "num_clbits_match": 0.9155844155844156,
+          "num_qubits_match": 0.9155844155844156,
+          "qasm3_export_success": 0.9090909090909091,
+          "same_group": 1.0,
+          "same_label": 1.0,
+          "simulation_eligible": 0.2597402597402597,
+          "simulation_success": 0.2597402597402597,
+          "simulation_success_among_eligible": 1.0,
+          "structural_all_match": 0.9155844155844156
+        },
+        "rows": 154,
+        "same_group": 154,
+        "same_label": 154,
+        "simulation_eligible": 40,
+        "simulation_success": 40,
+        "structural_all_match": 141,
+        "structural_mismatch_checks": {}
+      },
+      "test_rows": 154
+    }
+  ],
+  "row_count": 734,
+  "split_manifest": "PQID/submissions/acm_tqc_benchmark/artifacts/test_split_154/pqid_bench_split_154_manifest.json",
+  "split_policy": "frozen split manifest `PQID/submissions/acm_tqc_benchmark/artifacts/test_split_154/pqid_bench_split_154_manifest.json`",
+  "split_summary": {
+    "test": {
+      "groups": 143,
+      "labels": {
+        "extended_n8": 77,
+        "strict_n8": 77
+      },
+      "rows": 154
+    },
+    "train": {
+      "groups": 386,
+      "labels": {
+        "extended_n8": 213,
+        "strict_n8": 301
+      },
+      "rows": 514
+    },
+    "validation": {
+      "groups": 59,
+      "labels": {
+        "extended_n8": 29,
+        "strict_n8": 37
+      },
+      "rows": 66
+    }
+  }
+}

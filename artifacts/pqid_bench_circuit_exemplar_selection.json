@@ -1,0 +1,473 @@
+{
+  "n_prompts": 154,
+  "selected": [
+    {
+      "difficulty": 0.0,
+      "difficulty_band": "easiest",
+      "difficulty_rank": 1,
+      "families": "pauli_measurement",
+      "gate_count": 2,
+      "gate_entropy": 0.6931471805599453,
+      "gate_type_count": 2,
+      "gate_types": {
+        "measure": 1,
+        "z": 1
+      },
+      "instruction": "Create a minimal 1-qubit quantum circuit that applies a Z gate to qubit 0 and then measures it into a 1-bit classical register.",
+      "model_count": 21,
+      "num_clbits": 1,
+      "num_qubits": 1,
+      "prompt_id": "pqid_bench_external_gen_0059",
+      "reference_tape": [
+        {
+          "clbits": [],
+          "name": "z",
+          "params": [],
+          "qubits": [
+            0
+          ]
+        },
+        {
+          "clbits": [
+            0
+          ],
+          "name": "measure",
+          "params": [],
+          "qubits": [
+            0
+          ]
+        }
+      ],
+      "row_id": "ba4dd4ef36655f03f9d59a4e47cfbb97",
+      "solved_models": 21
+    },
+    {
+      "difficulty": 0.142857,
+      "difficulty_band": "lower-middle",
+      "difficulty_rank": 52,
+      "families": "generic_or_low_level",
+      "gate_count": 6,
+      "gate_entropy": 0.45056120886630463,
+      "gate_type_count": 2,
+      "gate_types": {
+        "cx": 5,
+        "h": 1
+      },
+      "instruction": "Create a Qiskit circuit on 7 qubits that applies H to qubit 3, then CNOTs in this order: 0\u21926, 6\u21920, 0\u21921, 3\u21921, and 3\u21920.",
+      "model_count": 21,
+      "num_clbits": 0,
+      "num_qubits": 7,
+      "prompt_id": "pqid_bench_external_gen_0067",
+      "reference_tape": [
+        {
+          "clbits": [],
+          "name": "h",
+          "params": [],
+          "qubits": [
+            3
+          ]
+        },
+        {
+          "clbits": [],
+          "name": "cx",
+          "params": [],
+          "qubits": [
+            0,
+            6
+          ]
+        },
+        {
+          "clbits": [],
+          "name": "cx",
+          "params": [],
+          "qubits": [
+            6,
+            0
+          ]
+        },
+        {
+          "clbits": [],
+          "name": "cx",
+          "params": [],
+          "qubits": [
+            0,
+            1
+          ]
+        },
+        {
+          "clbits": [],
+          "name": "cx",
+          "params": [],
+          "qubits": [
+            3,
+            1
+          ]
+        },
+        {
+          "clbits": [],
+          "name": "cx",
+          "params": [],
+          "qubits": [
+            3,
+            0
+          ]
+        }
+      ],
+      "row_id": "8cd536eedc26f0d18f9f37bc3bd735c7",
+      "solved_models": 18
+    },
+    {
+      "difficulty": 0.904762,
+      "difficulty_band": "upper-middle",
+      "difficulty_rank": 103,
+      "families": "error_correction",
+      "gate_count": 3,
+      "gate_entropy": 1.0397207708399179,
+      "gate_type_count": 3,
+      "gate_types": {
+        "barrier": 1,
+        "cx": 2,
+        "h": 1
+      },
+      "instruction": "Create a Qiskit circuit for the encoding step of the three-qubit bit-flip code: put q[0] into superposition with an H gate, copy it to q[1] and q[2] with two CNOTs, and then place a barrier across the data qubits and the single ancilla register.",
+      "model_count": 21,
+      "num_clbits": 3,
+      "num_qubits": 4,
+      "prompt_id": "pqid_bench_external_gen_0011",
+      "reference_tape": [
+        {
+          "clbits": [],
+          "name": "h",
+          "params": [],
+          "qubits": [
+            0
+          ]
+        },
+        {
+          "clbits": [],
+          "name": "cx",
+          "params": [],
+          "qubits": [
+            0,
+            1
+          ]
+        },
+        {
+          "clbits": [],
+          "name": "cx",
+          "params": [],
+          "qubits": [
+            0,
+            2
+          ]
+        },
+        {
+          "clbits": [],
+          "name": "barrier",
+          "params": [],
+          "qubits": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "row_id": "3a1ff95d88222b8cd707324a68cb2993",
+      "solved_models": 2
+    },
+    {
+      "difficulty": 1.0,
+      "difficulty_band": "hardest",
+      "difficulty_rank": 154,
+      "families": "arithmetic_toffoli;deep_mixed_rotation",
+      "gate_count": 25,
+      "gate_entropy": 2.5534545315306527,
+      "gate_type_count": 15,
+      "gate_types": {
+        "ccx": 4,
+        "cswap": 4,
+        "cz": 1,
+        "h": 1,
+        "id": 1,
+        "p": 1,
+        "rx": 1,
+        "rxx": 2,
+        "ry": 1,
+        "rzz": 2,
+        "s": 2,
+        "swap": 1,
+        "sx": 2,
+        "x": 1,
+        "z": 1
+      },
+      "instruction": "Create a 3-qubit Qiskit circuit with a deep, mixed gate pattern that includes Fredkin, Toffoli, CZ, SWAP, RZZ, RXX, and single-qubit phase/rotation gates, using angles like \u03c0/8, \u03c0/13, \u03c0/3, \u03c0/2, \u03c0, and \u03c0/26.",
+      "model_count": 21,
+      "num_clbits": 3,
+      "num_qubits": 3,
+      "prompt_id": "pqid_bench_external_gen_0106",
+      "reference_tape": [
+        {
+          "clbits": [],
+          "name": "cswap",
+          "params": [],
+          "qubits": [
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "clbits": [],
+          "name": "cz",
+          "params": [],
+          "qubits": [
+            0,
+            1
+          ]
+        },
+        {
+          "clbits": [],
+          "name": "ccx",
+          "params": [],
+          "qubits": [
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "clbits": [],
+          "name": "x",
+          "params": [],
+          "qubits": [
+            2
+          ]
+        },
+        {
+          "clbits": [],
+          "name": "ccx",
+          "params": [],
+          "qubits": [
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "clbits": [],
+          "name": "cswap",
+          "params": [],
+          "qubits": [
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "clbits": [],
+          "name": "swap",
+          "params": [],
+          "qubits": [
+            2,
+            1
+          ]
+        },
+        {
+          "clbits": [],
+          "name": "ccx",
+          "params": [],
+          "qubits": [
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "clbits": [],
+          "name": "ccx",
+          "params": [],
+          "qubits": [
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "clbits": [],
+          "name": "rzz",
+          "params": [
+            {
+              "kind": "numeric",
+              "value": 0.392699081699
+            }
+          ],
+          "qubits": [
+            0,
+            2
+          ]
+        },
+        {
+          "clbits": [],
+          "name": "cswap",
+          "params": [],
+          "qubits": [
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "clbits": [],
+          "name": "cswap",
+          "params": [],
+          "qubits": [
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "clbits": [],
+          "name": "z",
+          "params": [],
+          "qubits": [
+            2
+          ]
+        },
+        {
+          "clbits": [],
+          "name": "s",
+          "params": [],
+          "qubits": [
+            1
+          ]
+        },
+        {
+          "clbits": [],
+          "name": "s",
+          "params": [],
+          "qubits": [
+            1
+          ]
+        },
+        {
+          "clbits": [],
+          "name": "id",
+          "params": [],
+          "qubits": [
+            2
+          ]
+        },
+        {
+          "clbits": [],
+          "name": "h",
+          "params": [],
+          "qubits": [
+            0
+          ]
+        },
+        {
+          "clbits": [],
+          "name": "ry",
+          "params": [
+            {
+              "kind": "numeric",
+              "value": 0.241660973353
+            }
+          ],
+          "qubits": [
+            2
+          ]
+        },
+        {
+          "clbits": [],
+          "name": "rxx",
+          "params": [
+            {
+              "kind": "numeric",
+              "value": 3.14159265359
+            }
+          ],
+          "qubits": [
+            0,
+            2
+          ]
+        },
+        {
+          "clbits": [],
+          "name": "rxx",
+          "params": [
+            {
+              "kind": "numeric",
+              "value": 1.570796326795
+            }
+          ],
+          "qubits": [
+            0,
+            2
+          ]
+        },
+        {
+          "clbits": [],
+          "name": "p",
+          "params": [
+            {
+              "kind": "numeric",
+              "value": 1.047197551197
+            }
+          ],
+          "qubits": [
+            2
+          ]
+        },
+        {
+          "clbits": [],
+          "name": "sx",
+          "params": [],
+          "qubits": [
+            0
+          ]
+        },
+        {
+          "clbits": [],
+          "name": "sx",
+          "params": [],
+          "qubits": [
+            1
+          ]
+        },
+        {
+          "clbits": [],
+          "name": "rzz",
+          "params": [
+            {
+              "kind": "numeric",
+              "value": 3.14159265359
+            }
+          ],
+          "qubits": [
+            0,
+            2
+          ]
+        },
+        {
+          "clbits": [],
+          "name": "rx",
+          "params": [
+            {
+              "kind": "numeric",
+              "value": 0.120830486677
+            }
+          ],
+          "qubits": [
+            1
+          ]
+        }
+      ],
+      "row_id": "11cae7dcacd9d142fb416ef9ee8b69d5",
+      "solved_models": 0
+    }
+  ],
+  "selection_rule": "Sort all 154 held-out prompts by ascending item difficulty, then by gate-type count, gate count, and prompt_id. Select rank positions 1, round((n-1)/3)+1, round(2*(n-1)/3)+1, and n."
+}

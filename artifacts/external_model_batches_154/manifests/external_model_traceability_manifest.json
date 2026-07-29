@@ -1,0 +1,317 @@
+{
+  "evaluation_commands": [
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches_154/responses/openai_gpt-5_5_responses.jsonl --output-dir artifacts/external_model_batches_154/evaluations/openai_gpt-5_5",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches_154/responses/openai_gpt-5_4-mini_responses.jsonl --output-dir artifacts/external_model_batches_154/evaluations/openai_gpt-5_4-mini",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches_154/responses/anthropic_claude-sonnet-4-6_responses.jsonl --output-dir artifacts/external_model_batches_154/evaluations/anthropic_claude-sonnet-4-6",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches_154/responses/anthropic_claude-opus-4-8_responses.jsonl --output-dir artifacts/external_model_batches_154/evaluations/anthropic_claude-opus-4-8",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches_154/responses/google_gemini-2_5-pro_responses.jsonl --output-dir artifacts/external_model_batches_154/evaluations/google_gemini-2_5-pro",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches_154/responses/google_gemini-3_1-pro-preview_responses.jsonl --output-dir artifacts/external_model_batches_154/evaluations/google_gemini-3_1-pro-preview",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches_154/responses/deepseek_deepseek-v4-pro_responses.jsonl --output-dir artifacts/external_model_batches_154/evaluations/deepseek_deepseek-v4-pro",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches_154/responses/deepseek_deepseek-v4-flash_responses.jsonl --output-dir artifacts/external_model_batches_154/evaluations/deepseek_deepseek-v4-flash",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches_154/responses/groq_llama-3_3-70b-versatile_responses.jsonl --output-dir artifacts/external_model_batches_154/evaluations/groq_llama-3_3-70b-versatile",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches_154/responses/groq_qwen_qwen3-32b_responses.jsonl --output-dir artifacts/external_model_batches_154/evaluations/groq_qwen_qwen3-32b",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches_154/responses/groq_openai_gpt-oss-120b_responses.jsonl --output-dir artifacts/external_model_batches_154/evaluations/groq_openai_gpt-oss-120b",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches_154/responses/groq_llama-3_1-8b-instant_responses.jsonl --output-dir artifacts/external_model_batches_154/evaluations/groq_llama-3_1-8b-instant",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches_154/responses/groq_openai_gpt-oss-20b_responses.jsonl --output-dir artifacts/external_model_batches_154/evaluations/groq_openai_gpt-oss-20b",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches_154/responses/groq_meta-llama_llama-4-scout-17b-16e-instruct_responses.jsonl --output-dir artifacts/external_model_batches_154/evaluations/groq_meta-llama_llama-4-scout-17b-16e-instruct",
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/pqid_bench_external_generation_prompts.jsonl --template-path artifacts/pqid_bench_external_generation_response_template.jsonl --response-path artifacts/external_model_batches_154/responses/github_models_mistral-ai_codestral-2501_responses.jsonl --output-dir artifacts/external_model_batches_154/evaluations/github_models_mistral-ai_codestral-2501"
+  ],
+  "exported_at_utc": "2026-07-12T09:35:13+00:00",
+  "files": [
+    {
+      "kind": "request_jsonl",
+      "model": "gpt-5.5",
+      "path": "artifacts/external_model_batches_154/requests/openai_gpt-5_5_requests.jsonl",
+      "provider": "openai",
+      "rows": 154,
+      "sha256": "c8658a19ddcf166e23db668fd819d01b2c3fed2d9654724a170580211bb923bc"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "gpt-5.5",
+      "path": "artifacts/external_model_batches_154/responses/openai_gpt-5_5_responses_template.jsonl",
+      "provider": "openai",
+      "rows": 154,
+      "sha256": "8faf3ac2a66690e1fac0419fba77830e9ac4c5f36188e7d52cd8d78deb0f127d"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "gpt-5.4-mini",
+      "path": "artifacts/external_model_batches_154/requests/openai_gpt-5_4-mini_requests.jsonl",
+      "provider": "openai",
+      "rows": 154,
+      "sha256": "8043bb12c8a1926f8318b052d5bd4931009ee6d2ed9e11dc81c5e32cd00e6c1e"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "gpt-5.4-mini",
+      "path": "artifacts/external_model_batches_154/responses/openai_gpt-5_4-mini_responses_template.jsonl",
+      "provider": "openai",
+      "rows": 154,
+      "sha256": "2453f0a60a049ae49b9a12d8e13fb0a2df9bd4f2c7203755f0afb869b703b4e6"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "claude-sonnet-4-6",
+      "path": "artifacts/external_model_batches_154/requests/anthropic_claude-sonnet-4-6_requests.jsonl",
+      "provider": "anthropic",
+      "rows": 154,
+      "sha256": "70afa548d72c6b0629ffe07e3ac9467ec1031648ab52f4e9fe7968e53e78f811"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "claude-sonnet-4-6",
+      "path": "artifacts/external_model_batches_154/responses/anthropic_claude-sonnet-4-6_responses_template.jsonl",
+      "provider": "anthropic",
+      "rows": 154,
+      "sha256": "90aa62de85c1e4f57083ff8ed8d89ee9cab4b3d29682c9a18a1b635d1a41d046"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "claude-opus-4-8",
+      "path": "artifacts/external_model_batches_154/requests/anthropic_claude-opus-4-8_requests.jsonl",
+      "provider": "anthropic",
+      "rows": 154,
+      "sha256": "bffbc8a4156b1b3c72070de4a267ce70c6ee022a00a19042294d9fcea9fb0ea7"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "claude-opus-4-8",
+      "path": "artifacts/external_model_batches_154/responses/anthropic_claude-opus-4-8_responses_template.jsonl",
+      "provider": "anthropic",
+      "rows": 154,
+      "sha256": "317229a98cf54533af0ef12c71b2cd0b32c43fec4f515b0261d9d99de73c6b9c"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "gemini-2.5-pro",
+      "path": "artifacts/external_model_batches_154/requests/google_gemini-2_5-pro_requests.jsonl",
+      "provider": "google",
+      "rows": 154,
+      "sha256": "a150bbd08669a8d41e599cbbe152ed80df8a0b6868ece5698df3d707e78feac0"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "gemini-2.5-pro",
+      "path": "artifacts/external_model_batches_154/responses/google_gemini-2_5-pro_responses_template.jsonl",
+      "provider": "google",
+      "rows": 154,
+      "sha256": "edea6c58da2c254451e11e1fc8de6b45ee4ae880d4f3b0f8505faf685ad91359"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "gemini-3.1-pro-preview",
+      "path": "artifacts/external_model_batches_154/requests/google_gemini-3_1-pro-preview_requests.jsonl",
+      "provider": "google",
+      "rows": 154,
+      "sha256": "d801c16ce802c3aff44061f3c6d4552eb9cca615dc242ea5eb9e6de21f4011d2"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "gemini-3.1-pro-preview",
+      "path": "artifacts/external_model_batches_154/responses/google_gemini-3_1-pro-preview_responses_template.jsonl",
+      "provider": "google",
+      "rows": 154,
+      "sha256": "530ce3942a46c19e2ac25634fe668e2623fc518e692be961db395f02f6d4f0ed"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "deepseek-v4-pro",
+      "path": "artifacts/external_model_batches_154/requests/deepseek_deepseek-v4-pro_requests.jsonl",
+      "provider": "deepseek",
+      "rows": 154,
+      "sha256": "f7ea00c4b62204da684439e8960816f140515fd51fa4abd9a83897c35c62d4f2"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "deepseek-v4-pro",
+      "path": "artifacts/external_model_batches_154/responses/deepseek_deepseek-v4-pro_responses_template.jsonl",
+      "provider": "deepseek",
+      "rows": 154,
+      "sha256": "ca56fe984e909a7f08c72d2f4b69fdcb67fcef0b2ea8c77f1e88193ea5f0ac00"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "deepseek-v4-flash",
+      "path": "artifacts/external_model_batches_154/requests/deepseek_deepseek-v4-flash_requests.jsonl",
+      "provider": "deepseek",
+      "rows": 154,
+      "sha256": "ab9ddef2280a043d5c72dfa6b0b126786075f2f17a0144e0ac885ebaf3dd41eb"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "deepseek-v4-flash",
+      "path": "artifacts/external_model_batches_154/responses/deepseek_deepseek-v4-flash_responses_template.jsonl",
+      "provider": "deepseek",
+      "rows": 154,
+      "sha256": "d3497aa2d45e49230bf9fdc49d20ddafa49e7a0f7df823cb702974b0ae908c3d"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "llama-3.3-70b-versatile",
+      "path": "artifacts/external_model_batches_154/requests/groq_llama-3_3-70b-versatile_requests.jsonl",
+      "provider": "groq",
+      "rows": 154,
+      "sha256": "d354be285dc29f3bdcbe5b8a8f128fdda2f91e1807d3b5b796cf20104ab79d1b"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "llama-3.3-70b-versatile",
+      "path": "artifacts/external_model_batches_154/responses/groq_llama-3_3-70b-versatile_responses_template.jsonl",
+      "provider": "groq",
+      "rows": 154,
+      "sha256": "a3ce85a380b1bae5e8ace8dc5bb48edab45d9ab9048ccd40b6e662adb76cca47"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "qwen/qwen3-32b",
+      "path": "artifacts/external_model_batches_154/requests/groq_qwen_qwen3-32b_requests.jsonl",
+      "provider": "groq",
+      "rows": 154,
+      "sha256": "6e036bf09a8ed607da95ab2696b7a9d857652fc3a633d4a804282c8433528d05"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "qwen/qwen3-32b",
+      "path": "artifacts/external_model_batches_154/responses/groq_qwen_qwen3-32b_responses_template.jsonl",
+      "provider": "groq",
+      "rows": 154,
+      "sha256": "e448f6d0e3e62c3e3cafca9e672f629edc4575cd52742c961ac0d933c2509b2e"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "openai/gpt-oss-120b",
+      "path": "artifacts/external_model_batches_154/requests/groq_openai_gpt-oss-120b_requests.jsonl",
+      "provider": "groq",
+      "rows": 154,
+      "sha256": "8bac69971e05d6fcccbf5833a118469d435179221a59550aa1dd1f2b1c54e06d"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "openai/gpt-oss-120b",
+      "path": "artifacts/external_model_batches_154/responses/groq_openai_gpt-oss-120b_responses_template.jsonl",
+      "provider": "groq",
+      "rows": 154,
+      "sha256": "44e632f7f7553f17203cc1b8751174476b5552a6a265514a58dda5f8c7a44b3e"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "llama-3.1-8b-instant",
+      "path": "artifacts/external_model_batches_154/requests/groq_llama-3_1-8b-instant_requests.jsonl",
+      "provider": "groq",
+      "rows": 154,
+      "sha256": "59b1c68876e47caed987a883ac8e1767a7b191f6db462a237f5e1946dd4bc71d"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "llama-3.1-8b-instant",
+      "path": "artifacts/external_model_batches_154/responses/groq_llama-3_1-8b-instant_responses_template.jsonl",
+      "provider": "groq",
+      "rows": 154,
+      "sha256": "41d2137d9d94e70e0b14e5abfa5d22d00dd151038c91a6e8a3b73bceb85ac529"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "openai/gpt-oss-20b",
+      "path": "artifacts/external_model_batches_154/requests/groq_openai_gpt-oss-20b_requests.jsonl",
+      "provider": "groq",
+      "rows": 154,
+      "sha256": "6552aeaa6a4ca0299428daa967e26ff683ef955d88d5a7e86ca6a11af8dea8cf"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "openai/gpt-oss-20b",
+      "path": "artifacts/external_model_batches_154/responses/groq_openai_gpt-oss-20b_responses_template.jsonl",
+      "provider": "groq",
+      "rows": 154,
+      "sha256": "86c350177ee9b78253d3f2e56e2b9b4460d4d5acba15b9218452fa54e1cd0323"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "path": "artifacts/external_model_batches_154/requests/groq_meta-llama_llama-4-scout-17b-16e-instruct_requests.jsonl",
+      "provider": "groq",
+      "rows": 154,
+      "sha256": "6c28742b8bb78c3983be315680ceb000c57f1bc73f577ef19020ca74031c263c"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "path": "artifacts/external_model_batches_154/responses/groq_meta-llama_llama-4-scout-17b-16e-instruct_responses_template.jsonl",
+      "provider": "groq",
+      "rows": 154,
+      "sha256": "3829573b7488f141c50eb5ec4ee5f23fb30ef9e53bfce0a66b6702ec1b0c3794"
+    },
+    {
+      "kind": "request_jsonl",
+      "model": "mistral-ai/codestral-2501",
+      "path": "artifacts/external_model_batches_154/requests/github_models_mistral-ai_codestral-2501_requests.jsonl",
+      "provider": "github_models",
+      "rows": 154,
+      "sha256": "b39adf09d2bd54f58d8d71abcd80d0cbc9e2f64393306c4c35498f31f3e9e3ce"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "mistral-ai/codestral-2501",
+      "path": "artifacts/external_model_batches_154/responses/github_models_mistral-ai_codestral-2501_responses_template.jsonl",
+      "provider": "github_models",
+      "rows": 154,
+      "sha256": "180c39ae741aa0fe75979903c851fe6aa18cb305edce4422f88a6fd5ca9307b9"
+    },
+    {
+      "kind": "model_matrix_json",
+      "path": "artifacts/external_model_batches_154/external_model_run_matrix.json",
+      "rows": 15,
+      "sha256": "fb15046d2b4f8b291ef02a12a983ab1d495e8df02b85e880bfea08bb1f30f965"
+    },
+    {
+      "kind": "model_matrix_md",
+      "path": "artifacts/external_model_batches_154/external_model_run_matrix.md",
+      "rows": 15,
+      "sha256": "8eaf9bbf8bc25ad683f1e2ec00cf8a18c5007a26ceac53074585547a71f18101"
+    }
+  ],
+  "generation_config": {
+    "max_output_tokens": 2048,
+    "n": 1,
+    "single_pass": true,
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "harness_script": {
+    "path": "scripts/run_pqid_bench_external_model_generation_harness.py",
+    "sha256": "109d507be93d1e57741fb09d0c114cc5f054167786717d4d9350f07ac0c09209"
+  },
+  "include_appendix": false,
+  "include_bridge": true,
+  "include_deepinfra": false,
+  "include_github_models": true,
+  "include_nvidia_nim": false,
+  "include_official_deepseek": true,
+  "include_open_breadth": true,
+  "only_targets": [
+    "openai:gpt-5.5",
+    "openai:gpt-5.4-mini",
+    "anthropic:claude-sonnet-4-6",
+    "anthropic:claude-opus-4-8",
+    "google:gemini-2.5-pro",
+    "google:gemini-3.1-pro-preview",
+    "deepseek:deepseek-v4-pro",
+    "deepseek:deepseek-v4-flash",
+    "groq:llama-3.3-70b-versatile",
+    "groq:qwen/qwen3-32b",
+    "groq:openai/gpt-oss-120b",
+    "groq:llama-3.1-8b-instant",
+    "groq:openai/gpt-oss-20b",
+    "groq:meta-llama/llama-4-scout-17b-16e-instruct",
+    "github_models:mistral-ai/codestral-2501"
+  ],
+  "overwrite_existing": false,
+  "prompt_count": 154,
+  "prompt_manifest": {
+    "path": "artifacts/test_split_154/pqid_bench_external_generation_prompts_154.jsonl",
+    "sha256": "cc6ba5c8a1fbf8677bd016d3cad47c7934981a685cc51052bdc3beb03f99b6eb"
+  },
+  "schema_version": "pqid-bench-external-model-batch-v1",
+  "target_count": 15
+}

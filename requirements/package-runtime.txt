@@ -1,0 +1,1 @@
+# The pqid-bench core CLI and Python API have no third-party runtime dependencies.

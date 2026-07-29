@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pqid-bench.org/schemas/1.0.0/benchmark-record.schema.json",
+  "title": "PQID-Bench benchmark record",
+  "type": "object",
+  "required": ["row_id", "instruction"],
+  "properties": {
+    "row_id": {"type": "string", "minLength": 1},
+    "instruction": {"type": "string", "minLength": 1},
+    "source_code": {"type": "string"},
+    "pqid_bench_effective_release_bucket": {
+      "enum": ["strict_n8", "extended_n8"]
+    }
+  },
+  "additionalProperties": true
+}

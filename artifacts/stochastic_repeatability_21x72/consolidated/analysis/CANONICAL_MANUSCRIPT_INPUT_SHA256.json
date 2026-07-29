@@ -1,0 +1,43 @@
+{
+  "schema_version": "pqid-bench-canonical-manuscript-inputs-v1",
+  "frozen_at": "2026-07-16T19:03:46.7408783+09:00",
+  "empirical_program_status": "frozen",
+  "expected_scored_cells": 4536,
+  "files": [
+    {
+      "path": "artifacts/stochastic_repeatability_21x72/consolidated/analysis/PQID_BENCH_STOCHASTIC_REPEATABILITY_REPORT.md",
+      "bytes": 17324,
+      "sha256": "ce1eeabe59b69f5ffcbe5538078f32e868773447b8042c98b3e8df03cda58107"
+    },
+    {
+      "path": "artifacts/stochastic_repeatability_21x72/consolidated/analysis/pqid_bench_stochastic_repeatability_analysis.json",
+      "bytes": 82768,
+      "sha256": "468769f9051fbf481150d90016de725896c451bd7eabe3eeb772b3411f9583bb"
+    },
+    {
+      "path": "artifacts/stochastic_repeatability_21x72/consolidated/analysis/pqid_bench_stochastic_repeatability_cell_outcomes.csv",
+      "bytes": 1943817,
+      "sha256": "9b71c2044db03776f95a5e8d07948da3941ceea4c3dbfd14d5f4819619cf234f"
+    },
+    {
+      "path": "artifacts/stochastic_repeatability_21x72/consolidated/analysis/pqid_bench_stochastic_repeatability_model_summary.csv",
+      "bytes": 5334,
+      "sha256": "ead5656381b8871e483e8f7d25dc87202e1bcb8bdb9d78e187ba301a04c591df"
+    },
+    {
+      "path": "artifacts/stochastic_repeatability_21x72/consolidated/analysis/pqid_bench_stochastic_repeatability_file_manifest.json",
+      "bytes": 97766,
+      "sha256": "e1ca64f1157df9bae678b8b2e15bd29d2ea6a51bba15b2cffccc1fabb318413d"
+    },
+    {
+      "path": "artifacts/stochastic_repeatability_21x72/consolidated/analysis/pqid_bench_stochastic_repeatability_panel.svg",
+      "bytes": 51691,
+      "sha256": "e2b2057c78f7ec2713b2fe6141ca0131533015a3cae707e9e60e2faf508f6b31"
+    },
+    {
+      "path": "artifacts/stochastic_repeatability_21x72/consolidated/analysis/pqid_bench_stochastic_repeatability_panel.png",
+      "bytes": 270766,
+      "sha256": "8b391d4863c609abf5931115ddcf807d5a371295bb6a701c741cd73b9b52137b"
+    }
+  ]
+}

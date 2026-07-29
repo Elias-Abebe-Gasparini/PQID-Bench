@@ -1,0 +1,599 @@
+{
+  "lower_bound": {
+    "execution_success": 0.9,
+    "gate_count_match": 0.37142857142857144,
+    "gate_types_match": 0.2571428571428571,
+    "name": "word_tfidf_train_instruction_copy",
+    "num_qubits_match": 0.5714285714285714,
+    "qasm3_export_success": 0.9,
+    "structural_all_match": 0.24285714285714285
+  },
+  "rows": [
+    {
+      "execution_errors": {
+        "NameError": 1
+      },
+      "execution_success": 69,
+      "execution_success_rate": 0.9857142857142858,
+      "finish_counts": {
+        "completed": 69,
+        "incomplete:max_output_tokens": 1
+      },
+      "gate_count_match": 66,
+      "gate_count_match_rate": 0.9428571428571428,
+      "gate_types_match": 49,
+      "gate_types_match_rate": 0.7,
+      "num_clbits_match": 60,
+      "num_clbits_match_rate": 0.8571428571428571,
+      "num_qubits_match": 65,
+      "num_qubits_match_rate": 0.9285714285714286,
+      "planned_model": "gpt-5.5",
+      "provider": "OpenAI",
+      "qasm3_export_success": 69,
+      "qasm3_export_success_rate": 0.9857142857142858,
+      "report_path": "artifacts/external_model_batches/evaluations/openai_gpt-5_5/pqid_bench_external_model_generation_harness_report.json",
+      "resolved_model": "gpt-5.5-2026-04-23",
+      "role": "frontier coding/reasoning",
+      "rows": 70,
+      "slug": "openai_gpt-5_5",
+      "structural_all_match": 44,
+      "structural_all_match_rate": 0.6285714285714286,
+      "structural_mismatch_checks": {
+        "gate_count_match": 3,
+        "gate_types_match": 20,
+        "num_clbits_match": 9,
+        "num_qubits_match": 4
+      }
+    },
+    {
+      "execution_errors": {
+        "AttributeError": 2
+      },
+      "execution_success": 68,
+      "execution_success_rate": 0.9714285714285714,
+      "finish_counts": {
+        "completed": 70
+      },
+      "gate_count_match": 65,
+      "gate_count_match_rate": 0.9285714285714286,
+      "gate_types_match": 49,
+      "gate_types_match_rate": 0.7,
+      "num_clbits_match": 61,
+      "num_clbits_match_rate": 0.8714285714285714,
+      "num_qubits_match": 66,
+      "num_qubits_match_rate": 0.9428571428571428,
+      "planned_model": "gpt-5.4-mini",
+      "provider": "OpenAI",
+      "qasm3_export_success": 68,
+      "qasm3_export_success_rate": 0.9714285714285714,
+      "report_path": "artifacts/external_model_batches/evaluations/openai_gpt-5_4-mini/pqid_bench_external_model_generation_harness_report.json",
+      "resolved_model": "gpt-5.4-mini-2026-03-17",
+      "role": "cost/latency frontier comparison",
+      "rows": 70,
+      "slug": "openai_gpt-5_4-mini",
+      "structural_all_match": 45,
+      "structural_all_match_rate": 0.6428571428571429,
+      "structural_mismatch_checks": {
+        "gate_count_match": 3,
+        "gate_types_match": 19,
+        "num_clbits_match": 7,
+        "num_qubits_match": 2
+      }
+    },
+    {
+      "execution_errors": {
+        "NameError": 5
+      },
+      "execution_success": 65,
+      "execution_success_rate": 0.9285714285714286,
+      "finish_counts": {
+        "end_turn": 70
+      },
+      "gate_count_match": 62,
+      "gate_count_match_rate": 0.8857142857142857,
+      "gate_types_match": 46,
+      "gate_types_match_rate": 0.6571428571428571,
+      "num_clbits_match": 59,
+      "num_clbits_match_rate": 0.8428571428571429,
+      "num_qubits_match": 62,
+      "num_qubits_match_rate": 0.8857142857142857,
+      "planned_model": "claude-sonnet-4-6",
+      "provider": "Anthropic",
+      "qasm3_export_success": 65,
+      "qasm3_export_success_rate": 0.9285714285714286,
+      "report_path": "artifacts/external_model_batches/evaluations/anthropic_claude-sonnet-4-6/pqid_bench_external_model_generation_harness_report.json",
+      "resolved_model": "claude-sonnet-4-6",
+      "role": "independent frontier coding family",
+      "rows": 70,
+      "slug": "anthropic_claude-sonnet-4-6",
+      "structural_all_match": 43,
+      "structural_all_match_rate": 0.6142857142857143,
+      "structural_mismatch_checks": {
+        "gate_count_match": 3,
+        "gate_types_match": 19,
+        "num_clbits_match": 6,
+        "num_qubits_match": 3
+      }
+    },
+    {
+      "execution_errors": {},
+      "execution_success": 70,
+      "execution_success_rate": 1.0,
+      "finish_counts": {
+        "end_turn": 70
+      },
+      "gate_count_match": 66,
+      "gate_count_match_rate": 0.9428571428571428,
+      "gate_types_match": 48,
+      "gate_types_match_rate": 0.6857142857142857,
+      "num_clbits_match": 61,
+      "num_clbits_match_rate": 0.8714285714285714,
+      "num_qubits_match": 66,
+      "num_qubits_match_rate": 0.9428571428571428,
+      "planned_model": "claude-opus-4-8",
+      "provider": "Anthropic",
+      "qasm3_export_success": 70,
+      "qasm3_export_success_rate": 1.0,
+      "report_path": "artifacts/external_model_batches/evaluations/anthropic_claude-opus-4-8/pqid_bench_external_model_generation_harness_report.json",
+      "resolved_model": "claude-opus-4-8",
+      "role": "higher-capability Anthropic frontier comparison",
+      "rows": 70,
+      "slug": "anthropic_claude-opus-4-8",
+      "structural_all_match": 43,
+      "structural_all_match_rate": 0.6142857142857143,
+      "structural_mismatch_checks": {
+        "gate_count_match": 4,
+        "gate_types_match": 22,
+        "num_clbits_match": 9,
+        "num_qubits_match": 4
+      }
+    },
+    {
+      "execution_errors": {
+        "AttributeError": 5
+      },
+      "execution_success": 65,
+      "execution_success_rate": 0.9285714285714286,
+      "finish_counts": {
+        "MAX_TOKENS": 3,
+        "STOP": 67
+      },
+      "gate_count_match": 58,
+      "gate_count_match_rate": 0.8285714285714286,
+      "gate_types_match": 45,
+      "gate_types_match_rate": 0.6428571428571429,
+      "num_clbits_match": 60,
+      "num_clbits_match_rate": 0.8571428571428571,
+      "num_qubits_match": 60,
+      "num_qubits_match_rate": 0.8571428571428571,
+      "planned_model": "gemini-2.5-pro",
+      "provider": "Google",
+      "qasm3_export_success": 63,
+      "qasm3_export_success_rate": 0.9,
+      "report_path": "artifacts/external_model_batches/evaluations/google_gemini-2_5-pro/pqid_bench_external_model_generation_harness_report.json",
+      "resolved_model": "gemini-2.5-pro",
+      "role": "independent frontier coding family",
+      "rows": 70,
+      "slug": "google_gemini-2_5-pro",
+      "structural_all_match": 44,
+      "structural_all_match_rate": 0.6285714285714286,
+      "structural_mismatch_checks": {
+        "gate_count_match": 5,
+        "gate_types_match": 18,
+        "num_clbits_match": 3,
+        "num_qubits_match": 3
+      }
+    },
+    {
+      "execution_errors": {
+        "AttributeError": 1,
+        "SyntaxError": 1
+      },
+      "execution_success": 68,
+      "execution_success_rate": 0.9714285714285714,
+      "finish_counts": {
+        "MAX_TOKENS": 2,
+        "STOP": 68
+      },
+      "gate_count_match": 65,
+      "gate_count_match_rate": 0.9285714285714286,
+      "gate_types_match": 48,
+      "gate_types_match_rate": 0.6857142857142857,
+      "num_clbits_match": 61,
+      "num_clbits_match_rate": 0.8714285714285714,
+      "num_qubits_match": 64,
+      "num_qubits_match_rate": 0.9142857142857143,
+      "planned_model": "gemini-3.1-pro-preview",
+      "provider": "Google",
+      "qasm3_export_success": 68,
+      "qasm3_export_success_rate": 0.9714285714285714,
+      "report_path": "artifacts/external_model_batches/evaluations/google_gemini-3_1-pro-preview/pqid_bench_external_model_generation_harness_report.json",
+      "resolved_model": "gemini-3.1-pro-preview",
+      "role": "newer Google frontier coding/reasoning comparison",
+      "rows": 70,
+      "slug": "google_gemini-3_1-pro-preview",
+      "structural_all_match": 44,
+      "structural_all_match_rate": 0.6285714285714286,
+      "structural_mismatch_checks": {
+        "gate_count_match": 3,
+        "gate_types_match": 20,
+        "num_clbits_match": 7,
+        "num_qubits_match": 4
+      }
+    },
+    {
+      "execution_errors": {
+        "AttributeError": 3,
+        "NameError": 2
+      },
+      "execution_success": 65,
+      "execution_success_rate": 0.9285714285714286,
+      "finish_counts": {
+        "length": 2,
+        "stop": 68
+      },
+      "gate_count_match": 60,
+      "gate_count_match_rate": 0.8571428571428571,
+      "gate_types_match": 45,
+      "gate_types_match_rate": 0.6428571428571429,
+      "num_clbits_match": 56,
+      "num_clbits_match_rate": 0.8,
+      "num_qubits_match": 62,
+      "num_qubits_match_rate": 0.8857142857142857,
+      "planned_model": "deepseek-v4-pro",
+      "provider": "DeepSeek",
+      "qasm3_export_success": 64,
+      "qasm3_export_success_rate": 0.9142857142857143,
+      "report_path": "artifacts/external_model_batches/evaluations/deepseek_deepseek-v4-pro/pqid_bench_external_model_generation_harness_report.json",
+      "resolved_model": "deepseek-v4-pro",
+      "role": "official DeepSeek frontier coding/reasoning row",
+      "rows": 70,
+      "slug": "deepseek_deepseek-v4-pro",
+      "structural_all_match": 41,
+      "structural_all_match_rate": 0.5857142857142857,
+      "structural_mismatch_checks": {
+        "gate_count_match": 4,
+        "gate_types_match": 19,
+        "num_clbits_match": 8,
+        "num_qubits_match": 2
+      }
+    },
+    {
+      "execution_errors": {
+        "AttributeError": 2,
+        "ImportError": 1,
+        "NameError": 2
+      },
+      "execution_success": 65,
+      "execution_success_rate": 0.9285714285714286,
+      "finish_counts": {
+        "length": 2,
+        "stop": 68
+      },
+      "gate_count_match": 58,
+      "gate_count_match_rate": 0.8285714285714286,
+      "gate_types_match": 44,
+      "gate_types_match_rate": 0.6285714285714286,
+      "num_clbits_match": 58,
+      "num_clbits_match_rate": 0.8285714285714286,
+      "num_qubits_match": 61,
+      "num_qubits_match_rate": 0.8714285714285714,
+      "planned_model": "deepseek-v4-flash",
+      "provider": "DeepSeek",
+      "qasm3_export_success": 64,
+      "qasm3_export_success_rate": 0.9142857142857143,
+      "report_path": "artifacts/external_model_batches/evaluations/deepseek_deepseek-v4-flash/pqid_bench_external_model_generation_harness_report.json",
+      "resolved_model": "deepseek-v4-flash",
+      "role": "official DeepSeek fast/cost frontier comparison",
+      "rows": 70,
+      "slug": "deepseek_deepseek-v4-flash",
+      "structural_all_match": 41,
+      "structural_all_match_rate": 0.5857142857142857,
+      "structural_mismatch_checks": {
+        "gate_count_match": 6,
+        "gate_types_match": 20,
+        "num_clbits_match": 6,
+        "num_qubits_match": 3
+      }
+    },
+    {
+      "execution_errors": {
+        "AttributeError": 2,
+        "NameError": 1,
+        "TypeError": 1
+      },
+      "execution_success": 66,
+      "execution_success_rate": 0.9428571428571428,
+      "finish_counts": {
+        "stop": 70
+      },
+      "gate_count_match": 55,
+      "gate_count_match_rate": 0.7857142857142857,
+      "gate_types_match": 45,
+      "gate_types_match_rate": 0.6428571428571429,
+      "num_clbits_match": 54,
+      "num_clbits_match_rate": 0.7714285714285715,
+      "num_qubits_match": 63,
+      "num_qubits_match_rate": 0.9,
+      "planned_model": "llama-3.3-70b-versatile",
+      "provider": "Groq",
+      "qasm3_export_success": 66,
+      "qasm3_export_success_rate": 0.9428571428571428,
+      "report_path": "artifacts/external_model_batches/evaluations/groq_llama-3_3-70b-versatile/pqid_bench_external_model_generation_harness_report.json",
+      "resolved_model": "llama-3.3-70b-versatile",
+      "role": "free/low-cost open-weight Llama API bridge",
+      "rows": 70,
+      "slug": "groq_llama-3_3-70b-versatile",
+      "structural_all_match": 35,
+      "structural_all_match_rate": 0.5,
+      "structural_mismatch_checks": {
+        "gate_count_match": 11,
+        "gate_types_match": 21,
+        "num_clbits_match": 12,
+        "num_qubits_match": 3
+      }
+    },
+    {
+      "execution_errors": {
+        "AttributeError": 1,
+        "SyntaxError": 23
+      },
+      "execution_success": 46,
+      "execution_success_rate": 0.6571428571428571,
+      "finish_counts": {
+        "length": 13,
+        "stop": 57
+      },
+      "gate_count_match": 43,
+      "gate_count_match_rate": 0.6142857142857143,
+      "gate_types_match": 31,
+      "gate_types_match_rate": 0.44285714285714284,
+      "num_clbits_match": 37,
+      "num_clbits_match_rate": 0.5285714285714286,
+      "num_qubits_match": 46,
+      "num_qubits_match_rate": 0.6571428571428571,
+      "planned_model": "qwen/qwen3-32b",
+      "provider": "Groq",
+      "qasm3_export_success": 46,
+      "qasm3_export_success_rate": 0.6571428571428571,
+      "report_path": "artifacts/external_model_batches/evaluations/groq_qwen_qwen3-32b/pqid_bench_external_model_generation_harness_report.json",
+      "resolved_model": "qwen/qwen3-32b",
+      "role": "free/low-cost open-weight reasoning/code API bridge",
+      "rows": 70,
+      "slug": "groq_qwen_qwen3-32b",
+      "structural_all_match": 27,
+      "structural_all_match_rate": 0.38571428571428573,
+      "structural_mismatch_checks": {
+        "gate_count_match": 3,
+        "gate_types_match": 15,
+        "num_clbits_match": 9
+      }
+    },
+    {
+      "execution_errors": {
+        "AttributeError": 1,
+        "ImportError": 1,
+        "NameError": 2
+      },
+      "execution_success": 66,
+      "execution_success_rate": 0.9428571428571428,
+      "finish_counts": {
+        "stop": 70
+      },
+      "gate_count_match": 55,
+      "gate_count_match_rate": 0.7857142857142857,
+      "gate_types_match": 40,
+      "gate_types_match_rate": 0.5714285714285714,
+      "num_clbits_match": 57,
+      "num_clbits_match_rate": 0.8142857142857143,
+      "num_qubits_match": 63,
+      "num_qubits_match_rate": 0.9,
+      "planned_model": "openai/gpt-oss-120b",
+      "provider": "Groq",
+      "qasm3_export_success": 65,
+      "qasm3_export_success_rate": 0.9285714285714286,
+      "report_path": "artifacts/external_model_batches/evaluations/groq_openai_gpt-oss-120b/pqid_bench_external_model_generation_harness_report.json",
+      "resolved_model": "openai/gpt-oss-120b",
+      "role": "free/low-cost open-weight OpenAI-family API bridge",
+      "rows": 70,
+      "slug": "groq_openai_gpt-oss-120b",
+      "structural_all_match": 37,
+      "structural_all_match_rate": 0.5285714285714286,
+      "structural_mismatch_checks": {
+        "gate_count_match": 10,
+        "gate_types_match": 25,
+        "num_clbits_match": 8,
+        "num_qubits_match": 2
+      }
+    },
+    {
+      "execution_errors": {
+        "AttributeError": 2,
+        "NameError": 9
+      },
+      "execution_success": 59,
+      "execution_success_rate": 0.8428571428571429,
+      "finish_counts": {
+        "length": 2,
+        "stop": 68
+      },
+      "gate_count_match": 55,
+      "gate_count_match_rate": 0.7857142857142857,
+      "gate_types_match": 40,
+      "gate_types_match_rate": 0.5714285714285714,
+      "num_clbits_match": 53,
+      "num_clbits_match_rate": 0.7571428571428571,
+      "num_qubits_match": 57,
+      "num_qubits_match_rate": 0.8142857142857143,
+      "planned_model": "openai/gpt-oss-20b",
+      "provider": "Groq",
+      "qasm3_export_success": 59,
+      "qasm3_export_success_rate": 0.8428571428571429,
+      "report_path": "artifacts/external_model_batches/evaluations/groq_openai_gpt-oss-20b/pqid_bench_external_model_generation_harness_report.json",
+      "resolved_model": "openai/gpt-oss-20b",
+      "role": "size-control against GPT-OSS 120B",
+      "rows": 70,
+      "slug": "groq_openai_gpt-oss-20b",
+      "structural_all_match": 36,
+      "structural_all_match_rate": 0.5142857142857142,
+      "structural_mismatch_checks": {
+        "gate_count_match": 4,
+        "gate_types_match": 19,
+        "num_clbits_match": 6,
+        "num_qubits_match": 2
+      }
+    },
+    {
+      "execution_errors": {
+        "AttributeError": 2,
+        "CircuitError": 1,
+        "ImportError": 4,
+        "NameError": 27,
+        "SyntaxError": 3
+      },
+      "execution_success": 33,
+      "execution_success_rate": 0.4714285714285714,
+      "finish_counts": {
+        "length": 2,
+        "stop": 68
+      },
+      "gate_count_match": 26,
+      "gate_count_match_rate": 0.37142857142857144,
+      "gate_types_match": 16,
+      "gate_types_match_rate": 0.22857142857142856,
+      "num_clbits_match": 32,
+      "num_clbits_match_rate": 0.45714285714285713,
+      "num_qubits_match": 31,
+      "num_qubits_match_rate": 0.44285714285714284,
+      "planned_model": "llama-3.1-8b-instant",
+      "provider": "Groq",
+      "qasm3_export_success": 32,
+      "qasm3_export_success_rate": 0.45714285714285713,
+      "report_path": "artifacts/external_model_batches/evaluations/groq_llama-3_1-8b-instant/pqid_bench_external_model_generation_harness_report.json",
+      "resolved_model": "llama-3.1-8b-instant",
+      "role": "fast small open-weight API bridge",
+      "rows": 70,
+      "slug": "groq_llama-3_1-8b-instant",
+      "structural_all_match": 16,
+      "structural_all_match_rate": 0.22857142857142856,
+      "structural_mismatch_checks": {
+        "gate_count_match": 6,
+        "gate_types_match": 16,
+        "num_qubits_match": 1
+      }
+    },
+    {
+      "execution_errors": {
+        "AttributeError": 2,
+        "CircuitError": 4,
+        "ImportError": 3,
+        "NameError": 11,
+        "TypeError": 1
+      },
+      "execution_success": 49,
+      "execution_success_rate": 0.7,
+      "finish_counts": {
+        "stop": 70
+      },
+      "gate_count_match": 39,
+      "gate_count_match_rate": 0.5571428571428572,
+      "gate_types_match": 28,
+      "gate_types_match_rate": 0.4,
+      "num_clbits_match": 45,
+      "num_clbits_match_rate": 0.6428571428571429,
+      "num_qubits_match": 47,
+      "num_qubits_match_rate": 0.6714285714285714,
+      "planned_model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "provider": "Groq",
+      "qasm3_export_success": 49,
+      "qasm3_export_success_rate": 0.7,
+      "report_path": "artifacts/external_model_batches/evaluations/groq_meta-llama_llama-4-scout-17b-16e-instruct/pqid_bench_external_model_generation_harness_report.json",
+      "resolved_model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "role": "optional newer Llama-family contrast",
+      "rows": 70,
+      "slug": "groq_meta-llama_llama-4-scout-17b-16e-instruct",
+      "structural_all_match": 27,
+      "structural_all_match_rate": 0.38571428571428573,
+      "structural_mismatch_checks": {
+        "gate_count_match": 10,
+        "gate_types_match": 21,
+        "num_clbits_match": 4,
+        "num_qubits_match": 2
+      }
+    },
+    {
+      "execution_errors": {
+        "AttributeError": 2,
+        "NameError": 1
+      },
+      "execution_success": 67,
+      "execution_success_rate": 0.9571428571428572,
+      "finish_counts": {
+        "stop": 70
+      },
+      "gate_count_match": 61,
+      "gate_count_match_rate": 0.8714285714285714,
+      "gate_types_match": 45,
+      "gate_types_match_rate": 0.6428571428571429,
+      "num_clbits_match": 60,
+      "num_clbits_match_rate": 0.8571428571428571,
+      "num_qubits_match": 65,
+      "num_qubits_match_rate": 0.9285714285714286,
+      "planned_model": "mistral-ai/codestral-2501",
+      "provider": "GitHub Models",
+      "qasm3_export_success": 67,
+      "qasm3_export_success_rate": 0.9571428571428572,
+      "report_path": "artifacts/external_model_batches/evaluations/github_models_mistral-ai_codestral-2501/pqid_bench_external_model_generation_harness_report.json",
+      "resolved_model": "codestral-2501",
+      "role": "code-specialized Mistral-family baseline",
+      "rows": 70,
+      "slug": "github_models_mistral-ai_codestral-2501",
+      "structural_all_match": 41,
+      "structural_all_match_rate": 0.5857142857142857,
+      "structural_mismatch_checks": {
+        "gate_count_match": 6,
+        "gate_types_match": 22,
+        "num_clbits_match": 7,
+        "num_qubits_match": 2
+      }
+    },
+    {
+      "execution_errors": {
+        "AttributeError": 19,
+        "CircuitError": 6,
+        "ImportError": 4,
+        "TypeError": 2
+      },
+      "execution_success": 39,
+      "execution_success_rate": 0.5571428571428572,
+      "finish_counts": {
+        "stop": 70
+      },
+      "gate_count_match": 30,
+      "gate_count_match_rate": 0.42857142857142855,
+      "gate_types_match": 25,
+      "gate_types_match_rate": 0.35714285714285715,
+      "num_clbits_match": 36,
+      "num_clbits_match_rate": 0.5142857142857142,
+      "num_qubits_match": 37,
+      "num_qubits_match_rate": 0.5285714285714286,
+      "planned_model": "apifreellm",
+      "provider": "ApiFreeLLM",
+      "qasm3_export_success": 38,
+      "qasm3_export_success_rate": 0.5428571428571428,
+      "report_path": "artifacts/external_model_batches/evaluations/apifreellm_apifreellm/pqid_bench_external_model_generation_harness_report.json",
+      "resolved_model": "apifreellm",
+      "role": "exploratory free-router baseline; not a named-model row",
+      "rows": 70,
+      "slug": "apifreellm_apifreellm",
+      "structural_all_match": 24,
+      "structural_all_match_rate": 0.34285714285714286,
+      "structural_mismatch_checks": {
+        "gate_count_match": 8,
+        "gate_types_match": 13,
+        "num_clbits_match": 2,
+        "num_qubits_match": 1
+      }
+    }
+  ]
+}

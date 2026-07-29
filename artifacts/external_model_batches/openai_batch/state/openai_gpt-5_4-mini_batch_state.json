@@ -1,0 +1,16 @@
+{
+  "batch_id": "batch_6a32c794e828819099d15054f0a989a0",
+  "completion_window": "24h",
+  "created_at": 1781712788,
+  "endpoint": "/v1/responses",
+  "error_file_id": null,
+  "errors": null,
+  "input_file_id": "file-RTrygaWp8B1vmb5ZqKm5Cx",
+  "output_file_id": "file-EkR7AooE7QqiixVdZ19myp",
+  "request_counts": {
+    "completed": 70,
+    "failed": 0,
+    "total": 70
+  },
+  "status": "completed"
+}

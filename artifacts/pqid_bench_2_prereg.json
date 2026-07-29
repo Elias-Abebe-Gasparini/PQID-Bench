@@ -1,0 +1,330 @@
+{
+  "artifact_type": "stage_1_prospective_preregistration_plan",
+  "artifact_version": "1.3.0",
+  "title": "Stage 1 prospective preregistration plan for PQID-Bench 2 semantic validity and family contrasts",
+  "created_date": "2026-07-28",
+  "status": "ready_for_public_stage_1_registration_no_pqid_bench_2_calls",
+  "study_objective": "Prospectively test and quantify model-level Semantic Void, distinguish semantic failure from semantic-preserving structural divergence, and evaluate secondary algorithm-family, scope, and name-visibility contrasts.",
+  "current_study_nonuse": {
+    "clean_generation_rows": 734,
+    "held_out_prompts": 154,
+    "model_prompt_cells": 3234,
+    "reanalyzed_for_planned_hypotheses": false
+  },
+  "registration": {
+    "platform": "OSF Registrations",
+    "registration_stage": 1,
+    "project_id": "pw4rs",
+    "project_url": "https://osf.io/pw4rs/",
+    "doi": null,
+    "registration_url": null,
+    "registered_at": null,
+    "required_timing": "stage_1_now_and_stage_2_implementation_freeze_before_any_pqid_bench_2_api_call",
+    "publication_gate_satisfied": false,
+    "self_reference_note": "OSF assigns the DOI after public submission; record it in a separately hashed registration receipt.",
+    "stage_1_scope": [
+      "hypotheses and analysis hierarchy",
+      "construct and estimand definitions",
+      "semantic and signature eligibility principles",
+      "oracle classes and qualification principle",
+      "confirmatory contrast families",
+      "noncontamination, amendment, and no-prior-call rules"
+    ],
+    "stage_2_required_before_api_calls": [
+      "final eligible prompt panel and hashes",
+      "semantic targets and validated oracle implementations",
+      "sample size and precision decision",
+      "model-provider routes and collection contract",
+      "activated contrasts and exact statistical specifications",
+      "analysis code commit and pretransmission checksums"
+    ]
+  },
+  "pretransmission_gate": {
+    "required_fields": [
+      "public OSF registration DOI in post-registration receipt",
+      "registration URL and timestamp",
+      "frozen prompt IDs and SHA-256 hashes",
+      "frozen semantic-target and target-signature hashes",
+      "semantic-oracle implementation, control, tolerance, and environment hashes",
+      "final model and provider-route roster",
+      "minimum family-scope cell sizes",
+      "sample-size and power or precision target",
+      "analysis code commit",
+      "multiplicity family",
+      "empty-output-directory assertion",
+      "immutable pretransmission bundle checksum"
+    ],
+    "api_calls_permitted_before_gate": false,
+    "outcome_access_permitted_for_prompt_selection": false
+  },
+  "constructs": {
+    "semantic_success": {
+      "symbol": "S_i(f)",
+      "definition": "One only when the extracted generated circuit satisfies the frozen task semantics under its preregistered semantic oracle; zero by convention when no circuit is available for semantic adjudication."
+    },
+    "semantic_void": {
+      "symbol": "V_i_sem(f)",
+      "definition": "E_i(f) * (1 - S_i(f)); a model-output state, not prompt ambiguity or structural nonmatch alone."
+    },
+    "semantic_void_rate_execution_conditioned": {
+      "symbol": "SVR_E(F,T_sem)",
+      "definition": "sum V_i_sem(f) divided by sum E_i(f) over the frozen semantically adjudicable panel."
+    },
+    "semantic_void_rate_assembly_conditioned": {
+      "symbol": "SVR_A(F,T_sem)",
+      "definition": "sum A_i(f) * (1 - S_i(f)) divided by sum A_i(f) over the same panel."
+    },
+    "semantic_preserving_structural_divergence": {
+      "symbol": "R_i_alt(f)",
+      "definition": "E_i(f) * (1 - M_i_sig(f)) * S_i(f)."
+    }
+  },
+  "prompt_eligibility": {
+    "source": {
+      "manifest": "manifests/PQID_BENCH_2_CANDIDATE_SOURCE_MANIFEST.json",
+      "path": "PQID/data/processed/seed_drafts_quality_aware_source_code_v1.jsonl",
+      "sha256": "62ef4939de8e690c408fc587c66198ecabf1f9b3c6d5b4cf6ccb7feaed7cd581",
+      "candidate_count": 734,
+      "gold_generation_count": 415,
+      "broad_generation_count": 319,
+      "interpretation": "frozen_sampling_frame_not_final_eligible_panel"
+    },
+    "semantic_module": {
+      "set": "T_sem",
+      "requirement": "Prompt wording uniquely determines a task-level semantic acceptance criterion; multiple valid circuit structures may be admitted."
+    },
+    "signature_module": {
+      "set": "T_sig",
+      "requirement": "Prompt wording additionally uniquely determines every component of the frozen reference-signature predicate.",
+      "relation": "T_sig is a subset of T_sem"
+    },
+    "current_exception_ids_excluded_if_retained": [
+      "0040",
+      "0117",
+      "0141",
+      "0142"
+    ],
+    "current_exception_interpretation": "Prompt-specification exceptions, not observed Semantic Void cases; excluded from signature contrasts if retained and eligible for semantic analysis only after a prospective semantic-identifiability audit.",
+    "new_identifiability_exceptions": "identified_separately_for_semantic_and_signature_modules_and_frozen_before_any_model_call",
+    "scope_codebook": "manually_audited_and_frozen_before_any_model_call",
+    "selection_uses_model_outcomes": false
+  },
+  "sample_size_decision_architecture": {
+    "maximum_candidate_frame": 734,
+    "stage_2_must_freeze": [
+      "semantic-eligible prompt count",
+      "signature-eligible prompt count",
+      "unique semantic-target cluster count",
+      "unique target-signature cluster count",
+      "model-route count",
+      "family-by-scope cell counts",
+      "planned model-prompt cell count",
+      "primary crossed-interval target half-width",
+      "minimum family-scope cell size",
+      "any cost-based maximum"
+    ],
+    "selection_inputs": "outcome_blind_eligibility_oracle_feasibility_precision_and_cost_only",
+    "model_outcomes_may_change_panel_size_or_balance": false,
+    "failed_precision_or_cell_rule": "affected_claim_reported_not_estimable"
+  },
+  "semantic_oracle_contract": {
+    "oracle_classes": [
+      "unitary_or_channel_equivalence",
+      "output_distribution_equivalence",
+      "task_specific_property_test"
+    ],
+    "freeze_before_api_calls": [
+      "oracle assignment by prompt",
+      "input states and test cases",
+      "numerical and statistical tolerances",
+      "shot budgets where applicable",
+      "decision and exclusion rules",
+      "positive reference controls",
+      "semantics-preserving alternative controls",
+      "targeted negative mutations",
+      "independent audit and adjudication procedure",
+      "oracle implementation and data hashes"
+    ],
+    "validation_gate": {
+      "every_reference_control_passes": true,
+      "minimum_control_sensitivity": 0.95,
+      "minimum_control_specificity": 0.95,
+      "minimum_gwet_ac1_when_manual_coding_occurs": 0.8,
+      "maximum_unresolved_control_rate": 0.05,
+      "failed_stratum": "reported_not_estimable",
+      "stage_2_may_strengthen_thresholds": true,
+      "stage_2_may_weaken_thresholds_without_amendment": false
+    },
+    "model_outputs_used_to_design_oracles": false
+  },
+  "analysis_hierarchy": [
+    "primary: PB2-SEM-01 semantic-void occurrence and prevalence",
+    "secondary: PB2-SEM-02 semantic decomposition of executable signature disagreement",
+    "validation gate: PB2-ORACLE-01 semantic-oracle qualification",
+    "secondary confirmatory: family, scope, and name-visibility contrasts"
+  ],
+  "scope_levels": [
+    "compact_algorithm_style_circuit",
+    "ancilla_initialization",
+    "pre_oracle_or_opening_stage_setup"
+  ],
+  "family_levels": [
+    "deutsch_or_deutsch_jozsa",
+    "bernstein_vazirani",
+    "simon",
+    "grover"
+  ],
+  "outcomes": {
+    "primary": [
+      {
+        "id": "semantic_void_rate_execution_conditioned",
+        "definition": "sum(E_i(f) * (1 - S_i(f))) / sum(E_i(f)) over T_sem"
+      },
+      {
+        "id": "semantic_void_rate_assembly_conditioned",
+        "definition": "sum(A_i(f) * (1 - S_i(f))) / sum(A_i(f)) over T_sem"
+      }
+    ],
+    "secondary": [
+      {
+        "id": "semantic_preserving_structural_divergence_rate",
+        "definition": "sum(E_i(f) * (1 - M_i_sig(f)) * S_i(f)) divided by executable signature nonmatches over T_sig intersect T_sem"
+      },
+      {
+        "id": "signature_level_es_gap",
+        "definition": "mean(E_i(f) - M_i_sig(f)) over the frozen signature-eligible panel"
+      },
+      {
+        "id": "structural_hallucination_rate",
+        "definition": "sum(E_i(f) * (1 - M_i_sig(f))) / sum(E_i(f)) over signature-identifiable eligible cells"
+      }
+    ],
+    "ordered_and_parameter_aware": "secondary_only_if_separately_preregistered"
+  },
+  "analysis_contract": {
+    "working_model": "grouped_binomial",
+    "reference_equation": "PQID-Bench 1 supplement Eq. (E.4), subject to a frozen PQID-Bench 2 semantic extension",
+    "unit": "prompt-level outcome count over the frozen model roster",
+    "semantic_cluster_unit": "complete_semantic_target_cluster",
+    "signature_cluster_unit": "complete_target_signature_cluster_C_sigma",
+    "current_release_cluster_count_reference_only": 144,
+    "future_cluster_count": null,
+    "covariates": [
+      "log_counted_operation_count",
+      "qubit_count",
+      "classical_bit_count",
+      "operation_type_diversity",
+      "operation_type_entropy",
+      "barrier_or_staged_structure"
+    ],
+    "interval_method": "crossed model-by-complete-target bootstrap, reported separately for semantic and signature outcomes",
+    "multiplicity": "The sole primary semantic estimand is outside the secondary contrast family. Holm correction applies separately within each frozen family, scope, and visibility contrast family, and semantic and signature outcome families are corrected separately. Stage 2 enumerates all activated contrasts before calls.",
+    "effect_reporting": [
+      "odds_ratio",
+      "average_marginal_effect",
+      "absolute_rate_difference",
+      "confidence_interval"
+    ]
+  },
+  "hypotheses": [
+    {
+      "id": "PB2-SEM-01",
+      "priority": "primary",
+      "question": "Does the model-level Semantic Void state E=1,S=0 occur on the frozen panel, and what is its prevalence?",
+      "eligible_set": "T_sem",
+      "outcomes": [
+        "SVR_E",
+        "SVR_A"
+      ],
+      "decision_rule": "Panel existence requires at least one independently confirmed V_i_sem(f)=1; any population-level claim requires the preregistered crossed-interval criterion."
+    },
+    {
+      "id": "PB2-SEM-02",
+      "priority": "secondary",
+      "question": "How much executable signature disagreement is semantic-preserving structural divergence rather than Semantic Void?",
+      "eligible_set": "T_sig_intersection_T_sem",
+      "outcomes": [
+        "conditional_semantic_preserving_structural_divergence_rate",
+        "conditional_semantic_void_rate_among_executable_signature_nonmatches"
+      ],
+      "decision_rule": "Report a paired finite-panel decomposition and crossed model-by-target intervals without causal interpretation."
+    },
+    {
+      "id": "PB2-ORACLE-01",
+      "priority": "validation_gate",
+      "question": "Does each semantic oracle discriminate valid alternatives from invalid circuits before model-output evaluation?",
+      "eligible_set": "pretransmission_control_suite",
+      "outcomes": [
+        "control_sensitivity",
+        "control_specificity",
+        "adjudicator_agreement",
+        "unresolved_rate"
+      ],
+      "decision_rule": "All preregistered oracle-stratum thresholds must pass before model calls; failed strata are reported as not estimable."
+    },
+    {
+      "id": "PB2-FAM-01",
+      "priority": "secondary_confirmatory",
+      "contrast": "Family contrasts among Deutsch/Deutsch-Jozsa, Bernstein-Vazirani, Simon, and Grover within compact algorithm-style circuits.",
+      "scope": "compact_algorithm_style_circuit",
+      "name_visibility": "visible",
+      "activation_rule": "all compared family cells satisfy preregistered eligibility and minimum-cell rules"
+    },
+    {
+      "id": "PB2-FAM-02",
+      "priority": "secondary_confirmatory",
+      "contrast": "Family contrasts within the common pre-oracle or opening-stage setup stratum.",
+      "scope": "pre_oracle_or_opening_stage_setup",
+      "name_visibility": "visible",
+      "activation_rule": "scope mapping and eligible family cells are frozen before transmission"
+    },
+    {
+      "id": "PB2-FAM-03",
+      "priority": "secondary_confirmatory",
+      "contrast": "Family contrasts within ancilla-initialization prompts.",
+      "scope": "ancilla_initialization",
+      "name_visibility": "visible",
+      "activation_rule": "at least two families satisfy preregistered eligibility and minimum-cell rules; otherwise report not estimable"
+    },
+    {
+      "id": "PB2-SCOPE-01",
+      "priority": "secondary_confirmatory",
+      "contrast": "Family-by-scope interaction across the three frozen audited scope levels.",
+      "scope": "all_frozen_scope_levels",
+      "name_visibility": "visible",
+      "activation_rule": "scope levels and minimum cell sizes are frozen before transmission"
+    },
+    {
+      "id": "PB2-NAME-01",
+      "priority": "secondary_robustness",
+      "contrast": "Robustness of family contrasts to explicit algorithm-name visibility using signature-identical visible and masked variants.",
+      "scope": "matched_within_target_scope",
+      "name_visibility": "paired_visible_and_masked",
+      "activation_rule": "both variants remain equally identifiable and share the same frozen target signature"
+    }
+  ],
+  "stage_2_operationalization_fields": [
+    "final sample size and power or precision target",
+    "final prompt panel and prompt/target hashes",
+    "semantic-oracle implementations and acceptance thresholds",
+    "final model and provider routes",
+    "repeated-generation design if any",
+    "minimum family-scope cells",
+    "exact multiplicity families",
+    "final analysis-code commit",
+    "independent auditor or adjudicator assignments"
+  ],
+  "staged_registration_contract": {
+    "stage_1_is_submission_ready": true,
+    "stage_1_authorizes_model_calls": false,
+    "stage_2_may_instantiate_prespecified_procedures": true,
+    "stage_2_may_silently_change_primary_question_or_estimands": false,
+    "stage_2_public_registration_required_before_model_calls": true,
+    "no_pqid_bench_2_outcome_may_be_observed_between_stages": true
+  },
+  "amendment_policy": {
+    "post_registration_changes": "timestamped_and_reported",
+    "unregistered_analyses": "exploratory",
+    "confirmatory_label_requires_gate": true
+  }
+}

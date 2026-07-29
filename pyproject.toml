@@ -1,0 +1,69 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pqid-bench"
+version = "1.0.0"
+description = "Reproducibility and live-evaluation toolkit for the frozen PQID-Bench quantum-program generation benchmark"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSES/MIT.txt"]
+authors = [
+  { name = "Elias Abebe Gasparini" },
+]
+keywords = [
+  "benchmark",
+  "qiskit",
+  "quantum-computing",
+  "code-generation",
+  "model-evaluation",
+  "reproducibility",
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Console",
+  "Intended Audience :: Science/Research",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Topic :: Scientific/Engineering",
+]
+dependencies = []
+
+[project.optional-dependencies]
+schema = [
+  "jsonschema>=4.23,<5",
+]
+evaluator = [
+  "qiskit>=2.1,<2.2",
+  "qiskit-aer>=0.17,<0.18",
+]
+dev = [
+  "build>=1.2,<2",
+  "pytest>=8,<9",
+  "ruff>=0.12,<1",
+]
+
+[project.scripts]
+pqid-bench = "pqid_bench.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Elias-Abebe-Gasparini/PQID-Bench"
+Repository = "https://github.com/Elias-Abebe-Gasparini/PQID-Bench"
+Archive = "https://doi.org/10.5281/zenodo.21649753"
+Dataset = "https://huggingface.co/datasets/Elias-Abebe-Gasparini/PQID-Bench"
+Gateway = "https://huggingface.co/spaces/Elias-Abebe-Gasparini/PQID-Bench-Gateway"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+pqid_bench = ["schemas/*.schema.json"]

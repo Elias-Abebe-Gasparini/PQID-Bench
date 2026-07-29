@@ -1,0 +1,77 @@
+{
+  "schema_version": "pqid-bench-final-status-v3",
+  "generated_date": "2026-07-14",
+  "reporting_design": {
+    "primary_model_count": 21,
+    "prompt_count": 154,
+    "prompt_model_cells": 3234,
+    "reference_signature_count": 144,
+    "initial19_is_sensitivity_only": true,
+    "matched_parent_specialist_rows_are_primary_roster_members": true
+  },
+  "primary_results": {
+    "execution": {
+      "count": 2950,
+      "rate": 0.9121830550401979
+    },
+    "qasm3_export": {
+      "count": 2944,
+      "rate": 0.9103277674706246
+    },
+    "reference_signature_match": {
+      "count": 1703,
+      "rate": 0.5265924551638838
+    },
+    "execution_structure_gap_pp": 38.55905998763141,
+    "runnable_signature_wrong": {
+      "count": 1247,
+      "rate_all_cells": 0.38559059987631417,
+      "rate_among_executable": 0.42271186440677966
+    },
+    "reference_signature_match_given_execution": 0.5772881355932203,
+    "gate_types_match": 0.6042053184910328,
+    "gate_count_match": 0.7786023500309215,
+    "num_qubits_match": 0.8797155225726654,
+    "num_clbits_match": 0.7755102040816326
+  },
+  "initial19_roster_sensitivity": {
+    "prompt_model_cells": 2926,
+    "execution_rate": 0.9135338345864662,
+    "reference_signature_match_rate": 0.5328092959671907,
+    "execution_structure_gap_pp": 38.07245386192755
+  },
+  "prompt_identifiability_sensitivity": {
+    "prompt_count": 150,
+    "prompt_model_cells": 3150,
+    "execution_count": 2890,
+    "execution_rate": 0.9174603174603174,
+    "reference_signature_match_count": 1703,
+    "reference_signature_match_rate": 0.5406349206349207,
+    "excluded_prompt_ids": [
+      "pqid_bench_external_gen_0040",
+      "pqid_bench_external_gen_0117",
+      "pqid_bench_external_gen_0141",
+      "pqid_bench_external_gen_0142"
+    ]
+  },
+  "signature_weighting_sensitivity": {
+    "prompt_level_reference_signature_match": 0.5265924551638838,
+    "signature_collapsed_reference_signature_match": 0.519593253968254,
+    "delta_pp": -0.6999201195629801
+  },
+  "item_difficulty": {
+    "matched_by_all_21": 16,
+    "matched_by_none_of_21": 36,
+    "mixed_disagreement": 102
+  },
+  "canonical_artifacts": {
+    "performance_report": "artifacts/analysis_154/PQID_BENCH_21_MODEL_PERFORMANCE_AND_INSIGHTS.md",
+    "item_failure_report": "artifacts/analysis_154/pqid_bench_item_failure_matrix_analysis.md",
+    "model_prompt_matrix": "artifacts/analysis_154/pqid_bench_model_by_prompt_structural_matrix.csv",
+    "inferential_report": "artifacts/analysis_154/pqid_bench_inferential_analysis.md",
+    "signature_sensitivity": "artifacts/analysis_154/pqid_bench_signature_sensitivity_report.md",
+    "prompt_identifiability": "artifacts/analysis_154/pqid_bench_prompt_identifiability_sensitivity.md",
+    "parent_specialist_comparison": "artifacts/analysis_154/qiskit_specialist_parent_comparison.md",
+    "main_table": "tables_copy_ready/table_04.tsv"
+  }
+}

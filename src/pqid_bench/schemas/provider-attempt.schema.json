@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pqid-bench.org/schemas/1.0.0/provider-attempt.schema.json",
+  "title": "PQID-Bench normalized provider attempt",
+  "type": "object",
+  "required": [
+    "attempt_id",
+    "run_id",
+    "prompt_id",
+    "provider",
+    "route",
+    "requested_model",
+    "request_sha256",
+    "status",
+    "attempt_index",
+    "started_at"
+  ],
+  "properties": {
+    "attempt_id": {"type": "string", "minLength": 1},
+    "run_id": {"type": "string", "minLength": 1},
+    "prompt_id": {"type": "string", "minLength": 1},
+    "provider": {"type": "string", "minLength": 1},
+    "route": {"type": "string", "minLength": 1},
+    "requested_model": {"type": "string", "minLength": 1},
+    "resolved_model": {"type": ["string", "null"]},
+    "request_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "raw_response_path": {"type": ["string", "null"]},
+    "raw_response_sha256": {
+      "oneOf": [
+        {"type": "null"},
+        {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      ]
+    },
+    "status": {"type": "string", "minLength": 1},
+    "attempt_index": {"type": "integer", "minimum": 1},
+    "started_at": {"type": "string", "format": "date-time"},
+    "completed_at": {"type": ["string", "null"], "format": "date-time"},
+    "transport_affected": {"type": "boolean"}
+  },
+  "additionalProperties": true
+}

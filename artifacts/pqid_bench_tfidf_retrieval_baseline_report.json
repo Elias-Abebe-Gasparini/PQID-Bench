@@ -1,0 +1,826 @@
+{
+  "best_fair_baseline": "word_tfidf_code_plus_metadata",
+  "best_fair_failure_taxonomy": [
+    {
+      "category": "gate_vocabulary_distractor",
+      "description": "shared low-level gate vocabulary without enough semantic information to recover the exact source record",
+      "examples": [
+        {
+          "expected_file": "trinity_core_phase2.py",
+          "expected_gate_types": {
+            "barrier": 1,
+            "cx": 1,
+            "h": 2,
+            "measure": 2
+          },
+          "query": "Create a 2-qubit Qiskit circuit named qc_triad that applies H on qubit 0, then CX from 0 to 1, then another H on qubit 0, and finally measures both qubits.",
+          "rank": 2,
+          "retrieved_file": "source/0/qiskit_ex3_015978.py",
+          "retrieved_gate_types": {
+            "cx": 1,
+            "h": 4,
+            "measure": 2
+          },
+          "slice": "strict_n8"
+        },
+        {
+          "expected_file": "LANDSCAPES/nonlinear/2qubitsiamese.py",
+          "expected_gate_types": {
+            "barrier": 1,
+            "cx": 1,
+            "rx": 2,
+            "ry": 4,
+            "rz": 4
+          },
+          "query": "Build a 2-qubit parameterized Qiskit circuit with four input angles and six trainable weights: apply CX from qubit 0 to 1, then RY(input0), RZ(input1) on qub...",
+          "rank": 2,
+          "retrieved_file": "source/0/faa3fc55deed77f95a139cf0cf4c076035d347ade641499d03cf73ec_996a2d.py",
+          "retrieved_gate_types": {
+            "cx": 5,
+            "measure": 4,
+            "rx": 3,
+            "ry": 3,
+            "rz": 1
+          },
+          "slice": "strict_n8"
+        }
+      ],
+      "extended_n8": 140,
+      "failures": 296,
+      "share_of_top1_failures": 0.4751203852327448,
+      "strict_n8": 156
+    },
+    {
+      "category": "lexical_metadata_distractor",
+      "description": "remaining lexical or metadata attraction without a simple structural match",
+      "examples": [
+        {
+          "expected_file": "translations/ja/v1/ch-algorithms/bernstein-vazirani.ipynb",
+          "expected_gate_types": {
+            "h": 1,
+            "z": 1
+          },
+          "query": "Create the Bernstein\u2013Vazirani setup circuit that initializes an n+1 qubit register with the last qubit as the ancilla in the |-> state, using a Hadamard foll...",
+          "rank": 2,
+          "retrieved_file": "source/0/bernstein_vazirani_703dff.py",
+          "retrieved_gate_types": {
+            "h": 1,
+            "x": 1
+          },
+          "slice": "strict_n8"
+        },
+        {
+          "expected_file": "qiskit/synthesis/two_qubit/xx_decompose/embodiments.py",
+          "expected_gate_types": {
+            "ch": 1,
+            "h": 4,
+            "s": 2,
+            "sdg": 1,
+            "sx": 1,
+            "t": 1,
+            "tdg": 1
+          },
+          "query": "Create a 2-qubit Qiskit circuit that applies H on qubit 0; on qubit 1 applies Tdg, H, and Sdg; then a controlled-H from qubit 0 to qubit 1; then S on both qu...",
+          "rank": 2,
+          "retrieved_file": "source/0/qiskit_ex3_015978.py",
+          "retrieved_gate_types": {
+            "cx": 1,
+            "h": 4,
+            "measure": 2
+          },
+          "slice": "strict_n8"
+        }
+      ],
+      "extended_n8": 74,
+      "failures": 132,
+      "share_of_top1_failures": 0.21187800963081863,
+      "strict_n8": 58
+    },
+    {
+      "category": "size_or_complexity_distractor",
+      "description": "shared gate vocabulary but a large width/depth/gate-count mismatch",
+      "examples": [
+        {
+          "expected_file": "CodeforTest.py",
+          "expected_gate_types": {
+            "x": 4
+          },
+          "query": "Create a Qiskit circuit named `wavefunction` with 8 qubits, and apply Pauli-X gates to qubits 0, 1, 2, and 3 only.",
+          "rank": 2,
+          "retrieved_file": "gates/pauli_x_gate.py",
+          "retrieved_gate_types": {
+            "barrier": 1,
+            "measure": 1,
+            "x": 1
+          },
+          "slice": "strict_n8"
+        },
+        {
+          "expected_file": "Exercises/Medium_Single_Qubit_Gates.ipynb",
+          "expected_gate_types": {
+            "h": 1,
+            "s": 1,
+            "t": 1,
+            "y": 1
+          },
+          "query": "Create a 1-qubit Qiskit circuit that applies, in order, an H gate, a Y gate, an S gate, and a T gate to qubit 0.",
+          "rank": 2,
+          "retrieved_file": "Effect_of_bugs_on_Entropy/Testcases/shallow/shallow_0.py",
+          "retrieved_gate_types": {
+            "ccx": 1,
+            "cswap": 1,
+            "s": 1,
+            "t": 1,
+            "y": 1
+          },
+          "slice": "strict_n8"
+        }
+      ],
+      "extended_n8": 33,
+      "failures": 76,
+      "share_of_top1_failures": 0.12199036918138041,
+      "strict_n8": 43
+    },
+    {
+      "category": "scaled_family_variant",
+      "description": "same circuit family or gate vocabulary, but with different width, depth, parameter count, or repeated block scale",
+      "examples": [
+        {
+          "expected_file": "QuCode_Day11_QuantumEntanglement_Ex1.py",
+          "expected_gate_types": {
+            "cx": 1,
+            "h": 1
+          },
+          "query": "Create a 2-qubit quantum circuit that prepares the Bell state |\u03a6+\u27e9 by applying a Hadamard to qubit 0 and then a CNOT from qubit 0 to qubit 1.",
+          "rank": 5,
+          "retrieved_file": "cg4.py",
+          "retrieved_gate_types": {
+            "cx": 1,
+            "h": 1,
+            "measure": 2
+          },
+          "slice": "strict_n8"
+        },
+        {
+          "expected_file": "quantum_gravity.py",
+          "expected_gate_types": {
+            "barrier": 1,
+            "cx": 1,
+            "h": 1,
+            "measure": 2,
+            "ry": 2
+          },
+          "query": "Create a 2-qubit Qiskit circuit that prepares a Bell-like state with H on qubit 0 and CX from 0 to 1, then applies RY(pi/6) to qubit 0 and RY(pi/12) to qubit...",
+          "rank": 5,
+          "retrieved_file": "CHSH_Experiment.py",
+          "retrieved_gate_types": {
+            "cx": 1,
+            "h": 1,
+            "ry": 1
+          },
+          "slice": "strict_n8"
+        }
+      ],
+      "extended_n8": 12,
+      "failures": 37,
+      "share_of_top1_failures": 0.0593900481540931,
+      "strict_n8": 25
+    },
+    {
+      "category": "algorithm_family_confusion",
+      "description": "same named algorithm/protocol family, but the retrieved implementation is a different variant",
+      "examples": [
+        {
+          "expected_file": "jobs/management/commands/create_sample_data.py",
+          "expected_gate_types": {
+            "cx": 3,
+            "cz": 1,
+            "h": 2,
+            "measure": 3,
+            "x": 1
+          },
+          "query": "Create a 3-qubit, 3-classical-bit quantum teleportation circuit in Qiskit that initializes qubit 0 to |1\u27e9 with an X gate, forms a Bell pair between qubits 1 ...",
+          "rank": 6,
+          "retrieved_file": "Src/Quantum_teleportation_protocol/Quantun_teleportation_protocol.py",
+          "retrieved_gate_types": {
+            "barrier": 1,
+            "cx": 4,
+            "h": 3,
+            "measure": 3
+          },
+          "slice": "strict_n8"
+        },
+        {
+          "expected_file": "docs/guides/local-testing-mode.ipynb",
+          "expected_gate_types": {
+            "barrier": 1,
+            "cx": 1,
+            "h": 1,
+            "measure": 2
+          },
+          "query": "Create a small Qiskit circuit that prepares a Bell pair on 2 qubits and measures both qubits, suitable for running on a local fake backend.",
+          "rank": 6,
+          "retrieved_file": "CHSH_Experiment.py",
+          "retrieved_gate_types": {
+            "cx": 1,
+            "h": 1,
+            "ry": 1
+          },
+          "slice": "extended_n8"
+        }
+      ],
+      "extended_n8": 8,
+      "failures": 30,
+      "share_of_top1_failures": 0.048154093097913325,
+      "strict_n8": 22
+    },
+    {
+      "category": "exact_gate_signature_ambiguity",
+      "description": "different source context with the same gate multiset, leaving lexical BM25 unable to identify the intended register/name semantics",
+      "examples": [
+        {
+          "expected_file": "source/0/main_595497.py",
+          "expected_gate_types": {
+            "barrier": 1,
+            "h": 3
+          },
+          "query": "Create a small Qiskit Simon-algorithm setup for n=3 that initializes a 6-qubit circuit with 3 classical bits, applies Hadamards to the first register, and in...",
+          "rank": 2,
+          "retrieved_file": "notebooks/v1/ch-algorithms/simon.ipynb",
+          "retrieved_gate_types": {
+            "barrier": 1,
+            "h": 3
+          },
+          "slice": "extended_n8"
+        },
+        {
+          "expected_file": "examples/bell_state.py",
+          "expected_gate_types": {
+            "cx": 1,
+            "h": 1,
+            "measure": 2
+          },
+          "query": "Create a minimal 2-qubit Bell-state circuit: apply a Hadamard to qubit 0, then a CNOT from qubit 0 to qubit 1, and measure both qubits into two classical bits.",
+          "rank": 3,
+          "retrieved_file": "script/BellState.py",
+          "retrieved_gate_types": {
+            "cx": 1,
+            "h": 1,
+            "measure": 2
+          },
+          "slice": "strict_n8"
+        }
+      ],
+      "extended_n8": 8,
+      "failures": 26,
+      "share_of_top1_failures": 0.04173354735152488,
+      "strict_n8": 18
+    },
+    {
+      "category": "same_source_lineage_neighbor",
+      "description": "same file, notebook lineage, or source context, but the retrieved fragment is not the requested target",
+      "examples": [
+        {
+          "expected_file": "DEMOS/IRIS/siamese_noncondensed.py",
+          "expected_gate_types": {
+            "barrier": 1,
+            "cx": 2,
+            "ry": 8,
+            "rz": 8
+          },
+          "query": "Create a 4-qubit Qiskit variational circuit named \"VQC Circuit\" with eight input Parameters and eight weight Parameters: apply RY then RZ feature-encoding ro...",
+          "rank": 2,
+          "retrieved_file": "DEMOS/IRIS/2siamesecondensed.py",
+          "retrieved_gate_types": {
+            "barrier": 1,
+            "cx": 1,
+            "ry": 4,
+            "rz": 4
+          },
+          "slice": "strict_n8"
+        },
+        {
+          "expected_file": "Effect_of_bugs_on_Entropy/Testcases/shallow/shallow_4.py",
+          "expected_gate_types": {
+            "cswap": 1,
+            "cz": 1,
+            "rzz": 1,
+            "swap": 2
+          },
+          "query": "Create a 3-qubit Qiskit circuit that applies a controlled-SWAP with qubit 1 as the control on qubits 0 and 2, then swaps qubits 0 and 1, swaps qubits 1 and 2...",
+          "rank": 2,
+          "retrieved_file": "Effect_of_bugs_on_Entropy/Testcases/shallow/shallow_5.py",
+          "retrieved_gate_types": {
+            "ccx": 1,
+            "cz": 1,
+            "p": 1,
+            "rzz": 1,
+            "swap": 1
+          },
+          "slice": "extended_n8"
+        }
+      ],
+      "extended_n8": 7,
+      "failures": 20,
+      "share_of_top1_failures": 0.03210272873194221,
+      "strict_n8": 13
+    },
+    {
+      "category": "same_source_register_or_subcircuit",
+      "description": "same source lineage and same gate signature, but the retrieved subcircuit targets a different register, role, or named component",
+      "examples": [
+        {
+          "expected_file": "qutefuzz/qiskit_result/qiskit200/circuit59537.py",
+          "expected_gate_types": {
+            "rz": 2,
+            "u": 2
+          },
+          "query": "Create a Qiskit subcircuit on 4 qubits with RZ(-0.691) on qubit 2, then U(0,0,0.269) and U(0,0,0.036) applied in sequence to qubit 1, and finally RZ(-0.633) ...",
+          "rank": 2,
+          "retrieved_file": "qutefuzz/qiskit_result/qiskit200/circuit59537.py",
+          "retrieved_gate_types": {
+            "rz": 2,
+            "u": 2
+          },
+          "slice": "strict_n8"
+        },
+        {
+          "expected_file": "EXPERIMENTAL_EVALUATION/test_suites/qiskit_test_cases.py",
+          "expected_gate_types": {
+            "h": 2,
+            "x": 2
+          },
+          "query": "Create a 2-qubit Qiskit circuit where qubit 0 gets two consecutive Hadamard gates and qubit 1 gets two consecutive X gates, preserving the redundant operations.",
+          "rank": 2,
+          "retrieved_file": "EXPERIMENTAL_EVALUATION/comprehensive_evaluation.py",
+          "retrieved_gate_types": {
+            "h": 2,
+            "x": 2
+          },
+          "slice": "strict_n8"
+        }
+      ],
+      "extended_n8": 2,
+      "failures": 6,
+      "share_of_top1_failures": 0.009630818619582664,
+      "strict_n8": 4
+    }
+  ],
+  "best_fair_failures": [
+    {
+      "expected_code": "bv_circuit = QuantumCircuit(n+1, n) # put ancilla in state |-> bv_circuit.h(n) bv_circuit.z(n) # Apply Hadamard gates before querying the oracle",
+      "expected_file": "translations/ja/v1/ch-algorithms/bernstein-vazirani.ipynb",
+      "expected_gate_types": {
+        "h": 1,
+        "z": 1
+      },
+      "failure_category": "lexical_metadata_distractor",
+      "failure_description": "remaining lexical or metadata attraction without a simple structural match",
+      "label": "strict_n8",
+      "query": "Create the Bernstein\u2013Vazirani setup circuit that initializes an n+1 qubit register with the last qubit as the ancilla in the |-> state, using a Hadamard followed by a Z on qubit n, and include n classical bits.",
+      "rank": 2,
+      "retrieved_code": "bv = QuantumCircuit(n+1, n) # set ancilla into |-> state bv.x(n) bv.h(n) # construct superposition state",
+      "retrieved_file": "source/0/bernstein_vazirani_703dff.py",
+      "retrieved_gate_types": {
+        "h": 1,
+        "x": 1
+      },
+      "row_id": "c67144fc9d924405fc88829d0184abc0",
+      "top1_label": "extended_n8"
+    },
+    {
+      "expected_code": "qc = QuantumCircuit(2, 2) # Step 1: Put qubit 0 into superposition using a Hadamard gate qc.h(0) # Step 2: Entangle qubit 0 and qubit 1 using a CNOT gate (control=0, target=1) qc.cx(0, 1) # Step 3: Measure both qubits...",
+      "expected_file": "examples/bell_state.py",
+      "expected_gate_types": {
+        "cx": 1,
+        "h": 1,
+        "measure": 2
+      },
+      "failure_category": "exact_gate_signature_ambiguity",
+      "failure_description": "different source context with the same gate multiset, leaving lexical BM25 unable to identify the intended register/name semantics",
+      "label": "strict_n8",
+      "query": "Create a minimal 2-qubit Bell-state circuit: apply a Hadamard to qubit 0, then a CNOT from qubit 0 to qubit 1, and measure both qubits into two classical bits.",
+      "rank": 3,
+      "retrieved_code": "bell_circuit = QuantumCircuit(2, 2) # Apply a Hadamard gate to the first qubit bell_circuit.h(0) # Apply a CNOT gate where qubit 0 is the control and qubit 1 is the target bell_circuit.cx(0, 1) # Measure both qubits b...",
+      "retrieved_file": "script/BellState.py",
+      "retrieved_gate_types": {
+        "cx": 1,
+        "h": 1,
+        "measure": 2
+      },
+      "row_id": "e113e306334b9a0b3e640e096a14d68a",
+      "top1_label": "strict_n8"
+    },
+    {
+      "expected_code": "state_preparation = QuantumCircuit(3) state_preparation.ry(theta, 0) state_preparation.ch(0,1) state_preparation.x(1) state_preparation.h(2) # we only care about the first two bits beign in state 1, thus add both poss...",
+      "expected_file": "3. Algorithms/grovers_algorithm_and_amplitude_amplification.py",
+      "expected_gate_types": {
+        "ch": 1,
+        "h": 1,
+        "ry": 1,
+        "x": 1
+      },
+      "failure_category": "exact_gate_signature_ambiguity",
+      "failure_description": "different source context with the same gate multiset, leaving lexical BM25 unable to identify the intended register/name semantics",
+      "label": "strict_n8",
+      "query": "Create a 3-qubit Qiskit circuit for state preparation that applies an RY rotation by \u03c0/4 on qubit 0, then a controlled-H from qubit 0 to qubit 1, followed by an X on qubit 1 and an H on qubit 2.",
+      "rank": 3,
+      "retrieved_code": "state_preparation = QuantumCircuit(3) state_preparation.ry(theta, 0) state_preparation.ch(0,1) state_preparation.x(1) state_preparation.h(2) # we only care about the first two bits being in state 1, thus add both poss...",
+      "retrieved_file": "tutorials/algorithms/06_grover.ipynb",
+      "retrieved_gate_types": {
+        "ch": 1,
+        "h": 1,
+        "ry": 1,
+        "x": 1
+      },
+      "row_id": "6da7c11f87b245220a142799dba7d1c1",
+      "top1_label": "strict_n8"
+    },
+    {
+      "expected_code": "subcirc3 = QuantumCircuit(0) # Adding qregs qreg_0 = QuantumRegister(4) subcirc3.add_register(qreg_0) # Adding creg resources subcirc3.rz(-0.691000, qreg_0[2]) subcirc3.u(0,0,0.269000, qreg_0[1]) subcirc3.u(0,0,0.0360...",
+      "expected_file": "qutefuzz/qiskit_result/qiskit200/circuit59537.py",
+      "expected_gate_types": {
+        "rz": 2,
+        "u": 2
+      },
+      "failure_category": "same_source_register_or_subcircuit",
+      "failure_description": "same source lineage and same gate signature, but the retrieved subcircuit targets a different register, role, or named component",
+      "label": "strict_n8",
+      "query": "Create a Qiskit subcircuit on 4 qubits with RZ(-0.691) on qubit 2, then U(0,0,0.269) and U(0,0,0.036) applied in sequence to qubit 1, and finally RZ(-0.633) on qubit 3.",
+      "rank": 2,
+      "retrieved_code": "subcirc0 = QuantumCircuit(0) # Adding qregs qreg_0 = QuantumRegister(4) subcirc0.add_register(qreg_0) # Adding creg resources subcirc0.rz(0.171000, qreg_0[3]) subcirc0.u(0,0,-0.828000, qreg_0[2]) subcirc0.u(0,0,0.9440...",
+      "retrieved_file": "qutefuzz/qiskit_result/qiskit200/circuit59537.py",
+      "retrieved_gate_types": {
+        "rz": 2,
+        "u": 2
+      },
+      "row_id": "b54a05fc3c3c16b8b8b57ae91207641e",
+      "top1_label": "strict_n8"
+    },
+    {
+      "expected_code": "qc_triad = QuantumCircuit(2) qc_triad.h(0) qc_triad.cx(0, 1) qc_triad.h(0) qc_triad.measure_all() # LFH EQUILIBRIUM - L=H=F balanced state",
+      "expected_file": "trinity_core_phase2.py",
+      "expected_gate_types": {
+        "barrier": 1,
+        "cx": 1,
+        "h": 2,
+        "measure": 2
+      },
+      "failure_category": "gate_vocabulary_distractor",
+      "failure_description": "shared low-level gate vocabulary without enough semantic information to recover the exact source record",
+      "label": "strict_n8",
+      "query": "Create a 2-qubit Qiskit circuit named qc_triad that applies H on qubit 0, then CX from 0 to 1, then another H on qubit 0, and finally measures both qubits.",
+      "rank": 2,
+      "retrieved_code": "circuit = QuantumCircuit(3, 2) ### ADDING GATES (OPERATIONS) ### circuit.h(qubit=0) circuit.h(qubit=2) circuit.h(qubit=2) circuit.h(qubit=2) circuit.cx(control_qubit=0, target_qubit=1) circuit.measure([0, 1], [0, 1])",
+      "retrieved_file": "source/0/qiskit_ex3_015978.py",
+      "retrieved_gate_types": {
+        "cx": 1,
+        "h": 4,
+        "measure": 2
+      },
+      "row_id": "c8cc4b21064b04339709bc267c4c23ab",
+      "top1_label": "extended_n8"
+    },
+    {
+      "expected_code": "wavefunction = QuantumCircuit(8) wavefunction.x(0) wavefunction.x(1) wavefunction.x(2) wavefunction.x(3)",
+      "expected_file": "CodeforTest.py",
+      "expected_gate_types": {
+        "x": 4
+      },
+      "failure_category": "size_or_complexity_distractor",
+      "failure_description": "shared gate vocabulary but a large width/depth/gate-count mismatch",
+      "label": "strict_n8",
+      "query": "Create a Qiskit circuit named `wavefunction` with 8 qubits, and apply Pauli-X gates to qubits 0, 1, 2, and 3 only.",
+      "rank": 2,
+      "retrieved_code": "circuit = QuantumCircuit(1) # Apply Pauli-X gate to the qubit circuit.x(0) # Measure the qubit circuit.measure_all() # Simulate the circuit using the local Aer simulator",
+      "retrieved_file": "gates/pauli_x_gate.py",
+      "retrieved_gate_types": {
+        "barrier": 1,
+        "measure": 1,
+        "x": 1
+      },
+      "row_id": "970460b63b5d0f1765d402802b11f210",
+      "top1_label": "strict_n8"
+    },
+    {
+      "expected_code": "qc=QuantumCircuit(1) qc.h(0) qc.y(0) qc.s(0) qc.t(0) ##FILL IN YOUR ANSWER HERE # # # # # #Check the result with the u3 rotation gate (arbitrary single qubit rotations)",
+      "expected_file": "Exercises/Medium_Single_Qubit_Gates.ipynb",
+      "expected_gate_types": {
+        "h": 1,
+        "s": 1,
+        "t": 1,
+        "y": 1
+      },
+      "failure_category": "size_or_complexity_distractor",
+      "failure_description": "shared gate vocabulary but a large width/depth/gate-count mismatch",
+      "label": "strict_n8",
+      "query": "Create a 1-qubit Qiskit circuit that applies, in order, an H gate, a Y gate, an S gate, and a T gate to qubit 0.",
+      "rank": 2,
+      "retrieved_code": "qc = QuantumCircuit(q, c) qc.t(q[0]) qc.ccx(q[2], q[1], q[0]) qc.cswap(q[2], q[0], q[1]) qc.y(q[2]) qc.s(q[2])",
+      "retrieved_file": "Effect_of_bugs_on_Entropy/Testcases/shallow/shallow_0.py",
+      "retrieved_gate_types": {
+        "ccx": 1,
+        "cswap": 1,
+        "s": 1,
+        "t": 1,
+        "y": 1
+      },
+      "row_id": "145e76c01ad1d8b45cbac72f738af168",
+      "top1_label": "extended_n8"
+    },
+    {
+      "expected_code": "circuit = QuantumCircuit(q,c) circuit.cx(q[0],q[1]) circuit.cx(q[0],q[2]) circuit.h(q[0]) circuit.h(q[1]) circuit.h(q[2]) circuit.z(q[0]) #Add this to simulate a phase flip error circuit.h(q[0]) circuit.h(q[1]) circui...",
+      "expected_file": "Quantum Error Correction/Phase Flip code.py",
+      "expected_gate_types": {
+        "ccx": 1,
+        "cx": 4,
+        "h": 6,
+        "measure": 1,
+        "z": 1
+      },
+      "failure_category": "same_source_lineage_neighbor",
+      "failure_description": "same file, notebook lineage, or source context, but the retrieved fragment is not the requested target",
+      "label": "strict_n8",
+      "query": "Create a Qiskit circuit for a 3-qubit phase-flip error-correction example: encode qubit 0 onto qubits 1 and 2 with two CNOTs, apply Hadamards to all three qubits, insert a Z error on qubit 0, apply Hadamards again, de...",
+      "rank": 4,
+      "retrieved_code": "circuit = QuantumCircuit(q,c) circuit.h(q[0]) ####error here############ circuit.x(q[0])#Bit flip error circuit.z(q[0])#Phase flip error ############################ circuit.h(q[0]) circuit.barrier(q) circuit.measure(...",
+      "retrieved_file": "Quantum Error Correction/Shor code.py",
+      "retrieved_gate_types": {
+        "barrier": 1,
+        "h": 2,
+        "measure": 1,
+        "x": 1,
+        "z": 1
+      },
+      "row_id": "3303b70cc7ccc2251b3a9bfcaf639bac",
+      "top1_label": "strict_n8"
+    },
+    {
+      "expected_code": "qc = QuantumCircuit(4, name=\"VQC Circuit\") input_params = [Parameter(f\"input{i}\") for i in range(8)] weight_params = [Parameter(f\"weight{i}\") for i in range(8)] # Feature map part qc.ry(input_params[0], 0) qc.rz(input...",
+      "expected_file": "DEMOS/IRIS/siamese_noncondensed.py",
+      "expected_gate_types": {
+        "barrier": 1,
+        "cx": 2,
+        "ry": 8,
+        "rz": 8
+      },
+      "failure_category": "same_source_lineage_neighbor",
+      "failure_description": "same file, notebook lineage, or source context, but the retrieved fragment is not the requested target",
+      "label": "strict_n8",
+      "query": "Create a 4-qubit Qiskit variational circuit named \"VQC Circuit\" with eight input Parameters and eight weight Parameters: apply RY then RZ feature-encoding rotations on qubits 0 through 3 using input0..input7 in order,...",
+      "rank": 2,
+      "retrieved_code": "qc = QuantumCircuit(2, name=\"VQC Circuit\") input_params = [Parameter(f\"input{i}\") for i in range(4)] weight_params = [Parameter(f\"weight{i}\") for i in range(4)] # Feature map qc.ry(input_params[0],0) qc.rz(input_param...",
+      "retrieved_file": "DEMOS/IRIS/2siamesecondensed.py",
+      "retrieved_gate_types": {
+        "barrier": 1,
+        "cx": 1,
+        "ry": 4,
+        "rz": 4
+      },
+      "row_id": "07e669924b6076cf58a2fa2c7c8bec9b",
+      "top1_label": "strict_n8"
+    },
+    {
+      "expected_code": "ch_circuit = QuantumCircuit(2) ch_circuit.h(0) ch_circuit.tdg(1) ch_circuit.h(1) ch_circuit.sdg(1) ch_circuit.ch(0, 1) ch_circuit.s(0) ch_circuit.s(1) ch_circuit.h(1) ch_circuit.t(1) ch_circuit.sx(1) ch_circuit.h(0) c...",
+      "expected_file": "qiskit/synthesis/two_qubit/xx_decompose/embodiments.py",
+      "expected_gate_types": {
+        "ch": 1,
+        "h": 4,
+        "s": 2,
+        "sdg": 1,
+        "sx": 1,
+        "t": 1,
+        "tdg": 1
+      },
+      "failure_category": "lexical_metadata_distractor",
+      "failure_description": "remaining lexical or metadata attraction without a simple structural match",
+      "label": "strict_n8",
+      "query": "Create a 2-qubit Qiskit circuit that applies H on qubit 0; on qubit 1 applies Tdg, H, and Sdg; then a controlled-H from qubit 0 to qubit 1; then S on both qubits; then H, T, and SX on qubit 1; finishes with H on qubit...",
+      "rank": 2,
+      "retrieved_code": "circuit = QuantumCircuit(3, 2) ### ADDING GATES (OPERATIONS) ### circuit.h(qubit=0) circuit.h(qubit=2) circuit.h(qubit=2) circuit.h(qubit=2) circuit.cx(control_qubit=0, target_qubit=1) circuit.measure([0, 1], [0, 1])",
+      "retrieved_file": "source/0/qiskit_ex3_015978.py",
+      "retrieved_gate_types": {
+        "cx": 1,
+        "h": 4,
+        "measure": 2
+      },
+      "row_id": "468815b7cbbdad48ea30ca5b53fc4ea6",
+      "top1_label": "extended_n8"
+    }
+  ],
+  "bm25_reference": {
+    "description": "code plus non-instruction metadata",
+    "metrics": {
+      "mean_rank": 151.90190735694824,
+      "median_rank": 71.5,
+      "mrr": 0.18692720960764134,
+      "per_label": {
+        "extended_n8": {
+          "mean_rank": 168.75862068965517,
+          "median_rank": 89,
+          "mrr": 0.14159398519712563,
+          "queries": 319,
+          "recall_at_1": 0.08463949843260188,
+          "recall_at_10": 0.2445141065830721,
+          "recall_at_5": 0.18808777429467086
+        },
+        "strict_n8": {
+          "mean_rank": 138.944578313253,
+          "median_rank": 39,
+          "mrr": 0.22177371222680883,
+          "queries": 415,
+          "recall_at_1": 0.14457831325301204,
+          "recall_at_10": 0.36626506024096384,
+          "recall_at_5": 0.30120481927710846
+        }
+      },
+      "queries": 734,
+      "recall_at_1": 0.11852861035422343,
+      "recall_at_10": 0.3133514986376022,
+      "recall_at_5": 0.25204359673024523
+    },
+    "name": "code_plus_metadata_bm25"
+  },
+  "input_file": "PQID/data/processed/seed_drafts_quality_aware_source_code_v1.jsonl",
+  "label_counts": {
+    "extended_n8": 319,
+    "strict_n8": 415
+  },
+  "results": [
+    {
+      "description": "word unigram/bigram TF-IDF over code only",
+      "fair": true,
+      "metrics": {
+        "mean_rank": 159.2057220708447,
+        "median_rank": 78.5,
+        "mrr": 0.1679364310192032,
+        "per_label": {
+          "extended_n8": {
+            "mean_rank": 159.1818181818182,
+            "median_rank": 95,
+            "mrr": 0.12996932268504893,
+            "queries": 319,
+            "recall_at_1": 0.08150470219435736,
+            "recall_at_10": 0.21630094043887146,
+            "recall_at_5": 0.15673981191222572
+          },
+          "strict_n8": {
+            "mean_rank": 159.22409638554217,
+            "median_rank": 62,
+            "mrr": 0.1971207865820832,
+            "queries": 415,
+            "recall_at_1": 0.13253012048192772,
+            "recall_at_10": 0.3325301204819277,
+            "recall_at_5": 0.26265060240963856
+          }
+        },
+        "queries": 734,
+        "recall_at_1": 0.11035422343324251,
+        "recall_at_10": 0.28201634877384196,
+        "recall_at_5": 0.21662125340599456
+      },
+      "name": "word_tfidf_code_only"
+    },
+    {
+      "description": "word unigram/bigram TF-IDF over code plus non-instruction metadata",
+      "fair": true,
+      "metrics": {
+        "mean_rank": 134.3365122615804,
+        "median_rank": 50.5,
+        "mrr": 0.2171629804859558,
+        "per_label": {
+          "extended_n8": {
+            "mean_rank": 140.75548589341693,
+            "median_rank": 74,
+            "mrr": 0.16484854076546973,
+            "queries": 319,
+            "recall_at_1": 0.109717868338558,
+            "recall_at_10": 0.2852664576802508,
+            "recall_at_5": 0.21316614420062696
+          },
+          "strict_n8": {
+            "mean_rank": 129.40240963855422,
+            "median_rank": 26,
+            "mrr": 0.2573757666807391,
+            "queries": 415,
+            "recall_at_1": 0.18313253012048192,
+            "recall_at_10": 0.40481927710843374,
+            "recall_at_5": 0.3349397590361446
+          }
+        },
+        "queries": 734,
+        "recall_at_1": 0.15122615803814715,
+        "recall_at_10": 0.3528610354223433,
+        "recall_at_5": 0.28201634877384196
+      },
+      "name": "word_tfidf_code_plus_metadata"
+    },
+    {
+      "description": "character 3-5 gram TF-IDF over code plus non-instruction metadata",
+      "fair": true,
+      "metrics": {
+        "mean_rank": 204.19346049046322,
+        "median_rank": 156.5,
+        "mrr": 0.10492139960158653,
+        "per_label": {
+          "extended_n8": {
+            "mean_rank": 212.46708463949844,
+            "median_rank": 168,
+            "mrr": 0.04869365039234435,
+            "queries": 319,
+            "recall_at_1": 0.018808777429467086,
+            "recall_at_10": 0.10344827586206896,
+            "recall_at_5": 0.05956112852664577
+          },
+          "strict_n8": {
+            "mean_rank": 197.83373493975904,
+            "median_rank": 137,
+            "mrr": 0.14814224778893173,
+            "queries": 415,
+            "recall_at_1": 0.10602409638554217,
+            "recall_at_10": 0.22409638554216868,
+            "recall_at_5": 0.18072289156626506
+          }
+        },
+        "queries": 734,
+        "recall_at_1": 0.0681198910081744,
+        "recall_at_10": 0.17166212534059946,
+        "recall_at_5": 0.12806539509536785
+      },
+      "name": "char_tfidf_code_plus_metadata"
+    },
+    {
+      "description": "reciprocal-rank fusion of BM25, word TF-IDF, and character TF-IDF over code plus non-instruction metadata",
+      "fair": true,
+      "metrics": {
+        "mean_rank": 140.9059945504087,
+        "median_rank": 65.0,
+        "mrr": 0.1759465444188128,
+        "per_label": {
+          "extended_n8": {
+            "mean_rank": 150.5423197492163,
+            "median_rank": 84,
+            "mrr": 0.11806725785837517,
+            "queries": 319,
+            "recall_at_1": 0.05956112852664577,
+            "recall_at_10": 0.2413793103448276,
+            "recall_at_5": 0.15987460815047022
+          },
+          "strict_n8": {
+            "mean_rank": 133.49879518072288,
+            "median_rank": 45,
+            "mrr": 0.22043688758213714,
+            "queries": 415,
+            "recall_at_1": 0.15180722891566265,
+            "recall_at_10": 0.3710843373493976,
+            "recall_at_5": 0.28433734939759037
+          }
+        },
+        "queries": 734,
+        "recall_at_1": 0.11171662125340599,
+        "recall_at_10": 0.31471389645776565,
+        "recall_at_5": 0.23024523160762944
+      },
+      "name": "rrf_bm25_word_char_code_plus_metadata"
+    },
+    {
+      "description": "instruction text upper bound with word unigram/bigram TF-IDF",
+      "fair": false,
+      "metrics": {
+        "mean_rank": 1.0994550408719346,
+        "median_rank": 1.0,
+        "mrr": 0.9744718005276589,
+        "per_label": {
+          "extended_n8": {
+            "mean_rank": 1.0094043887147335,
+            "median_rank": 1,
+            "mrr": 0.996342737722048,
+            "queries": 319,
+            "recall_at_1": 0.9937304075235109,
+            "recall_at_10": 1.0,
+            "recall_at_5": 1.0
+          },
+          "strict_n8": {
+            "mean_rank": 1.1686746987951808,
+            "median_rank": 1,
+            "mrr": 0.9576601644673934,
+            "queries": 415,
+            "recall_at_1": 0.9325301204819277,
+            "recall_at_10": 1.0,
+            "recall_at_5": 0.9879518072289156
+          }
+        },
+        "queries": 734,
+        "recall_at_1": 0.9591280653950953,
+        "recall_at_10": 1.0,
+        "recall_at_5": 0.9931880108991825
+      },
+      "name": "instruction_upper_bound_word_tfidf"
+    }
+  ],
+  "row_count": 734,
+  "slice_reconstruction": {
+    "broad_generation": "extended_n8",
+    "gold_generation": "strict_n8"
+  }
+}

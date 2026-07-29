@@ -1,0 +1,44 @@
+{
+  "expected_response_path": "PQID/submissions/acm_tqc_benchmark/artifacts/pqid_bench_external_generation_responses.jsonl",
+  "input_file": "PQID/data/processed/seed_drafts_quality_aware_source_code_v1.jsonl",
+  "label_counts": {
+    "extended_n8": 319,
+    "strict_n8": 415
+  },
+  "missing_response_count": 0,
+  "missing_responses": [],
+  "prompt_count": 70,
+  "prompt_path": "PQID/submissions/acm_tqc_benchmark/artifacts/pqid_bench_external_generation_prompts.jsonl",
+  "records": [],
+  "response_supplied": false,
+  "response_template_path": "PQID/submissions/acm_tqc_benchmark/artifacts/pqid_bench_external_generation_response_template.jsonl",
+  "row_count": 734,
+  "split_policy": "same deterministic source-file-group split used by retrieval-copy generation baseline",
+  "split_summary": {
+    "test": {
+      "groups": 59,
+      "labels": {
+        "extended_n8": 34,
+        "strict_n8": 36
+      },
+      "rows": 70
+    },
+    "train": {
+      "groups": 470,
+      "labels": {
+        "extended_n8": 256,
+        "strict_n8": 342
+      },
+      "rows": 598
+    },
+    "validation": {
+      "groups": 59,
+      "labels": {
+        "extended_n8": 29,
+        "strict_n8": 37
+      },
+      "rows": 66
+    }
+  },
+  "summary": null
+}

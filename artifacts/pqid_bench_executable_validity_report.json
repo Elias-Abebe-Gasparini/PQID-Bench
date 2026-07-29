@@ -1,0 +1,134 @@
+{
+  "input_file": "PQID/data/processed/seed_drafts_quality_aware_source_code_v1.jsonl",
+  "issues": [
+    {
+      "file_path": "notebooks/v1/ch-algorithms/bernstein-vazirani.ipynb",
+      "issue": "NameError",
+      "label": "strict_n8",
+      "message": "name 'n' is not defined",
+      "row_id": "f22e333f6ad69dab59c339469b780689"
+    },
+    {
+      "file_path": "notebooks/v1/ch-algorithms/simon.ipynb",
+      "issue": "NameError",
+      "label": "strict_n8",
+      "message": "name 'n' is not defined",
+      "row_id": "aaf7672ea56b454c64001991cbbc573e"
+    },
+    {
+      "file_path": "translations/ja/v1/ch-algorithms/bernstein-vazirani.ipynb",
+      "issue": "NameError",
+      "label": "strict_n8",
+      "message": "name 'n' is not defined",
+      "row_id": "c67144fc9d924405fc88829d0184abc0"
+    },
+    {
+      "file_path": "translations/ja/v1/ch-algorithms/simon.ipynb",
+      "issue": "NameError",
+      "label": "strict_n8",
+      "message": "name 'n' is not defined",
+      "row_id": "7544dc3b1be38e5f2396aa10c958770c"
+    },
+    {
+      "file_path": "translations/es/v2/ch-algorithms/bernstein-vazirani.ipynb",
+      "issue": "NameError",
+      "label": "strict_n8",
+      "message": "name 'n' is not defined",
+      "row_id": "3940963950a677bb3374ae569c877a83"
+    },
+    {
+      "file_path": "tutorials/operators/02_gradients_framework.ipynb",
+      "issue": "NameError",
+      "label": "strict_n8",
+      "message": "name 'a' is not defined",
+      "row_id": "ecfbdd02bca48ca02de6cbc497e0e498"
+    },
+    {
+      "file_path": "tutorials/operators/02_gradients_framework.ipynb",
+      "issue": "NameError",
+      "label": "strict_n8",
+      "message": "name 'a' is not defined",
+      "row_id": "a5637c60fb0455c1403fac5a4e446909"
+    },
+    {
+      "file_path": "Coding_With_Qiskit/ep8_Noise_and_Error_Mitigation.ipynb",
+      "issue": "NameError",
+      "label": "strict_n8",
+      "message": "name 'nqubits' is not defined",
+      "row_id": "640fdd4102f823fec59624b25dd2fd38"
+    }
+  ],
+  "label_counts": {
+    "extended_n8": 319,
+    "strict_n8": 415
+  },
+  "qiskit_available": true,
+  "qiskit_version": "2.1.1",
+  "row_count": 734,
+  "summary": {
+    "by_label": {
+      "extended_n8": {
+        "circuit_found": 295,
+        "execution_success": 295,
+        "qasm3_export_success": 294,
+        "rates": {
+          "circuit_found": 0.9247648902821317,
+          "execution_success": 0.9247648902821317,
+          "qasm3_export_success": 0.9216300940438872,
+          "simulation_success_among_eligible": 1.0,
+          "structural_all_match": 0.9153605015673981
+        },
+        "rows": 319,
+        "simulation_eligible": 70,
+        "simulation_success": 70,
+        "structural_all_match": 292
+      },
+      "strict_n8": {
+        "circuit_found": 370,
+        "execution_success": 370,
+        "qasm3_export_success": 365,
+        "rates": {
+          "circuit_found": 0.891566265060241,
+          "execution_success": 0.891566265060241,
+          "qasm3_export_success": 0.8795180722891566,
+          "simulation_success_among_eligible": 1.0,
+          "structural_all_match": 0.8891566265060241
+        },
+        "rows": 415,
+        "simulation_eligible": 95,
+        "simulation_success": 95,
+        "structural_all_match": 369
+      }
+    },
+    "circuit_found": 665,
+    "execution_errors": {
+      "NameError": 69
+    },
+    "execution_success": 665,
+    "qasm3_export_errors": {
+      "QASM3ExporterError": 6
+    },
+    "qasm3_export_success": 659,
+    "rates": {
+      "circuit_found": 0.9059945504087193,
+      "execution_success": 0.9059945504087193,
+      "qasm3_export_success": 0.8978201634877384,
+      "simulation_success_among_all": 0.22479564032697547,
+      "simulation_success_among_eligible": 1.0,
+      "structural_all_match": 0.9005449591280654
+    },
+    "rows": 734,
+    "simulation_eligible": 165,
+    "simulation_skips": {
+      "non_unitary_or_classical:m": 1,
+      "non_unitary_or_classical:measure": 393,
+      "too_many_qubits": 80,
+      "unbound_parameters": 26
+    },
+    "simulation_success": 165,
+    "structural_all_match": 661,
+    "structural_mismatch_checks": {
+      "gate_types_match": 4
+    }
+  }
+}

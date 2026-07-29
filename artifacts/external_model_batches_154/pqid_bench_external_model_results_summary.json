@@ -1,0 +1,731 @@
+{
+  "expected_rows": 154,
+  "lower_bound": {
+    "execution_success": 0.9155844155844156,
+    "gate_count_match": 0.37662337662337664,
+    "gate_types_match": 0.17532467532467533,
+    "name": "word_tfidf_train_instruction_copy",
+    "num_qubits_match": 0.5454545454545454,
+    "qasm3_export_success": 0.9155844155844156,
+    "structural_all_match": 0.15584415584415584
+  },
+  "rows": [
+    {
+      "execution_errors": {
+        "EmptyGeneration": 1
+      },
+      "execution_success": 153,
+      "execution_success_rate": 0.9935064935064936,
+      "finish_counts": {
+        "completed": 153,
+        "incomplete:max_output_tokens": 1
+      },
+      "gate_count_match": 137,
+      "gate_count_match_rate": 0.8896103896103896,
+      "gate_types_match": 109,
+      "gate_types_match_rate": 0.7077922077922078,
+      "num_clbits_match": 134,
+      "num_clbits_match_rate": 0.8701298701298701,
+      "num_qubits_match": 147,
+      "num_qubits_match_rate": 0.9545454545454546,
+      "planned_model": "gpt-5.6-sol",
+      "provider": "OpenAI",
+      "qasm3_export_success": 153,
+      "qasm3_export_success_rate": 0.9935064935064936,
+      "report_path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/openai_gpt-5_6-sol/pqid_bench_external_model_generation_harness_report.json",
+      "resolved_model": "gpt-5.6-sol",
+      "role": "newer OpenAI frontier coding/reasoning comparison",
+      "rows": 154,
+      "slug": "openai_gpt-5_6-sol",
+      "structural_all_match": 97,
+      "structural_all_match_rate": 0.6298701298701299,
+      "structural_mismatch_checks": {
+        "gate_count_match": 16,
+        "gate_types_match": 44,
+        "num_clbits_match": 19,
+        "num_qubits_match": 6
+      }
+    },
+    {
+      "execution_errors": {
+        "EmptyGeneration": 1,
+        "SyntaxError": 2,
+        "TypeError": 1
+      },
+      "execution_success": 150,
+      "execution_success_rate": 0.974025974025974,
+      "finish_counts": {
+        "completed": 153,
+        "incomplete:max_output_tokens": 1
+      },
+      "gate_count_match": 133,
+      "gate_count_match_rate": 0.8636363636363636,
+      "gate_types_match": 105,
+      "gate_types_match_rate": 0.6818181818181818,
+      "num_clbits_match": 129,
+      "num_clbits_match_rate": 0.8376623376623377,
+      "num_qubits_match": 143,
+      "num_qubits_match_rate": 0.9285714285714286,
+      "planned_model": "gpt-5.5",
+      "provider": "OpenAI",
+      "qasm3_export_success": 150,
+      "qasm3_export_success_rate": 0.974025974025974,
+      "report_path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/openai_gpt-5_5/pqid_bench_external_model_generation_harness_report.json",
+      "resolved_model": "gpt-5.5-2026-04-23",
+      "role": "frontier coding/reasoning",
+      "rows": 154,
+      "slug": "openai_gpt-5_5",
+      "structural_all_match": 93,
+      "structural_all_match_rate": 0.6038961038961039,
+      "structural_mismatch_checks": {
+        "gate_count_match": 17,
+        "gate_types_match": 45,
+        "num_clbits_match": 21,
+        "num_qubits_match": 7
+      }
+    },
+    {
+      "execution_errors": {
+        "AttributeError": 3
+      },
+      "execution_success": 151,
+      "execution_success_rate": 0.9805194805194806,
+      "finish_counts": {
+        "completed": 154
+      },
+      "gate_count_match": 133,
+      "gate_count_match_rate": 0.8636363636363636,
+      "gate_types_match": 105,
+      "gate_types_match_rate": 0.6818181818181818,
+      "num_clbits_match": 133,
+      "num_clbits_match_rate": 0.8636363636363636,
+      "num_qubits_match": 147,
+      "num_qubits_match_rate": 0.9545454545454546,
+      "planned_model": "gpt-5.4-mini",
+      "provider": "OpenAI",
+      "qasm3_export_success": 150,
+      "qasm3_export_success_rate": 0.974025974025974,
+      "report_path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/openai_gpt-5_4-mini/pqid_bench_external_model_generation_harness_report.json",
+      "resolved_model": "gpt-5.4-mini-2026-03-17",
+      "role": "cost/latency frontier comparison",
+      "rows": 154,
+      "slug": "openai_gpt-5_4-mini",
+      "structural_all_match": 93,
+      "structural_all_match_rate": 0.6038961038961039,
+      "structural_mismatch_checks": {
+        "gate_count_match": 18,
+        "gate_types_match": 46,
+        "num_clbits_match": 18,
+        "num_qubits_match": 4
+      }
+    },
+    {
+      "execution_errors": {
+        "EmptyGeneration": 3
+      },
+      "execution_success": 151,
+      "execution_success_rate": 0.9805194805194806,
+      "finish_counts": {
+        "end_turn": 151,
+        "max_tokens": 1,
+        "refusal": 2
+      },
+      "gate_count_match": 138,
+      "gate_count_match_rate": 0.8961038961038961,
+      "gate_types_match": 108,
+      "gate_types_match_rate": 0.7012987012987013,
+      "num_clbits_match": 133,
+      "num_clbits_match_rate": 0.8636363636363636,
+      "num_qubits_match": 145,
+      "num_qubits_match_rate": 0.9415584415584416,
+      "planned_model": "claude-fable-5",
+      "provider": "Anthropic",
+      "qasm3_export_success": 151,
+      "qasm3_export_success_rate": 0.9805194805194806,
+      "report_path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/anthropic_claude-fable-5/pqid_bench_external_model_generation_harness_report.json",
+      "resolved_model": "claude-fable-5",
+      "role": "newer Anthropic frontier coding/reasoning comparison",
+      "rows": 154,
+      "slug": "anthropic_claude-fable-5",
+      "structural_all_match": 97,
+      "structural_all_match_rate": 0.6298701298701299,
+      "structural_mismatch_checks": {
+        "gate_count_match": 13,
+        "gate_types_match": 43,
+        "num_clbits_match": 18,
+        "num_qubits_match": 6
+      }
+    },
+    {
+      "execution_errors": {
+        "NameError": 1
+      },
+      "execution_success": 153,
+      "execution_success_rate": 0.9935064935064936,
+      "finish_counts": {
+        "end_turn": 154
+      },
+      "gate_count_match": 130,
+      "gate_count_match_rate": 0.8441558441558441,
+      "gate_types_match": 102,
+      "gate_types_match_rate": 0.6623376623376623,
+      "num_clbits_match": 131,
+      "num_clbits_match_rate": 0.8506493506493507,
+      "num_qubits_match": 147,
+      "num_qubits_match_rate": 0.9545454545454546,
+      "planned_model": "claude-sonnet-4-6",
+      "provider": "Anthropic",
+      "qasm3_export_success": 153,
+      "qasm3_export_success_rate": 0.9935064935064936,
+      "report_path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/anthropic_claude-sonnet-4-6/pqid_bench_external_model_generation_harness_report.json",
+      "resolved_model": "claude-sonnet-4-6",
+      "role": "independent frontier coding family",
+      "rows": 154,
+      "slug": "anthropic_claude-sonnet-4-6",
+      "structural_all_match": 91,
+      "structural_all_match_rate": 0.5909090909090909,
+      "structural_mismatch_checks": {
+        "gate_count_match": 23,
+        "gate_types_match": 51,
+        "num_clbits_match": 22,
+        "num_qubits_match": 6
+      }
+    },
+    {
+      "execution_errors": {},
+      "execution_success": 154,
+      "execution_success_rate": 1.0,
+      "finish_counts": {
+        "end_turn": 154
+      },
+      "gate_count_match": 133,
+      "gate_count_match_rate": 0.8636363636363636,
+      "gate_types_match": 104,
+      "gate_types_match_rate": 0.6753246753246753,
+      "num_clbits_match": 132,
+      "num_clbits_match_rate": 0.8571428571428571,
+      "num_qubits_match": 149,
+      "num_qubits_match_rate": 0.9675324675324676,
+      "planned_model": "claude-opus-4-8",
+      "provider": "Anthropic",
+      "qasm3_export_success": 153,
+      "qasm3_export_success_rate": 0.9935064935064936,
+      "report_path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/anthropic_claude-opus-4-8/pqid_bench_external_model_generation_harness_report.json",
+      "resolved_model": "claude-opus-4-8",
+      "role": "higher-capability Anthropic frontier comparison",
+      "rows": 154,
+      "slug": "anthropic_claude-opus-4-8",
+      "structural_all_match": 92,
+      "structural_all_match_rate": 0.5974025974025974,
+      "structural_mismatch_checks": {
+        "gate_count_match": 21,
+        "gate_types_match": 50,
+        "num_clbits_match": 22,
+        "num_qubits_match": 5
+      }
+    },
+    {
+      "execution_errors": {
+        "AttributeError": 9,
+        "EmptyGeneration": 5,
+        "NoCircuitReturned": 1,
+        "SyntaxError": 3
+      },
+      "execution_success": 136,
+      "execution_success_rate": 0.8831168831168831,
+      "finish_counts": {
+        "MAX_TOKENS": 10,
+        "STOP": 144
+      },
+      "gate_count_match": 121,
+      "gate_count_match_rate": 0.7857142857142857,
+      "gate_types_match": 93,
+      "gate_types_match_rate": 0.6038961038961039,
+      "num_clbits_match": 117,
+      "num_clbits_match_rate": 0.7597402597402597,
+      "num_qubits_match": 130,
+      "num_qubits_match_rate": 0.8441558441558441,
+      "planned_model": "gemini-2.5-pro",
+      "provider": "Google",
+      "qasm3_export_success": 136,
+      "qasm3_export_success_rate": 0.8831168831168831,
+      "report_path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/google_gemini-2_5-pro/pqid_bench_external_model_generation_harness_report.json",
+      "resolved_model": "gemini-2.5-pro",
+      "role": "independent frontier coding family",
+      "rows": 154,
+      "slug": "google_gemini-2_5-pro",
+      "structural_all_match": 83,
+      "structural_all_match_rate": 0.538961038961039,
+      "structural_mismatch_checks": {
+        "gate_count_match": 15,
+        "gate_types_match": 43,
+        "num_clbits_match": 19,
+        "num_qubits_match": 6
+      }
+    },
+    {
+      "execution_errors": {
+        "AttributeError": 1,
+        "SyntaxError": 4
+      },
+      "execution_success": 149,
+      "execution_success_rate": 0.9675324675324676,
+      "finish_counts": {
+        "MAX_TOKENS": 5,
+        "STOP": 149
+      },
+      "gate_count_match": 133,
+      "gate_count_match_rate": 0.8636363636363636,
+      "gate_types_match": 104,
+      "gate_types_match_rate": 0.6753246753246753,
+      "num_clbits_match": 131,
+      "num_clbits_match_rate": 0.8506493506493507,
+      "num_qubits_match": 142,
+      "num_qubits_match_rate": 0.922077922077922,
+      "planned_model": "gemini-3.1-pro-preview",
+      "provider": "Google",
+      "qasm3_export_success": 149,
+      "qasm3_export_success_rate": 0.9675324675324676,
+      "report_path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/google_gemini-3_1-pro-preview/pqid_bench_external_model_generation_harness_report.json",
+      "resolved_model": "gemini-3.1-pro-preview",
+      "role": "newer Google frontier coding/reasoning comparison",
+      "rows": 154,
+      "slug": "google_gemini-3_1-pro-preview",
+      "structural_all_match": 94,
+      "structural_all_match_rate": 0.6103896103896104,
+      "structural_mismatch_checks": {
+        "gate_count_match": 16,
+        "gate_types_match": 45,
+        "num_clbits_match": 18,
+        "num_qubits_match": 7
+      }
+    },
+    {
+      "execution_errors": {
+        "AttributeError": 5,
+        "EmptyGeneration": 6,
+        "ImportError": 1,
+        "NoCircuitReturned": 1
+      },
+      "execution_success": 141,
+      "execution_success_rate": 0.9155844155844156,
+      "finish_counts": {
+        "length": 6,
+        "stop": 148
+      },
+      "gate_count_match": 126,
+      "gate_count_match_rate": 0.8181818181818182,
+      "gate_types_match": 100,
+      "gate_types_match_rate": 0.6493506493506493,
+      "num_clbits_match": 124,
+      "num_clbits_match_rate": 0.8051948051948052,
+      "num_qubits_match": 136,
+      "num_qubits_match_rate": 0.8831168831168831,
+      "planned_model": "deepseek-v4-pro",
+      "provider": "DeepSeek",
+      "qasm3_export_success": 141,
+      "qasm3_export_success_rate": 0.9155844155844156,
+      "report_path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/deepseek_deepseek-v4-pro/pqid_bench_external_model_generation_harness_report.json",
+      "resolved_model": "deepseek-v4-pro",
+      "role": "official DeepSeek frontier coding/reasoning row",
+      "rows": 154,
+      "slug": "deepseek_deepseek-v4-pro",
+      "structural_all_match": 91,
+      "structural_all_match_rate": 0.5909090909090909,
+      "structural_mismatch_checks": {
+        "gate_count_match": 15,
+        "gate_types_match": 41,
+        "num_clbits_match": 17,
+        "num_qubits_match": 5
+      }
+    },
+    {
+      "execution_errors": {
+        "AttributeError": 5,
+        "EmptyGeneration": 5,
+        "ImportError": 6,
+        "NoCircuitReturned": 1
+      },
+      "execution_success": 137,
+      "execution_success_rate": 0.8896103896103896,
+      "finish_counts": {
+        "length": 7,
+        "stop": 147
+      },
+      "gate_count_match": 118,
+      "gate_count_match_rate": 0.7662337662337663,
+      "gate_types_match": 91,
+      "gate_types_match_rate": 0.5909090909090909,
+      "num_clbits_match": 120,
+      "num_clbits_match_rate": 0.7792207792207793,
+      "num_qubits_match": 132,
+      "num_qubits_match_rate": 0.8571428571428571,
+      "planned_model": "deepseek-v4-flash",
+      "provider": "DeepSeek",
+      "qasm3_export_success": 137,
+      "qasm3_export_success_rate": 0.8896103896103896,
+      "report_path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/deepseek_deepseek-v4-flash/pqid_bench_external_model_generation_harness_report.json",
+      "resolved_model": "deepseek-v4-flash",
+      "role": "official DeepSeek fast/cost frontier comparison",
+      "rows": 154,
+      "slug": "deepseek_deepseek-v4-flash",
+      "structural_all_match": 81,
+      "structural_all_match_rate": 0.525974025974026,
+      "structural_mismatch_checks": {
+        "gate_count_match": 19,
+        "gate_types_match": 46,
+        "num_clbits_match": 17,
+        "num_qubits_match": 5
+      }
+    },
+    {
+      "execution_errors": {
+        "AttributeError": 5,
+        "ImportError": 1,
+        "NameError": 2,
+        "TypeError": 2
+      },
+      "execution_success": 144,
+      "execution_success_rate": 0.935064935064935,
+      "finish_counts": {
+        "stop": 154
+      },
+      "gate_count_match": 116,
+      "gate_count_match_rate": 0.7532467532467533,
+      "gate_types_match": 94,
+      "gate_types_match_rate": 0.6103896103896104,
+      "num_clbits_match": 110,
+      "num_clbits_match_rate": 0.7142857142857143,
+      "num_qubits_match": 138,
+      "num_qubits_match_rate": 0.8961038961038961,
+      "planned_model": "llama-3.3-70b-versatile",
+      "provider": "Groq",
+      "qasm3_export_success": 144,
+      "qasm3_export_success_rate": 0.935064935064935,
+      "report_path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/groq_llama-3_3-70b-versatile/pqid_bench_external_model_generation_harness_report.json",
+      "resolved_model": "llama-3.3-70b-versatile",
+      "role": "free/low-cost open-weight Llama API bridge",
+      "rows": 154,
+      "slug": "groq_llama-3_3-70b-versatile",
+      "structural_all_match": 71,
+      "structural_all_match_rate": 0.461038961038961,
+      "structural_mismatch_checks": {
+        "gate_count_match": 28,
+        "gate_types_match": 50,
+        "num_clbits_match": 34,
+        "num_qubits_match": 6
+      }
+    },
+    {
+      "execution_errors": {
+        "AttributeError": 2,
+        "SyntaxError": 63
+      },
+      "execution_success": 89,
+      "execution_success_rate": 0.577922077922078,
+      "finish_counts": {
+        "length": 39,
+        "stop": 115
+      },
+      "gate_count_match": 82,
+      "gate_count_match_rate": 0.5324675324675324,
+      "gate_types_match": 61,
+      "gate_types_match_rate": 0.3961038961038961,
+      "num_clbits_match": 71,
+      "num_clbits_match_rate": 0.461038961038961,
+      "num_qubits_match": 88,
+      "num_qubits_match_rate": 0.5714285714285714,
+      "planned_model": "qwen/qwen3-32b",
+      "provider": "Groq",
+      "qasm3_export_success": 89,
+      "qasm3_export_success_rate": 0.577922077922078,
+      "report_path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/groq_qwen_qwen3-32b/pqid_bench_external_model_generation_harness_report.json",
+      "resolved_model": "qwen/qwen3-32b",
+      "role": "free/low-cost open-weight reasoning/code API bridge",
+      "rows": 154,
+      "slug": "groq_qwen_qwen3-32b",
+      "structural_all_match": 54,
+      "structural_all_match_rate": 0.35064935064935066,
+      "structural_mismatch_checks": {
+        "gate_count_match": 7,
+        "gate_types_match": 28,
+        "num_clbits_match": 18,
+        "num_qubits_match": 1
+      }
+    },
+    {
+      "execution_errors": {
+        "AttributeError": 2,
+        "ImportError": 1,
+        "NoCircuitReturned": 2
+      },
+      "execution_success": 149,
+      "execution_success_rate": 0.9675324675324676,
+      "finish_counts": {
+        "stop": 154
+      },
+      "gate_count_match": 123,
+      "gate_count_match_rate": 0.7987012987012987,
+      "gate_types_match": 92,
+      "gate_types_match_rate": 0.5974025974025974,
+      "num_clbits_match": 130,
+      "num_clbits_match_rate": 0.8441558441558441,
+      "num_qubits_match": 145,
+      "num_qubits_match_rate": 0.9415584415584416,
+      "planned_model": "openai/gpt-oss-120b",
+      "provider": "Groq",
+      "qasm3_export_success": 148,
+      "qasm3_export_success_rate": 0.961038961038961,
+      "report_path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/groq_openai_gpt-oss-120b/pqid_bench_external_model_generation_harness_report.json",
+      "resolved_model": "openai/gpt-oss-120b",
+      "role": "free/low-cost open-weight OpenAI-family API bridge",
+      "rows": 154,
+      "slug": "groq_openai_gpt-oss-120b",
+      "structural_all_match": 82,
+      "structural_all_match_rate": 0.5324675324675324,
+      "structural_mismatch_checks": {
+        "gate_count_match": 26,
+        "gate_types_match": 57,
+        "num_clbits_match": 19,
+        "num_qubits_match": 4
+      }
+    },
+    {
+      "execution_errors": {
+        "AttributeError": 5,
+        "EmptyGeneration": 5,
+        "ImportError": 1
+      },
+      "execution_success": 143,
+      "execution_success_rate": 0.9285714285714286,
+      "finish_counts": {
+        "length": 5,
+        "stop": 149
+      },
+      "gate_count_match": 121,
+      "gate_count_match_rate": 0.7857142857142857,
+      "gate_types_match": 92,
+      "gate_types_match_rate": 0.5974025974025974,
+      "num_clbits_match": 124,
+      "num_clbits_match_rate": 0.8051948051948052,
+      "num_qubits_match": 140,
+      "num_qubits_match_rate": 0.9090909090909091,
+      "planned_model": "openai/gpt-oss-20b",
+      "provider": "Groq",
+      "qasm3_export_success": 142,
+      "qasm3_export_success_rate": 0.922077922077922,
+      "report_path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/groq_openai_gpt-oss-20b/pqid_bench_external_model_generation_harness_report.json",
+      "resolved_model": "openai/gpt-oss-20b",
+      "role": "size-control against GPT-OSS 120B",
+      "rows": 154,
+      "slug": "groq_openai_gpt-oss-20b",
+      "structural_all_match": 78,
+      "structural_all_match_rate": 0.5064935064935064,
+      "structural_mismatch_checks": {
+        "gate_count_match": 22,
+        "gate_types_match": 51,
+        "num_clbits_match": 19,
+        "num_qubits_match": 3
+      }
+    },
+    {
+      "execution_errors": {
+        "AttributeError": 8,
+        "CircuitError": 5,
+        "ImportError": 7,
+        "NoCircuitReturned": 2,
+        "SyntaxError": 5,
+        "TypeError": 2
+      },
+      "execution_success": 125,
+      "execution_success_rate": 0.8116883116883117,
+      "finish_counts": {
+        "length": 3,
+        "stop": 151
+      },
+      "gate_count_match": 93,
+      "gate_count_match_rate": 0.6038961038961039,
+      "gate_types_match": 66,
+      "gate_types_match_rate": 0.42857142857142855,
+      "num_clbits_match": 101,
+      "num_clbits_match_rate": 0.6558441558441559,
+      "num_qubits_match": 119,
+      "num_qubits_match_rate": 0.7727272727272727,
+      "planned_model": "llama-3.1-8b-instant",
+      "provider": "Groq",
+      "qasm3_export_success": 125,
+      "qasm3_export_success_rate": 0.8116883116883117,
+      "report_path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/groq_llama-3_1-8b-instant/pqid_bench_external_model_generation_harness_report.json",
+      "resolved_model": "llama-3.1-8b-instant",
+      "role": "fast small open-weight API bridge",
+      "rows": 154,
+      "slug": "groq_llama-3_1-8b-instant",
+      "structural_all_match": 54,
+      "structural_all_match_rate": 0.35064935064935066,
+      "structural_mismatch_checks": {
+        "gate_count_match": 32,
+        "gate_types_match": 59,
+        "num_clbits_match": 24,
+        "num_qubits_match": 6
+      }
+    },
+    {
+      "execution_errors": {
+        "AttributeError": 9,
+        "CircuitError": 6,
+        "ImportError": 8,
+        "NameError": 1,
+        "SyntaxError": 1,
+        "TypeError": 2
+      },
+      "execution_success": 127,
+      "execution_success_rate": 0.8246753246753247,
+      "finish_counts": {
+        "stop": 154
+      },
+      "gate_count_match": 100,
+      "gate_count_match_rate": 0.6493506493506493,
+      "gate_types_match": 76,
+      "gate_types_match_rate": 0.4935064935064935,
+      "num_clbits_match": 111,
+      "num_clbits_match_rate": 0.7207792207792207,
+      "num_qubits_match": 121,
+      "num_qubits_match_rate": 0.7857142857142857,
+      "planned_model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "provider": "Groq",
+      "qasm3_export_success": 127,
+      "qasm3_export_success_rate": 0.8246753246753247,
+      "report_path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/groq_meta-llama_llama-4-scout-17b-16e-instruct/pqid_bench_external_model_generation_harness_report.json",
+      "resolved_model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "role": "optional newer Llama-family contrast",
+      "rows": 154,
+      "slug": "groq_meta-llama_llama-4-scout-17b-16e-instruct",
+      "structural_all_match": 69,
+      "structural_all_match_rate": 0.44805194805194803,
+      "structural_mismatch_checks": {
+        "gate_count_match": 27,
+        "gate_types_match": 51,
+        "num_clbits_match": 16,
+        "num_qubits_match": 6
+      }
+    },
+    {
+      "execution_errors": {
+        "AttributeError": 6,
+        "ImportError": 1,
+        "NameError": 2,
+        "SyntaxError": 1
+      },
+      "execution_success": 144,
+      "execution_success_rate": 0.935064935064935,
+      "finish_counts": {
+        "length": 2,
+        "stop": 152
+      },
+      "gate_count_match": 127,
+      "gate_count_match_rate": 0.8246753246753247,
+      "gate_types_match": 98,
+      "gate_types_match_rate": 0.6363636363636364,
+      "num_clbits_match": 125,
+      "num_clbits_match_rate": 0.8116883116883117,
+      "num_qubits_match": 140,
+      "num_qubits_match_rate": 0.9090909090909091,
+      "planned_model": "mistral-ai/codestral-2501",
+      "provider": "GitHub Models",
+      "qasm3_export_success": 144,
+      "qasm3_export_success_rate": 0.935064935064935,
+      "report_path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/github_models_mistral-ai_codestral-2501/pqid_bench_external_model_generation_harness_report.json",
+      "resolved_model": "codestral-2501",
+      "role": "code-specialized Mistral-family baseline",
+      "rows": 154,
+      "slug": "github_models_mistral-ai_codestral-2501",
+      "structural_all_match": 86,
+      "structural_all_match_rate": 0.5584415584415584,
+      "structural_mismatch_checks": {
+        "gate_count_match": 17,
+        "gate_types_match": 46,
+        "num_clbits_match": 19,
+        "num_qubits_match": 4
+      }
+    },
+    {
+      "execution_errors": {
+        "AttributeError": 6,
+        "CircuitError": 1,
+        "ImportError": 7,
+        "IndentationError": 2,
+        "NoCircuitReturned": 4,
+        "QiskitError": 1,
+        "SyntaxError": 1
+      },
+      "execution_success": 132,
+      "execution_success_rate": 0.8571428571428571,
+      "finish_counts": {
+        "length": 1,
+        "stop": 153
+      },
+      "gate_count_match": 114,
+      "gate_count_match_rate": 0.7402597402597403,
+      "gate_types_match": 90,
+      "gate_types_match_rate": 0.5844155844155844,
+      "num_clbits_match": 115,
+      "num_clbits_match_rate": 0.7467532467532467,
+      "num_qubits_match": 129,
+      "num_qubits_match_rate": 0.8376623376623377,
+      "planned_model": "qwen/qwen3-coder-next",
+      "provider": "Hugging Face / Novita",
+      "qasm3_export_success": 132,
+      "qasm3_export_success_rate": 0.8571428571428571,
+      "report_path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/huggingface_router_qwen_qwen3-coder-next_novita/pqid_bench_external_model_generation_harness_report.json",
+      "resolved_model": "qwen/qwen3-coder-next",
+      "role": "current open-weight code-specialized comparison",
+      "rows": 154,
+      "slug": "huggingface_router_qwen_qwen3-coder-next_novita",
+      "structural_all_match": 78,
+      "structural_all_match_rate": 0.5064935064935064,
+      "structural_mismatch_checks": {
+        "gate_count_match": 18,
+        "gate_types_match": 42,
+        "num_clbits_match": 17,
+        "num_qubits_match": 3
+      }
+    },
+    {
+      "execution_errors": {
+        "AttributeError": 4,
+        "CircuitError": 1,
+        "ImportError": 4
+      },
+      "execution_success": 145,
+      "execution_success_rate": 0.9415584415584416,
+      "finish_counts": {
+        "stop": 154
+      },
+      "gate_count_match": 126,
+      "gate_count_match_rate": 0.8181818181818182,
+      "gate_types_match": 96,
+      "gate_types_match_rate": 0.6233766233766234,
+      "num_clbits_match": 114,
+      "num_clbits_match_rate": 0.7402597402597403,
+      "num_qubits_match": 140,
+      "num_qubits_match_rate": 0.9090909090909091,
+      "planned_model": "meta/llama-4-maverick-17b-128e-instruct-fp8",
+      "provider": "GitHub Models",
+      "qasm3_export_success": 144,
+      "qasm3_export_success_rate": 0.935064935064935,
+      "report_path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/github_models_meta_llama-4-maverick-17b-128e-instruct-fp8/pqid_bench_external_model_generation_harness_report.json",
+      "resolved_model": "Llama-4-Maverick-17B-128E-Instruct-FP8",
+      "role": "Meta mixture-of-experts flagship comparison",
+      "rows": 154,
+      "slug": "github_models_meta_llama-4-maverick-17b-128e-instruct-fp8",
+      "structural_all_match": 75,
+      "structural_all_match_rate": 0.487012987012987,
+      "structural_mismatch_checks": {
+        "gate_count_match": 19,
+        "gate_types_match": 49,
+        "num_clbits_match": 31,
+        "num_qubits_match": 5
+      }
+    }
+  ]
+}

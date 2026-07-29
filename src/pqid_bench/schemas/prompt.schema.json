@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://pqid-bench.org/schemas/1.0.0/prompt.schema.json",
+  "title": "PQID-Bench model prompt",
+  "type": "object",
+  "required": ["prompt_id", "row_id", "prompt"],
+  "properties": {
+    "prompt_id": {"type": "string", "pattern": "^pqid_bench_external_gen_[0-9]{4}$"},
+    "row_id": {"type": "string", "minLength": 1},
+    "prompt": {"type": "string", "minLength": 1},
+    "prompt_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  },
+  "additionalProperties": true
+}

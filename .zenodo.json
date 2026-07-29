@@ -1,0 +1,38 @@
+{
+  "title": "PQID-Bench: A Validation-Aware Benchmark Suite for Quantum-Program Generation",
+  "version": "1.0.0",
+  "publication_date": "2026-07-23",
+  "upload_type": "software",
+  "description": "<p>PQID-Bench is a frozen, validation-aware benchmark suite for quantum-program generation derived from the PQID v1.0.2 dataset. The release contains the repository-cleared 734-row clean generation population, its deterministic 514/66/154 split, 154 held-out prompts, canonical outputs for 21 model routes, three retrieval-copy baselines, evaluator and predicate implementations, ordered and parameter-aware replay audits, cluster-aware inferential analyses, a three-run stochastic-repeatability audit over 72 unique signatures, publication-output regeneration scripts, and reproducibility documentation. Unpublished manuscript source and manuscript-facing publication derivatives are intentionally excluded.</p><p>Across the complete 21 x 154 matrix, executable-circuit materialization succeeds for 2,950 of 3,234 outputs (91.22%), 2,944 are OpenQASM 3 assembly admissible (91.03%), and 1,703 recover the frozen reference signature (52.66%). The 38.56-percentage-point Execution-Structure Gap decomposes into 0.19 points of execution-to-assembly attrition and a 38.37-point Assembly-Structure Gap, which retains 99.52% of the ES-Gap. The package preserves exact trace artifacts and SHA-256 manifests; it does not claim that exact reference reconstruction is equivalent to semantic circuit equivalence.</p>",
+  "creators": [
+    {
+      "name": "Gasparini, Elias Abebe"
+    }
+  ],
+  "keywords": [
+    "quantum computing",
+    "quantum programming",
+    "Qiskit",
+    "quantum code generation",
+    "large language models",
+    "benchmark",
+    "structural evaluation",
+    "reproducibility"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.20674853",
+      "relation": "isDerivedFrom",
+      "scheme": "doi",
+      "resource_type": "dataset"
+    },
+    {
+      "identifier": "https://github.com/Elias-Abebe-Gasparini/PQID-Bench",
+      "relation": "isSupplementTo",
+      "scheme": "url",
+      "resource_type": "software"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "access_right": "open"
+}

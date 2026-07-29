@@ -1,0 +1,17 @@
+{
+  "canonical_response_rows": 154,
+  "canonical_response_sha256": "456ba5bf31d16993b63ced9f131b25817dc6fd7f13170626d6a8a35a37031d6a",
+  "created_at_utc": "2026-07-12T14:54:20+00:00",
+  "original_audit_sha256": "33efa413cb4f30a23c61a252d5cd1d92c7b820726f74d3753378bf3d7356b94e",
+  "original_response_file": "PQID\\submissions\\acm_tqc_benchmark\\artifacts\\external_model_batches_154\\audit\\duplicate_response_rows\\github_models_mistral-ai_codestral-2501_responses_precanonical.jsonl",
+  "original_response_rows": 155,
+  "original_response_sha256": "33efa413cb4f30a23c61a252d5cd1d92c7b820726f74d3753378bf3d7356b94e",
+  "request_file": "PQID\\submissions\\acm_tqc_benchmark\\artifacts\\external_model_batches_154\\requests\\github_models_mistral-ai_codestral-2501_requests.jsonl",
+  "request_rows": 154,
+  "response_file": "PQID\\submissions\\acm_tqc_benchmark\\artifacts\\external_model_batches_154\\responses\\github_models_mistral-ai_codestral-2501_responses.jsonl",
+  "schema_version": "pqid-bench-response-canonicalization-v1",
+  "selection_policy": "earliest non-error response by created_at_utc, then append order",
+  "superseded_audit_sha256": "979167c257299de8dc99f29a538f45d1bd0f96c792f2dbc6e21d0346ecc54fb5",
+  "superseded_response_file": "PQID\\submissions\\acm_tqc_benchmark\\artifacts\\external_model_batches_154\\audit\\duplicate_response_rows\\github_models_mistral-ai_codestral-2501_superseded_rows.jsonl",
+  "superseded_rows": 1
+}

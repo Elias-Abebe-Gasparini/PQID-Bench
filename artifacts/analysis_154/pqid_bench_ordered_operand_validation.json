@@ -1,0 +1,596 @@
+{
+  "by_cohort": {
+    "extension": {
+      "cells": 1764,
+      "classical_operands_given_signature": {
+        "count": 863,
+        "denominator": 867,
+        "rate": 0.9953863898500577
+      },
+      "full_literal_circuit_given_signature": {
+        "count": 761,
+        "denominator": 867,
+        "rate": 0.8777393310265282
+      },
+      "gate_order_given_signature": {
+        "count": 816,
+        "denominator": 867,
+        "rate": 0.9411764705882353
+      },
+      "global_phase_given_signature": {
+        "count": 867,
+        "denominator": 867,
+        "rate": 1.0
+      },
+      "mean_gate_order_similarity_given_signature": 0.9900930960619542,
+      "mean_wire_tape_similarity_given_signature": 0.9800032715558517,
+      "measurement_map_given_signature_and_measurement": {
+        "count": 515,
+        "denominator": 518,
+        "rate": 0.9942084942084942
+      },
+      "ordered_wire_matches_outside_signature": 0,
+      "ordered_wire_tape_given_signature": {
+        "count": 781,
+        "denominator": 867,
+        "rate": 0.9008073817762399
+      },
+      "parameter_aware_tape_given_signature": {
+        "count": 761,
+        "denominator": 867,
+        "rate": 0.8777393310265282
+      },
+      "parameter_tokens_given_signature": {
+        "count": 819,
+        "denominator": 867,
+        "rate": 0.9446366782006921
+      },
+      "quantum_operands_given_signature": {
+        "count": 783,
+        "denominator": 867,
+        "rate": 0.903114186851211
+      },
+      "replay_failures_among_report_executable": 0,
+      "replayed_executable": 1591,
+      "report_executable": 1591,
+      "report_signature_matches": 867,
+      "selected_name_disagreements": 0,
+      "signature_matches_replayed": 867,
+      "signature_replay_disagreements": 0
+    },
+    "pilot": {
+      "cells": 1470,
+      "classical_operands_given_signature": {
+        "count": 823,
+        "denominator": 836,
+        "rate": 0.9844497607655502
+      },
+      "full_literal_circuit_given_signature": {
+        "count": 784,
+        "denominator": 836,
+        "rate": 0.937799043062201
+      },
+      "gate_order_given_signature": {
+        "count": 817,
+        "denominator": 836,
+        "rate": 0.9772727272727273
+      },
+      "global_phase_given_signature": {
+        "count": 836,
+        "denominator": 836,
+        "rate": 1.0
+      },
+      "mean_gate_order_similarity_given_signature": 0.9947453861927547,
+      "mean_wire_tape_similarity_given_signature": 0.9875465178096758,
+      "measurement_map_given_signature_and_measurement": {
+        "count": 514,
+        "denominator": 526,
+        "rate": 0.9771863117870723
+      },
+      "ordered_wire_matches_outside_signature": 0,
+      "ordered_wire_tape_given_signature": {
+        "count": 795,
+        "denominator": 836,
+        "rate": 0.9509569377990431
+      },
+      "parameter_aware_tape_given_signature": {
+        "count": 784,
+        "denominator": 836,
+        "rate": 0.937799043062201
+      },
+      "parameter_tokens_given_signature": {
+        "count": 825,
+        "denominator": 836,
+        "rate": 0.9868421052631579
+      },
+      "quantum_operands_given_signature": {
+        "count": 795,
+        "denominator": 836,
+        "rate": 0.9509569377990431
+      },
+      "replay_failures_among_report_executable": 0,
+      "replayed_executable": 1359,
+      "report_executable": 1359,
+      "report_signature_matches": 836,
+      "selected_name_disagreements": 0,
+      "signature_matches_replayed": 836,
+      "signature_replay_disagreements": 0
+    }
+  },
+  "by_model": [
+    {
+      "executable": 153,
+      "full_literal_matches": 88,
+      "gate_order_matches": 93,
+      "model": "gpt-5.6-sol",
+      "model_label": "GPT-5.6 Sol",
+      "ordered_wire_given_signature_rate": 0.9278350515463918,
+      "ordered_wire_tape_matches": 90,
+      "parameter_aware_given_signature_rate": 0.9072164948453608,
+      "parameter_aware_tape_matches": 88,
+      "signature_matches": 97,
+      "signature_rate": 0.6298701298701299
+    },
+    {
+      "executable": 150,
+      "full_literal_matches": 85,
+      "gate_order_matches": 88,
+      "model": "gpt-5.5",
+      "model_label": "GPT-5.5",
+      "ordered_wire_given_signature_rate": 0.9247311827956989,
+      "ordered_wire_tape_matches": 86,
+      "parameter_aware_given_signature_rate": 0.9139784946236559,
+      "parameter_aware_tape_matches": 85,
+      "signature_matches": 93,
+      "signature_rate": 0.6038961038961039
+    },
+    {
+      "executable": 151,
+      "full_literal_matches": 85,
+      "gate_order_matches": 91,
+      "model": "gpt-5.4-mini",
+      "model_label": "GPT-5.4 mini",
+      "ordered_wire_given_signature_rate": 0.9354838709677419,
+      "ordered_wire_tape_matches": 87,
+      "parameter_aware_given_signature_rate": 0.9139784946236559,
+      "parameter_aware_tape_matches": 85,
+      "signature_matches": 93,
+      "signature_rate": 0.6038961038961039
+    },
+    {
+      "executable": 151,
+      "full_literal_matches": 89,
+      "gate_order_matches": 93,
+      "model": "claude-fable-5",
+      "model_label": "Claude Fable 5",
+      "ordered_wire_given_signature_rate": 0.9278350515463918,
+      "ordered_wire_tape_matches": 90,
+      "parameter_aware_given_signature_rate": 0.9175257731958762,
+      "parameter_aware_tape_matches": 89,
+      "signature_matches": 97,
+      "signature_rate": 0.6298701298701299
+    },
+    {
+      "executable": 153,
+      "full_literal_matches": 83,
+      "gate_order_matches": 86,
+      "model": "claude-sonnet-4-6",
+      "model_label": "Claude Sonnet 4.6",
+      "ordered_wire_given_signature_rate": 0.9230769230769231,
+      "ordered_wire_tape_matches": 84,
+      "parameter_aware_given_signature_rate": 0.9120879120879121,
+      "parameter_aware_tape_matches": 83,
+      "signature_matches": 91,
+      "signature_rate": 0.5909090909090909
+    },
+    {
+      "executable": 154,
+      "full_literal_matches": 85,
+      "gate_order_matches": 89,
+      "model": "claude-opus-4-8",
+      "model_label": "Claude Opus 4.8",
+      "ordered_wire_given_signature_rate": 0.9456521739130435,
+      "ordered_wire_tape_matches": 87,
+      "parameter_aware_given_signature_rate": 0.9239130434782609,
+      "parameter_aware_tape_matches": 85,
+      "signature_matches": 92,
+      "signature_rate": 0.5974025974025974
+    },
+    {
+      "executable": 136,
+      "full_literal_matches": 77,
+      "gate_order_matches": 78,
+      "model": "gemini-2.5-pro",
+      "model_label": "Gemini 2.5 Pro",
+      "ordered_wire_given_signature_rate": 0.927710843373494,
+      "ordered_wire_tape_matches": 77,
+      "parameter_aware_given_signature_rate": 0.927710843373494,
+      "parameter_aware_tape_matches": 77,
+      "signature_matches": 83,
+      "signature_rate": 0.538961038961039
+    },
+    {
+      "executable": 149,
+      "full_literal_matches": 85,
+      "gate_order_matches": 89,
+      "model": "gemini-3.1-pro-preview",
+      "model_label": "Gemini 3.1 Pro Preview",
+      "ordered_wire_given_signature_rate": 0.9148936170212766,
+      "ordered_wire_tape_matches": 86,
+      "parameter_aware_given_signature_rate": 0.9042553191489362,
+      "parameter_aware_tape_matches": 85,
+      "signature_matches": 94,
+      "signature_rate": 0.6103896103896104
+    },
+    {
+      "executable": 141,
+      "full_literal_matches": 84,
+      "gate_order_matches": 89,
+      "model": "deepseek-v4-pro",
+      "model_label": "DeepSeek V4 Pro",
+      "ordered_wire_given_signature_rate": 0.9560439560439561,
+      "ordered_wire_tape_matches": 87,
+      "parameter_aware_given_signature_rate": 0.9230769230769231,
+      "parameter_aware_tape_matches": 84,
+      "signature_matches": 91,
+      "signature_rate": 0.5909090909090909
+    },
+    {
+      "executable": 137,
+      "full_literal_matches": 76,
+      "gate_order_matches": 78,
+      "model": "deepseek-v4-flash",
+      "model_label": "DeepSeek V4 Flash",
+      "ordered_wire_given_signature_rate": 0.9506172839506173,
+      "ordered_wire_tape_matches": 77,
+      "parameter_aware_given_signature_rate": 0.9382716049382716,
+      "parameter_aware_tape_matches": 76,
+      "signature_matches": 81,
+      "signature_rate": 0.525974025974026
+    },
+    {
+      "executable": 144,
+      "full_literal_matches": 74,
+      "gate_order_matches": 82,
+      "model": "mistral-ai/codestral-2501",
+      "model_label": "Codestral 25.01",
+      "ordered_wire_given_signature_rate": 0.9069767441860465,
+      "ordered_wire_tape_matches": 78,
+      "parameter_aware_given_signature_rate": 0.8604651162790697,
+      "parameter_aware_tape_matches": 74,
+      "signature_matches": 86,
+      "signature_rate": 0.5584415584415584
+    },
+    {
+      "executable": 132,
+      "full_literal_matches": 69,
+      "gate_order_matches": 75,
+      "model": "qwen/qwen3-coder-next",
+      "model_label": "Qwen3-Coder-Next",
+      "ordered_wire_given_signature_rate": 0.8846153846153846,
+      "ordered_wire_tape_matches": 69,
+      "parameter_aware_given_signature_rate": 0.8846153846153846,
+      "parameter_aware_tape_matches": 69,
+      "signature_matches": 78,
+      "signature_rate": 0.5064935064935064
+    },
+    {
+      "executable": 145,
+      "full_literal_matches": 71,
+      "gate_order_matches": 75,
+      "model": "meta/llama-4-maverick-17b-128e-instruct-fp8",
+      "model_label": "Llama 4 Maverick",
+      "ordered_wire_given_signature_rate": 0.9466666666666667,
+      "ordered_wire_tape_matches": 71,
+      "parameter_aware_given_signature_rate": 0.9466666666666667,
+      "parameter_aware_tape_matches": 71,
+      "signature_matches": 75,
+      "signature_rate": 0.487012987012987
+    },
+    {
+      "executable": 144,
+      "full_literal_matches": 62,
+      "gate_order_matches": 65,
+      "model": "llama-3.3-70b-versatile",
+      "model_label": "Llama 3.3 70B",
+      "ordered_wire_given_signature_rate": 0.8873239436619719,
+      "ordered_wire_tape_matches": 63,
+      "parameter_aware_given_signature_rate": 0.8732394366197183,
+      "parameter_aware_tape_matches": 62,
+      "signature_matches": 71,
+      "signature_rate": 0.461038961038961
+    },
+    {
+      "executable": 149,
+      "full_literal_matches": 75,
+      "gate_order_matches": 79,
+      "model": "openai/gpt-oss-120b",
+      "model_label": "GPT-OSS 120B",
+      "ordered_wire_given_signature_rate": 0.9390243902439024,
+      "ordered_wire_tape_matches": 77,
+      "parameter_aware_given_signature_rate": 0.9146341463414634,
+      "parameter_aware_tape_matches": 75,
+      "signature_matches": 82,
+      "signature_rate": 0.5324675324675324
+    },
+    {
+      "executable": 143,
+      "full_literal_matches": 70,
+      "gate_order_matches": 74,
+      "model": "openai/gpt-oss-20b",
+      "model_label": "GPT-OSS 20B",
+      "ordered_wire_given_signature_rate": 0.9358974358974359,
+      "ordered_wire_tape_matches": 73,
+      "parameter_aware_given_signature_rate": 0.8974358974358975,
+      "parameter_aware_tape_matches": 70,
+      "signature_matches": 78,
+      "signature_rate": 0.5064935064935064
+    },
+    {
+      "executable": 139,
+      "full_literal_matches": 65,
+      "gate_order_matches": 72,
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "model_label": "Mistral Small 3.2 24B",
+      "ordered_wire_given_signature_rate": 0.8933333333333333,
+      "ordered_wire_tape_matches": 67,
+      "parameter_aware_given_signature_rate": 0.8666666666666667,
+      "parameter_aware_tape_matches": 65,
+      "signature_matches": 75,
+      "signature_rate": 0.487012987012987
+    },
+    {
+      "executable": 138,
+      "full_literal_matches": 64,
+      "gate_order_matches": 66,
+      "model": "qiskit/mistral-small-3.2-24b-qiskit",
+      "model_label": "Qiskit Mistral 3.2 24B",
+      "ordered_wire_given_signature_rate": 0.9420289855072463,
+      "ordered_wire_tape_matches": 65,
+      "parameter_aware_given_signature_rate": 0.927536231884058,
+      "parameter_aware_tape_matches": 64,
+      "signature_matches": 69,
+      "signature_rate": 0.44805194805194803
+    },
+    {
+      "executable": 89,
+      "full_literal_matches": 46,
+      "gate_order_matches": 51,
+      "model": "qwen/qwen3-32b",
+      "model_label": "Qwen3 32B",
+      "ordered_wire_given_signature_rate": 0.9074074074074074,
+      "ordered_wire_tape_matches": 49,
+      "parameter_aware_given_signature_rate": 0.8518518518518519,
+      "parameter_aware_tape_matches": 46,
+      "signature_matches": 54,
+      "signature_rate": 0.35064935064935066
+    },
+    {
+      "executable": 127,
+      "full_literal_matches": 60,
+      "gate_order_matches": 66,
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "model_label": "Llama 4 Scout",
+      "ordered_wire_given_signature_rate": 0.8840579710144928,
+      "ordered_wire_tape_matches": 61,
+      "parameter_aware_given_signature_rate": 0.8695652173913043,
+      "parameter_aware_tape_matches": 60,
+      "signature_matches": 69,
+      "signature_rate": 0.44805194805194803
+    },
+    {
+      "executable": 125,
+      "full_literal_matches": 52,
+      "gate_order_matches": 54,
+      "model": "llama-3.1-8b-instant",
+      "model_label": "Llama 3.1 8B",
+      "ordered_wire_given_signature_rate": 0.9629629629629629,
+      "ordered_wire_tape_matches": 52,
+      "parameter_aware_given_signature_rate": 0.9629629629629629,
+      "parameter_aware_tape_matches": 52,
+      "signature_matches": 54,
+      "signature_rate": 0.35064935064935066
+    }
+  ],
+  "crossed_intervals": [
+    {
+      "count": 1633,
+      "crossed_bootstrap_95": [
+        0.927733186887462,
+        0.9849853746961644
+      ],
+      "denominator": 1703,
+      "field": "gate_order_match",
+      "rate": 0.9588960657662948,
+      "replicates": 3000
+    },
+    {
+      "count": 1578,
+      "crossed_bootstrap_95": [
+        0.8839078972202,
+        0.9635616321471555
+      ],
+      "denominator": 1703,
+      "field": "quantum_operand_sequence_match",
+      "rate": 0.9266001174398121,
+      "replicates": 3000
+    },
+    {
+      "count": 1686,
+      "crossed_bootstrap_95": [
+        0.9747712265001985,
+        0.9989352482409549
+      ],
+      "denominator": 1703,
+      "field": "classical_operand_sequence_match",
+      "rate": 0.9900176159718145,
+      "replicates": 3000
+    },
+    {
+      "count": 1576,
+      "crossed_bootstrap_95": [
+        0.879383095783177,
+        0.9619722679408557
+      ],
+      "denominator": 1703,
+      "field": "ordered_wire_tape_match",
+      "rate": 0.9254257193188491,
+      "replicates": 3000
+    },
+    {
+      "count": 1545,
+      "crossed_bootstrap_95": [
+        0.8553533733585548,
+        0.9477099716581274
+      ],
+      "denominator": 1703,
+      "field": "parameter_aware_tape_match",
+      "rate": 0.9072225484439225,
+      "replicates": 3000
+    },
+    {
+      "count": 1545,
+      "crossed_bootstrap_95": [
+        0.8585717216539999,
+        0.9482646082845338
+      ],
+      "denominator": 1703,
+      "field": "full_literal_circuit_match",
+      "rate": 0.9072225484439225,
+      "replicates": 3000
+    }
+  ],
+  "design": {
+    "bootstrap_replicates": 3000,
+    "bootstrap_seed": 20260715,
+    "candidate_selection": "strict standalone namespace and alphabetical circuit selection, matching the current harness",
+    "cell_count": 3234,
+    "evaluator_version": "pqid-bench-evaluator-1.1.0-safe-builtins",
+    "exact_tape_is_semantic_equivalence": false,
+    "model_count": 21,
+    "prompt_count": 154,
+    "reference_circuits_materialized": 154,
+    "reference_error_records": [],
+    "reference_errors": 0,
+    "reference_selection": "target-metadata context and target-metadata circuit selection, matching clean-source validation",
+    "structural_predicate_version": "pqid-bench-reference-signature-1.0.0-count-map",
+    "target_signature_count": 144
+  },
+  "identifiable_150": {
+    "cells": 3150,
+    "classical_operands_given_signature": {
+      "count": 1686,
+      "denominator": 1703,
+      "rate": 0.9900176159718145
+    },
+    "full_literal_circuit_given_signature": {
+      "count": 1545,
+      "denominator": 1703,
+      "rate": 0.9072225484439225
+    },
+    "gate_order_given_signature": {
+      "count": 1633,
+      "denominator": 1703,
+      "rate": 0.9588960657662948
+    },
+    "global_phase_given_signature": {
+      "count": 1703,
+      "denominator": 1703,
+      "rate": 1.0
+    },
+    "mean_gate_order_similarity_given_signature": 0.9923768979112492,
+    "mean_wire_tape_similarity_given_signature": 0.9837062391825088,
+    "measurement_map_given_signature_and_measurement": {
+      "count": 1029,
+      "denominator": 1044,
+      "rate": 0.985632183908046
+    },
+    "ordered_wire_matches_outside_signature": 0,
+    "ordered_wire_tape_given_signature": {
+      "count": 1576,
+      "denominator": 1703,
+      "rate": 0.9254257193188491
+    },
+    "parameter_aware_tape_given_signature": {
+      "count": 1545,
+      "denominator": 1703,
+      "rate": 0.9072225484439225
+    },
+    "parameter_tokens_given_signature": {
+      "count": 1644,
+      "denominator": 1703,
+      "rate": 0.9653552554315913
+    },
+    "quantum_operands_given_signature": {
+      "count": 1578,
+      "denominator": 1703,
+      "rate": 0.9266001174398121
+    },
+    "replay_failures_among_report_executable": 0,
+    "replayed_executable": 2890,
+    "report_executable": 2890,
+    "report_signature_matches": 1703,
+    "selected_name_disagreements": 0,
+    "signature_matches_replayed": 1703,
+    "signature_replay_disagreements": 0
+  },
+  "overall": {
+    "cells": 3234,
+    "classical_operands_given_signature": {
+      "count": 1686,
+      "denominator": 1703,
+      "rate": 0.9900176159718145
+    },
+    "full_literal_circuit_given_signature": {
+      "count": 1545,
+      "denominator": 1703,
+      "rate": 0.9072225484439225
+    },
+    "gate_order_given_signature": {
+      "count": 1633,
+      "denominator": 1703,
+      "rate": 0.9588960657662948
+    },
+    "global_phase_given_signature": {
+      "count": 1703,
+      "denominator": 1703,
+      "rate": 1.0
+    },
+    "mean_gate_order_similarity_given_signature": 0.9923768979112492,
+    "mean_wire_tape_similarity_given_signature": 0.9837062391825088,
+    "measurement_map_given_signature_and_measurement": {
+      "count": 1029,
+      "denominator": 1044,
+      "rate": 0.985632183908046
+    },
+    "ordered_wire_matches_outside_signature": 0,
+    "ordered_wire_tape_given_signature": {
+      "count": 1576,
+      "denominator": 1703,
+      "rate": 0.9254257193188491
+    },
+    "parameter_aware_tape_given_signature": {
+      "count": 1545,
+      "denominator": 1703,
+      "rate": 0.9072225484439225
+    },
+    "parameter_tokens_given_signature": {
+      "count": 1644,
+      "denominator": 1703,
+      "rate": 0.9653552554315913
+    },
+    "quantum_operands_given_signature": {
+      "count": 1578,
+      "denominator": 1703,
+      "rate": 0.9266001174398121
+    },
+    "replay_failures_among_report_executable": 0,
+    "replayed_executable": 2950,
+    "report_executable": 2950,
+    "report_signature_matches": 1703,
+    "selected_name_disagreements": 0,
+    "signature_matches_replayed": 1703,
+    "signature_replay_disagreements": 0
+  },
+  "schema_version": "pqid-bench-ordered-operand-validation-v1"
+}

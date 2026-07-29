@@ -1,0 +1,17 @@
+{
+  "all_live_output_file_count": 0,
+  "all_live_output_files": [],
+  "asserted_at_utc": "2026-07-15T15:20:39+00:00",
+  "criterion": "Live output means a non-template response, raw provider output, evaluation artifact, process log, or OpenAI Batch state/output/error file.",
+  "pretransmission_empty": true,
+  "runs": {
+    "run_2": {
+      "live_output_file_count": 0,
+      "live_output_files": []
+    },
+    "run_3": {
+      "live_output_file_count": 0,
+      "live_output_files": []
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "evaluation_commands": [
+    "python scripts/run_pqid_bench_external_model_generation_harness.py --prompt-path artifacts/test_split_154/pqid_bench_external_generation_prompts_154.jsonl --template-path artifacts/external_model_batches_154/mistral_parent_control/responses/openrouter_mistralai_mistral-small-3_2-24b-instruct_responses_template.jsonl --response-path artifacts/external_model_batches_154/mistral_parent_control/responses/openrouter_mistralai_mistral-small-3_2-24b-instruct_responses.jsonl --output-dir artifacts/external_model_batches_154/mistral_parent_control/evaluations/openrouter_mistralai_mistral-small-3_2-24b-instruct"
+  ],
+  "exported_at_utc": "2026-07-14T08:35:00+00:00",
+  "files": [
+    {
+      "kind": "request_jsonl",
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "path": "artifacts/external_model_batches_154/mistral_parent_control/requests/openrouter_mistralai_mistral-small-3_2-24b-instruct_requests.jsonl",
+      "provider": "openrouter",
+      "rows": 154,
+      "sha256": "dc6bd606b50f478cfc400c3ffead8dced21486dfc120f09b17b69081d1d23cbb"
+    },
+    {
+      "kind": "response_template_jsonl",
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "path": "artifacts/external_model_batches_154/mistral_parent_control/responses/openrouter_mistralai_mistral-small-3_2-24b-instruct_responses_template.jsonl",
+      "provider": "openrouter",
+      "rows": 154,
+      "sha256": "7d89ee9e6a2bb9b91c079aa2fe453c161a4c824e9b4e97e2a9b7fafc7747e97e"
+    },
+    {
+      "kind": "model_matrix_json",
+      "path": "artifacts/external_model_batches_154/mistral_parent_control/external_model_run_matrix.json",
+      "rows": 1,
+      "sha256": "0ad46224cb6cab5f1d5e4f1228cd12fe30fce557c61571551375c3cfe644aacf"
+    },
+    {
+      "kind": "model_matrix_md",
+      "path": "artifacts/external_model_batches_154/mistral_parent_control/external_model_run_matrix.md",
+      "rows": 1,
+      "sha256": "ccecef419e9947a0d7ea2ca1661c48225754323eff95ba0687154df16c2a228a"
+    }
+  ],
+  "generation_config": {
+    "max_output_tokens": 2048,
+    "n": 1,
+    "single_pass": true,
+    "temperature": 0.0,
+    "top_p": 1.0
+  },
+  "harness_script": {
+    "path": "scripts/run_pqid_bench_external_model_generation_harness.py",
+    "sha256": "3662f191ad6b35f79ef0648da93af1cc86e42d9c666d8620736c025a167d2e2b"
+  },
+  "include_appendix": false,
+  "include_bridge": false,
+  "include_deepinfra": false,
+  "include_github_models": false,
+  "include_meta_model_api": false,
+  "include_nvidia_nim": false,
+  "include_official_deepseek": false,
+  "include_open_breadth": false,
+  "include_qiskit_specialist": false,
+  "only_targets": [
+    "openrouter:mistralai/mistral-small-3.2-24b-instruct"
+  ],
+  "overwrite_existing": true,
+  "prompt_count": 154,
+  "prompt_manifest": {
+    "path": "artifacts/test_split_154/pqid_bench_external_generation_prompts_154.jsonl",
+    "sha256": "cc6ba5c8a1fbf8677bd016d3cad47c7934981a685cc51052bdc3beb03f99b6eb"
+  },
+  "schema_version": "pqid-bench-external-model-batch-v1",
+  "target_count": 1
+}

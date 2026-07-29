@@ -1,0 +1,2511 @@
+{
+  "design": {
+    "evaluation_count": 3234,
+    "execution_rate": 0.9121830550401979,
+    "identifiability_exclusions": [
+      "pqid_bench_external_gen_0040",
+      "pqid_bench_external_gen_0117",
+      "pqid_bench_external_gen_0141",
+      "pqid_bench_external_gen_0142"
+    ],
+    "model_count": 21,
+    "prompt_count": 154,
+    "qasm3_rate": 0.9103277674706246,
+    "roster": "final_21_primary",
+    "signature_count": 144,
+    "signature_match_rate": 0.5265924551638838
+  },
+  "grouped_cross_validation": {
+    "fold_details": [
+      {
+        "fold": 1,
+        "models": {
+          "entropy_plus_barrier": {
+            "converged": true,
+            "design_columns": [
+              "intercept",
+              "z_gate_entropy",
+              "z_log_gate_count",
+              "z_num_qubits",
+              "z_num_clbits",
+              "has_barrier",
+              "model::gpt-5.5",
+              "model::gpt-5.4-mini",
+              "model::claude-fable-5",
+              "model::claude-sonnet-4-6",
+              "model::claude-opus-4-8",
+              "model::gemini-2.5-pro",
+              "model::gemini-3.1-pro-preview",
+              "model::deepseek-v4-pro",
+              "model::deepseek-v4-flash",
+              "model::mistral-ai/codestral-2501",
+              "model::qwen/qwen3-coder-next",
+              "model::meta/llama-4-maverick-17b-128e-instruct-fp8",
+              "model::llama-3.3-70b-versatile",
+              "model::openai/gpt-oss-120b",
+              "model::openai/gpt-oss-20b",
+              "model::mistralai/mistral-small-3.2-24b-instruct",
+              "model::qiskit/mistral-small-3.2-24b-qiskit",
+              "model::qwen/qwen3-32b",
+              "model::meta-llama/llama-4-scout-17b-16e-instruct",
+              "model::llama-3.1-8b-instant"
+            ],
+            "iterations": 6
+          },
+          "gate_type_plus_barrier": {
+            "converged": true,
+            "design_columns": [
+              "intercept",
+              "z_gate_type_count",
+              "z_log_gate_count",
+              "z_num_qubits",
+              "z_num_clbits",
+              "has_barrier",
+              "model::gpt-5.5",
+              "model::gpt-5.4-mini",
+              "model::claude-fable-5",
+              "model::claude-sonnet-4-6",
+              "model::claude-opus-4-8",
+              "model::gemini-2.5-pro",
+              "model::gemini-3.1-pro-preview",
+              "model::deepseek-v4-pro",
+              "model::deepseek-v4-flash",
+              "model::mistral-ai/codestral-2501",
+              "model::qwen/qwen3-coder-next",
+              "model::meta/llama-4-maverick-17b-128e-instruct-fp8",
+              "model::llama-3.3-70b-versatile",
+              "model::openai/gpt-oss-120b",
+              "model::openai/gpt-oss-20b",
+              "model::mistralai/mistral-small-3.2-24b-instruct",
+              "model::qiskit/mistral-small-3.2-24b-qiskit",
+              "model::qwen/qwen3-32b",
+              "model::meta-llama/llama-4-scout-17b-16e-instruct",
+              "model::llama-3.1-8b-instant"
+            ],
+            "iterations": 6
+          },
+          "size_only": {
+            "converged": true,
+            "design_columns": [
+              "intercept",
+              "z_log_gate_count",
+              "z_num_qubits",
+              "z_num_clbits",
+              "model::gpt-5.5",
+              "model::gpt-5.4-mini",
+              "model::claude-fable-5",
+              "model::claude-sonnet-4-6",
+              "model::claude-opus-4-8",
+              "model::gemini-2.5-pro",
+              "model::gemini-3.1-pro-preview",
+              "model::deepseek-v4-pro",
+              "model::deepseek-v4-flash",
+              "model::mistral-ai/codestral-2501",
+              "model::qwen/qwen3-coder-next",
+              "model::meta/llama-4-maverick-17b-128e-instruct-fp8",
+              "model::llama-3.3-70b-versatile",
+              "model::openai/gpt-oss-120b",
+              "model::openai/gpt-oss-20b",
+              "model::mistralai/mistral-small-3.2-24b-instruct",
+              "model::qiskit/mistral-small-3.2-24b-qiskit",
+              "model::qwen/qwen3-32b",
+              "model::meta-llama/llama-4-scout-17b-16e-instruct",
+              "model::llama-3.1-8b-instant"
+            ],
+            "iterations": 6
+          }
+        },
+        "test_prompts": 16,
+        "test_signatures": 16,
+        "training_prompts": 138
+      },
+      {
+        "fold": 2,
+        "models": {
+          "entropy_plus_barrier": {
+            "converged": true,
+            "design_columns": [
+              "intercept",
+              "z_gate_entropy",
+              "z_log_gate_count",
+              "z_num_qubits",
+              "z_num_clbits",
+              "has_barrier",
+              "model::gpt-5.5",
+              "model::gpt-5.4-mini",
+              "model::claude-fable-5",
+              "model::claude-sonnet-4-6",
+              "model::claude-opus-4-8",
+              "model::gemini-2.5-pro",
+              "model::gemini-3.1-pro-preview",
+              "model::deepseek-v4-pro",
+              "model::deepseek-v4-flash",
+              "model::mistral-ai/codestral-2501",
+              "model::qwen/qwen3-coder-next",
+              "model::meta/llama-4-maverick-17b-128e-instruct-fp8",
+              "model::llama-3.3-70b-versatile",
+              "model::openai/gpt-oss-120b",
+              "model::openai/gpt-oss-20b",
+              "model::mistralai/mistral-small-3.2-24b-instruct",
+              "model::qiskit/mistral-small-3.2-24b-qiskit",
+              "model::qwen/qwen3-32b",
+              "model::meta-llama/llama-4-scout-17b-16e-instruct",
+              "model::llama-3.1-8b-instant"
+            ],
+            "iterations": 6
+          },
+          "gate_type_plus_barrier": {
+            "converged": true,
+            "design_columns": [
+              "intercept",
+              "z_gate_type_count",
+              "z_log_gate_count",
+              "z_num_qubits",
+              "z_num_clbits",
+              "has_barrier",
+              "model::gpt-5.5",
+              "model::gpt-5.4-mini",
+              "model::claude-fable-5",
+              "model::claude-sonnet-4-6",
+              "model::claude-opus-4-8",
+              "model::gemini-2.5-pro",
+              "model::gemini-3.1-pro-preview",
+              "model::deepseek-v4-pro",
+              "model::deepseek-v4-flash",
+              "model::mistral-ai/codestral-2501",
+              "model::qwen/qwen3-coder-next",
+              "model::meta/llama-4-maverick-17b-128e-instruct-fp8",
+              "model::llama-3.3-70b-versatile",
+              "model::openai/gpt-oss-120b",
+              "model::openai/gpt-oss-20b",
+              "model::mistralai/mistral-small-3.2-24b-instruct",
+              "model::qiskit/mistral-small-3.2-24b-qiskit",
+              "model::qwen/qwen3-32b",
+              "model::meta-llama/llama-4-scout-17b-16e-instruct",
+              "model::llama-3.1-8b-instant"
+            ],
+            "iterations": 6
+          },
+          "size_only": {
+            "converged": true,
+            "design_columns": [
+              "intercept",
+              "z_log_gate_count",
+              "z_num_qubits",
+              "z_num_clbits",
+              "model::gpt-5.5",
+              "model::gpt-5.4-mini",
+              "model::claude-fable-5",
+              "model::claude-sonnet-4-6",
+              "model::claude-opus-4-8",
+              "model::gemini-2.5-pro",
+              "model::gemini-3.1-pro-preview",
+              "model::deepseek-v4-pro",
+              "model::deepseek-v4-flash",
+              "model::mistral-ai/codestral-2501",
+              "model::qwen/qwen3-coder-next",
+              "model::meta/llama-4-maverick-17b-128e-instruct-fp8",
+              "model::llama-3.3-70b-versatile",
+              "model::openai/gpt-oss-120b",
+              "model::openai/gpt-oss-20b",
+              "model::mistralai/mistral-small-3.2-24b-instruct",
+              "model::qiskit/mistral-small-3.2-24b-qiskit",
+              "model::qwen/qwen3-32b",
+              "model::meta-llama/llama-4-scout-17b-16e-instruct",
+              "model::llama-3.1-8b-instant"
+            ],
+            "iterations": 5
+          }
+        },
+        "test_prompts": 16,
+        "test_signatures": 13,
+        "training_prompts": 138
+      },
+      {
+        "fold": 3,
+        "models": {
+          "entropy_plus_barrier": {
+            "converged": true,
+            "design_columns": [
+              "intercept",
+              "z_gate_entropy",
+              "z_log_gate_count",
+              "z_num_qubits",
+              "z_num_clbits",
+              "has_barrier",
+              "model::gpt-5.5",
+              "model::gpt-5.4-mini",
+              "model::claude-fable-5",
+              "model::claude-sonnet-4-6",
+              "model::claude-opus-4-8",
+              "model::gemini-2.5-pro",
+              "model::gemini-3.1-pro-preview",
+              "model::deepseek-v4-pro",
+              "model::deepseek-v4-flash",
+              "model::mistral-ai/codestral-2501",
+              "model::qwen/qwen3-coder-next",
+              "model::meta/llama-4-maverick-17b-128e-instruct-fp8",
+              "model::llama-3.3-70b-versatile",
+              "model::openai/gpt-oss-120b",
+              "model::openai/gpt-oss-20b",
+              "model::mistralai/mistral-small-3.2-24b-instruct",
+              "model::qiskit/mistral-small-3.2-24b-qiskit",
+              "model::qwen/qwen3-32b",
+              "model::meta-llama/llama-4-scout-17b-16e-instruct",
+              "model::llama-3.1-8b-instant"
+            ],
+            "iterations": 5
+          },
+          "gate_type_plus_barrier": {
+            "converged": true,
+            "design_columns": [
+              "intercept",
+              "z_gate_type_count",
+              "z_log_gate_count",
+              "z_num_qubits",
+              "z_num_clbits",
+              "has_barrier",
+              "model::gpt-5.5",
+              "model::gpt-5.4-mini",
+              "model::claude-fable-5",
+              "model::claude-sonnet-4-6",
+              "model::claude-opus-4-8",
+              "model::gemini-2.5-pro",
+              "model::gemini-3.1-pro-preview",
+              "model::deepseek-v4-pro",
+              "model::deepseek-v4-flash",
+              "model::mistral-ai/codestral-2501",
+              "model::qwen/qwen3-coder-next",
+              "model::meta/llama-4-maverick-17b-128e-instruct-fp8",
+              "model::llama-3.3-70b-versatile",
+              "model::openai/gpt-oss-120b",
+              "model::openai/gpt-oss-20b",
+              "model::mistralai/mistral-small-3.2-24b-instruct",
+              "model::qiskit/mistral-small-3.2-24b-qiskit",
+              "model::qwen/qwen3-32b",
+              "model::meta-llama/llama-4-scout-17b-16e-instruct",
+              "model::llama-3.1-8b-instant"
+            ],
+            "iterations": 6
+          },
+          "size_only": {
+            "converged": true,
+            "design_columns": [
+              "intercept",
+              "z_log_gate_count",
+              "z_num_qubits",
+              "z_num_clbits",
+              "model::gpt-5.5",
+              "model::gpt-5.4-mini",
+              "model::claude-fable-5",
+              "model::claude-sonnet-4-6",
+              "model::claude-opus-4-8",
+              "model::gemini-2.5-pro",
+              "model::gemini-3.1-pro-preview",
+              "model::deepseek-v4-pro",
+              "model::deepseek-v4-flash",
+              "model::mistral-ai/codestral-2501",
+              "model::qwen/qwen3-coder-next",
+              "model::meta/llama-4-maverick-17b-128e-instruct-fp8",
+              "model::llama-3.3-70b-versatile",
+              "model::openai/gpt-oss-120b",
+              "model::openai/gpt-oss-20b",
+              "model::mistralai/mistral-small-3.2-24b-instruct",
+              "model::qiskit/mistral-small-3.2-24b-qiskit",
+              "model::qwen/qwen3-32b",
+              "model::meta-llama/llama-4-scout-17b-16e-instruct",
+              "model::llama-3.1-8b-instant"
+            ],
+            "iterations": 5
+          }
+        },
+        "test_prompts": 16,
+        "test_signatures": 16,
+        "training_prompts": 138
+      },
+      {
+        "fold": 4,
+        "models": {
+          "entropy_plus_barrier": {
+            "converged": true,
+            "design_columns": [
+              "intercept",
+              "z_gate_entropy",
+              "z_log_gate_count",
+              "z_num_qubits",
+              "z_num_clbits",
+              "has_barrier",
+              "model::gpt-5.5",
+              "model::gpt-5.4-mini",
+              "model::claude-fable-5",
+              "model::claude-sonnet-4-6",
+              "model::claude-opus-4-8",
+              "model::gemini-2.5-pro",
+              "model::gemini-3.1-pro-preview",
+              "model::deepseek-v4-pro",
+              "model::deepseek-v4-flash",
+              "model::mistral-ai/codestral-2501",
+              "model::qwen/qwen3-coder-next",
+              "model::meta/llama-4-maverick-17b-128e-instruct-fp8",
+              "model::llama-3.3-70b-versatile",
+              "model::openai/gpt-oss-120b",
+              "model::openai/gpt-oss-20b",
+              "model::mistralai/mistral-small-3.2-24b-instruct",
+              "model::qiskit/mistral-small-3.2-24b-qiskit",
+              "model::qwen/qwen3-32b",
+              "model::meta-llama/llama-4-scout-17b-16e-instruct",
+              "model::llama-3.1-8b-instant"
+            ],
+            "iterations": 6
+          },
+          "gate_type_plus_barrier": {
+            "converged": true,
+            "design_columns": [
+              "intercept",
+              "z_gate_type_count",
+              "z_log_gate_count",
+              "z_num_qubits",
+              "z_num_clbits",
+              "has_barrier",
+              "model::gpt-5.5",
+              "model::gpt-5.4-mini",
+              "model::claude-fable-5",
+              "model::claude-sonnet-4-6",
+              "model::claude-opus-4-8",
+              "model::gemini-2.5-pro",
+              "model::gemini-3.1-pro-preview",
+              "model::deepseek-v4-pro",
+              "model::deepseek-v4-flash",
+              "model::mistral-ai/codestral-2501",
+              "model::qwen/qwen3-coder-next",
+              "model::meta/llama-4-maverick-17b-128e-instruct-fp8",
+              "model::llama-3.3-70b-versatile",
+              "model::openai/gpt-oss-120b",
+              "model::openai/gpt-oss-20b",
+              "model::mistralai/mistral-small-3.2-24b-instruct",
+              "model::qiskit/mistral-small-3.2-24b-qiskit",
+              "model::qwen/qwen3-32b",
+              "model::meta-llama/llama-4-scout-17b-16e-instruct",
+              "model::llama-3.1-8b-instant"
+            ],
+            "iterations": 6
+          },
+          "size_only": {
+            "converged": true,
+            "design_columns": [
+              "intercept",
+              "z_log_gate_count",
+              "z_num_qubits",
+              "z_num_clbits",
+              "model::gpt-5.5",
+              "model::gpt-5.4-mini",
+              "model::claude-fable-5",
+              "model::claude-sonnet-4-6",
+              "model::claude-opus-4-8",
+              "model::gemini-2.5-pro",
+              "model::gemini-3.1-pro-preview",
+              "model::deepseek-v4-pro",
+              "model::deepseek-v4-flash",
+              "model::mistral-ai/codestral-2501",
+              "model::qwen/qwen3-coder-next",
+              "model::meta/llama-4-maverick-17b-128e-instruct-fp8",
+              "model::llama-3.3-70b-versatile",
+              "model::openai/gpt-oss-120b",
+              "model::openai/gpt-oss-20b",
+              "model::mistralai/mistral-small-3.2-24b-instruct",
+              "model::qiskit/mistral-small-3.2-24b-qiskit",
+              "model::qwen/qwen3-32b",
+              "model::meta-llama/llama-4-scout-17b-16e-instruct",
+              "model::llama-3.1-8b-instant"
+            ],
+            "iterations": 5
+          }
+        },
+        "test_prompts": 15,
+        "test_signatures": 12,
+        "training_prompts": 139
+      },
+      {
+        "fold": 5,
+        "models": {
+          "entropy_plus_barrier": {
+            "converged": true,
+            "design_columns": [
+              "intercept",
+              "z_gate_entropy",
+              "z_log_gate_count",
+              "z_num_qubits",
+              "z_num_clbits",
+              "has_barrier",
+              "model::gpt-5.5",
+              "model::gpt-5.4-mini",
+              "model::claude-fable-5",
+              "model::claude-sonnet-4-6",
+              "model::claude-opus-4-8",
+              "model::gemini-2.5-pro",
+              "model::gemini-3.1-pro-preview",
+              "model::deepseek-v4-pro",
+              "model::deepseek-v4-flash",
+              "model::mistral-ai/codestral-2501",
+              "model::qwen/qwen3-coder-next",
+              "model::meta/llama-4-maverick-17b-128e-instruct-fp8",
+              "model::llama-3.3-70b-versatile",
+              "model::openai/gpt-oss-120b",
+              "model::openai/gpt-oss-20b",
+              "model::mistralai/mistral-small-3.2-24b-instruct",
+              "model::qiskit/mistral-small-3.2-24b-qiskit",
+              "model::qwen/qwen3-32b",
+              "model::meta-llama/llama-4-scout-17b-16e-instruct",
+              "model::llama-3.1-8b-instant"
+            ],
+            "iterations": 5
+          },
+          "gate_type_plus_barrier": {
+            "converged": true,
+            "design_columns": [
+              "intercept",
+              "z_gate_type_count",
+              "z_log_gate_count",
+              "z_num_qubits",
+              "z_num_clbits",
+              "has_barrier",
+              "model::gpt-5.5",
+              "model::gpt-5.4-mini",
+              "model::claude-fable-5",
+              "model::claude-sonnet-4-6",
+              "model::claude-opus-4-8",
+              "model::gemini-2.5-pro",
+              "model::gemini-3.1-pro-preview",
+              "model::deepseek-v4-pro",
+              "model::deepseek-v4-flash",
+              "model::mistral-ai/codestral-2501",
+              "model::qwen/qwen3-coder-next",
+              "model::meta/llama-4-maverick-17b-128e-instruct-fp8",
+              "model::llama-3.3-70b-versatile",
+              "model::openai/gpt-oss-120b",
+              "model::openai/gpt-oss-20b",
+              "model::mistralai/mistral-small-3.2-24b-instruct",
+              "model::qiskit/mistral-small-3.2-24b-qiskit",
+              "model::qwen/qwen3-32b",
+              "model::meta-llama/llama-4-scout-17b-16e-instruct",
+              "model::llama-3.1-8b-instant"
+            ],
+            "iterations": 6
+          },
+          "size_only": {
+            "converged": true,
+            "design_columns": [
+              "intercept",
+              "z_log_gate_count",
+              "z_num_qubits",
+              "z_num_clbits",
+              "model::gpt-5.5",
+              "model::gpt-5.4-mini",
+              "model::claude-fable-5",
+              "model::claude-sonnet-4-6",
+              "model::claude-opus-4-8",
+              "model::gemini-2.5-pro",
+              "model::gemini-3.1-pro-preview",
+              "model::deepseek-v4-pro",
+              "model::deepseek-v4-flash",
+              "model::mistral-ai/codestral-2501",
+              "model::qwen/qwen3-coder-next",
+              "model::meta/llama-4-maverick-17b-128e-instruct-fp8",
+              "model::llama-3.3-70b-versatile",
+              "model::openai/gpt-oss-120b",
+              "model::openai/gpt-oss-20b",
+              "model::mistralai/mistral-small-3.2-24b-instruct",
+              "model::qiskit/mistral-small-3.2-24b-qiskit",
+              "model::qwen/qwen3-32b",
+              "model::meta-llama/llama-4-scout-17b-16e-instruct",
+              "model::llama-3.1-8b-instant"
+            ],
+            "iterations": 5
+          }
+        },
+        "test_prompts": 15,
+        "test_signatures": 14,
+        "training_prompts": 139
+      },
+      {
+        "fold": 6,
+        "models": {
+          "entropy_plus_barrier": {
+            "converged": true,
+            "design_columns": [
+              "intercept",
+              "z_gate_entropy",
+              "z_log_gate_count",
+              "z_num_qubits",
+              "z_num_clbits",
+              "has_barrier",
+              "model::gpt-5.5",
+              "model::gpt-5.4-mini",
+              "model::claude-fable-5",
+              "model::claude-sonnet-4-6",
+              "model::claude-opus-4-8",
+              "model::gemini-2.5-pro",
+              "model::gemini-3.1-pro-preview",
+              "model::deepseek-v4-pro",
+              "model::deepseek-v4-flash",
+              "model::mistral-ai/codestral-2501",
+              "model::qwen/qwen3-coder-next",
+              "model::meta/llama-4-maverick-17b-128e-instruct-fp8",
+              "model::llama-3.3-70b-versatile",
+              "model::openai/gpt-oss-120b",
+              "model::openai/gpt-oss-20b",
+              "model::mistralai/mistral-small-3.2-24b-instruct",
+              "model::qiskit/mistral-small-3.2-24b-qiskit",
+              "model::qwen/qwen3-32b",
+              "model::meta-llama/llama-4-scout-17b-16e-instruct",
+              "model::llama-3.1-8b-instant"
+            ],
+            "iterations": 6
+          },
+          "gate_type_plus_barrier": {
+            "converged": true,
+            "design_columns": [
+              "intercept",
+              "z_gate_type_count",
+              "z_log_gate_count",
+              "z_num_qubits",
+              "z_num_clbits",
+              "has_barrier",
+              "model::gpt-5.5",
+              "model::gpt-5.4-mini",
+              "model::claude-fable-5",
+              "model::claude-sonnet-4-6",
+              "model::claude-opus-4-8",
+              "model::gemini-2.5-pro",
+              "model::gemini-3.1-pro-preview",
+              "model::deepseek-v4-pro",
+              "model::deepseek-v4-flash",
+              "model::mistral-ai/codestral-2501",
+              "model::qwen/qwen3-coder-next",
+              "model::meta/llama-4-maverick-17b-128e-instruct-fp8",
+              "model::llama-3.3-70b-versatile",
+              "model::openai/gpt-oss-120b",
+              "model::openai/gpt-oss-20b",
+              "model::mistralai/mistral-small-3.2-24b-instruct",
+              "model::qiskit/mistral-small-3.2-24b-qiskit",
+              "model::qwen/qwen3-32b",
+              "model::meta-llama/llama-4-scout-17b-16e-instruct",
+              "model::llama-3.1-8b-instant"
+            ],
+            "iterations": 6
+          },
+          "size_only": {
+            "converged": true,
+            "design_columns": [
+              "intercept",
+              "z_log_gate_count",
+              "z_num_qubits",
+              "z_num_clbits",
+              "model::gpt-5.5",
+              "model::gpt-5.4-mini",
+              "model::claude-fable-5",
+              "model::claude-sonnet-4-6",
+              "model::claude-opus-4-8",
+              "model::gemini-2.5-pro",
+              "model::gemini-3.1-pro-preview",
+              "model::deepseek-v4-pro",
+              "model::deepseek-v4-flash",
+              "model::mistral-ai/codestral-2501",
+              "model::qwen/qwen3-coder-next",
+              "model::meta/llama-4-maverick-17b-128e-instruct-fp8",
+              "model::llama-3.3-70b-versatile",
+              "model::openai/gpt-oss-120b",
+              "model::openai/gpt-oss-20b",
+              "model::mistralai/mistral-small-3.2-24b-instruct",
+              "model::qiskit/mistral-small-3.2-24b-qiskit",
+              "model::qwen/qwen3-32b",
+              "model::meta-llama/llama-4-scout-17b-16e-instruct",
+              "model::llama-3.1-8b-instant"
+            ],
+            "iterations": 5
+          }
+        },
+        "test_prompts": 15,
+        "test_signatures": 14,
+        "training_prompts": 139
+      },
+      {
+        "fold": 7,
+        "models": {
+          "entropy_plus_barrier": {
+            "converged": true,
+            "design_columns": [
+              "intercept",
+              "z_gate_entropy",
+              "z_log_gate_count",
+              "z_num_qubits",
+              "z_num_clbits",
+              "has_barrier",
+              "model::gpt-5.5",
+              "model::gpt-5.4-mini",
+              "model::claude-fable-5",
+              "model::claude-sonnet-4-6",
+              "model::claude-opus-4-8",
+              "model::gemini-2.5-pro",
+              "model::gemini-3.1-pro-preview",
+              "model::deepseek-v4-pro",
+              "model::deepseek-v4-flash",
+              "model::mistral-ai/codestral-2501",
+              "model::qwen/qwen3-coder-next",
+              "model::meta/llama-4-maverick-17b-128e-instruct-fp8",
+              "model::llama-3.3-70b-versatile",
+              "model::openai/gpt-oss-120b",
+              "model::openai/gpt-oss-20b",
+              "model::mistralai/mistral-small-3.2-24b-instruct",
+              "model::qiskit/mistral-small-3.2-24b-qiskit",
+              "model::qwen/qwen3-32b",
+              "model::meta-llama/llama-4-scout-17b-16e-instruct",
+              "model::llama-3.1-8b-instant"
+            ],
+            "iterations": 6
+          },
+          "gate_type_plus_barrier": {
+            "converged": true,
+            "design_columns": [
+              "intercept",
+              "z_gate_type_count",
+              "z_log_gate_count",
+              "z_num_qubits",
+              "z_num_clbits",
+              "has_barrier",
+              "model::gpt-5.5",
+              "model::gpt-5.4-mini",
+              "model::claude-fable-5",
+              "model::claude-sonnet-4-6",
+              "model::claude-opus-4-8",
+              "model::gemini-2.5-pro",
+              "model::gemini-3.1-pro-preview",
+              "model::deepseek-v4-pro",
+              "model::deepseek-v4-flash",
+              "model::mistral-ai/codestral-2501",
+              "model::qwen/qwen3-coder-next",
+              "model::meta/llama-4-maverick-17b-128e-instruct-fp8",
+              "model::llama-3.3-70b-versatile",
+              "model::openai/gpt-oss-120b",
+              "model::openai/gpt-oss-20b",
+              "model::mistralai/mistral-small-3.2-24b-instruct",
+              "model::qiskit/mistral-small-3.2-24b-qiskit",
+              "model::qwen/qwen3-32b",
+              "model::meta-llama/llama-4-scout-17b-16e-instruct",
+              "model::llama-3.1-8b-instant"
+            ],
+            "iterations": 6
+          },
+          "size_only": {
+            "converged": true,
+            "design_columns": [
+              "intercept",
+              "z_log_gate_count",
+              "z_num_qubits",
+              "z_num_clbits",
+              "model::gpt-5.5",
+              "model::gpt-5.4-mini",
+              "model::claude-fable-5",
+              "model::claude-sonnet-4-6",
+              "model::claude-opus-4-8",
+              "model::gemini-2.5-pro",
+              "model::gemini-3.1-pro-preview",
+              "model::deepseek-v4-pro",
+              "model::deepseek-v4-flash",
+              "model::mistral-ai/codestral-2501",
+              "model::qwen/qwen3-coder-next",
+              "model::meta/llama-4-maverick-17b-128e-instruct-fp8",
+              "model::llama-3.3-70b-versatile",
+              "model::openai/gpt-oss-120b",
+              "model::openai/gpt-oss-20b",
+              "model::mistralai/mistral-small-3.2-24b-instruct",
+              "model::qiskit/mistral-small-3.2-24b-qiskit",
+              "model::qwen/qwen3-32b",
+              "model::meta-llama/llama-4-scout-17b-16e-instruct",
+              "model::llama-3.1-8b-instant"
+            ],
+            "iterations": 5
+          }
+        },
+        "test_prompts": 15,
+        "test_signatures": 14,
+        "training_prompts": 139
+      },
+      {
+        "fold": 8,
+        "models": {
+          "entropy_plus_barrier": {
+            "converged": true,
+            "design_columns": [
+              "intercept",
+              "z_gate_entropy",
+              "z_log_gate_count",
+              "z_num_qubits",
+              "z_num_clbits",
+              "has_barrier",
+              "model::gpt-5.5",
+              "model::gpt-5.4-mini",
+              "model::claude-fable-5",
+              "model::claude-sonnet-4-6",
+              "model::claude-opus-4-8",
+              "model::gemini-2.5-pro",
+              "model::gemini-3.1-pro-preview",
+              "model::deepseek-v4-pro",
+              "model::deepseek-v4-flash",
+              "model::mistral-ai/codestral-2501",
+              "model::qwen/qwen3-coder-next",
+              "model::meta/llama-4-maverick-17b-128e-instruct-fp8",
+              "model::llama-3.3-70b-versatile",
+              "model::openai/gpt-oss-120b",
+              "model::openai/gpt-oss-20b",
+              "model::mistralai/mistral-small-3.2-24b-instruct",
+              "model::qiskit/mistral-small-3.2-24b-qiskit",
+              "model::qwen/qwen3-32b",
+              "model::meta-llama/llama-4-scout-17b-16e-instruct",
+              "model::llama-3.1-8b-instant"
+            ],
+            "iterations": 6
+          },
+          "gate_type_plus_barrier": {
+            "converged": true,
+            "design_columns": [
+              "intercept",
+              "z_gate_type_count",
+              "z_log_gate_count",
+              "z_num_qubits",
+              "z_num_clbits",
+              "has_barrier",
+              "model::gpt-5.5",
+              "model::gpt-5.4-mini",
+              "model::claude-fable-5",
+              "model::claude-sonnet-4-6",
+              "model::claude-opus-4-8",
+              "model::gemini-2.5-pro",
+              "model::gemini-3.1-pro-preview",
+              "model::deepseek-v4-pro",
+              "model::deepseek-v4-flash",
+              "model::mistral-ai/codestral-2501",
+              "model::qwen/qwen3-coder-next",
+              "model::meta/llama-4-maverick-17b-128e-instruct-fp8",
+              "model::llama-3.3-70b-versatile",
+              "model::openai/gpt-oss-120b",
+              "model::openai/gpt-oss-20b",
+              "model::mistralai/mistral-small-3.2-24b-instruct",
+              "model::qiskit/mistral-small-3.2-24b-qiskit",
+              "model::qwen/qwen3-32b",
+              "model::meta-llama/llama-4-scout-17b-16e-instruct",
+              "model::llama-3.1-8b-instant"
+            ],
+            "iterations": 6
+          },
+          "size_only": {
+            "converged": true,
+            "design_columns": [
+              "intercept",
+              "z_log_gate_count",
+              "z_num_qubits",
+              "z_num_clbits",
+              "model::gpt-5.5",
+              "model::gpt-5.4-mini",
+              "model::claude-fable-5",
+              "model::claude-sonnet-4-6",
+              "model::claude-opus-4-8",
+              "model::gemini-2.5-pro",
+              "model::gemini-3.1-pro-preview",
+              "model::deepseek-v4-pro",
+              "model::deepseek-v4-flash",
+              "model::mistral-ai/codestral-2501",
+              "model::qwen/qwen3-coder-next",
+              "model::meta/llama-4-maverick-17b-128e-instruct-fp8",
+              "model::llama-3.3-70b-versatile",
+              "model::openai/gpt-oss-120b",
+              "model::openai/gpt-oss-20b",
+              "model::mistralai/mistral-small-3.2-24b-instruct",
+              "model::qiskit/mistral-small-3.2-24b-qiskit",
+              "model::qwen/qwen3-32b",
+              "model::meta-llama/llama-4-scout-17b-16e-instruct",
+              "model::llama-3.1-8b-instant"
+            ],
+            "iterations": 5
+          }
+        },
+        "test_prompts": 15,
+        "test_signatures": 15,
+        "training_prompts": 139
+      },
+      {
+        "fold": 9,
+        "models": {
+          "entropy_plus_barrier": {
+            "converged": true,
+            "design_columns": [
+              "intercept",
+              "z_gate_entropy",
+              "z_log_gate_count",
+              "z_num_qubits",
+              "z_num_clbits",
+              "has_barrier",
+              "model::gpt-5.5",
+              "model::gpt-5.4-mini",
+              "model::claude-fable-5",
+              "model::claude-sonnet-4-6",
+              "model::claude-opus-4-8",
+              "model::gemini-2.5-pro",
+              "model::gemini-3.1-pro-preview",
+              "model::deepseek-v4-pro",
+              "model::deepseek-v4-flash",
+              "model::mistral-ai/codestral-2501",
+              "model::qwen/qwen3-coder-next",
+              "model::meta/llama-4-maverick-17b-128e-instruct-fp8",
+              "model::llama-3.3-70b-versatile",
+              "model::openai/gpt-oss-120b",
+              "model::openai/gpt-oss-20b",
+              "model::mistralai/mistral-small-3.2-24b-instruct",
+              "model::qiskit/mistral-small-3.2-24b-qiskit",
+              "model::qwen/qwen3-32b",
+              "model::meta-llama/llama-4-scout-17b-16e-instruct",
+              "model::llama-3.1-8b-instant"
+            ],
+            "iterations": 6
+          },
+          "gate_type_plus_barrier": {
+            "converged": true,
+            "design_columns": [
+              "intercept",
+              "z_gate_type_count",
+              "z_log_gate_count",
+              "z_num_qubits",
+              "z_num_clbits",
+              "has_barrier",
+              "model::gpt-5.5",
+              "model::gpt-5.4-mini",
+              "model::claude-fable-5",
+              "model::claude-sonnet-4-6",
+              "model::claude-opus-4-8",
+              "model::gemini-2.5-pro",
+              "model::gemini-3.1-pro-preview",
+              "model::deepseek-v4-pro",
+              "model::deepseek-v4-flash",
+              "model::mistral-ai/codestral-2501",
+              "model::qwen/qwen3-coder-next",
+              "model::meta/llama-4-maverick-17b-128e-instruct-fp8",
+              "model::llama-3.3-70b-versatile",
+              "model::openai/gpt-oss-120b",
+              "model::openai/gpt-oss-20b",
+              "model::mistralai/mistral-small-3.2-24b-instruct",
+              "model::qiskit/mistral-small-3.2-24b-qiskit",
+              "model::qwen/qwen3-32b",
+              "model::meta-llama/llama-4-scout-17b-16e-instruct",
+              "model::llama-3.1-8b-instant"
+            ],
+            "iterations": 6
+          },
+          "size_only": {
+            "converged": true,
+            "design_columns": [
+              "intercept",
+              "z_log_gate_count",
+              "z_num_qubits",
+              "z_num_clbits",
+              "model::gpt-5.5",
+              "model::gpt-5.4-mini",
+              "model::claude-fable-5",
+              "model::claude-sonnet-4-6",
+              "model::claude-opus-4-8",
+              "model::gemini-2.5-pro",
+              "model::gemini-3.1-pro-preview",
+              "model::deepseek-v4-pro",
+              "model::deepseek-v4-flash",
+              "model::mistral-ai/codestral-2501",
+              "model::qwen/qwen3-coder-next",
+              "model::meta/llama-4-maverick-17b-128e-instruct-fp8",
+              "model::llama-3.3-70b-versatile",
+              "model::openai/gpt-oss-120b",
+              "model::openai/gpt-oss-20b",
+              "model::mistralai/mistral-small-3.2-24b-instruct",
+              "model::qiskit/mistral-small-3.2-24b-qiskit",
+              "model::qwen/qwen3-32b",
+              "model::meta-llama/llama-4-scout-17b-16e-instruct",
+              "model::llama-3.1-8b-instant"
+            ],
+            "iterations": 5
+          }
+        },
+        "test_prompts": 15,
+        "test_signatures": 15,
+        "training_prompts": 139
+      },
+      {
+        "fold": 10,
+        "models": {
+          "entropy_plus_barrier": {
+            "converged": true,
+            "design_columns": [
+              "intercept",
+              "z_gate_entropy",
+              "z_log_gate_count",
+              "z_num_qubits",
+              "z_num_clbits",
+              "has_barrier",
+              "model::gpt-5.5",
+              "model::gpt-5.4-mini",
+              "model::claude-fable-5",
+              "model::claude-sonnet-4-6",
+              "model::claude-opus-4-8",
+              "model::gemini-2.5-pro",
+              "model::gemini-3.1-pro-preview",
+              "model::deepseek-v4-pro",
+              "model::deepseek-v4-flash",
+              "model::mistral-ai/codestral-2501",
+              "model::qwen/qwen3-coder-next",
+              "model::meta/llama-4-maverick-17b-128e-instruct-fp8",
+              "model::llama-3.3-70b-versatile",
+              "model::openai/gpt-oss-120b",
+              "model::openai/gpt-oss-20b",
+              "model::mistralai/mistral-small-3.2-24b-instruct",
+              "model::qiskit/mistral-small-3.2-24b-qiskit",
+              "model::qwen/qwen3-32b",
+              "model::meta-llama/llama-4-scout-17b-16e-instruct",
+              "model::llama-3.1-8b-instant"
+            ],
+            "iterations": 6
+          },
+          "gate_type_plus_barrier": {
+            "converged": true,
+            "design_columns": [
+              "intercept",
+              "z_gate_type_count",
+              "z_log_gate_count",
+              "z_num_qubits",
+              "z_num_clbits",
+              "has_barrier",
+              "model::gpt-5.5",
+              "model::gpt-5.4-mini",
+              "model::claude-fable-5",
+              "model::claude-sonnet-4-6",
+              "model::claude-opus-4-8",
+              "model::gemini-2.5-pro",
+              "model::gemini-3.1-pro-preview",
+              "model::deepseek-v4-pro",
+              "model::deepseek-v4-flash",
+              "model::mistral-ai/codestral-2501",
+              "model::qwen/qwen3-coder-next",
+              "model::meta/llama-4-maverick-17b-128e-instruct-fp8",
+              "model::llama-3.3-70b-versatile",
+              "model::openai/gpt-oss-120b",
+              "model::openai/gpt-oss-20b",
+              "model::mistralai/mistral-small-3.2-24b-instruct",
+              "model::qiskit/mistral-small-3.2-24b-qiskit",
+              "model::qwen/qwen3-32b",
+              "model::meta-llama/llama-4-scout-17b-16e-instruct",
+              "model::llama-3.1-8b-instant"
+            ],
+            "iterations": 6
+          },
+          "size_only": {
+            "converged": true,
+            "design_columns": [
+              "intercept",
+              "z_log_gate_count",
+              "z_num_qubits",
+              "z_num_clbits",
+              "model::gpt-5.5",
+              "model::gpt-5.4-mini",
+              "model::claude-fable-5",
+              "model::claude-sonnet-4-6",
+              "model::claude-opus-4-8",
+              "model::gemini-2.5-pro",
+              "model::gemini-3.1-pro-preview",
+              "model::deepseek-v4-pro",
+              "model::deepseek-v4-flash",
+              "model::mistral-ai/codestral-2501",
+              "model::qwen/qwen3-coder-next",
+              "model::meta/llama-4-maverick-17b-128e-instruct-fp8",
+              "model::llama-3.3-70b-versatile",
+              "model::openai/gpt-oss-120b",
+              "model::openai/gpt-oss-20b",
+              "model::mistralai/mistral-small-3.2-24b-instruct",
+              "model::qiskit/mistral-small-3.2-24b-qiskit",
+              "model::qwen/qwen3-32b",
+              "model::meta-llama/llama-4-scout-17b-16e-instruct",
+              "model::llama-3.1-8b-instant"
+            ],
+            "iterations": 5
+          }
+        },
+        "test_prompts": 16,
+        "test_signatures": 15,
+        "training_prompts": 138
+      }
+    ],
+    "method": {
+      "bootstrap_replicates": 3000,
+      "folds": 10,
+      "grouping": "evaluator-facing target signature",
+      "seed": 20260723,
+      "standardization": "training-fold only"
+    },
+    "results": {
+      "entropy_plus_barrier": {
+        "auc": {
+          "bootstrap_95": [
+            0.674329695775643,
+            0.7954377150518033
+          ],
+          "delta_bootstrap_95": [
+            0.02954854540748133,
+            0.17026036684103107
+          ],
+          "delta_vs_size_only": 0.10163491406604475,
+          "value": 0.7393835292005924
+        },
+        "brier": {
+          "bootstrap_95": [
+            0.18269802930803672,
+            0.23196928978867817
+          ],
+          "delta_bootstrap_95": [
+            -0.050439929040361854,
+            -0.0014989344643501397
+          ],
+          "delta_vs_size_only": -0.026910327754094715,
+          "value": 0.20595889640806195
+        },
+        "log_loss": {
+          "bootstrap_95": [
+            0.5505557533581366,
+            0.6653639655005793
+          ],
+          "delta_bootstrap_95": [
+            -0.10516703787538781,
+            0.0074369428086303695
+          ],
+          "delta_vs_size_only": -0.05189370976240304,
+          "value": 0.6042151649366033
+        }
+      },
+      "gate_type_plus_barrier": {
+        "auc": {
+          "bootstrap_95": [
+            0.6785239117484068,
+            0.798913679074239
+          ],
+          "delta_bootstrap_95": [
+            0.03335790435555781,
+            0.1736673455411248
+          ],
+          "delta_vs_size_only": 0.10524728137574102,
+          "value": 0.7429958965102886
+        },
+        "brier": {
+          "bootstrap_95": [
+            0.18134324947574998,
+            0.2312446439822272
+          ],
+          "delta_bootstrap_95": [
+            -0.05223328971812153,
+            -0.0023343535227054973
+          ],
+          "delta_vs_size_only": -0.028146753700276,
+          "value": 0.20472247046188066
+        },
+        "log_loss": {
+          "bootstrap_95": [
+            0.543278072238358,
+            0.6610121015887652
+          ],
+          "delta_bootstrap_95": [
+            -0.11287266116157647,
+            0.0033336858017892564
+          ],
+          "delta_vs_size_only": -0.05800722547540771,
+          "value": 0.5981016492235987
+        }
+      },
+      "size_only": {
+        "auc": {
+          "bootstrap_95": [
+            0.5793056755322659,
+            0.6937487061444987
+          ],
+          "value": 0.6377486151345476
+        },
+        "brier": {
+          "bootstrap_95": [
+            0.2191198799073905,
+            0.24726235555784273
+          ],
+          "value": 0.23286922416215666
+        },
+        "log_loss": {
+          "bootstrap_95": [
+            0.6268888584316108,
+            0.6868600575379956
+          ],
+          "value": 0.6561088746990064
+        }
+      }
+    }
+  },
+  "inferential_models": {
+    "method": {
+      "bootstrap_replicates": 2000,
+      "model": "grouped-binomial logistic regression over prompt success counts from the fixed model panel",
+      "ridge_penalty": 0.0001,
+      "seed": 20260713,
+      "uncertainty": "percentile bootstrap over evaluator-facing target-signature clusters"
+    },
+    "models": {
+      "execution_entropy_full": {
+        "binomial_trials": 3234,
+        "bootstrap_converged": 2000,
+        "bootstrap_replicates": 2000,
+        "converged": true,
+        "iterations": 7,
+        "log_likelihood": -905.9323056883984,
+        "positive_rate": 0.9121830550401979,
+        "prompt_observations": 154,
+        "standardization": {
+          "gate_entropy": {
+            "mean": 1.057171662919869,
+            "sd": 0.4148438596777759
+          },
+          "log_gate_count": {
+            "mean": 1.9249415046993417,
+            "sd": 0.5907079368350938
+          },
+          "num_clbits": {
+            "mean": 2.331168831168831,
+            "sd": 2.175487909530262
+          },
+          "num_qubits": {
+            "mean": 3.383116883116883,
+            "sd": 2.241025827046818
+          }
+        },
+        "terms": {
+          "has_barrier": {
+            "average_marginal_effect": 0.008213336443328383,
+            "average_marginal_effect_bootstrap_95": [
+              -0.02740286897112468,
+              0.04398952385676678
+            ],
+            "interval_excludes_null": false,
+            "log_odds": 0.10832606805935281,
+            "log_odds_bootstrap_95": [
+              -0.3516129392419319,
+              0.5869438923338868
+            ],
+            "odds_ratio": 1.114411060002259,
+            "odds_ratio_bootstrap_95": [
+              0.7035529908792619,
+              1.798484291679855
+            ]
+          },
+          "z_gate_entropy": {
+            "average_marginal_effect": -0.035103033219400004,
+            "average_marginal_effect_bootstrap_95": [
+              -0.06574263264844654,
+              -0.008922187179503485
+            ],
+            "interval_excludes_null": true,
+            "log_odds": -0.45867766444017144,
+            "log_odds_bootstrap_95": [
+              -0.8210549008400935,
+              -0.12242427120295911
+            ],
+            "odds_ratio": 0.6321189664853166,
+            "odds_ratio_bootstrap_95": [
+              0.43996728775768085,
+              0.8847729661648193
+            ]
+          },
+          "z_log_gate_count": {
+            "average_marginal_effect": -0.02106131109252287,
+            "average_marginal_effect_bootstrap_95": [
+              -0.05483659461373477,
+              0.011595489646833834
+            ],
+            "interval_excludes_null": false,
+            "log_odds": -0.2751999498615233,
+            "log_odds_bootstrap_95": [
+              -0.7525979806756117,
+              0.14401121579363962
+            ],
+            "odds_ratio": 0.7594202620669274,
+            "odds_ratio_bootstrap_95": [
+              0.47114095946085555,
+              1.1548984180597484
+            ]
+          },
+          "z_num_clbits": {
+            "average_marginal_effect": 0.03213218821649204,
+            "average_marginal_effect_bootstrap_95": [
+              0.012261192138188548,
+              0.053352308698112874
+            ],
+            "interval_excludes_null": true,
+            "log_odds": 0.41985878976256985,
+            "log_odds_bootstrap_95": [
+              0.14928449823822448,
+              0.7165717118287124
+            ],
+            "odds_ratio": 1.5217466542394997,
+            "odds_ratio_bootstrap_95": [
+              1.1610032484700044,
+              2.0474023198669045
+            ]
+          },
+          "z_num_qubits": {
+            "average_marginal_effect": -0.003924795372548525,
+            "average_marginal_effect_bootstrap_95": [
+              -0.029849168668406412,
+              0.02199779681789288
+            ],
+            "interval_excludes_null": false,
+            "log_odds": -0.05128377264820651,
+            "log_odds_bootstrap_95": [
+              -0.37949904149576946,
+              0.2979090098189587
+            ],
+            "odds_ratio": 0.9500090456954421,
+            "odds_ratio_bootstrap_95": [
+              0.6842041034412227,
+              1.347039339371654
+            ]
+          }
+        }
+      },
+      "signature_entropy_full": {
+        "binomial_trials": 3234,
+        "bootstrap_converged": 2000,
+        "bootstrap_replicates": 2000,
+        "converged": true,
+        "iterations": 5,
+        "log_likelihood": -1900.7068540243283,
+        "positive_rate": 0.5265924551638838,
+        "prompt_observations": 154,
+        "standardization": {
+          "gate_entropy": {
+            "mean": 1.057171662919869,
+            "sd": 0.4148438596777759
+          },
+          "log_gate_count": {
+            "mean": 1.9249415046993417,
+            "sd": 0.5907079368350938
+          },
+          "num_clbits": {
+            "mean": 2.331168831168831,
+            "sd": 2.175487909530262
+          },
+          "num_qubits": {
+            "mean": 3.383116883116883,
+            "sd": 2.241025827046818
+          }
+        },
+        "terms": {
+          "has_barrier": {
+            "average_marginal_effect": -0.24954342232586665,
+            "average_marginal_effect_bootstrap_95": [
+              -0.3865694393087121,
+              -0.10380699215740355
+            ],
+            "interval_excludes_null": true,
+            "log_odds": -1.1249932211068139,
+            "log_odds_bootstrap_95": [
+              -1.8121612753931198,
+              -0.4804737241909308
+            ],
+            "odds_ratio": 0.32465466815020805,
+            "odds_ratio_bootstrap_95": [
+              0.1633008176355,
+              0.6184907046293162
+            ]
+          },
+          "z_gate_entropy": {
+            "average_marginal_effect": -0.14398009164992737,
+            "average_marginal_effect_bootstrap_95": [
+              -0.2357793374099497,
+              -0.0703568521200017
+            ],
+            "interval_excludes_null": true,
+            "log_odds": -0.7173046584091802,
+            "log_odds_bootstrap_95": [
+              -1.2626283848724824,
+              -0.34861821435714146
+            ],
+            "odds_ratio": 0.48806598924452516,
+            "odds_ratio_bootstrap_95": [
+              0.2829094537831353,
+              0.7056624921028265
+            ]
+          },
+          "z_log_gate_count": {
+            "average_marginal_effect": 0.016876820013769084,
+            "average_marginal_effect_bootstrap_95": [
+              -0.0602020364250967,
+              0.16097141747873256
+            ],
+            "interval_excludes_null": false,
+            "log_odds": 0.08407982990067749,
+            "log_odds_bootstrap_95": [
+              -0.306927354964023,
+              0.8374390672517553
+            ],
+            "odds_ratio": 1.087715722581113,
+            "odds_ratio_bootstrap_95": [
+              0.7357040448843167,
+              2.3104425345461266
+            ]
+          },
+          "z_num_clbits": {
+            "average_marginal_effect": -0.034982795308015915,
+            "average_marginal_effect_bootstrap_95": [
+              -0.11851348092186824,
+              0.03182198102965001
+            ],
+            "interval_excludes_null": false,
+            "log_odds": -0.17428327591030035,
+            "log_odds_bootstrap_95": [
+              -0.6002730104239234,
+              0.16720653985035921
+            ],
+            "odds_ratio": 0.8400588955015551,
+            "odds_ratio_bootstrap_95": [
+              0.5486618934821522,
+              1.1819985158112096
+            ]
+          },
+          "z_num_qubits": {
+            "average_marginal_effect": -0.030574896931183593,
+            "average_marginal_effect_bootstrap_95": [
+              -0.12559211448861032,
+              0.03627979975548939
+            ],
+            "interval_excludes_null": false,
+            "log_odds": -0.15232325349842632,
+            "log_odds_bootstrap_95": [
+              -0.6527981365881959,
+              0.187237965558467
+            ],
+            "odds_ratio": 0.8587106546484871,
+            "odds_ratio_bootstrap_95": [
+              0.5205872084215903,
+              1.2059142853661158
+            ]
+          }
+        }
+      },
+      "signature_entropy_identifiable_150": {
+        "binomial_trials": 3150,
+        "bootstrap_converged": 2000,
+        "bootstrap_replicates": 2000,
+        "converged": true,
+        "iterations": 6,
+        "log_likelihood": -1830.6500568120862,
+        "positive_rate": 0.5406349206349207,
+        "prompt_observations": 150,
+        "standardization": {
+          "gate_entropy": {
+            "mean": 1.0456536653752069,
+            "sd": 0.4008392137297159
+          },
+          "log_gate_count": {
+            "mean": 1.8903506350629489,
+            "sd": 0.5418360625336197
+          },
+          "num_clbits": {
+            "mean": 2.3733333333333335,
+            "sd": 2.178438165558828
+          },
+          "num_qubits": {
+            "mean": 3.38,
+            "sd": 2.2663870073564434
+          }
+        },
+        "terms": {
+          "has_barrier": {
+            "average_marginal_effect": -0.2224086614455871,
+            "average_marginal_effect_bootstrap_95": [
+              -0.36991187263987485,
+              -0.07953873174033566
+            ],
+            "interval_excludes_null": true,
+            "log_odds": -1.0166191815901053,
+            "log_odds_bootstrap_95": [
+              -1.7019192003710963,
+              -0.379613463054878
+            ],
+            "odds_ratio": 0.3618161092977028,
+            "odds_ratio_bootstrap_95": [
+              0.18233325688424057,
+              0.6841259788442486
+            ]
+          },
+          "z_gate_entropy": {
+            "average_marginal_effect": -0.17788203007436446,
+            "average_marginal_effect_bootstrap_95": [
+              -0.2541942787607958,
+              -0.09862208077533409
+            ],
+            "interval_excludes_null": true,
+            "log_odds": -0.8983385082456603,
+            "log_odds_bootstrap_95": [
+              -1.385296081024735,
+              -0.48602879134211185
+            ],
+            "odds_ratio": 0.407245733367673,
+            "odds_ratio_bootstrap_95": [
+              0.25024969483361514,
+              0.615064099677239
+            ]
+          },
+          "z_log_gate_count": {
+            "average_marginal_effect": 0.0987436895398123,
+            "average_marginal_effect_bootstrap_95": [
+              0.00783454273131536,
+              0.19711797156975108
+            ],
+            "interval_excludes_null": true,
+            "log_odds": 0.49867464815183354,
+            "log_odds_bootstrap_95": [
+              0.041443929034849836,
+              1.0371992736305968
+            ],
+            "odds_ratio": 1.6465375823142612,
+            "odds_ratio_bootstrap_95": [
+              1.0423152007720053,
+              2.8213042463471276
+            ]
+          },
+          "z_num_clbits": {
+            "average_marginal_effect": -0.08323174870783949,
+            "average_marginal_effect_bootstrap_95": [
+              -0.1631275572047556,
+              -0.009608151313379719
+            ],
+            "interval_excludes_null": true,
+            "log_odds": -0.42033635967399346,
+            "log_odds_bootstrap_95": [
+              -0.8397796818700567,
+              -0.05102668066221688
+            ],
+            "odds_ratio": 0.6568258529252041,
+            "odds_ratio_bootstrap_95": [
+              0.4318057363346564,
+              0.9502533267433032
+            ]
+          },
+          "z_num_qubits": {
+            "average_marginal_effect": -0.05199146595006641,
+            "average_marginal_effect_bootstrap_95": [
+              -0.15462944844529086,
+              0.02128873434463204
+            ],
+            "interval_excludes_null": false,
+            "log_odds": -0.2625669155201458,
+            "log_odds_bootstrap_95": [
+              -0.8263254212158616,
+              0.11031855891716282
+            ],
+            "odds_ratio": 0.7690748995997561,
+            "odds_ratio_bootstrap_95": [
+              0.43765454091609896,
+              1.1166337275133222
+            ]
+          }
+        }
+      },
+      "signature_gate_type_full": {
+        "binomial_trials": 3234,
+        "bootstrap_converged": 2000,
+        "bootstrap_replicates": 2000,
+        "converged": true,
+        "iterations": 6,
+        "log_likelihood": -1878.860239756288,
+        "positive_rate": 0.5265924551638838,
+        "prompt_observations": 154,
+        "standardization": {
+          "gate_type_count": {
+            "mean": 3.512987012987013,
+            "sd": 1.8301648662726349
+          },
+          "log_gate_count": {
+            "mean": 1.9249415046993417,
+            "sd": 0.5907079368350938
+          },
+          "num_clbits": {
+            "mean": 2.331168831168831,
+            "sd": 2.175487909530262
+          },
+          "num_qubits": {
+            "mean": 3.383116883116883,
+            "sd": 2.241025827046818
+          }
+        },
+        "terms": {
+          "has_barrier": {
+            "average_marginal_effect": -0.23394314784537407,
+            "average_marginal_effect_bootstrap_95": [
+              -0.3784607843034229,
+              -0.07533978252551515
+            ],
+            "interval_excludes_null": true,
+            "log_odds": -1.059584641837321,
+            "log_odds_bootstrap_95": [
+              -1.78510323343931,
+              -0.35879447382293733
+            ],
+            "odds_ratio": 0.3465997434687183,
+            "odds_ratio_bootstrap_95": [
+              0.16777973985058364,
+              0.6985180519816234
+            ]
+          },
+          "z_gate_type_count": {
+            "average_marginal_effect": -0.21561016682944592,
+            "average_marginal_effect_bootstrap_95": [
+              -0.3551495243140464,
+              -0.11795041100730523
+            ],
+            "interval_excludes_null": true,
+            "log_odds": -1.0872577549841167,
+            "log_odds_bootstrap_95": [
+              -1.9121281733203346,
+              -0.6011595802184675
+            ],
+            "odds_ratio": 0.33713974702569965,
+            "odds_ratio_bootstrap_95": [
+              0.14776558120084077,
+              0.5481760009872433
+            ]
+          },
+          "z_log_gate_count": {
+            "average_marginal_effect": 0.04868076506478525,
+            "average_marginal_effect_bootstrap_95": [
+              -0.03168292876776804,
+              0.2055047245442167
+            ],
+            "interval_excludes_null": false,
+            "log_odds": 0.24548257678922758,
+            "log_odds_bootstrap_95": [
+              -0.1656346673430985,
+              1.0890564259616322
+            ],
+            "odds_ratio": 1.2782380123864492,
+            "odds_ratio_bootstrap_95": [
+              0.8473557501802124,
+              2.971469201225006
+            ]
+          },
+          "z_num_clbits": {
+            "average_marginal_effect": -0.0386684844574808,
+            "average_marginal_effect_bootstrap_95": [
+              -0.12159349899095412,
+              0.03022829854411564
+            ],
+            "interval_excludes_null": false,
+            "log_odds": -0.1949936323417241,
+            "log_odds_bootstrap_95": [
+              -0.6265376646795956,
+              0.1570834690675327
+            ],
+            "odds_ratio": 0.8228398976026202,
+            "odds_ratio_bootstrap_95": [
+              0.5344390087630926,
+              1.1700932767454917
+            ]
+          },
+          "z_num_qubits": {
+            "average_marginal_effect": -0.023189742103055536,
+            "average_marginal_effect_bootstrap_95": [
+              -0.10902520686513555,
+              0.039331558564534935
+            ],
+            "interval_excludes_null": false,
+            "log_odds": -0.1169389519445677,
+            "log_odds_bootstrap_95": [
+              -0.5731318923932918,
+              0.2007987161617082
+            ],
+            "odds_ratio": 0.889639502267311,
+            "odds_ratio_bootstrap_95": [
+              0.5637570467189678,
+              1.2223787538772755
+            ]
+          }
+        }
+      },
+      "signature_given_execution_entropy_full": {
+        "binomial_trials": 2950,
+        "bootstrap_converged": 2000,
+        "bootstrap_replicates": 2000,
+        "converged": true,
+        "iterations": 6,
+        "log_likelihood": -1679.0658728669414,
+        "positive_rate": 0.5772881355932203,
+        "prompt_observations": 154,
+        "standardization": {
+          "gate_entropy": {
+            "mean": 1.057171662919869,
+            "sd": 0.4148438596777759
+          },
+          "log_gate_count": {
+            "mean": 1.9249415046993417,
+            "sd": 0.5907079368350938
+          },
+          "num_clbits": {
+            "mean": 2.331168831168831,
+            "sd": 2.175487909530262
+          },
+          "num_qubits": {
+            "mean": 3.383116883116883,
+            "sd": 2.241025827046818
+          }
+        },
+        "terms": {
+          "has_barrier": {
+            "average_marginal_effect": -0.2753225793291352,
+            "average_marginal_effect_bootstrap_95": [
+              -0.417064193097858,
+              -0.11428530752388608
+            ],
+            "interval_excludes_null": true,
+            "log_odds": -1.2513646048229594,
+            "log_odds_bootstrap_95": [
+              -1.9767103471066079,
+              -0.5525905318851444
+            ],
+            "odds_ratio": 0.28611409766822277,
+            "odds_ratio_bootstrap_95": [
+              0.13852423168838499,
+              0.5754574923992055
+            ]
+          },
+          "z_gate_entropy": {
+            "average_marginal_effect": -0.13608945400256564,
+            "average_marginal_effect_bootstrap_95": [
+              -0.2393927713055486,
+              -0.058907975005936974
+            ],
+            "interval_excludes_null": true,
+            "log_odds": -0.7072609163514065,
+            "log_odds_bootstrap_95": [
+              -1.3622008559103709,
+              -0.2997263856515086
+            ],
+            "odds_ratio": 0.4929926980279803,
+            "odds_ratio_bootstrap_95": [
+              0.2560965541041172,
+              0.7410209497631355
+            ]
+          },
+          "z_log_gate_count": {
+            "average_marginal_effect": 0.03108127374991671,
+            "average_marginal_effect_bootstrap_95": [
+              -0.04872368697065584,
+              0.19240899945233145
+            ],
+            "interval_excludes_null": false,
+            "log_odds": 0.16153029869104027,
+            "log_odds_bootstrap_95": [
+              -0.26485080137011785,
+              1.0709108115317711
+            ],
+            "odds_ratio": 1.175308067914935,
+            "odds_ratio_bootstrap_95": [
+              0.7673204263995158,
+              2.9180362743485526
+            ]
+          },
+          "z_num_clbits": {
+            "average_marginal_effect": -0.05741173319211799,
+            "average_marginal_effect_bootstrap_95": [
+              -0.15650528059657598,
+              0.014464395113835082
+            ],
+            "interval_excludes_null": false,
+            "log_odds": -0.29837047495255814,
+            "log_odds_bootstrap_95": [
+              -0.8308577160124397,
+              0.07844254971950233
+            ],
+            "odds_ratio": 0.7420263866289141,
+            "odds_ratio_bootstrap_95": [
+              0.4356754733662487,
+              1.081601255980732
+            ]
+          },
+          "z_num_qubits": {
+            "average_marginal_effect": -0.0254607775050786,
+            "average_marginal_effect_bootstrap_95": [
+              -0.126361761464484,
+              0.04417599490952419
+            ],
+            "interval_excludes_null": false,
+            "log_odds": -0.13232041351949053,
+            "log_odds_bootstrap_95": [
+              -0.7021368084180478,
+              0.23462933778864958
+            ],
+            "odds_ratio": 0.8760602485567587,
+            "odds_ratio_bootstrap_95": [
+              0.4955253296450023,
+              1.2644400017908117
+            ]
+          }
+        }
+      }
+    },
+    "two_stage_contrasts": {
+      "conditional_signature_minus_execution::has_barrier": {
+        "average_marginal_effect_difference": -0.28353591577246356,
+        "bootstrap_95": [
+          -0.4328010962763169,
+          -0.11843321493226723
+        ]
+      },
+      "conditional_signature_minus_execution::z_gate_entropy": {
+        "average_marginal_effect_difference": -0.10098642078316564,
+        "bootstrap_95": [
+          -0.20916943925247877,
+          -0.021852689815011258
+        ]
+      }
+    }
+  },
+  "paired_model_comparisons": {
+    "comparisons": [
+      {
+        "after_label": "Llama 3.3 70B",
+        "after_model": "llama-3.3-70b-versatile",
+        "after_rate": 0.461038961038961,
+        "after_wins": 26,
+        "before_label": "Llama 3.1 8B",
+        "before_model": "llama-3.1-8b-instant",
+        "before_rate": 0.35064935064935066,
+        "before_wins": 9,
+        "comparison": "Llama 8B -> 70B",
+        "difference": 0.11038961038961037,
+        "difference_bootstrap_95": [
+          0.03772995283018867,
+          0.18292882193527815
+        ],
+        "holm_adjusted_cluster_permutation_p": 0.062198756024879495,
+        "signature_cluster_permutation_p": 0.00621987560248795,
+        "ties": 119,
+        "unclustered_exact_mcnemar_p": 0.005988120567053557
+      },
+      {
+        "after_label": "Llama 4 Maverick",
+        "after_model": "meta/llama-4-maverick-17b-128e-instruct-fp8",
+        "after_rate": 0.487012987012987,
+        "after_wins": 20,
+        "before_label": "Llama 4 Scout",
+        "before_model": "meta-llama/llama-4-scout-17b-16e-instruct",
+        "before_rate": 0.44805194805194803,
+        "before_wins": 14,
+        "comparison": "Llama 4 Scout -> Maverick",
+        "difference": 0.038961038961038974,
+        "difference_bootstrap_95": [
+          -0.038961038961038974,
+          0.11766640866873039
+        ],
+        "holm_adjusted_cluster_permutation_p": 1.0,
+        "signature_cluster_permutation_p": 0.40571188576228473,
+        "ties": 120,
+        "unclustered_exact_mcnemar_p": 0.39152830513194203
+      },
+      {
+        "after_label": "GPT-OSS 120B",
+        "after_model": "openai/gpt-oss-120b",
+        "after_rate": 0.5324675324675324,
+        "after_wins": 10,
+        "before_label": "GPT-OSS 20B",
+        "before_model": "openai/gpt-oss-20b",
+        "before_rate": 0.5064935064935064,
+        "before_wins": 6,
+        "comparison": "GPT-OSS 20B -> 120B",
+        "difference": 0.025974025974025983,
+        "difference_bootstrap_95": [
+          -0.025974025974025983,
+          0.07741935483870965
+        ],
+        "holm_adjusted_cluster_permutation_p": 1.0,
+        "signature_cluster_permutation_p": 0.4526109477810444,
+        "ties": 138,
+        "unclustered_exact_mcnemar_p": 0.454498291015625
+      },
+      {
+        "after_label": "Gemini 3.1 Pro Preview",
+        "after_model": "gemini-3.1-pro-preview",
+        "after_rate": 0.6103896103896104,
+        "after_wins": 16,
+        "before_label": "Gemini 2.5 Pro",
+        "before_model": "gemini-2.5-pro",
+        "before_rate": 0.538961038961039,
+        "before_wins": 5,
+        "comparison": "Gemini 2.5 -> 3.1",
+        "difference": 0.0714285714285714,
+        "difference_bootstrap_95": [
+          0.018749999999999933,
+          0.13072684246112223
+        ],
+        "holm_adjusted_cluster_permutation_p": 0.23381532369352614,
+        "signature_cluster_permutation_p": 0.025979480410391793,
+        "ties": 133,
+        "unclustered_exact_mcnemar_p": 0.02660369873046875
+      },
+      {
+        "after_label": "Claude Opus 4.8",
+        "after_model": "claude-opus-4-8",
+        "after_rate": 0.5974025974025974,
+        "after_wins": 3,
+        "before_label": "Claude Sonnet 4.6",
+        "before_model": "claude-sonnet-4-6",
+        "before_rate": 0.5909090909090909,
+        "before_wins": 2,
+        "comparison": "Claude Sonnet -> Opus",
+        "difference": 0.00649350649350644,
+        "difference_bootstrap_95": [
+          -0.020000000000000018,
+          0.03703703703703698
+        ],
+        "holm_adjusted_cluster_permutation_p": 1.0,
+        "signature_cluster_permutation_p": 1.0,
+        "ties": 149,
+        "unclustered_exact_mcnemar_p": 1.0
+      },
+      {
+        "after_label": "Claude Fable 5",
+        "after_model": "claude-fable-5",
+        "after_rate": 0.6298701298701299,
+        "after_wins": 6,
+        "before_label": "Claude Opus 4.8",
+        "before_model": "claude-opus-4-8",
+        "before_rate": 0.5974025974025974,
+        "before_wins": 1,
+        "comparison": "Claude Opus -> Fable",
+        "difference": 0.032467532467532534,
+        "difference_bootstrap_95": [
+          0.0,
+          0.06849957191780817
+        ],
+        "holm_adjusted_cluster_permutation_p": 0.8660226795464091,
+        "signature_cluster_permutation_p": 0.125477490450191,
+        "ties": 147,
+        "unclustered_exact_mcnemar_p": 0.125
+      },
+      {
+        "after_label": "DeepSeek V4 Pro",
+        "after_model": "deepseek-v4-pro",
+        "after_rate": 0.5909090909090909,
+        "after_wins": 17,
+        "before_label": "DeepSeek V4 Flash",
+        "before_model": "deepseek-v4-flash",
+        "before_rate": 0.525974025974026,
+        "before_wins": 7,
+        "comparison": "DeepSeek Flash -> Pro",
+        "difference": 0.06493506493506496,
+        "difference_bootstrap_95": [
+          0.006369426751592355,
+          0.12739174111913812
+        ],
+        "holm_adjusted_cluster_permutation_p": 0.500789984200316,
+        "signature_cluster_permutation_p": 0.0625987480250395,
+        "ties": 130,
+        "unclustered_exact_mcnemar_p": 0.06391465663909912
+      },
+      {
+        "after_label": "Qwen3-Coder-Next",
+        "after_model": "qwen/qwen3-coder-next",
+        "after_rate": 0.5064935064935064,
+        "after_wins": 35,
+        "before_label": "Qwen3 32B",
+        "before_model": "qwen/qwen3-32b",
+        "before_rate": 0.35064935064935066,
+        "before_wins": 11,
+        "comparison": "Qwen3 general -> Coder",
+        "difference": 0.15584415584415579,
+        "difference_bootstrap_95": [
+          0.07236842105263158,
+          0.2375
+        ],
+        "holm_adjusted_cluster_permutation_p": 0.010779784404311914,
+        "signature_cluster_permutation_p": 0.0009799804003919922,
+        "ties": 108,
+        "unclustered_exact_mcnemar_p": 0.0005355850721002753
+      },
+      {
+        "after_label": "GPT-5.5",
+        "after_model": "gpt-5.5",
+        "after_rate": 0.6038961038961039,
+        "after_wins": 3,
+        "before_label": "GPT-5.4 mini",
+        "before_model": "gpt-5.4-mini",
+        "before_rate": 0.6038961038961039,
+        "before_wins": 3,
+        "comparison": "GPT-5.4 mini -> GPT-5.5",
+        "difference": 0.0,
+        "difference_bootstrap_95": [
+          -0.03246753246753242,
+          0.032258064516129004
+        ],
+        "holm_adjusted_cluster_permutation_p": 1.0,
+        "signature_cluster_permutation_p": 1.0,
+        "ties": 148,
+        "unclustered_exact_mcnemar_p": 1.0
+      },
+      {
+        "after_label": "GPT-5.6 Sol",
+        "after_model": "gpt-5.6-sol",
+        "after_rate": 0.6298701298701299,
+        "after_wins": 4,
+        "before_label": "GPT-5.5",
+        "before_model": "gpt-5.5",
+        "before_rate": 0.6038961038961039,
+        "before_wins": 0,
+        "comparison": "GPT-5.5 -> GPT-5.6 Sol",
+        "difference": 0.025974025974025983,
+        "difference_bootstrap_95": [
+          0.006250000000000089,
+          0.05357442473633747
+        ],
+        "holm_adjusted_cluster_permutation_p": 0.8660226795464091,
+        "signature_cluster_permutation_p": 0.12371752564948701,
+        "ties": 150,
+        "unclustered_exact_mcnemar_p": 0.125
+      },
+      {
+        "after_label": "Qiskit Mistral 3.2 24B",
+        "after_model": "qiskit/mistral-small-3.2-24b-qiskit",
+        "after_rate": 0.44805194805194803,
+        "after_wins": 9,
+        "before_label": "Mistral Small 3.2 24B",
+        "before_model": "mistralai/mistral-small-3.2-24b-instruct",
+        "before_rate": 0.487012987012987,
+        "before_wins": 15,
+        "comparison": "Mistral parent -> Qiskit specialist",
+        "difference": -0.038961038961038974,
+        "difference_bootstrap_95": [
+          -0.10256849315068495,
+          0.02547770700636942
+        ],
+        "holm_adjusted_cluster_permutation_p": 1.0,
+        "signature_cluster_permutation_p": 0.30713385732285353,
+        "ties": 130,
+        "unclustered_exact_mcnemar_p": 0.30745625495910645
+      }
+    ],
+    "method": {
+      "bootstrap_replicates": 5000,
+      "confidence_intervals": "target-signature cluster bootstrap",
+      "multiplicity": "Holm adjustment across 11 prespecified displayed comparisons",
+      "permutation_replicates": 50000,
+      "primary_test": "target-signature cluster sign-flip permutation",
+      "secondary_test": "unclustered exact McNemar diagnostic",
+      "seed": 20260733
+    }
+  },
+  "rank_stability": {
+    "method": {
+      "bootstrap_replicates": 5000,
+      "cluster": "evaluator-facing target signature",
+      "seed": 20260733
+    },
+    "models": [
+      {
+        "model": "claude-fable-5",
+        "model_label": "Claude Fable 5",
+        "rank": 1.5,
+        "rank_bootstrap_95": [
+          1.0,
+          4.5
+        ],
+        "rank_median": 1.5,
+        "score": 0.6298701298701299,
+        "score_bootstrap_95": [
+          0.5460516225379399,
+          0.7091055718475071
+        ],
+        "top_3_probability": 0.924,
+        "top_5_probability": 0.987
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "model_label": "GPT-5.6 Sol",
+        "rank": 1.5,
+        "rank_bootstrap_95": [
+          1.0,
+          3.0
+        ],
+        "rank_median": 1.5,
+        "score": 0.6298701298701299,
+        "score_bootstrap_95": [
+          0.5465705704478588,
+          0.7098765432098766
+        ],
+        "top_3_probability": 0.9848,
+        "top_5_probability": 1.0
+      },
+      {
+        "model": "gemini-3.1-pro-preview",
+        "model_label": "Gemini 3.1 Pro Preview",
+        "rank": 3.0,
+        "rank_bootstrap_95": [
+          2.0,
+          6.5
+        ],
+        "rank_median": 4.0,
+        "score": 0.6103896103896104,
+        "score_bootstrap_95": [
+          0.5283018867924528,
+          0.6907894736842105
+        ],
+        "top_3_probability": 0.3124,
+        "top_5_probability": 0.8544
+      },
+      {
+        "model": "gpt-5.4-mini",
+        "model_label": "GPT-5.4 mini",
+        "rank": 4.5,
+        "rank_bootstrap_95": [
+          1.5,
+          8.0
+        ],
+        "rank_median": 5.0,
+        "score": 0.6038961038961039,
+        "score_bootstrap_95": [
+          0.5197368421052632,
+          0.6842105263157895
+        ],
+        "top_3_probability": 0.1738,
+        "top_5_probability": 0.578
+      },
+      {
+        "model": "gpt-5.5",
+        "model_label": "GPT-5.5",
+        "rank": 4.5,
+        "rank_bootstrap_95": [
+          2.5,
+          8.0
+        ],
+        "rank_median": 5.0,
+        "score": 0.6038961038961039,
+        "score_bootstrap_95": [
+          0.5194805194805194,
+          0.6845637583892618
+        ],
+        "top_3_probability": 0.1164,
+        "top_5_probability": 0.586
+      },
+      {
+        "model": "claude-opus-4-8",
+        "model_label": "Claude Opus 4.8",
+        "rank": 6.0,
+        "rank_bootstrap_95": [
+          3.0,
+          9.0
+        ],
+        "rank_median": 6.0,
+        "score": 0.5974025974025974,
+        "score_bootstrap_95": [
+          0.5128205128205128,
+          0.6794871794871795
+        ],
+        "top_3_probability": 0.0716,
+        "top_5_probability": 0.3328
+      },
+      {
+        "model": "claude-sonnet-4-6",
+        "model_label": "Claude Sonnet 4.6",
+        "rank": 7.5,
+        "rank_bootstrap_95": [
+          3.5,
+          9.0
+        ],
+        "rank_median": 7.0,
+        "score": 0.5909090909090909,
+        "score_bootstrap_95": [
+          0.5064935064935064,
+          0.6729559748427673
+        ],
+        "top_3_probability": 0.0116,
+        "top_5_probability": 0.1444
+      },
+      {
+        "model": "deepseek-v4-pro",
+        "model_label": "DeepSeek V4 Pro",
+        "rank": 7.5,
+        "rank_bootstrap_95": [
+          1.5,
+          10.0
+        ],
+        "rank_median": 7.0,
+        "score": 0.5909090909090909,
+        "score_bootstrap_95": [
+          0.5066666666666667,
+          0.6726217532467532
+        ],
+        "top_3_probability": 0.1084,
+        "top_5_probability": 0.2742
+      },
+      {
+        "model": "mistral-ai/codestral-2501",
+        "model_label": "Codestral 25.01",
+        "rank": 9.0,
+        "rank_bootstrap_95": [
+          6.0,
+          12.5
+        ],
+        "rank_median": 9.0,
+        "score": 0.5584415584415584,
+        "score_bootstrap_95": [
+          0.47435897435897434,
+          0.6405228758169934
+        ],
+        "top_3_probability": 0.0016,
+        "top_5_probability": 0.0158
+      },
+      {
+        "model": "gemini-2.5-pro",
+        "model_label": "Gemini 2.5 Pro",
+        "rank": 10.0,
+        "rank_bootstrap_95": [
+          7.0,
+          16.0
+        ],
+        "rank_median": 10.5,
+        "score": 0.538961038961039,
+        "score_bootstrap_95": [
+          0.45341407867494826,
+          0.6216259528759528
+        ],
+        "top_3_probability": 0.0026,
+        "top_5_probability": 0.0088
+      },
+      {
+        "model": "openai/gpt-oss-120b",
+        "model_label": "GPT-OSS 120B",
+        "rank": 11.0,
+        "rank_bootstrap_95": [
+          8.5,
+          15.0
+        ],
+        "rank_median": 11.0,
+        "score": 0.5324675324675324,
+        "score_bootstrap_95": [
+          0.44370860927152317,
+          0.6181877990430621
+        ],
+        "top_3_probability": 0.0,
+        "top_5_probability": 0.0004
+      },
+      {
+        "model": "deepseek-v4-flash",
+        "model_label": "DeepSeek V4 Flash",
+        "rank": 12.0,
+        "rank_bootstrap_95": [
+          9.0,
+          15.5
+        ],
+        "rank_median": 12.0,
+        "score": 0.525974025974026,
+        "score_bootstrap_95": [
+          0.43870967741935485,
+          0.6076011417225117
+        ],
+        "top_3_probability": 0.0,
+        "top_5_probability": 0.0008
+      },
+      {
+        "model": "openai/gpt-oss-20b",
+        "model_label": "GPT-OSS 20B",
+        "rank": 13.5,
+        "rank_bootstrap_95": [
+          10.0,
+          17.0
+        ],
+        "rank_median": 13.5,
+        "score": 0.5064935064935064,
+        "score_bootstrap_95": [
+          0.41935483870967744,
+          0.5918434479054778
+        ],
+        "top_3_probability": 0.0,
+        "top_5_probability": 0.0
+      },
+      {
+        "model": "qwen/qwen3-coder-next",
+        "model_label": "Qwen3-Coder-Next",
+        "rank": 13.5,
+        "rank_bootstrap_95": [
+          10.0,
+          17.5
+        ],
+        "rank_median": 13.5,
+        "score": 0.5064935064935064,
+        "score_bootstrap_95": [
+          0.42207792207792205,
+          0.5892886707663197
+        ],
+        "top_3_probability": 0.0,
+        "top_5_probability": 0.0
+      },
+      {
+        "model": "meta/llama-4-maverick-17b-128e-instruct-fp8",
+        "model_label": "Llama 4 Maverick",
+        "rank": 15.5,
+        "rank_bootstrap_95": [
+          11.0,
+          19.0
+        ],
+        "rank_median": 15.0,
+        "score": 0.487012987012987,
+        "score_bootstrap_95": [
+          0.40131578947368424,
+          0.5714285714285714
+        ],
+        "top_3_probability": 0.0,
+        "top_5_probability": 0.0
+      },
+      {
+        "model": "mistralai/mistral-small-3.2-24b-instruct",
+        "model_label": "Mistral Small 3.2 24B",
+        "rank": 15.5,
+        "rank_bootstrap_95": [
+          10.5,
+          18.5
+        ],
+        "rank_median": 15.0,
+        "score": 0.487012987012987,
+        "score_bootstrap_95": [
+          0.4025974025974026,
+          0.5704708742040956
+        ],
+        "top_3_probability": 0.0,
+        "top_5_probability": 0.0002
+      },
+      {
+        "model": "llama-3.3-70b-versatile",
+        "model_label": "Llama 3.3 70B",
+        "rank": 17.0,
+        "rank_bootstrap_95": [
+          12.0,
+          19.0
+        ],
+        "rank_median": 17.0,
+        "score": 0.461038961038961,
+        "score_bootstrap_95": [
+          0.3716216216216216,
+          0.5483870967741935
+        ],
+        "top_3_probability": 0.0,
+        "top_5_probability": 0.0002
+      },
+      {
+        "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+        "model_label": "Llama 4 Scout",
+        "rank": 18.5,
+        "rank_bootstrap_95": [
+          14.5,
+          19.0
+        ],
+        "rank_median": 18.0,
+        "score": 0.44805194805194803,
+        "score_bootstrap_95": [
+          0.36551724137931035,
+          0.5308641975308642
+        ],
+        "top_3_probability": 0.0,
+        "top_5_probability": 0.0
+      },
+      {
+        "model": "qiskit/mistral-small-3.2-24b-qiskit",
+        "model_label": "Qiskit Mistral 3.2 24B",
+        "rank": 18.5,
+        "rank_bootstrap_95": [
+          14.5,
+          19.5
+        ],
+        "rank_median": 18.0,
+        "score": 0.44805194805194803,
+        "score_bootstrap_95": [
+          0.36538461538461536,
+          0.5333333333333333
+        ],
+        "top_3_probability": 0.0,
+        "top_5_probability": 0.0
+      },
+      {
+        "model": "llama-3.1-8b-instant",
+        "model_label": "Llama 3.1 8B",
+        "rank": 20.5,
+        "rank_bootstrap_95": [
+          20.0,
+          21.0
+        ],
+        "rank_median": 20.5,
+        "score": 0.35064935064935066,
+        "score_bootstrap_95": [
+          0.2709677419354839,
+          0.43312101910828027
+        ],
+        "top_3_probability": 0.0,
+        "top_5_probability": 0.0
+      },
+      {
+        "model": "qwen/qwen3-32b",
+        "model_label": "Qwen3 32B",
+        "rank": 20.5,
+        "rank_bootstrap_95": [
+          19.0,
+          21.0
+        ],
+        "rank_median": 20.5,
+        "score": 0.35064935064935066,
+        "score_bootstrap_95": [
+          0.2756291946308725,
+          0.4266687898089172
+        ],
+        "top_3_probability": 0.0,
+        "top_5_probability": 0.0
+      }
+    ],
+    "rank_correlation_with_original": {
+      "bootstrap_95": [
+        0.9159056332612924,
+        0.9882621979498528
+      ],
+      "mean": 0.9611137398182782
+    }
+  },
+  "source_reports": [
+    {
+      "model": "claude-fable-5",
+      "model_label": "Claude Fable 5",
+      "records_loaded": 154,
+      "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/anthropic_claude-fable-5/pqid_bench_external_model_generation_harness_report.json"
+    },
+    {
+      "model": "claude-opus-4-8",
+      "model_label": "Claude Opus 4.8",
+      "records_loaded": 154,
+      "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/anthropic_claude-opus-4-8/pqid_bench_external_model_generation_harness_report.json"
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "model_label": "Claude Sonnet 4.6",
+      "records_loaded": 154,
+      "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/anthropic_claude-sonnet-4-6/pqid_bench_external_model_generation_harness_report.json"
+    },
+    {
+      "model": "deepseek-v4-flash",
+      "model_label": "DeepSeek V4 Flash",
+      "records_loaded": 154,
+      "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/deepseek_deepseek-v4-flash/pqid_bench_external_model_generation_harness_report.json"
+    },
+    {
+      "model": "deepseek-v4-pro",
+      "model_label": "DeepSeek V4 Pro",
+      "records_loaded": 154,
+      "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/deepseek_deepseek-v4-pro/pqid_bench_external_model_generation_harness_report.json"
+    },
+    {
+      "model": "meta/llama-4-maverick-17b-128e-instruct-fp8",
+      "model_label": "Llama 4 Maverick",
+      "records_loaded": 154,
+      "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/github_models_meta_llama-4-maverick-17b-128e-instruct-fp8/pqid_bench_external_model_generation_harness_report.json"
+    },
+    {
+      "model": "mistral-ai/codestral-2501",
+      "model_label": "Codestral 25.01",
+      "records_loaded": 154,
+      "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/github_models_mistral-ai_codestral-2501/pqid_bench_external_model_generation_harness_report.json"
+    },
+    {
+      "model": "gemini-2.5-pro",
+      "model_label": "Gemini 2.5 Pro",
+      "records_loaded": 154,
+      "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/google_gemini-2_5-pro/pqid_bench_external_model_generation_harness_report.json"
+    },
+    {
+      "model": "gemini-3.1-pro-preview",
+      "model_label": "Gemini 3.1 Pro Preview",
+      "records_loaded": 154,
+      "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/google_gemini-3_1-pro-preview/pqid_bench_external_model_generation_harness_report.json"
+    },
+    {
+      "model": "llama-3.1-8b-instant",
+      "model_label": "Llama 3.1 8B",
+      "records_loaded": 154,
+      "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/groq_llama-3_1-8b-instant/pqid_bench_external_model_generation_harness_report.json"
+    },
+    {
+      "model": "llama-3.3-70b-versatile",
+      "model_label": "Llama 3.3 70B",
+      "records_loaded": 154,
+      "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/groq_llama-3_3-70b-versatile/pqid_bench_external_model_generation_harness_report.json"
+    },
+    {
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "model_label": "Llama 4 Scout",
+      "records_loaded": 154,
+      "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/groq_meta-llama_llama-4-scout-17b-16e-instruct/pqid_bench_external_model_generation_harness_report.json"
+    },
+    {
+      "model": "openai/gpt-oss-120b",
+      "model_label": "GPT-OSS 120B",
+      "records_loaded": 154,
+      "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/groq_openai_gpt-oss-120b/pqid_bench_external_model_generation_harness_report.json"
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "model_label": "GPT-OSS 20B",
+      "records_loaded": 154,
+      "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/groq_openai_gpt-oss-20b/pqid_bench_external_model_generation_harness_report.json"
+    },
+    {
+      "model": "qwen/qwen3-32b",
+      "model_label": "Qwen3 32B",
+      "records_loaded": 154,
+      "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/groq_qwen_qwen3-32b/pqid_bench_external_model_generation_harness_report.json"
+    },
+    {
+      "model": "qwen/qwen3-coder-next",
+      "model_label": "Qwen3-Coder-Next",
+      "records_loaded": 154,
+      "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/huggingface_router_qwen_qwen3-coder-next_novita/pqid_bench_external_model_generation_harness_report.json"
+    },
+    {
+      "model": "gpt-5.4-mini",
+      "model_label": "GPT-5.4 mini",
+      "records_loaded": 154,
+      "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/openai_gpt-5_4-mini/pqid_bench_external_model_generation_harness_report.json"
+    },
+    {
+      "model": "gpt-5.5",
+      "model_label": "GPT-5.5",
+      "records_loaded": 154,
+      "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/openai_gpt-5_5/pqid_bench_external_model_generation_harness_report.json"
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "model_label": "GPT-5.6 Sol",
+      "records_loaded": 154,
+      "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/openai_gpt-5_6-sol/pqid_bench_external_model_generation_harness_report.json"
+    },
+    {
+      "model": "mistralai/mistral-small-3.2-24b-instruct",
+      "model_label": "Mistral Small 3.2 24B",
+      "records_loaded": 154,
+      "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/mistral_parent_control/evaluations/openrouter_mistralai_mistral-small-3_2-24b-instruct/pqid_bench_external_model_generation_harness_report.json"
+    },
+    {
+      "model": "qiskit/mistral-small-3.2-24b-qiskit",
+      "model_label": "Qiskit Mistral 3.2 24B",
+      "records_loaded": 154,
+      "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/qiskit_mistral/evaluations/huggingface_router_qiskit_mistral-small-3_2-24b-qiskit_featherless-ai/pqid_bench_external_model_generation_harness_report.json"
+    }
+  ]
+}

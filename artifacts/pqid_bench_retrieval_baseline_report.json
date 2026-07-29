@@ -1,0 +1,866 @@
+{
+  "code_plus_metadata_failure_taxonomy": [
+    {
+      "category": "gate_vocabulary_distractor",
+      "description": "shared low-level gate vocabulary without enough semantic information to recover the exact source record",
+      "examples": [
+        {
+          "expected_file": "Coding_With_Qiskit/ep5_Quantum_Teleportation.ipynb",
+          "expected_gate_types": {
+            "barrier": 4,
+            "cx": 3,
+            "cz": 1,
+            "h": 2,
+            "measure": 3,
+            "x": 1
+          },
+          "query": "Build a 3-qubit, 3-classical-bit quantum teleportation circuit that teleports the state |1\u27e9 from qubit 0 to qubit 2: initialize q0 with X, create a Bell pair...",
+          "rank": 2,
+          "retrieved_file": "5.Quantum-Half-Adder.py",
+          "retrieved_gate_types": {
+            "barrier": 2,
+            "ccx": 1,
+            "cx": 1,
+            "measure": 2,
+            "x": 2
+          },
+          "slice": "strict_n8"
+        },
+        {
+          "expected_file": "quantum_showcase.py",
+          "expected_gate_types": {
+            "cx": 1,
+            "h": 3,
+            "measure": 1,
+            "x": 1
+          },
+          "query": "Create a Qiskit circuit for the Deutsch algorithm with two qubits and one classical bit: initialize the ancilla in |1>, apply Hadamards to both qubits, use a...",
+          "rank": 2,
+          "retrieved_file": "awards/teach_me_qiskit_2018/hadamard_action/hadamard_action.ipynb",
+          "retrieved_gate_types": {
+            "cx": 1,
+            "measure": 2
+          },
+          "slice": "strict_n8"
+        }
+      ],
+      "extended_n8": 117,
+      "failures": 251,
+      "share_of_top1_failures": 0.38794435857805254,
+      "strict_n8": 134
+    },
+    {
+      "category": "lexical_metadata_distractor",
+      "description": "remaining lexical or metadata attraction without a simple structural match",
+      "examples": [
+        {
+          "expected_file": "qiskit/synthesis/two_qubit/xx_decompose/embodiments.py",
+          "expected_gate_types": {
+            "cry": 1,
+            "h": 2,
+            "ry": 1,
+            "s": 1,
+            "sdg": 1
+          },
+          "query": "Create a 2-qubit Qiskit circuit that applies H on qubit 0, S on qubit 1, then a controlled-RY rotation of angle -2*theta from qubit 0 to qubit 1, followed by...",
+          "rank": 2,
+          "retrieved_file": "CHSH_Experiment.py",
+          "retrieved_gate_types": {
+            "cx": 1,
+            "h": 1,
+            "ry": 1
+          },
+          "slice": "strict_n8"
+        },
+        {
+          "expected_file": "backend/app/curriculum/lessons/pauli_gates.py",
+          "expected_gate_types": {
+            "measure": 3,
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "query": "Create a 3-qubit, 3-classical-bit quantum circuit that applies X to qubit 0, Y to qubit 1, and Z to qubit 2, then measures each qubit into the matching class...",
+          "rank": 2,
+          "retrieved_file": "source/0/first_steps_f5c18c.py",
+          "retrieved_gate_types": {
+            "cx": 1,
+            "h": 1,
+            "measure": 1
+          },
+          "slice": "strict_n8"
+        }
+      ],
+      "extended_n8": 69,
+      "failures": 133,
+      "share_of_top1_failures": 0.20556414219474498,
+      "strict_n8": 64
+    },
+    {
+      "category": "size_or_complexity_distractor",
+      "description": "shared gate vocabulary but a large width/depth/gate-count mismatch",
+      "examples": [
+        {
+          "expected_file": "source/0/cx_841fdd.py",
+          "expected_gate_types": {
+            "cx": 1,
+            "p": 1,
+            "rx": 1,
+            "rxx": 1,
+            "ry": 2
+          },
+          "query": "Create a 2-qubit Qiskit circuit that applies a CNOT with qubit 1 controlling qubit 0, then follows it with ry(pi/2) on qubit 1, rxx(pi/2) on qubits 1 and 0, ...",
+          "rank": 2,
+          "retrieved_file": "source/0/ccx3_48ef26.py",
+          "retrieved_gate_types": {
+            "p": 1,
+            "rx": 6,
+            "rxx": 5,
+            "ry": 6
+          },
+          "slice": "extended_n8"
+        },
+        {
+          "expected_file": "Effect_of_bugs_on_Entropy/Testcases/shallow/shallow_2.py",
+          "expected_gate_types": {
+            "id": 1,
+            "rx": 1,
+            "ry": 1,
+            "rz": 1,
+            "y": 1
+          },
+          "query": "Create a small 3-qubit Qiskit circuit with these operations in order: RY(pi/2) on qubit 0, RX(pi/31) on qubit 1, Y on qubit 2, an identity on qubit 0, and RZ...",
+          "rank": 2,
+          "retrieved_file": "examples/02_gates_tour/gates_tour.py",
+          "retrieved_gate_types": {
+            "barrier": 1,
+            "ccx": 1,
+            "cx": 1,
+            "cz": 1,
+            "h": 1,
+            "measure": 4,
+            "rx": 1,
+            "ry": 1,
+            "rz": 1,
+            "s": 1,
+            "swap": 1,
+            "t": 1,
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "slice": "extended_n8"
+        }
+      ],
+      "extended_n8": 49,
+      "failures": 97,
+      "share_of_top1_failures": 0.14992272024729522,
+      "strict_n8": 48
+    },
+    {
+      "category": "scaled_family_variant",
+      "description": "same circuit family or gate vocabulary, but with different width, depth, parameter count, or repeated block scale",
+      "examples": [
+        {
+          "expected_file": "quntumcircuit.py",
+          "expected_gate_types": {
+            "cx": 3,
+            "cz": 1,
+            "h": 3,
+            "measure": 3
+          },
+          "query": "Build a 3-qubit, 3-classical-bit quantum teleportation circuit in Qiskit: create a Bell pair on qubits 1 and 2, put qubit 0 into a Hadamard state, perform th...",
+          "rank": 2,
+          "retrieved_file": "Coding_With_Qiskit/ep5_Quantum_Teleportation.ipynb",
+          "retrieved_gate_types": {
+            "barrier": 4,
+            "cx": 3,
+            "cz": 1,
+            "h": 2,
+            "measure": 3,
+            "x": 1
+          },
+          "slice": "strict_n8"
+        },
+        {
+          "expected_file": "Src/Quantum_teleportation_protocol/Quantun_teleportation_protocol.py",
+          "expected_gate_types": {
+            "barrier": 1,
+            "cx": 4,
+            "h": 3,
+            "measure": 3
+          },
+          "query": "Build a 3-qubit, 3-classical-bit quantum teleportation circuit that prepares qubit 0 in the |+> state, creates a Bell pair between qubits 1 and 2, performs t...",
+          "rank": 2,
+          "retrieved_file": "Coding_With_Qiskit/ep5_Quantum_Teleportation.ipynb",
+          "retrieved_gate_types": {
+            "barrier": 4,
+            "cx": 3,
+            "cz": 1,
+            "h": 2,
+            "measure": 3,
+            "x": 1
+          },
+          "slice": "strict_n8"
+        }
+      ],
+      "extended_n8": 28,
+      "failures": 76,
+      "share_of_top1_failures": 0.11746522411128284,
+      "strict_n8": 48
+    },
+    {
+      "category": "exact_gate_signature_ambiguity",
+      "description": "different source context with the same gate multiset, leaving lexical BM25 unable to identify the intended register/name semantics",
+      "examples": [
+        {
+          "expected_file": "3. Algorithms/grovers_algorithm_and_amplitude_amplification.py",
+          "expected_gate_types": {
+            "ch": 1,
+            "h": 1,
+            "ry": 1,
+            "x": 1
+          },
+          "query": "Create a 3-qubit Qiskit circuit for state preparation that applies an RY rotation by \u03c0/4 on qubit 0, then a controlled-H from qubit 0 to qubit 1, followed by...",
+          "rank": 2,
+          "retrieved_file": "tutorials/algorithms/06_grover.ipynb",
+          "retrieved_gate_types": {
+            "ch": 1,
+            "h": 1,
+            "ry": 1,
+            "x": 1
+          },
+          "slice": "strict_n8"
+        },
+        {
+          "expected_file": "source/0/main_595497.py",
+          "expected_gate_types": {
+            "barrier": 1,
+            "h": 3
+          },
+          "query": "Create a small Qiskit Simon-algorithm setup for n=3 that initializes a 6-qubit circuit with 3 classical bits, applies Hadamards to the first register, and in...",
+          "rank": 2,
+          "retrieved_file": "notebooks/v1/ch-algorithms/simon.ipynb",
+          "retrieved_gate_types": {
+            "barrier": 1,
+            "h": 3
+          },
+          "slice": "extended_n8"
+        }
+      ],
+      "extended_n8": 11,
+      "failures": 31,
+      "share_of_top1_failures": 0.04791344667697063,
+      "strict_n8": 20
+    },
+    {
+      "category": "same_source_lineage_neighbor",
+      "description": "same file, notebook lineage, or source context, but the retrieved fragment is not the requested target",
+      "examples": [
+        {
+          "expected_file": "DEMOS/IRIS/2siamesecondensed.py",
+          "expected_gate_types": {
+            "barrier": 1,
+            "cx": 1,
+            "ry": 4,
+            "rz": 4
+          },
+          "query": "Create a 2-qubit Qiskit circuit named \"VQC Circuit\" with four input parameters and four weight parameters: apply RY(input0) then RZ(input1) on qubit 0, RY(in...",
+          "rank": 2,
+          "retrieved_file": "DEMOS/IRIS/siamese_noncondensed.py",
+          "retrieved_gate_types": {
+            "barrier": 1,
+            "cx": 2,
+            "ry": 8,
+            "rz": 8
+          },
+          "slice": "strict_n8"
+        },
+        {
+          "expected_file": "qiskit/synthesis/two_qubit/xx_decompose/embodiments.py",
+          "expected_gate_types": {
+            "cp": 1,
+            "h": 4,
+            "rz": 2
+          },
+          "query": "Create a 2-qubit Qiskit circuit parameterized by theta that applies H to both qubits, a controlled-phase gate with angle -2*theta from qubit 0 to 1, RZ(theta...",
+          "rank": 2,
+          "retrieved_file": "qiskit/synthesis/two_qubit/xx_decompose/embodiments.py",
+          "retrieved_gate_types": {
+            "ch": 1,
+            "h": 4,
+            "s": 2,
+            "sdg": 1,
+            "sx": 1,
+            "t": 1,
+            "tdg": 1
+          },
+          "slice": "strict_n8"
+        }
+      ],
+      "extended_n8": 13,
+      "failures": 29,
+      "share_of_top1_failures": 0.04482225656877898,
+      "strict_n8": 16
+    },
+    {
+      "category": "algorithm_family_confusion",
+      "description": "same named algorithm/protocol family, but the retrieved implementation is a different variant",
+      "examples": [
+        {
+          "expected_file": "source/0/circuit_basic_3e8732.py",
+          "expected_gate_types": {
+            "cx": 2,
+            "h": 1
+          },
+          "query": "Create a compact Qiskit circuit on 3 qubits that prepares a GHZ state by applying a Hadamard to qubit 0 and then CNOTs from qubit 0 to qubits 1 and 2.",
+          "rank": 7,
+          "retrieved_file": "bernstein_vazirani/example.py",
+          "retrieved_gate_types": {
+            "barrier": 2,
+            "h": 4,
+            "x": 1
+          },
+          "slice": "extended_n8"
+        },
+        {
+          "expected_file": "main1copy.py",
+          "expected_gate_types": {
+            "barrier": 1,
+            "cx": 1,
+            "h": 1,
+            "measure": 2
+          },
+          "query": "Create a 2-qubit Qiskit circuit that prepares a Bell state by applying a Hadamard to qubit 0, then a CNOT from qubit 0 to qubit 1, and finally measures both ...",
+          "rank": 14,
+          "retrieved_file": "CHSH_Experiment.py",
+          "retrieved_gate_types": {
+            "cx": 1,
+            "h": 1,
+            "ry": 1
+          },
+          "slice": "strict_n8"
+        }
+      ],
+      "extended_n8": 2,
+      "failures": 20,
+      "share_of_top1_failures": 0.030911901081916538,
+      "strict_n8": 18
+    },
+    {
+      "category": "same_source_register_or_subcircuit",
+      "description": "same source lineage and same gate signature, but the retrieved subcircuit targets a different register, role, or named component",
+      "examples": [
+        {
+          "expected_file": "awards/teach_me_qiskit_2018/e91_qkd/e91_quantum_key_distribution_protocol.ipynb",
+          "expected_gate_types": {
+            "h": 2,
+            "measure": 1,
+            "s": 1,
+            "t": 1
+          },
+          "query": "Create a Qiskit subcircuit named `measureB1` on registers `qr` and `cr` that acts only on Bob's qubit `qr[1]` by applying `s`, `h`, `t`, and `h` in that orde...",
+          "rank": 2,
+          "retrieved_file": "community/awards/teach_me_qiskit_2018/e91_qkd/e91_quantum_key_distribution_protocol.ipynb",
+          "retrieved_gate_types": {
+            "h": 2,
+            "measure": 1,
+            "s": 1,
+            "t": 1
+          },
+          "slice": "strict_n8"
+        },
+        {
+          "expected_file": "awards/teach_me_qiskit_2018/e91_qkd/e91_quantum_key_distribution_protocol.ipynb",
+          "expected_gate_types": {
+            "h": 2,
+            "measure": 1,
+            "s": 1,
+            "t": 1
+          },
+          "query": "Create a Qiskit subcircuit named `measureA2` on existing registers `qr` and `cr` that acts only on `qr[0]` by applying `s`, `h`, `t`, and `h` in that order, ...",
+          "rank": 2,
+          "retrieved_file": "community/awards/teach_me_qiskit_2018/e91_qkd/e91_quantum_key_distribution_protocol.ipynb",
+          "retrieved_gate_types": {
+            "h": 2,
+            "measure": 1,
+            "s": 1,
+            "t": 1
+          },
+          "slice": "strict_n8"
+        }
+      ],
+      "extended_n8": 3,
+      "failures": 10,
+      "share_of_top1_failures": 0.015455950540958269,
+      "strict_n8": 7
+    }
+  ],
+  "code_plus_metadata_failures": [
+    {
+      "expected_code": "circuit = QuantumCircuit(3,3) # QUBIT ORDERING # q0 = State |psi> that we want to teleport # q1 = Alice's half of the Bell pair # q2 = Bob's half of the Bell pair, the destination of the teleportation # ==============...",
+      "expected_file": "Coding_With_Qiskit/ep5_Quantum_Teleportation.ipynb",
+      "expected_gate_types": {
+        "barrier": 4,
+        "cx": 3,
+        "cz": 1,
+        "h": 2,
+        "measure": 3,
+        "x": 1
+      },
+      "failure_category": "gate_vocabulary_distractor",
+      "failure_description": "shared low-level gate vocabulary without enough semantic information to recover the exact source record",
+      "label": "strict_n8",
+      "query": "Build a 3-qubit, 3-classical-bit quantum teleportation circuit that teleports the state |1\u27e9 from qubit 0 to qubit 2: initialize q0 with X, create a Bell pair on q1 and q2 with H and CX, apply Alice\u2019s CX(q0,q1) and H(q...",
+      "rank": 2,
+      "retrieved_code": "qc = QuantumCircuit(3, 2) # --- Prepare Inputs --- # We want to compute 1 + 1, so we set q0 and q1 to |1> qc.x(0) qc.x(1) qc.barrier() # --- Half-Adder Logic --- # 1. Calculate the Carry bit (A AND B) # The Toffoli ga...",
+      "retrieved_file": "5.Quantum-Half-Adder.py",
+      "retrieved_gate_types": {
+        "barrier": 2,
+        "ccx": 1,
+        "cx": 1,
+        "measure": 2,
+        "x": 2
+      },
+      "row_id": "342b5a2173a87a8c1c14cd59ee2143a6",
+      "top1_label": "strict_n8"
+    },
+    {
+      "expected_code": "qc = QuantumCircuit(2, name=\"VQC Circuit\") input_params = [Parameter(f\"input{i}\") for i in range(4)] weight_params = [Parameter(f\"weight{i}\") for i in range(4)] # Feature map qc.ry(input_params[0],0) qc.rz(input_param...",
+      "expected_file": "DEMOS/IRIS/2siamesecondensed.py",
+      "expected_gate_types": {
+        "barrier": 1,
+        "cx": 1,
+        "ry": 4,
+        "rz": 4
+      },
+      "failure_category": "same_source_lineage_neighbor",
+      "failure_description": "same file, notebook lineage, or source context, but the retrieved fragment is not the requested target",
+      "label": "strict_n8",
+      "query": "Create a 2-qubit Qiskit circuit named \"VQC Circuit\" with four input parameters and four weight parameters: apply RY(input0) then RZ(input1) on qubit 0, RY(input2) then RZ(input3) on qubit 1, add a CX from qubit 0 to 1...",
+      "rank": 2,
+      "retrieved_code": "qc = QuantumCircuit(4, name=\"VQC Circuit\") input_params = [Parameter(f\"input{i}\") for i in range(8)] weight_params = [Parameter(f\"weight{i}\") for i in range(8)] # Feature map part qc.ry(input_params[0], 0) qc.rz(input...",
+      "retrieved_file": "DEMOS/IRIS/siamese_noncondensed.py",
+      "retrieved_gate_types": {
+        "barrier": 1,
+        "cx": 2,
+        "ry": 8,
+        "rz": 8
+      },
+      "row_id": "a1f33dce9aa48b878c6bdae10e2087f3",
+      "top1_label": "strict_n8"
+    },
+    {
+      "expected_code": "qc = QuantumCircuit(4, 4) # Single-qubit gates qc.h(0) qc.x(1) qc.y(2) qc.z(3) qc.s(0) qc.t(1) # Rotation gates qc.rx(math.pi / 4, 0) qc.ry(math.pi / 3, 1) qc.rz(math.pi / 2, 2) # Multi-qubit gates qc.cx(0, 1) qc.cz(2...",
+      "expected_file": "examples/02_gates_tour/gates_tour.py",
+      "expected_gate_types": {
+        "barrier": 1,
+        "ccx": 1,
+        "cx": 1,
+        "cz": 1,
+        "h": 1,
+        "measure": 4,
+        "rx": 1,
+        "ry": 1,
+        "rz": 1,
+        "s": 1,
+        "swap": 1,
+        "t": 1,
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "failure_category": "lexical_metadata_distractor",
+      "failure_description": "remaining lexical or metadata attraction without a simple structural match",
+      "label": "strict_n8",
+      "query": "Create a 4-qubit, 4-classical-bit Qiskit circuit that tours basic gates in this order: h on q0, x on q1, y on q2, z on q3, then s on q0 and t on q1; apply rx(pi/4) to q0, ry(pi/3) to q1, and rz(pi/2) to q2; follow wit...",
+      "rank": 9,
+      "retrieved_code": "qc = QuantumCircuit(3, 2) # --- Prepare Inputs --- # We want to compute 1 + 1, so we set q0 and q1 to |1> qc.x(0) qc.x(1) qc.barrier() # --- Half-Adder Logic --- # 1. Calculate the Carry bit (A AND B) # The Toffoli ga...",
+      "retrieved_file": "5.Quantum-Half-Adder.py",
+      "retrieved_gate_types": {
+        "barrier": 2,
+        "ccx": 1,
+        "cx": 1,
+        "measure": 2,
+        "x": 2
+      },
+      "row_id": "7a359b6766caade6c33102373e75e158",
+      "top1_label": "strict_n8"
+    },
+    {
+      "expected_code": "measureB1 = QuantumCircuit(qr, cr, name='measureB1') measureB1.s(qr[1]) measureB1.h(qr[1]) measureB1.t(qr[1]) measureB1.h(qr[1]) measureB1.measure(qr[1],cr[1]) # measure the spin projection of Bob's qubit onto the b_2...",
+      "expected_file": "awards/teach_me_qiskit_2018/e91_qkd/e91_quantum_key_distribution_protocol.ipynb",
+      "expected_gate_types": {
+        "h": 2,
+        "measure": 1,
+        "s": 1,
+        "t": 1
+      },
+      "failure_category": "same_source_register_or_subcircuit",
+      "failure_description": "same source lineage and same gate signature, but the retrieved subcircuit targets a different register, role, or named component",
+      "label": "strict_n8",
+      "query": "Create a Qiskit subcircuit named `measureB1` on registers `qr` and `cr` that acts only on Bob's qubit `qr[1]` by applying `s`, `h`, `t`, and `h` in that order, then measuring it into `cr[1]`.",
+      "rank": 2,
+      "retrieved_code": "measureA1 = QuantumCircuit(qr, cr, name='measureA1') measureA1.h(qr[0]) measureA1.measure(qr[0],cr[0]) # measure the spin projection of Alice's qubit onto the a_2 direction (W basis) measureA2 = QuantumCircuit(qr, cr,...",
+      "retrieved_file": "community/awards/teach_me_qiskit_2018/e91_qkd/e91_quantum_key_distribution_protocol.ipynb",
+      "retrieved_gate_types": {
+        "h": 2,
+        "measure": 1,
+        "s": 1,
+        "t": 1
+      },
+      "row_id": "7e2f7d9fd46da91c91501a7622808dd6",
+      "top1_label": "strict_n8"
+    },
+    {
+      "expected_code": "qc = QuantumCircuit(3) qc.h(0) qc.h(1) qc.barrier() # Pixel 1 qc.cry(theta, 0, 2) qc.cx(0, 1) qc.cry(-theta, 1, 2) qc.cx(0, 1) qc.cry(theta, 1, 2) qc.barrier() # Pixel 2 qc.x(1) qc.cry(theta, 0, 2) qc.cx(0, 1) qc.cry(...",
+      "expected_file": "Original_4_copy_aux_forking-Copy1.py",
+      "expected_gate_types": {
+        "barrier": 5,
+        "cry": 12,
+        "cx": 8,
+        "h": 2,
+        "measure": 3,
+        "x": 4
+      },
+      "failure_category": "size_or_complexity_distractor",
+      "failure_description": "shared gate vocabulary but a large width/depth/gate-count mismatch",
+      "label": "strict_n8",
+      "query": "Build a 3-qubit Qiskit circuit where q0 and q1 start in superposition, then apply four barrier-separated blocks of the pattern CRY(pi/4) on (0,2), CX(0,1), CRY(-pi/4) on (1,2), CX(0,1), CRY(pi/4) on (1,2), with X togg...",
+      "rank": 3,
+      "retrieved_code": "qc = QuantumCircuit(3, 2) # --- Prepare Inputs --- # We want to compute 1 + 1, so we set q0 and q1 to |1> qc.x(0) qc.x(1) qc.barrier() # --- Half-Adder Logic --- # 1. Calculate the Carry bit (A AND B) # The Toffoli ga...",
+      "retrieved_file": "5.Quantum-Half-Adder.py",
+      "retrieved_gate_types": {
+        "barrier": 2,
+        "ccx": 1,
+        "cx": 1,
+        "measure": 2,
+        "x": 2
+      },
+      "row_id": "86f71e611476310037519d6f41ddec57",
+      "top1_label": "strict_n8"
+    },
+    {
+      "expected_code": "qc = QuantumCircuit(2) qc.cx(1,0) #MSB is control bit #CNOT is its own inverse, see if MS-based CNOT works qc.ry(np.pi/2,1) qc.rxx(np.pi/2,1,0) #bug?? works but should be qc.rxx(np.pi/4,1,0) qc.ry(-np.pi/2,1) qc.rx(-n...",
+      "expected_file": "source/0/cx_841fdd.py",
+      "expected_gate_types": {
+        "cx": 1,
+        "p": 1,
+        "rx": 1,
+        "rxx": 1,
+        "ry": 2
+      },
+      "failure_category": "size_or_complexity_distractor",
+      "failure_description": "shared gate vocabulary but a large width/depth/gate-count mismatch",
+      "label": "extended_n8",
+      "query": "Create a 2-qubit Qiskit circuit that applies a CNOT with qubit 1 controlling qubit 0, then follows it with ry(pi/2) on qubit 1, rxx(pi/2) on qubits 1 and 0, ry(-pi/2) on qubit 1, rx(-pi/2) on qubit 0, and p(-pi/2) on ...",
+      "rank": 2,
+      "retrieved_code": "qc = QuantumCircuit(qr) #qc.ccx(2,1,0) #LSB is target bit #CNOT is its own inverse, see if MS-based CNOT works qc.ry(-np.pi/2,2) qc.ry(-np.pi/2,1) qc.rx(-np.pi/4,1) qc.rx(np.pi/4,0) qc.rxx(np.pi/4,2,0) #bug?? works bu...",
+      "retrieved_file": "source/0/ccx3_48ef26.py",
+      "retrieved_gate_types": {
+        "p": 1,
+        "rx": 6,
+        "rxx": 5,
+        "ry": 6
+      },
+      "row_id": "a29e47134909169b7bedf741780ab1e7",
+      "top1_label": "extended_n8"
+    },
+    {
+      "expected_code": "cphase_circuit = QuantumCircuit(2) cphase_circuit.h(0) cphase_circuit.h(1) cphase_circuit.cp(-2 * theta, 0, 1) cphase_circuit.rz(theta, 0) cphase_circuit.rz(theta, 1) cphase_circuit.h(0) cphase_circuit.h(1) cphase_cir...",
+      "expected_file": "qiskit/synthesis/two_qubit/xx_decompose/embodiments.py",
+      "expected_gate_types": {
+        "cp": 1,
+        "h": 4,
+        "rz": 2
+      },
+      "failure_category": "same_source_lineage_neighbor",
+      "failure_description": "same file, notebook lineage, or source context, but the retrieved fragment is not the requested target",
+      "label": "strict_n8",
+      "query": "Create a 2-qubit Qiskit circuit parameterized by theta that applies H to both qubits, a controlled-phase gate with angle -2*theta from qubit 0 to 1, RZ(theta) on each qubit, then H on both again, and set the circuit\u2019s...",
+      "rank": 2,
+      "retrieved_code": "rxx_circuit = QuantumCircuit(2) theta = Parameter(\"\u03b8\") rxx_circuit.rxx(theta, 0, 1) rzz_circuit = QuantumCircuit(2) theta = Parameter(\"\u03b8\") rzz_circuit.h(0) rzz_circuit.h(1) rzz_circuit.rzz(theta, 0, 1) rzz_circuit.h(0...",
+      "retrieved_file": "qiskit/synthesis/two_qubit/xx_decompose/embodiments.py",
+      "retrieved_gate_types": {
+        "ch": 1,
+        "h": 4,
+        "s": 2,
+        "sdg": 1,
+        "sx": 1,
+        "t": 1,
+        "tdg": 1
+      },
+      "row_id": "2705510a7ccb5a6cc92d5b7b959891e0",
+      "top1_label": "extended_n8"
+    },
+    {
+      "expected_code": "qc = QuantumCircuit(3, 3) # Step 1: Create entanglement between qubit 1 & 2 (Bell pair) qc.h(1) # Hadamard gate on qubit 1 qc.cx(1, 2) # CNOT gate with qubit 1 as control and qubit 2 as target # Step 2: Apply a random...",
+      "expected_file": "quntumcircuit.py",
+      "expected_gate_types": {
+        "cx": 3,
+        "cz": 1,
+        "h": 3,
+        "measure": 3
+      },
+      "failure_category": "scaled_family_variant",
+      "failure_description": "same circuit family or gate vocabulary, but with different width, depth, parameter count, or repeated block scale",
+      "label": "strict_n8",
+      "query": "Build a 3-qubit, 3-classical-bit quantum teleportation circuit in Qiskit: create a Bell pair on qubits 1 and 2, put qubit 0 into a Hadamard state, perform the Bell-basis steps on qubits 0 and 1, measure qubits 0 and 1...",
+      "rank": 2,
+      "retrieved_code": "circuit = QuantumCircuit(3,3) # QUBIT ORDERING # q0 = State |psi> that we want to teleport # q1 = Alice's half of the Bell pair # q2 = Bob's half of the Bell pair, the destination of the teleportation # ==============...",
+      "retrieved_file": "Coding_With_Qiskit/ep5_Quantum_Teleportation.ipynb",
+      "retrieved_gate_types": {
+        "barrier": 4,
+        "cx": 3,
+        "cz": 1,
+        "h": 2,
+        "measure": 3,
+        "x": 1
+      },
+      "row_id": "4ee2e395a99d557d9c8c8bc86b6c653d",
+      "top1_label": "strict_n8"
+    },
+    {
+      "expected_code": "qc = QuantumCircuit(2, 1) qc.x(1) # Ancilla qubit qc.h(0) # Input qubit qc.h(1) # Ancilla qubit qc.cx(0, 1) # Oracle (for balanced function) qc.h(0) # Interference qc.measure(0, 0) # Result: 0 = constant, 1 = balanced",
+      "expected_file": "quantum_showcase.py",
+      "expected_gate_types": {
+        "cx": 1,
+        "h": 3,
+        "measure": 1,
+        "x": 1
+      },
+      "failure_category": "gate_vocabulary_distractor",
+      "failure_description": "shared low-level gate vocabulary without enough semantic information to recover the exact source record",
+      "label": "strict_n8",
+      "query": "Create a Qiskit circuit for the Deutsch algorithm with two qubits and one classical bit: initialize the ancilla in |1>, apply Hadamards to both qubits, use a CNOT from the input qubit to the ancilla as the balanced or...",
+      "rank": 2,
+      "retrieved_code": "cnot_i_00 = QuantumCircuit(i_q, i_c, name=\"cnot_i_00\") # Note: qubits are assumed by Qiskit # to be initialized in the |0> state # Apply gates according to diagram: cnot_i_00.cx(i_q[0], i_q[1]) # Apply CNOT on line 2 ...",
+      "retrieved_file": "awards/teach_me_qiskit_2018/hadamard_action/hadamard_action.ipynb",
+      "retrieved_gate_types": {
+        "cx": 1,
+        "measure": 2
+      },
+      "row_id": "5d72f740afa604104eb85ce3a86f5b02",
+      "top1_label": "strict_n8"
+    },
+    {
+      "expected_code": "permutation8 = QuantumCircuit(18, name = 'P8') permutation8.cx(0, 11) permutation8.cx(1, 10) permutation8.cx(2, 13) permutation8.cx(3, 15) permutation8.cx(4, 17) permutation8.cx(5, 12) permutation8.cx(6, 14) permutati...",
+      "expected_file": "source/0/simplified_des_quantum_test_e77515.py",
+      "expected_gate_types": {
+        "cx": 8
+      },
+      "failure_category": "lexical_metadata_distractor",
+      "failure_description": "remaining lexical or metadata attraction without a simple structural match",
+      "label": "extended_n8",
+      "query": "Create a Qiskit circuit on 18 qubits that implements this fixed permutation layer with eight CNOTs: 0\u219211, 1\u219210, 2\u219213, 3\u219215, 4\u219217, 5\u219212, 6\u219214, and 7\u219216. Name the circuit `P8`.",
+      "rank": 3,
+      "retrieved_code": "qc = QuantumCircuit() q = QuantumRegister(20, 'q') c = ClassicalRegister(20, 'c') qc.add_register(q) qc.add_register(c) qc.rx(6.209957416856063, q[0]) qc.rx(2.5009858166994063, q[1]) qc.rz(1.1023958963447806, q[3]) qc...",
+      "retrieved_file": "notebooks/legacy/qconvert_tmp_cache/bffaa053e3e33a5a1fda84a45c335f4d08e43924dd9da8ee407320eb.py",
+      "retrieved_gate_types": {
+        "cx": 58,
+        "measure": 20,
+        "rx": 18,
+        "ry": 20,
+        "rz": 18
+      },
+      "row_id": "9055e40d97d13f2bef6c7474001386d6",
+      "top1_label": "strict_n8"
+    },
+    {
+      "expected_code": "qc = QuantumCircuit(3,3) #Step 2: Prepare the state to teleport (say qubit 0 in |+>state) qc.h(0) # Create superposition on qubit 0 #Step 3: Create an entangled pair between qubits 1 and qubit 2 qc.h(1) qc.cx(1,2) #St...",
+      "expected_file": "Src/Quantum_teleportation_protocol/Quantun_teleportation_protocol.py",
+      "expected_gate_types": {
+        "barrier": 1,
+        "cx": 4,
+        "h": 3,
+        "measure": 3
+      },
+      "failure_category": "scaled_family_variant",
+      "failure_description": "same circuit family or gate vocabulary, but with different width, depth, parameter count, or repeated block scale",
+      "label": "strict_n8",
+      "query": "Build a 3-qubit, 3-classical-bit quantum teleportation circuit that prepares qubit 0 in the |+> state, creates a Bell pair between qubits 1 and 2, performs the Bell-basis step on qubits 0 and 1 with a barrier before m...",
+      "rank": 2,
+      "retrieved_code": "circuit = QuantumCircuit(3,3) # QUBIT ORDERING # q0 = State |psi> that we want to teleport # q1 = Alice's half of the Bell pair # q2 = Bob's half of the Bell pair, the destination of the teleportation # ==============...",
+      "retrieved_file": "Coding_With_Qiskit/ep5_Quantum_Teleportation.ipynb",
+      "retrieved_gate_types": {
+        "barrier": 4,
+        "cx": 3,
+        "cz": 1,
+        "h": 2,
+        "measure": 3,
+        "x": 1
+      },
+      "row_id": "d3f9d17046d631a35a29fe49169dfb9f",
+      "top1_label": "strict_n8"
+    },
+    {
+      "expected_code": "measureA2 = QuantumCircuit(qr, cr, name='measureA2') measureA2.s(qr[0]) measureA2.h(qr[0]) measureA2.t(qr[0]) measureA2.h(qr[0]) measureA2.measure(qr[0],cr[0]) # measure the spin projection of Alice's qubit onto the a...",
+      "expected_file": "awards/teach_me_qiskit_2018/e91_qkd/e91_quantum_key_distribution_protocol.ipynb",
+      "expected_gate_types": {
+        "h": 2,
+        "measure": 1,
+        "s": 1,
+        "t": 1
+      },
+      "failure_category": "same_source_register_or_subcircuit",
+      "failure_description": "same source lineage and same gate signature, but the retrieved subcircuit targets a different register, role, or named component",
+      "label": "strict_n8",
+      "query": "Create a Qiskit subcircuit named `measureA2` on existing registers `qr` and `cr` that acts only on `qr[0]` by applying `s`, `h`, `t`, and `h` in that order, then measuring into `cr[0]`.",
+      "rank": 2,
+      "retrieved_code": "measureA1 = QuantumCircuit(qr, cr, name='measureA1') measureA1.h(qr[0]) measureA1.measure(qr[0],cr[0]) # measure the spin projection of Alice's qubit onto the a_2 direction (W basis) measureA2 = QuantumCircuit(qr, cr,...",
+      "retrieved_file": "community/awards/teach_me_qiskit_2018/e91_qkd/e91_quantum_key_distribution_protocol.ipynb",
+      "retrieved_gate_types": {
+        "h": 2,
+        "measure": 1,
+        "s": 1,
+        "t": 1
+      },
+      "row_id": "fe96a42f45d31b95a3672817ef6b98ad",
+      "top1_label": "strict_n8"
+    }
+  ],
+  "input_file": "PQID/data/processed/seed_drafts_quality_aware_source_code_v1.jsonl",
+  "label_counts": {
+    "extended_n8": 319,
+    "strict_n8": 415
+  },
+  "results": [
+    {
+      "description": "code only",
+      "metrics": {
+        "mean_rank": 171.08446866485014,
+        "median_rank": 109.0,
+        "mrr": 0.16014706459788453,
+        "per_label": {
+          "extended_n8": {
+            "mean_rank": 174.95924764890282,
+            "median_rank": 130,
+            "mrr": 0.1267511194972954,
+            "queries": 319,
+            "recall_at_1": 0.08463949843260188,
+            "recall_at_10": 0.20376175548589343,
+            "recall_at_5": 0.15673981191222572
+          },
+          "strict_n8": {
+            "mean_rank": 168.10602409638554,
+            "median_rank": 74,
+            "mrr": 0.1858176826390603,
+            "queries": 415,
+            "recall_at_1": 0.12530120481927712,
+            "recall_at_10": 0.29397590361445786,
+            "recall_at_5": 0.24819277108433735
+          }
+        },
+        "queries": 734,
+        "recall_at_1": 0.10762942779291552,
+        "recall_at_10": 0.2547683923705722,
+        "recall_at_5": 0.20844686648501362
+      },
+      "name": "code_only_bm25"
+    },
+    {
+      "description": "non-instruction metadata only",
+      "metrics": {
+        "mean_rank": 153.65122615803816,
+        "median_rank": 62.0,
+        "mrr": 0.1132777677763034,
+        "per_label": {
+          "extended_n8": {
+            "mean_rank": 205.92163009404388,
+            "median_rank": 120,
+            "mrr": 0.09454104598326375,
+            "queries": 319,
+            "recall_at_1": 0.047021943573667714,
+            "recall_at_10": 0.1536050156739812,
+            "recall_at_5": 0.12539184952978055
+          },
+          "strict_n8": {
+            "mean_rank": 113.4722891566265,
+            "median_rank": 44,
+            "mrr": 0.12768021175697725,
+            "queries": 415,
+            "recall_at_1": 0.06987951807228916,
+            "recall_at_10": 0.17590361445783131,
+            "recall_at_5": 0.16626506024096385
+          }
+        },
+        "queries": 734,
+        "recall_at_1": 0.05994550408719346,
+        "recall_at_10": 0.16621253405994552,
+        "recall_at_5": 0.14850136239782016
+      },
+      "name": "metadata_only_bm25"
+    },
+    {
+      "description": "code plus non-instruction metadata",
+      "metrics": {
+        "mean_rank": 151.90190735694824,
+        "median_rank": 71.5,
+        "mrr": 0.18692720960764134,
+        "per_label": {
+          "extended_n8": {
+            "mean_rank": 168.75862068965517,
+            "median_rank": 89,
+            "mrr": 0.14159398519712563,
+            "queries": 319,
+            "recall_at_1": 0.08463949843260188,
+            "recall_at_10": 0.2445141065830721,
+            "recall_at_5": 0.18808777429467086
+          },
+          "strict_n8": {
+            "mean_rank": 138.944578313253,
+            "median_rank": 39,
+            "mrr": 0.22177371222680883,
+            "queries": 415,
+            "recall_at_1": 0.14457831325301204,
+            "recall_at_10": 0.36626506024096384,
+            "recall_at_5": 0.30120481927710846
+          }
+        },
+        "queries": 734,
+        "recall_at_1": 0.11852861035422343,
+        "recall_at_10": 0.3133514986376022,
+        "recall_at_5": 0.25204359673024523
+      },
+      "name": "code_plus_metadata_bm25"
+    },
+    {
+      "description": "instruction text upper bound",
+      "metrics": {
+        "mean_rank": 1.1444141689373297,
+        "median_rank": 1.0,
+        "mrr": 0.9645366176360727,
+        "per_label": {
+          "extended_n8": {
+            "mean_rank": 1.031347962382445,
+            "median_rank": 1,
+            "mrr": 0.9877220480668756,
+            "queries": 319,
+            "recall_at_1": 0.9780564263322884,
+            "recall_at_10": 1.0,
+            "recall_at_5": 1.0
+          },
+          "strict_n8": {
+            "mean_rank": 1.2313253012048193,
+            "median_rank": 1,
+            "mrr": 0.9467145638832386,
+            "queries": 415,
+            "recall_at_1": 0.9180722891566265,
+            "recall_at_10": 0.9975903614457832,
+            "recall_at_5": 0.983132530120482
+          }
+        },
+        "queries": 734,
+        "recall_at_1": 0.944141689373297,
+        "recall_at_10": 0.9986376021798365,
+        "recall_at_5": 0.9904632152588556
+      },
+      "name": "instruction_upper_bound_bm25"
+    }
+  ],
+  "row_count": 734,
+  "slice_reconstruction": {
+    "broad_generation": "extended_n8",
+    "gold_generation": "strict_n8"
+  }
+}
