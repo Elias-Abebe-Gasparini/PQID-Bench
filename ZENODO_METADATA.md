@@ -24,6 +24,7 @@ the wider PQID ecosystem.
 | documentation | <https://elias-abebe-gasparini.github.io/PQID-Bench/> |
 | Hugging Face mirror | <https://huggingface.co/datasets/Elias-Abebe-Gasparini/PQID-Bench> |
 | evidence explorer | <https://elias-abebe-gasparini.github.io/PQID-Bench/interactive/overview.html> |
+| prospective O6 preregistration | <https://doi.org/10.17605/OSF.IO/WDERQ> |
 
 ## Overview
 
@@ -106,14 +107,14 @@ The maintained command-line and Python interface is the separately versioned
 [`pqid-bench` package](https://pypi.org/project/pqid-bench/). This Zenodo record
 preserves the `1.0.0` wheel and source distribution that accompanied the
 frozen deposit. The current backward-compatible package is
-`pqid-bench 1.1.0`; it adds richer numerical summaries, comparisons,
+`pqid-bench 1.1.1`; it adds richer numerical summaries, comparisons,
 interactive Plotly reporting, and live-model workflows without changing the
 frozen benchmark data, responses, or scoring contract.
 
 Install the current package and verify an extracted release:
 
 ```console
-python -m pip install "pqid-bench==1.1.0"
+python -m pip install "pqid-bench==1.1.1"
 pqid-bench verify RELEASE_DIR --full
 pqid-bench reproduce --release-dir RELEASE_DIR --format text
 ```
@@ -131,7 +132,7 @@ The principal interfaces are:
 | `pqid-bench run-model` | run an explicitly authorized live model evaluation |
 | `pqid-bench replay` | evaluate generated code through the isolated Docker worker |
 
-Install `pqid-bench[visualization]==1.1.0` for the dashboard. Consult the
+Install `pqid-bench[visualization]==1.1.1` for the dashboard. Consult the
 [documentation](https://elias-abebe-gasparini.github.io/PQID-Bench/) before
 using live providers or replaying generated code.
 
@@ -140,7 +141,7 @@ using live providers or replaying generated code.
 | object | identifier or version | role |
 | --- | --- | --- |
 | benchmark and evidence release | `PQID-Bench 1.0.0` | frozen data, outputs, analyses, and manifests |
-| current Python interface | `pqid-bench 1.1.0` | maintained CLI, library, reports, dashboard, and live workflows |
+| current Python interface | `pqid-bench 1.1.1` | maintained CLI, library, reports, dashboard, and live workflows |
 | archived Python interface | `pqid-bench 1.0.0` | wheel and source distribution preserved in this deposit |
 | evaluator implementation | `pqid-bench-evaluator-1.1.0-safe-builtins` | frozen executable-evaluation policy |
 | structural predicate | `pqid-bench-reference-signature-1.0.0-count-map` | frozen signature-recovery rule |

@@ -152,7 +152,7 @@ def validate_metadata() -> None:
         "M^sig - reference-signature recovery",
         "ES-Gap - Execution-Structure Gap",
         "AS-Gap - Assembly-Structure Gap",
-        "pqid-bench 1.1.0",
+        "pqid-bench 1.1.1",
         "pqid-bench verify RELEASE_DIR --full",
         "pqid-bench run-model",
         "pqid-bench replay",
@@ -177,6 +177,7 @@ def validate_metadata() -> None:
         "https://pypi.org/project/pqid-bench/": "isSupplementTo",
         "https://huggingface.co/datasets/Elias-Abebe-Gasparini/PQID-Bench": "isSupplementTo",
         "https://elias-abebe-gasparini.github.io/PQID-Bench/": "isDocumentedBy",
+        "10.17605/OSF.IO/WDERQ": "isSupplementTo",
     }
     for identifier, relation in expected_related.items():
         require(

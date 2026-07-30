@@ -59,7 +59,7 @@ published evidence.
 Replication asks whether new calls to models, providers, or routes produce
 similar results. Fresh generation can differ because models, aliases,
 decoding systems, provider infrastructure, and policies change. It therefore
-requires a new run identity. Package version 1.1.0 implements that replication path
+requires a new run identity. Package version 1.1.1 implements that replication path
 without treating its outputs as frozen-result reproduction.
 
 ## The Frozen Primary Matrix
