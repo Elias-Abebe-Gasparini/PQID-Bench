@@ -122,6 +122,27 @@ Do not substitute the source-dataset concept DOI
 - [ ] Record both the benchmark version DOI and benchmark concept DOI.
 - [ ] Verify that downloaded Zenodo bytes match the local release checksums.
 
+### DOI-Preserving Metadata Corrections
+
+A reader-facing clarification to title, description, keywords, or related
+identifiers is a metadata correction, not a new benchmark release. Keep the
+version DOI and all deposited files unchanged.
+
+- [ ] Edit the published record rather than creating a new version.
+- [ ] Source the replacement fields from `.zenodo.json`.
+- [ ] Use the maintainer publisher's `--metadata-only` mode; never combine it
+      with `--sync`.
+- [ ] Require a zero-difference comparison between the complete local and
+      remote file inventories before writing metadata.
+- [ ] Verify the same filename, byte count, and checksum inventory after the
+      metadata update and again after republishing the record.
+- [ ] Confirm that the public record explains the materialized split files,
+      `E`, `A`, `M^sig`, ES-Gap, AS-Gap, the current `pqid-bench` package, and
+      the independent benchmark/package/evaluator/predicate version numbers.
+
+Any change to benchmark rows, split membership, canonical responses, scoring
+behavior, or frozen analytical evidence requires a new versioned deposit.
+
 ## 6. Hugging Face Dataset
 
 Repository:
