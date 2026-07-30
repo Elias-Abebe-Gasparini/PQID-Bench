@@ -47,6 +47,7 @@ nav:
   - Security And Privacy: SECURITY_AND_PRIVACY.md
   - Regenerating Publication Outputs: REGENERATING_PUBLICATION_OUTPUTS.md
   - Release Notes:
+      - Package v1.2.0: RELEASE_NOTES_v1.2.0.md
       - Package v1.1.2: RELEASE_NOTES_v1.1.2.md
       - Package v1.1.1: RELEASE_NOTES_v1.1.1.md
       - Package v1.1.0: RELEASE_NOTES_v1.1.0.md

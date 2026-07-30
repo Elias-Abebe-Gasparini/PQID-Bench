@@ -3,7 +3,7 @@
 The release keeps separate CycloneDX inventories for its two software
 boundaries:
 
-- `pqid-bench-python-1.1.2.cdx.json` describes the dependency-free core Python
+- `pqid-bench-python-1.2.0.cdx.json` describes the dependency-free core Python
   package declared by `pyproject.toml` and
   `requirements/package-runtime.txt`.
 - `pqid-bench-evaluator-1.0.0.cdx.json` describes the optional isolated

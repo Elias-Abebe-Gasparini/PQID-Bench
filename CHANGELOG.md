@@ -8,6 +8,30 @@ imply a change to the others.
 
 ## Unreleased
 
+## Python Toolkit 1.2.0 - 2026-07-31
+
+### Added
+
+- A secure `pqid-bench download --version 1.0.0` acquisition command with a
+  pinned archive digest, HTTPS enforcement, safe ZIP extraction, atomic
+  installation, and internal manifest verification.
+- A deterministic, 32-file `PQID-Bench-v1.0.0-core.zip` distribution for
+  benchmark adoption without manuscript-reproduction evidence.
+- An adoption-focused Hugging Face staging and publication adapter with an
+  explicit data-only allowlist and reviewable pull-request publication.
+
+### Changed
+
+- Reorganized user guidance around two complementary distribution profiles:
+  the compact benchmark-user core and the complete Zenodo evidence archive.
+- Extended the public Python API with typed core-release acquisition objects.
+
+### Scientific Impact
+
+None. The benchmark v1.0.0 records, splits, prompts, model responses, evaluator
+results, predicate, model roster, denominators, and reported findings are
+unchanged.
+
 ## Python Toolkit 1.1.2 - 2026-07-30
 
 ### Changed

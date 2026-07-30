@@ -6,8 +6,8 @@ The metric and integrity layer requires:
 
 - Python 3.11, 3.12, 3.13, or 3.14;
 - the `pqid-bench` wheel, source distribution, or source checkout; and
-- the extracted PQID-Bench frozen evidence bundle for `verify`, `reproduce`,
-  `compare`, and release-backed replay.
+- an extracted PQID-Bench distribution: the compact core for new benchmark
+  runs, or the complete evidence archive for published-result reproduction.
 
 Docker Engine is optional. It is required only for `replay`.
 Network access and a provider credential are required only for an actual
@@ -29,17 +29,19 @@ separate objects:
 
 | Object | Purpose |
 | --- | --- |
-| `PQID-Bench-v1.0.0-frozen.zip` | complete frozen evidence bundle |
-| `pqid-bench 1.1.2` | current installable interface, including interactive reporting |
+| `PQID-Bench-v1.0.0-core.zip` | compact benchmark-user distribution |
+| `PQID-Bench-v1.0.0-frozen.zip` | complete frozen evidence and study-reproduction archive |
+| `pqid-bench 1.2.0` | current installable acquisition, evaluation, and reporting interface |
 | `pqid_bench-1.0.0-py3-none-any.whl` | original package wheel preserved with the evidence freeze |
 | `pqid_bench-1.0.0.tar.gz` | original package source distribution preserved with the evidence freeze |
 
 The optional evaluator image is distributed separately as
 `pqid-bench-evaluator-1.0.0-linux-amd64.tar.gz`.
 
-Installing the wheel does not install the approximately 160 MB evidence
-bundle. Keep the extracted release directory and pass it explicitly with
-`--release-dir`.
+Installing the wheel does not silently install benchmark data. Use
+`pqid-bench download` for the compact authenticated distribution, or obtain
+the complete evidence archive from Zenodo. Pass the resulting directory
+explicitly with `--release-dir`.
 
 ## 3. Verify Downloaded Files
 
@@ -88,13 +90,13 @@ separate from scientific host environments.
 Install the current package from PyPI:
 
 ```bash
-python -m pip install pqid-bench==1.1.2
+python -m pip install pqid-bench==1.2.0
 ```
 
 From a locally built current wheel:
 
 ```bash
-python -m pip install pqid_bench-1.1.2-py3-none-any.whl
+python -m pip install pqid_bench-1.2.0-py3-none-any.whl
 ```
 
 From a source checkout:
@@ -110,22 +112,22 @@ the archived `1.0.0` wheel remains installable:
 python -m pip install pqid_bench-1.0.0-py3-none-any.whl
 ```
 
-Both package versions implement the same benchmark `1.0.0`, evaluator,
-predicate, and schema contracts. Package `1.1.2` adds presentation and
-documentation capabilities without changing a frozen score.
+All package versions implement the same benchmark `1.0.0`, evaluator,
+predicate, and schema contracts. Package `1.2.0` adds authenticated core
+acquisition without changing a frozen score.
 
 ## 6. Optional Dependencies
 
 Install JSON Schema validation support:
 
 ```bash
-python -m pip install "pqid-bench[schema]==1.1.2"
+python -m pip install "pqid-bench[schema]==1.2.0"
 ```
 
 Install the host-side evaluator-compatible scientific stack:
 
 ```bash
-python -m pip install "pqid-bench[evaluator]==1.1.2"
+python -m pip install "pqid-bench[evaluator]==1.2.0"
 ```
 
 The evaluator extra is not required for Docker replay. The Docker image pins
@@ -134,7 +136,7 @@ its own Qiskit environment.
 Install standalone interactive reporting:
 
 ```bash
-python -m pip install "pqid-bench[visualization]==1.1.2"
+python -m pip install "pqid-bench[visualization]==1.2.0"
 ```
 
 Install the documentation and visualization toolchain from a source checkout:
@@ -149,9 +151,21 @@ For local package development:
 python -m pip install -e ".[dev]"
 ```
 
-## 7. Extract And Identify The Release Directory
+## 7. Acquire And Identify A Release Directory
 
-Extract `PQID-Bench-v1.0.0-frozen.zip`. The resulting directory should contain:
+For benchmark use, download and verify the compact distribution:
+
+```bash
+pqid-bench download --version 1.0.0
+```
+
+The JSON result reports `release_dir`, `archive_path`, the pinned SHA-256,
+manifest-entry count, and whether the release was newly downloaded or reused.
+Set `PQID_BENCH_CACHE_DIR` to override the default user cache. To use a custom
+mirror, supply both `--url` and `--sha256`.
+
+For full study reproduction, extract `PQID-Bench-v1.0.0-frozen.zip` from the
+Zenodo evidence record instead. Both profiles contain:
 
 ```text
 ARTIFACT_MANIFEST.tsv
@@ -160,6 +174,10 @@ data/
 docker/
 scripts/
 ```
+
+The compact profile supports `verify`, `run-model`, `replay`, and `evaluate`.
+The complete evidence profile additionally supports `reproduce`, `compare`,
+`dashboard`, and `verify --full`.
 
 Set `RELEASE_DIR` to that directory.
 
@@ -186,7 +204,7 @@ pqid-bench verify "$RELEASE_DIR"
 Expected package version:
 
 ```text
-pqid-bench 1.1.2
+pqid-bench 1.2.0
 ```
 
 Expected integrity result:

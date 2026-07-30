@@ -139,7 +139,7 @@ of the software paper.
 
 ### 5.7 Limitations And Governance
 
-State that package version 1.1.2:
+State that package version 1.2.0:
 
 - supports only OpenAI-compatible chat completion routes in its stable live
   adapter;

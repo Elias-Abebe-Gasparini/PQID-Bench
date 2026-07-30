@@ -28,31 +28,47 @@ configs:
         path: data/splits/validation.jsonl
       - split: test
         path: data/splits/test.jsonl
+  - config_name: model_prompts
+    data_files:
+      - split: test
+        path: prompts/test_prompts_154.jsonl
+  - config_name: response_template
+    data_files:
+      - split: test
+        path: templates/response_template_154.jsonl
 ---
 
 # PQID-Bench
 
-PQID-Bench is the frozen `v1.0.0` benchmark companion for validation-aware
-quantum-program generation. It is derived from the archived PQID v1.0.2
-dataset and separates executable validity from recovery of a frozen,
-explicitly limited circuit reference structure.
+PQID-Bench is a frozen benchmark for validation-aware quantum-program
+generation. It separates operational admissibility from recovery of an
+explicitly bounded circuit reference structure. The `v1.0.0` distribution
+contains `734` benchmark records with deterministic `514 / 66 / 154`
+train-validation-test splits and a ready-to-use 154-prompt generation panel.
+No parent PQID download or split reconstruction is required.
 
-## Frozen Benchmark
+## Fastest Start
 
-| object | value |
-| --- | ---: |
-| clean generation population | 734 |
-| train / validation / test | 514 / 66 / 154 |
-| distinct test-set reference signatures | 144 |
-| completed model routes | 21 |
-| primary model-prompt outputs | 3,234 |
-| stochastic-repeatability design | 72 signatures x 21 models x 3 runs |
+Install the toolkit and download the authenticated compact distribution:
 
-## Direct Split Loading
+```bash
+python -m pip install "pqid-bench>=1.2,<2"
+pqid-bench download --version 1.0.0
+```
 
-The frozen evaluator records are distributed directly as `514` training,
-`66` validation, and `154` test rows. No parent PQID download or benchmark
-reconstruction is required:
+The package checks the archive against a pinned SHA-256 digest, rejects unsafe
+ZIP members, extracts atomically, and verifies every file against the internal
+artifact manifest. The same compact ZIP is available under
+`downloads/PQID-Bench-v1.0.0-core.zip`.
+
+The core distribution contains the splits, model-facing prompts, response
+template, schemas, evaluator source, and isolated Docker replay files. It
+excludes manuscript material, archived model responses, publication figures,
+repository administration, and historical analysis outputs.
+
+## Load With Datasets
+
+Load the benchmark records directly:
 
 ```python
 from datasets import load_dataset
@@ -61,102 +77,100 @@ splits = load_dataset(
     "Elias-Abebe-Gasparini/PQID-Bench",
     "evaluator_records",
 )
+print(splits)
 ```
 
-The authoritative deterministic assignments remain in
-`artifacts/test_split_154/pqid_bench_split_154_manifest.json`. The three JSONL
-files are lossless convenience views keyed by `metadata.content_hash`.
-
-## Primary Results
-
-| endpoint | result |
-| --- | ---: |
-| execution | 2,950 / 3,234 (91.22%) |
-| quantum-assembly admissibility | 2,944 / 3,234 (91.03%) |
-| reference-signature recovery | 1,703 / 3,234 (52.66%) |
-| Assembly-Structure Gap | 1,241 / 3,234 (38.37 pp) |
-| Execution-Structure Gap | 1,247 / 3,234 (38.56 pp) |
-| executable signature disagreement | 1,247 / 2,950 (42.27%) |
-| identifiable-subset structural-hallucination rate | 1,187 / 2,890 (41.07%) |
-| ordered operation-and-operand recovery | 1,576 / 3,234 (48.73%) |
-| parameter-aware recovery | 1,545 / 3,234 (47.77%) |
-
-Only six cells are lost from executable-circuit materialization to OpenQASM 3
-assembly admissibility. The AS-Gap therefore retains `99.52%` of the ES-Gap,
-locating almost the entire measured separation between operational
-admissibility and structural reconstruction.
-
-## Interactive Evidence Explorer
-
-[![PQID-Bench operational and structural measurement ladder](https://elias-abebe-gasparini.github.io/PQID-Bench/interactive/assets/measurement-ladder.svg)](https://elias-abebe-gasparini.github.io/PQID-Bench/interactive/overview.html)
-
-The [interactive Plotly explorer](https://elias-abebe-gasparini.github.io/PQID-Bench/interactive/overview.html)
-provides model profiles, a component-recovery heatmap, nested structural
-endpoints, three-run repeatability estimates, provider-route summaries, and an
-accessible model table. It reads the frozen public artifacts and does not
-contact providers or execute generated code.
-
-The reference-signature predicate compares qubit count, classical-bit count,
-and the complete evaluator-visible operation-type count map. Scalar
-counted-operation agreement follows from count-map equality under the frozen
-convention and is reported separately as a diagnostic. Ordered reconstruction,
-parameter-aware reconstruction, and semantic equivalence remain distinct
-levels.
-
-## Repository Contents
-
-- `data/`: the repository-cleared 734-row clean generation population;
-- `artifacts/test_split_154/`: split manifest and model-facing prompts;
-- `artifacts/external_model_batches_154/`: canonical requests, responses, and
-  evaluator reports for the 21 completed routes;
-- `artifacts/analysis_154/`: final matrix, inferential analyses, robustness
-  checks, and ordered/parameter-aware replay;
-- `artifacts/stochastic_repeatability_21x72/`: the sequentially frozen
-  three-run repeatability audit;
-- `scripts/`: evaluator, analysis, and publication-output regeneration code;
-- `docs/REGENERATING_PUBLICATION_OUTPUTS.md`: commands for recreating
-  intentionally excluded manuscript-facing derivatives;
-- `ARTIFACT_MANIFEST.tsv`: byte counts and SHA-256 digests.
-
-Unpublished manuscript source and manuscript-facing publication derivatives
-are intentionally excluded from this public evidence release.
-
-Canonical response logs are research trace artifacts. Re-running third-party
-APIs can produce different text and is not required to reproduce the archived
-tables.
-
-## Loading The Clean Generation View
+Load the exact model-facing test prompts:
 
 ```python
-from datasets import load_dataset
-
-dataset = load_dataset(
+prompts = load_dataset(
     "Elias-Abebe-Gasparini/PQID-Bench",
-    "clean_generation",
+    "model_prompts",
+    split="test",
 )
-print(dataset["full"])
 ```
+
+The richer 734-row clean-generation view remains available as the
+`clean_generation` configuration.
+
+## Benchmark Workflow
+
+```bash
+# Verify an extracted release.
+pqid-bench verify PATH_TO/PQID-Bench-v1.0.0-core
+
+# Inspect a credential-free request plan.
+pqid-bench run-model \
+  --release-dir PATH_TO/PQID-Bench-v1.0.0-core \
+  --output-dir candidate-run \
+  --provider local \
+  --model MODEL_ID \
+  --dry-run
+
+# Evaluate supplied responses only in the isolated Docker worker.
+pqid-bench replay \
+  --release-dir PATH_TO/PQID-Bench-v1.0.0-core \
+  --responses candidate-run/responses.jsonl \
+  --output-dir candidate-evaluation \
+  --build-image \
+  --acknowledge-code-execution
+
+# Print a numerical summary.
+pqid-bench evaluate \
+  --evaluations candidate-evaluation/pqid_bench_canonical_evaluations.jsonl \
+  --format text
+```
+
+Live calls to third-party providers require explicit acknowledgement of prompt
+export. Generated Python is never evaluated in the caller process.
+
+## Measurement Contract
+
+The frozen reference-signature predicate compares qubit count, classical-bit
+count, and the complete evaluator-visible operation-type count map. Execution,
+OpenQASM 3 assembly admissibility, signature recovery, ordered reconstruction,
+parameter-aware reconstruction, and semantic equivalence remain distinct
+levels. See `benchmark.json`, the schemas, and the documentation for exact
+version identifiers and boundaries.
+
+## Evidence And Results
+
+This Hugging Face repository is the benchmark-user distribution. The complete
+frozen evidence archive, model responses, evaluator reports, robustness
+analyses, and repeatability audit are preserved separately on Zenodo:
+<https://doi.org/10.5281/zenodo.21649753>.
+
+For parity checking, the frozen `21 x 154` panel contains `3,234` cells:
+
+| endpoint | frozen anchor |
+| --- | ---: |
+| Python execution | 2,950 (91.22%) |
+| OpenQASM 3 assembly admissibility | 2,944 (91.03%) |
+| reference-signature recovery | 1,703 (52.66%) |
+| Assembly-Structure Gap | 38.37 percentage points |
+| Execution-Structure Gap | 38.56 percentage points |
+
+The Assembly-Structure Gap retains 99.52% of the Execution-Structure Gap.
+These values identify the archived reference panel; they are not required
+inputs for evaluating a new model.
+
+The separation lets users adopt the benchmark without downloading the full
+manuscript-reproduction archive.
 
 ## Links
 
-- GitHub: <https://github.com/Elias-Abebe-Gasparini/PQID-Bench>
 - Documentation: <https://elias-abebe-gasparini.github.io/PQID-Bench/>
-- Interactive explorer: <https://elias-abebe-gasparini.github.io/PQID-Bench/interactive/overview.html>
+- GitHub: <https://github.com/Elias-Abebe-Gasparini/PQID-Bench>
 - Python package: <https://pypi.org/project/pqid-bench/>
-- Evaluator container: <https://github.com/Elias-Abebe-Gasparini/PQID-Bench/pkgs/container/pqid-bench-evaluator>
-- PQID-Bench v1.0.0 archive: <https://doi.org/10.5281/zenodo.21649753>
-- Underlying PQID v1.0.2 DOI: <https://doi.org/10.5281/zenodo.20674853>
-- Stable PQID dataset concept DOI: <https://doi.org/10.5281/zenodo.20019482>
-
-The benchmark archive and its source PQID dataset are distinct versioned
-research objects and require separate citations.
+- Frozen evidence archive: <https://doi.org/10.5281/zenodo.21649753>
+- Prospective PQID-Bench 2 registration: <https://doi.org/10.17605/OSF.IO/WDERQ>
+- Underlying PQID v1.0.2: <https://doi.org/10.5281/zenodo.20674853>
 
 ## Licensing
 
-The repository uses scoped licensing. Benchmark-authored documentation,
-metadata, and aggregate artifacts are CC BY 4.0; package, script, and platform
-adapter code is MIT; source-derived rows retain their upstream provenance and
-license obligations. See `LICENSE.md`.
+Licensing is scoped. Benchmark-authored documentation and aggregate metadata
+are CC BY 4.0; package and evaluator code are MIT; source-derived rows retain
+their upstream provenance and license obligations. See `LICENSE.md`.
 
 ## Citation
 
@@ -176,6 +190,7 @@ Please cite both the benchmark release and its source dataset:
 @dataset{gasparini_2026_pqid,
   author    = {Gasparini, Elias Abebe},
   title     = {PQID: Parallel Quantum Instruction Dataset (v1.0.2)},
+  version   = {1.0.2},
   year      = {2026},
   publisher = {Zenodo},
   doi       = {10.5281/zenodo.20674853},

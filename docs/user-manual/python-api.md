@@ -9,12 +9,15 @@ from pqid_bench import (
     ARTIFACT_MANIFEST_VERSION,
     BENCHMARK_RELEASE,
     EVALUATOR_VERSION,
+    OFFICIAL_CORE_RELEASES,
     PACKAGE_VERSION,
     PREDICATE_VERSION,
     REPORT_FORMATS,
     SCHEMA_VERSION,
     BenchmarkSummary,
+    CoreRelease,
     DashboardData,
+    DownloadResult,
     LiveRunConfig,
     LiveRunResult,
     PROVIDER_PRESETS,
@@ -24,6 +27,7 @@ from pqid_bench import (
     canonicalize_harness_report,
     build_dashboard,
     execute_replay,
+    download_core_release,
     load_dashboard_data,
     plan_live_model_run,
     provider_preset,
@@ -47,7 +51,7 @@ replay.
 
 | Constant | Current value |
 | --- | --- |
-| `PACKAGE_VERSION` | `1.1.2` |
+| `PACKAGE_VERSION` | `1.2.0` |
 | `BENCHMARK_RELEASE` | `1.0.0` |
 | `EVALUATOR_VERSION` | `pqid-bench-evaluator-1.1.0-safe-builtins` |
 | `PREDICATE_VERSION` | `pqid-bench-reference-signature-1.0.0-count-map` |
@@ -56,6 +60,45 @@ replay.
 
 The package also exposes `pqid_bench.__version__`, equal to
 `PACKAGE_VERSION`.
+
+## `download_core_release`
+
+Signature:
+
+```python
+download_core_release(
+    *,
+    version: str = "1.0.0",
+    output_dir: pathlib.Path | None = None,
+    url: str | None = None,
+    sha256: str | None = None,
+    force: bool = False,
+    timeout_seconds: int = 120,
+) -> DownloadResult
+```
+
+Example:
+
+```python
+from pathlib import Path
+
+from pqid_bench import download_core_release
+
+result = download_core_release(
+    version="1.0.0",
+    output_dir=Path("benchmarks"),
+)
+release_dir = Path(result.release_dir)
+```
+
+`DownloadResult` reports the installed directory, retained archive, source
+URL, digest, number of verified manifest entries, and whether the operation
+downloaded or reused the release. `OFFICIAL_CORE_RELEASES` exposes the typed,
+immutable `CoreRelease` records pinned by the package.
+
+Custom mirrors must provide both `url` and `sha256`. The same HTTPS, ZIP-path,
+atomic-installation, metadata, and manifest checks used by the CLI apply to the
+Python API.
 
 ## `BenchmarkSummary`
 
@@ -389,7 +432,7 @@ usage, response/error metadata, and raw payload digests.
 Raw provider payloads remain separate files. They are not embedded directly
 into the shared record.
 
-The type and the live-run interfaces are top-level package-version 1.1.2
+The type and the live-run interfaces are top-level package-version 1.2.0
 exports.
 
 ## Supporting Manifest Interface

@@ -1,5 +1,11 @@
 """Public Python interface for PQID-Bench collection and reproduction."""
 
+from .download import (
+    OFFICIAL_CORE_RELEASES,
+    CoreRelease,
+    DownloadResult,
+    download_core_release,
+)
 from .live import (
     PROVIDER_PRESETS,
     LiveRunConfig,
@@ -43,13 +49,16 @@ __all__ = [
     "ARTIFACT_MANIFEST_VERSION",
     "BENCHMARK_RELEASE",
     "EVALUATOR_VERSION",
+    "OFFICIAL_CORE_RELEASES",
     "PACKAGE_VERSION",
     "PREDICATE_VERSION",
     "PROVIDER_PRESETS",
     "REPORT_FORMATS",
     "SCHEMA_VERSION",
     "BenchmarkSummary",
+    "CoreRelease",
     "DashboardData",
+    "DownloadResult",
     "LiveRunConfig",
     "LiveRunResult",
     "ProviderAttempt",
@@ -58,6 +67,7 @@ __all__ = [
     "build_dashboard",
     "canonicalize_harness_report",
     "execute_replay",
+    "download_core_release",
     "load_dashboard_data",
     "plan_live_model_run",
     "provider_preset",

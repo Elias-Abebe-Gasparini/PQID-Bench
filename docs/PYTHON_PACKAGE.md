@@ -2,25 +2,27 @@
 
 ## Scientific Boundary
 
-`pqid-bench 1.1.2` is a reproducibility and replication toolkit for the
+`pqid-bench 1.2.0` is an acquisition, reproduction, and replication toolkit for the
 immutable PQID-Bench v1.0.0 study. Its safe default path recomputes reported
 quantities from archived evaluator records. Live calls are a separate,
 explicitly acknowledged path that creates new evidence.
 
 The package distinguishes:
 
-1. **verification**: byte and SHA-256 integrity of the release;
-2. **reproduction**: deterministic metric calculation from archived
+1. **acquisition**: authenticated download and safe installation of the
+   compact benchmark-user release;
+2. **verification**: byte and SHA-256 integrity of the release;
+3. **reproduction**: deterministic metric calculation from archived
    evaluations;
-3. **evaluation summarization**: calculation from another canonical evaluation
+4. **evaluation summarization**: calculation from another canonical evaluation
    bundle;
-4. **live replication**: timestamped collection through an OpenAI-compatible
+5. **live replication**: timestamped collection through an OpenAI-compatible
    provider route;
-5. **executable replay**: execution of generated Python in the isolated
+6. **executable replay**: execution of generated Python in the isolated
    evaluator container; and
-6. **comparison**: denominator-aligned interpretation against frozen cells;
+7. **comparison**: denominator-aligned interpretation against frozen cells;
    and
-7. **visualization**: generation of a standalone interactive report from the
+8. **visualization**: generation of a standalone interactive report from the
    frozen evidence without provider access or generated-code execution.
 
 ## Version Dimensions
@@ -29,7 +31,7 @@ Every core machine-readable scientific report carries:
 
 | dimension | frozen identifier |
 | --- | --- |
-| package | `1.1.2` |
+| package | `1.2.0` |
 | benchmark release | `1.0.0` |
 | evaluator | `pqid-bench-evaluator-1.1.0-safe-builtins` |
 | structural predicate | `pqid-bench-reference-signature-1.0.0-count-map` |
@@ -50,6 +52,7 @@ matrix.
 
 ```bash
 pqid-bench doctor
+pqid-bench download --version 1.0.0
 pqid-bench verify RELEASE_DIR
 pqid-bench verify RELEASE_DIR --full
 pqid-bench reproduce --release-dir RELEASE_DIR --output summary.json
