@@ -113,7 +113,7 @@ Claim:
 
 > A new experiment estimates deployment-time repeatability.
 
-Level E is not necessary for Levels A-C. Package version 1.1.0 can collect its
+Level E is not necessary for Levels A-C. Package version 1.1.1 can collect its
 records,
 but a live run never becomes evidence for historical reproduction merely
 because the same package created it.
@@ -124,7 +124,7 @@ Every scientific report must carry:
 
 ```json
 {
-  "package_version": "1.1.0",
+  "package_version": "1.1.1",
   "benchmark_release": "1.0.0",
   "evaluator_version": "pqid-bench-evaluator-1.1.0-safe-builtins",
   "predicate_version": "pqid-bench-reference-signature-1.0.0-count-map",

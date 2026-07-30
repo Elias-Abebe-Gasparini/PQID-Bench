@@ -30,7 +30,7 @@ separate objects:
 | Object | Purpose |
 | --- | --- |
 | `PQID-Bench-v1.0.0-frozen.zip` | complete frozen evidence bundle |
-| `pqid-bench 1.1.0` | current installable interface, including interactive reporting |
+| `pqid-bench 1.1.1` | current installable interface, including interactive reporting |
 | `pqid_bench-1.0.0-py3-none-any.whl` | original package wheel preserved with the evidence freeze |
 | `pqid_bench-1.0.0.tar.gz` | original package source distribution preserved with the evidence freeze |
 
@@ -88,13 +88,13 @@ separate from scientific host environments.
 Install the current package from PyPI:
 
 ```bash
-python -m pip install pqid-bench==1.1.0
+python -m pip install pqid-bench==1.1.1
 ```
 
 From a locally built current wheel:
 
 ```bash
-python -m pip install pqid_bench-1.1.0-py3-none-any.whl
+python -m pip install pqid_bench-1.1.1-py3-none-any.whl
 ```
 
 From a source checkout:
@@ -111,7 +111,7 @@ python -m pip install pqid_bench-1.0.0-py3-none-any.whl
 ```
 
 Both package versions implement the same benchmark `1.0.0`, evaluator,
-predicate, and schema contracts. Package `1.1.0` adds presentation and
+predicate, and schema contracts. Package `1.1.1` adds presentation and
 documentation capabilities without changing a frozen score.
 
 ## 6. Optional Dependencies
@@ -119,13 +119,13 @@ documentation capabilities without changing a frozen score.
 Install JSON Schema validation support:
 
 ```bash
-python -m pip install "pqid-bench[schema]==1.1.0"
+python -m pip install "pqid-bench[schema]==1.1.1"
 ```
 
 Install the host-side evaluator-compatible scientific stack:
 
 ```bash
-python -m pip install "pqid-bench[evaluator]==1.1.0"
+python -m pip install "pqid-bench[evaluator]==1.1.1"
 ```
 
 The evaluator extra is not required for Docker replay. The Docker image pins
@@ -134,7 +134,7 @@ its own Qiskit environment.
 Install standalone interactive reporting:
 
 ```bash
-python -m pip install "pqid-bench[visualization]==1.1.0"
+python -m pip install "pqid-bench[visualization]==1.1.1"
 ```
 
 Install the documentation and visualization toolchain from a source checkout:
@@ -186,7 +186,7 @@ pqid-bench verify "$RELEASE_DIR"
 Expected package version:
 
 ```text
-pqid-bench 1.1.0
+pqid-bench 1.1.1
 ```
 
 Expected integrity result:

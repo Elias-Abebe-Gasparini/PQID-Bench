@@ -21,7 +21,7 @@ python -m pip install pqid_bench-1.0.0-py3-none-any.whl
 ```
 
 This archived wheel gives exact software-level reconstruction of the original
-freeze. The current `pqid-bench 1.1.0` package is benchmark-compatible and may
+freeze. The current `pqid-bench 1.1.1` package is benchmark-compatible and may
 be installed from PyPI when the interactive dashboard is also desired.
 
 From a source checkout:

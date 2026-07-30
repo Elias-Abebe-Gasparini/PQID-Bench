@@ -194,7 +194,7 @@ complete operation-type count map.
 ## Replay
 
 Execution of archived or newly collected generated code. In package version
-1.1.0 it
+1.1.1 it
 occurs only inside the isolated Docker evaluator.
 
 ## Replication

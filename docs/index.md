@@ -1,7 +1,7 @@
 # PQID-Bench Documentation
 
 Distribution status: **PQID-Bench v1.0.0 frozen evidence release with
-`pqid-bench` v1.1.0 software tooling**.
+`pqid-bench` v1.1.1 software tooling**.
 The versioned benchmark archive is identified by
 [`10.5281/zenodo.21649753`](https://doi.org/10.5281/zenodo.21649753).
 
@@ -48,15 +48,17 @@ installation, commands, records, metrics, workflows, and error handling.
 The following documents have narrower purposes:
 
 - [Python Package Contract](PYTHON_PACKAGE.md) specifies the software and
-  scientific boundary of package version 1.1.0 against benchmark v1.0.0.
+  scientific boundary of package version 1.1.1 against benchmark v1.0.0.
 - [Security And Privacy](SECURITY_AND_PRIVACY.md) records the trust boundary
   and release privacy controls.
 - [Docker Replay Validation](DOCKER_REPLAY_VALIDATION.md) records the completed
   container replay audit.
 - [Reviewer Quickstart](REVIEWER_QUICKSTART.md) is the shortest route through
   integrity and parity checking.
-- [Package v1.1.0 Release Notes](RELEASE_NOTES_v1.1.0.md) describe the
-  visualization and documentation update; [benchmark v1.0.0 release
+- [Package v1.1.1 Release Notes](RELEASE_NOTES_v1.1.1.md) describe the
+  provenance and repository-quality patch; [package v1.1.0 release
+  notes](RELEASE_NOTES_v1.1.0.md) document the visualization and documentation
+  update; [benchmark v1.0.0 release
   notes](RELEASE_NOTES_v1.0.0.md) remain the scientific freeze record.
 - [Package Paper Blueprint](PACKAGE_PAPER_BLUEPRINT.md) separates a future
   software paper from both this manual and the benchmark-results paper.
@@ -97,7 +99,7 @@ is not inserted into the frozen evidence archive.
 
 | Dimension | Identifier |
 | --- | --- |
-| Python package | `1.1.0` |
+| Python package | `1.1.1` |
 | benchmark release | `1.0.0` |
 | evaluator | `pqid-bench-evaluator-1.1.0-safe-builtins` |
 | structural predicate | `pqid-bench-reference-signature-1.0.0-count-map` |

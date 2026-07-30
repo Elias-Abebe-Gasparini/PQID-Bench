@@ -154,7 +154,7 @@ Allowed `run_type` values:
 | `supplied_evaluation` | summary or comparison of supplied scored records |
 | `live_replication` | new model/provider generation through `run-model` |
 
-For candidate comparison, all seven fields must be present. Package version 1.1.0
+For candidate comparison, all seven fields must be present. Package version 1.1.1
 requires exact compatibility for `benchmark_release`, `evaluator_version`,
 `predicate_version`, and `schema_version`. The package and artifact-manifest
 versions are retained in the report even when they are not the comparison
@@ -164,7 +164,7 @@ Minimal compatible candidate manifest:
 
 ```json
 {
-  "package_version": "1.1.0",
+  "package_version": "1.1.1",
   "benchmark_release": "1.0.0",
   "evaluator_version": "pqid-bench-evaluator-1.1.0-safe-builtins",
   "predicate_version": "pqid-bench-reference-signature-1.0.0-count-map",

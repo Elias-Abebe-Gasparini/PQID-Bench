@@ -8,6 +8,8 @@ imply a change to the others.
 
 ## Unreleased
 
+## Python Toolkit 1.1.1 - 2026-07-30
+
 ### Added
 
 - GitHub community-health files, structured issue forms, a pull-request
@@ -16,6 +18,8 @@ imply a change to the others.
 - Repository quality gates for Ruff, mypy, branch coverage, documentation, and
   example execution.
 - A reproducible GitHub social-preview asset.
+- A prominent Overview object O6 link to the prospective PQID-Bench 2
+  preregistration in the PyPI long description and package project links.
 
 ### Changed
 
