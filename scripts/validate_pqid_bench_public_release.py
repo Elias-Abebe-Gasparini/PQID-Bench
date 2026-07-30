@@ -152,7 +152,7 @@ def validate_metadata() -> None:
         "M^sig - reference-signature recovery",
         "ES-Gap - Execution-Structure Gap",
         "AS-Gap - Assembly-Structure Gap",
-        "pqid-bench 1.1.1",
+        "pqid-bench 1.1.2",
         "pqid-bench verify RELEASE_DIR --full",
         "pqid-bench run-model",
         "pqid-bench replay",
@@ -607,7 +607,7 @@ def validate_private_material() -> None:
         b"C:\\Users\\",
         b"C:/Users/",
         b"GITHUB_MODELS_API_KEY_2",
-        b"ACM_TQC_API_KEY",
+        bytes.fromhex("41 43 4d 5f 54 51 43 5f 41 50 49 5f 4b 45 59"),
         b"OPENAI_API_KEY_PQID",
     )
     binary_suffixes = {".png", ".jpg", ".jpeg", ".gif", ".pdf", ".zip"}
@@ -626,6 +626,30 @@ def validate_private_material() -> None:
     require(not violations, f"Private path or credential marker found in: {violations}")
 
 
+def validate_venue_neutrality() -> None:
+    needles = tuple(
+        bytes.fromhex(value)
+        for value in (
+            "41 43 4d 20 54 51 43",
+            "41 43 4d 2d 54 51 43",
+            "54 72 61 6e 73 61 63 74 69 6f 6e 73 20 6f 6e 20 51 75 "
+            "61 6e 74 75 6d 20 43 6f 6d 70 75 74 69 6e 67",
+        )
+    )
+    binary_suffixes = {".png", ".jpg", ".jpeg", ".gif", ".pdf", ".zip"}
+    violations: list[str] = []
+    for path in public_files():
+        if path == Path(__file__) or path.suffix.lower() in binary_suffixes:
+            continue
+        payload = path.read_bytes().lower()
+        if any(needle.lower() in payload for needle in needles):
+            violations.append(path.relative_to(PACKAGE).as_posix())
+    require(
+        not violations,
+        f"Premature venue reference found in public release: {violations}",
+    )
+
+
 def main() -> None:
     require(PACKAGE.is_dir(), f"Release package not found: {PACKAGE}")
     validate_metadata()
@@ -636,6 +660,7 @@ def main() -> None:
     validate_release_scope()
     validate_manifest()
     validate_private_material()
+    validate_venue_neutrality()
 
     print(f"Validated release package: {PACKAGE}")
     print("Clean population: 734 (415 strict, 319 extended)")
@@ -650,6 +675,7 @@ def main() -> None:
     print(f"Manifest entries: {len(public_files()):,}")
     print("Release-scope scan: manuscript source and publication derivatives excluded")
     print("Private-path scan: clear")
+    print("Venue-neutrality scan: clear")
 
 
 if __name__ == "__main__":

@@ -8,6 +8,25 @@ imply a change to the others.
 
 ## Unreleased
 
+## Python Toolkit 1.1.2 - 2026-07-30
+
+### Changed
+
+- Replaced premature venue-specific wording in current public documentation
+  and package metadata with venue-neutral descriptions of the benchmark study.
+- Updated current package, documentation, SBOM, and repository pointers to
+  toolkit version 1.1.2.
+
+### Added
+
+- A public-release validation guard that rejects explicit venue associations
+  from current release artifacts.
+
+### Scientific Impact
+
+None. The benchmark v1.0.0 prompts, splits, model responses, evaluator results,
+predicate, model roster, denominators, and reported findings are unchanged.
+
 ## Python Toolkit 1.1.1 - 2026-07-30
 
 ### Added

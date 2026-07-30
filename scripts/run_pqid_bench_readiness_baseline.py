@@ -1,7 +1,7 @@
 """Run dependency-free learned readiness baselines for PQID-Bench.
 
 The baseline in this file is intentionally modest: a categorical Naive Bayes
-classifier over row-level metadata tokens. It gives the ACM TQC draft a real
+classifier over row-level metadata tokens. It gives the benchmark study a real
 train/test result without requiring scikit-learn or network-installed
 dependencies in an artifact-review environment.
 """

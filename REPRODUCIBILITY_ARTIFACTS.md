@@ -1,7 +1,7 @@
 # PQID-Bench Reproducibility Artifacts
 
-This is the exhaustive path-level inventory that accompanies the ACM TQC
-manuscript. It is intentionally detailed and is not the ecosystem front door.
+This is the exhaustive path-level inventory that accompanies the benchmark
+study. It is intentionally detailed and is not the ecosystem front door.
 Begin with the [local repository README](README.md) for the appropriate
 ecosystem or package entry point. Use this file when a reviewer or maintainer
 needs to locate the exact script, trace, report, table, or figure behind a

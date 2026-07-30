@@ -43,7 +43,7 @@ Face Dataset. The underlying PQID dataset remains a separate immutable release
 ## 1. Local Freeze
 
 - [ ] Run `python scripts/build_pqid_bench_public_release.py --archive` from
-  the parent ACM TQC benchmark folder.
+  the parent benchmark-release folder.
 - [ ] Confirm `ARTIFACT_MANIFEST.tsv` has no missing or mismatched files.
 - [ ] Confirm the release ZIP and `.sha256` sidecar exist under the parent
   `releases/` directory.

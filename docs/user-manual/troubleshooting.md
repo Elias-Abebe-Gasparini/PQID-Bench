@@ -273,7 +273,7 @@ the change because it is part of the request-set hash.
 
 ### Native Anthropic or Gemini endpoint does not work
 
-Package version 1.1.1 supports OpenAI-compatible chat completions. A native Messages
+Package version 1.1.2 supports OpenAI-compatible chat completions. A native Messages
 or GenerateContent endpoint requires a declared adapter and cannot be supplied
 as a mere `--base-url` substitution.
 
