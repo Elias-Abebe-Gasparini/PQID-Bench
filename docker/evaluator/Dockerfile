@@ -1,4 +1,4 @@
-FROM python:3.13-slim
+FROM python:3.14-slim
 
 ARG QISKIT_VERSION=2.1.1
 ARG QISKIT_AER_VERSION=0.17.0
