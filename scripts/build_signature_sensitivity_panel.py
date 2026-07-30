@@ -9,7 +9,7 @@ from xml.sax.saxutils import escape
 
 from PIL import Image, ImageDraw, ImageFont
 
-from acm_figure_style import ACM_SERIF_FONT_STACK
+from publication_figure_style import PUBLICATION_SERIF_FONT_STACK
 from pqid_bench_model_registry import MODEL_LABELS
 
 
@@ -78,7 +78,7 @@ def text(
         {
             "x": round(x, 2),
             "y": round(y, 2),
-            "font-family": ACM_SERIF_FONT_STACK,
+            "font-family": PUBLICATION_SERIF_FONT_STACK,
             "font-size": size,
             "font-weight": weight,
             "fill": fill,

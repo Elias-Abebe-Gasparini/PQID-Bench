@@ -10,7 +10,7 @@ from pathlib import Path
 from typing import Any
 
 
-ROOT = Path("PQID/submissions/acm_tqc_benchmark")
+ROOT = Path(__file__).resolve().parents[1]
 PROMPT_JSONL = ROOT / "artifacts/test_split_154/pqid_bench_external_generation_prompts_154.jsonl"
 MATRIX_CSV = ROOT / "artifacts/analysis_154/pqid_bench_model_by_prompt_structural_matrix.csv"
 JSON_OUT = ROOT / "artifacts/analysis_154/pqid_bench_signature_sensitivity_report.json"

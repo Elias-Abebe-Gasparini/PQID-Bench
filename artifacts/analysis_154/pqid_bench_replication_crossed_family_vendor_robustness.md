@@ -58,12 +58,12 @@ These analyses strengthen transportability and uncertainty accounting for the fr
 ## Reproduction
 
 ```powershell
-python PQID/submissions/acm_tqc_benchmark/scripts/analyze_pqid_bench_robustness_suite.py
+python scripts/analyze_pqid_bench_robustness_suite.py
 ```
 
-- machine-readable report: `PQID/submissions/acm_tqc_benchmark/artifacts/analysis_154/pqid_bench_replication_crossed_family_vendor_robustness.json`
-- per-model cohort table: `PQID/submissions/acm_tqc_benchmark/artifacts/analysis_154/pqid_bench_pilot_extension_per_model.csv`
-- family/developer sensitivity table: `PQID/submissions/acm_tqc_benchmark/artifacts/analysis_154/pqid_bench_family_vendor_sensitivity.csv`
-- Supplemental Table S27 TSV: `PQID/submissions/acm_tqc_benchmark/tables_copy_ready/table_s27_pilot_extension_replication.tsv`
-- Supplemental Table S28 TSV: `PQID/submissions/acm_tqc_benchmark/tables_copy_ready/table_s28_crossed_robustness.tsv`
-- Supplemental Table S29 TSV: `PQID/submissions/acm_tqc_benchmark/tables_copy_ready/table_s29_family_vendor_sensitivity.tsv`
+- machine-readable report: `artifacts/analysis_154/pqid_bench_replication_crossed_family_vendor_robustness.json`
+- per-model cohort table: `artifacts/analysis_154/pqid_bench_pilot_extension_per_model.csv`
+- family/developer sensitivity table: `artifacts/analysis_154/pqid_bench_family_vendor_sensitivity.csv`
+- Supplemental Table S27 TSV: `tables_copy_ready/table_s27_pilot_extension_replication.tsv`
+- Supplemental Table S28 TSV: `tables_copy_ready/table_s28_crossed_robustness.tsv`
+- Supplemental Table S29 TSV: `tables_copy_ready/table_s29_family_vendor_sensitivity.tsv`

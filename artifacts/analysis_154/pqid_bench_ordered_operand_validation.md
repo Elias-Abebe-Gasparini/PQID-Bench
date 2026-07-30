@@ -78,10 +78,10 @@ The ordered-wire rate quantifies how often the current signature predicate also 
 ## Reproduction
 
 ```powershell
-python PQID/submissions/acm_tqc_benchmark/scripts/analyze_pqid_bench_ordered_operand_validation.py
+python scripts/analyze_pqid_bench_ordered_operand_validation.py
 ```
 
-- machine-readable summary: `PQID/submissions/acm_tqc_benchmark/artifacts/analysis_154/pqid_bench_ordered_operand_validation.json`
-- cell-level audit: `PQID/submissions/acm_tqc_benchmark/artifacts/analysis_154/pqid_bench_ordered_operand_cell_audit.jsonl`
-- per-model table: `PQID/submissions/acm_tqc_benchmark/artifacts/analysis_154/pqid_bench_ordered_operand_by_model.csv`
-- Supplemental Table S30 TSV: `PQID/submissions/acm_tqc_benchmark/tables_copy_ready/table_s30_ordered_operand_validation.tsv`
+- machine-readable summary: `artifacts/analysis_154/pqid_bench_ordered_operand_validation.json`
+- cell-level audit: `artifacts/analysis_154/pqid_bench_ordered_operand_cell_audit.jsonl`
+- per-model table: `artifacts/analysis_154/pqid_bench_ordered_operand_by_model.csv`
+- Supplemental Table S30 TSV: `tables_copy_ready/table_s30_ordered_operand_validation.tsv`

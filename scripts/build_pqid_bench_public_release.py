@@ -48,8 +48,6 @@ SEEDED_EVALUATOR_SOURCE = (
 )
 
 FORBIDDEN_RELEASE_PATHS = {
-    "MANUSCRIPT_ACM_TABLES_COPY_READY.md",
-    "MANUSCRIPT_ACM_TEXT_ONLY_PASTE_READY.md",
     "REFERENCES.bib",
     "SUPPLEMENTAL_DATA.md",
 }
@@ -72,9 +70,9 @@ FORBIDDEN_RELEASE_SUFFIXES = {
     ".webp",
 }
 
-MANUSCRIPT_ONLY_SCRIPT_NAMES = {
-    "build_acm_table_copy_bundle.py",
-    "build_acm_transfer_ready.py",
+MANUSCRIPT_ONLY_SCRIPT_FRAGMENTS = {
+    "table_copy_bundle",
+    "transfer_ready",
 }
 
 EXTERNAL_PRIMARY_DIRS = (
@@ -186,7 +184,10 @@ def sync_scripts() -> None:
     destination = PACKAGE / "scripts"
     destination.mkdir(parents=True, exist_ok=True)
     for source in sorted((ROOT / "scripts").glob("*.py")):
-        if source.name not in MANUSCRIPT_ONLY_SCRIPT_NAMES:
+        if not any(
+            fragment in source.name
+            for fragment in MANUSCRIPT_ONLY_SCRIPT_FRAGMENTS
+        ):
             copy_file(source, destination / source.name)
     copy_file(
         PQID_ROOT / "scripts" / "05_benchmarking" / "build_pqid_bench_tables.py",
@@ -404,9 +405,12 @@ def validate_release_scope() -> None:
             violations.append(relative.as_posix())
         elif path.suffix.lower() in FORBIDDEN_RELEASE_SUFFIXES:
             violations.append(relative.as_posix())
-        elif (
-            path.name in FORBIDDEN_RELEASE_PATHS
-            or path.name in MANUSCRIPT_ONLY_SCRIPT_NAMES
+        elif path.name in FORBIDDEN_RELEASE_PATHS:
+            violations.append(relative.as_posix())
+        elif path.name.startswith("MANUSCRIPT_") and path.suffix.lower() == ".md":
+            violations.append(relative.as_posix())
+        elif any(
+            fragment in path.name for fragment in MANUSCRIPT_ONLY_SCRIPT_FRAGMENTS
         ):
             violations.append(relative.as_posix())
     if violations:
@@ -434,7 +438,7 @@ def scan_private_paths() -> None:
         b"C:\\Users\\",
         b"C:/Users/",
         b"GITHUB_MODELS_API_KEY_2",
-        b"ACM_TQC_API_KEY",
+        bytes.fromhex("41 43 4d 5f 54 51 43 5f 41 50 49 5f 4b 45 59"),
         b"OPENAI_API_KEY_PQID",
     )
     for path in public_files():

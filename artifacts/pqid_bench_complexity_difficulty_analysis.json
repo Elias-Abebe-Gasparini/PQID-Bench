@@ -881,7 +881,7 @@
       "width_bin": "3 qubits"
     }
   ],
-  "eval_dir": "PQID\\submissions\\acm_tqc_benchmark\\artifacts\\external_model_batches\\evaluations",
+  "eval_dir": "artifacts\\external_model_batches\\evaluations",
   "excluded_prompt_ids": [],
   "feature_correlations_with_prompt_structural_rate": {
     "gate_count": -0.2698580200397557,
@@ -1253,7 +1253,7 @@
     "qasm3_success": 0.8714285714285714,
     "structural_all_match": 0.5371428571428571
   },
-  "prompt_path": "PQID\\submissions\\acm_tqc_benchmark\\artifacts\\pqid_bench_external_generation_prompts.jsonl",
+  "prompt_path": "artifacts\\pqid_bench_external_generation_prompts.jsonl",
   "prompt_profile": {
     "gate_totals": {
       "barrier": 43,

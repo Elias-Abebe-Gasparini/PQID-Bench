@@ -5,10 +5,10 @@
 
 - input file: `PQID/data/processed/seed_drafts_quality_aware_source_code_v1.jsonl`
 - clean source-code rows: `734`
-- split policy: frozen split manifest `PQID/submissions/acm_tqc_benchmark/artifacts/test_split_154/pqid_bench_split_154_manifest.json`
-- exported prompts: `PQID/submissions/acm_tqc_benchmark/artifacts/test_split_154/pqid_bench_external_generation_prompts_154.jsonl`
-- response template: `PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/groq_llama-3_1-8b-instant_responses_template.jsonl`
-- expected response path: `PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/groq_llama-3_1-8b-instant_responses.jsonl`
+- split policy: frozen split manifest `artifacts/test_split_154/pqid_bench_split_154_manifest.json`
+- exported prompts: `artifacts/test_split_154/pqid_bench_external_generation_prompts_154.jsonl`
+- response template: `artifacts/external_model_batches_154/responses/groq_llama-3_1-8b-instant_responses_template.jsonl`
+- expected response path: `artifacts/external_model_batches_154/responses/groq_llama-3_1-8b-instant_responses.jsonl`
 
 ## Clean Pool
 

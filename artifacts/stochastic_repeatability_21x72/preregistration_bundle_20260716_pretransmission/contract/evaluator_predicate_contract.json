@@ -1,6 +1,6 @@
 {
   "canonical_report_count": 21,
-  "evaluator_harness_file": "PQID/submissions/acm_tqc_benchmark/scripts/run_pqid_bench_external_model_generation_harness.py",
+  "evaluator_harness_file": "scripts/run_pqid_bench_external_model_generation_harness.py",
   "evaluator_harness_sha256": "698ae5651f0574334a2009e84e26dd796e9307340328de74c321aa5e2019139f",
   "evaluator_versions": [
     "pqid-bench-evaluator-1.1.0-safe-builtins"

@@ -11,10 +11,10 @@ from xml.sax.saxutils import escape
 
 import run_pqid_bench_generation_copy_baseline as copy_baseline
 import run_pqid_bench_executable_validity_check as validity
-from acm_figure_style import ACM_SERIF_FONT_STACK
+from publication_figure_style import PUBLICATION_SERIF_FONT_STACK
 
 
-ROOT = Path("PQID/submissions/acm_tqc_benchmark")
+ROOT = Path(__file__).resolve().parents[1]
 ARTIFACT_PATH = ROOT / "artifacts/analysis_154/pqid_bench_retrieval_copy_complementarity_cases.json"
 FIGURE_PATH = ROOT / "figures/retrieval_copy_complementarity_circuit_panel.svg"
 CAPTION_PATH = ROOT / "figures/retrieval_copy_complementarity_circuit_panel_caption.md"
@@ -93,7 +93,7 @@ def text(
         {
             "x": round(x, 2),
             "y": round(y, 2),
-            "font-family": ACM_SERIF_FONT_STACK,
+            "font-family": PUBLICATION_SERIF_FONT_STACK,
             "font-size": size,
             "font-weight": weight,
             "fill": fill,
@@ -117,7 +117,7 @@ def justified_text(
     attrs: dict[str, object] = {
         "x": round(x, 2),
         "y": round(y, 2),
-        "font-family": ACM_SERIF_FONT_STACK,
+        "font-family": PUBLICATION_SERIF_FONT_STACK,
         "font-size": size,
         "font-weight": weight,
         "fill": fill,

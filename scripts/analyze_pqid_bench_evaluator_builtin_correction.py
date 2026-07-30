@@ -18,7 +18,7 @@ from analyze_pqid_bench_inferential import DEFAULT_EVAL_DIRS, REPORT_NAME, read_
 from pqid_bench_model_registry import MODEL_LABELS, MODEL_ORDER, model_from_report_dir
 
 
-ROOT = Path("PQID/submissions/acm_tqc_benchmark")
+ROOT = Path(__file__).resolve().parents[1]
 PROMPT_PATH = ROOT / "artifacts/test_split_154/pqid_bench_external_generation_prompts_154.jsonl"
 SPLIT_MANIFEST_PATH = ROOT / "artifacts/test_split_154/pqid_bench_split_154_manifest.json"
 CORRECTION_DIR = ROOT / "artifacts/analysis_154/evaluator_builtin_correction"

@@ -241,25 +241,25 @@ the response log under `provider_metadata`.
 Generate request and response templates with:
 
 ```powershell
-python "PQID\submissions\acm_tqc_benchmark\scripts\export_pqid_bench_external_model_batches.py"
+python "scripts\export_pqid_bench_external_model_batches.py"
 ```
 
 Add interim Groq bridge targets with:
 
 ```powershell
-python "PQID\submissions\acm_tqc_benchmark\scripts\export_pqid_bench_external_model_batches.py" --include-bridge
+python "scripts\export_pqid_bench_external_model_batches.py" --include-bridge
 ```
 
 Add the expanded open-model and GitHub Models scaffold with:
 
 ```powershell
-python "PQID\submissions\acm_tqc_benchmark\scripts\export_pqid_bench_external_model_batches.py" --include-bridge --include-open-breadth --include-github-models --include-appendix
+python "scripts\export_pqid_bench_external_model_batches.py" --include-bridge --include-open-breadth --include-github-models --include-appendix
 ```
 
 Add non-HF hosted alternatives with:
 
 ```powershell
-python "PQID\submissions\acm_tqc_benchmark\scripts\export_pqid_bench_external_model_batches.py" --include-bridge --include-open-breadth --include-github-models --include-nvidia-nim --include-deepinfra --include-appendix
+python "scripts\export_pqid_bench_external_model_batches.py" --include-bridge --include-open-breadth --include-github-models --include-nvidia-nim --include-deepinfra --include-appendix
 ```
 
 This writes:
@@ -283,7 +283,7 @@ style used by the broader PQID seed/paraphrase pipeline.
 Local preparation:
 
 ```powershell
-python "PQID\submissions\acm_tqc_benchmark\scripts\export_pqid_bench_openai_batch_requests.py"
+python "scripts\export_pqid_bench_openai_batch_requests.py"
 ```
 
 Run details are documented in:
@@ -326,8 +326,8 @@ Run details are documented in:
 Credential discovery for Groq:
 
 ```powershell
-python "PQID\submissions\acm_tqc_benchmark\scripts\run_pqid_bench_openai_compatible_chat.py" `
-  --request-file "PQID\submissions\acm_tqc_benchmark\artifacts\external_model_batches\requests\groq_llama-3_3-70b-versatile_requests.jsonl" `
+python "scripts\run_pqid_bench_openai_compatible_chat.py" `
+  --request-file "artifacts\external_model_batches\requests\groq_llama-3_3-70b-versatile_requests.jsonl" `
   --check-credentials
 ```
 
@@ -377,11 +377,11 @@ Score one model response file at a time so each provider/model gets its own
 report directory. Example:
 
 ```powershell
-python "PQID\submissions\acm_tqc_benchmark\scripts\run_pqid_bench_external_model_generation_harness.py" `
-  --prompt-path "PQID\submissions\acm_tqc_benchmark\artifacts\pqid_bench_external_generation_prompts.jsonl" `
-  --template-path "PQID\submissions\acm_tqc_benchmark\artifacts\pqid_bench_external_generation_response_template.jsonl" `
-  --response-path "PQID\submissions\acm_tqc_benchmark\artifacts\external_model_batches\responses\openai_gpt-5_5_responses.jsonl" `
-  --output-dir "PQID\submissions\acm_tqc_benchmark\artifacts\external_model_batches\evaluations\openai_gpt-5_5"
+python "scripts\run_pqid_bench_external_model_generation_harness.py" `
+  --prompt-path "artifacts\pqid_bench_external_generation_prompts.jsonl" `
+  --template-path "artifacts\pqid_bench_external_generation_response_template.jsonl" `
+  --response-path "artifacts\external_model_batches\responses\openai_gpt-5_5_responses.jsonl" `
+  --output-dir "artifacts\external_model_batches\evaluations\openai_gpt-5_5"
 ```
 
 The report should be compared against the retrieval-copy lower bound:

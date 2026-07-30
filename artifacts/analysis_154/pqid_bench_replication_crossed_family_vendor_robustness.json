@@ -92,127 +92,127 @@
         "model": "claude-fable-5",
         "model_label": "Claude Fable 5",
         "records_loaded": 154,
-        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/anthropic_claude-fable-5/pqid_bench_external_model_generation_harness_report.json"
+        "report": "artifacts/external_model_batches_154/evaluations/anthropic_claude-fable-5/pqid_bench_external_model_generation_harness_report.json"
       },
       {
         "model": "claude-opus-4-8",
         "model_label": "Claude Opus 4.8",
         "records_loaded": 154,
-        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/anthropic_claude-opus-4-8/pqid_bench_external_model_generation_harness_report.json"
+        "report": "artifacts/external_model_batches_154/evaluations/anthropic_claude-opus-4-8/pqid_bench_external_model_generation_harness_report.json"
       },
       {
         "model": "claude-sonnet-4-6",
         "model_label": "Claude Sonnet 4.6",
         "records_loaded": 154,
-        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/anthropic_claude-sonnet-4-6/pqid_bench_external_model_generation_harness_report.json"
+        "report": "artifacts/external_model_batches_154/evaluations/anthropic_claude-sonnet-4-6/pqid_bench_external_model_generation_harness_report.json"
       },
       {
         "model": "deepseek-v4-flash",
         "model_label": "DeepSeek V4 Flash",
         "records_loaded": 154,
-        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/deepseek_deepseek-v4-flash/pqid_bench_external_model_generation_harness_report.json"
+        "report": "artifacts/external_model_batches_154/evaluations/deepseek_deepseek-v4-flash/pqid_bench_external_model_generation_harness_report.json"
       },
       {
         "model": "deepseek-v4-pro",
         "model_label": "DeepSeek V4 Pro",
         "records_loaded": 154,
-        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/deepseek_deepseek-v4-pro/pqid_bench_external_model_generation_harness_report.json"
+        "report": "artifacts/external_model_batches_154/evaluations/deepseek_deepseek-v4-pro/pqid_bench_external_model_generation_harness_report.json"
       },
       {
         "model": "meta/llama-4-maverick-17b-128e-instruct-fp8",
         "model_label": "Llama 4 Maverick",
         "records_loaded": 154,
-        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/github_models_meta_llama-4-maverick-17b-128e-instruct-fp8/pqid_bench_external_model_generation_harness_report.json"
+        "report": "artifacts/external_model_batches_154/evaluations/github_models_meta_llama-4-maverick-17b-128e-instruct-fp8/pqid_bench_external_model_generation_harness_report.json"
       },
       {
         "model": "mistral-ai/codestral-2501",
         "model_label": "Codestral 25.01",
         "records_loaded": 154,
-        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/github_models_mistral-ai_codestral-2501/pqid_bench_external_model_generation_harness_report.json"
+        "report": "artifacts/external_model_batches_154/evaluations/github_models_mistral-ai_codestral-2501/pqid_bench_external_model_generation_harness_report.json"
       },
       {
         "model": "gemini-2.5-pro",
         "model_label": "Gemini 2.5 Pro",
         "records_loaded": 154,
-        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/google_gemini-2_5-pro/pqid_bench_external_model_generation_harness_report.json"
+        "report": "artifacts/external_model_batches_154/evaluations/google_gemini-2_5-pro/pqid_bench_external_model_generation_harness_report.json"
       },
       {
         "model": "gemini-3.1-pro-preview",
         "model_label": "Gemini 3.1 Pro Preview",
         "records_loaded": 154,
-        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/google_gemini-3_1-pro-preview/pqid_bench_external_model_generation_harness_report.json"
+        "report": "artifacts/external_model_batches_154/evaluations/google_gemini-3_1-pro-preview/pqid_bench_external_model_generation_harness_report.json"
       },
       {
         "model": "llama-3.1-8b-instant",
         "model_label": "Llama 3.1 8B",
         "records_loaded": 154,
-        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/groq_llama-3_1-8b-instant/pqid_bench_external_model_generation_harness_report.json"
+        "report": "artifacts/external_model_batches_154/evaluations/groq_llama-3_1-8b-instant/pqid_bench_external_model_generation_harness_report.json"
       },
       {
         "model": "llama-3.3-70b-versatile",
         "model_label": "Llama 3.3 70B",
         "records_loaded": 154,
-        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/groq_llama-3_3-70b-versatile/pqid_bench_external_model_generation_harness_report.json"
+        "report": "artifacts/external_model_batches_154/evaluations/groq_llama-3_3-70b-versatile/pqid_bench_external_model_generation_harness_report.json"
       },
       {
         "model": "meta-llama/llama-4-scout-17b-16e-instruct",
         "model_label": "Llama 4 Scout",
         "records_loaded": 154,
-        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/groq_meta-llama_llama-4-scout-17b-16e-instruct/pqid_bench_external_model_generation_harness_report.json"
+        "report": "artifacts/external_model_batches_154/evaluations/groq_meta-llama_llama-4-scout-17b-16e-instruct/pqid_bench_external_model_generation_harness_report.json"
       },
       {
         "model": "openai/gpt-oss-120b",
         "model_label": "GPT-OSS 120B",
         "records_loaded": 154,
-        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/groq_openai_gpt-oss-120b/pqid_bench_external_model_generation_harness_report.json"
+        "report": "artifacts/external_model_batches_154/evaluations/groq_openai_gpt-oss-120b/pqid_bench_external_model_generation_harness_report.json"
       },
       {
         "model": "openai/gpt-oss-20b",
         "model_label": "GPT-OSS 20B",
         "records_loaded": 154,
-        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/groq_openai_gpt-oss-20b/pqid_bench_external_model_generation_harness_report.json"
+        "report": "artifacts/external_model_batches_154/evaluations/groq_openai_gpt-oss-20b/pqid_bench_external_model_generation_harness_report.json"
       },
       {
         "model": "qwen/qwen3-32b",
         "model_label": "Qwen3 32B",
         "records_loaded": 154,
-        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/groq_qwen_qwen3-32b/pqid_bench_external_model_generation_harness_report.json"
+        "report": "artifacts/external_model_batches_154/evaluations/groq_qwen_qwen3-32b/pqid_bench_external_model_generation_harness_report.json"
       },
       {
         "model": "qwen/qwen3-coder-next",
         "model_label": "Qwen3-Coder-Next",
         "records_loaded": 154,
-        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/huggingface_router_qwen_qwen3-coder-next_novita/pqid_bench_external_model_generation_harness_report.json"
+        "report": "artifacts/external_model_batches_154/evaluations/huggingface_router_qwen_qwen3-coder-next_novita/pqid_bench_external_model_generation_harness_report.json"
       },
       {
         "model": "gpt-5.4-mini",
         "model_label": "GPT-5.4 mini",
         "records_loaded": 154,
-        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/openai_gpt-5_4-mini/pqid_bench_external_model_generation_harness_report.json"
+        "report": "artifacts/external_model_batches_154/evaluations/openai_gpt-5_4-mini/pqid_bench_external_model_generation_harness_report.json"
       },
       {
         "model": "gpt-5.5",
         "model_label": "GPT-5.5",
         "records_loaded": 154,
-        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/openai_gpt-5_5/pqid_bench_external_model_generation_harness_report.json"
+        "report": "artifacts/external_model_batches_154/evaluations/openai_gpt-5_5/pqid_bench_external_model_generation_harness_report.json"
       },
       {
         "model": "gpt-5.6-sol",
         "model_label": "GPT-5.6 Sol",
         "records_loaded": 154,
-        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/evaluations/openai_gpt-5_6-sol/pqid_bench_external_model_generation_harness_report.json"
+        "report": "artifacts/external_model_batches_154/evaluations/openai_gpt-5_6-sol/pqid_bench_external_model_generation_harness_report.json"
       },
       {
         "model": "mistralai/mistral-small-3.2-24b-instruct",
         "model_label": "Mistral Small 3.2 24B",
         "records_loaded": 154,
-        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/mistral_parent_control/evaluations/openrouter_mistralai_mistral-small-3_2-24b-instruct/pqid_bench_external_model_generation_harness_report.json"
+        "report": "artifacts/external_model_batches_154/mistral_parent_control/evaluations/openrouter_mistralai_mistral-small-3_2-24b-instruct/pqid_bench_external_model_generation_harness_report.json"
       },
       {
         "model": "qiskit/mistral-small-3.2-24b-qiskit",
         "model_label": "Qiskit Mistral 3.2 24B",
         "records_loaded": 154,
-        "report": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/qiskit_mistral/evaluations/huggingface_router_qiskit_mistral-small-3_2-24b-qiskit_featherless-ai/pqid_bench_external_model_generation_harness_report.json"
+        "report": "artifacts/external_model_batches_154/qiskit_mistral/evaluations/huggingface_router_qiskit_mistral-small-3_2-24b-qiskit_featherless-ai/pqid_bench_external_model_generation_harness_report.json"
       }
     ]
   },

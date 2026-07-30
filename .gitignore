@@ -26,7 +26,7 @@ Thumbs.db
 
 # Unpublished authoring sources are never part of the public release.
 /paper/
-/MANUSCRIPT_ACM_*.md
+/MANUSCRIPT_*.md
 /SUPPLEMENTAL_DATA.md
 /REFERENCES.bib
 
@@ -35,8 +35,8 @@ Thumbs.db
 /tables_copy_ready/
 /notebooks/
 /spaces/
-/scripts/build_acm_table_copy_bundle.py
-/scripts/build_acm_transfer_ready.py
+/scripts/build_*_table_copy_bundle.py
+/scripts/build_*_transfer_ready.py
 *.drawio
 *.jpeg
 *.jpg

@@ -19,7 +19,7 @@ from matplotlib.patches import FancyArrowPatch, FancyBboxPatch
 from PIL import Image
 
 
-ROOT = Path("PQID/submissions/acm_tqc_benchmark")
+ROOT = Path(__file__).resolve().parents[1]
 ANALYSIS_DIR = ROOT / "artifacts/analysis_154"
 FIGURES_DIR = ROOT / "figures"
 

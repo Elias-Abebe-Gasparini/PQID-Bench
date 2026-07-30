@@ -10,7 +10,7 @@ from pathlib import Path
 from typing import Any
 from xml.sax.saxutils import escape
 
-ROOT = Path("PQID/submissions/acm_tqc_benchmark")
+ROOT = Path(__file__).resolve().parents[1]
 ARTIFACTS_DIR = ROOT / "artifacts"
 FIGURES_DIR = ROOT / "figures"
 

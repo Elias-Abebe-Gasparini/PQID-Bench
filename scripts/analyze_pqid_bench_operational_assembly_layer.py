@@ -21,7 +21,7 @@ from pqid_bench_model_registry import (
 )
 
 
-ROOT = Path("PQID/submissions/acm_tqc_benchmark")
+ROOT = Path(__file__).resolve().parents[1]
 EVALUATION_DIRS = [
     ROOT / "artifacts/external_model_batches_154/evaluations",
     ROOT / "artifacts/external_model_batches_154/mistral_parent_control/evaluations",
