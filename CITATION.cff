@@ -14,21 +14,28 @@ keywords:
   - quantum computing
   - quantum programming
   - Qiskit
-  - code generation
+  - OpenQASM 3
+  - quantum code generation
   - large language models
-  - benchmark
-  - reproducibility
+  - LLM evaluation
+  - code generation benchmark
+  - structural evaluation
+  - reproducible research
 repository-code: "https://github.com/Elias-Abebe-Gasparini/PQID-Bench"
 url: "https://doi.org/10.5281/zenodo.21649753"
 license: "CC-BY-4.0"
 abstract: >-
-  PQID-Bench is a frozen validation-aware benchmark suite for quantum-program
-  generation. Over its 21-model by 154-prompt primary matrix, 2,950 of 3,234
-  outputs execute, 2,944 are OpenQASM 3 assembly admissible, and 1,703 recover
-  the frozen reference signature. Its 38.37-point Assembly-Structure Gap
-  retains 99.52% of the 38.56-point Execution-Structure Gap. The release also
-  evaluates ordered operation-and-operand recovery, parameter-aware recovery,
-  robustness, and stochastic repeatability.
+  PQID-Bench is a frozen, self-contained, validation-aware benchmark and
+  evidence suite for quantum-program generation. It includes materialized
+  514/66/154 train, validation, and test JSONL splits, so use does not require
+  reconstruction from the parent PQID dataset. Over its 21-model by 154-prompt
+  primary matrix, 2,950 of 3,234 outputs execute in Python, 2,944 are OpenQASM
+  3 assembly admissible, and 1,703 recover the frozen reference signature. Its
+  38.37-point Assembly-Structure Gap retains 99.52% of the 38.56-point
+  Execution-Structure Gap. The separately versioned pqid-bench Python package
+  supports verification, numerical reporting, interactive exploration,
+  live-model evaluation, and isolated replay without changing the frozen
+  evidence.
 references:
   - type: dataset
     title: "PQID: Parallel Quantum Instruction Dataset (v1.0.2)"

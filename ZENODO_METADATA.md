@@ -1,71 +1,194 @@
 # PQID-Bench v1.0.0 Zenodo Metadata
 
-This sheet is the human-readable counterpart of `.zenodo.json`.
+This document is the human-readable counterpart of `.zenodo.json`. It explains
+the record without requiring prior knowledge of the manuscript's notation or
+the wider PQID ecosystem.
 
 ## Core Fields
 
 | field | value |
 | --- | --- |
 | title | PQID-Bench: A Validation-Aware Benchmark Suite for Quantum-Program Generation |
-| version | 1.0.0 |
-| reserved version DOI | `10.5281/zenodo.21649753` |
+| frozen benchmark version | `1.0.0` |
+| version DOI | `10.5281/zenodo.21649753` |
+| concept DOI | `10.5281/zenodo.21649752` |
 | publication date | 2026-07-23 |
 | upload type | Software |
+| language | English (`eng`) |
 | access | Open |
-| primary package license | Creative Commons Attribution 4.0 International |
+| record-level license | Creative Commons Attribution 4.0 International |
 | creator | Gasparini, Elias Abebe |
-| derived-from DOI | `10.5281/zenodo.20674853` |
-| GitHub | `https://github.com/Elias-Abebe-Gasparini/PQID-Bench` |
+| parent PQID dataset | `10.5281/zenodo.20674853` |
+| GitHub | <https://github.com/Elias-Abebe-Gasparini/PQID-Bench> |
+| Python package | <https://pypi.org/project/pqid-bench/> |
+| documentation | <https://elias-abebe-gasparini.github.io/PQID-Bench/> |
+| Hugging Face mirror | <https://huggingface.co/datasets/Elias-Abebe-Gasparini/PQID-Bench> |
+| evidence explorer | <https://elias-abebe-gasparini.github.io/PQID-Bench/interactive/overview.html> |
 
-## Description
+## Overview
 
-PQID-Bench is a frozen, validation-aware benchmark suite for quantum-program
-generation derived from the PQID v1.0.2 dataset. The release contains the
-repository-cleared 734-row clean generation population, its deterministic
-514/66/154 split, 154 held-out prompts, canonical outputs for 21 model routes,
-three retrieval-copy baselines, evaluator and predicate implementations,
-ordered and parameter-aware replay audits, cluster-aware inferential analyses,
-a three-run stochastic-repeatability audit over 72 unique signatures,
-publication-output regeneration scripts, and reproducibility documentation.
-Unpublished manuscript source and manuscript-facing publication derivatives
-are intentionally excluded.
+**PQID-Bench v1.0.0** is a frozen, validation-aware benchmark, evidence bundle,
+and reproducibility suite for evaluating quantum-program generation. It was
+derived from PQID v1.0.2 through explicit validation, cleanliness, and
+benchmark-readiness rules rather than by flattening every source record into
+one test set.
 
-Across the complete 21 x 154 matrix, executable-circuit materialization
-succeeds for 2,950 of 3,234 outputs (91.22%), 2,944 are OpenQASM 3 assembly
-admissible (91.03%), and 1,703 recover the frozen reference signature (52.66%).
-The 38.56-percentage-point Execution-Structure Gap decomposes into 0.19 points
-of execution-to-assembly attrition and a 38.37-point Assembly-Structure Gap,
-which retains 99.52% of the ES-Gap. The package preserves exact trace artifacts
-and SHA-256 manifests; it does not claim that exact reference reconstruction is
-equivalent to semantic circuit equivalence.
+The deposit is self-contained. It includes materialized training, validation,
+and test JSONL files, so users do not need to download or reconstruct the
+benchmark from the parent PQID dataset. PQID-Bench supports three main uses:
+
+1. reproducing the frozen 21-model study;
+2. inspecting its prompt-level evidence and robustness audits; and
+3. evaluating additional model outputs under the same scoring contract.
+
+## Release Contents
+
+- A 734-row clean quantum-program generation population: 415 strict rows and
+  319 extended rows.
+- A deterministic 514/66/154 train/validation/test split in `data/splits/`.
+- A held-out test set of 154 prompts representing 144 evaluator-facing target
+  signatures.
+- Canonical responses and evaluator traces for 21 named model routes over all
+  154 prompts, yielding 3,234 model-prompt cells.
+- Three retrieval-copy baselines.
+- Ordered-operand and parameter-aware replay audits.
+- Clustered inferential analyses, sensitivity analyses, and a three-run
+  stochastic-repeatability audit over 72 signature-unique prompts.
+- Evaluator and structural-predicate implementations, exact manifests,
+  SHA-256 checksums, software bills of materials, documentation, and scripts
+  that regenerate the public analytical outputs.
+
+The public archive intentionally excludes unpublished manuscript source and
+manuscript-facing publication derivatives.
+
+## Measurement Nomenclature
+
+The main symbols name increasingly restrictive checks:
+
+- **`E` - Python execution.** The generated response executes in the pinned
+  Python/Qiskit environment and yields an extractable quantum circuit.
+- **`A` - quantum assembly execution.** `E=1` and the extracted circuit
+  serializes successfully to OpenQASM 3 under the frozen evaluator. This is an
+  assembly-admissibility layer; it does not mean that the emitted OpenQASM
+  program was run by a separate quantum-assembly runtime.
+- **`M^sig` - reference-signature recovery.** The executable output agrees
+  with the frozen target on qubit count, classical-bit count, and the complete
+  operation-type count map. Scalar counted-operation agreement follows from
+  count-map equality in this release and is also reported as a diagnostic.
+- **ES-Gap - Execution-Structure Gap.** The pooled Python-execution rate minus
+  the pooled reference-signature recovery rate.
+- **AS-Gap - Assembly-Structure Gap.** The pooled quantum-assembly rate minus
+  the pooled reference-signature recovery rate. On the frozen panel, it is the
+  assembly-admissible part of the ES-Gap.
+
+Ordered-operand and parameter-aware replay predicates are stricter
+reconstruction checks. None of these predicates is a direct test of unitary,
+measurement-distribution, or semantic equivalence.
+
+## Frozen Headline Evidence
+
+| endpoint | count | rate |
+| --- | ---: | ---: |
+| Python execution, `E` | 2,950 / 3,234 | 91.22% |
+| quantum assembly execution, `A` | 2,944 / 3,234 | 91.03% |
+| reference-signature recovery, `M^sig` | 1,703 / 3,234 | 52.66% |
+| ES-Gap | 1,247 / 3,234 | 38.56 pp |
+| AS-Gap | 1,241 / 3,234 | 38.37 pp |
+
+Only six executable outputs fail the assembly layer. The AS-Gap therefore
+retains 99.52% of the ES-Gap: the observed separation is concentrated between
+operational admissibility and measured structural recovery, not between Python
+execution and OpenQASM 3 serialization.
+
+## Python Package
+
+The maintained command-line and Python interface is the separately versioned
+[`pqid-bench` package](https://pypi.org/project/pqid-bench/). This Zenodo record
+preserves the `1.0.0` wheel and source distribution that accompanied the
+frozen deposit. The current backward-compatible package is
+`pqid-bench 1.1.0`; it adds richer numerical summaries, comparisons,
+interactive Plotly reporting, and live-model workflows without changing the
+frozen benchmark data, responses, or scoring contract.
+
+Install the current package and verify an extracted release:
+
+```console
+python -m pip install "pqid-bench==1.1.0"
+pqid-bench verify RELEASE_DIR --full
+pqid-bench reproduce --release-dir RELEASE_DIR --format text
+```
+
+The principal interfaces are:
+
+| command | purpose |
+| --- | --- |
+| `pqid-bench doctor` | inspect the local runtime and optional dependencies |
+| `pqid-bench verify` | verify release structure, manifests, and optionally every file hash |
+| `pqid-bench reproduce` | print or export the frozen numerical report |
+| `pqid-bench evaluate` | summarize evaluation records in machine-readable or R-style text form |
+| `pqid-bench compare` | compare a candidate run with the frozen reference |
+| `pqid-bench dashboard` | create a standalone interactive Plotly report |
+| `pqid-bench run-model` | run an explicitly authorized live model evaluation |
+| `pqid-bench replay` | evaluate generated code through the isolated Docker worker |
+
+Install `pqid-bench[visualization]==1.1.0` for the dashboard. Consult the
+[documentation](https://elias-abebe-gasparini.github.io/PQID-Bench/) before
+using live providers or replaying generated code.
+
+## Version Crosswalk
+
+| object | identifier or version | role |
+| --- | --- | --- |
+| benchmark and evidence release | `PQID-Bench 1.0.0` | frozen data, outputs, analyses, and manifests |
+| current Python interface | `pqid-bench 1.1.0` | maintained CLI, library, reports, dashboard, and live workflows |
+| archived Python interface | `pqid-bench 1.0.0` | wheel and source distribution preserved in this deposit |
+| evaluator implementation | `pqid-bench-evaluator-1.1.0-safe-builtins` | frozen executable-evaluation policy |
+| structural predicate | `pqid-bench-reference-signature-1.0.0-count-map` | frozen signature-recovery rule |
+| evaluator container | `ghcr.io/elias-abebe-gasparini/pqid-bench-evaluator:1.0.0` | reproducible Docker execution image |
+
+The independent version numbers are intentional. Updating the software
+interface does not revise the frozen benchmark or its canonical evidence.
+
+## Interpretive And Safety Boundaries
+
+Reference-signature, ordered-operand, or parameter-aware agreement does not by
+itself establish unitary, measurement-distribution, or semantic equivalence.
+Conversely, signature disagreement establishes disagreement with the measured
+frozen target but not general physical invalidity.
+
+Live provider evaluation transmits benchmark prompts to the selected third
+party and requires explicit user acknowledgement. Generated code should be
+replayed only through the pinned Docker evaluator, not in the caller process.
+
+PQID-Bench uses scoped licensing:
+
+- benchmark-authored documentation, metadata, and aggregate analyses are
+  licensed under CC BY 4.0;
+- package and evaluator code are MIT-licensed; and
+- source-derived rows retain row-level provenance and upstream licensing
+  obligations.
 
 ## Keywords
 
 - quantum computing
 - quantum programming
 - Qiskit
+- OpenQASM 3
+- quantum program synthesis
 - quantum code generation
 - large language models
-- benchmark
+- LLM evaluation
+- code generation benchmark
+- benchmark dataset
 - structural evaluation
-- reproducibility
+- model evaluation
+- reproducible research
+- Python package
 
-## Reserved Identifier And Publication Procedure
+## Metadata Status
 
-The direct Zenodo software-deposit draft reserved version DOI
-`10.5281/zenodo.21649753` on 2026-07-29. The draft must not be deleted before
-publication because deletion would discard the reservation.
-
-1. Record the reserved benchmark DOI in `CITATION.cff`, `README.md`,
-   `HUGGINGFACE_DATASET_CARD.md`, and the manuscript artifact-availability
-   statement.
-2. Rebuild the public bundle and Python distributions, rerun all release
-   gates, regenerate checksums, and commit the DOI-complete byte-final state.
-3. Create the annotated `v1.0.0` tag and GitHub release from that exact commit.
-4. Publish the existing Zenodo draft with the same frozen ZIP and checksum
-   sidecar, then verify the downloaded bytes.
-5. Keep `10.5281/zenodo.20674853` as the distinct source-dataset DOI.
-
-The archive checksum is recorded in
-`PQID-Bench-v1.0.0-frozen.zip.sha256`. The reserved benchmark DOI is embedded
-before the immutable tag and public deposits are created.
+The version DOI `10.5281/zenodo.21649753` was published on 2026-07-29. The
+metadata may be clarified in place while preserving the DOI and the frozen
+file inventory. Any future change to benchmark data, canonical evidence, or
+scoring behavior requires a separately versioned release rather than a
+metadata correction.

@@ -139,6 +139,61 @@ def validate_metadata() -> None:
         zenodo.get("publication_date") == "2026-07-23",
         "Zenodo publication date is not the frozen release date",
     )
+    require(zenodo.get("upload_type") == "software", "Zenodo upload type must be software")
+    require(zenodo.get("language") == "eng", "Zenodo language must be English")
+    require(zenodo.get("license") == "cc-by-4.0", "Zenodo record license mismatch")
+
+    description = zenodo.get("description")
+    require(isinstance(description, str), "Zenodo description must be text")
+    for expected in (
+        "materialized training, validation, and test JSONL files",
+        "E - Python execution",
+        "A - quantum assembly execution",
+        "M^sig - reference-signature recovery",
+        "ES-Gap - Execution-Structure Gap",
+        "AS-Gap - Assembly-Structure Gap",
+        "pqid-bench 1.1.0",
+        "pqid-bench verify RELEASE_DIR --full",
+        "pqid-bench run-model",
+        "pqid-bench replay",
+        "pqid-bench-evaluator-1.1.0-safe-builtins",
+        "pqid-bench-reference-signature-1.0.0-count-map",
+    ):
+        require(
+            expected in description,
+            f"Reader-facing Zenodo explanation is missing: {expected}",
+        )
+
+    related = zenodo.get("related_identifiers")
+    require(isinstance(related, list), "Zenodo related identifiers must be a list")
+    related_by_identifier = {
+        item.get("identifier"): item.get("relation")
+        for item in related
+        if isinstance(item, dict)
+    }
+    expected_related = {
+        "10.5281/zenodo.20674853": "isDerivedFrom",
+        "https://github.com/Elias-Abebe-Gasparini/PQID-Bench": "isSupplementTo",
+        "https://pypi.org/project/pqid-bench/": "isSupplementTo",
+        "https://huggingface.co/datasets/Elias-Abebe-Gasparini/PQID-Bench": "isSupplementTo",
+        "https://elias-abebe-gasparini.github.io/PQID-Bench/": "isDocumentedBy",
+    }
+    for identifier, relation in expected_related.items():
+        require(
+            related_by_identifier.get(identifier) == relation,
+            f"Zenodo related identifier is missing or misclassified: {identifier}",
+        )
+
+    keywords = zenodo.get("keywords")
+    require(isinstance(keywords, list), "Zenodo keywords must be a list")
+    for expected in (
+        "OpenQASM 3",
+        "LLM evaluation",
+        "benchmark dataset",
+        "reproducible research",
+        "Python package",
+    ):
+        require(expected in keywords, f"Zenodo discovery keyword is missing: {expected}")
 
     citation = (PACKAGE / "CITATION.cff").read_text(encoding="utf-8")
     require('version: "1.0.0"' in citation, "CITATION.cff version mismatch")
@@ -154,6 +209,23 @@ def validate_metadata() -> None:
     ):
         text = path.read_text(encoding="utf-8")
         require("20024477" not in text, f"Stale source-dataset DOI remains in {path}")
+
+    zenodo_sheet = (PACKAGE / "ZENODO_METADATA.md").read_text(encoding="utf-8")
+    require(
+        "reserved version DOI" not in zenodo_sheet,
+        "Human-readable Zenodo metadata still describes the DOI as reserved",
+    )
+    for expected in (
+        "The deposit is self-contained",
+        "## Measurement Nomenclature",
+        "## Python Package",
+        "## Version Crosswalk",
+        "10.5281/zenodo.21649752",
+    ):
+        require(
+            expected in zenodo_sheet,
+            f"Human-readable Zenodo metadata is missing: {expected}",
+        )
 
     narrative_paths = (
         PACKAGE / ".zenodo.json",
