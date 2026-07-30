@@ -68,7 +68,7 @@ OFFICIAL_CORE_RELEASES: dict[str, CoreRelease] = {
             "PQID-Bench/resolve/main/downloads/PQID-Bench-v1.0.0-core.zip"
         ),
         sha256=(
-            "74379d743d73c5401257fc48844f598fc17199c0fdccf5e1f647d10ac67b8a99"
+            "d6df084c7acf7a06bc4800f25b952e26f9903ee4a69ce851ab83b7723970c647"
         ),
         archive_name="PQID-Bench-v1.0.0-core.zip",
         root_name="PQID-Bench-v1.0.0-core",

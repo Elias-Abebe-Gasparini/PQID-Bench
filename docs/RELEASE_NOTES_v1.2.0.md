@@ -17,7 +17,7 @@ figures, and repository administration.
 Its SHA-256 is:
 
 ```text
-74379d743d73c5401257fc48844f598fc17199c0fdccf5e1f647d10ac67b8a99
+d6df084c7acf7a06bc4800f25b952e26f9903ee4a69ce851ab83b7723970c647
 ```
 
 ## Verified Acquisition

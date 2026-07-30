@@ -53,6 +53,15 @@ def sha256_file(path: Path) -> str:
     return digest.hexdigest()
 
 
+def canonical_text_bytes(path: Path) -> bytes:
+    """Return cross-platform text bytes with canonical LF line endings."""
+
+    payload = path.read_bytes()
+    if b"\x00" in payload:
+        raise RuntimeError(f"Core-bundle input is not a text file: {path}")
+    return payload.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+
+
 def jsonl_count(path: Path) -> int:
     with path.open("rb") as handle:
         return sum(bool(line.strip()) for line in handle)
@@ -340,7 +349,7 @@ def all_payloads() -> list[Payload]:
     validate_source_counts(files)
     payloads = virtual_payloads()
     payloads.extend(
-        Payload(target, source.read_bytes())
+        Payload(target, canonical_text_bytes(source))
         for target, source in sorted(files.items())
     )
     paths = [payload.path for payload in payloads]
@@ -367,6 +376,7 @@ def write_zip_payload(
         f"{ARCHIVE_ROOT}/{relative}",
         date_time=(2026, 7, 31, 0, 0, 0),
     )
+    info.create_system = 3
     info.compress_type = zipfile.ZIP_STORED
     info.external_attr = 0o100644 << 16
     handle.writestr(info, payload, compress_type=zipfile.ZIP_STORED)
