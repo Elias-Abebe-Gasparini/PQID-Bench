@@ -204,7 +204,18 @@ not an installation failure unless the intended workflow requires them.
 
 Start Docker Engine before using replay.
 
-To load the published image:
+Pull the public evaluator image from GitHub Packages and assign the frozen
+local tag expected by `pqid-bench replay`:
+
+```bash
+docker pull ghcr.io/elias-abebe-gasparini/pqid-bench-evaluator:1.0.0
+docker tag \
+  ghcr.io/elias-abebe-gasparini/pqid-bench-evaluator:1.0.0 \
+  pqid-bench-evaluator:1.0.0
+```
+
+For an offline installation, load the image archive included with the complete
+scientific release:
 
 ```bash
 docker load --input pqid-bench-evaluator-1.0.0-linux-amd64.tar.gz
@@ -220,6 +231,7 @@ The replay distribution has a separate identity from the evaluator contract:
 | --- | --- |
 | container artifact version | `1.0.0` |
 | image tag | `pqid-bench-evaluator:1.0.0` |
+| public package | `ghcr.io/elias-abebe-gasparini/pqid-bench-evaluator:1.0.0` |
 | local image ID | `sha256:849bf53e449fd618633199c0b622abeca270591dff248cd0bf3a0fd461abf2e2` |
 | archive SHA-256 | `8abff46dcb1fa10f375a713d94845d2b0bdb3cd7601985ee6ef2da24dfdc09ba` |
 | evaluator version | `pqid-bench-evaluator-1.1.0-safe-builtins` |

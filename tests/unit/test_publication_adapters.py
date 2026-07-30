@@ -22,6 +22,25 @@ def load_uploader():
 
 
 class PublicationAdapterTests(unittest.TestCase):
+    def test_github_package_contract_is_explicit(self) -> None:
+        workflow = (
+            ROOT / ".github" / "workflows" / "publish-ghcr.yml"
+        ).read_text(encoding="utf-8")
+        dockerfile = (ROOT / "docker" / "evaluator" / "Dockerfile").read_text(
+            encoding="utf-8"
+        )
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+
+        image = "ghcr.io/elias-abebe-gasparini/pqid-bench-evaluator"
+        self.assertIn("packages: write", workflow)
+        self.assertIn(image, workflow)
+        self.assertIn(
+            "org.opencontainers.image.source="
+            '"https://github.com/Elias-Abebe-Gasparini/PQID-Bench"',
+            dockerfile,
+        )
+        self.assertIn(f"docker pull {image}:1.0.0", readme)
+
     def test_python_sbom_tracks_the_package_release(self) -> None:
         sbom_path = (
             ROOT / "sbom" / f"pqid-bench-python-{PACKAGE_VERSION}.cdx.json"
