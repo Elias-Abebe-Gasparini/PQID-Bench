@@ -149,6 +149,9 @@ GitHub Packages hosts the pinned evaluator runtime as an OCI image:
 docker pull ghcr.io/elias-abebe-gasparini/pqid-bench-evaluator:1.0.0
 ```
 
+Immutable OCI manifest:
+`sha256:39825f5635cd6273e9e23c2848f2c88a2ff9d461e16a263fd89f22c6e664ac8f`.
+
 The GHCR image is the isolated execution environment used by
 `pqid-bench replay`; it is not another Python distribution and does not change
 the frozen benchmark version. The importable Python toolkit remains

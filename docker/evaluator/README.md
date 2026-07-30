@@ -20,6 +20,9 @@ The public image is distributed through GitHub Container Registry:
 docker pull ghcr.io/elias-abebe-gasparini/pqid-bench-evaluator:1.0.0
 ```
 
+The immutable OCI manifest digest is
+`sha256:39825f5635cd6273e9e23c2848f2c88a2ff9d461e16a263fd89f22c6e664ac8f`.
+
 The OCI package is versioned independently from the Python toolkit. Image
 `1.0.0` preserves the frozen evaluator runtime; `pqid-bench 1.1.0` supplies the
 compatible orchestration and reporting interface.
