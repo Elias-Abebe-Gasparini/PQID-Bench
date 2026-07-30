@@ -14,7 +14,9 @@ ROOT = Path(__file__).resolve().parents[2]
 CARD = ROOT / "HUGGINGFACE_DATASET_CARD.md"
 IGNORED_PARTS = {
     ".git",
+    ".mypy_cache",
     ".pytest_cache",
+    ".quality",
     ".ruff_cache",
     "__pycache__",
     ".ipynb_checkpoints",
@@ -22,8 +24,12 @@ IGNORED_PARTS = {
     "dist",
     "site",
 }
+IGNORED_FILES = {".coverage", "coverage.xml"}
 IGNORED_SUFFIXES = {".pyc", ".pyo", ".tmp"}
-GENERATED_PREFIXES = {("docs", "interactive")}
+GENERATED_PREFIXES = {
+    (".github", "assets"),
+    ("docs", "interactive"),
+}
 
 
 def is_ignored_path(path: Path | PurePosixPath) -> bool:
@@ -31,6 +37,7 @@ def is_ignored_path(path: Path | PurePosixPath) -> bool:
         any(part in IGNORED_PARTS or part.endswith(".egg-info") for part in path.parts)
         or tuple(path.parts[:2]) in GENERATED_PREFIXES
         or path.suffix.lower() in IGNORED_SUFFIXES
+        or path.name in IGNORED_FILES
     )
 
 
@@ -98,27 +105,37 @@ def main() -> None:
         folder_path=ROOT,
         ignore_patterns=[
             ".git/**",
+            ".mypy_cache/**",
             ".pytest_cache/**",
+            ".quality/**",
             ".ruff_cache/**",
             "__pycache__/**",
             ".ipynb_checkpoints/**",
             "*.egg-info/**",
             "build/**",
             "dist/**",
+            ".github/assets/**",
             "docs/interactive/**",
             "site/**",
+            ".coverage",
+            "coverage.xml",
             "*.pyc",
             "*.pyo",
             "*.tmp",
             "**/.git/**",
+            "**/.mypy_cache/**",
             "**/.pytest_cache/**",
+            "**/.quality/**",
             "**/.ruff_cache/**",
             "**/__pycache__/**",
             "**/.ipynb_checkpoints/**",
             "**/*.egg-info/**",
+            "**/.github/assets/**",
             "**/*.pyc",
             "**/*.pyo",
             "**/*.tmp",
+            "**/.coverage",
+            "**/coverage.xml",
         ],
         commit_message=(
             "Synchronize pqid-bench v1.1.0 tooling with frozen "

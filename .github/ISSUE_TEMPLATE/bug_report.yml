@@ -1,0 +1,71 @@
+name: Bug report
+description: Report reproducible package, CLI, dashboard, or replay behavior.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include API keys, unpublished prompts, private provider responses, or local personal paths.
+        Security vulnerabilities belong in the private reporting channel described in `SECURITY.md`.
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - Python API
+        - CLI
+        - Frozen-evidence reproduction
+        - Live model collection
+        - Docker replay
+        - Interactive dashboard
+        - Packaging or installation
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Output of `pqid-bench --version` and, when relevant, the benchmark or container version.
+      placeholder: "pqid-bench 1.1.0; benchmark 1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Platform
+      placeholder: "Windows 11, Python 3.14, Docker Desktop 4.x"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: List the exact sanitized commands or Python calls needed to reproduce the issue.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behavior
+      description: Include a sanitized traceback or error message.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Safety checks
+      options:
+        - label: I removed credentials, private responses, and personal paths.
+          required: true
+        - label: I confirmed this is not a privately reportable security vulnerability.
+          required: true

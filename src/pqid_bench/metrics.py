@@ -7,10 +7,9 @@ import hashlib
 import json
 from dataclasses import asdict, dataclass
 from pathlib import Path
-from typing import Any, Iterable, Mapping
+from typing import Any, Iterable, Mapping, Sequence
 
 from .version import version_record
-
 
 CANONICAL_COUNTS = {
     "cells": 3234,
@@ -352,7 +351,7 @@ def _load_identifiable_exclusions(release_dir: Path) -> tuple[str, ...]:
 
 
 def _with_identifiable_summary(
-    rows: list[Mapping[str, Any]],
+    rows: Sequence[Mapping[str, Any]],
     *,
     excluded_prompt_ids: tuple[str, ...],
 ) -> BenchmarkSummary:

@@ -33,6 +33,7 @@ Python, and it requires a separate code-execution acknowledgement.
 | Print a readable report or export to R/pandas | [Reporting And Numerical Exports](user-manual/reporting-and-exports.md) |
 | Explore the frozen results interactively | [Interactive Explorer](INTERACTIVE_EXPLORER.md) |
 | Use the importable Python interface | [Python API](user-manual/python-api.md) |
+| Run small end-to-end Python examples | [Worked Examples](EXAMPLES.md) |
 | Prepare or inspect JSON/JSONL records | [Data Dictionary](user-manual/data-dictionary.md) |
 | Understand ES-Gap, AS-Gap, and related metrics | [Metrics And Invariants](user-manual/metrics-and-invariants.md) |
 | Follow an end-to-end task | [Workflows](user-manual/workflows.md) |
@@ -59,6 +60,11 @@ The following documents have narrower purposes:
   notes](RELEASE_NOTES_v1.0.0.md) remain the scientific freeze record.
 - [Package Paper Blueprint](PACKAGE_PAPER_BLUEPRINT.md) separates a future
   software paper from both this manual and the benchmark-results paper.
+- The repository-level
+  [changelog](https://github.com/Elias-Abebe-Gasparini/PQID-Bench/blob/main/CHANGELOG.md)
+  separates software evolution from the frozen benchmark release, while the
+  [contribution guide](https://github.com/Elias-Abebe-Gasparini/PQID-Bench/blob/main/CONTRIBUTING.md)
+  defines the scientific freeze boundary for proposed changes.
 
 ## Ecosystem Boundaries
 

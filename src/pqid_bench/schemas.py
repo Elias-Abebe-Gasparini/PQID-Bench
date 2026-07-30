@@ -6,7 +6,6 @@ import json
 from importlib.resources import files
 from typing import Any
 
-
 SCHEMA_NAMES = (
     "benchmark-record",
     "prompt",

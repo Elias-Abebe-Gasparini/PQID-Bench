@@ -1,0 +1,10 @@
+[run]
+branch = True
+source = pqid_bench
+
+[report]
+exclude_also =
+    if TYPE_CHECKING:
+    if __name__ == .__main__.:
+show_missing = True
+skip_covered = True

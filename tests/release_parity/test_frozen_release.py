@@ -9,7 +9,6 @@ from pqid_bench.metrics import (
     validate_repeatability,
 )
 
-
 RELEASE = Path(__file__).resolve().parents[2]
 
 

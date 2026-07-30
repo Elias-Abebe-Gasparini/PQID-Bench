@@ -188,6 +188,7 @@ def replay_plan(
         if build_image
         else None
     )
+    response_mount: tuple[str, ...]
     try:
         release_response = response_file.relative_to(release_dir)
     except ValueError:

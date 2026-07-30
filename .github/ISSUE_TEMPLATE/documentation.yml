@@ -1,0 +1,39 @@
+name: Documentation improvement
+description: Report an unclear, missing, or inconsistent manual or example.
+title: "[Docs]: "
+labels:
+  - documentation
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Page or section
+      description: Provide the documentation URL or repository path.
+      placeholder: "docs/user-manual/live-model-testing.md"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is unclear or missing?
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed improvement
+      description: Describe the information, example, or cross-reference that would resolve the issue.
+    validations:
+      required: true
+  - type: dropdown
+    id: audience
+    attributes:
+      label: Primary audience
+      options:
+        - First-time user
+        - Benchmark reproducer
+        - External-model evaluator
+        - Package developer
+        - Reviewer or artifact evaluator
+    validations:
+      required: true

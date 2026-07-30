@@ -5,7 +5,7 @@ from __future__ import annotations
 import csv
 import io
 import json
-from collections.abc import Mapping
+from collections.abc import Mapping, Sequence
 from dataclasses import dataclass
 from typing import TYPE_CHECKING, Any
 
@@ -272,7 +272,7 @@ def _decimal(value: float | None) -> str:
 
 def _ascii_table(
     headers: tuple[str, ...],
-    rows: list[tuple[str, ...]],
+    rows: Sequence[Sequence[str]],
     *,
     right_aligned: set[int] | None = None,
 ) -> str:
@@ -282,7 +282,7 @@ def _ascii_table(
         for index in range(len(headers))
     ]
 
-    def render_row(row: tuple[str, ...]) -> str:
+    def render_row(row: Sequence[str]) -> str:
         cells = []
         for index, value in enumerate(row):
             if index in right_aligned:

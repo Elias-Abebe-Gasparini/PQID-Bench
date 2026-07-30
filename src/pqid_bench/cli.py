@@ -8,6 +8,7 @@ import json
 import platform
 import shutil
 import sys
+from collections.abc import Mapping
 from pathlib import Path
 from typing import Any
 
@@ -165,7 +166,7 @@ def _live_config(args: argparse.Namespace) -> LiveRunConfig:
     )
 
 
-def _print_live_progress(event: dict[str, Any]) -> None:
+def _print_live_progress(event: Mapping[str, Any]) -> None:
     event_type = event.get("event")
     if event_type == "run_started":
         print(
@@ -218,7 +219,7 @@ def command_run_model(args: argparse.Namespace) -> int:
 
 
 def command_doctor(_: argparse.Namespace) -> int:
-    packages = {}
+    packages: dict[str, str | None] = {}
     for name in ("qiskit", "qiskit-aer", "jsonschema", "plotly"):
         try:
             packages[name] = importlib.metadata.version(name)

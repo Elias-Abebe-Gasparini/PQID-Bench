@@ -24,6 +24,7 @@ theme:
 nav:
   - Home: index.md
   - Interactive Explorer: INTERACTIVE_EXPLORER.md
+  - Worked Examples: EXAMPLES.md
   - User Manual:
       - Manual Map: user-manual/index.md
       - Installation: user-manual/installation.md
