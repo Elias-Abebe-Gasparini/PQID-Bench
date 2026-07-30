@@ -2,7 +2,7 @@
 
 **A validation-aware benchmark suite for quantum-program generation**
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21649753.svg)](https://doi.org/10.5281/zenodo.21649753)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21649753-1682D4?logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.21649753)
 [![PyPI](https://img.shields.io/pypi/v/pqid-bench.svg)](https://pypi.org/project/pqid-bench/)
 [![Python](https://img.shields.io/pypi/pyversions/pqid-bench.svg)](https://pypi.org/project/pqid-bench/)
 [![GHCR](https://img.shields.io/badge/GHCR-evaluator_1.0.0-2496ed.svg?logo=docker&logoColor=white)](https://github.com/Elias-Abebe-Gasparini/PQID-Bench/pkgs/container/pqid-bench-evaluator)
