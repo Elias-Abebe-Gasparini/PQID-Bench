@@ -1,9 +1,10 @@
 # PQID-Bench v1.0.0 Publishing Checklist
 
-Release protocol: the source remains an untagged **release candidate** until
-the DOI-complete commit and required public surfaces have been verified
-against the final local checksums. The immutable `v1.0.0` tag promotes those
-exact bytes to the first frozen public release.
+This document records the release protocol used for the published, frozen
+PQID-Bench v1.0.0 evidence object and the reusable checks for later software
+releases. The `v1.0.0` benchmark tag and DOI are now public; unchecked items
+remain verification prompts rather than statements that publication is
+pending.
 
 The local package is the single source for GitHub, Zenodo, and the Hugging
 Face Dataset. The underlying PQID dataset remains a separate immutable release
@@ -69,6 +70,17 @@ Repository:
 - [ ] Confirm GitHub recognizes `CITATION.cff`.
 - [ ] Do not create `v1.0.0` until the benchmark DOI has been reserved and
       embedded in every required surface.
+
+Repository presentation:
+
+- [ ] Set the repository homepage to the public documentation site.
+- [ ] Apply the curated quantum-computing, benchmarking, evaluation, and
+      reproducibility topics.
+- [ ] Upload `.github/assets/pqid-bench-social-preview.png` under **Settings >
+      General > Social preview**.
+- [ ] Confirm the CI, DOI, PyPI, Python, GHCR, and documentation badges render.
+- [ ] Confirm GitHub recognizes the contribution, conduct, security, support,
+      issue-template, and pull-request-template files.
 
 ## 3. Zenodo DOI Reservation and Final Freeze
 

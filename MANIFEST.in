@@ -1,10 +1,20 @@
 include README.md
+include CHANGELOG.md
+include CODE_OF_CONDUCT.md
+include CONTRIBUTING.md
+include SECURITY.md
+include SUPPORT.md
 include pyproject.toml
 include mkdocs.yml
+include mypy.ini
+include ruff.toml
+include .coveragerc
 include LICENSES/MIT.txt
+recursive-include examples *.py *.md
 recursive-include docs *.md
 include requirements/evaluator-container.txt
 include requirements/package-runtime.txt
+include requirements/quality.txt
 recursive-include sbom *.json *.md
 recursive-include src/pqid_bench/schemas *.schema.json
 recursive-include tests *.py *.md

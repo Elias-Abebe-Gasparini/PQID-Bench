@@ -28,7 +28,9 @@ EXPECTED_REPEATABILITY_CELLS = 4_536
 
 IGNORED_PARTS = {
     ".git",
+    ".mypy_cache",
     ".pytest_cache",
+    ".quality",
     ".ruff_cache",
     "__pycache__",
     ".ipynb_checkpoints",
@@ -36,8 +38,12 @@ IGNORED_PARTS = {
     "dist",
     "site",
 }
+IGNORED_FILES = {".coverage", "coverage.xml"}
 IGNORED_SUFFIXES = {".pyc", ".pyo", ".tmp"}
-GENERATED_PREFIXES = {("docs", "interactive")}
+GENERATED_PREFIXES = {
+    (".github", "assets"),
+    ("docs", "interactive"),
+}
 FORBIDDEN_RELEASE_PATHS = {
     "MANUSCRIPT_ACM_TABLES_COPY_READY.md",
     "MANUSCRIPT_ACM_TEXT_ONLY_PASTE_READY.md",
@@ -114,6 +120,8 @@ def public_files() -> list[Path]:
         ):
             continue
         if path.suffix.lower() in IGNORED_SUFFIXES:
+            continue
+        if path.name in IGNORED_FILES:
             continue
         if tuple(relative.parts[:2]) in GENERATED_PREFIXES:
             continue

@@ -1,0 +1,54 @@
+name: Evidence or evaluator integrity
+description: Report a possible denominator, artifact, evaluator, predicate, or provenance inconsistency.
+title: "[Integrity]: "
+labels:
+  - research-integrity
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this public form only when disclosure does not expose credentials, private data, or a security vulnerability.
+        The benchmark freeze will never be silently altered in response to a report.
+  - type: dropdown
+    id: object
+    attributes:
+      label: Affected object
+      options:
+        - Split or prompt denominator
+        - Frozen response or provider trace
+        - Evaluator behavior
+        - Structural predicate
+        - Reported metric or table
+        - Artifact hash or manifest
+        - Provenance or licensing
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: artifact
+    attributes:
+      label: Artifact path or identifier
+      placeholder: "artifacts/analysis_154/... or DOI/version"
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: State the observed inconsistency and the independent check that revealed it.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Possible scientific impact
+      description: Identify the affected estimand, denominator, claim, or reproducibility contract.
+    validations:
+      required: true
+  - type: checkboxes
+    id: disclosure
+    attributes:
+      label: Disclosure check
+      options:
+        - label: This report contains no credentials, private data, or security-sensitive reproduction.
+          required: true

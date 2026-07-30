@@ -10,7 +10,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
-from collections.abc import Callable, Mapping
+from collections.abc import Callable, Mapping, Sequence
 from dataclasses import dataclass, field
 from datetime import UTC, datetime
 from pathlib import Path
@@ -403,7 +403,7 @@ def _atomic_write_json(path: Path, payload: Mapping[str, Any]) -> None:
     )
 
 
-def _atomic_write_jsonl(path: Path, rows: list[Mapping[str, Any]]) -> None:
+def _atomic_write_jsonl(path: Path, rows: Sequence[Mapping[str, Any]]) -> None:
     payload = b"".join(_canonical_bytes(row) + b"\n" for row in rows)
     _atomic_write_bytes(path, payload)
 
@@ -1238,12 +1238,12 @@ def run_live_model(
                 break
             except ProviderTransportError as exc:
                 completed_at = _utc_now()
-                raw_path: Path | None = None
-                raw_sha256: str | None = None
+                error_raw_path: Path | None = None
+                error_raw_sha256: str | None = None
                 if exc.raw_body:
-                    raw_path = _raw_path(output_dir, prompt_id, attempt_index)
-                    _atomic_write_bytes(raw_path, exc.raw_body)
-                    raw_sha256 = sha256_file(raw_path)
+                    error_raw_path = _raw_path(output_dir, prompt_id, attempt_index)
+                    _atomic_write_bytes(error_raw_path, exc.raw_body)
+                    error_raw_sha256 = sha256_file(error_raw_path)
                 attempt = ProviderAttempt(
                     attempt_id=attempt_id,
                     run_id=run_id,
@@ -1255,11 +1255,11 @@ def run_live_model(
                     request_sha256=str(request["request_sha256"]),
                     response_text=None,
                     raw_response_path=(
-                        _relative(raw_path, output_dir)
-                        if raw_path is not None
+                        _relative(error_raw_path, output_dir)
+                        if error_raw_path is not None
                         else None
                     ),
-                    raw_response_sha256=raw_sha256,
+                    raw_response_sha256=error_raw_sha256,
                     provider_request_id=None,
                     finish_reason=None,
                     status="error",
@@ -1301,8 +1301,8 @@ def run_live_model(
                     request,
                     provider=provider,
                     error=exc,
-                    raw_path=raw_path,
-                    raw_sha256=raw_sha256,
+                    raw_path=error_raw_path,
+                    raw_sha256=error_raw_sha256,
                     output_dir=output_dir,
                     completed_at=completed_at,
                     attempt_count=len(attempts),

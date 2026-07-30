@@ -427,7 +427,7 @@ def _figures(data: DashboardData) -> list[tuple[str, str, Any]]:
     providers: dict[str, list[dict[str, Any]]] = {}
     for row in data.models:
         providers.setdefault(str(row["provider"]), []).append(row)
-    provider_rows = []
+    provider_rows: list[dict[str, Any]] = []
     for provider, rows in providers.items():
         provider_rows.append(
             {
@@ -439,7 +439,9 @@ def _figures(data: DashboardData) -> list[tuple[str, str, Any]]:
                 / len(rows),
             }
         )
-    provider_rows.sort(key=lambda row: (-row["signature"], row["provider"]))
+    provider_rows.sort(
+        key=lambda row: (-float(row["signature"]), str(row["provider"]))
+    )
     provider = go.Figure()
     for key, label, color in (
         ("execution", "Execution", "#13756d"),

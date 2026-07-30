@@ -5,7 +5,6 @@ from pathlib import Path
 
 from pqid_bench.metrics import iter_jsonl, prepare_comparison, reproduce_release
 
-
 RELEASE = Path(__file__).resolve().parents[2]
 
 

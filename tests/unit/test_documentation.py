@@ -9,7 +9,6 @@ from urllib.parse import unquote
 
 from pqid_bench.cli import parser
 
-
 ROOT = Path(__file__).resolve().parents[2]
 DOCS = ROOT / "docs"
 MANUAL = DOCS / "user-manual"

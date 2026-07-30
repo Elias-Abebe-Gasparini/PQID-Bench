@@ -102,7 +102,9 @@ PUBLIC_PREREGISTRATION_DIRS = (
 
 IGNORED_PARTS = {
     ".git",
+    ".mypy_cache",
     ".pytest_cache",
+    ".quality",
     ".ruff_cache",
     "__pycache__",
     ".ipynb_checkpoints",
@@ -110,13 +112,17 @@ IGNORED_PARTS = {
     "dist",
     "site",
 }
+IGNORED_FILES = {".coverage", "coverage.xml"}
 
 IGNORED_SUFFIXES = {
     ".pyc",
     ".pyo",
     ".tmp",
 }
-GENERATED_PREFIXES = {("docs", "interactive")}
+GENERATED_PREFIXES = {
+    (".github", "assets"),
+    ("docs", "interactive"),
+}
 
 
 def sha256(path: Path) -> str:
@@ -378,6 +384,8 @@ def public_files() -> list[Path]:
         ):
             continue
         if path.suffix.lower() in IGNORED_SUFFIXES:
+            continue
+        if path.name in IGNORED_FILES:
             continue
         if tuple(relative.parts[:2]) in GENERATED_PREFIXES:
             continue

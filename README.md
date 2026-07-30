@@ -5,6 +5,7 @@
 [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.21649753-1682D4?logo=zenodo&logoColor=white)](https://doi.org/10.5281/zenodo.21649753)
 [![PyPI](https://img.shields.io/pypi/v/pqid-bench.svg)](https://pypi.org/project/pqid-bench/)
 [![Python](https://img.shields.io/pypi/pyversions/pqid-bench.svg)](https://pypi.org/project/pqid-bench/)
+[![CI](https://github.com/Elias-Abebe-Gasparini/PQID-Bench/actions/workflows/ci.yml/badge.svg)](https://github.com/Elias-Abebe-Gasparini/PQID-Bench/actions/workflows/ci.yml)
 [![GHCR](https://img.shields.io/badge/GHCR-evaluator_1.0.0-2496ed.svg?logo=docker&logoColor=white)](https://github.com/Elias-Abebe-Gasparini/PQID-Bench/pkgs/container/pqid-bench-evaluator)
 [![Documentation](https://img.shields.io/badge/docs-interactive-13756d.svg)](https://elias-abebe-gasparini.github.io/PQID-Bench/)
 
@@ -46,6 +47,24 @@ artifacts; it is not part of scoring.
 The clean generation population is partitioned deterministically into `514`
 training, `66` validation, and `154` held-out test prompts. The primary external
 model comparison uses only the frozen test split.
+
+## 60-Second Reproduction
+
+Clone the evidence repository, install the published toolkit, and reproduce the
+headline matrix without contacting a provider or executing generated code:
+
+```bash
+git clone https://github.com/Elias-Abebe-Gasparini/PQID-Bench.git
+cd PQID-Bench
+python -m pip install "pqid-bench==1.1.0"
+pqid-bench verify . --full
+pqid-bench reproduce --release-dir . --format text
+```
+
+Expected anchors are `21` models, `154` prompts, `3,234` cells, `91.22%`
+execution, `91.03%` assembly admissibility, and `52.66%` signature recovery.
+See the [worked examples](docs/EXAMPLES.md) for the importable API, dashboard,
+and outcome-blind live-run planning.
 
 The primary reference-signature predicate compares qubit count, classical-bit
 count, and the complete evaluator-visible operation-type count map. Equality of
@@ -104,6 +123,7 @@ the prespecified `150`-prompt identifiability sensitivity analysis.
 | `artifacts/analysis_154/` | final matrix, inference, robustness, identifiability, and replay audits |
 | `artifacts/stochastic_repeatability_21x72/` | preregistered sequential repeatability design and consolidated three-run audit |
 | `docs/` | complete user manual, reviewer guide, contracts, and release documentation |
+| `examples/` | runnable offline reproduction, dashboard, and request-planning examples |
 | `scripts/` | evaluator, analysis, validation, and figure/table builders |
 
 `ARTIFACT_MANIFEST.tsv` records the byte size and SHA-256 digest of every
@@ -208,7 +228,10 @@ Start with:
 - [complete user manual](docs/user-manual/index.md);
 - [reviewer quickstart](docs/REVIEWER_QUICKSTART.md);
 - [data dictionary](docs/user-manual/data-dictionary.md);
+- [worked examples](docs/EXAMPLES.md);
 - [software-paper blueprint](docs/PACKAGE_PAPER_BLUEPRINT.md);
+- [software changelog](CHANGELOG.md);
+- [contribution guide](CONTRIBUTING.md);
 - [reproducibility artifact map](REPRODUCIBILITY_ARTIFACTS.md).
 
 The public evidence release deliberately excludes unpublished manuscript,
