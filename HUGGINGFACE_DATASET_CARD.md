@@ -143,6 +143,7 @@ print(dataset["full"])
 - Documentation: <https://elias-abebe-gasparini.github.io/PQID-Bench/>
 - Interactive explorer: <https://elias-abebe-gasparini.github.io/PQID-Bench/interactive/overview.html>
 - Python package: <https://pypi.org/project/pqid-bench/>
+- Evaluator container: <https://github.com/Elias-Abebe-Gasparini/PQID-Bench/pkgs/container/pqid-bench-evaluator>
 - PQID-Bench v1.0.0 archive: <https://doi.org/10.5281/zenodo.21649753>
 - Underlying PQID v1.0.2 DOI: <https://doi.org/10.5281/zenodo.20674853>
 - Stable PQID dataset concept DOI: <https://doi.org/10.5281/zenodo.20019482>

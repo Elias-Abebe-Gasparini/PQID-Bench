@@ -6,10 +6,13 @@ import unittest
 from pathlib import Path
 
 from pqid_bench.visualization import (
+    benchmark_split_svg,
     build_dashboard,
     ecosystem_flow_svg,
+    endpoint_rates_svg,
     load_dashboard_data,
     measurement_ladder_svg,
+    write_site_assets,
 )
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -40,11 +43,15 @@ class VisualizationContractTests(unittest.TestCase):
     def test_static_fallbacks_are_accessible_svg(self) -> None:
         workflow = ecosystem_flow_svg()
         ladder = measurement_ladder_svg(self.data.summary)
-        for document in (workflow, ladder):
+        split = benchmark_split_svg()
+        endpoints = endpoint_rates_svg(self.data.summary)
+        for document in (workflow, ladder, split, endpoints):
             self.assertTrue(document.startswith("<svg"))
             self.assertIn("<title", document)
             self.assertIn("<desc", document)
             self.assertIn('role="img"', document)
+        self.assertIn("514 training", split)
+        self.assertIn("91.22%", endpoints)
 
     @unittest.skipUnless(PLOTLY_AVAILABLE, "Plotly optional dependency not installed")
     def test_standalone_dashboard_generation(self) -> None:
@@ -59,6 +66,21 @@ class VisualizationContractTests(unittest.TestCase):
             self.assertIn('class="plot-wrap plot-models"', rendered)
             self.assertIn("Scroll horizontally to inspect", rendered)
             self.assertIn('id="data-table"', rendered)
+
+    @unittest.skipUnless(PLOTLY_AVAILABLE, "Plotly optional dependency not installed")
+    def test_site_builder_writes_all_static_overview_assets(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "interactive"
+            write_site_assets(ROOT, output, plotlyjs="cdn")
+            for name in (
+                "ecosystem-flow.svg",
+                "measurement-ladder.svg",
+                "benchmark-split.svg",
+                "endpoint-rates.svg",
+            ):
+                path = output / "assets" / name
+                self.assertTrue(path.is_file(), name)
+                self.assertIn("<title", path.read_text(encoding="utf-8"))
 
 
 if __name__ == "__main__":

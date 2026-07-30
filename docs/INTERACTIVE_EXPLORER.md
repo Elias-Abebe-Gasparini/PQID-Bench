@@ -25,6 +25,18 @@ model-response collection, isolated Docker replay, numerical reports, and
 interactive presentation. The explorer is the final presentation layer; it
 does not sit inside the scoring path.
 
+## Static Overview Charts
+
+Two repository-facing charts summarize the object of study without requiring
+JavaScript:
+
+- [frozen train, validation, and test composition](https://elias-abebe-gasparini.github.io/PQID-Bench/interactive/assets/benchmark-split.svg);
+- [operational and structural endpoint rates](https://elias-abebe-gasparini.github.io/PQID-Bench/interactive/assets/endpoint-rates.svg).
+
+Both charts are generated from the released split files and frozen evaluation
+summary during the Pages build. They are explanatory views, not separately
+maintained result files.
+
 ## Generate A Local Report
 
 Install the optional visualization dependency:

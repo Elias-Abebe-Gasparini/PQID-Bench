@@ -5,6 +5,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21649753.svg)](https://doi.org/10.5281/zenodo.21649753)
 [![PyPI](https://img.shields.io/pypi/v/pqid-bench.svg)](https://pypi.org/project/pqid-bench/)
 [![Python](https://img.shields.io/pypi/pyversions/pqid-bench.svg)](https://pypi.org/project/pqid-bench/)
+[![GHCR](https://img.shields.io/badge/GHCR-evaluator_1.0.0-2496ed.svg?logo=docker&logoColor=white)](https://github.com/Elias-Abebe-Gasparini/PQID-Bench/pkgs/container/pqid-bench-evaluator)
 [![Documentation](https://img.shields.io/badge/docs-interactive-13756d.svg)](https://elias-abebe-gasparini.github.io/PQID-Bench/)
 
 - Benchmark release: `v1.0.0`
@@ -40,6 +41,12 @@ artifacts; it is not part of scoring.
 | retrieval-copy baselines | 3 |
 | stochastic-repeatability panel | 72 unique signatures x 21 models x 3 runs |
 
+[![PQID-Bench frozen split composition](https://elias-abebe-gasparini.github.io/PQID-Bench/interactive/assets/benchmark-split.svg)](https://elias-abebe-gasparini.github.io/PQID-Bench/interactive/overview.html)
+
+The clean generation population is partitioned deterministically into `514`
+training, `66` validation, and `154` held-out test prompts. The primary external
+model comparison uses only the frozen test split.
+
 The primary reference-signature predicate compares qubit count, classical-bit
 count, and the complete evaluator-visible operation-type count map. Equality of
 that map implies scalar counted-operation equality under the frozen convention,
@@ -71,6 +78,12 @@ Pages and does not contact model providers or execute generated code.
 | identifiable-subset structural-hallucination rate | 1,187 / 2,890 | 41.07% |
 | ordered operation-and-operand recovery | 1,576 / 3,234 | 48.73% |
 | parameter-aware recovery | 1,545 / 3,234 | 47.77% |
+
+[![PQID-Bench endpoint rates](https://elias-abebe-gasparini.github.io/PQID-Bench/interactive/assets/endpoint-rates.svg)](https://elias-abebe-gasparini.github.io/PQID-Bench/interactive/overview.html)
+
+The bar chart makes the study object visible at a glance: operational
+admissibility remains above `91%`, whereas every frozen structural-recovery
+endpoint remains below `53%`.
 
 Only six cells are lost from execution to assembly admissibility. On the
 frozen panel, the AS-Gap is the assembly-admissible subset of the ES-Gap and
@@ -127,6 +140,19 @@ The dependency-free package core and archived-analysis workflows are tested on
 Python 3.11--3.14. The optional replay container retains the frozen Python 3.13,
 Qiskit 2.1.1, Qiskit Aer 0.17.0, and python-dateutil 2.9.0.post0 environment
 used by the evaluator audit.
+
+### GitHub evaluator package
+
+GitHub Packages hosts the pinned evaluator runtime as an OCI image:
+
+```bash
+docker pull ghcr.io/elias-abebe-gasparini/pqid-bench-evaluator:1.0.0
+```
+
+The GHCR image is the isolated execution environment used by
+`pqid-bench replay`; it is not another Python distribution and does not change
+the frozen benchmark version. The importable Python toolkit remains
+authoritative on PyPI.
 
 Install the toolkit from a checkout or wheel:
 
@@ -217,6 +243,7 @@ python scripts/build_pqid_bench_public_release.py --archive
 - Documentation: <https://elias-abebe-gasparini.github.io/PQID-Bench/>
 - Interactive explorer: <https://elias-abebe-gasparini.github.io/PQID-Bench/interactive/overview.html>
 - Python package: <https://pypi.org/project/pqid-bench/>
+- Evaluator container: <https://github.com/Elias-Abebe-Gasparini/PQID-Bench/pkgs/container/pqid-bench-evaluator>
 - PQID-Bench v1.0.0 archive: <https://doi.org/10.5281/zenodo.21649753>
 - Hugging Face Dataset: <https://huggingface.co/datasets/Elias-Abebe-Gasparini/PQID-Bench>
 - Source PQID dataset v1.0.2: <https://doi.org/10.5281/zenodo.20674853>

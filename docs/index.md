@@ -103,8 +103,9 @@ These identifiers describe different contracts. A change to one must not be
 reported as though every other dimension changed with it. The replay container
 currently has local image ID
 `sha256:849bf53e449fd618633199c0b622abeca270591dff248cd0bf3a0fd461abf2e2`.
-Its OCI registry manifest digest remains pending until publication and must not
-be inferred from the local image ID.
+It is published separately from the Python toolkit as
+[`ghcr.io/elias-abebe-gasparini/pqid-bench-evaluator:1.0.0`](https://github.com/Elias-Abebe-Gasparini/PQID-Bench/pkgs/container/pqid-bench-evaluator).
+Its OCI registry manifest digest must not be inferred from the local image ID.
 
 ## Documentation Site
 

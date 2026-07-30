@@ -5,6 +5,7 @@ from __future__ import annotations
 import csv
 import html
 import json
+import math
 from collections import Counter
 from dataclasses import dataclass
 from pathlib import Path
@@ -843,6 +844,140 @@ def measurement_ladder_svg(summary: dict[str, Any]) -> str:
     )
 
 
+def benchmark_split_svg(
+    *,
+    train: int = 514,
+    validation: int = 66,
+    test: int = 154,
+) -> str:
+    """Return an accessible pie chart for the frozen benchmark split."""
+
+    segments = (
+        ("Train", train, "#7cc5e8"),
+        ("Validation", validation, "#f2c86b"),
+        ("Test", test, "#80c58a"),
+    )
+    total = sum(count for _, count, _ in segments)
+    if total <= 0 or any(count < 0 for _, count, _ in segments):
+        raise ValueError("Split counts must be nonnegative with a positive total")
+
+    center_x = 300
+    center_y = 215
+    radius = 145
+    angle = -math.pi / 2
+    slices = []
+    legend = []
+    for index, (label, count, fill) in enumerate(segments):
+        next_angle = angle + (2 * math.pi * count / total)
+        x1 = center_x + radius * math.cos(angle)
+        y1 = center_y + radius * math.sin(angle)
+        x2 = center_x + radius * math.cos(next_angle)
+        y2 = center_y + radius * math.sin(next_angle)
+        large_arc = 1 if next_angle - angle > math.pi else 0
+        slices.append(
+            f'<path d="M {center_x} {center_y} L {x1:.3f} {y1:.3f} '
+            f'A {radius} {radius} 0 {large_arc} 1 {x2:.3f} {y2:.3f} Z" '
+            f'fill="{fill}" stroke="#ffffff" stroke-width="3"/>'
+        )
+        legend_y = 132 + index * 78
+        percentage = 100 * count / total
+        legend.append(
+            f'<rect x="620" y="{legend_y - 19}" width="28" height="28" rx="3" '
+            f'fill="{fill}" stroke="#111111" stroke-width="1.5"/>'
+            f'<text x="668" y="{legend_y}" font-size="20" font-weight="700">'
+            f'{html.escape(label)}</text>'
+            f'<text x="668" y="{legend_y + 25}" font-size="16">'
+            f'{count:,} prompts ({percentage:.1f}%)</text>'
+        )
+        angle = next_angle
+
+    return (
+        '<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" '
+        'viewBox="0 0 1200 420" role="img" '
+        'aria-labelledby="title description">'
+        '<title id="title">PQID-Bench frozen split composition</title>'
+        f'<desc id="description">The {total}-prompt clean generation population '
+        f'contains {train} training, {validation} validation, and {test} test '
+        'prompts.</desc>'
+        '<rect width="1200" height="420" fill="#ffffff"/>'
+        '<g font-family="Arial, Helvetica, sans-serif" fill="#171717">'
+        '<text x="25" y="34" font-size="20" font-weight="700">Frozen benchmark '
+        'composition</text>'
+        f'{"".join(slices)}'
+        f'<circle cx="{center_x}" cy="{center_y}" r="{radius}" fill="none" '
+        'stroke="#111111" stroke-width="2"/>'
+        f'{"".join(legend)}'
+        f'<text x="620" y="370" font-size="17" font-weight="700">N = {total:,}'
+        '</text>'
+        '<text x="620" y="394" font-size="15">Deterministic, signature-aware '
+        'partition</text>'
+        '</g></svg>'
+    )
+
+
+def endpoint_rates_svg(summary: dict[str, Any]) -> str:
+    """Return an accessible horizontal bar chart for the five endpoints."""
+
+    cells = int(summary["cells"])
+    if cells <= 0:
+        raise ValueError("The endpoint denominator must be positive")
+    endpoints = (
+        ("Python execution (E)", int(summary["execution_count"]), "#7cc5e8"),
+        ("Assembly admissibility (A)", int(summary["assembly_count"]), "#63c7bb"),
+        ("Signature recovery (M sig)", int(summary["signature_count"]), "#ef9a9a"),
+        ("Ordered recovery (M ord)", int(summary["ordered_count"]), "#b9a5e3"),
+        ("Parameter recovery (M par)", int(summary["parameter_count"]), "#80c58a"),
+    )
+    plot_x = 310
+    plot_width = 800
+    plot_top = 82
+    row_gap = 61
+    bar_height = 34
+
+    grid = []
+    for tick in (0, 25, 50, 75, 100):
+        x = plot_x + plot_width * tick / 100
+        grid.append(
+            f'<line x1="{x:.1f}" y1="58" x2="{x:.1f}" y2="370" '
+            'stroke="#d1d5db" stroke-width="1"/>'
+            f'<text x="{x:.1f}" y="397" text-anchor="middle" '
+            f'font-size="14">{tick}</text>'
+        )
+
+    bars = []
+    for index, (label, count, fill) in enumerate(endpoints):
+        rate = 100 * count / cells
+        y = plot_top + index * row_gap
+        width = plot_width * rate / 100
+        bars.append(
+            f'<text x="{plot_x - 18}" y="{y + 24}" text-anchor="end" '
+            f'font-size="17">{html.escape(label)}</text>'
+            f'<rect x="{plot_x}" y="{y}" width="{width:.2f}" '
+            f'height="{bar_height}" rx="3" fill="{fill}" '
+            'stroke="#111111" stroke-width="1.5"/>'
+            f'<text x="{plot_x + width + 12:.2f}" y="{y + 24}" '
+            f'font-size="17" font-weight="700">{rate:.2f}%</text>'
+        )
+
+    return (
+        '<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="425" '
+        'viewBox="0 0 1200 425" role="img" '
+        'aria-labelledby="title description">'
+        '<title id="title">PQID-Bench endpoint rates</title>'
+        '<desc id="description">Operational admissibility remains above '
+        'ninety-one percent, while increasingly strict structural recovery '
+        'ranges from approximately forty-eight to fifty-three percent.</desc>'
+        '<rect width="1200" height="425" fill="#ffffff"/>'
+        '<g font-family="Arial, Helvetica, sans-serif" fill="#171717">'
+        '<text x="25" y="30" font-size="20" font-weight="700">Operational '
+        'admissibility versus structural recovery</text>'
+        f'{"".join(grid)}{"".join(bars)}'
+        '<text x="710" y="420" text-anchor="middle" font-size="14">'
+        'Rate across 3,234 frozen model-prompt cells (%)</text>'
+        '</g></svg>'
+    )
+
+
 def write_site_assets(
     release_dir: Path,
     output_dir: Path,
@@ -865,6 +1000,25 @@ def write_site_assets(
     )
     (assets / "measurement-ladder.svg").write_text(
         measurement_ladder_svg(data.summary),
+        encoding="utf-8",
+    )
+    split_root = Path(release_dir).resolve() / "data" / "splits"
+    split_counts = {
+        name: sum(
+            1
+            for line in (split_root / f"{name}.jsonl")
+            .read_text(encoding="utf-8")
+            .splitlines()
+            if line.strip()
+        )
+        for name in ("train", "validation", "test")
+    }
+    (assets / "benchmark-split.svg").write_text(
+        benchmark_split_svg(**split_counts),
+        encoding="utf-8",
+    )
+    (assets / "endpoint-rates.svg").write_text(
+        endpoint_rates_svg(data.summary),
         encoding="utf-8",
     )
     (output_dir / "dashboard-data.json").write_text(

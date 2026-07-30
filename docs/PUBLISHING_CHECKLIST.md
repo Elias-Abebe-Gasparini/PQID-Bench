@@ -139,7 +139,9 @@ python ".\platforms\huggingface_dataset\upload_dataset.py" --publish
       `releases/docker/final-pre-doi/container-image-metadata.json`. The
       validated image contains no DOI-bearing metadata and therefore does not
       require a binary rebuild after DOI reservation.
-- [ ] Publish `pqid-bench-evaluator:1.0.0` to the selected OCI registry.
+- [ ] Publish
+      `ghcr.io/elias-abebe-gasparini/pqid-bench-evaluator:1.0.0` through
+      `.github/workflows/publish-ghcr.yml`.
 - [ ] Record the immutable OCI registry manifest digest separately from the
   local Docker image ID and archive SHA-256.
 - [ ] Verify that the published image encapsulates evaluator
