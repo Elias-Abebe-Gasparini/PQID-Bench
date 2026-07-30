@@ -19,6 +19,7 @@ class RepositoryContractTests(unittest.TestCase):
             "SUPPORT.md",
             ".github/dependabot.yml",
             ".github/pull_request_template.md",
+            ".github/workflows/release-metadata.yml",
         )
         for relative in required:
             with self.subTest(path=relative):

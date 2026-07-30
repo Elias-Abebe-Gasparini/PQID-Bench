@@ -1,0 +1,77 @@
+name: Synchronize Python release metadata
+
+on:
+  workflow_run:
+    workflows: ["Python package CI"]
+    types: [completed]
+
+permissions:
+  contents: write
+
+jobs:
+  release-metadata:
+    if: >-
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.head_branch == 'main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.workflow_run.head_sha }}
+          persist-credentials: false
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+
+      - name: Resolve package release
+        id: release
+        shell: bash
+        run: |
+          version="$(python -c 'import pathlib, tomllib; print(tomllib.loads(pathlib.Path("pyproject.toml").read_text())["project"]["version"])')"
+          tag="python-v${version}"
+          notes="docs/RELEASE_NOTES_v${version}.md"
+          test -f "$notes"
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+          echo "notes=$notes" >> "$GITHUB_OUTPUT"
+
+      - name: Check tag and release
+        id: state
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.release.outputs.tag }}
+        shell: bash
+        run: |
+          if git ls-remote --exit-code --tags origin "refs/tags/${TAG}" >/dev/null; then
+            echo "tag_exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "tag_exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            echo "release_exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "release_exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Create missing release page
+        if: >-
+          steps.state.outputs.tag_exists == 'true' &&
+          steps.state.outputs.release_exists == 'false'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.release.outputs.tag }}
+          VERSION: ${{ steps.release.outputs.version }}
+          NOTES: ${{ steps.release.outputs.notes }}
+        run: >-
+          gh release create "$TAG"
+          --verify-tag
+          --title "pqid-bench ${VERSION}"
+          --notes-file "$NOTES"
+
+      - name: Report unpublished package state
+        if: steps.state.outputs.tag_exists == 'false'
+        env:
+          TAG: ${{ steps.release.outputs.tag }}
+        run: echo "No ${TAG} tag exists; release synchronization is not applicable."
