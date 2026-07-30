@@ -4,7 +4,7 @@
 
 ```text
 pqid-bench [-h] [--version]
-           {doctor,verify,reproduce,evaluate,compare,dashboard,run-model,replay} ...
+           {doctor,download,verify,reproduce,evaluate,compare,dashboard,run-model,replay} ...
 ```
 
 The global `--version` option shows the installed package version:
@@ -68,6 +68,56 @@ Docker or optional-package absence does not make `doctor` fail.
 
 `0` after producing the environment report.
 
+## `download`
+
+### Purpose
+
+Downloads the compact PQID-Bench benchmark-user distribution, authenticates
+the ZIP against a pinned SHA-256 digest, extracts it safely, and verifies its
+internal artifact manifest.
+
+### Usage
+
+```bash
+pqid-bench download --version 1.0.0
+pqid-bench download --version 1.0.0 --output-dir ./benchmarks
+```
+
+### Arguments
+
+| Argument | Required | Meaning |
+| --- | ---: | --- |
+| `--version` | no | frozen benchmark release; default `1.0.0` |
+| `--output-dir` | no | parent for the retained ZIP and extracted directory |
+| `--url` | no | custom HTTPS mirror; requires `--sha256` |
+| `--sha256` | with `--url` | expected custom-archive digest |
+| `--force` | no | atomically replace an existing local copy |
+| `--timeout-seconds` | no | network timeout; default `120` |
+
+Without `--output-dir`, files are stored below
+`~/.cache/pqid-bench/releases/1.0.0`, or below `PQID_BENCH_CACHE_DIR` when that
+environment variable is set. Existing valid releases are reused.
+
+The extractor rejects absolute paths, parent traversal, Windows drive paths,
+backslash member names, duplicate members, symbolic links, oversized archives,
+and unexpected archive roots. A release is exposed only after
+`benchmark.json` and every entry in `ARTIFACT_MANIFEST.tsv` pass validation.
+
+### Principal output fields
+
+| Field | Meaning |
+| --- | --- |
+| `release_dir` | verified extracted directory |
+| `archive_path` | retained authenticated ZIP |
+| `sha256` | expected and observed archive identity |
+| `manifest_entries` | internally checked files |
+| `downloaded` / `reused` | whether network acquisition occurred |
+
+### Exit status
+
+- `0`: the release was downloaded or a valid local copy was reused;
+- `1`: route, digest, extraction, metadata, or manifest validation failed.
+
 ## `verify`
 
 ### Purpose
@@ -87,7 +137,7 @@ pqid-bench verify RELEASE_DIR --full
 | Argument | Required | Meaning |
 | --- | ---: | --- |
 | `RELEASE_DIR` | yes | extracted evidence-bundle root |
-| `--full` | no | add primary and repeatability parity checks |
+| `--full` | no | add primary and repeatability parity checks; requires the complete evidence profile |
 
 ### Integrity checks
 

@@ -10,7 +10,7 @@
 [![Documentation](https://img.shields.io/badge/docs-interactive-13756d.svg)](https://elias-abebe-gasparini.github.io/PQID-Bench/)
 
 - Benchmark release: `v1.0.0`
-- Python package: `v1.1.2`
+- Python package: `v1.2.0`
 - Scientific freeze: `2026-07-23`
 - Distribution status: frozen evidence release with a compatible software update
 - Evaluator: `pqid-bench-evaluator-1.1.0-safe-builtins`
@@ -50,7 +50,25 @@ The clean generation population is partitioned deterministically into `514`
 training, `66` validation, and `154` held-out test prompts. The primary external
 model comparison uses only the frozen test split.
 
-## 60-Second Reproduction
+## 60-Second Benchmark Start
+
+Install the toolkit and acquire the compact, authenticated benchmark-user
+distribution:
+
+```bash
+python -m pip install "pqid-bench==1.2.0"
+pqid-bench download --version 1.0.0
+```
+
+The command prints the extracted release path. The core archive contains the
+frozen records, direct splits, test prompts, schemas, and isolated replay
+files; it excludes manuscript artifacts and archived model outputs. Use it for
+new model evaluation with `verify`, `run-model`, `replay`, and `evaluate`.
+
+The same data can be loaded directly from the
+[Hugging Face dataset](https://huggingface.co/datasets/Elias-Abebe-Gasparini/PQID-Bench).
+
+## 60-Second Evidence Reproduction
 
 Clone the evidence repository, install the published toolkit, and reproduce the
 headline matrix without contacting a provider or executing generated code:
@@ -58,7 +76,7 @@ headline matrix without contacting a provider or executing generated code:
 ```bash
 git clone https://github.com/Elias-Abebe-Gasparini/PQID-Bench.git
 cd PQID-Bench
-python -m pip install "pqid-bench==1.1.2"
+python -m pip install "pqid-bench==1.2.0"
 pqid-bench verify . --full
 pqid-bench reproduce --release-dir . --format text
 ```
@@ -141,10 +159,11 @@ generation scripts remain available; see
 
 ## Python Package
 
-The repository is also the source distribution for `pqid-bench 1.1.2`. The
-package separates eight operations that must not be conflated:
+The repository is also the source distribution for `pqid-bench 1.2.0`. The
+package separates nine operations that must not be conflated:
 
 - `doctor` reports the local runtime and optional dependencies;
+- `download` securely acquires and verifies the compact benchmark release;
 - `verify` checks release bytes against `ARTIFACT_MANIFEST.tsv`;
 - `reproduce` recomputes published metrics from archived evaluation records
   without executing generated code;
@@ -196,7 +215,7 @@ pqid-bench dashboard --release-dir . --output pqid-bench-dashboard.html
 ```
 
 The importable interface uses `pqid_bench`. Version dimensions are independent:
-package `1.1.2` implements benchmark release `1.0.0`, evaluator
+package `1.2.0` implements benchmark release `1.0.0`, evaluator
 `pqid-bench-evaluator-1.1.0-safe-builtins`, and structural predicate
 `pqid-bench-reference-signature-1.0.0-count-map`. The optional replay
 container is a separate distribution artifact at version `1.0.0`; its image

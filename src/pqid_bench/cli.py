@@ -12,6 +12,7 @@ from collections.abc import Mapping
 from pathlib import Path
 from typing import Any
 
+from .download import OFFICIAL_CORE_RELEASES, download_core_release
 from .live import (
     PROVIDER_PRESETS,
     LiveRunConfig,
@@ -238,6 +239,19 @@ def command_doctor(_: argparse.Namespace) -> int:
     return 0
 
 
+def command_download(args: argparse.Namespace) -> int:
+    result = download_core_release(
+        version=args.version,
+        output_dir=args.output_dir,
+        url=args.url,
+        sha256=args.sha256,
+        force=args.force,
+        timeout_seconds=args.timeout_seconds,
+    )
+    _json(result.to_dict())
+    return 0
+
+
 def command_verify(args: argparse.Namespace) -> int:
     manifest = verify_manifest(args.release_dir)
     payload: dict[str, Any] = {
@@ -404,6 +418,40 @@ def parser() -> argparse.ArgumentParser:
 
     doctor = sub.add_parser("doctor", help="Report package and optional-runtime status")
     doctor.set_defaults(func=command_doctor)
+
+    download = sub.add_parser(
+        "download",
+        help="Download and verify the compact benchmark-user distribution",
+    )
+    download.add_argument(
+        "--version",
+        default=BENCHMARK_RELEASE,
+        choices=sorted(OFFICIAL_CORE_RELEASES),
+        help=f"Benchmark release (default: {BENCHMARK_RELEASE})",
+    )
+    download.add_argument(
+        "--output-dir",
+        type=Path,
+        help=(
+            "Parent directory for the archive and extracted release "
+            "(default: the PQID-Bench user cache)"
+        ),
+    )
+    download.add_argument(
+        "--url",
+        help="Custom HTTPS archive URL; requires --sha256",
+    )
+    download.add_argument(
+        "--sha256",
+        help="Expected SHA-256 for a custom archive URL",
+    )
+    download.add_argument(
+        "--force",
+        action="store_true",
+        help="Replace an existing verified or invalid local release",
+    )
+    download.add_argument("--timeout-seconds", type=int, default=120)
+    download.set_defaults(func=command_download)
 
     verify = sub.add_parser(
         "verify",

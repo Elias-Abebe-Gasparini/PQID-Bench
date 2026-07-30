@@ -1,10 +1,14 @@
 from __future__ import annotations
 
-import csv
+import hashlib
 import importlib.util
+import io
 import json
+import tempfile
 import unittest
-from pathlib import Path, PurePosixPath
+import zipfile
+from pathlib import Path
+from unittest.mock import patch
 
 from pqid_bench.version import PACKAGE_VERSION
 
@@ -60,35 +64,69 @@ class PublicationAdapterTests(unittest.TestCase):
             any("PQID-Bench-Gateway" in url for url in references)
         )
 
-    def test_pages_build_products_are_not_dataset_artifacts(self) -> None:
+    def test_hugging_face_staging_is_explicit_and_dataset_only(self) -> None:
         uploader = load_uploader()
-        self.assertTrue(
-            uploader.is_ignored_path(
-                PurePosixPath("docs/interactive/overview.html")
+        archive_bytes = io.BytesIO()
+        with zipfile.ZipFile(archive_bytes, "w") as bundle:
+            bundle.writestr(
+                f"{uploader.CORE_ROOT}/benchmark.json",
+                json.dumps(
+                    {
+                        "benchmark_release": "1.0.0",
+                        "distribution_profile": "core",
+                    }
+                ),
             )
-        )
-        self.assertTrue(
-            uploader.is_ignored_path(
-                PurePosixPath("docs/interactive/assets/measurement-ladder.svg")
+        archive_payload = archive_bytes.getvalue()
+        digest = hashlib.sha256(archive_payload).hexdigest()
+
+        with tempfile.TemporaryDirectory() as directory:
+            temporary = Path(directory)
+            archive = temporary / uploader.CORE_ARCHIVE_NAME
+            sidecar = temporary / f"{uploader.CORE_ARCHIVE_NAME}.sha256"
+            archive.write_bytes(archive_payload)
+            sidecar.write_text(
+                f"{digest}  {uploader.CORE_ARCHIVE_NAME}\n",
+                encoding="utf-8",
             )
-        )
+            stage = temporary / "stage"
+            with patch.object(uploader, "CORE_SHA256", digest):
+                files = uploader.stage_dataset(
+                    stage,
+                    core_archive=archive,
+                    core_sidecar=sidecar,
+                )
 
-    def test_hugging_face_upload_set_matches_manifest(self) -> None:
-        uploader = load_uploader()
-        actual = {
-            path.relative_to(ROOT).as_posix()
-            for path in uploader.package_files()
-        }
-
-        manifest = ROOT / "ARTIFACT_MANIFEST.tsv"
-        with manifest.open(encoding="utf-8", newline="") as handle:
-            expected = {
-                row["path"]
-                for row in csv.DictReader(handle, delimiter="\t")
+            actual = {
+                path.relative_to(stage).as_posix()
+                for path in files
             }
-        expected.add("ARTIFACT_MANIFEST.tsv")
-
-        self.assertEqual(expected, actual)
+            expected = {
+                destination for _, destination in uploader.SOURCE_FILES
+            }
+            expected.update(
+                {
+                    "benchmark.json",
+                    "DATASET_FILES.tsv",
+                    f"downloads/{uploader.CORE_ARCHIVE_NAME}",
+                    f"downloads/{uploader.CORE_ARCHIVE_NAME}.sha256",
+                }
+            )
+            self.assertEqual(expected, actual)
+            self.assertFalse(
+                any(
+                    path.startswith(
+                        (
+                            ".github/",
+                            "artifacts/analysis_154/",
+                            "docs/",
+                            "scripts/",
+                            "src/",
+                        )
+                    )
+                    for path in actual
+                )
+            )
 
 
 if __name__ == "__main__":

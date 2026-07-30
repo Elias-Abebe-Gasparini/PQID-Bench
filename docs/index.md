@@ -1,21 +1,22 @@
 # PQID-Bench Documentation
 
 Distribution status: **PQID-Bench v1.0.0 frozen evidence release with
-`pqid-bench` v1.1.2 software tooling**.
+`pqid-bench` v1.2.0 software tooling**.
 The versioned benchmark archive is identified by
 [`10.5281/zenodo.21649753`](https://doi.org/10.5281/zenodo.21649753).
 
-PQID-Bench is a reproducibility and replication toolkit plus a frozen evidence
-bundle for validation-aware quantum-program generation research. The package
-keeps seven activities separate:
+PQID-Bench is an acquisition, reproduction, and replication toolkit plus a
+frozen evidence bundle for validation-aware quantum-program generation
+research. The package keeps eight activities separate:
 
-1. checking release-file integrity;
-2. reproducing published metrics from archived evaluations;
-3. summarizing compatible evaluation records;
-4. comparing a candidate on an aligned prompt denominator;
-5. rendering an interactive report from frozen local evidence;
-6. collecting a new traceable model-response panel; and
-7. evaluating generated programs inside an isolated Docker worker.
+1. acquiring the authenticated compact benchmark distribution;
+2. checking release-file integrity;
+3. reproducing published metrics from archived evaluations;
+4. summarizing compatible evaluation records;
+5. comparing a candidate on an aligned prompt denominator;
+6. rendering an interactive report from frozen local evidence;
+7. collecting a new traceable model-response panel; and
+8. evaluating generated programs inside an isolated Docker worker.
 
 Offline reproduction never contacts a provider. `run-model` does so only after
 explicit prompt-export acknowledgement. Only `replay` executes generated
@@ -25,6 +26,7 @@ Python, and it requires a separate code-execution acknowledgement.
 
 | Goal | Start here |
 | --- | --- |
+| Download the ready-to-run benchmark | [Installation](user-manual/installation.md#7-acquire-and-identify-a-release-directory) |
 | Install and run the package for the first time | [Installation](user-manual/installation.md) |
 | Reproduce the paper quickly | [Reviewer Quickstart](REVIEWER_QUICKSTART.md) |
 | Understand what each command can do | [Capability Guide](user-manual/capabilities.md) |
@@ -48,15 +50,15 @@ installation, commands, records, metrics, workflows, and error handling.
 The following documents have narrower purposes:
 
 - [Python Package Contract](PYTHON_PACKAGE.md) specifies the software and
-  scientific boundary of package version 1.1.2 against benchmark v1.0.0.
+  scientific boundary of package version 1.2.0 against benchmark v1.0.0.
 - [Security And Privacy](SECURITY_AND_PRIVACY.md) records the trust boundary
   and release privacy controls.
 - [Docker Replay Validation](DOCKER_REPLAY_VALIDATION.md) records the completed
   container replay audit.
 - [Reviewer Quickstart](REVIEWER_QUICKSTART.md) is the shortest route through
   integrity and parity checking.
-- [Package v1.1.2 Release Notes](RELEASE_NOTES_v1.1.2.md) describe the
-  venue-neutral metadata correction; [package v1.1.1 release
+- [Package v1.2.0 Release Notes](RELEASE_NOTES_v1.2.0.md) describe compact,
+  authenticated benchmark acquisition; [package v1.1.1 release
   notes](RELEASE_NOTES_v1.1.1.md) document the provenance and
   repository-quality patch; [package v1.1.0 release
   notes](RELEASE_NOTES_v1.1.0.md) document the visualization and documentation
@@ -81,11 +83,12 @@ objects:
 | PQID-Bench v1.0.0 archive | immutable benchmark software and evidence release, DOI `10.5281/zenodo.21649753` |
 | benchmark authoring workspace | canonical manuscript sources and complete research evidence |
 | this `PQID-Bench` tree | standalone package source, manual, schemas, tests, and selected frozen evidence |
+| compact core ZIP | ready-to-run records, splits, prompts, schemas, and isolated evaluator |
 | frozen ZIP | complete downloadable scientific evidence bundle |
 | wheel | installable command and Python interface, without the evidence bundle |
 | source distribution | package source and documentation, without large scientific artifacts |
 | container archive | optional isolated executable-replay worker |
-| Hugging Face adapter | dataset publication view derived from this standalone tree |
+| Hugging Face dataset | adoption-focused records, splits, prompts, schemas, and compact core download |
 
 The upstream dataset and benchmark release require separate citations and
 version identifiers. Generated distribution files are rebuilt from source and
@@ -101,7 +104,7 @@ is not inserted into the frozen evidence archive.
 
 | Dimension | Identifier |
 | --- | --- |
-| Python package | `1.1.2` |
+| Python package | `1.2.0` |
 | benchmark release | `1.0.0` |
 | evaluator | `pqid-bench-evaluator-1.1.0-safe-builtins` |
 | structural predicate | `pqid-bench-reference-signature-1.0.0-count-map` |

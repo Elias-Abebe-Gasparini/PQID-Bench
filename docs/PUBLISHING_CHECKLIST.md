@@ -27,6 +27,8 @@ Face Dataset. The underlying PQID dataset remains a separate immutable release
 - [ ] Confirm a mocked live response completes the
       `run-model -> replay -> evaluate -> compare` path and produces JSON,
       text, Markdown, and CSV summaries.
+- [ ] Confirm `pqid-bench download --version 1.0.0` authenticates, extracts,
+      and verifies the compact core in a clean environment.
 - [ ] Confirm the CI container job builds the pinned evaluator and imports
       Qiskit, Qiskit Aer, and python-dateutil at their recorded versions.
 - [ ] Confirm `pqid-bench verify . --full` passes from an installed wheel.
@@ -106,6 +108,8 @@ Do not substitute the source-dataset concept DOI
 - [ ] Create the annotated tag and release `v1.0.0` from the DOI-complete
       final commit.
 - [ ] Attach `PQID-Bench-v1.0.0-frozen.zip` and its SHA-256 sidecar.
+- [ ] Attach `PQID-Bench-v1.0.0-core.zip` and its SHA-256 sidecar as the
+      benchmark-user download profile.
 - [ ] Attach or link the wheel, source distribution, `SHA256SUMS.txt`, and
       both CycloneDX SBOMs.
 - [ ] Verify that the public tag and release assets match the local hashes.
@@ -161,9 +165,19 @@ Publish only after the GitHub release is visible:
 python ".\platforms\huggingface_dataset\upload_dataset.py" --publish
 ```
 
-- [ ] Confirm the root card is `HUGGINGFACE_DATASET_CARD.md`.
+- [ ] Rebuild the deterministic core archive and confirm SHA-256
+      `74379d743d73c5401257fc48844f598fc17199c0fdccf5e1f647d10ac67b8a99`.
+- [ ] Confirm the staged tree contains only data, splits, prompts, templates,
+      schemas, licensing/citation, metadata, and the compact core download.
+- [ ] Confirm no manuscript, archived response, analysis, CI, funding, or
+      repository-administration path is staged.
+- [ ] Confirm the root card is the staged `README.md` derived from
+      `HUGGINGFACE_DATASET_CARD.md`.
 - [ ] Confirm the `clean_generation` configuration exposes 734 rows.
-- [ ] Confirm the card reports `21 x 154`, not the superseded `15 x 70` pilot.
+- [ ] Confirm the `evaluator_records` configuration exposes `514 / 66 / 154`
+      rows and `model_prompts` exposes 154 prompts.
+- [ ] Review and merge the default Hugging Face pull request.
+- [ ] Confirm the core resolve URL returns the package-pinned archive digest.
 - [ ] Confirm repository links and the source dataset DOI resolve.
 
 ## 7. Container Publication

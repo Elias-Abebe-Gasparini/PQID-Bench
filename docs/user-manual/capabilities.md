@@ -5,6 +5,7 @@
 | Capability | Command | Required input | Executes generated code | Contacts providers |
 | --- | --- | --- | ---: | ---: |
 | report environment and versions | `doctor` | installed package | no | no |
+| acquire compact benchmark | `download` | network access | no | Hugging Face only |
 | verify file integrity | `verify` | evidence bundle | no | no |
 | verify full scientific parity | `verify --full` | evidence bundle | no | no |
 | reproduce frozen metrics | `reproduce` | evidence bundle | no | no |
@@ -20,6 +21,9 @@
 ## Decision Guide
 
 Use `doctor` when checking installation, optional dependencies, or Docker.
+
+Use `download` when acquiring a ready-to-run benchmark core without cloning the
+evidence repository or reconstructing splits from PQID.
 
 Use `verify` when checking whether a downloaded release is byte-identical to
 its manifest.
@@ -52,7 +56,7 @@ available.
 
 ## Capability Boundaries
 
-Package version 1.1.2 does not:
+Package version 1.2.0 does not:
 
 - estimate provider cost;
 - translate native Anthropic Messages or Google Gemini request protocols;
@@ -74,6 +78,7 @@ package API.
 | Command | Principal output |
 | --- | --- |
 | `doctor` | JSON environment and version report |
+| `download` | authenticated ZIP, verified release directory, and JSON receipt |
 | `verify` | JSON manifest verification |
 | `verify --full` | JSON manifest plus primary and repeatability parity |
 | `reproduce` | JSON, text, Markdown, or CSV summary with canonical parity |

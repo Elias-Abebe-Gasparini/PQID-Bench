@@ -7,8 +7,10 @@ import tempfile
 import unittest
 from contextlib import redirect_stderr, redirect_stdout
 from pathlib import Path
+from unittest.mock import patch
 
 from pqid_bench.cli import _load_candidate_run_manifest, main
+from pqid_bench.download import DownloadResult
 from pqid_bench.version import (
     ARTIFACT_MANIFEST_VERSION,
     BENCHMARK_RELEASE,
@@ -70,6 +72,40 @@ class CliContractTests(unittest.TestCase):
                 encoding="utf-8",
             )
             self.assertEqual(main(["verify", str(root)]), 1)
+
+    def test_download_prints_verified_release_receipt(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            receipt = DownloadResult(
+                version="1.0.0",
+                release_dir=str(root / "PQID-Bench-v1.0.0-core"),
+                archive_path=str(root / "PQID-Bench-v1.0.0-core.zip"),
+                source_url="https://example.test/core.zip",
+                sha256="a" * 64,
+                manifest_entries=31,
+                downloaded=True,
+            )
+            stdout = io.StringIO()
+            with patch(
+                "pqid_bench.cli.download_core_release",
+                return_value=receipt,
+            ) as operation:
+                with redirect_stdout(stdout):
+                    status = main(
+                        [
+                            "download",
+                            "--version",
+                            "1.0.0",
+                            "--output-dir",
+                            str(root),
+                        ]
+                    )
+            self.assertEqual(status, 0)
+            payload = json.loads(stdout.getvalue())
+            self.assertTrue(payload["downloaded"])
+            self.assertFalse(payload["reused"])
+            self.assertEqual(payload["manifest_entries"], 31)
+            operation.assert_called_once()
 
     def test_evaluate_keeps_json_as_the_default(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
