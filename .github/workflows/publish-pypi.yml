@@ -49,7 +49,7 @@ jobs:
           .sdist-venv/bin/python -m pip install dist/*.tar.gz
           .sdist-venv/bin/pqid-bench --version
           .sdist-venv/bin/pqid-bench reproduce --release-dir .
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: python-distributions
           path: dist/
