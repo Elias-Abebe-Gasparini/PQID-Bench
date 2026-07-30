@@ -887,7 +887,7 @@
       "width_bin": "1-2 qubits"
     }
   ],
-  "eval_dir": "PQID\\submissions\\acm_tqc_benchmark\\artifacts\\external_model_batches_154\\evaluations",
+  "eval_dir": "artifacts\\external_model_batches_154\\evaluations",
   "excluded_prompt_ids": [
     "pqid_bench_external_gen_0040",
     "pqid_bench_external_gen_0117",
@@ -1273,7 +1273,7 @@
     "qasm3_success": 0.9171929824561403,
     "structural_all_match": 0.5470175438596491
   },
-  "prompt_path": "PQID\\submissions\\acm_tqc_benchmark\\artifacts\\test_split_154\\pqid_bench_external_generation_prompts_154.jsonl",
+  "prompt_path": "artifacts\\test_split_154\\pqid_bench_external_generation_prompts_154.jsonl",
   "prompt_profile": {
     "gate_totals": {
       "H": 3,

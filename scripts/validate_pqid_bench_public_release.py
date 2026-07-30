@@ -5,6 +5,7 @@ from __future__ import annotations
 import csv
 import hashlib
 import json
+import re
 from collections import Counter
 from pathlib import Path
 
@@ -45,8 +46,6 @@ GENERATED_PREFIXES = {
     ("docs", "interactive"),
 }
 FORBIDDEN_RELEASE_PATHS = {
-    "MANUSCRIPT_ACM_TABLES_COPY_READY.md",
-    "MANUSCRIPT_ACM_TEXT_ONLY_PASTE_READY.md",
     "REFERENCES.bib",
     "SUPPLEMENTAL_DATA.md",
 }
@@ -66,9 +65,9 @@ FORBIDDEN_RELEASE_SUFFIXES = {
     ".svg",
     ".webp",
 }
-MANUSCRIPT_ONLY_SCRIPT_NAMES = {
-    "build_acm_table_copy_bundle.py",
-    "build_acm_transfer_ready.py",
+MANUSCRIPT_ONLY_SCRIPT_FRAGMENTS = {
+    "table_copy_bundle",
+    "transfer_ready",
 }
 
 
@@ -590,9 +589,12 @@ def validate_release_scope() -> None:
             violations.append(relative.as_posix())
         elif path.suffix.lower() in FORBIDDEN_RELEASE_SUFFIXES:
             violations.append(relative.as_posix())
-        elif (
-            path.name in FORBIDDEN_RELEASE_PATHS
-            or path.name in MANUSCRIPT_ONLY_SCRIPT_NAMES
+        elif path.name in FORBIDDEN_RELEASE_PATHS:
+            violations.append(relative.as_posix())
+        elif path.name.startswith("MANUSCRIPT_") and path.suffix.lower() == ".md":
+            violations.append(relative.as_posix())
+        elif any(
+            fragment in path.name for fragment in MANUSCRIPT_ONLY_SCRIPT_FRAGMENTS
         ):
             violations.append(relative.as_posix())
     require(
@@ -632,9 +634,19 @@ def validate_venue_neutrality() -> None:
         for value in (
             "41 43 4d 20 54 51 43",
             "41 43 4d 2d 54 51 43",
+            "61 63 6d 5f 74 71 63 5f 62 65 6e 63 68 6d 61 72 6b",
             "54 72 61 6e 73 61 63 74 69 6f 6e 73 20 6f 6e 20 51 75 "
             "61 6e 74 75 6d 20 43 6f 6d 70 75 74 69 6e 67",
         )
+    )
+    token_pattern = re.compile(
+        rb"(?<![a-z0-9])(?:"
+        + b"|".join(
+            bytes.fromhex(value)
+            for value in ("41 43 4d", "54 51 43")
+        )
+        + rb")(?![a-z0-9])",
+        re.IGNORECASE,
     )
     binary_suffixes = {".png", ".jpg", ".jpeg", ".gif", ".pdf", ".zip"}
     violations: list[str] = []
@@ -642,7 +654,11 @@ def validate_venue_neutrality() -> None:
         if path == Path(__file__) or path.suffix.lower() in binary_suffixes:
             continue
         payload = path.read_bytes().lower()
-        if any(needle.lower() in payload for needle in needles):
+        relative_payload = path.relative_to(PACKAGE).as_posix().encode().lower()
+        if any(
+            needle.lower() in payload or needle.lower() in relative_payload
+            for needle in needles
+        ) or token_pattern.search(payload) or token_pattern.search(relative_payload):
             violations.append(path.relative_to(PACKAGE).as_posix())
     require(
         not violations,

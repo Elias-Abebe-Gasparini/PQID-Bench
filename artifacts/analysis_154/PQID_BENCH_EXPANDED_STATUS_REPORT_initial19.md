@@ -117,7 +117,7 @@ The descriptive prompt-level linear probability model remains stable after exclu
 2. Prompt identifiability: the four under-specified prompts cannot support exact hidden-signature correctness claims. Use the 150-item subset for confirmatory signature analysis.
 3. Regression scope: the target-signature-clustered bootstrap and grouped cross-validation quantify release-bound uncertainty, but correlated descriptors and the fixed model panel still preclude causal or universal-law interpretations.
 4. Source execution: 100% requires documented context recovery; strict standalone execution is 90.60%.
-5. Transfer proofing: the synchronized Markdown and vector sources still require a final ACM-layout check for float placement, font size, and page breaks.
+5. Transfer proofing: the synchronized Markdown and vector sources still require a final manuscript-layout check for float placement, font size, and page breaks.
 
 ## Manuscript Synchronization Status
 
@@ -132,7 +132,7 @@ The descriptive prompt-level linear probability model remains stable after exclu
 
 1. Preserve the reporting contract: full 154 for the frozen primary matrix and the identifiable 150 as a labelled sensitivity analysis.
 2. Run the final denominator, figure-callout, table-number, and artifact-path audit.
-3. Render and proof the ACM transfer package without editing the frozen analytical sources.
+3. Render and proof the manuscript transfer package without editing the frozen analytical sources.
 4. Package the prompts, canonical responses, evaluations, analysis artifacts, and environment information for the distinct PQID-Bench GitHub/Zenodo release.
 
 ## Publication Assessment

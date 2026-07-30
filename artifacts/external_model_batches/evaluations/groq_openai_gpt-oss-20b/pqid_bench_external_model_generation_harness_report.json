@@ -1,5 +1,5 @@
 {
-  "expected_response_path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches/responses/groq_openai_gpt-oss-20b_responses.jsonl",
+  "expected_response_path": "artifacts/external_model_batches/responses/groq_openai_gpt-oss-20b_responses.jsonl",
   "input_file": "PQID/data/processed/seed_drafts_quality_aware_source_code_v1.jsonl",
   "label_counts": {
     "extended_n8": 319,
@@ -8,7 +8,7 @@
   "missing_response_count": 0,
   "missing_responses": [],
   "prompt_count": 70,
-  "prompt_path": "PQID/submissions/acm_tqc_benchmark/artifacts/pqid_bench_external_generation_prompts.jsonl",
+  "prompt_path": "artifacts/pqid_bench_external_generation_prompts.jsonl",
   "records": [
     {
       "empty_generation": false,
@@ -8188,7 +8188,7 @@
     }
   ],
   "response_supplied": true,
-  "response_template_path": "PQID/submissions/acm_tqc_benchmark/artifacts/pqid_bench_external_generation_response_template.jsonl",
+  "response_template_path": "artifacts/pqid_bench_external_generation_response_template.jsonl",
   "row_count": 734,
   "split_policy": "same deterministic source-file-group split used by retrieval-copy generation baseline",
   "split_summary": {

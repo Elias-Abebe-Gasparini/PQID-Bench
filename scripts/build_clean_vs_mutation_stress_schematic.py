@@ -7,7 +7,7 @@ import textwrap
 from pathlib import Path
 from xml.sax.saxutils import escape
 
-from acm_figure_style import ACM_SERIF_FONT_STACK
+from publication_figure_style import PUBLICATION_SERIF_FONT_STACK
 
 
 SCRIPT_PATH = Path(__file__).resolve()
@@ -61,7 +61,7 @@ def text(x: int, y: int, value: str, *, size: int = 20, weight: int = 400, fill:
             "font-weight": weight,
             "fill": fill,
             "text-anchor": anchor,
-            "font-family": ACM_SERIF_FONT_STACK,
+            "font-family": PUBLICATION_SERIF_FONT_STACK,
         },
         escape(value),
     )

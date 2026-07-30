@@ -3,9 +3,9 @@
 - input file: `PQID/data/processed/seed_drafts_quality_aware_source_code_v1.jsonl`
 - clean source-code rows: `734`
 - split policy: same deterministic source-file-group split used by the retrieval-copy generation baseline
-- exported prompts: `PQID/submissions/acm_tqc_benchmark/artifacts/pqid_bench_external_generation_prompts.jsonl`
-- response template: `PQID/submissions/acm_tqc_benchmark/artifacts/pqid_bench_external_generation_response_template.jsonl`
-- expected response path: `PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches/responses/github_models_deepseek_deepseek-v3-0324_responses.jsonl`
+- exported prompts: `artifacts/pqid_bench_external_generation_prompts.jsonl`
+- response template: `artifacts/pqid_bench_external_generation_response_template.jsonl`
+- expected response path: `artifacts/external_model_batches/responses/github_models_deepseek_deepseek-v3-0324_responses.jsonl`
 
 ## Clean Pool
 

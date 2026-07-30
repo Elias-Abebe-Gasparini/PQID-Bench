@@ -1,6 +1,6 @@
 {
   "evaluator_version": "pqid-bench-evaluator-1.1.0-safe-builtins",
-  "expected_response_path": "PQID/submissions/acm_tqc_benchmark/artifacts/stochastic_repeatability_21x72/consolidated/run_3/responses/openrouter_mistralai_mistral-small-3_2-24b-instruct_responses.jsonl",
+  "expected_response_path": "artifacts/stochastic_repeatability_21x72/consolidated/run_3/responses/openrouter_mistralai_mistral-small-3_2-24b-instruct_responses.jsonl",
   "input_file": "PQID/data/processed/seed_drafts_quality_aware_source_code_v1.jsonl",
   "label_counts": {
     "extended_n8": 319,
@@ -9,7 +9,7 @@
   "missing_response_count": 0,
   "missing_responses": [],
   "prompt_count": 72,
-  "prompt_path": "PQID/submissions/acm_tqc_benchmark/artifacts/stochastic_repeatability_21x72/consolidated/panel/pqid_bench_stochastic_repeatability_prompts_72.jsonl",
+  "prompt_path": "artifacts/stochastic_repeatability_21x72/consolidated/panel/pqid_bench_stochastic_repeatability_prompts_72.jsonl",
   "records": [
     {
       "empty_generation": false,
@@ -9162,10 +9162,10 @@
     }
   ],
   "response_supplied": true,
-  "response_template_path": "PQID/submissions/acm_tqc_benchmark/artifacts/stochastic_repeatability_21x72/consolidated/run_3/responses/openrouter_mistralai_mistral-small-3_2-24b-instruct_responses_template.jsonl",
+  "response_template_path": "artifacts/stochastic_repeatability_21x72/consolidated/run_3/responses/openrouter_mistralai_mistral-small-3_2-24b-instruct_responses_template.jsonl",
   "row_count": 734,
-  "split_manifest": "PQID/submissions/acm_tqc_benchmark/artifacts/test_split_154/pqid_bench_split_154_manifest.json",
-  "split_policy": "frozen split manifest `PQID/submissions/acm_tqc_benchmark/artifacts/test_split_154/pqid_bench_split_154_manifest.json`",
+  "split_manifest": "artifacts/test_split_154/pqid_bench_split_154_manifest.json",
+  "split_policy": "frozen split manifest `artifacts/test_split_154/pqid_bench_split_154_manifest.json`",
   "split_summary": {
     "test": {
       "groups": 143,

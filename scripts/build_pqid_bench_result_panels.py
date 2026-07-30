@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 from xml.sax.saxutils import escape
 
-from acm_figure_style import ACM_SERIF_FONT_STACK
+from publication_figure_style import PUBLICATION_SERIF_FONT_STACK
 from pqid_bench_model_registry import (
     EXPANDED_MODEL_ORDER,
     FRONTIER_MODELS,
@@ -17,7 +17,7 @@ from pqid_bench_model_registry import (
 import run_pqid_bench_generation_copy_baseline as copy_baseline
 
 
-ROOT = Path("PQID/submissions/acm_tqc_benchmark")
+ROOT = Path(__file__).resolve().parents[1]
 MATRIX_CSV = ROOT / "artifacts/analysis_154/pqid_bench_model_by_prompt_structural_matrix.csv"
 PROMPT_JSONL = ROOT / "artifacts/test_split_154/pqid_bench_external_generation_prompts_154.jsonl"
 SPLIT_MANIFEST = ROOT / "artifacts/test_split_154/pqid_bench_split_154_manifest.json"
@@ -152,7 +152,7 @@ def write_heatmap(rows: list[dict[str, str]], path: Path) -> None:
         "<title id=\"title\">PQID-Bench model-by-prompt reference-signature match heatmap</title>",
         "<desc id=\"desc\">Rows are models and retrieval-copy baselines; columns are 154 held-out prompts sorted from hardest to easiest. Dark cells indicate reference-signature match.</desc>",
         "<style>",
-        f'text {{ font-family: "{ACM_SERIF_FONT_STACK}", Times, serif; fill: #1f2933; }}',
+        f'text {{ font-family: "{PUBLICATION_SERIF_FONT_STACK}", Times, serif; fill: #1f2933; }}',
         ".small { font-size: 12px; }",
         ".tier { font-size: 15px; fill: #1f2933; font-weight: 700; }",
         ".label { font-size: 14px; font-weight: 600; }",

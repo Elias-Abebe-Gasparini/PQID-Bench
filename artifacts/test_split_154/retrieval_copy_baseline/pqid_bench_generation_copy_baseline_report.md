@@ -2,7 +2,7 @@
 
 - input file: `PQID/data/processed/seed_drafts_quality_aware_source_code_v1.jsonl`
 - clean source-code rows: `734`
-- split policy: frozen split manifest `PQID/submissions/acm_tqc_benchmark/artifacts/test_split_154/pqid_bench_split_154_manifest.json`
+- split policy: frozen split manifest `artifacts/test_split_154/pqid_bench_split_154_manifest.json`
 - group overlap: train/validation `0`, train/test `0`, validation/test `0`
 - qiskit available: `True`; version: `2.1.1`
 

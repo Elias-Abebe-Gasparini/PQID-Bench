@@ -27,7 +27,7 @@ from pqid_bench_model_registry import (
 )
 
 
-ROOT = Path("PQID/submissions/acm_tqc_benchmark")
+ROOT = Path(__file__).resolve().parents[1]
 PROMPT_PATH = ROOT / "artifacts/test_split_154/pqid_bench_external_generation_prompts_154.jsonl"
 EVAL_DIR = ROOT / "artifacts/external_model_batches_154/evaluations"
 DEFAULT_EVAL_DIRS = [

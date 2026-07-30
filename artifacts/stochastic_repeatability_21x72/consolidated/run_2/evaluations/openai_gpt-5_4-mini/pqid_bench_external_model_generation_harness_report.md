@@ -4,10 +4,10 @@
 - structural predicate version: `pqid-bench-reference-signature-1.0.0-count-map`
 - input file: `PQID/data/processed/seed_drafts_quality_aware_source_code_v1.jsonl`
 - clean source-code rows: `734`
-- split policy: frozen split manifest `PQID/submissions/acm_tqc_benchmark/artifacts/test_split_154/pqid_bench_split_154_manifest.json`
-- exported prompts: `PQID/submissions/acm_tqc_benchmark/artifacts/stochastic_repeatability_21x72/consolidated/panel/pqid_bench_stochastic_repeatability_prompts_72.jsonl`
-- response template: `PQID/submissions/acm_tqc_benchmark/artifacts/stochastic_repeatability_21x72/consolidated/run_2/responses/openai_gpt-5_4-mini_responses_template.jsonl`
-- expected response path: `PQID/submissions/acm_tqc_benchmark/artifacts/stochastic_repeatability_21x72/consolidated/run_2/responses/openai_gpt-5_4-mini_responses.jsonl`
+- split policy: frozen split manifest `artifacts/test_split_154/pqid_bench_split_154_manifest.json`
+- exported prompts: `artifacts/stochastic_repeatability_21x72/consolidated/panel/pqid_bench_stochastic_repeatability_prompts_72.jsonl`
+- response template: `artifacts/stochastic_repeatability_21x72/consolidated/run_2/responses/openai_gpt-5_4-mini_responses_template.jsonl`
+- expected response path: `artifacts/stochastic_repeatability_21x72/consolidated/run_2/responses/openai_gpt-5_4-mini_responses.jsonl`
 
 ## Clean Pool
 

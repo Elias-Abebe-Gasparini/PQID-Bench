@@ -6,10 +6,10 @@ import json
 from pathlib import Path
 from xml.sax.saxutils import escape
 
-from acm_figure_style import ACM_SERIF_FONT_STACK
+from publication_figure_style import PUBLICATION_SERIF_FONT_STACK
 
 
-ROOT = Path("PQID/submissions/acm_tqc_benchmark")
+ROOT = Path(__file__).resolve().parents[1]
 SOURCE_PATH = ROOT / "artifacts/pqid_bench_retrieval_channel_edge_case_0043.json"
 FIGURE_PATH = ROOT / "figures/retrieval_channel_edge_case_0043_panel.svg"
 CAPTION_PATH = ROOT / "figures/retrieval_channel_edge_case_0043_panel_caption.md"
@@ -51,7 +51,7 @@ def text(
         {
             "x": round(x, 2),
             "y": round(y, 2),
-            "font-family": ACM_SERIF_FONT_STACK,
+            "font-family": PUBLICATION_SERIF_FONT_STACK,
             "font-size": size,
             "font-weight": weight,
             "fill": fill,

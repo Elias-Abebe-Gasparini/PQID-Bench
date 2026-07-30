@@ -42,7 +42,7 @@ from analyze_pqid_bench_inferential import (
 from pqid_bench_model_registry import MODEL_LABELS, MODEL_ORDER
 
 
-ROOT = Path("PQID/submissions/acm_tqc_benchmark")
+ROOT = Path(__file__).resolve().parents[1]
 PROMPT_PATH = ROOT / "artifacts/test_split_154/pqid_bench_external_generation_prompts_154.jsonl"
 SPLIT_MANIFEST_PATH = ROOT / "artifacts/test_split_154/pqid_bench_split_154_manifest.json"
 ANALYSIS_DIR = ROOT / "artifacts/analysis_154"
@@ -778,7 +778,7 @@ def write_markdown(path: Path, payload: dict[str, Any]) -> None:
             "## Reproduction",
             "",
             "```powershell",
-            "python PQID/submissions/acm_tqc_benchmark/scripts/analyze_pqid_bench_robustness_suite.py",
+            "python scripts/analyze_pqid_bench_robustness_suite.py",
             "```",
             "",
             f"- machine-readable report: `{JSON_OUT.as_posix()}`",

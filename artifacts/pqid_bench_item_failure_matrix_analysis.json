@@ -1184,7 +1184,7 @@
     "universal_easy": 6,
     "universal_hard": 18
   },
-  "matrix_csv": "PQID\\submissions\\acm_tqc_benchmark\\artifacts\\pqid_bench_model_by_prompt_structural_matrix.csv",
+  "matrix_csv": "artifacts\\pqid_bench_model_by_prompt_structural_matrix.csv",
   "model_count": 15,
   "non_frontier_only_items": [
     {

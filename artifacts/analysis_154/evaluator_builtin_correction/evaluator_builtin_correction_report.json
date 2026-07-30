@@ -11,7 +11,7 @@
   },
   "canonical_report_replay_disagreements": 0,
   "canonical_reports_versioned": 21,
-  "cell_audit_path": "PQID/submissions/acm_tqc_benchmark/artifacts/analysis_154/evaluator_builtin_correction/evaluator_builtin_correction_cell_audit.jsonl",
+  "cell_audit_path": "artifacts/analysis_154/evaluator_builtin_correction/evaluator_builtin_correction_cell_audit.jsonl",
   "execution_transition": {
     "changed": 224,
     "gained": 224,
@@ -19,7 +19,7 @@
   },
   "frozen_input_hashes": {
     "prompt_file": {
-      "path": "PQID/submissions/acm_tqc_benchmark/artifacts/test_split_154/pqid_bench_external_generation_prompts_154.jsonl",
+      "path": "artifacts/test_split_154/pqid_bench_external_generation_prompts_154.jsonl",
       "sha256": "cc6ba5c8a1fbf8677bd016d3cad47c7934981a685cc51052bdc3beb03f99b6eb"
     },
     "prompt_text_objects_sha256": "075382feacb497334f00930afbae8f56e38f0148d5dc14f6e01d0d7eb8b940ed",
@@ -28,132 +28,132 @@
       {
         "bytes": 547110,
         "model": "gpt-5.6-sol",
-        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/openai_gpt-5_6-sol_responses.jsonl",
+        "path": "artifacts/external_model_batches_154/responses/openai_gpt-5_6-sol_responses.jsonl",
         "sha256": "0838e4883e1f3d8a20d387afef6cc7591677b8be8ccf93e0f5d1803b2c8e62c4"
       },
       {
         "bytes": 533788,
         "model": "gpt-5.5",
-        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/openai_gpt-5_5_responses.jsonl",
+        "path": "artifacts/external_model_batches_154/responses/openai_gpt-5_5_responses.jsonl",
         "sha256": "1b68b805cecd786c0f9b090faa036ae7c91cd43b442a2ec4c38143e87f9a82a8"
       },
       {
         "bytes": 549058,
         "model": "gpt-5.4-mini",
-        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/openai_gpt-5_4-mini_responses.jsonl",
+        "path": "artifacts/external_model_batches_154/responses/openai_gpt-5_4-mini_responses.jsonl",
         "sha256": "145dd98f4d238a85f9aa198f1b07f35b66692a5da81168a5cde5b14c24a0cfc4"
       },
       {
         "bytes": 429412,
         "model": "claude-fable-5",
-        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/anthropic_claude-fable-5_responses.jsonl",
+        "path": "artifacts/external_model_batches_154/responses/anthropic_claude-fable-5_responses.jsonl",
         "sha256": "1c25dec68e653d981c0a87c3ff15323b2cfdc41246682e819ee23220f82adb2e"
       },
       {
         "bytes": 458974,
         "model": "claude-sonnet-4-6",
-        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/anthropic_claude-sonnet-4-6_responses.jsonl",
+        "path": "artifacts/external_model_batches_154/responses/anthropic_claude-sonnet-4-6_responses.jsonl",
         "sha256": "b7c34b0905e7b6c6dcee2c3c5c0e25cd7645ad8abf9507e0a544c2d3ffafc9fd"
       },
       {
         "bytes": 378211,
         "model": "claude-opus-4-8",
-        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/anthropic_claude-opus-4-8_responses.jsonl",
+        "path": "artifacts/external_model_batches_154/responses/anthropic_claude-opus-4-8_responses.jsonl",
         "sha256": "23caad403fc17f50daeb664584d0496f3dba8c130ef5f8611d90b5982e269cea"
       },
       {
         "bytes": 403506,
         "model": "gemini-2.5-pro",
-        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/google_gemini-2_5-pro_responses.jsonl",
+        "path": "artifacts/external_model_batches_154/responses/google_gemini-2_5-pro_responses.jsonl",
         "sha256": "d5e17f85bfe95b3056df0c103caedeb1cdfb4a184e93d41966c7a4fb26426489"
       },
       {
         "bytes": 737906,
         "model": "gemini-3.1-pro-preview",
-        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/google_gemini-3_1-pro-preview_responses.jsonl",
+        "path": "artifacts/external_model_batches_154/responses/google_gemini-3_1-pro-preview_responses.jsonl",
         "sha256": "4bf62e142896a3db0680afb02bf51c5a9e5ebf0de73e811113aad201e27f16db"
       },
       {
         "bytes": 838392,
         "model": "deepseek-v4-pro",
-        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/deepseek_deepseek-v4-pro_responses.jsonl",
+        "path": "artifacts/external_model_batches_154/responses/deepseek_deepseek-v4-pro_responses.jsonl",
         "sha256": "a9af25b0e5b4018d0ee9eeca6fb465d3e8e30fe613e277dbf05a0588da21a362"
       },
       {
         "bytes": 743489,
         "model": "deepseek-v4-flash",
-        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/deepseek_deepseek-v4-flash_responses.jsonl",
+        "path": "artifacts/external_model_batches_154/responses/deepseek_deepseek-v4-flash_responses.jsonl",
         "sha256": "1b227656f00df18c95803564500fad25a1ad2dc0e9d33eb609adf4bcfbad0825"
       },
       {
         "bytes": 358818,
         "model": "mistral-ai/codestral-2501",
-        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/github_models_mistral-ai_codestral-2501_responses.jsonl",
+        "path": "artifacts/external_model_batches_154/responses/github_models_mistral-ai_codestral-2501_responses.jsonl",
         "sha256": "456ba5bf31d16993b63ced9f131b25817dc6fd7f13170626d6a8a35a37031d6a"
       },
       {
         "bytes": 473731,
         "model": "qwen/qwen3-coder-next",
-        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/huggingface_router_qwen_qwen3-coder-next_novita_responses.jsonl",
+        "path": "artifacts/external_model_batches_154/responses/huggingface_router_qwen_qwen3-coder-next_novita_responses.jsonl",
         "sha256": "86e3b48a7e625da0b862a15d8f4d8292bf78276e9084538090bb9a4ccf930b53"
       },
       {
         "bytes": 419398,
         "model": "meta/llama-4-maverick-17b-128e-instruct-fp8",
-        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/github_models_meta_llama-4-maverick-17b-128e-instruct-fp8_responses.jsonl",
+        "path": "artifacts/external_model_batches_154/responses/github_models_meta_llama-4-maverick-17b-128e-instruct-fp8_responses.jsonl",
         "sha256": "32524702d78a4e0c472b5d99f68566f5eea2f34e40b66761238baaa642e23fcb"
       },
       {
         "bytes": 417596,
         "model": "llama-3.3-70b-versatile",
-        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/groq_llama-3_3-70b-versatile_responses.jsonl",
+        "path": "artifacts/external_model_batches_154/responses/groq_llama-3_3-70b-versatile_responses.jsonl",
         "sha256": "273d9fec439e9e877f39ed4be1686df4a60ab0ca75939c170fe06f50bd615dba"
       },
       {
         "bytes": 641100,
         "model": "openai/gpt-oss-120b",
-        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/groq_openai_gpt-oss-120b_responses.jsonl",
+        "path": "artifacts/external_model_batches_154/responses/groq_openai_gpt-oss-120b_responses.jsonl",
         "sha256": "c87c7537133920d569516a306da825eb869c9d976357219943f55f0b88e0b647"
       },
       {
         "bytes": 725191,
         "model": "openai/gpt-oss-20b",
-        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/groq_openai_gpt-oss-20b_responses.jsonl",
+        "path": "artifacts/external_model_batches_154/responses/groq_openai_gpt-oss-20b_responses.jsonl",
         "sha256": "f921a58926230896621376c3f55f92ea88aae3ab81134e0e0a5aceba28f9150d"
       },
       {
         "bytes": 651201,
         "model": "mistralai/mistral-small-3.2-24b-instruct",
-        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/mistral_parent_control/responses/openrouter_mistralai_mistral-small-3_2-24b-instruct_responses.jsonl",
+        "path": "artifacts/external_model_batches_154/mistral_parent_control/responses/openrouter_mistralai_mistral-small-3_2-24b-instruct_responses.jsonl",
         "sha256": "b29f35972fa362830361ab3b1d79b9430baadfe5d6ef073c2f66d7c82c39373e"
       },
       {
         "bytes": 640567,
         "model": "qiskit/mistral-small-3.2-24b-qiskit",
-        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/qiskit_mistral/responses/huggingface_router_qiskit_mistral-small-3_2-24b-qiskit_featherless-ai_responses.jsonl",
+        "path": "artifacts/external_model_batches_154/qiskit_mistral/responses/huggingface_router_qiskit_mistral-small-3_2-24b-qiskit_featherless-ai_responses.jsonl",
         "sha256": "3b0e242b5faa3335c3f9ef57ec53373881600fe0cdfdb1cb884034ef80e7d836"
       },
       {
         "bytes": 1761752,
         "model": "qwen/qwen3-32b",
-        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/groq_qwen_qwen3-32b_responses.jsonl",
+        "path": "artifacts/external_model_batches_154/responses/groq_qwen_qwen3-32b_responses.jsonl",
         "sha256": "e4f465de28bd35950f92b380f93a973ddb3361a7113d2de0f56c2eb08d2fd1e8"
       },
       {
         "bytes": 472137,
         "model": "meta-llama/llama-4-scout-17b-16e-instruct",
-        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/groq_meta-llama_llama-4-scout-17b-16e-instruct_responses.jsonl",
+        "path": "artifacts/external_model_batches_154/responses/groq_meta-llama_llama-4-scout-17b-16e-instruct_responses.jsonl",
         "sha256": "00a93afe70b2565f065dbf79b21981a142ec9c03c3b07e3e48347a230bee8072"
       },
       {
         "bytes": 617235,
         "model": "llama-3.1-8b-instant",
-        "path": "PQID/submissions/acm_tqc_benchmark/artifacts/external_model_batches_154/responses/groq_llama-3_1-8b-instant_responses.jsonl",
+        "path": "artifacts/external_model_batches_154/responses/groq_llama-3_1-8b-instant_responses.jsonl",
         "sha256": "42029a2e47c36a759bfd82f6539ceb6a7f48cedfb236b8434754a37c42c7973a"
       }
     ],
     "split_manifest": {
-      "path": "PQID/submissions/acm_tqc_benchmark/artifacts/test_split_154/pqid_bench_split_154_manifest.json",
+      "path": "artifacts/test_split_154/pqid_bench_split_154_manifest.json",
       "sha256": "2f5a8171374e71940368464ace7ed31edd9ecedcf50467a01dd7192c55b654fd"
     },
     "structural_predicate_source_sha256": "cc0b92423941b2fc7da925386f3f2cb495687ab9113d6f3db88fa38cad094fcd",

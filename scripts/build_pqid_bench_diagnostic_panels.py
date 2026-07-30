@@ -6,10 +6,10 @@ import json
 from pathlib import Path
 from xml.sax.saxutils import escape
 
-from acm_figure_style import ACM_SERIF_FONT_STACK
+from publication_figure_style import PUBLICATION_SERIF_FONT_STACK
 
 
-ROOT = Path("PQID/submissions/acm_tqc_benchmark")
+ROOT = Path(__file__).resolve().parents[1]
 ARTIFACTS_DIR = ROOT / "artifacts"
 FIGURES_DIR = ROOT / "figures"
 
@@ -77,7 +77,7 @@ def text(
             "font-weight": weight,
             "fill": fill,
             "text-anchor": anchor,
-            "font-family": ACM_SERIF_FONT_STACK,
+            "font-family": PUBLICATION_SERIF_FONT_STACK,
         },
         escape(value),
     )

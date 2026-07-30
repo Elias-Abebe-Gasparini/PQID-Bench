@@ -8,7 +8,7 @@ from pathlib import Path
 from PIL import Image, ImageChops, ImageDraw, ImageFont
 
 
-ROOT = Path("PQID/submissions/acm_tqc_benchmark")
+ROOT = Path(__file__).resolve().parents[1]
 FIGURES_DIR = ROOT / "figures"
 
 DIFFICULTY_PNG = FIGURES_DIR / "circuit_exemplar_difficulty_panel.png"

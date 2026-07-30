@@ -13,7 +13,7 @@ from pathlib import Path
 from typing import Any
 
 
-ROOT = Path("PQID/submissions/acm_tqc_benchmark")
+ROOT = Path(__file__).resolve().parents[1]
 ARTIFACTS = ROOT / "artifacts"
 ANALYSIS = ARTIFACTS / "analysis_154"
 OUT_JSON = ANALYSIS / "PQID_BENCH_EXPANDED_STATUS_REPORT_initial19.json"
@@ -174,9 +174,11 @@ def run() -> dict[str, Any]:
     fable_0141 = next(row for row in fable_responses if row["prompt_id"] == "pqid_bench_external_gen_0141")
     raw_refusal = json.loads(fable_0141["raw_response"])
 
-    manuscript = (ROOT / "MANUSCRIPT_ACM_TEXT_ONLY_PASTE_READY.md").read_text(encoding="utf-8")
+    manuscript_path = next(ROOT.glob("MANUSCRIPT_*_TEXT_ONLY_PASTE_READY.md"))
+    manuscript = manuscript_path.read_text(encoding="utf-8")
     supplement = (ROOT / "SUPPLEMENTAL_DATA.md").read_text(encoding="utf-8")
-    tables = (ROOT / "MANUSCRIPT_ACM_TABLES_COPY_READY.md").read_text(encoding="utf-8")
+    tables_path = next(ROOT.glob("MANUSCRIPT_*_TABLES_COPY_READY.md"))
+    tables = tables_path.read_text(encoding="utf-8")
     sync = {
         "manuscript_contains_old_15_by_70_headline": "`15` completed named external model rows" in manuscript
         and "`70` held-out generation prompts" in manuscript,
@@ -451,7 +453,7 @@ def write_markdown(payload: dict[str, Any]) -> None:
             "2. Prompt identifiability: the four under-specified prompts cannot support exact hidden-signature correctness claims. Use the 150-item subset for confirmatory signature analysis.",
             "3. Regression scope: the target-signature-clustered bootstrap and grouped cross-validation quantify release-bound uncertainty, but correlated descriptors and the fixed model panel still preclude causal or universal-law interpretations.",
             "4. Source execution: 100% requires documented context recovery; strict standalone execution is 90.60%.",
-            "5. Transfer proofing: the synchronized Markdown and vector sources still require a final ACM-layout check for float placement, font size, and page breaks.",
+            "5. Transfer proofing: the synchronized Markdown and vector sources still require a final manuscript-layout check for float placement, font size, and page breaks.",
             "",
             "## Manuscript Synchronization Status",
             "",
@@ -466,7 +468,7 @@ def write_markdown(payload: dict[str, Any]) -> None:
             "",
             "1. Preserve the reporting contract: full 154 for the frozen primary matrix and the identifiable 150 as a labelled sensitivity analysis.",
             "2. Run the final denominator, figure-callout, table-number, and artifact-path audit.",
-            "3. Render and proof the ACM transfer package without editing the frozen analytical sources.",
+            "3. Render and proof the manuscript transfer package without editing the frozen analytical sources.",
             "4. Package the prompts, canonical responses, evaluations, analysis artifacts, and environment information for the distinct PQID-Bench GitHub/Zenodo release.",
             "",
             "## Publication Assessment",

@@ -890,9 +890,9 @@
     }
   ],
   "eval_dirs": [
-    "PQID\\submissions\\acm_tqc_benchmark\\artifacts\\external_model_batches_154\\evaluations",
-    "PQID\\submissions\\acm_tqc_benchmark\\artifacts\\external_model_batches_154\\mistral_parent_control\\evaluations",
-    "PQID\\submissions\\acm_tqc_benchmark\\artifacts\\external_model_batches_154\\qiskit_mistral\\evaluations"
+    "artifacts\\external_model_batches_154\\evaluations",
+    "artifacts\\external_model_batches_154\\mistral_parent_control\\evaluations",
+    "artifacts\\external_model_batches_154\\qiskit_mistral\\evaluations"
   ],
   "excluded_prompt_ids": [
     "pqid_bench_external_gen_0040",
@@ -1279,7 +1279,7 @@
     "qasm3_success": 0.9155555555555556,
     "structural_all_match": 0.5406349206349207
   },
-  "prompt_path": "PQID\\submissions\\acm_tqc_benchmark\\artifacts\\test_split_154\\pqid_bench_external_generation_prompts_154.jsonl",
+  "prompt_path": "artifacts\\test_split_154\\pqid_bench_external_generation_prompts_154.jsonl",
   "prompt_profile": {
     "gate_totals": {
       "H": 3,

@@ -3,7 +3,7 @@
 - prompts: `70`
 - models: `15`
 - prompt-model evaluations: `1050`
-- structural matrix CSV: `PQID\submissions\acm_tqc_benchmark\artifacts\pqid_bench_model_by_prompt_structural_matrix.csv`
+- structural matrix CSV: `artifacts\pqid_bench_model_by_prompt_structural_matrix.csv`
 
 ## Conditional Fidelity
 
