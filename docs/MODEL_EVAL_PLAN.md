@@ -14,8 +14,9 @@ table, recheck provider docs because hosted model aliases can change.
 
 ## Purpose
 
-The external model stage is the publishability pivot for the ACM TQC paper. It
-turns the local benchmark evidence into a traceable model-quality study by
+The external model stage is the central evidence-generation phase of the
+benchmark study. It turns the local benchmark evidence into a traceable
+model-quality study by
 recording:
 
 - the exact frozen prompt manifest;
@@ -61,7 +62,7 @@ Current access posture:
   scores `92.86%` execution, `58.57%` structural match, and `91.43%` QASM3
   export.
 - Groq/open-model API bridge: six hosted bridge rows are complete using the
-  OpenAI-compatible chat runner and the ACM TQC Groq key file supplied locally
+  OpenAI-compatible chat runner and the dedicated Groq key file supplied locally
   outside the repository. Completed rows: `llama-3.3-70b-versatile`,
   `qwen/qwen3-32b`, `openai/gpt-oss-120b`, `openai/gpt-oss-20b`,
   `llama-3.1-8b-instant`, and
@@ -392,7 +393,7 @@ The report should be compared against the retrieval-copy lower bound:
 
 ## Publishability Gates
 
-Minimum credible TQC table:
+Minimum credible publication table:
 
 - at least three closed frontier-family runs;
 - at least two open reproducible model runs;
@@ -401,7 +402,7 @@ Minimum credible TQC table:
 - per-model harness reports retained;
 - hash manifest updated after response collection.
 
-Strong TQC table:
+Strong publication table:
 
 - the full core matrix above;
 - one appendix/historical model if useful;

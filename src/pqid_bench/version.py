@@ -1,6 +1,6 @@
 """Independent version dimensions carried by every PQID-Bench report."""
 
-PACKAGE_VERSION = "1.1.1"
+PACKAGE_VERSION = "1.1.2"
 BENCHMARK_RELEASE = "1.0.0"
 EVALUATOR_VERSION = "pqid-bench-evaluator-1.1.0-safe-builtins"
 PREDICATE_VERSION = "pqid-bench-reference-signature-1.0.0-count-map"

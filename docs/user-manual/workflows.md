@@ -26,7 +26,7 @@ pqid-bench reproduce \
 
 ### Accept when
 
-- package version is `1.1.1` when using the current toolkit, or `1.0.0` when
+- package version is `1.1.2` when using the current toolkit, or `1.0.0` when
   reproducing with the wheel preserved inside the frozen archive;
 - manifest `valid` is true;
 - `canonical_parity` is true;
@@ -119,7 +119,7 @@ Candidate models must share the same prompt set.
 
 ```json
 {
-  "package_version": "1.1.1",
+  "package_version": "1.1.2",
   "benchmark_release": "1.0.0",
   "evaluator_version": "pqid-bench-evaluator-1.1.0-safe-builtins",
   "predicate_version": "pqid-bench-reference-signature-1.0.0-count-map",

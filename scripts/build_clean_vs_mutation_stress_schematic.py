@@ -1,4 +1,4 @@
-"""Build the clean-vs-mutation-stress schematic for the ACM TQC paper."""
+"""Build the clean-vs-mutation-stress schematic for the benchmark study."""
 
 from __future__ import annotations
 

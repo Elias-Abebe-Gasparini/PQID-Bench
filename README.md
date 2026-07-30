@@ -10,7 +10,7 @@
 [![Documentation](https://img.shields.io/badge/docs-interactive-13756d.svg)](https://elias-abebe-gasparini.github.io/PQID-Bench/)
 
 - Benchmark release: `v1.0.0`
-- Python package: `v1.1.1`
+- Python package: `v1.1.2`
 - Scientific freeze: `2026-07-23`
 - Distribution status: frozen evidence release with a compatible software update
 - Evaluator: `pqid-bench-evaluator-1.1.0-safe-builtins`
@@ -18,10 +18,10 @@
 - Prospective contract (Overview object O6): [PQID-Bench 2 preregistration,
   OSF DOI `10.17605/OSF.IO/WDERQ`](https://doi.org/10.17605/OSF.IO/WDERQ)
 
-PQID-Bench is the frozen ACM TQC companion artifact derived from the archived
-PQID v1.0.2 dataset. It tests whether generated Qiskit programs merely execute
-or recover an explicitly limited reference structure. The benchmark does not
-treat execution as structural or semantic correctness.
+PQID-Bench is a frozen research artifact derived from the archived PQID v1.0.2
+dataset. It tests whether generated Qiskit programs merely execute or recover
+an explicitly limited reference structure. The benchmark does not treat
+execution as structural or semantic correctness.
 
 ## Ecosystem Workflow
 
@@ -58,7 +58,7 @@ headline matrix without contacting a provider or executing generated code:
 ```bash
 git clone https://github.com/Elias-Abebe-Gasparini/PQID-Bench.git
 cd PQID-Bench
-python -m pip install "pqid-bench==1.1.1"
+python -m pip install "pqid-bench==1.1.2"
 pqid-bench verify . --full
 pqid-bench reproduce --release-dir . --format text
 ```
@@ -141,7 +141,7 @@ generation scripts remain available; see
 
 ## Python Package
 
-The repository is also the source distribution for `pqid-bench 1.1.1`. The
+The repository is also the source distribution for `pqid-bench 1.1.2`. The
 package separates eight operations that must not be conflated:
 
 - `doctor` reports the local runtime and optional dependencies;
@@ -196,7 +196,7 @@ pqid-bench dashboard --release-dir . --output pqid-bench-dashboard.html
 ```
 
 The importable interface uses `pqid_bench`. Version dimensions are independent:
-package `1.1.1` implements benchmark release `1.0.0`, evaluator
+package `1.1.2` implements benchmark release `1.0.0`, evaluator
 `pqid-bench-evaluator-1.1.0-safe-builtins`, and structural predicate
 `pqid-bench-reference-signature-1.0.0-count-map`. The optional replay
 container is a separate distribution artifact at version `1.0.0`; its image
