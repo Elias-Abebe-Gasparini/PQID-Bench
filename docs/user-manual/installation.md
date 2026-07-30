@@ -235,10 +235,10 @@ The replay distribution has a separate identity from the evaluator contract:
 | local image ID | `sha256:849bf53e449fd618633199c0b622abeca270591dff248cd0bf3a0fd461abf2e2` |
 | archive SHA-256 | `8abff46dcb1fa10f375a713d94845d2b0bdb3cd7601985ee6ef2da24dfdc09ba` |
 | evaluator version | `pqid-bench-evaluator-1.1.0-safe-builtins` |
-| OCI registry manifest digest | pending publication |
+| OCI registry manifest digest | `sha256:39825f5635cd6273e9e23c2848f2c88a2ff9d461e16a263fd89f22c6e664ac8f` |
 
 The local image ID is not a substitute for a registry manifest digest. Record
-the OCI digest only after the image is published.
+the OCI digest when citing or pinning the public package.
 
 The published archive targets Linux containers on `amd64`. Docker Desktop can
 run that Linux image on supported Windows installations.

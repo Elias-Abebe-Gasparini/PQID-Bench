@@ -105,7 +105,9 @@ currently has local image ID
 `sha256:849bf53e449fd618633199c0b622abeca270591dff248cd0bf3a0fd461abf2e2`.
 It is published separately from the Python toolkit as
 [`ghcr.io/elias-abebe-gasparini/pqid-bench-evaluator:1.0.0`](https://github.com/Elias-Abebe-Gasparini/PQID-Bench/pkgs/container/pqid-bench-evaluator).
-Its OCI registry manifest digest must not be inferred from the local image ID.
+Its immutable OCI registry manifest digest is
+`sha256:39825f5635cd6273e9e23c2848f2c88a2ff9d461e16a263fd89f22c6e664ac8f`;
+it is distinct from the local image ID.
 
 ## Documentation Site
 
