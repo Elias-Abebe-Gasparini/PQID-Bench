@@ -50,7 +50,7 @@ jobs:
       - name: Build strict documentation
         run: mkdocs build --strict --site-dir site
       - name: Configure Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
         with:
           enablement: true
       - name: Upload Pages artifact
