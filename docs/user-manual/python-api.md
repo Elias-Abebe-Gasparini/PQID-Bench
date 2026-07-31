@@ -51,7 +51,7 @@ replay.
 
 | Constant | Current value |
 | --- | --- |
-| `PACKAGE_VERSION` | `1.2.0` |
+| `PACKAGE_VERSION` | `1.2.1` |
 | `BENCHMARK_RELEASE` | `1.0.0` |
 | `EVALUATOR_VERSION` | `pqid-bench-evaluator-1.1.0-safe-builtins` |
 | `PREDICATE_VERSION` | `pqid-bench-reference-signature-1.0.0-count-map` |
@@ -432,7 +432,7 @@ usage, response/error metadata, and raw payload digests.
 Raw provider payloads remain separate files. They are not embedded directly
 into the shared record.
 
-The type and the live-run interfaces are top-level package-version 1.2.0
+The type and the live-run interfaces are top-level package-version 1.2.1
 exports.
 
 ## Supporting Manifest Interface

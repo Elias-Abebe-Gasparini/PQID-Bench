@@ -3,7 +3,7 @@
 This manual guides a user from installation through scientific reproduction,
 live model collection, candidate comparison, isolated replay, numerical
 reporting, interactive exploration, troubleshooting, and citation. It
-documents `pqid-bench 1.2.0` as implemented against the frozen PQID-Bench
+documents `pqid-bench 1.2.1` as implemented against the frozen PQID-Bench
 v1.0.0 evidence release.
 
 ## Manual Chapters
@@ -71,4 +71,4 @@ The manual covers offline verification, reproduction, live OpenAI-compatible
 collection, summarization, comparison, and archived or newly collected code
 replay. Live calls always create a new replication rather than reproducing
 archived model text. Native non-compatible provider protocols and automatic
-cost estimation remain outside package version 1.2.0.
+cost estimation remain outside package version 1.2.1.

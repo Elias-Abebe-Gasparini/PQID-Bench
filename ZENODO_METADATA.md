@@ -123,7 +123,7 @@ execution and OpenQASM 3 serialization.
 The maintained command-line and Python interface is the separately versioned
 [`pqid-bench` package](https://pypi.org/project/pqid-bench/). This Zenodo record
 preserves the software distributions that accompanied the frozen deposit. The
-current backward-compatible package is `pqid-bench 1.2.0`; it adds compact,
+current backward-compatible package is `pqid-bench 1.2.1`; it provides compact,
 authenticated benchmark acquisition to the numerical summaries, comparisons,
 interactive Plotly reporting, and live-model workflows without changing the
 frozen benchmark data, responses, or scoring contract.
@@ -131,7 +131,7 @@ frozen benchmark data, responses, or scoring contract.
 Install the current package and verify an extracted release:
 
 ```console
-python -m pip install "pqid-bench==1.2.0"
+python -m pip install "pqid-bench==1.2.1"
 pqid-bench download --version 1.0.0
 pqid-bench verify RELEASE_DIR --full
 pqid-bench reproduce --release-dir RELEASE_DIR --format text
@@ -151,7 +151,7 @@ The principal interfaces are:
 | `pqid-bench run-model` | run an explicitly authorized live model evaluation |
 | `pqid-bench replay` | evaluate generated code through the isolated Docker worker |
 
-Install `pqid-bench[visualization]==1.2.0` for the dashboard. Consult the
+Install `pqid-bench[visualization]==1.2.1` for the dashboard. Consult the
 [documentation](https://elias-abebe-gasparini.github.io/PQID-Bench/) before
 using live providers or replaying generated code.
 
@@ -183,7 +183,7 @@ analysis of the current `734 / 154` benchmark.
 | object | identifier or version | role |
 | --- | --- | --- |
 | benchmark and evidence release | `PQID-Bench 1.0.0` | frozen data, outputs, analyses, and manifests |
-| current Python interface | `pqid-bench 1.2.0` | acquisition, CLI, library, reports, dashboard, and live workflows |
+| current Python interface | `pqid-bench 1.2.1` | acquisition, CLI, library, reports, dashboard, and live workflows |
 | archived Python interface | `pqid-bench 1.1.2` | exact wheel preserved in this deposit |
 | evaluator implementation | `pqid-bench-evaluator-1.1.0-safe-builtins` | frozen executable-evaluation policy |
 | structural predicate | `pqid-bench-reference-signature-1.0.0-count-map` | frozen signature-recovery rule |

@@ -56,7 +56,7 @@ available.
 
 ## Capability Boundaries
 
-Package version 1.2.0 does not:
+Package version 1.2.1 does not:
 
 - estimate provider cost;
 - translate native Anthropic Messages or Google Gemini request protocols;
