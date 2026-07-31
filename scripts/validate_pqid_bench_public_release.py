@@ -151,7 +151,7 @@ def validate_metadata() -> None:
         "M^sig - reference-signature recovery",
         "ES-Gap - Execution-Structure Gap",
         "AS-Gap - Assembly-Structure Gap",
-        "pqid-bench 1.2.0",
+        "pqid-bench 1.2.1",
         "pqid-bench download",
         "pqid-bench verify RELEASE_DIR --full",
         "pqid-bench run-model",

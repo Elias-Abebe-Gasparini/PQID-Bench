@@ -8,7 +8,7 @@ Acquire the frozen records, direct splits, model-facing prompts, schemas, and
 isolated evaluator without downloading the complete study-evidence archive.
 
 ```bash
-python -m pip install "pqid-bench==1.2.0"
+python -m pip install "pqid-bench==1.2.1"
 pqid-bench download --version 1.0.0 --output-dir ./benchmarks
 pqid-bench verify ./benchmarks/PQID-Bench-v1.0.0-core
 ```
@@ -43,7 +43,7 @@ pqid-bench reproduce \
 
 ### Accept when
 
-- package version is `1.2.0` when using the current toolkit, or `1.0.0` when
+- package version is `1.2.1` when using the current toolkit, or `1.0.0` when
   reproducing with the wheel preserved inside the frozen archive;
 - manifest `valid` is true;
 - `canonical_parity` is true;
@@ -136,7 +136,7 @@ Candidate models must share the same prompt set.
 
 ```json
 {
-  "package_version": "1.2.0",
+  "package_version": "1.2.1",
   "benchmark_release": "1.0.0",
   "evaluator_version": "pqid-bench-evaluator-1.1.0-safe-builtins",
   "predicate_version": "pqid-bench-reference-signature-1.0.0-count-map",

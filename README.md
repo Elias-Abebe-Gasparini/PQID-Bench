@@ -10,7 +10,7 @@
 [![Documentation](https://img.shields.io/badge/docs-interactive-13756d.svg)](https://elias-abebe-gasparini.github.io/PQID-Bench/)
 
 - Benchmark release: `v1.0.0`
-- Python package: `v1.2.0`
+- Python package: `v1.2.1`
 - Scientific freeze: `2026-07-23`
 - Distribution status: frozen evidence release with a compatible software update
 - Evaluator: `pqid-bench-evaluator-1.1.0-safe-builtins`
@@ -105,7 +105,7 @@ Install the toolkit and acquire the compact, authenticated benchmark-user
 distribution:
 
 ```bash
-python -m pip install "pqid-bench==1.2.0"
+python -m pip install "pqid-bench==1.2.1"
 pqid-bench download --version 1.0.0
 ```
 
@@ -125,7 +125,7 @@ headline matrix without contacting a provider or executing generated code:
 ```bash
 git clone https://github.com/Elias-Abebe-Gasparini/PQID-Bench.git
 cd PQID-Bench
-python -m pip install "pqid-bench==1.2.0"
+python -m pip install "pqid-bench==1.2.1"
 pqid-bench verify . --full
 pqid-bench reproduce --release-dir . --format text
 ```
@@ -208,7 +208,7 @@ generation scripts remain available; see
 
 ## Python Package
 
-The repository is also the source distribution for `pqid-bench 1.2.0`. The
+The repository is also the source distribution for `pqid-bench 1.2.1`. The
 package separates nine operations that must not be conflated:
 
 - `doctor` reports the local runtime and optional dependencies;
@@ -264,7 +264,7 @@ pqid-bench dashboard --release-dir . --output pqid-bench-dashboard.html
 ```
 
 The importable interface uses `pqid_bench`. Version dimensions are independent:
-package `1.2.0` implements benchmark release `1.0.0`, evaluator
+package `1.2.1` implements benchmark release `1.0.0`, evaluator
 `pqid-bench-evaluator-1.1.0-safe-builtins`, and structural predicate
 `pqid-bench-reference-signature-1.0.0-count-map`. The optional replay
 container is a separate distribution artifact at version `1.0.0`; its image

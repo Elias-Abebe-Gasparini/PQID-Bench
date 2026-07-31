@@ -8,6 +8,25 @@ imply a change to the others.
 
 ## Unreleased
 
+## Python Toolkit 1.2.1 - 2026-07-31
+
+### Changed
+
+- Added a reader-first ecosystem map that distinguishes the PyPI toolkit,
+  Hugging Face benchmark distribution, Zenodo evidence archive, GitHub source,
+  Docker evaluator, interactive explorer, and prospective OSF registration.
+- Added a dedicated explanation of Open Science Framework preregistration,
+  Overview object O6, and the two-stage PQID-Bench 2 governance boundary.
+- Clarified that PQID-Bench 2 is a separate future semantic-validity study and
+  that no PQID-Bench 2 model output or result is part of the current release.
+
+### Scientific Impact
+
+None. Version 1.2.1 is a documentation and package-metadata patch. The
+PQID-Bench v1.0.0 records, splits, prompts, core archive, model responses,
+evaluator behavior, structural predicate, model roster, denominators, and
+reported findings are unchanged.
+
 ## Python Toolkit 1.2.0 - 2026-07-31
 
 ### Added

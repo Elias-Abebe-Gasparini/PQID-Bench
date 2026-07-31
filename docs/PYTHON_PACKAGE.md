@@ -2,7 +2,7 @@
 
 ## Scientific Boundary
 
-`pqid-bench 1.2.0` is an acquisition, reproduction, and replication toolkit for the
+`pqid-bench 1.2.1` is an acquisition, reproduction, and replication toolkit for the
 immutable PQID-Bench v1.0.0 study. Its safe default path recomputes reported
 quantities from archived evaluator records. Live calls are a separate,
 explicitly acknowledged path that creates new evidence.
@@ -31,7 +31,7 @@ Every core machine-readable scientific report carries:
 
 | dimension | frozen identifier |
 | --- | --- |
-| package | `1.2.0` |
+| package | `1.2.1` |
 | benchmark release | `1.0.0` |
 | evaluator | `pqid-bench-evaluator-1.1.0-safe-builtins` |
 | structural predicate | `pqid-bench-reference-signature-1.0.0-count-map` |

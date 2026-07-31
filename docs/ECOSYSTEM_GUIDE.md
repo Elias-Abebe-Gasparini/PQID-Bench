@@ -35,7 +35,7 @@ PQID-Bench v1.0.0 is the completed, frozen study object. It contains a
 operational and reference-structure scoring contract.
 
 Software can evolve without changing those scientific objects. For that
-reason, benchmark version `1.0.0`, Python-package version `1.2.0`, evaluator
+reason, benchmark version `1.0.0`, Python-package version `1.2.1`, evaluator
 identifier `pqid-bench-evaluator-1.1.0-safe-builtins`, and container version
 `1.0.0` are separate identifiers.
 
