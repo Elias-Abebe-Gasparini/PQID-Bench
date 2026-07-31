@@ -23,6 +23,24 @@ dataset. It tests whether generated Qiskit programs merely execute or recover
 an explicitly limited reference structure. The benchmark does not treat
 execution as structural or semantic correctness.
 
+## Start Here: Choose The Right Object
+
+PQID-Bench is distributed as a coordinated research stack, not as one giant
+download. The objects below are complementary; they are not competing versions
+of the benchmark.
+
+| You want to... | Use this object | What it provides |
+| --- | --- | --- |
+| benchmark a new model | [Hugging Face benchmark distribution](https://huggingface.co/datasets/Elias-Abebe-Gasparini/PQID-Bench) plus the [PyPI toolkit](https://pypi.org/project/pqid-bench/) | ready-to-use records, fixed splits, prompts, schemas, collection, isolated replay, and scoring |
+| install commands or import a Python API | [`pqid-bench` on PyPI](https://pypi.org/project/pqid-bench/) | the lightweight CLI and library; benchmark data are acquired separately with `pqid-bench download` |
+| reproduce or audit the completed 21-model study | [Zenodo evidence archive](https://doi.org/10.5281/zenodo.21649753) | frozen responses, evaluations, analyses, manifests, checksums, and repeatability evidence |
+| inspect implementation, documentation, or development history | [GitHub repository](https://github.com/Elias-Abebe-Gasparini/PQID-Bench) | maintained source, tests, manuals, examples, workflows, and selected evidence |
+| inspect the plan for the next study | [PQID-Bench 2 OSF registration](https://doi.org/10.17605/OSF.IO/WDERQ) | a timestamped prospective protocol, not benchmark data or results |
+
+Most benchmark users need only the PyPI toolkit and Hugging Face distribution.
+The Zenodo record is the larger scientific-evidence archive used to reproduce
+and audit the completed study.
+
 ## Ecosystem Workflow
 
 [![PQID-Bench reproducibility workflow](https://elias-abebe-gasparini.github.io/PQID-Bench/interactive/assets/ecosystem-flow.svg)](https://elias-abebe-gasparini.github.io/PQID-Bench/)
@@ -31,6 +49,37 @@ The evidence path keeps governed source data, deterministic splits, provider
 collection, isolated replay, numerical reporting, and interactive
 presentation as separate stages. The hosted explorer reads the final frozen
 artifacts; it is not part of scoring.
+
+## Current Benchmark And Prospective PQID-Bench 2
+
+**PQID-Bench v1.0.0 is the current, completed benchmark.** Its `734` records,
+fixed splits, `154`-prompt test panel, 21-model evidence matrix, evaluator, and
+reported analyses are frozen. The GitHub, Hugging Face, PyPI, Zenodo, and
+container objects above provide different ways to use or inspect that same
+release.
+
+**PQID-Bench 2 is a separate future study.** Its
+[OSF registration](https://doi.org/10.17605/OSF.IO/WDERQ) is a public,
+timestamped preregistration: an immutable statement of research questions,
+constructs, eligibility rules, semantic-oracle classes, analysis hierarchy,
+and decision rules recorded before the future model outputs are collected.
+Preregistration makes it possible to distinguish confirmatory tests chosen in
+advance from analyses suggested after seeing results.
+
+The registered Stage 1 plan extends the current structure-level benchmark
+toward semantic validity. Its primary question concerns the model-level
+**Semantic Void** state, in which a generated program executes but fails a
+preregistered semantic oracle. It also prespecifies controlled
+quantum-algorithm family, audited-scope, and algorithm-name-visibility
+contrasts. A later Stage 2 registration must freeze the exact prompt panel,
+validated semantic oracles, model-provider routes, sample size, and executable
+analysis code before any PQID-Bench 2 model call.
+
+No PQID-Bench 2 model output or result is included in this repository or the
+current v1.0.0 evidence. The registration does not alter PQID-Bench v1.0.0 and
+is not needed to run it. The label **O6** used in the research supplement means
+“Overview object 6”: it is a cross-reference to this prospective contract, not
+an additional current-data result table.
 
 ## Frozen Design
 
@@ -293,6 +342,7 @@ python scripts/build_pqid_bench_public_release.py --archive
 - Evaluator container: <https://github.com/Elias-Abebe-Gasparini/PQID-Bench/pkgs/container/pqid-bench-evaluator>
 - PQID-Bench v1.0.0 archive: <https://doi.org/10.5281/zenodo.21649753>
 - Hugging Face Dataset: <https://huggingface.co/datasets/Elias-Abebe-Gasparini/PQID-Bench>
+- Prospective PQID-Bench 2 protocol: <https://doi.org/10.17605/OSF.IO/WDERQ>
 - Source PQID dataset v1.0.2: <https://doi.org/10.5281/zenodo.20674853>
 - Stable PQID dataset concept DOI: <https://doi.org/10.5281/zenodo.20019482>
 

@@ -22,9 +22,26 @@ the wider PQID ecosystem.
 | GitHub | <https://github.com/Elias-Abebe-Gasparini/PQID-Bench> |
 | Python package | <https://pypi.org/project/pqid-bench/> |
 | documentation | <https://elias-abebe-gasparini.github.io/PQID-Bench/> |
-| Hugging Face mirror | <https://huggingface.co/datasets/Elias-Abebe-Gasparini/PQID-Bench> |
+| Hugging Face benchmark distribution | <https://huggingface.co/datasets/Elias-Abebe-Gasparini/PQID-Bench> |
 | evidence explorer | <https://elias-abebe-gasparini.github.io/PQID-Bench/interactive/overview.html> |
 | prospective O6 preregistration | <https://doi.org/10.17605/OSF.IO/WDERQ> |
+
+## Start Here: Role Of This Record
+
+This Zenodo deposit is the **scientific evidence and reproducibility archive**
+for the completed PQID-Bench v1.0.0 study. It is intentionally larger than the
+download needed to benchmark a new model.
+
+| Need | Correct entry point |
+| --- | --- |
+| run PQID-Bench like a standard code-generation benchmark | [Hugging Face data](https://huggingface.co/datasets/Elias-Abebe-Gasparini/PQID-Bench) and the [PyPI toolkit](https://pypi.org/project/pqid-bench/) |
+| reproduce the completed 21-model evidence and robustness audits | this Zenodo record |
+| inspect maintained code, tests, documentation, and examples | [GitHub](https://github.com/Elias-Abebe-Gasparini/PQID-Bench) |
+| inspect the prespecified plan for the future semantic-validity study | [PQID-Bench 2 on OSF](https://doi.org/10.17605/OSF.IO/WDERQ) |
+
+These are complementary research objects rather than duplicate releases. Most
+new benchmark users should begin with PyPI and Hugging Face; reviewers and
+reproducers should begin here.
 
 ## Overview
 
@@ -137,6 +154,29 @@ The principal interfaces are:
 Install `pqid-bench[visualization]==1.2.0` for the dashboard. Consult the
 [documentation](https://elias-abebe-gasparini.github.io/PQID-Bench/) before
 using live providers or replaying generated code.
+
+## PQID-Bench 2 And The OSF Preregistration
+
+PQID-Bench 2 is a separate prospective study; it is not an update to the
+frozen v1.0.0 benchmark and it contributes no result to this deposit. The
+[Open Science Framework registration](https://doi.org/10.17605/OSF.IO/WDERQ)
+is a public, timestamped preregistration. Such a registration preserves the
+questions and analytical decisions made before outcomes exist, allowing later
+readers to distinguish confirmatory tests from post-outcome exploration.
+
+The registered Stage 1 protocol extends the current operational-versus-
+structural measurement system toward semantic validity. It prespecifies the
+model-level Semantic Void state, in which a program executes but fails a
+qualified semantic oracle, together with controlled algorithm-family,
+audited-scope, and algorithm-name-visibility contrasts. The protocol states
+that no PQID-Bench 2 output has been collected. A required Stage 2
+registration must freeze the exact prompt panel, validated oracle code and
+thresholds, sample size, model-provider routes, and executable analysis code
+before the first model call.
+
+The current supplement calls this pointer **Overview object O6**. O6 is an
+administrative cross-reference to the future contract, not an additional
+analysis of the current `734 / 154` benchmark.
 
 ## Version Crosswalk
 

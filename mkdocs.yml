@@ -23,6 +23,7 @@ theme:
       accent: teal
 nav:
   - Home: index.md
+  - Ecosystem And Study Roadmap: ECOSYSTEM_GUIDE.md
   - Interactive Explorer: INTERACTIVE_EXPLORER.md
   - Worked Examples: EXAMPLES.md
   - User Manual:
