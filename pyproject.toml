@@ -47,7 +47,7 @@ docs = [
   "plotly>=6,<7",
 ]
 evaluator = [
-  "qiskit>=2.1,<2.2",
+  "qiskit>=2.1,<2.6",
   "qiskit-aer>=0.17,<0.18",
 ]
 dev = [
