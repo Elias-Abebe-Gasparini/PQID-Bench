@@ -1,4 +1,4 @@
-coverage[toml]>=7.9,<8
+coverage[toml]>=7.15.2,<8
 mypy>=1.17,<2
 pillow>=11,<13
 ruff>=0.12,<1
