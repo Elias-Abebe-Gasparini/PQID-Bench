@@ -66,7 +66,7 @@ Archive = "https://doi.org/10.5281/zenodo.21649753"
 Dataset = "https://huggingface.co/datasets/Elias-Abebe-Gasparini/PQID-Bench"
 Documentation = "https://elias-abebe-gasparini.github.io/PQID-Bench/"
 Explorer = "https://elias-abebe-gasparini.github.io/PQID-Bench/interactive/overview.html"
-Preregistration = "https://doi.org/10.17605/OSF.IO/WDERQ"
+"PQID-Bench 2 prospective protocol" = "https://doi.org/10.17605/OSF.IO/WDERQ"
 
 [tool.setuptools]
 package-dir = { "" = "src" }

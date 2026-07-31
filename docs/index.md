@@ -26,6 +26,7 @@ Python, and it requires a separate code-execution acknowledgement.
 
 | Goal | Start here |
 | --- | --- |
+| Understand how GitHub, PyPI, Hugging Face, Zenodo, Docker, and OSF fit together | [Ecosystem And Study Roadmap](ECOSYSTEM_GUIDE.md) |
 | Download the ready-to-run benchmark | [Installation](user-manual/installation.md#7-acquire-and-identify-a-release-directory) |
 | Install and run the package for the first time | [Installation](user-manual/installation.md) |
 | Reproduce the paper quickly | [Reviewer Quickstart](REVIEWER_QUICKSTART.md) |
@@ -89,10 +90,15 @@ objects:
 | source distribution | package source and documentation, without large scientific artifacts |
 | container archive | optional isolated executable-replay worker |
 | Hugging Face dataset | adoption-focused records, splits, prompts, schemas, and compact core download |
+| OSF PQID-Bench 2 registration | immutable prospective protocol for a separate future semantic-validity study; contains no current benchmark result |
 
 The upstream dataset and benchmark release require separate citations and
 version identifiers. Generated distribution files are rebuilt from source and
 must not be hand-edited.
+
+For a reader-facing explanation of these roles, including what OSF
+preregistration means and why PQID-Bench 2 is not a newer current-data release,
+see the [Ecosystem And Study Roadmap](ECOSYSTEM_GUIDE.md).
 
 Rendered manuscript outputs remain outside this public release. Their
 scientific inputs and regeneration scripts remain available; see

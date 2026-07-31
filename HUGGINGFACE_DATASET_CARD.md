@@ -47,6 +47,21 @@ contains `734` benchmark records with deterministic `514 / 66 / 154`
 train-validation-test splits and a ready-to-use 154-prompt generation panel.
 No parent PQID download or split reconstruction is required.
 
+## Start Here: Which Object Do You Need?
+
+PQID-Bench is a coordinated stack whose components serve different jobs:
+
+| Goal | Use |
+| --- | --- |
+| evaluate a new model | this Hugging Face distribution for the data, plus [`pqid-bench` on PyPI](https://pypi.org/project/pqid-bench/) for collection, isolated replay, and scoring |
+| reproduce or audit the completed 21-model study | the [Zenodo evidence archive](https://doi.org/10.5281/zenodo.21649753) |
+| inspect source, tests, examples, and manuals | the [GitHub repository](https://github.com/Elias-Abebe-Gasparini/PQID-Bench) |
+| read the prospectively fixed plan for the next study | the [PQID-Bench 2 OSF registration](https://doi.org/10.17605/OSF.IO/WDERQ) |
+
+This repository is the adoption-focused benchmark distribution. It supplies
+the ready-to-use data contract without requiring users to download the larger
+study-reproduction archive.
+
 ## Fastest Start
 
 Install the toolkit and download the authenticated compact distribution:
@@ -132,6 +147,27 @@ OpenQASM 3 assembly admissibility, signature recovery, ordered reconstruction,
 parameter-aware reconstruction, and semantic equivalence remain distinct
 levels. See `benchmark.json`, the schemas, and the documentation for exact
 version identifiers and boundaries.
+
+## What Is The PQID-Bench 2 OSF Registration?
+
+PQID-Bench 2 is a separate future study, not a newer version of the data on
+this page. Its
+[Open Science Framework registration](https://doi.org/10.17605/OSF.IO/WDERQ)
+is a timestamped, immutable preregistration: it records hypotheses, constructs,
+eligibility rules, semantic-oracle classes, and analysis decisions before any
+future model outputs are collected.
+
+The Stage 1 protocol plans an extension from reference-structure recovery to
+semantic validity. Its primary estimand concerns the model-level Semantic Void
+state, where an output executes but fails a preregistered semantic oracle. It
+also fixes the hierarchy for algorithm-family, audited-scope, and
+name-visibility contrasts. Stage 2 must freeze the exact prompts, qualified
+oracles, model routes, sample size, and analysis code before any model call.
+
+No PQID-Bench 2 output or result is included here. The registration neither
+changes nor is required to use PQID-Bench v1.0.0. In the research supplement,
+**O6** is simply the overview-object label that points readers to this future
+protocol.
 
 ## Evidence And Results
 
